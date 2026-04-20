@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Scout — Match Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<style>
+  :root {
+    --bg: #080a0f;
+    --surface: #0d1117;
+    --surface2: #131920;
+    --border: #1e2a35;
+    --border2: #243040;
+    --accent: #00e5a0;
+    --accent2: #0099ff;
+    --accent3: #ff6b35;
+    --warn: #f5c518;
+    --muted: #4a6070;
+    --text: #c8d8e4;
+    --text2: #7a9ab0;
+    --font-mono: 'Space Mono', monospace;
+    --font-display: 'Syne', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-display);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,160,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,160,0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .app {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .logo-mark {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    padding: 4px 8px;
+  }
+
+  .logo-name {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+
+  .header-meta {
+    text-align: right;
+  }
+
+  .header-date {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text2);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .header-count {
+    font-size: 13px;
+    color: var(--accent);
+    margin-top: 4px;
+    font-weight: 600;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .stat-cell {
+    background: var(--surface);
+    padding: 20px 24px;
+    transition: background 0.2s;
+  }
+
+  .stat-cell:hover { background: var(--surface2); }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+
+  .stat-value.green { color: var(--accent); }
+  .stat-value.blue { color: var(--accent2); }
+  .stat-value.orange { color: var(--accent3); }
+
+  /* CONTROLS PANEL */
+  .controls-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .controls-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+  }
+
+  .controls-header:hover { background: var(--surface2); }
+
+  .controls-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .controls-title::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  .toggle-icon {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--muted);
+    transition: transform 0.3s;
+  }
+
+  .toggle-icon.open { transform: rotate(45deg); }
+
+  .controls-body {
+    padding: 28px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .control-group label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .control-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .range-input {
+    -webkit-appearance: none;
+    flex: 1;
+    height: 2px;
+    background: var(--border2);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+    cursor: pointer;
+    border-radius: 0;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .range-val {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent);
+    min-width: 36px;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  .toggle-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .toggle-chip {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border: 1px solid var(--border2);
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    background: transparent;
+    user-select: none;
+  }
+
+  .toggle-chip.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0,229,160,0.06);
+  }
+
+  .toggle-chip:hover:not(.active) {
+    border-color: var(--text2);
+    color: var(--text);
+  }
+
+  .run-btn {
+    grid-column: 1 / -1;
+    background: var(--accent);
+    color: #000;
+    border: none;
+    padding: 14px 32px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .run-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  .run-btn:hover::after { transform: translateX(0); }
+  .run-btn:active { transform: scale(0.99); }
+
+  .run-btn.loading {
+    background: var(--surface2);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    cursor: wait;
+  }
+
+  /* FILTER BAR */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 4px;
+  }
+
+  .filter-chip {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border: 1px solid var(--border2);
+    color: var(--text2);
+    cursor: pointer;
+    transition: all 0.15s;
+    background: transparent;
+    user-select: none;
+  }
+
+  .filter-chip.active {
+    border-color: var(--accent2);
+    color: var(--accent2);
+    background: rgba(0,153,255,0.06);
+  }
+
+  /* MATCH CARDS */
+  .matches-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .match-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border-color 0.2s;
+    animation: slideIn 0.4s ease both;
+  }
+
+  .match-card:hover { border-color: var(--border2); }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .match-card.low-confidence {
+    border-left: 3px solid var(--warn);
+  }
+
+  .card-main {
+    display: grid;
+    grid-template-columns: 80px 1fr auto auto;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .card-main:hover { background: var(--surface2); }
+
+  .match-time {
+    text-align: center;
+  }
+
+  .time-val {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .time-league {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 76px;
+  }
+
+  .match-teams {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .teams-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .team-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  .vs-sep {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  .match-meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text2);
+    margin-top: 2px;
+  }
+
+  .bets-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .bet-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: 700;
+  }
+
+  .bet-tag.primary {
+    background: rgba(0,229,160,0.12);
+    color: var(--accent);
+    border: 1px solid rgba(0,229,160,0.3);
+  }
+
+  .bet-tag.secondary {
+    background: rgba(0,153,255,0.1);
+    color: var(--accent2);
+    border: 1px solid rgba(0,153,255,0.25);
+  }
+
+  .bet-tag.combo {
+    background: rgba(255,107,53,0.1);
+    color: var(--accent3);
+    border: 1px solid rgba(255,107,53,0.25);
+  }
+
+  .bet-tag.warn {
+    background: rgba(245,197,24,0.08);
+    color: var(--warn);
+    border: 1px solid rgba(245,197,24,0.2);
+  }
+
+  .confidence-block {
+    text-align: center;
+    min-width: 64px;
+  }
+
+  .conf-score {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .conf-score.high { color: var(--accent); }
+  .conf-score.mid { color: var(--warn); }
+  .conf-score.low { color: var(--accent3); }
+
+  .conf-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+
+  /* REASONING DROPDOWN */
+  .reasoning-panel {
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .reasoning-panel.open {
+    max-height: 600px;
+  }
+
+  .reasoning-inner {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .reason-block h4 {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .reason-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.5;
+  }
+
+  .reason-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  .reason-dot.warn { background: var(--warn); }
+  .reason-dot.blue { background: var(--accent2); }
+
+  .odds-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .odd-cell {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .odd-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .odd-val {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .odd-val.highlighted { color: var(--accent); }
+
+  .form-strip {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  .form-dot {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .form-dot.W { background: rgba(0,229,160,0.15); color: var(--accent); border: 1px solid rgba(0,229,160,0.3); }
+  .form-dot.D { background: rgba(245,197,24,0.1); color: var(--warn); border: 1px solid rgba(245,197,24,0.2); }
+  .form-dot.L { background: rgba(255,107,53,0.1); color: var(--accent3); border: 1px solid rgba(255,107,53,0.2); }
+
+  .expand-arrow {
+    font-size: 12px;
+    color: var(--muted);
+    transition: transform 0.3s;
+    font-family: var(--font-mono);
+  }
+
+  .expand-arrow.open { transform: rotate(180deg); }
+
+  /* LOADING STATE */
+  .loading-state {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .scanner-anim {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--border2);
+    border-top-color: var(--accent);
+    border-radius: 0;
+    animation: spin 1s linear infinite;
+    margin-bottom: 24px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .loading-text {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .loading-sub {
+    font-size: 13px;
+    color: var(--text2);
+    margin-top: 8px;
+  }
+
+  /* EMPTY STATE */
+  .empty-state {
+    text-align: center;
+    padding: 80px 0;
+    border: 1px dashed var(--border2);
+  }
+
+  .empty-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+  }
+
+  .empty-text {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* LOW CONF BANNER */
+  .low-conf-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: rgba(245,197,24,0.05);
+    border-top: 1px solid rgba(245,197,24,0.15);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--warn);
+    letter-spacing: 0.08em;
+  }
+
+  .low-conf-banner::before {
+    content: '⚠';
+    font-size: 12px;
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); }
+
+  @media (max-width: 768px) {
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .controls-body { grid-template-columns: 1fr; }
+    .card-main { grid-template-columns: 64px 1fr; gap: 12px; }
+    .confidence-block { display: none; }
+    .reasoning-inner { grid-template-columns: 1fr; }
+    .bets-list { display: none; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="app">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <span class="logo-mark">v1.0</span>
+        <span class="logo-name">Scout</span>
+      </div>
+      <div class="header-meta">
+        <div class="header-date">{{ today }} · 08:00 EAT</div>
+        <div class="header-count" v-if="!loading && qualifiedMatches.length">
+          {{ qualifiedMatches.length }} qualified match{{ qualifiedMatches.length !== 1 ? 'es' : '' }} today
+        </div>
+      </div>
+    </header>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat-cell">
+        <div class="stat-label">Scanned</div>
+        <div class="stat-value">{{ stats.scanned }}</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Qualified</div>
+        <div class="stat-value green">{{ qualifiedMatches.length }}</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Combos</div>
+        <div class="stat-value blue">{{ stats.combos }}</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Low Conf</div>
+        <div class="stat-value orange">{{ stats.lowConf }}</div>
+      </div>
+    </div>
+
+    <!-- CONTROLS PANEL -->
+    <div class="controls-panel">
+      <div class="controls-header" @click="controlsOpen = !controlsOpen">
+        <div class="controls-title">Filter Parameters</div>
+        <div class="toggle-icon" :class="{ open: controlsOpen }">+</div>
+      </div>
+      <div v-show="controlsOpen" class="controls-body">
+
+        <div class="control-group">
+          <label>Home Odds Max</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.homeOddsMax" min="1.1" max="3.0" step="0.05" />
+            <span class="range-val">{{ Number(filters.homeOddsMax).toFixed(2) }}</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>Away Odds Min</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.awayOddsMin" min="3.0" max="10.0" step="0.1" />
+            <span class="range-val">{{ Number(filters.awayOddsMin).toFixed(1) }}</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>Min Form Matches</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.minFormMatches" min="3" max="10" step="1" />
+            <span class="range-val">{{ filters.minFormMatches }}</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>Markets</label>
+          <div class="toggle-row">
+            <span v-for="m in marketOptions" :key="m.key"
+              class="toggle-chip" :class="{ active: filters.markets.includes(m.key) }"
+              @click="toggleMarket(m.key)">{{ m.label }}</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>League Position Weight</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.leaguePositionWeight" min="0" max="1" step="0.1" />
+            <span class="range-val">{{ Number(filters.leaguePositionWeight).toFixed(1) }}</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>Opponent Strength Weight</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.oppStrengthWeight" min="0" max="1" step="0.1" />
+            <span class="range-val">{{ Number(filters.oppStrengthWeight).toFixed(1) }}</span>
+          </div>
+        </div>
+
+        <button class="run-btn" :class="{ loading }" @click="runScan" :disabled="loading">
+          {{ loading ? 'Scanning Fixtures...' : '▶ Run Daily Scan' }}
+        </button>
+
+      </div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar" v-if="qualifiedMatches.length">
+      <span class="filter-label">Show:</span>
+      <span v-for="f in filterOptions" :key="f.key"
+        class="filter-chip" :class="{ active: activeFilter === f.key }"
+        @click="activeFilter = f.key">{{ f.label }}</span>
+    </div>
+
+    <!-- LOADING -->
+    <div class="loading-state" v-if="loading">
+      <div class="scanner-anim"></div>
+      <div class="loading-text">{{ loadingStep }}</div>
+      <div class="loading-sub">{{ loadingDetail }}</div>
+    </div>
+
+    <!-- EMPTY -->
+    <div class="empty-state" v-else-if="!loading && qualifiedMatches.length === 0 && hasRun">
+      <div class="empty-icon">◇</div>
+      <div class="empty-text">No matches passed filters today</div>
+    </div>
+
+    <!-- INITIAL STATE -->
+    <div class="empty-state" v-else-if="!hasRun">
+      <div class="empty-icon">◈</div>
+      <div class="empty-text">Configure filters and run scan</div>
+    </div>
+
+    <!-- MATCHES -->
+    <div v-else>
+      <div class="section-label">Today's Qualified Bets</div>
+      <div class="matches-grid">
+        <div v-for="(match, idx) in filteredMatches" :key="match.id"
+          class="match-card"
+          :class="{ 'low-confidence': match.lowConfidence }"
+          :style="{ animationDelay: idx * 0.05 + 's' }">
+
+          <!-- MAIN ROW -->
+          <div class="card-main" @click="toggleReasoning(match.id)">
+
+            <div class="match-time">
+              <div class="time-val">{{ match.time }}</div>
+              <div class="time-league">{{ match.league }}</div>
+            </div>
+
+            <div class="match-teams">
+              <div class="teams-row">
+                <span class="team-name">{{ match.home }}</span>
+                <span class="vs-sep">vs</span>
+                <span class="team-name">{{ match.away }}</span>
+              </div>
+              <div class="match-meta">{{ match.homePos ? `#${match.homePos} vs #${match.awayPos}` : '' }} · H2H: {{ match.h2hSummary }}</div>
+            </div>
+
+            <div class="bets-list">
+              <span v-for="bet in match.bets" :key="bet.label"
+                class="bet-tag" :class="bet.type">{{ bet.label }}</span>
+            </div>
+
+            <div class="confidence-block">
+              <div class="conf-score"
+                :class="match.confidence >= 75 ? 'high' : match.confidence >= 55 ? 'mid' : 'low'">
+                {{ match.confidence }}
+              </div>
+              <div class="conf-label">Score</div>
+              <div class="expand-arrow" :class="{ open: openCards.includes(match.id) }">▼</div>
+            </div>
+
+          </div>
+
+          <!-- LOW CONF BANNER -->
+          <div class="low-conf-banner" v-if="match.lowConfidence">
+            Low data confidence — fewer than {{ filters.minFormMatches }} form matches available for {{ match.lowConfTeam }}
+          </div>
+
+          <!-- REASONING PANEL -->
+          <div class="reasoning-panel" :class="{ open: openCards.includes(match.id) }">
+            <div class="reasoning-inner">
+
+              <!-- ODDS -->
+              <div class="reason-block">
+                <h4>Odds</h4>
+                <div class="odds-grid">
+                  <div class="odd-cell">
+                    <div class="odd-label">Home</div>
+                    <div class="odd-val" :class="{ highlighted: match.recommendation === '1' }">{{ match.odds.home }}</div>
+                  </div>
+                  <div class="odd-cell">
+                    <div class="odd-label">Draw</div>
+                    <div class="odd-val">{{ match.odds.draw }}</div>
+                  </div>
+                  <div class="odd-cell">
+                    <div class="odd-label">Away</div>
+                    <div class="odd-val" :class="{ highlighted: match.recommendation === '2' }">{{ match.odds.away }}</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FORM -->
+              <div class="reason-block">
+                <h4>Form & Goals</h4>
+                <div v-for="team in [match.homeStats, match.awayStats]" :key="team.name" style="margin-bottom:14px">
+                  <div style="font-size:12px;color:#fff;font-weight:700;margin-bottom:6px">{{ team.name }}</div>
+                  <div class="form-strip">
+                    <div v-for="r in team.form" :key="r" class="form-dot" :class="r">{{ r }}</div>
+                  </div>
+                  <div v-for="item in team.notes" :key="item" class="reason-item">
+                    <div class="reason-dot blue"></div>
+                    <span>{{ item }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SIGNALS -->
+              <div class="reason-block">
+                <h4>Signals</h4>
+                <div v-for="sig in match.signals" :key="sig.text" class="reason-item">
+                  <div class="reason-dot" :class="sig.type"></div>
+                  <span>{{ sig.text }}</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const { createApp, ref, computed, reactive } = Vue;
+
+// ─── DATA SOURCE — reads from results.json (written by GitHub Actions) ───────
+// Falls back to empty state if file not found (first run / local dev)
+async function loadResults() {
+  try {
+    const resp = await fetch('./results.json?t=' + Date.now());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    return data;
+  } catch (e) {
+    console.warn('results.json not found or invalid:', e.message);
+    return { meta: null, matches: [] };
+  }
+}
+
+createApp({
+  setup() {
+    const today = new Date().toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short', year:'numeric' });
+    const loading = ref(false);
+    const hasRun = ref(false);
+    const openCards = ref([]);
+    const controlsOpen = ref(true);
+    const activeFilter = ref('all');
+    const loadingStep = ref('');
+    const loadingDetail = ref('');
+
+    const filters = reactive({
+      homeOddsMax: 2.00,
+      awayOddsMin: 5.00,
+      minFormMatches: 5,
+      leaguePositionWeight: 0.5,
+      oppStrengthWeight: 0.5,
+      markets: ['1x2', 'ou', 'btts', 'combo']
+    });
+
+    const marketOptions = [
+      { key: '1x2', label: '1X2' },
+      { key: 'ou', label: 'O/U' },
+      { key: 'btts', label: 'BTTS' },
+      { key: 'combo', label: 'Combo' }
+    ];
+
+    const filterOptions = [
+      { key: 'all', label: 'All' },
+      { key: 'high', label: 'High Conf (75+)' },
+      { key: 'combo', label: 'Has Combo' },
+      { key: 'warn', label: 'Low Conf Flag' }
+    ];
+
+    const matches = ref([]);
+
+    const qualifiedMatches = computed(() => matches.value);
+
+    const filteredMatches = computed(() => {
+      if (activeFilter.value === 'high') return matches.value.filter(m => m.confidence >= 75);
+      if (activeFilter.value === 'combo') return matches.value.filter(m => m.bets.some(b => b.type === 'combo'));
+      if (activeFilter.value === 'warn') return matches.value.filter(m => m.lowConfidence);
+      return matches.value;
+    });
+
+    const scanMeta = ref(null);
+
+    const stats = computed(() => ({
+      scanned: scanMeta.value?.scanned ?? (hasRun.value ? '—' : 0),
+      combos: matches.value.filter(m => m.bets?.some(b => b.type === 'combo')).length,
+      lowConf: matches.value.filter(m => m.lowConfidence).length
+    }));
+
+    const steps = [
+      ['Fetching fixtures...', 'Pulling today\'s matches from SportyBet & BetPawa'],
+      ['Applying odds filter...', `Home ≤ ${2.00} · Away ≥ ${5.00}`],
+      ['Loading form data...', 'Scraping last 5 matches per team from Sofascore'],
+      ['Analysing H2H...', 'Checking head-to-head history & streaks'],
+      ['Checking standings...', 'Applying league position weighting'],
+      ['Scoring matches...', 'Running signal engine & generating recommendations'],
+    ];
+
+    async function runScan() {
+      loading.value = true;
+      matches.value = [];
+
+      // Show animated steps
+      for (const [step, detail] of steps) {
+        loadingStep.value = step;
+        loadingDetail.value = detail;
+        await new Promise(r => setTimeout(r, 500));
+      }
+
+      // Load real results.json
+      const data = await loadResults();
+      const raw = data.matches || [];
+
+      // Apply frontend filter re-check (in case config differs from last scan)
+      matches.value = raw.filter(m =>
+        m.odds.home <= Number(filters.homeOddsMax) &&
+        m.odds.away >= Number(filters.awayOddsMin)
+      ).map(m => ({
+        ...m,
+        // Normalise field names from scorer.py output to dashboard expectations
+        homePos: m.homePos ?? m.home_pos ?? null,
+        awayPos: m.awayPos ?? m.away_pos ?? null,
+        h2hSummary: m.h2hSummary ?? m.h2h_summary ?? '—',
+        lowConfidence: m.lowConfidence ?? m.low_confidence ?? false,
+        lowConfTeam: m.lowConfTeam ?? m.low_conf_team ?? null,
+        homeStats: m.homeStats ?? m.home_stats ?? {},
+        awayStats: m.awayStats ?? m.away_stats ?? {},
+      }));
+
+      // Pull meta stats if available
+      if (data.meta) {
+        scanMeta.value = data.meta;
+      }
+
+      loading.value = false;
+      hasRun.value = true;
+      controlsOpen.value = false;
+    }
+
+    function toggleMarket(key) {
+      const idx = filters.markets.indexOf(key);
+      if (idx > -1) filters.markets.splice(idx, 1);
+      else filters.markets.push(key);
+    }
+
+    function toggleReasoning(id) {
+      const idx = openCards.value.indexOf(id);
+      if (idx > -1) openCards.value.splice(idx, 1);
+      else openCards.value.push(id);
+    }
+
+    return {
+      today, loading, hasRun, openCards, controlsOpen,
+      activeFilter, loadingStep, loadingDetail,
+      filters, marketOptions, filterOptions,
+      matches, qualifiedMatches, filteredMatches, stats, scanMeta,
+      runScan, toggleMarket, toggleReasoning
+    };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>
