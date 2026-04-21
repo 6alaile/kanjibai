@@ -976,7 +976,7 @@ const { createApp, ref, computed, reactive } = Vue;
 // Falls back to empty state if file not found (first run / local dev)
 async function loadResults() {
   try {
-    const resp = await fetch('./results.json?t=' + Date.now());
+    const resp = await fetch('https://raw.githubusercontent.com/6alaile/kanjibai/main/results.json?t=' + Date.now());
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     return data;
