@@ -1,43 +1,21 @@
 name: Scout Daily Scan
-
 on:
   schedule:
     - cron: "0 5 * * *"
   workflow_dispatch:
-
 jobs:
   scan:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: pip install requests beautifulsoup4
-
-      - name: Run Scout pipeline
+      - name: Debug BetPawa scrape
         run: python debug_scrape.py
-
-      - name: Run Scout pipeline
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py
-
-      - name: Commit results.json
-        run: |
-          git config user.name "scout-bot"
-          git config user.email "scout-bot@users.noreply.github.com"
-          git add results.json
-          git diff --staged --quiet || git commit -m "chore: daily scan $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
