@@ -969,6 +969,7 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
 const { createApp, ref, computed, reactive } = Vue;
 
 // ─── DATA SOURCE — reads from results.json (written by GitHub Actions) ───────
@@ -1109,6 +1110,7 @@ createApp({
     };
   }
 }).mount('#app');
+}); // DOMContentLoaded
 </script>
 </body>
 </html>
