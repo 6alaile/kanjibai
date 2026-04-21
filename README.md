@@ -1,1 +1,3 @@
 # kanjibai
+
+Betting options aggregator.
