@@ -746,7 +746,7 @@
         <span class="logo-name">Scout</span>
       </div>
       <div class="header-meta">
-        <div class="header-date">{{ today }} · 08:00 EAT</div>
+        <div class="header-date">{{ today }} · {{ clockTime }}</div>
         <div class="header-count" v-if="!loading && qualifiedMatches.length">
           {{ qualifiedMatches.length }} qualified match{{ qualifiedMatches.length !== 1 ? 'es' : '' }} today
         </div>
@@ -997,6 +997,17 @@ createApp({
     const loadingStep = ref('');
     const loadingDetail = ref('');
 
+    // Live clock in EAT
+    const clockTime = ref('');
+    function updateClock() {
+      clockTime.value = new Date().toLocaleTimeString('en-GB', {
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        timeZone: 'Africa/Dar_es_Salaam'
+      }) + ' EAT';
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
     const filters = reactive({
       homeOddsMax: 2.00,
       awayOddsMin: 5.00,
@@ -1101,8 +1112,11 @@ createApp({
       else openCards.value.push(id);
     }
 
+    // Auto-load latest results.json on page open
+    Vue.onMounted(() => { runScan(); });
+
     return {
-      today, loading, hasRun, openCards, controlsOpen,
+      today, clockTime, loading, hasRun, openCards, controlsOpen,
       activeFilter, loadingStep, loadingDetail,
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
