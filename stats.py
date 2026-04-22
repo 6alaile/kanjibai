@@ -21,7 +21,6 @@ BASE_URL = "https://v3.football.api-sports.io"
 
 HEADERS = {
     "x-apisports-key": API_KEY,
-    "x-rapidapi-key": API_KEY,
 }
 
 SESSION = requests.Session()
@@ -86,8 +85,12 @@ def fetch_team_form(team_id: int, league_id: int, season: int, n: int = 10) -> d
     goals_scored.reverse()
     goals_conceded.reverse()
 
-    return {"form": form, "goals_scored": goals_scored,
-            "goals_conceded": goals_conceded, "opponent_positions": None}
+    return {
+        "form": form,
+        "goals_scored": goals_scored,
+        "goals_conceded": goals_conceded,
+        "opponent_positions": None
+    }
 
 
 def fetch_standings(league_id: int, season: int) -> dict:
@@ -128,6 +131,7 @@ def fetch_h2h(home_id: int, away_id: int, n: int = 10) -> Optional[dict]:
 
 
 _standings_cache: dict = {}
+
 
 def get_standings_cached(league_id: int, season: int) -> dict:
     key = f"{league_id}_{season}"
@@ -184,7 +188,7 @@ def enrich_match(match: dict) -> dict:
     return enriched
 
 
-def enrich_all(matches: list[dict]) -> list[dict]:
+def enrich_all(matches: list) -> list:
     enriched = []
     total = len(matches)
     for i, match in enumerate(matches):
