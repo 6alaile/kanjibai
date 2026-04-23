@@ -1,10 +1,69 @@
 {
   "meta": {
-    "date": "2026-04-22",
-    "generatedAt": "2026-04-22T09:56:05.924101+03:00",
-    "scanned": 0,
-    "qualified": 0,
-    "error": "No fixtures returned by scraper"
+    "date": "2026-04-23",
+    "generatedAt": "2026-04-23T08:51:42.609082+03:00",
+    "scanned": 10,
+    "qualified": 1,
+    "elapsedSeconds": 4.0,
+    "config": {
+      "homeOddsMax": 2.0,
+      "awayOddsMin": 5.0,
+      "minFormMatches": 5,
+      "leaguePositionWeight": 0.5,
+      "oppStrengthWeight": 0.5,
+      "markets": [
+        "1x2",
+        "ou",
+        "btts",
+        "combo"
+      ]
+    }
   },
-  "matches": []
+  "matches": [
+    {
+      "id": "1381143",
+      "time": "22:00",
+      "league": "Eredivisie (Netherlands)",
+      "home": "PSV Eindhoven",
+      "away": "PEC Zwolle",
+      "homePos": null,
+      "awayPos": null,
+      "h2hSummary": "No H2H data",
+      "odds": {
+        "home": 1.2,
+        "draw": 7.5,
+        "away": 12.0
+      },
+      "confidence": 30,
+      "lowConfidence": true,
+      "lowConfTeam": "PSV Eindhoven",
+      "recommendation": "1",
+      "bets": [
+        {
+          "label": "Home Win",
+          "type": "primary"
+        }
+      ],
+      "homeStats": {
+        "name": "PSV Eindhoven",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "awayStats": {
+        "name": "PEC Zwolle",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "signals": [
+        {
+          "text": "BTTS unlikely \u2014 combined BTTS rate only 0%",
+          "type": "warn"
+        }
+      ]
+    }
+  ]
 }
