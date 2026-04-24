@@ -1,10 +1,10 @@
 {
   "meta": {
-    "date": "2026-04-23",
-    "generatedAt": "2026-04-23T10:01:19.370572+03:00",
+    "date": "2026-04-24",
+    "generatedAt": "2026-04-24T10:04:42.914185+03:00",
     "scanned": 10,
-    "qualified": 1,
-    "elapsedSeconds": 89.7,
+    "qualified": 2,
+    "elapsedSeconds": 90.7,
     "config": {
       "homeOddsMax": 2.0,
       "awayOddsMin": 5.0,
@@ -21,22 +21,22 @@
   },
   "matches": [
     {
-      "id": "1381143",
-      "time": "22:00",
-      "league": "Eredivisie (Netherlands)",
-      "home": "PSV Eindhoven",
-      "away": "PEC Zwolle",
+      "id": "1381787",
+      "time": "21:30",
+      "league": "I Liga (Poland)",
+      "home": "Wisla Krakow",
+      "away": "Puszcza Niepo\u0142omice",
       "homePos": null,
       "awayPos": null,
       "h2hSummary": "No H2H data",
       "odds": {
-        "home": 1.2,
-        "draw": 7.5,
-        "away": 12.0
+        "home": 1.5,
+        "draw": 3.5,
+        "away": 5.75
       },
       "confidence": 30,
       "lowConfidence": true,
-      "lowConfTeam": "PSV Eindhoven",
+      "lowConfTeam": "Wisla Krakow",
       "recommendation": "1",
       "bets": [
         {
@@ -45,14 +45,59 @@
         }
       ],
       "homeStats": {
-        "name": "PSV Eindhoven",
+        "name": "Wisla Krakow",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
         ]
       },
       "awayStats": {
-        "name": "PEC Zwolle",
+        "name": "Puszcza Niepo\u0142omice",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "signals": [
+        {
+          "text": "BTTS unlikely \u2014 combined BTTS rate only 0%",
+          "type": "warn"
+        }
+      ]
+    },
+    {
+      "id": "1378200",
+      "time": "21:45",
+      "league": "Serie A (Italy)",
+      "home": "Napoli",
+      "away": "Cremonese",
+      "homePos": null,
+      "awayPos": null,
+      "h2hSummary": "No H2H data",
+      "odds": {
+        "home": 1.33,
+        "draw": 5.25,
+        "away": 9.0
+      },
+      "confidence": 30,
+      "lowConfidence": true,
+      "lowConfTeam": "Napoli",
+      "recommendation": "1",
+      "bets": [
+        {
+          "label": "Home Win",
+          "type": "primary"
+        }
+      ],
+      "homeStats": {
+        "name": "Napoli",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "awayStats": {
+        "name": "Cremonese",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
