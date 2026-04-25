@@ -1,3 +1,3 @@
 # kanjibai
 
-Betting options aggregator.
+Betting options aggregator. with enrichment.
