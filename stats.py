@@ -1,16 +1,20 @@
 """
 stats.py — Scout Stats Enricher
-Uses Sofascore unofficial API for current season form, H2H, standings.
-Current season data (2025/26) — no API key required.
+Uses football-data.org free tier for form, standings, H2H.
+Current 2024/25 season data, no IP restrictions, no cost.
 
-Rate limit: 25-30 second delays between calls to avoid Cloudflare blocks.
+Covered leagues (free tier):
+PL, PD, BL1, SA, FL1, CL, EC, PPL, DED, BSA, WC
+
+Register free at: https://www.football-data.org/client/register
+Set FOOTBALL_DATA_TOKEN as a GitHub Actions secret.
+
 Dependencies: requests
 """
 
 import os
 import json
 import time
-import random
 import logging
 from typing import Optional
 
@@ -19,44 +23,64 @@ import requests
 logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
 log = logging.getLogger(__name__)
 
-SOFASCORE_BASE = "https://www.sofascore.com/api/v1"
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://www.sofascore.com/",
-    "Origin": "https://www.sofascore.com",
-    "Cache-Control": "no-cache",
-}
+FD_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "")
+FD_BASE = "https://api.football-data.org/v4"
+FD_HEADERS = {"X-Auth-Token": FD_TOKEN}
 
 SESSION = requests.Session()
-SESSION.headers.update(HEADERS)
+SESSION.headers.update(FD_HEADERS)
+
+# football-data.org league code map
+# Maps common league name fragments to their API codes
+LEAGUE_CODE_MAP = {
+    "premier league": "PL",
+    "la liga": "PD",
+    "bundesliga": "BL1",
+    "serie a": "SA",
+    "ligue 1": "FL1",
+    "champions league": "CL",
+    "european championship": "EC",
+    "primeira liga": "PPL",
+    "eredivisie": "DED",
+    "serie a (brazil)": "BSA",
+    "championship": "ELC",
+}
+
+# Rate limit: 10 requests/minute on free tier
+RATE_DELAY = 7  # seconds between calls to stay safe
 
 
 def delay():
-    """Polite delay to avoid rate limiting."""
-    time.sleep(random.uniform(2.0, 4.0))
+    time.sleep(RATE_DELAY)
 
 
-def sf_get(endpoint: str) -> Optional[dict]:
-    """GET from Sofascore API."""
-    url = f"{SOFASCORE_BASE}/{endpoint}"
+def fd_get(endpoint: str, params: dict = None) -> Optional[dict]:
+    if not FD_TOKEN:
+        log.warning("FOOTBALL_DATA_TOKEN not set — skipping enrichment.")
+        return None
     try:
-        resp = SESSION.get(url, timeout=15)
+        resp = SESSION.get(f"{FD_BASE}/{endpoint}", params=params, timeout=15)
         if resp.status_code == 429:
-            log.warning(f"Rate limited on {endpoint}, waiting 30s...")
-            time.sleep(30)
-            resp = SESSION.get(url, timeout=15)
+            log.warning("Rate limited, waiting 60s...")
+            time.sleep(60)
+            resp = SESSION.get(f"{FD_BASE}/{endpoint}", params=params, timeout=15)
+        if resp.status_code == 403:
+            log.warning(f"403 on {endpoint} — league may not be in free tier")
+            return None
         resp.raise_for_status()
         return resp.json()
     except requests.exceptions.RequestException as e:
-        log.warning(f"Sofascore request failed {endpoint}: {e}")
+        log.warning(f"football-data.org request failed {endpoint}: {e}")
         return None
+
+
+def get_league_code(league_name: str) -> Optional[str]:
+    """Match league display name to football-data.org code."""
+    low = league_name.lower()
+    for key, code in LEAGUE_CODE_MAP.items():
+        if key in low:
+            return code
+    return None
 
 
 def safe_int(val, fallback: int = 0) -> int:
@@ -66,59 +90,66 @@ def safe_int(val, fallback: int = 0) -> int:
         return fallback
 
 
-# ─── TEAM SEARCH ─────────────────────────────────────────────────────────────
+# ─── FIND TEAM ID ────────────────────────────────────────────────────────────
 
-def search_team(name: str) -> Optional[dict]:
-    """Search Sofascore for a team by name, return first football result."""
-    data = sf_get(f"search/multi-suggest?q={requests.utils.quote(name)}")
+def find_team_id(team_name: str, league_code: str) -> Optional[int]:
+    """Find team ID by searching within a league."""
+    data = fd_get(f"competitions/{league_code}/teams")
     delay()
     if not data:
         return None
-    teams = data.get("teams", []) or []
+    teams = data.get("teams", [])
+    name_low = team_name.lower()
     for team in teams:
-        sport = team.get("sport", {}).get("slug", "")
-        if sport == "football":
-            return team
+        if (name_low in team.get("name", "").lower() or
+                name_low in team.get("shortName", "").lower() or
+                name_low in team.get("tla", "").lower()):
+            return team.get("id")
     return None
 
 
 # ─── TEAM FORM ────────────────────────────────────────────────────────────────
 
 def fetch_team_form(team_id: int, n: int = 10) -> dict:
-    """Fetch last N matches for a team from Sofascore."""
-    data = sf_get(f"team/{team_id}/events/last/0")
+    """Fetch last N finished matches for a team."""
+    data = fd_get(f"teams/{team_id}/matches", params={"status": "FINISHED", "limit": n})
     delay()
     if not data:
         return {}
 
-    events = data.get("events", []) or []
-    # Filter finished matches only
-    finished = [e for e in events if e.get("status", {}).get("type") == "finished"]
-    # Most recent N
-    finished = finished[-n:]
+    matches = data.get("matches", [])
+    # Sort by date descending, take last N
+    matches = sorted(matches, key=lambda m: m.get("utcDate", ""), reverse=True)[:n]
 
     form, goals_scored, goals_conceded = [], [], []
 
-    for event in finished:
-        home_team = event.get("homeTeam", {})
-        away_team = event.get("awayTeam", {})
-        home_score = event.get("homeScore", {}).get("current", 0) or 0
-        away_score = event.get("awayScore", {}).get("current", 0) or 0
+    for match in matches:
+        home_team = match.get("homeTeam", {})
+        away_team = match.get("awayTeam", {})
+        score = match.get("score", {}).get("fullTime", {})
+        home_goals = safe_int(score.get("home", 0))
+        away_goals = safe_int(score.get("away", 0))
 
         is_home = home_team.get("id") == team_id
-        scored = home_score if is_home else away_score
-        conceded = away_score if is_home else home_score
+        scored = home_goals if is_home else away_goals
+        conceded = away_goals if is_home else home_goals
 
-        if scored > conceded:
-            result = "W"
-        elif scored == conceded:
-            result = "D"
+        winner = match.get("score", {}).get("winner", "")
+        if winner == "HOME_TEAM":
+            result = "W" if is_home else "L"
+        elif winner == "AWAY_TEAM":
+            result = "L" if is_home else "W"
         else:
-            result = "L"
+            result = "D"
 
         form.append(result)
-        goals_scored.append(int(scored))
-        goals_conceded.append(int(conceded))
+        goals_scored.append(scored)
+        goals_conceded.append(conceded)
+
+    # Reverse so oldest first
+    form.reverse()
+    goals_scored.reverse()
+    goals_conceded.reverse()
 
     return {
         "form": form,
@@ -130,83 +161,99 @@ def fetch_team_form(team_id: int, n: int = 10) -> dict:
 
 # ─── STANDINGS ────────────────────────────────────────────────────────────────
 
-def fetch_standings(tournament_id: int, season_id: int) -> dict:
-    """Fetch league standings from Sofascore."""
-    data = sf_get(f"tournament/{tournament_id}/season/{season_id}/standings/total")
+def fetch_standings(league_code: str) -> dict:
+    """Fetch current standings for a league."""
+    data = fd_get(f"competitions/{league_code}/standings")
     delay()
     if not data:
         return {}
 
     result = {}
-    standings = data.get("standings", []) or []
-    for group in standings:
-        rows = group.get("rows", []) or []
-        total = len(rows)
-        for row in rows:
-            tid = row.get("team", {}).get("id")
-            pos = row.get("position")
-            if tid and pos:
-                result[tid] = {"position": pos, "total_teams": total}
+    standings = data.get("standings", [])
+    # Use TOTAL standings table
+    for table in standings:
+        if table.get("type") == "TOTAL":
+            rows = table.get("table", [])
+            total = len(rows)
+            for row in rows:
+                tid = row.get("team", {}).get("id")
+                pos = row.get("position")
+                if tid and pos:
+                    result[tid] = {"position": pos, "total_teams": total}
     return result
 
 
 # ─── H2H ─────────────────────────────────────────────────────────────────────
 
-def fetch_h2h(event_id: int) -> Optional[dict]:
-    """Fetch H2H matches for a given Sofascore event ID."""
-    data = sf_get(f"event/{event_id}/h2h/events")
+def fetch_h2h(match_id: int) -> Optional[dict]:
+    """Fetch H2H for a specific match."""
+    data = fd_get(f"matches/{match_id}/head2head", params={"limit": 10})
     delay()
     if not data:
+        return None
+
+    matches = data.get("matches", [])
+    if not matches:
         return None
 
     h2h_list = []
-    for section in ["previousEvents", "previousHomeAwayEvents"]:
-        events = data.get(section, []) or []
-        for e in events:
-            if e.get("status", {}).get("type") != "finished":
-                continue
-            h2h_list.append({
-                "home": e.get("homeTeam", {}).get("name", ""),
-                "away": e.get("awayTeam", {}).get("name", ""),
-                "score": [
-                    e.get("homeScore", {}).get("current", 0) or 0,
-                    e.get("awayScore", {}).get("current", 0) or 0
-                ]
-            })
+    for match in matches:
+        score = match.get("score", {}).get("fullTime", {})
+        h2h_list.append({
+            "home": match.get("homeTeam", {}).get("name", ""),
+            "away": match.get("awayTeam", {}).get("name", ""),
+            "score": [
+                safe_int(score.get("home", 0)),
+                safe_int(score.get("away", 0))
+            ]
+        })
 
-    if not h2h_list:
-        return None
-    return {"matches": h2h_list[:10]}
+    return {"matches": h2h_list}
 
 
-# ─── FIND EVENT ON SOFASCORE ─────────────────────────────────────────────────
+# ─── FIND MATCH ID ───────────────────────────────────────────────────────────
 
-def find_event(home: str, away: str) -> Optional[dict]:
-    """Search for a specific match on Sofascore to get event ID for H2H."""
-    query = f"{home} {away}"
-    data = sf_get(f"search/multi-suggest?q={requests.utils.quote(query)}")
+def find_match_id(home_name: str, away_name: str, league_code: str) -> Optional[int]:
+    """Find today's match ID in football-data.org for H2H lookup."""
+    from datetime import datetime, timezone, timedelta
+    EAT = timezone(timedelta(hours=3))
+    today = datetime.now(EAT).strftime("%Y-%m-%d")
+
+    data = fd_get(f"competitions/{league_code}/matches", params={"dateFrom": today, "dateTo": today})
     delay()
     if not data:
         return None
-    events = data.get("events", []) or []
-    for event in events:
-        eh = event.get("homeTeam", {}).get("name", "").lower()
-        ea = event.get("awayTeam", {}).get("name", "").lower()
-        if home.lower()[:5] in eh or away.lower()[:5] in ea:
-            return event
+
+    matches = data.get("matches", [])
+    home_low = home_name.lower()
+    away_low = away_name.lower()
+
+    for match in matches:
+        mh = match.get("homeTeam", {}).get("name", "").lower()
+        ma = match.get("awayTeam", {}).get("name", "").lower()
+        if home_low[:5] in mh and away_low[:5] in ma:
+            return match.get("id")
+
     return None
 
 
 # ─── CACHE ────────────────────────────────────────────────────────────────────
 
-_team_cache: dict = {}
 _standings_cache: dict = {}
+_team_id_cache: dict = {}
 
 
-def get_team_cached(name: str) -> Optional[dict]:
-    if name not in _team_cache:
-        _team_cache[name] = search_team(name)
-    return _team_cache[name]
+def get_standings_cached(league_code: str) -> dict:
+    if league_code not in _standings_cache:
+        _standings_cache[league_code] = fetch_standings(league_code)
+    return _standings_cache[league_code]
+
+
+def get_team_id_cached(name: str, league_code: str) -> Optional[int]:
+    key = f"{name}_{league_code}"
+    if key not in _team_id_cache:
+        _team_id_cache[key] = find_team_id(name, league_code)
+    return _team_id_cache[key]
 
 
 # ─── ENRICH MATCH ─────────────────────────────────────────────────────────────
@@ -214,62 +261,43 @@ def get_team_cached(name: str) -> Optional[dict]:
 def enrich_match(match: dict) -> dict:
     home_name = match["home"]
     away_name = match["away"]
+    league_name = match.get("league", "")
     enriched = dict(match)
     total_teams = 20
 
     log.info(f"  Enriching: {home_name} vs {away_name}")
 
-    # Search for teams on Sofascore
-    home_team_sf = get_team_cached(home_name)
-    away_team_sf = get_team_cached(away_name)
+    league_code = get_league_code(league_name)
 
-    home_form_data = {}
-    away_form_data = {}
+    if not league_code:
+        log.info(f"  League '{league_name}' not in free tier — skipping enrichment")
+        enriched["home_stats"] = _empty_stats(home_name)
+        enriched["away_stats"] = _empty_stats(away_name)
+        enriched["h2h"] = None
+        return enriched
+
+    # Get team IDs
+    home_id = get_team_id_cached(home_name, league_code)
+    away_id = get_team_id_cached(away_name, league_code)
+
+    # Form data
+    home_form_data = fetch_team_form(home_id) if home_id else {}
+    away_form_data = fetch_team_form(away_id) if away_id else {}
+
+    # Standings
     home_pos = away_pos = None
+    standings = get_standings_cached(league_code)
+    if standings and home_id:
+        home_pos = standings.get(home_id, {}).get("position")
+        total_teams = standings.get(home_id, {}).get("total_teams", 20)
+    if standings and away_id:
+        away_pos = standings.get(away_id, {}).get("position")
+
+    # H2H
     h2h = None
-
-    if home_team_sf:
-        home_id_sf = home_team_sf.get("id")
-        if home_id_sf:
-            home_form_data = fetch_team_form(home_id_sf)
-
-            # Get standings via team's tournament
-            tournament = home_team_sf.get("tournament", {})
-            t_id = tournament.get("uniqueTournament", {}).get("id")
-            # Try to get season from last event
-            last_event_data = sf_get(f"team/{home_id_sf}/events/last/0")
-            delay()
-            if last_event_data:
-                events = last_event_data.get("events", [])
-                if events:
-                    season_id = events[-1].get("season", {}).get("id")
-                    uniq_t_id = events[-1].get("tournament", {}).get("uniqueTournament", {}).get("id")
-                    if uniq_t_id and season_id:
-                        cache_key = f"{uniq_t_id}_{season_id}"
-                        if cache_key not in _standings_cache:
-                            _standings_cache[cache_key] = fetch_standings(uniq_t_id, season_id)
-                        standings = _standings_cache.get(cache_key, {})
-                        if standings:
-                            home_pos = standings.get(home_id_sf, {}).get("position")
-                            total_teams = standings.get(home_id_sf, {}).get("total_teams", 20)
-
-    if away_team_sf:
-        away_id_sf = away_team_sf.get("id")
-        if away_id_sf:
-            away_form_data = fetch_team_form(away_id_sf)
-            # Get away position from same standings if available
-            if home_team_sf:
-                cache_key = list(_standings_cache.keys())[-1] if _standings_cache else None
-                if cache_key:
-                    standings = _standings_cache.get(cache_key, {})
-                    away_pos = standings.get(away_id_sf, {}).get("position")
-
-    # H2H via event search
-    sf_event = find_event(home_name, away_name)
-    if sf_event:
-        event_id = sf_event.get("id")
-        if event_id:
-            h2h = fetch_h2h(event_id)
+    match_id = find_match_id(home_name, away_name, league_code)
+    if match_id:
+        h2h = fetch_h2h(match_id)
 
     enriched["home_stats"] = {
         "name": home_name,
@@ -294,6 +322,14 @@ def enrich_match(match: dict) -> dict:
     return enriched
 
 
+def _empty_stats(name: str) -> dict:
+    return {
+        "name": name, "form": [], "goals_scored": [],
+        "goals_conceded": [], "league_position": None,
+        "total_teams_in_league": 20, "opponent_positions": None
+    }
+
+
 def enrich_all(matches: list) -> list:
     enriched = []
     total = len(matches)
@@ -309,11 +345,12 @@ def enrich_all(matches: list) -> list:
 
 if __name__ == "__main__":
     sample = [{
-        "id": "test_001", "league": "Premier League (England)",
+        "id": "test_001",
+        "league": "Premier League (England)",
         "league_id": 39, "season": 2025, "time": "13:30",
         "home": "Arsenal", "away": "Wolves",
-        "home_id": None, "away_id": None, "source": "api-football",
-        "total_teams_in_league": 20,
+        "home_id": None, "away_id": None,
+        "source": "api-football", "total_teams_in_league": 20,
         "odds": {"home": 1.55, "draw": 4.20, "away": 6.50,
                  "over_15": None, "over_25": None, "btts_yes": None},
         "home_stats": None, "away_stats": None, "h2h": None
