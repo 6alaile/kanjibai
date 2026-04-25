@@ -1,10 +1,10 @@
 {
   "meta": {
-    "date": "2026-04-24",
-    "generatedAt": "2026-04-24T10:04:42.914185+03:00",
+    "date": "2026-04-25",
+    "generatedAt": "2026-04-25T09:20:50.123488+03:00",
     "scanned": 10,
-    "qualified": 2,
-    "elapsedSeconds": 90.7,
+    "qualified": 3,
+    "elapsedSeconds": 91.3,
     "config": {
       "homeOddsMax": 2.0,
       "awayOddsMin": 5.0,
@@ -21,22 +21,22 @@
   },
   "matches": [
     {
-      "id": "1381787",
-      "time": "21:30",
-      "league": "I Liga (Poland)",
-      "home": "Wisla Krakow",
-      "away": "Puszcza Niepo\u0142omice",
+      "id": "1380357",
+      "time": "15:30",
+      "league": "NB I (Hungary)",
+      "home": "Kisvarda FC",
+      "away": "Diosgyori VTK",
       "homePos": null,
       "awayPos": null,
       "h2hSummary": "No H2H data",
       "odds": {
-        "home": 1.5,
-        "draw": 3.5,
-        "away": 5.75
+        "home": 1.48,
+        "draw": 4.0,
+        "away": 5.5
       },
       "confidence": 30,
       "lowConfidence": true,
-      "lowConfTeam": "Wisla Krakow",
+      "lowConfTeam": "Kisvarda FC",
       "recommendation": "1",
       "bets": [
         {
@@ -45,14 +45,14 @@
         }
       ],
       "homeStats": {
-        "name": "Wisla Krakow",
+        "name": "Kisvarda FC",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
         ]
       },
       "awayStats": {
-        "name": "Puszcza Niepo\u0142omice",
+        "name": "Diosgyori VTK",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
@@ -66,22 +66,22 @@
       ]
     },
     {
-      "id": "1378200",
-      "time": "21:45",
-      "league": "Serie A (Italy)",
-      "home": "Napoli",
-      "away": "Cremonese",
+      "id": "1379304",
+      "time": "17:00",
+      "league": "Premier League (England)",
+      "home": "Liverpool",
+      "away": "Crystal Palace",
       "homePos": null,
       "awayPos": null,
       "h2hSummary": "No H2H data",
       "odds": {
-        "home": 1.33,
-        "draw": 5.25,
-        "away": 9.0
+        "home": 1.53,
+        "draw": 4.5,
+        "away": 5.5
       },
       "confidence": 30,
       "lowConfidence": true,
-      "lowConfTeam": "Napoli",
+      "lowConfTeam": "Liverpool",
       "recommendation": "1",
       "bets": [
         {
@@ -90,14 +90,59 @@
         }
       ],
       "homeStats": {
-        "name": "Napoli",
+        "name": "Liverpool",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
         ]
       },
       "awayStats": {
-        "name": "Cremonese",
+        "name": "Crystal Palace",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "signals": [
+        {
+          "text": "BTTS unlikely \u2014 combined BTTS rate only 0%",
+          "type": "warn"
+        }
+      ]
+    },
+    {
+      "id": "1379299",
+      "time": "19:30",
+      "league": "Premier League (England)",
+      "home": "Arsenal",
+      "away": "Newcastle",
+      "homePos": null,
+      "awayPos": null,
+      "h2hSummary": "No H2H data",
+      "odds": {
+        "home": 1.42,
+        "draw": 4.75,
+        "away": 7.0
+      },
+      "confidence": 30,
+      "lowConfidence": true,
+      "lowConfTeam": "Arsenal",
+      "recommendation": "1",
+      "bets": [
+        {
+          "label": "Home Win",
+          "type": "primary"
+        }
+      ],
+      "homeStats": {
+        "name": "Arsenal",
+        "form": [],
+        "notes": [
+          "Low scoring \u2014 avg 0.0 per game"
+        ]
+      },
+      "awayStats": {
+        "name": "Newcastle",
         "form": [],
         "notes": [
           "Low scoring \u2014 avg 0.0 per game"
