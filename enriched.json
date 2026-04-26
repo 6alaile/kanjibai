@@ -1,9 +1,9 @@
 {
   "meta": {
     "date": "2026-04-26",
-    "generatedAt": "2026-04-26T20:51:18.083520+03:00",
+    "generatedAt": "2026-04-26T21:00:24.897084+03:00",
     "scanned": 10,
-    "elapsedSeconds": 119.9
+    "elapsedSeconds": 238.2
   },
   "matches": [
     {
@@ -57,7 +57,7 @@
       "home_id": 196,
       "away_id": 207,
       "source": "api-football",
-      "total_teams_in_league": 20,
+      "total_teams_in_league": 18,
       "odds": {
         "home": 3.3,
         "draw": 3.5,
@@ -68,23 +68,140 @@
       },
       "home_stats": {
         "name": "Excelsior",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          5
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          0
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 18,
         "opponent_positions": null
       },
       "away_stats": {
         "name": "Utrecht",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "form": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "D",
+          "W",
+          "W",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          3,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          3,
+          4,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1,
+          5
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 18,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "SBV Excelsior",
+            "away": "FC Utrecht",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "home": "FC Utrecht",
+            "away": "SBV Excelsior",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "home": "SBV Excelsior",
+            "away": "FC Utrecht",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "FC Utrecht",
+            "away": "SBV Excelsior",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "FC Utrecht",
+            "away": "SBV Excelsior",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "SBV Excelsior",
+            "away": "FC Utrecht",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "1378196",
@@ -108,23 +225,172 @@
       },
       "home_stats": {
         "name": "Fiorentina",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "W",
+          "W",
+          "L",
+          "D",
+          "W",
+          "D",
+          "W",
+          "W",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          0,
+          0,
+          4,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          3,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "league_position": 15,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
         "name": "Sassuolo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "L",
+          "D",
+          "W",
+          "L",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "league_position": 10,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "ACF Fiorentina",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "ACF Fiorentina",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              5,
+              1
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "ACF Fiorentina",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "ACF Fiorentina",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "ACF Fiorentina",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "ACF Fiorentina",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "1380651",
@@ -188,23 +454,124 @@
       },
       "home_stats": {
         "name": "Genoa",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "D",
+          "W",
+          "L",
+          "W",
+          "W",
+          "L",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          3,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "league_position": 14,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
         "name": "Como",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "D",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          3,
+          2,
+          2,
+          5,
+          0,
+          3,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        "league_position": 5,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "Genoa CFC",
+            "away": "Como 1907",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Como 1907",
+            "away": "Genoa CFC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Como 1907",
+            "away": "Genoa CFC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Genoa CFC",
+            "away": "Como 1907",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "1380355",
@@ -308,23 +675,164 @@
       },
       "home_stats": {
         "name": "Torino",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "W",
+          "L",
+          "W",
+          "W",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          1,
+          4,
+          2,
+          1,
+          2,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          0,
+          2,
+          1,
+          3,
+          0,
+          1,
+          0,
+          2
+        ],
+        "league_position": 13,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
         "name": "Inter",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D",
+          "D",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          5,
+          4,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0,
+          1,
+          1,
+          1,
+          2,
+          3,
+          0,
+          2
+        ],
+        "league_position": 1,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "Torino FC",
+            "away": "FC Internazionale Milano",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Torino FC",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "FC Internazionale Milano",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Torino FC",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Torino FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "FC Internazionale Milano",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "FC Internazionale Milano",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Torino FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "FC Internazionale Milano",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "1380354",
@@ -388,23 +896,164 @@
       },
       "home_stats": {
         "name": "AC Milan",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "W",
+          "L",
+          "W",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          3,
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1,
+          3,
+          0
+        ],
+        "league_position": 3,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
         "name": "Juventus",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "form": [
+          "L",
+          "L",
+          "W",
+          "D",
+          "W",
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          3,
+          3,
+          4,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          5,
+          2,
+          2,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "league_position": 4,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "Juventus FC",
+            "away": "AC Milan",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "AC Milan",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "Juventus FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "AC Milan",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "Juventus FC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "AC Milan",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "Juventus FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "Juventus FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "AC Milan",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
     }
   ]
 }
