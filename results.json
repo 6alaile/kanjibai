@@ -1,9 +1,9 @@
 {
   "meta": {
     "date": "2026-04-26",
-    "generatedAt": "2026-04-26T09:59:29.297856+03:00",
+    "generatedAt": "2026-04-26T13:09:54.909447+03:00",
     "scanned": 10,
-    "qualified": 1,
+    "qualified": 2,
     "elapsedSeconds": 119.6,
     "config": {
       "homeOddsMax": 2.0,
@@ -37,31 +37,96 @@
       "confidence": 30,
       "lowConfidence": true,
       "lowConfTeam": "Ferencvarosi TC",
-      "recommendation": "1",
+      "recommendation": "home",
       "bets": [
         {
           "label": "Home Win",
           "type": "primary"
+        },
+        {
+          "label": "BTTS No",
+          "type": "warn"
         }
       ],
       "homeStats": {
         "name": "Ferencvarosi TC",
         "form": [],
         "notes": [
-          "Low scoring \u2014 avg 0.0 per game"
+          "Scored in 0 of last 1 games",
+          "Conceded in 0 of last 1 games"
         ]
       },
       "awayStats": {
         "name": "Paks",
         "form": [],
         "notes": [
-          "Low scoring \u2014 avg 0.0 per game"
+          "Scored in 0 of last 1 games",
+          "Conceded in 0 of last 1 games"
         ]
       },
       "signals": [
         {
-          "text": "BTTS unlikely \u2014 combined BTTS rate only 0%",
+          "text": "Ferencvarosi TC last 5: 0W 0D 0L",
+          "type": ""
+        },
+        {
+          "text": "Paks last 5: 0W 0D 0L",
+          "type": ""
+        }
+      ]
+    },
+    {
+      "id": "1378202",
+      "time": "19:00",
+      "league": "Serie A (Italy)",
+      "home": "Torino",
+      "away": "Inter",
+      "homePos": null,
+      "awayPos": null,
+      "h2hSummary": "No H2H data",
+      "odds": {
+        "home": 7.5,
+        "draw": 5.25,
+        "away": 1.38
+      },
+      "confidence": 30,
+      "lowConfidence": true,
+      "lowConfTeam": "Torino",
+      "recommendation": "away",
+      "bets": [
+        {
+          "label": "Away Win",
+          "type": "primary"
+        },
+        {
+          "label": "BTTS No",
           "type": "warn"
+        }
+      ],
+      "homeStats": {
+        "name": "Torino",
+        "form": [],
+        "notes": [
+          "Scored in 0 of last 1 games",
+          "Conceded in 0 of last 1 games"
+        ]
+      },
+      "awayStats": {
+        "name": "Inter",
+        "form": [],
+        "notes": [
+          "Scored in 0 of last 1 games",
+          "Conceded in 0 of last 1 games"
+        ]
+      },
+      "signals": [
+        {
+          "text": "Torino last 5: 0W 0D 0L",
+          "type": ""
+        },
+        {
+          "text": "Inter last 5: 0W 0D 0L",
+          "type": ""
         }
       ]
     }
