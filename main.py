@@ -1,11 +1,7 @@
 """
 main.py — Scout Orchestrator
-Runs the daily pipeline:
-1. Scrape fixtures + odds (scrape.py)
-2. Enrich with form/H2H/standings (stats.py)
-3. Write enriched.json — scoring happens in the browser
-
-No scoring here. Browser applies filters and scores in real time.
+Fetches fixtures + enriches with stats → writes enriched.json
+Scoring happens in the browser (app.js).
 """
 
 import json
@@ -22,6 +18,19 @@ log = logging.getLogger(__name__)
 
 EAT = timezone(timedelta(hours=3))
 OUTPUT_PATH = Path(__file__).parent / "enriched.json"
+DATE_FILE = Path(__file__).parent / "scout_date.txt"
+
+
+def get_today_eat() -> str:
+    """Get today's date in EAT — reads from scout_date.txt if available."""
+    if DATE_FILE.exists():
+        date_str = DATE_FILE.read_text().strip()
+        if date_str:
+            log.info(f"Using EAT date from file: {date_str}")
+            return date_str
+    date_str = datetime.now(EAT).strftime("%Y-%m-%d")
+    log.info(f"Using computed EAT date: {date_str}")
+    return date_str
 
 
 def run():
@@ -30,9 +39,11 @@ def run():
     log.info(f"Scout daily scan starting — {start.strftime('%Y-%m-%d %H:%M EAT')}")
     log.info("=" * 50)
 
+    today = get_today_eat()
+
     # Step 1: Fetch fixtures + odds
     log.info("Step 1/2: Fetching fixtures...")
-    raw_fixtures = fetch_fixtures()
+    raw_fixtures = fetch_fixtures(date_str=today)
     scanned_count = len(raw_fixtures)
 
     if not raw_fixtures:
@@ -40,7 +51,7 @@ def run():
         with open(OUTPUT_PATH, "w") as f:
             json.dump({
                 "meta": {
-                    "date": start.strftime("%Y-%m-%d"),
+                    "date": today,
                     "generatedAt": start.isoformat(),
                     "scanned": 0,
                     "error": "No fixtures returned by scraper"
@@ -56,13 +67,12 @@ def run():
     enriched = enrich_all(raw_fixtures)
     log.info(f"  {len(enriched)} matches enriched")
 
-    # Write enriched.json — all matches with raw stats, no scoring
     end = datetime.now(EAT)
     elapsed = round((end - start).total_seconds(), 1)
 
     output = {
         "meta": {
-            "date": start.strftime("%Y-%m-%d"),
+            "date": today,
             "generatedAt": end.isoformat(),
             "scanned": scanned_count,
             "elapsedSeconds": elapsed,
