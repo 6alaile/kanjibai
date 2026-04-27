@@ -2,7 +2,8 @@ name: Scout Daily Scan
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    # 09:00 EAT = 06:00 UTC
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -27,7 +28,18 @@ jobs:
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: python main.py
+          # Pass today's EAT date explicitly so scraper never uses UTC date
+          SCOUT_DATE: ""
+        run: |
+          python -c "
+          from datetime import datetime, timezone, timedelta
+          import os
+          eat = timezone(timedelta(hours=3))
+          today = datetime.now(eat).strftime('%Y-%m-%d')
+          print(f'Running scan for EAT date: {today}')
+          with open('scout_date.txt','w') as f: f.write(today)
+          "
+          python main.py
 
       - name: Commit enriched.json
         run: |
