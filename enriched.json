@@ -1,33 +1,33 @@
 {
   "meta": {
-    "date": "2026-04-28",
-    "generatedAt": "2026-04-28T11:26:35.010655+03:00",
+    "date": "2026-04-29",
+    "generatedAt": "2026-04-29T08:58:43.627075+03:00",
     "scanned": 10,
-    "elapsedSeconds": 52.5
+    "elapsedSeconds": 82.9
   },
   "matches": [
     {
-      "id": "1403825",
+      "id": "1403827",
       "league": "Liga 1 (Indonesia)",
       "league_id": 274,
       "season": 2025,
       "time": "11:30",
-      "home": "Arema FC",
-      "away": "Persebaya Surabaya",
-      "home_id": 2438,
-      "away_id": 2446,
+      "home": "Persik Kediri",
+      "away": "Pusamania Borneo",
+      "home_id": 4241,
+      "away_id": 2442,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.95,
-        "draw": 3.2,
-        "away": 3.5,
+        "home": 3.5,
+        "draw": 3.6,
+        "away": 1.83,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Arema FC",
+        "name": "Persik Kediri",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -36,7 +36,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Persebaya Surabaya",
+        "name": "Pusamania Borneo",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -47,27 +47,67 @@
       "h2h": null
     },
     {
-      "id": "1403826",
+      "id": "1403828",
+      "league": "Liga 1 (Indonesia)",
+      "league_id": 274,
+      "season": 2025,
+      "time": "11:30",
+      "home": "Semen Padang",
+      "away": "Persepam Madura Utd",
+      "home_id": 2456,
+      "away_id": 2444,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.4,
+        "draw": 3.0,
+        "away": 2.75,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Semen Padang",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Persepam Madura Utd",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1403829",
       "league": "Liga 1 (Indonesia)",
       "league_id": 274,
       "season": 2025,
       "time": "15:00",
-      "home": "PSBS Biak Numfor",
-      "away": "Malut United",
-      "home_id": 4232,
-      "away_id": 22409,
+      "home": "Dewa United",
+      "away": "Persijap",
+      "home_id": 17902,
+      "away_id": 11132,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 25.0,
-        "draw": 8.0,
-        "away": 1.07,
+        "home": 1.57,
+        "draw": 3.8,
+        "away": 4.33,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "PSBS Biak Numfor",
+        "name": "Dewa United",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -76,7 +116,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Malut United",
+        "name": "Persijap",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -87,416 +127,27 @@
       "h2h": null
     },
     {
-      "id": "1404243",
-      "league": "Super League (Malaysia)",
-      "league_id": 278,
+      "id": "1416174",
+      "league": "Super League (Zambia)",
+      "league_id": 400,
       "season": 2025,
       "time": "16:00",
-      "home": "Melaka",
-      "away": "Johor Darul Takzim FC",
-      "home_id": 21038,
-      "away_id": 2523,
+      "home": "Power Dynamos",
+      "away": "Zanaco",
+      "home_id": 5211,
+      "away_id": 5215,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 29.0,
-        "draw": 13.0,
-        "away": 1.05,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Melaka",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Johor Darul Takzim FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1398241",
-      "league": "Segunda Liga (Portugal)",
-      "league_id": 95,
-      "season": 2025,
-      "time": "20:00",
-      "home": "Feirense",
-      "away": "Torreense",
-      "home_id": 213,
-      "away_id": 4799,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.8,
-        "draw": 3.1,
-        "away": 2.3,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Feirense",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Torreense",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1418016",
-      "league": "Regionalliga - Ost (Austria)",
-      "league_id": 221,
-      "season": 2025,
-      "time": "20:30",
-      "home": "Wiener SC",
-      "away": "Retz",
-      "home_id": 4965,
-      "away_id": 8288,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.33,
-        "draw": 4.75,
-        "away": 6.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Wiener SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Retz",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1436175",
-      "league": "Pro League (Saudi-Arabia)",
-      "league_id": 307,
-      "season": 2025,
-      "time": "21:00",
-      "home": "Al Khaleej Saihat",
-      "away": "Al Najma",
-      "home_id": 2928,
-      "away_id": 2992,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.44,
-        "draw": 4.1,
-        "away": 5.75,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Al Khaleej Saihat",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Al Najma",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1387028",
-      "league": "Championship (England)",
-      "league_id": 40,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Southampton",
-      "away": "Ipswich",
-      "home_id": 41,
-      "away_id": 57,
-      "source": "api-football",
-      "total_teams_in_league": 24,
-      "odds": {
-        "home": 2.25,
-        "draw": 3.5,
-        "away": 3.1,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Southampton",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          2,
-          1,
-          2,
-          5,
-          2,
-          3,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          1,
-          0,
-          0,
-          1,
-          1,
-          0,
-          1,
-          2
-        ],
-        "league_position": 5,
-        "total_teams_in_league": 24,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Ipswich",
-        "form": [
-          "D",
-          "D",
-          "W",
-          "D",
-          "W",
-          "W",
-          "L",
-          "D",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          2,
-          1,
-          2,
-          2,
-          0,
-          2,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          0,
-          1,
-          1,
-          0,
-          2,
-          2,
-          1,
-          0
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 24,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Ipswich Town FC",
-            "away": "Southampton FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Ipswich Town FC",
-            "away": "Southampton FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Southampton FC",
-            "away": "Ipswich Town FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Ipswich Town FC",
-            "away": "Southampton FC",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "home": "Southampton FC",
-            "away": "Ipswich Town FC",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1387576",
-      "league": "League One (England)",
-      "league_id": 41,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Northampton",
-      "away": "Barnsley",
-      "home_id": 1337,
-      "away_id": 747,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.5,
-        "draw": 3.6,
-        "away": 2.55,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Northampton",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Barnsley",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1387577",
-      "league": "League One (England)",
-      "league_id": 41,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Peterborough",
-      "away": "Mansfield Town",
-      "home_id": 1350,
-      "away_id": 1374,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.45,
-        "draw": 3.6,
-        "away": 2.6,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Peterborough",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Mansfield Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1387616",
-      "league": "League One (England)",
-      "league_id": 41,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Stockport County",
-      "away": "Port Vale",
-      "home_id": 4686,
-      "away_id": 1351,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.36,
-        "draw": 5.0,
+        "home": 1.48,
+        "draw": 3.4,
         "away": 7.0,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Stockport County",
+        "name": "Power Dynamos",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -505,7 +156,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Port Vale",
+        "name": "Zanaco",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -514,6 +165,363 @@
         "opponent_positions": null
       },
       "h2h": null
+    },
+    {
+      "id": "1416177",
+      "league": "Super League (Zambia)",
+      "league_id": 400,
+      "season": 2025,
+      "time": "16:00",
+      "home": "ZESCO United",
+      "away": "Prison Leopards",
+      "home_id": 5214,
+      "away_id": 5212,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.45,
+        "draw": 3.4,
+        "away": 7.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "ZESCO United",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Prison Leopards",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1388270",
+      "league": "2. SNL (Slovenia)",
+      "league_id": 374,
+      "season": 2025,
+      "time": "18:30",
+      "home": "Dekani",
+      "away": "Brinje-Grosuplje",
+      "home_id": 4370,
+      "away_id": 12744,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 4.33,
+        "draw": 4.1,
+        "away": 1.55,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Dekani",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Brinje-Grosuplje",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1401333",
+      "league": "Frauen Bundesliga (Germany)",
+      "league_id": 82,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Werder Bremen W",
+      "away": "Bayern Munich W",
+      "home_id": 1870,
+      "away_id": 1860,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 5.75,
+        "draw": 4.33,
+        "away": 1.42,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Werder Bremen W",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Bayern Munich W",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1418715",
+      "league": "1. Liga Promotion (Switzerland)",
+      "league_id": 510,
+      "season": 2025,
+      "time": "20:00",
+      "home": "Lausanne Sport II",
+      "away": "Young Boys II",
+      "home_id": 12693,
+      "away_id": 12698,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 3.4,
+        "draw": 4.1,
+        "away": 1.73,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Lausanne Sport II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Young Boys II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1417274",
+      "league": "FA WSL (England)",
+      "league_id": 44,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Arsenal W",
+      "away": "Leicester City WFC",
+      "home_id": 1850,
+      "away_id": 15404,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.07,
+        "draw": 11.0,
+        "away": 21.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Arsenal W",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Leicester City WFC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1396469",
+      "league": "Primeira Liga (Portugal)",
+      "league_id": 94,
+      "season": 2025,
+      "time": "22:15",
+      "home": "Sporting CP",
+      "away": "Tondela",
+      "home_id": 228,
+      "away_id": 218,
+      "source": "api-football",
+      "total_teams_in_league": 18,
+      "odds": {
+        "home": 1.12,
+        "draw": 8.0,
+        "away": 19.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Sporting CP",
+        "form": [
+          "D",
+          "L",
+          "W",
+          "W",
+          "W",
+          "L",
+          "W",
+          "D",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          5,
+          4,
+          4,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          2,
+          1
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 18,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Tondela",
+        "form": [
+          "D",
+          "D",
+          "W",
+          "D",
+          "L",
+          "D",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          5,
+          2,
+          2,
+          2
+        ],
+        "league_position": 17,
+        "total_teams_in_league": 18,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "CD Tondela",
+            "away": "Sporting Clube de Portugal",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "home": "CD Tondela",
+            "away": "Sporting Clube de Portugal",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "home": "Sporting Clube de Portugal",
+            "away": "CD Tondela",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "CD Tondela",
+            "away": "Sporting Clube de Portugal",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Sporting Clube de Portugal",
+            "away": "CD Tondela",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "home": "Sporting Clube de Portugal",
+            "away": "CD Tondela",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ]
+      }
     }
   ]
 }
