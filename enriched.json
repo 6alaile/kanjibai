@@ -1,33 +1,33 @@
 {
   "meta": {
-    "date": "2026-05-01",
-    "generatedAt": "2026-05-01T09:22:34.533998+03:00",
+    "date": "2026-05-02",
+    "generatedAt": "2026-05-02T08:46:23.868129+03:00",
     "scanned": 10,
-    "elapsedSeconds": 225.9
+    "elapsedSeconds": 320.0
   },
   "matches": [
     {
-      "id": "1380656",
-      "league": "Ekstraklasa (Poland)",
-      "league_id": 106,
+      "id": "1380362",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
       "season": 2025,
-      "time": "18:30",
-      "home": "Korona Kielce",
-      "away": "Piast Gliwice",
-      "home_id": 346,
-      "away_id": 349,
+      "time": "14:00",
+      "home": "MTK Budapest",
+      "away": "Nyiregyhaza",
+      "home_id": 2396,
+      "away_id": 2403,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.3,
-        "draw": 3.0,
+        "home": 2.25,
+        "draw": 3.4,
         "away": 3.0,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Korona Kielce",
+        "name": "MTK Budapest",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -36,7 +36,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Piast Gliwice",
+        "name": "Nyiregyhaza",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -47,184 +47,293 @@
       "h2h": null
     },
     {
-      "id": "1380365",
-      "league": "NB I (Hungary)",
-      "league_id": 271,
+      "id": "1378213",
+      "league": "Serie A (Italy)",
+      "league_id": 135,
       "season": 2025,
-      "time": "21:00",
-      "home": "Zalaegerszegi TE",
-      "away": "Puskas Academy",
-      "home_id": 2414,
-      "away_id": 2391,
+      "time": "16:00",
+      "home": "Udinese",
+      "away": "Torino",
+      "home_id": 494,
+      "away_id": 503,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.2,
-        "draw": 3.25,
-        "away": 3.2,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Zalaegerszegi TE",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Puskas Academy",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1380657",
-      "league": "Ekstraklasa (Poland)",
-      "league_id": 106,
-      "season": 2025,
-      "time": "21:30",
-      "home": "Legia Warszawa",
-      "away": "Widzew \u0141\u00f3d\u017a",
-      "home_id": 339,
-      "away_id": 6962,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.15,
-        "draw": 3.1,
+        "home": 2.3,
+        "draw": 3.2,
         "away": 3.3,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Legia Warszawa",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "name": "Udinese",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          3,
+          2,
+          0,
+          2,
+          0,
+          3,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        "league_position": 11,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Widzew \u0141\u00f3d\u017a",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "name": "Torino",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "W",
+          "L",
+          "W",
+          "W",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          1,
+          4,
+          2,
+          1,
+          2,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          0,
+          2,
+          1,
+          3,
+          0,
+          1,
+          0,
+          2
+        ],
+        "league_position": 13,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": null
+      "h2h": {
+        "matches": [
+          {
+            "home": "Torino FC",
+            "away": "Udinese Calcio",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "Udinese Calcio",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Udinese Calcio",
+            "away": "Torino FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Udinese Calcio",
+            "away": "Torino FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "Udinese Calcio",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "Udinese Calcio",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Udinese Calcio",
+            "away": "Torino FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Udinese Calcio",
+            "away": "Torino FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Torino FC",
+            "away": "Udinese Calcio",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Udinese Calcio",
+            "away": "Torino FC",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
     },
     {
-      "id": "1378210",
-      "league": "Serie A (Italy)",
-      "league_id": 135,
+      "id": "1379312",
+      "league": "Premier League (England)",
+      "league_id": 39,
       "season": 2025,
-      "time": "21:45",
-      "home": "Pisa",
-      "away": "Lecce",
-      "home_id": 801,
-      "away_id": 867,
+      "time": "17:00",
+      "home": "Brentford",
+      "away": "West Ham",
+      "home_id": 55,
+      "away_id": 48,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 3.5,
-        "draw": 3.0,
-        "away": 2.3,
+        "home": 1.9,
+        "draw": 3.8,
+        "away": 3.8,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Pisa",
+        "name": "Brentford",
         "form": [
-          "L",
-          "L",
-          "L",
+          "W",
+          "D",
           "L",
           "W",
-          "L",
-          "L",
-          "L",
-          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
           "L"
         ],
         "goals_scored": [
-          1,
-          0,
-          0,
-          0,
           3,
-          0,
-          0,
-          0,
           1,
-          0
+          0,
+          4,
+          0,
+          2,
+          0,
+          2,
+          0,
+          1
         ],
         "goals_conceded": [
           2,
           1,
-          1,
-          4,
-          1,
-          5,
-          1,
-          3,
           2,
-          1
+          3,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
         ],
-        "league_position": 20,
+        "league_position": 9,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Lecce",
+        "name": "West Ham",
         "form": [
           "W",
-          "L",
+          "D",
+          "D",
           "L",
           "W",
-          "L",
-          "L",
-          "L",
-          "L",
           "D",
-          "D"
+          "L",
+          "W",
+          "D",
+          "W"
         ],
         "goals_scored": [
           2,
-          0,
           1,
+          0,
           2,
           1,
-          0,
-          0,
-          0,
           1,
-          0
+          0,
+          4,
+          0,
+          2
         ],
         "goals_conceded": [
           0,
-          2,
-          3,
+          1,
+          0,
+          5,
+          0,
           1,
           2,
-          1,
-          3,
-          2,
-          1,
-          0
+          0,
+          0,
+          1
         ],
         "league_position": 17,
         "total_teams_in_league": 20,
@@ -233,10 +342,66 @@
       "h2h": {
         "matches": [
           {
-            "home": "US Lecce",
-            "away": "AC Pisa 1909",
+            "home": "West Ham United FC",
+            "away": "Brentford FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "West Ham United FC",
+            "away": "Brentford FC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Brentford FC",
+            "away": "West Ham United FC",
             "score": [
               1,
+              1
+            ]
+          },
+          {
+            "home": "West Ham United FC",
+            "away": "Brentford FC",
+            "score": [
+              4,
+              2
+            ]
+          },
+          {
+            "home": "Brentford FC",
+            "away": "West Ham United FC",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "home": "Brentford FC",
+            "away": "West Ham United FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "West Ham United FC",
+            "away": "Brentford FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Brentford FC",
+            "away": "West Ham United FC",
+            "score": [
+              2,
               0
             ]
           }
@@ -244,364 +409,839 @@
       }
     },
     {
-      "id": "1383039",
-      "league": "Championship (Scotland)",
-      "league_id": 180,
+      "id": "1379317",
+      "league": "Premier League (England)",
+      "league_id": 39,
       "season": 2025,
-      "time": "21:45",
-      "home": "Ayr Utd",
-      "away": "ST Johnstone",
-      "home_id": 1387,
-      "away_id": 258,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 4.1,
-        "draw": 3.7,
-        "away": 1.7,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Ayr Utd",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "ST Johnstone",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1383040",
-      "league": "Championship (Scotland)",
-      "league_id": 180,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Dunfermline",
-      "away": "Arbroath",
-      "home_id": 1388,
-      "away_id": 4249,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.1,
-        "draw": 3.25,
-        "away": 3.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Dunfermline",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Arbroath",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1383041",
-      "league": "Championship (Scotland)",
-      "league_id": 180,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Morton",
-      "away": "Airdrie United",
-      "home_id": 1383,
-      "away_id": 4668,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.2,
-        "draw": 3.2,
-        "away": 2.88,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Morton",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Airdrie United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1383042",
-      "league": "Championship (Scotland)",
-      "league_id": 180,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Partick",
-      "away": "Queen's Park",
-      "home_id": 901,
-      "away_id": 6778,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.48,
-        "draw": 3.9,
-        "away": 5.75,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Partick",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Queen's Park",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1383043",
-      "league": "Championship (Scotland)",
-      "league_id": 180,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Raith Rovers",
-      "away": "Ross County",
-      "home_id": 1385,
-      "away_id": 902,
+      "time": "17:00",
+      "home": "Newcastle",
+      "away": "Brighton",
+      "home_id": 34,
+      "away_id": 51,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
         "home": 2.55,
-        "draw": 3.25,
-        "away": 2.45,
+        "draw": 3.75,
+        "away": 2.55,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Raith Rovers",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Ross County",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1379315",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "22:00",
-      "home": "Leeds",
-      "away": "Burnley",
-      "home_id": 63,
-      "away_id": 44,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.33,
-        "draw": 5.0,
-        "away": 9.5,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Leeds",
+        "name": "Newcastle",
         "form": [
           "W",
-          "D",
-          "D",
-          "L",
-          "L",
-          "D",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          2,
-          1,
-          0,
-          0,
-          0,
-          0,
-          2,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          1,
-          1,
-          1,
-          0,
-          0,
-          1,
-          0,
-          2
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Burnley",
-        "form": [
           "L",
           "W",
           "D",
+          "W",
           "L",
-          "L",
-          "D",
           "L",
           "L",
           "L",
           "L"
         ],
         "goals_scored": [
-          0,
           3,
+          2,
+          2,
           1,
-          3,
-          0,
-          0,
           1,
-          0,
+          2,
+          1,
+          1,
           1,
           0
         ],
         "goals_conceded": [
           2,
-          2,
-          1,
-          4,
-          2,
-          0,
           3,
+          1,
+          1,
+          0,
+          7,
           2,
-          4,
+          2,
+          2,
           1
         ],
-        "league_position": 19,
+        "league_position": 15,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Brighton",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "L",
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          2,
+          2,
+          0,
+          1,
+          2,
+          2,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "league_position": 6,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Burnley FC",
-            "away": "Leeds United FC",
+            "home": "Brighton & Hove Albion FC",
+            "away": "Newcastle United FC",
             "score": [
               2,
-              0
+              1
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Leeds United FC",
+            "home": "Brighton & Hove Albion FC",
+            "away": "Newcastle United FC",
             "score": [
-              0,
-              0
+              1,
+              1
             ]
           },
           {
-            "home": "Leeds United FC",
-            "away": "Burnley FC",
+            "home": "Newcastle United FC",
+            "away": "Brighton & Hove Albion FC",
             "score": [
               0,
               1
             ]
           },
           {
-            "home": "Leeds United FC",
-            "away": "Burnley FC",
+            "home": "Newcastle United FC",
+            "away": "Brighton & Hove Albion FC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Brighton & Hove Albion FC",
+            "away": "Newcastle United FC",
             "score": [
               3,
               1
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Leeds United FC",
+            "home": "Newcastle United FC",
+            "away": "Brighton & Hove Albion FC",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "home": "Brighton & Hove Albion FC",
+            "away": "Newcastle United FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Newcastle United FC",
+            "away": "Brighton & Hove Albion FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Brighton & Hove Albion FC",
+            "away": "Newcastle United FC",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1379318",
+      "league": "Premier League (England)",
+      "league_id": 39,
+      "season": 2025,
+      "time": "17:00",
+      "home": "Wolves",
+      "away": "Sunderland",
+      "home_id": 39,
+      "away_id": 746,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 3.5,
+        "draw": 3.6,
+        "away": 2.05,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Wolves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Sunderland",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "D",
+          "W",
+          "L",
+          "W",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          1,
+          3,
+          0
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          3,
+          1,
+          0,
+          1,
+          1,
+          0,
+          4,
+          5
+        ],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Sunderland AFC",
+            "away": "Wolverhampton Wanderers FC",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1380361",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "17:00",
+      "home": "Kazincbarcikai",
+      "away": "Kisvarda FC",
+      "home_id": 2410,
+      "away_id": 2394,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 4.0,
+        "draw": 3.5,
+        "away": 1.85,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Kazincbarcikai",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Kisvarda FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1378206",
+      "league": "Serie A (Italy)",
+      "league_id": 135,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Como",
+      "away": "Napoli",
+      "home_id": 895,
+      "away_id": 492,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.25,
+        "draw": 3.3,
+        "away": 3.3,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Como",
+        "form": [
+          "D",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          3,
+          2,
+          2,
+          5,
+          0,
+          3,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Napoli",
+        "form": [
+          "D",
+          "L",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          0,
+          4
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "SSC Napoli",
+            "away": "Como 1907",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Como 1907",
+            "away": "SSC Napoli",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "SSC Napoli",
+            "away": "Como 1907",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1379309",
+      "league": "Premier League (England)",
+      "league_id": 39,
+      "season": 2025,
+      "time": "19:30",
+      "home": "Arsenal",
+      "away": "Fulham",
+      "home_id": 42,
+      "away_id": 36,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.45,
+        "draw": 4.5,
+        "away": 7.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Arsenal",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W",
+          "L",
+          "D",
+          "L",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          1
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Fulham",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "L",
+          "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          3,
+          2,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          1,
+          1,
+          1,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Fulham FC",
+            "away": "Arsenal FC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Arsenal FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Arsenal FC",
             "score": [
               1,
               1
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Leeds United FC",
+            "home": "Fulham FC",
+            "away": "Arsenal FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Arsenal FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Arsenal FC",
             "score": [
               0,
+              3
+            ]
+          },
+          {
+            "home": "Arsenal FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Arsenal FC",
+            "away": "Fulham FC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Arsenal FC",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1380360",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "20:15",
+      "home": "Gyori ETO FC",
+      "away": "Diosgyori VTK",
+      "home_id": 2402,
+      "away_id": 2393,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.18,
+        "draw": 6.5,
+        "away": 13.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Gyori ETO FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Diosgyori VTK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1378204",
+      "league": "Serie A (Italy)",
+      "league_id": 135,
+      "season": 2025,
+      "time": "21:45",
+      "home": "Atalanta",
+      "away": "Genoa",
+      "home_id": 499,
+      "away_id": 495,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.55,
+        "draw": 4.2,
+        "away": 6.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Atalanta",
+        "form": [
+          "L",
+          "D",
+          "L",
+          "D",
+          "L",
+          "W",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          3,
+          0,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          6,
+          1,
+          4,
+          0,
+          0,
+          1,
+          1,
+          3
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Genoa",
+        "form": [
+          "D",
+          "W",
+          "L",
+          "W",
+          "W",
+          "L",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          3,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Genoa CFC",
+            "away": "Atalanta BC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Genoa CFC",
+            "away": "Atalanta BC",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "home": "Atalanta BC",
+            "away": "Genoa CFC",
+            "score": [
+              5,
+              1
+            ]
+          },
+          {
+            "home": "Genoa CFC",
+            "away": "Atalanta BC",
+            "score": [
+              1,
               4
             ]
           },
           {
-            "home": "Leeds United FC",
-            "away": "Burnley FC",
+            "home": "Atalanta BC",
+            "away": "Genoa CFC",
             "score": [
-              1,
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Atalanta BC",
+            "away": "Genoa CFC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Genoa CFC",
+            "away": "Atalanta BC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Genoa CFC",
+            "away": "Atalanta BC",
+            "score": [
+              3,
+              4
+            ]
+          },
+          {
+            "home": "Atalanta BC",
+            "away": "Genoa CFC",
+            "score": [
+              0,
               0
             ]
           }
