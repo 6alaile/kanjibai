@@ -1,33 +1,33 @@
 {
   "meta": {
-    "date": "2026-05-02",
-    "generatedAt": "2026-05-02T08:46:23.868129+03:00",
+    "date": "2026-05-03",
+    "generatedAt": "2026-05-03T09:14:06.116556+03:00",
     "scanned": 10,
-    "elapsedSeconds": 320.0
+    "elapsedSeconds": 323.3
   },
   "matches": [
     {
-      "id": "1380362",
-      "league": "NB I (Hungary)",
-      "league_id": 271,
+      "id": "1380655",
+      "league": "Ekstraklasa (Poland)",
+      "league_id": 106,
       "season": 2025,
-      "time": "14:00",
-      "home": "MTK Budapest",
-      "away": "Nyiregyhaza",
-      "home_id": 2396,
-      "away_id": 2403,
+      "time": "13:15",
+      "home": "GKS Katowice",
+      "away": "Nieciecza",
+      "home_id": 3484,
+      "away_id": 3487,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.25,
-        "draw": 3.4,
-        "away": 3.0,
+        "home": 1.7,
+        "draw": 4.0,
+        "away": 4.5,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "MTK Budapest",
+        "name": "GKS Katowice",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -36,7 +36,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Nyiregyhaza",
+        "name": "Nieciecza",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -47,250 +47,61 @@
       "h2h": null
     },
     {
-      "id": "1378213",
+      "id": "1378205",
       "league": "Serie A (Italy)",
       "league_id": 135,
       "season": 2025,
-      "time": "16:00",
-      "home": "Udinese",
-      "away": "Torino",
-      "home_id": 494,
-      "away_id": 503,
+      "time": "13:30",
+      "home": "Bologna",
+      "away": "Cagliari",
+      "home_id": 500,
+      "away_id": 490,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.3,
-        "draw": 3.2,
-        "away": 3.3,
+        "home": 1.8,
+        "draw": 3.5,
+        "away": 4.75,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Udinese",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "D",
-          "L",
-          "W",
-          "D",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          3,
-          2,
-          0,
-          2,
-          0,
-          3,
-          0,
-          3
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          0,
-          2,
-          1,
-          0,
-          0,
-          0,
-          1,
-          3
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Torino",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "L",
-          "W",
-          "L",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          2,
-          1,
-          4,
-          2,
-          1,
-          2,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          0,
-          2,
-          1,
-          3,
-          0,
-          1,
-          0,
-          2
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Torino FC",
-            "away": "Udinese Calcio",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Torino FC",
-            "away": "Udinese Calcio",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Udinese Calcio",
-            "away": "Torino FC",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "home": "Udinese Calcio",
-            "away": "Torino FC",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "home": "Torino FC",
-            "away": "Udinese Calcio",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Torino FC",
-            "away": "Udinese Calcio",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Udinese Calcio",
-            "away": "Torino FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Udinese Calcio",
-            "away": "Torino FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Torino FC",
-            "away": "Udinese Calcio",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Udinese Calcio",
-            "away": "Torino FC",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1379312",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "17:00",
-      "home": "Brentford",
-      "away": "West Ham",
-      "home_id": 55,
-      "away_id": 48,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.9,
-        "draw": 3.8,
-        "away": 3.8,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Brentford",
+        "name": "Bologna",
         "form": [
           "W",
-          "D",
+          "W",
+          "W",
           "L",
           "W",
-          "D",
-          "D",
-          "D",
-          "D",
-          "D",
+          "L",
+          "W",
+          "W",
+          "L",
           "L"
         ],
         "goals_scored": [
-          3,
+          2,
+          1,
+          1,
+          1,
           1,
           0,
-          4,
-          0,
+          2,
           2,
           0,
-          2,
-          0,
-          1
+          0
         ],
         "goals_conceded": [
+          1,
+          0,
+          0,
+          2,
+          0,
           2,
           1,
-          2,
-          3,
           0,
           2,
-          0,
-          2,
-          0,
           2
         ],
         "league_position": 9,
@@ -298,403 +109,146 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "West Ham",
-        "form": [
-          "W",
-          "D",
-          "D",
-          "L",
-          "W",
-          "D",
-          "L",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          0,
-          2,
-          1,
-          1,
-          0,
-          4,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          5,
-          0,
-          1,
-          2,
-          0,
-          0,
-          1
-        ],
-        "league_position": 17,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "West Ham United FC",
-            "away": "Brentford FC",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "home": "West Ham United FC",
-            "away": "Brentford FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Brentford FC",
-            "away": "West Ham United FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "West Ham United FC",
-            "away": "Brentford FC",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "home": "Brentford FC",
-            "away": "West Ham United FC",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "home": "Brentford FC",
-            "away": "West Ham United FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "West Ham United FC",
-            "away": "Brentford FC",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "home": "Brentford FC",
-            "away": "West Ham United FC",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1379317",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "17:00",
-      "home": "Newcastle",
-      "away": "Brighton",
-      "home_id": 34,
-      "away_id": 51,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.55,
-        "draw": 3.75,
-        "away": 2.55,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Newcastle",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "L",
-          "L",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          2,
-          2,
-          1,
-          1,
-          2,
-          1,
-          1,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          1,
-          1,
-          0,
-          7,
-          2,
-          2,
-          2,
-          1
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Brighton",
+        "name": "Cagliari",
         "form": [
           "L",
-          "L",
-          "W",
-          "W",
-          "L",
-          "W",
-          "W",
-          "W",
           "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "W",
+          "L",
           "W"
         ],
         "goals_scored": [
           0,
           0,
-          2,
-          2,
+          1,
+          1,
+          1,
           0,
           1,
-          2,
-          2,
-          2,
+          1,
+          0,
           3
         ],
         "goals_conceded": [
-          1,
-          1,
-          0,
-          1,
-          1,
-          0,
-          1,
-          0,
           2,
-          0
+          0,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0,
+          3,
+          2
         ],
-        "league_position": 6,
+        "league_position": 16,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Brighton & Hove Albion FC",
-            "away": "Newcastle United FC",
+            "home": "Cagliari Calcio",
+            "away": "Bologna FC 1909",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Bologna FC 1909",
+            "away": "Cagliari Calcio",
             "score": [
               2,
               1
             ]
           },
           {
-            "home": "Brighton & Hove Albion FC",
-            "away": "Newcastle United FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Newcastle United FC",
-            "away": "Brighton & Hove Albion FC",
+            "home": "Cagliari Calcio",
+            "away": "Bologna FC 1909",
             "score": [
               0,
+              2
+            ]
+          },
+          {
+            "home": "Cagliari Calcio",
+            "away": "Bologna FC 1909",
+            "score": [
+              2,
               1
             ]
           },
           {
-            "home": "Newcastle United FC",
-            "away": "Brighton & Hove Albion FC",
+            "home": "Bologna FC 1909",
+            "away": "Cagliari Calcio",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Cagliari Calcio",
+            "away": "Bologna FC 1909",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Bologna FC 1909",
+            "away": "Cagliari Calcio",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Cagliari Calcio",
+            "away": "Bologna FC 1909",
             "score": [
               1,
-              1
+              0
             ]
           },
           {
-            "home": "Brighton & Hove Albion FC",
-            "away": "Newcastle United FC",
+            "home": "Bologna FC 1909",
+            "away": "Cagliari Calcio",
             "score": [
               3,
-              1
-            ]
-          },
-          {
-            "home": "Newcastle United FC",
-            "away": "Brighton & Hove Albion FC",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "home": "Brighton & Hove Albion FC",
-            "away": "Newcastle United FC",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Newcastle United FC",
-            "away": "Brighton & Hove Albion FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Brighton & Hove Albion FC",
-            "away": "Newcastle United FC",
-            "score": [
-              1,
-              1
+              2
             ]
           }
         ]
       }
     },
     {
-      "id": "1379318",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "17:00",
-      "home": "Wolves",
-      "away": "Sunderland",
-      "home_id": 39,
-      "away_id": 746,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.5,
-        "draw": 3.6,
-        "away": 2.05,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Wolves",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Sunderland",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "D",
-          "W",
-          "L",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          1,
-          1,
-          1,
-          0,
-          2,
-          1,
-          3,
-          0
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          3,
-          1,
-          0,
-          1,
-          1,
-          0,
-          4,
-          5
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Sunderland AFC",
-            "away": "Wolverhampton Wanderers FC",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1380361",
+      "id": "1380363",
       "league": "NB I (Hungary)",
       "league_id": 271,
       "season": 2025,
-      "time": "17:00",
-      "home": "Kazincbarcikai",
-      "away": "Kisvarda FC",
-      "home_id": 2410,
-      "away_id": 2394,
+      "time": "14:30",
+      "home": "Paks",
+      "away": "Debreceni VSC",
+      "home_id": 2390,
+      "away_id": 2392,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 4.0,
-        "draw": 3.5,
-        "away": 1.85,
+        "home": 2.15,
+        "draw": 3.8,
+        "away": 2.9,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Kazincbarcikai",
+        "name": "Paks",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -703,7 +257,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Kisvarda FC",
+        "name": "Debreceni VSC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -714,458 +268,285 @@
       "h2h": null
     },
     {
-      "id": "1378206",
+      "id": "1378212",
       "league": "Serie A (Italy)",
       "league_id": 135,
       "season": 2025,
-      "time": "19:00",
-      "home": "Como",
-      "away": "Napoli",
-      "home_id": 895,
-      "away_id": 492,
+      "time": "16:00",
+      "home": "Sassuolo",
+      "away": "AC Milan",
+      "home_id": 488,
+      "away_id": 489,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.25,
-        "draw": 3.3,
-        "away": 3.3,
+        "home": 4.5,
+        "draw": 4.1,
+        "away": 1.73,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Como",
+        "name": "Sassuolo",
         "form": [
-          "D",
           "W",
           "W",
           "W",
-          "W",
-          "W",
-          "D",
           "L",
           "L",
-          "W"
+          "D",
+          "W",
+          "L",
+          "W",
+          "D"
         ],
         "goals_scored": [
-          1,
           2,
           3,
           2,
-          2,
-          5,
+          1,
           0,
-          3,
           1,
-          2
+          2,
+          1,
+          2,
+          0
         ],
         "goals_conceded": [
           1,
           0,
           1,
-          1,
-          1,
-          0,
-          0,
-          4,
           2,
+          1,
+          1,
+          1,
+          2,
+          1,
           0
         ],
-        "league_position": 5,
+        "league_position": 11,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Napoli",
+        "name": "AC Milan",
         "form": [
           "D",
           "L",
           "W",
           "W",
-          "W",
-          "W",
-          "W",
-          "D",
           "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          2,
-          2,
-          2,
-          1,
-          1,
-          1,
-          0,
-          4
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          1,
-          1,
-          1,
-          0,
-          0,
-          1,
-          2,
-          0
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "SSC Napoli",
-            "away": "Como 1907",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Como 1907",
-            "away": "SSC Napoli",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "SSC Napoli",
-            "away": "Como 1907",
-            "score": [
-              3,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1379309",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "19:30",
-      "home": "Arsenal",
-      "away": "Fulham",
-      "home_id": 42,
-      "away_id": 36,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.45,
-        "draw": 4.5,
-        "away": 7.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Arsenal",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
           "W",
           "L",
-          "D",
           "L",
           "W",
           "D"
         ],
         "goals_scored": [
           1,
-          1,
+          0,
           2,
-          2,
-          1,
           1,
           0,
+          3,
+          0,
+          0,
           1,
-          1,
-          1
+          0
         ],
         "goals_conceded": [
-          0,
+          1,
           1,
           0,
           0,
-          0,
-          2,
-          0,
-          2,
-          0,
-          1
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Fulham",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "W",
-          "L",
-          "D",
-          "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
           1,
-          0,
+          2,
+          1,
           3,
-          2,
-          0,
-          0,
-          3,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          1,
-          1,
-          1,
-          0,
-          1,
-          2,
           0,
           0
         ],
-        "league_position": 10,
+        "league_position": 3,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Fulham FC",
-            "away": "Arsenal FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Arsenal FC",
-            "away": "Fulham FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Fulham FC",
-            "away": "Arsenal FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Fulham FC",
-            "away": "Arsenal FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Arsenal FC",
-            "away": "Fulham FC",
+            "home": "AC Milan",
+            "away": "US Sassuolo Calcio",
             "score": [
               2,
               2
             ]
           },
           {
-            "home": "Fulham FC",
-            "away": "Arsenal FC",
+            "home": "US Sassuolo Calcio",
+            "away": "AC Milan",
             "score": [
-              0,
+              3,
               3
             ]
           },
           {
-            "home": "Arsenal FC",
-            "away": "Fulham FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Arsenal FC",
-            "away": "Fulham FC",
+            "home": "AC Milan",
+            "away": "US Sassuolo Calcio",
             "score": [
               1,
-              1
+              0
             ]
           },
           {
-            "home": "Fulham FC",
-            "away": "Arsenal FC",
+            "home": "AC Milan",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              2,
+              5
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "AC Milan",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "AC Milan",
             "score": [
               0,
               3
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "home": "AC Milan",
+            "away": "US Sassuolo Calcio",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "US Sassuolo Calcio",
+            "away": "AC Milan",
+            "score": [
+              1,
+              2
             ]
           }
         ]
       }
     },
     {
-      "id": "1380360",
-      "league": "NB I (Hungary)",
-      "league_id": 271,
+      "id": "1379311",
+      "league": "Premier League (England)",
+      "league_id": 39,
       "season": 2025,
-      "time": "20:15",
-      "home": "Gyori ETO FC",
-      "away": "Diosgyori VTK",
-      "home_id": 2402,
-      "away_id": 2393,
+      "time": "16:00",
+      "home": "Bournemouth",
+      "away": "Crystal Palace",
+      "home_id": 35,
+      "away_id": 52,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.18,
-        "draw": 6.5,
-        "away": 13.0,
+        "home": 1.62,
+        "draw": 4.1,
+        "away": 5.25,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Gyori ETO FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "name": "Bournemouth",
+        "form": [
+          "D",
+          "W",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          2
+        ],
+        "league_position": 8,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Diosgyori VTK",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1378204",
-      "league": "Serie A (Italy)",
-      "league_id": 135,
-      "season": 2025,
-      "time": "21:45",
-      "home": "Atalanta",
-      "away": "Genoa",
-      "home_id": 499,
-      "away_id": 495,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.55,
-        "draw": 4.2,
-        "away": 6.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Atalanta",
+        "name": "Crystal Palace",
         "form": [
-          "L",
           "D",
-          "L",
-          "D",
-          "L",
-          "W",
           "W",
           "L",
+          "W",
+          "L",
+          "W",
+          "D",
+          "W",
           "D",
           "L"
         ],
         "goals_scored": [
           1,
+          1,
           2,
-          1,
-          1,
           1,
           1,
           3,
           0,
-          1,
-          2
+          2,
+          0,
+          1
         ],
         "goals_conceded": [
-          2,
-          2,
-          6,
           1,
-          4,
           0,
+          3,
+          0,
+          2,
+          1,
           0,
           1,
-          1,
+          0,
           3
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Genoa",
-        "form": [
-          "D",
-          "W",
-          "L",
-          "W",
-          "W",
-          "L",
-          "L",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          0,
-          2,
-          2,
-          0,
-          0,
-          2,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          2,
-          1,
-          0,
-          2,
-          2,
-          1,
-          1,
-          2
         ],
         "league_position": 14,
         "total_teams_in_league": 20,
@@ -1174,75 +555,799 @@
       "h2h": {
         "matches": [
           {
-            "home": "Genoa CFC",
-            "away": "Atalanta BC",
+            "home": "Crystal Palace FC",
+            "away": "AFC Bournemouth",
             "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Genoa CFC",
-            "away": "Atalanta BC",
-            "score": [
-              2,
+              3,
               3
             ]
           },
           {
-            "home": "Atalanta BC",
-            "away": "Genoa CFC",
+            "home": "Crystal Palace FC",
+            "away": "AFC Bournemouth",
             "score": [
-              5,
-              1
+              0,
+              0
             ]
           },
           {
-            "home": "Genoa CFC",
-            "away": "Atalanta BC",
+            "home": "AFC Bournemouth",
+            "away": "Crystal Palace FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "AFC Bournemouth",
+            "away": "Crystal Palace FC",
             "score": [
               1,
-              4
+              0
             ]
           },
           {
-            "home": "Atalanta BC",
-            "away": "Genoa CFC",
+            "home": "Crystal Palace FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Crystal Palace FC",
+            "away": "AFC Bournemouth",
             "score": [
               2,
               0
             ]
           },
           {
-            "home": "Atalanta BC",
-            "away": "Genoa CFC",
+            "home": "AFC Bournemouth",
+            "away": "Crystal Palace FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "AFC Bournemouth",
+            "away": "Crystal Palace FC",
+            "score": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1380364",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "17:00",
+      "home": "Ujpest",
+      "away": "Ferencvarosi TC",
+      "home_id": 2255,
+      "away_id": 651,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 5.0,
+        "draw": 4.2,
+        "away": 1.55,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Ujpest",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Ferencvarosi TC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1379316",
+      "league": "Premier League (England)",
+      "league_id": 39,
+      "season": 2025,
+      "time": "17:30",
+      "home": "Manchester United",
+      "away": "Liverpool",
+      "home_id": 33,
+      "away_id": 40,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.2,
+        "draw": 3.8,
+        "away": 2.9,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Manchester United",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L",
+          "W",
+          "D",
+          "L",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          3,
+          2,
+          1,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          2,
+          2,
+          0,
+          1
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Liverpool",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "W",
+          "L",
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          4,
+          1,
+          0,
+          2,
+          0,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Liverpool FC",
+            "away": "Manchester United FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Manchester United FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Manchester United FC",
+            "away": "Liverpool FC",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "home": "Manchester United FC",
+            "away": "Liverpool FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Manchester United FC",
             "score": [
               0,
               0
             ]
           },
           {
-            "home": "Genoa CFC",
-            "away": "Atalanta BC",
+            "home": "Liverpool FC",
+            "away": "Manchester United FC",
             "score": [
-              0,
+              7,
               0
             ]
           },
           {
-            "home": "Genoa CFC",
-            "away": "Atalanta BC",
+            "home": "Manchester United FC",
+            "away": "Liverpool FC",
             "score": [
-              3,
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Manchester United FC",
+            "score": [
+              4,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1378209",
+      "league": "Serie A (Italy)",
+      "league_id": 135,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Juventus",
+      "away": "Hellas Verona",
+      "home_id": 496,
+      "away_id": 504,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.15,
+        "draw": 7.5,
+        "away": 19.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Juventus",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "W",
+          "W",
+          "D",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          3,
+          3,
+          4,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Hellas Verona",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "Hellas Verona FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "Hellas Verona FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "Hellas Verona FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Juventus FC",
+            "away": "Hellas Verona FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Hellas Verona FC",
+            "away": "Juventus FC",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1379310",
+      "league": "Premier League (England)",
+      "league_id": 39,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Aston Villa",
+      "away": "Tottenham",
+      "home_id": 66,
+      "away_id": 47,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.1,
+        "draw": 3.6,
+        "away": 3.3,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Aston Villa",
+        "form": [
+          "D",
+          "W",
+          "D",
+          "L",
+          "L",
+          "L",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          2,
+          1,
+          4,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          2,
+          4,
+          3,
+          0,
+          1,
+          3,
+          1
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Tottenham",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "W",
+          "L",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          3,
+          0,
+          0,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          4,
+          2,
+          3,
+          5,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Tottenham Hotspur FC",
+            "away": "Aston Villa FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Tottenham Hotspur FC",
+            "away": "Aston Villa FC",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              0,
               4
             ]
           },
           {
-            "home": "Atalanta BC",
-            "away": "Genoa CFC",
+            "home": "Tottenham Hotspur FC",
+            "away": "Aston Villa FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Tottenham Hotspur FC",
+            "away": "Aston Villa FC",
             "score": [
               0,
-              0
+              2
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              0,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1378208",
+      "league": "Serie A (Italy)",
+      "league_id": 135,
+      "season": 2025,
+      "time": "21:45",
+      "home": "Inter",
+      "away": "Parma",
+      "home_id": 505,
+      "away_id": 523,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.2,
+        "draw": 7.0,
+        "away": 13.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Inter",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D",
+          "D",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          5,
+          4,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0,
+          1,
+          1,
+          1,
+          2,
+          3,
+          0,
+          2
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Parma",
+        "form": [
+          "W",
+          "W",
+          "D",
+          "D",
+          "L",
+          "L",
+          "D",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          0,
+          4,
+          2,
+          1,
+          1,
+          0,
+          0
+        ],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Parma Calcio 1913",
+            "away": "FC Internazionale Milano",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Parma Calcio 1913",
+            "away": "FC Internazionale Milano",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Parma Calcio 1913",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "home": "Parma Calcio 1913",
+            "away": "FC Internazionale Milano",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "FC Internazionale Milano",
+            "away": "Parma Calcio 1913",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Parma Calcio 1913",
+            "away": "FC Internazionale Milano",
+            "score": [
+              1,
+              2
             ]
           }
         ]
