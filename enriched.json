@@ -1,1276 +1,709 @@
 {
   "meta": {
-    "date": "2026-05-13",
-    "generatedAt": "2026-05-13T09:34:25.168121+03:00",
-    "scanned": 10,
-    "elapsedSeconds": 330.9
+    "date": "2026-05-14",
+    "generatedAt": "2026-05-14T09:29:58.243191+03:00",
+    "scanned": 9,
+    "elapsedSeconds": 139.9
   },
   "matches": [
     {
-      "id": "1391616",
-      "league": "Premier League (Ukraine)",
-      "league_id": 333,
+      "id": "1391857",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
       "season": 2025,
-      "time": "15:30",
-      "home": "LNZ Cherkasy",
-      "away": "SK Poltava",
-      "home_id": 17161,
-      "away_id": 17165,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.12,
-        "draw": 7.0,
-        "away": 17.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "LNZ Cherkasy",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "SK Poltava",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1380654",
-      "league": "Ekstraklasa (Poland)",
-      "league_id": 106,
-      "season": 2025,
-      "time": "19:00",
-      "home": "Arka Gdynia",
-      "away": "Gornik Zabrze",
-      "home_id": 344,
-      "away_id": 340,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.5,
-        "draw": 3.25,
-        "away": 2.05,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Arka Gdynia",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Gornik Zabrze",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1387951",
-      "league": "Ligue 1 (France)",
-      "league_id": 61,
-      "season": 2025,
-      "time": "20:00",
-      "home": "Stade Brestois 29",
-      "away": "Strasbourg",
-      "home_id": 106,
-      "away_id": 95,
-      "source": "api-football",
-      "total_teams_in_league": 18,
-      "odds": {
-        "home": 2.75,
-        "draw": 3.6,
-        "away": 2.45,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Stade Brestois 29",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "L",
-          "L",
-          "D",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          2,
-          0,
-          0,
-          3,
-          1,
-          3,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          2,
-          3,
-          4,
-          1,
-          3,
-          4,
-          1
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 18,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Strasbourg",
-        "form": [
-          "W",
-          "D",
-          "D",
-          "D",
-          "W",
-          "W",
-          "L",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          0,
-          0,
-          3,
-          3,
-          0,
-          3,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          0,
-          2,
-          1,
-          3,
-          2,
-          2,
-          1
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 18,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Stade Brestois 29",
-            "away": "RC Strasbourg Alsace",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "home": "Stade Brestois 29",
-            "away": "RC Strasbourg Alsace",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Stade Brestois 29",
-            "away": "RC Strasbourg Alsace",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Stade Brestois 29",
-            "away": "RC Strasbourg Alsace",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "home": "RC Strasbourg Alsace",
-            "away": "Stade Brestois 29",
-            "score": [
-              2,
-              2
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1391172",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
-      "season": 2025,
-      "time": "20:00",
-      "home": "Espanyol",
-      "away": "Athletic Club",
-      "home_id": 540,
-      "away_id": 531,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.62,
-        "draw": 3.3,
-        "away": 2.7,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Espanyol",
-        "form": [
-          "D",
-          "D",
-          "L",
-          "L",
-          "D",
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          2,
-          2,
-          0,
-          4,
-          1,
-          0,
-          2,
-          2
-        ],
-        "league_position": 18,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Athletic Club",
-        "form": [
-          "D",
-          "L",
-          "L",
-          "W",
-          "L",
-          "L",
-          "W",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          0,
-          2,
-          0,
-          1,
-          1,
-          2,
-          4,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          3,
-          1,
-          2,
-          2,
-          0,
-          3,
-          2,
-          1
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Athletic Club",
-            "away": "RCD Espanyol de Barcelona",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "RCD Espanyol de Barcelona",
-            "away": "Athletic Club",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Athletic Club",
-            "away": "RCD Espanyol de Barcelona",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "home": "RCD Espanyol de Barcelona",
-            "away": "Athletic Club",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Athletic Club",
-            "away": "RCD Espanyol de Barcelona",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Athletic Club",
-            "away": "RCD Espanyol de Barcelona",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "RCD Espanyol de Barcelona",
-            "away": "Athletic Club",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "RCD Espanyol de Barcelona",
-            "away": "Athletic Club",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1391178",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
-      "season": 2025,
-      "time": "20:00",
-      "home": "Villarreal",
-      "away": "Sevilla",
-      "home_id": 533,
-      "away_id": 536,
+      "time": "18:00",
+      "home": "Admira Wacker",
+      "away": "Floridsdorfer AC",
+      "home_id": 1023,
+      "away_id": 1395,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
         "home": 2.05,
         "draw": 3.3,
-        "away": 3.7,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Villarreal",
-        "form": [
-          "L",
-          "W",
-          "D",
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          1,
-          3,
-          0,
-          2,
-          1,
-          2,
-          5,
-          1
-        ],
-        "goals_conceded": [
-          4,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Sevilla",
-        "form": [
-          "D",
-          "D",
-          "L",
-          "L",
-          "L",
-          "W",
-          "L",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          2,
-          0,
-          0,
-          2,
-          0,
-          1,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          5,
-          2,
-          1,
-          1,
-          2,
-          2,
-          0,
-          1
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Sevilla FC",
-            "away": "Villarreal CF",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Villarreal CF",
-            "away": "Sevilla FC",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Villarreal CF",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Villarreal CF",
-            "away": "Sevilla FC",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Villarreal CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Villarreal CF",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Villarreal CF",
-            "away": "Sevilla FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Villarreal CF",
-            "away": "Sevilla FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Villarreal CF",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Villarreal CF",
-            "away": "Sevilla FC",
-            "score": [
-              4,
-              0
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1380661",
-      "league": "Ekstraklasa (Poland)",
-      "league_id": 106,
-      "season": 2025,
-      "time": "21:30",
-      "home": "Rak\u00f3w Cz\u0119stochowa",
-      "away": "Jagiellonia",
-      "home_id": 3491,
-      "away_id": 336,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.05,
-        "draw": 3.4,
-        "away": 3.25,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Rak\u00f3w Cz\u0119stochowa",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Jagiellonia",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1379275",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "22:00",
-      "home": "Manchester City",
-      "away": "Crystal Palace",
-      "home_id": 50,
-      "away_id": 52,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.2,
-        "draw": 7.5,
-        "away": 12.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Manchester City",
-        "form": [
-          "W",
-          "D",
-          "L",
-          "D",
-          "L",
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          1,
-          1,
-          3,
-          2,
-          1,
-          3,
-          3
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          3,
-          1,
-          2,
-          0,
-          1,
-          0,
-          3,
-          0
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Crystal Palace",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "D",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          3,
-          0,
-          2,
-          0,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          2,
-          1,
-          0,
-          1,
-          0,
-          3,
-          3,
-          2
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Crystal Palace FC",
-            "away": "Manchester City FC",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Crystal Palace FC",
-            "score": [
-              5,
-              2
-            ]
-          },
-          {
-            "home": "Crystal Palace FC",
-            "away": "Manchester City FC",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "home": "Crystal Palace FC",
-            "away": "Manchester City FC",
-            "score": [
-              2,
-              4
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Crystal Palace FC",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "home": "Crystal Palace FC",
-            "away": "Manchester City FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Crystal Palace FC",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "home": "Crystal Palace FC",
-            "away": "Manchester City FC",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Crystal Palace FC",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1387952",
-      "league": "Ligue 1 (France)",
-      "league_id": 61,
-      "season": 2025,
-      "time": "22:00",
-      "home": "Lens",
-      "away": "Paris Saint Germain",
-      "home_id": 116,
-      "away_id": 85,
-      "source": "api-football",
-      "total_teams_in_league": 18,
-      "odds": {
-        "home": 3.4,
-        "draw": 3.9,
-        "away": 2.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Lens",
-        "form": [
-          "L",
-          "D",
-          "W",
-          "L",
-          "W",
-          "L",
-          "W",
-          "D",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          3,
-          1,
-          5,
-          0,
-          3,
-          3,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          0,
-          2,
-          1,
-          3,
-          2,
-          3,
-          1,
-          0
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 18,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Paris Saint Germain",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 18,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Racing Club de Lens",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Racing Club de Lens",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "home": "Racing Club de Lens",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Racing Club de Lens",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Racing Club de Lens",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1391169",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
-      "season": 2025,
-      "time": "22:30",
-      "home": "Alaves",
-      "away": "Barcelona",
-      "home_id": 542,
-      "away_id": 529,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.2,
-        "draw": 4.0,
-        "away": 2.1,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Alaves",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Barcelona",
-        "form": [
-          "D",
-          "D",
-          "L",
-          "L",
-          "D",
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          2,
-          2,
-          0,
-          4,
-          1,
-          0,
-          2,
-          2
-        ],
-        "league_position": 18,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1391173",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
-      "season": 2025,
-      "time": "22:30",
-      "home": "Getafe",
-      "away": "Mallorca",
-      "home_id": 546,
-      "away_id": 798,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.2,
-        "draw": 3.2,
         "away": 3.5,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Getafe",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "W",
-          "L",
-          "W",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          2,
-          2,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          1,
-          1,
-          0,
-          1,
-          0,
-          2,
-          2,
-          0
-        ],
-        "league_position": 7,
+        "name": "Admira Wacker",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Mallorca",
+        "name": "Floridsdorfer AC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391858",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
+      "season": 2025,
+      "time": "18:00",
+      "home": "Austria Lustenau",
+      "away": "SKU Amstetten",
+      "home_id": 1399,
+      "away_id": 1404,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.65,
+        "draw": 3.75,
+        "away": 5.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Austria Lustenau",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "SKU Amstetten",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391859",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
+      "season": 2025,
+      "time": "18:00",
+      "home": "SKN ST. Polten",
+      "away": "WSPG Wels",
+      "home_id": 1027,
+      "away_id": 22213,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.4,
+        "draw": 4.5,
+        "away": 7.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "SKN ST. Polten",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "WSPG Wels",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391860",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
+      "season": 2025,
+      "time": "18:00",
+      "home": "Austria Klagenfurt",
+      "away": "FC Liefering",
+      "home_id": 1405,
+      "away_id": 1400,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 4.2,
+        "draw": 3.9,
+        "away": 1.73,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Austria Klagenfurt",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "FC Liefering",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391861",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
+      "season": 2025,
+      "time": "18:00",
+      "home": "First Vienna",
+      "away": "Schwarz-Wei\u00df Bregenz",
+      "home_id": 4990,
+      "away_id": 8259,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.67,
+        "draw": 4.33,
+        "away": 4.2,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "First Vienna",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Schwarz-Wei\u00df Bregenz",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391863",
+      "league": "2. Liga (Austria)",
+      "league_id": 219,
+      "season": 2025,
+      "time": "18:00",
+      "home": "Sturm Graz II",
+      "away": "Rapid Wien II",
+      "home_id": 8251,
+      "away_id": 8247,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.15,
+        "draw": 3.4,
+        "away": 3.2,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Sturm Graz II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Rapid Wien II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1391177",
+      "league": "La Liga (Spain)",
+      "league_id": 140,
+      "season": 2025,
+      "time": "20:00",
+      "home": "Valencia",
+      "away": "Rayo Vallecano",
+      "home_id": 532,
+      "away_id": 728,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.15,
+        "draw": 3.3,
+        "away": 3.6,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Valencia",
         "form": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "L",
           "L",
           "D",
           "W",
           "L",
-          "W",
-          "W",
-          "D",
-          "L",
-          "W",
-          "D"
+          "W"
         ],
         "goals_scored": [
+          1,
+          3,
           0,
           2,
           2,
+          0,
           1,
           2,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          0,
           3,
           1,
           1,
           1,
+          2,
+          0
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Rayo Vallecano",
+        "form": [
+          "W",
+          "D",
+          "D",
+          "L",
+          "W",
+          "L",
+          "W",
+          "D",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          3,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          3,
+          2,
           1
         ],
         "goals_conceded": [
-          1,
-          2,
-          1,
-          2,
-          1,
           0,
           1,
-          2,
+          1,
+          1,
+          0,
+          3,
+          0,
+          3,
           0,
           1
         ],
-        "league_position": 14,
+        "league_position": 11,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Rayo Vallecano de Madrid",
+            "away": "Valencia CF",
             "score": [
               1,
-              0
+              1
             ]
           },
           {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Rayo Vallecano de Madrid",
+            "away": "Valencia CF",
             "score": [
               1,
-              2
+              1
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "RCD Mallorca",
+            "home": "Valencia CF",
+            "away": "Rayo Vallecano de Madrid",
             "score": [
               0,
               1
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "RCD Mallorca",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Valencia CF",
+            "away": "Rayo Vallecano de Madrid",
             "score": [
               0,
               0
             ]
           },
           {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Rayo Vallecano de Madrid",
+            "away": "Valencia CF",
             "score": [
-              3,
+              0,
               1
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "RCD Mallorca",
+            "home": "Valencia CF",
+            "away": "Rayo Vallecano de Madrid",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Rayo Vallecano de Madrid",
+            "away": "Valencia CF",
             "score": [
               2,
-              0
+              1
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "RCD Mallorca",
+            "home": "Rayo Vallecano de Madrid",
+            "away": "Valencia CF",
             "score": [
               1,
-              0
+              1
             ]
           },
           {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Valencia CF",
+            "away": "Rayo Vallecano de Madrid",
             "score": [
-              0,
-              0
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1391174",
+      "league": "La Liga (Spain)",
+      "league_id": 140,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Girona",
+      "away": "Real Sociedad",
+      "home_id": 547,
+      "away_id": 548,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.95,
+        "draw": 3.8,
+        "away": 3.6,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Girona",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W",
+          "D",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          3,
+          2,
+          1,
+          1
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Real Sociedad",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "W",
+          "D",
+          "L",
+          "D",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          0,
+          3,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          3,
+          1,
+          3,
+          0,
+          3,
+          1,
+          3,
+          1,
+          2
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Girona FC",
+            "score": [
+              1,
+              2
             ]
           },
           {
-            "home": "RCD Mallorca",
-            "away": "Getafe CF",
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Girona FC",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "home": "Girona FC",
+            "away": "Real Sociedad de F\u00fatbol",
             "score": [
               0,
               1
+            ]
+          },
+          {
+            "home": "Girona FC",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Girona FC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Girona FC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Girona FC",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              3,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1391176",
+      "league": "La Liga (Spain)",
+      "league_id": 140,
+      "season": 2025,
+      "time": "22:30",
+      "home": "Real Madrid",
+      "away": "Oviedo",
+      "home_id": 541,
+      "away_id": 718,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.27,
+        "draw": 6.25,
+        "away": 9.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Real Madrid",
+        "form": [
+          "W",
+          "W",
+          "L",
+          "L",
+          "D",
+          "L",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          1,
+          1,
+          1,
+          3,
+          2,
+          1,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          4,
+          1,
+          1,
+          0,
+          2
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Oviedo",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W",
+          "W",
+          "D",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          0,
+          4,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Real Oviedo",
+            "away": "Real Madrid CF",
+            "score": [
+              0,
+              3
             ]
           }
         ]
