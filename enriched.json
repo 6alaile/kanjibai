@@ -1,33 +1,193 @@
 {
   "meta": {
-    "date": "2026-05-14",
-    "generatedAt": "2026-05-14T09:29:58.243191+03:00",
-    "scanned": 9,
-    "elapsedSeconds": 139.9
+    "date": "2026-05-15",
+    "generatedAt": "2026-05-15T09:37:31.594671+03:00",
+    "scanned": 10,
+    "elapsedSeconds": 51.7
   },
   "matches": [
     {
-      "id": "1391857",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
+      "id": "1380370",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
       "season": 2025,
-      "time": "18:00",
-      "home": "Admira Wacker",
-      "away": "Floridsdorfer AC",
-      "home_id": 1023,
-      "away_id": 1395,
+      "time": "18:45",
+      "home": "Nyiregyhaza",
+      "away": "Kazincbarcikai",
+      "home_id": 2403,
+      "away_id": 2410,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.05,
-        "draw": 3.3,
+        "home": 1.4,
+        "draw": 5.0,
+        "away": 6.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Nyiregyhaza",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Kazincbarcikai",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380680",
+      "league": "Ekstraklasa (Poland)",
+      "league_id": 106,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Zaglebie Lubin",
+      "away": "Pogon Szczecin",
+      "home_id": 345,
+      "away_id": 348,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.45,
+        "draw": 3.4,
+        "away": 2.55,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Zaglebie Lubin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Pogon Szczecin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1381809",
+      "league": "I Liga (Poland)",
+      "league_id": 107,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Pogo\u0144 Siedlce",
+      "away": "Stal Mielec",
+      "home_id": 6947,
+      "away_id": 3493,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.9,
+        "draw": 3.25,
+        "away": 2.25,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Pogo\u0144 Siedlce",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Stal Mielec",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1384093",
+      "league": "HNL (Croatia)",
+      "league_id": 210,
+      "season": 2025,
+      "time": "19:00",
+      "home": "Vukovar",
+      "away": "NK Varazdin",
+      "home_id": 5730,
+      "away_id": 1483,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 3.6,
+        "draw": 3.4,
+        "away": 1.83,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Vukovar",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "NK Varazdin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380371",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Puskas Academy",
+      "away": "MTK Budapest",
+      "home_id": 2391,
+      "away_id": 2396,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.95,
+        "draw": 3.7,
         "away": 3.5,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Admira Wacker",
+        "name": "Puskas Academy",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -36,7 +196,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Floridsdorfer AC",
+        "name": "MTK Budapest",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -47,27 +207,27 @@
       "h2h": null
     },
     {
-      "id": "1391858",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
+      "id": "1380674",
+      "league": "Ekstraklasa (Poland)",
+      "league_id": 106,
       "season": 2025,
-      "time": "18:00",
-      "home": "Austria Lustenau",
-      "away": "SKU Amstetten",
-      "home_id": 1399,
-      "away_id": 1404,
+      "time": "21:30",
+      "home": "Korona Kielce",
+      "away": "Widzew \u0141\u00f3d\u017a",
+      "home_id": 346,
+      "away_id": 6962,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.65,
-        "draw": 3.75,
-        "away": 5.0,
+        "home": 2.38,
+        "draw": 3.1,
+        "away": 2.8,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Austria Lustenau",
+        "name": "Korona Kielce",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -76,7 +236,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "SKU Amstetten",
+        "name": "Widzew \u0141\u00f3d\u017a",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -87,147 +247,27 @@
       "h2h": null
     },
     {
-      "id": "1391859",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
+      "id": "1381811",
+      "league": "I Liga (Poland)",
+      "league_id": 107,
       "season": 2025,
-      "time": "18:00",
-      "home": "SKN ST. Polten",
-      "away": "WSPG Wels",
-      "home_id": 1027,
-      "away_id": 22213,
+      "time": "21:30",
+      "home": "Polonia Warszawa",
+      "away": "Wisla Krakow",
+      "home_id": 16239,
+      "away_id": 338,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.4,
-        "draw": 4.5,
-        "away": 7.5,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "SKN ST. Polten",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "WSPG Wels",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1391860",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
-      "season": 2025,
-      "time": "18:00",
-      "home": "Austria Klagenfurt",
-      "away": "FC Liefering",
-      "home_id": 1405,
-      "away_id": 1400,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 4.2,
-        "draw": 3.9,
-        "away": 1.73,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Austria Klagenfurt",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "FC Liefering",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1391861",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
-      "season": 2025,
-      "time": "18:00",
-      "home": "First Vienna",
-      "away": "Schwarz-Wei\u00df Bregenz",
-      "home_id": 4990,
-      "away_id": 8259,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.67,
-        "draw": 4.33,
-        "away": 4.2,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "First Vienna",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Schwarz-Wei\u00df Bregenz",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1391863",
-      "league": "2. Liga (Austria)",
-      "league_id": 219,
-      "season": 2025,
-      "time": "18:00",
-      "home": "Sturm Graz II",
-      "away": "Rapid Wien II",
-      "home_id": 8251,
-      "away_id": 8247,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.15,
-        "draw": 3.4,
+        "home": 1.95,
+        "draw": 3.7,
         "away": 3.2,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Sturm Graz II",
+        "name": "Polonia Warszawa",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -236,7 +276,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Rapid Wien II",
+        "name": "Wisla Krakow",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -247,467 +287,273 @@
       "h2h": null
     },
     {
-      "id": "1391177",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
+      "id": "1392201",
+      "league": "Segunda Divisi\u00f3n (Spain)",
+      "league_id": 141,
       "season": 2025,
-      "time": "20:00",
-      "home": "Valencia",
-      "away": "Rayo Vallecano",
-      "home_id": 532,
-      "away_id": 728,
+      "time": "21:30",
+      "home": "Castell\u00f3n",
+      "away": "Cadiz",
+      "home_id": 5254,
+      "away_id": 724,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.15,
-        "draw": 3.3,
-        "away": 3.6,
+        "home": 1.3,
+        "draw": 5.75,
+        "away": 8.0,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Valencia",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "L",
-          "L",
-          "D",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          0,
-          2,
-          2,
-          0,
-          1,
-          2,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          1,
-          0,
-          3,
-          1,
-          1,
-          1,
-          2,
-          0
-        ],
-        "league_position": 13,
+        "name": "Castell\u00f3n",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Rayo Vallecano",
-        "form": [
-          "W",
-          "D",
-          "D",
-          "L",
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          1,
-          0,
-          1,
-          0,
-          1,
-          3,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          1,
-          1,
-          0,
-          3,
-          0,
-          3,
-          0,
-          1
-        ],
-        "league_position": 11,
+        "name": "Cadiz",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Rayo Vallecano de Madrid",
-            "away": "Valencia CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Rayo Vallecano de Madrid",
-            "away": "Valencia CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Rayo Vallecano de Madrid",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Rayo Vallecano de Madrid",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Rayo Vallecano de Madrid",
-            "away": "Valencia CF",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Rayo Vallecano de Madrid",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Rayo Vallecano de Madrid",
-            "away": "Valencia CF",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Rayo Vallecano de Madrid",
-            "away": "Valencia CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Rayo Vallecano de Madrid",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ]
-      }
+      "h2h": null
     },
     {
-      "id": "1391174",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
+      "id": "1379330",
+      "league": "Premier League (England)",
+      "league_id": 39,
       "season": 2025,
-      "time": "21:00",
-      "home": "Girona",
-      "away": "Real Sociedad",
-      "home_id": 547,
-      "away_id": 548,
+      "time": "22:00",
+      "home": "Aston Villa",
+      "away": "Liverpool",
+      "home_id": 66,
+      "away_id": 40,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.95,
-        "draw": 3.8,
-        "away": 3.6,
+        "home": 2.75,
+        "draw": 3.6,
+        "away": 2.45,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Girona",
+        "name": "Aston Villa",
         "form": [
-          "L",
-          "D",
-          "W",
-          "L",
-          "W",
           "D",
           "L",
+          "L",
+          "L",
+          "W",
+          "D",
+          "W",
           "L",
           "L",
           "D"
         ],
         "goals_scored": [
           1,
-          1,
-          3,
           0,
           1,
           1,
           2,
           1,
+          4,
           0,
-          1
+          1,
+          2
         ],
         "goals_conceded": [
+          1,
           2,
-          1,
-          0,
-          1,
+          4,
+          3,
           0,
           1,
           3,
-          2,
           1,
-          1
+          2,
+          2
         ],
-        "league_position": 19,
+        "league_position": 5,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Real Sociedad",
+        "name": "Liverpool",
         "form": [
-          "W",
-          "L",
-          "W",
-          "L",
-          "W",
           "D",
+          "W",
           "L",
-          "D",
+          "L",
+          "W",
+          "L",
+          "W",
+          "W",
           "L",
           "D"
         ],
         "goals_scored": [
           1,
-          2,
-          3,
+          4,
           1,
+          0,
+          2,
+          0,
           2,
           3,
-          0,
-          3,
-          0,
-          2
+          2,
+          1
         ],
         "goals_conceded": [
+          1,
           0,
-          3,
-          1,
-          3,
+          2,
+          2,
           0,
-          3,
+          2,
+          1,
           1,
           3,
-          1,
-          2
+          1
         ],
-        "league_position": 8,
+        "league_position": 4,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Real Sociedad de F\u00fatbol",
-            "away": "Girona FC",
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
             "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Real Sociedad de F\u00fatbol",
-            "away": "Girona FC",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "home": "Girona FC",
-            "away": "Real Sociedad de F\u00fatbol",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Girona FC",
-            "away": "Real Sociedad de F\u00fatbol",
-            "score": [
-              0,
+              2,
               0
             ]
           },
           {
-            "home": "Real Sociedad de F\u00fatbol",
-            "away": "Girona FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Real Sociedad de F\u00fatbol",
-            "away": "Girona FC",
+            "home": "Aston Villa FC",
+            "away": "Liverpool FC",
             "score": [
               2,
               2
             ]
           },
           {
-            "home": "Girona FC",
-            "away": "Real Sociedad de F\u00fatbol",
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Liverpool FC",
             "score": [
               3,
-              5
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1391176",
-      "league": "La Liga (Spain)",
-      "league_id": 140,
-      "season": 2025,
-      "time": "22:30",
-      "home": "Real Madrid",
-      "away": "Oviedo",
-      "home_id": 541,
-      "away_id": 718,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.27,
-        "draw": 6.25,
-        "away": 9.5,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Real Madrid",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "L",
-          "D",
-          "L",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          1,
-          1,
-          1,
-          3,
-          2,
-          1,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          2,
-          2,
-          1,
-          4,
-          1,
-          1,
-          0,
-          2
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Oviedo",
-        "form": [
-          "L",
-          "D",
-          "W",
-          "L",
-          "W",
-          "W",
-          "D",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
-          2,
-          1,
-          3,
-          1,
-          1,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          0,
-          4,
-          0,
-          0,
-          1,
-          2,
-          3,
-          0
-        ],
-        "league_position": 20,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Real Oviedo",
-            "away": "Real Madrid CF",
-            "score": [
-              0,
               3
             ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Liverpool FC",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "home": "Aston Villa FC",
+            "away": "Liverpool FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Liverpool FC",
+            "away": "Aston Villa FC",
+            "score": [
+              2,
+              1
+            ]
           }
         ]
       }
+    },
+    {
+      "id": "1392200",
+      "league": "Segunda Divisi\u00f3n (Spain)",
+      "league_id": 141,
+      "season": 2025,
+      "time": "22:00",
+      "home": "Cordoba",
+      "away": "Albacete",
+      "home_id": 713,
+      "away_id": 722,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.62,
+        "draw": 4.0,
+        "away": 5.25,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Cordoba",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Albacete",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
     }
   ]
 }
