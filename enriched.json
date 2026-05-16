@@ -1,113 +1,33 @@
 {
   "meta": {
-    "date": "2026-05-15",
-    "generatedAt": "2026-05-15T09:37:31.594671+03:00",
+    "date": "2026-05-16",
+    "generatedAt": "2026-05-16T08:57:22.553447+03:00",
     "scanned": 10,
-    "elapsedSeconds": 51.7
+    "elapsedSeconds": 0.7
   },
   "matches": [
     {
-      "id": "1380370",
-      "league": "NB I (Hungary)",
-      "league_id": 271,
-      "season": 2025,
-      "time": "18:45",
-      "home": "Nyiregyhaza",
-      "away": "Kazincbarcikai",
-      "home_id": 2403,
-      "away_id": 2410,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.4,
-        "draw": 5.0,
-        "away": 6.5,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Nyiregyhaza",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Kazincbarcikai",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1380680",
+      "id": "1380676",
       "league": "Ekstraklasa (Poland)",
       "league_id": 106,
       "season": 2025,
-      "time": "19:00",
-      "home": "Zaglebie Lubin",
-      "away": "Pogon Szczecin",
-      "home_id": 345,
-      "away_id": 348,
+      "time": "15:45",
+      "home": "Motor Lublin",
+      "away": "Cracovia Krakow",
+      "home_id": 14562,
+      "away_id": 350,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.45,
-        "draw": 3.4,
-        "away": 2.55,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Zaglebie Lubin",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Pogon Szczecin",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1381809",
-      "league": "I Liga (Poland)",
-      "league_id": 107,
-      "season": 2025,
-      "time": "19:00",
-      "home": "Pogo\u0144 Siedlce",
-      "away": "Stal Mielec",
-      "home_id": 6947,
-      "away_id": 3493,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.9,
-        "draw": 3.25,
+        "home": 2.7,
+        "draw": 3.6,
         "away": 2.25,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Pogo\u0144 Siedlce",
+        "name": "Motor Lublin",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -116,7 +36,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Stal Mielec",
+        "name": "Cracovia Krakow",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -127,67 +47,27 @@
       "h2h": null
     },
     {
-      "id": "1384093",
-      "league": "HNL (Croatia)",
-      "league_id": 210,
-      "season": 2025,
-      "time": "19:00",
-      "home": "Vukovar",
-      "away": "NK Varazdin",
-      "home_id": 5730,
-      "away_id": 1483,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.6,
-        "draw": 3.4,
-        "away": 1.83,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Vukovar",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "NK Varazdin",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1380371",
+      "id": "1380366",
       "league": "NB I (Hungary)",
       "league_id": 271,
       "season": 2025,
-      "time": "21:00",
-      "home": "Puskas Academy",
-      "away": "MTK Budapest",
-      "home_id": 2391,
-      "away_id": 2396,
+      "time": "18:15",
+      "home": "Debreceni VSC",
+      "away": "Ujpest",
+      "home_id": 2392,
+      "away_id": 2255,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.95,
-        "draw": 3.7,
-        "away": 3.5,
+        "home": 1.7,
+        "draw": 3.9,
+        "away": 4.33,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Puskas Academy",
+        "name": "Debreceni VSC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -196,7 +76,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "MTK Budapest",
+        "name": "Ujpest",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -207,27 +87,147 @@
       "h2h": null
     },
     {
-      "id": "1380674",
+      "id": "1380367",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "18:15",
+      "home": "Diosgyori VTK",
+      "away": "Paks",
+      "home_id": 2393,
+      "away_id": 2390,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 5.0,
+        "draw": 4.75,
+        "away": 1.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Diosgyori VTK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Paks",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380368",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "18:15",
+      "home": "Ferencvarosi TC",
+      "away": "Zalaegerszegi TE",
+      "home_id": 651,
+      "away_id": 2414,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.28,
+        "draw": 5.75,
+        "away": 8.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Ferencvarosi TC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Zalaegerszegi TE",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380369",
+      "league": "NB I (Hungary)",
+      "league_id": 271,
+      "season": 2025,
+      "time": "18:15",
+      "home": "Kisvarda FC",
+      "away": "Gyori ETO FC",
+      "home_id": 2394,
+      "away_id": 2402,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 7.5,
+        "draw": 5.5,
+        "away": 1.3,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Kisvarda FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Gyori ETO FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380679",
       "league": "Ekstraklasa (Poland)",
       "league_id": 106,
       "season": 2025,
-      "time": "21:30",
-      "home": "Korona Kielce",
-      "away": "Widzew \u0141\u00f3d\u017a",
-      "home_id": 346,
-      "away_id": 6962,
+      "time": "18:30",
+      "home": "Wisla Plock",
+      "away": "Gornik Zabrze",
+      "home_id": 341,
+      "away_id": 340,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.38,
-        "draw": 3.1,
-        "away": 2.8,
+        "home": 3.5,
+        "draw": 3.3,
+        "away": 1.95,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Korona Kielce",
+        "name": "Wisla Plock",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -236,7 +236,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Widzew \u0141\u00f3d\u017a",
+        "name": "Gornik Zabrze",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -247,27 +247,27 @@
       "h2h": null
     },
     {
-      "id": "1381811",
+      "id": "1381806",
       "league": "I Liga (Poland)",
       "league_id": 107,
       "season": 2025,
-      "time": "21:30",
-      "home": "Polonia Warszawa",
-      "away": "Wisla Krakow",
-      "home_id": 16239,
-      "away_id": 338,
+      "time": "20:30",
+      "home": "Chrobry G\u0142og\u00f3w",
+      "away": "Znicz Pruszk\u00f3w",
+      "home_id": 3483,
+      "away_id": 6964,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.95,
-        "draw": 3.7,
-        "away": 3.2,
+        "home": 1.83,
+        "draw": 3.5,
+        "away": 3.9,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Polonia Warszawa",
+        "name": "Chrobry G\u0142og\u00f3w",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -276,7 +276,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Wisla Krakow",
+        "name": "Znicz Pruszk\u00f3w",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -287,256 +287,27 @@
       "h2h": null
     },
     {
-      "id": "1392201",
-      "league": "Segunda Divisi\u00f3n (Spain)",
-      "league_id": 141,
+      "id": "1381808",
+      "league": "I Liga (Poland)",
+      "league_id": 107,
       "season": 2025,
-      "time": "21:30",
-      "home": "Castell\u00f3n",
-      "away": "Cadiz",
-      "home_id": 5254,
-      "away_id": 724,
+      "time": "20:30",
+      "home": "G\u00f3rnik \u0141\u0119czna",
+      "away": "Odra Opole",
+      "home_id": 6941,
+      "away_id": 3488,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.3,
-        "draw": 5.75,
-        "away": 8.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Castell\u00f3n",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Cadiz",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1379330",
-      "league": "Premier League (England)",
-      "league_id": 39,
-      "season": 2025,
-      "time": "22:00",
-      "home": "Aston Villa",
-      "away": "Liverpool",
-      "home_id": 66,
-      "away_id": 40,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.75,
+        "home": 1.75,
         "draw": 3.6,
-        "away": 2.45,
+        "away": 4.1,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Aston Villa",
-        "form": [
-          "D",
-          "L",
-          "L",
-          "L",
-          "W",
-          "D",
-          "W",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          1,
-          2,
-          1,
-          4,
-          0,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          4,
-          3,
-          0,
-          1,
-          3,
-          1,
-          2,
-          2
-        ],
-        "league_position": 5,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Liverpool",
-        "form": [
-          "D",
-          "W",
-          "L",
-          "L",
-          "W",
-          "L",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          4,
-          1,
-          0,
-          2,
-          0,
-          2,
-          3,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          2,
-          2,
-          0,
-          2,
-          1,
-          1,
-          3,
-          1
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Aston Villa FC",
-            "away": "Liverpool FC",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Aston Villa FC",
-            "away": "Liverpool FC",
-            "score": [
-              3,
-              3
-            ]
-          },
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Aston Villa FC",
-            "away": "Liverpool FC",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "home": "Aston Villa FC",
-            "away": "Liverpool FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Liverpool FC",
-            "away": "Aston Villa FC",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "1392200",
-      "league": "Segunda Divisi\u00f3n (Spain)",
-      "league_id": 141,
-      "season": 2025,
-      "time": "22:00",
-      "home": "Cordoba",
-      "away": "Albacete",
-      "home_id": 713,
-      "away_id": 722,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.62,
-        "draw": 4.0,
-        "away": 5.25,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Cordoba",
+        "name": "G\u00f3rnik \u0141\u0119czna",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -545,7 +316,87 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Albacete",
+        "name": "Odra Opole",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1381814",
+      "league": "I Liga (Poland)",
+      "league_id": 107,
+      "season": 2025,
+      "time": "20:30",
+      "home": "Stal Rzesz\u00f3w",
+      "away": "Wieczysta Krak\u00f3w",
+      "home_id": 6957,
+      "away_id": 17115,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 3.7,
+        "draw": 3.8,
+        "away": 1.75,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Stal Rzesz\u00f3w",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Wieczysta Krak\u00f3w",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1380678",
+      "league": "Ekstraklasa (Poland)",
+      "league_id": 106,
+      "season": 2025,
+      "time": "21:15",
+      "home": "Radomiak Radom",
+      "away": "Lech Poznan",
+      "home_id": 4248,
+      "away_id": 347,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 3.5,
+        "draw": 3.7,
+        "away": 1.85,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Radomiak Radom",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Lech Poznan",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
