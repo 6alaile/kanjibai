@@ -1,193 +1,73 @@
 {
   "meta": {
-    "date": "2026-05-18",
-    "generatedAt": "2026-05-18T10:01:42.643881+03:00",
-    "scanned": 10,
-    "elapsedSeconds": 122.5
+    "date": "2026-05-19",
+    "generatedAt": "2026-05-19T09:54:12.665316+03:00",
+    "scanned": 9,
+    "elapsedSeconds": 147.2
   },
   "matches": [
     {
-      "id": "1490309",
-      "league": "Major League Soccer (USA)",
-      "league_id": 253,
+      "id": "1513475",
+      "league": "Ligue 1 (Algeria)",
+      "league_id": 186,
+      "season": 2025,
+      "time": "18:00",
+      "home": "Ben Aknoun",
+      "away": "Mostaganem",
+      "home_id": 10792,
+      "away_id": 1070,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.57,
+        "draw": 3.7,
+        "away": 5.25,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Ben Aknoun",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Mostaganem",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1496785",
+      "league": "3. Division - Girone 3 (Norway)",
+      "league_id": 776,
       "season": 2026,
-      "time": "03:00",
-      "home": "Nashville SC",
-      "away": "Los Angeles FC",
-      "home_id": 9569,
-      "away_id": 1616,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.2,
-        "draw": 3.6,
-        "away": 3.1,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Nashville SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Los Angeles FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1391619",
-      "league": "Premier League (Ukraine)",
-      "league_id": 333,
-      "season": 2025,
-      "time": "13:00",
-      "home": "Kudrivka",
-      "away": "LNZ Cherkasy",
-      "home_id": 21953,
-      "away_id": 17161,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 6.5,
-        "draw": 3.9,
-        "away": 1.42,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Kudrivka",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "LNZ Cherkasy",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1396819",
-      "league": "Premier League (Ukraine)",
-      "league_id": 333,
-      "season": 2025,
-      "time": "13:00",
-      "home": "Zorya Luhansk",
-      "away": "Polessya",
-      "home_id": 599,
-      "away_id": 6496,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 5.0,
-        "draw": 3.9,
-        "away": 1.55,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Zorya Luhansk",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Polessya",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1421816",
-      "league": "Premier League (Singapore)",
-      "league_id": 368,
-      "season": 2025,
-      "time": "14:30",
-      "home": "Tanjong Pagar",
-      "away": "Hougang United",
-      "home_id": 10077,
-      "away_id": 4205,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 5.5,
-        "draw": 5.0,
-        "away": 1.4,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Tanjong Pagar",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Hougang United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1381812",
-      "league": "I Liga (Poland)",
-      "league_id": 107,
-      "season": 2025,
       "time": "19:00",
-      "home": "Puszcza Niepo\u0142omice",
-      "away": "\u0141KS \u0141\u00f3d\u017a",
-      "home_id": 3490,
-      "away_id": 3498,
+      "home": "Brann II",
+      "away": "Sogndal II",
+      "home_id": 16218,
+      "away_id": 16219,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 3.3,
-        "draw": 3.3,
-        "away": 2.0,
+        "home": 2.0,
+        "draw": 4.2,
+        "away": 2.62,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Puszcza Niepo\u0142omice",
+        "name": "Brann II",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -196,7 +76,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "\u0141KS \u0141\u00f3d\u017a",
+        "name": "Sogndal II",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -207,27 +87,27 @@
       "h2h": null
     },
     {
-      "id": "1380672",
-      "league": "Ekstraklasa (Poland)",
-      "league_id": 106,
+      "id": "1513476",
+      "league": "Ligue 1 (Algeria)",
+      "league_id": 186,
       "season": 2025,
-      "time": "20:00",
-      "home": "Arka Gdynia",
-      "away": "Nieciecza",
-      "home_id": 344,
-      "away_id": 3487,
+      "time": "19:45",
+      "home": "CS Constantine",
+      "away": "Khenchela",
+      "home_id": 911,
+      "away_id": 10752,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.67,
-        "draw": 3.8,
-        "away": 4.2,
+        "home": 1.5,
+        "draw": 3.5,
+        "away": 6.0,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Arka Gdynia",
+        "name": "CS Constantine",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -236,7 +116,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Nieciecza",
+        "name": "Khenchela",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -247,19 +127,139 @@
       "h2h": null
     },
     {
-      "id": "1494170",
-      "league": "Allsvenskan (Sweden)",
-      "league_id": 113,
+      "id": "1497337",
+      "league": "3. Division - Girone 6 (Norway)",
+      "league_id": 779,
       "season": 2026,
       "time": "20:00",
-      "home": "Djurgardens IF",
-      "away": "Sirius",
-      "home_id": 364,
-      "away_id": 370,
+      "home": "Sarpsborg 08 II",
+      "away": "Lyn II",
+      "home_id": 16215,
+      "away_id": 25499,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.25,
+        "home": 1.95,
+        "draw": 4.2,
+        "away": 2.75,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Sarpsborg 08 II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Lyn II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1497570",
+      "league": "Superettan (Sweden)",
+      "league_id": 114,
+      "season": 2026,
+      "time": "20:00",
+      "home": "Helsingborg",
+      "away": "Varbergs BoIS FC",
+      "home_id": 811,
+      "away_id": 2171,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.8,
+        "draw": 3.5,
+        "away": 2.38,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Helsingborg",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Varbergs BoIS FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1512400",
+      "league": "Reserve League (Argentina)",
+      "league_id": 906,
+      "season": 2026,
+      "time": "21:00",
+      "home": "Banfield Res.",
+      "away": "Aldosivi Res.",
+      "home_id": 18679,
+      "away_id": 18676,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.83,
+        "draw": 3.3,
+        "away": 4.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Banfield Res.",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Aldosivi Res.",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1512412",
+      "league": "Reserve League (Argentina)",
+      "league_id": 906,
+      "season": 2026,
+      "time": "21:00",
+      "home": "San Lorenzo Res.",
+      "away": "Racing Club Res.",
+      "home_id": 18697,
+      "away_id": 18694,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.1,
         "draw": 3.5,
         "away": 3.0,
         "over_15": null,
@@ -267,7 +267,7 @@
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Djurgardens IF",
+        "name": "San Lorenzo Res.",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -276,7 +276,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Sirius",
+        "name": "Racing Club Res.",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -287,154 +287,205 @@
       "h2h": null
     },
     {
-      "id": "1392197",
-      "league": "Segunda Divisi\u00f3n (Spain)",
-      "league_id": 141,
-      "season": 2025,
-      "time": "21:30",
-      "home": "Leganes",
-      "away": "Huesca",
-      "home_id": 537,
-      "away_id": 726,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.9,
-        "draw": 3.6,
-        "away": 4.1,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Leganes",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Huesca",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1492670",
-      "league": "Premier Division (Ireland)",
-      "league_id": 357,
-      "season": 2026,
-      "time": "21:45",
-      "home": "Waterford",
-      "away": "Drogheda United",
-      "home_id": 3845,
-      "away_id": 3850,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.8,
-        "draw": 3.3,
-        "away": 2.3,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Waterford",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Drogheda United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1379329",
+      "id": "1379331",
       "league": "Premier League (England)",
       "league_id": 39,
       "season": 2025,
-      "time": "22:00",
-      "home": "Arsenal",
-      "away": "Burnley",
-      "home_id": 42,
-      "away_id": 44,
+      "time": "21:30",
+      "home": "Bournemouth",
+      "away": "Manchester City",
+      "home_id": 35,
+      "away_id": 50,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 1.1,
-        "draw": 10.0,
-        "away": 21.0,
+        "home": 4.5,
+        "draw": 4.5,
+        "away": 1.65,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Arsenal",
+        "name": "Bournemouth",
         "form": [
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
           "W",
           "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Manchester City",
+        "form": [
+          "D",
           "L",
           "D",
           "L",
           "W",
-          "D",
           "W",
+          "W",
+          "D",
           "W",
           "W"
         ],
         "goals_scored": [
           2,
-          1,
-          1,
           0,
-          1,
           1,
           1,
           3,
+          2,
           1,
-          1
+          3,
+          3,
+          3
         ],
         "goals_conceded": [
-          0,
-          0,
           2,
-          0,
+          3,
+          1,
           2,
           0,
           1,
           0,
+          3,
           0,
           0
         ],
-        "league_position": 1,
+        "league_position": 2,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
-      "away_stats": {
-        "name": "Burnley",
+      "h2h": {
+        "matches": [
+          {
+            "home": "Manchester City FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "home": "Manchester City FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "home": "AFC Bournemouth",
+            "away": "Manchester City FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "AFC Bournemouth",
+            "away": "Manchester City FC",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Manchester City FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              6,
+              1
+            ]
+          },
+          {
+            "home": "AFC Bournemouth",
+            "away": "Manchester City FC",
+            "score": [
+              1,
+              4
+            ]
+          },
+          {
+            "home": "Manchester City FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "home": "Manchester City FC",
+            "away": "AFC Bournemouth",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1379333",
+      "league": "Premier League (England)",
+      "league_id": 39,
+      "season": 2025,
+      "time": "22:15",
+      "home": "Chelsea",
+      "away": "Tottenham",
+      "home_id": 49,
+      "away_id": 47,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.91,
+        "draw": 3.7,
+        "away": 3.8,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Chelsea",
         "form": [
-          "D",
+          "W",
           "L",
           "L",
-          "D",
+          "L",
           "L",
           "L",
           "L",
@@ -443,96 +494,138 @@
           "D"
         ],
         "goals_scored": [
-          1,
-          3,
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           1,
-          0,
-          1,
-          0,
-          1,
-          2
+          1
         ],
         "goals_conceded": [
           1,
-          4,
-          2,
-          0,
-          3,
-          2,
-          4,
+          5,
           1,
           3,
-          2
+          3,
+          3,
+          1,
+          3,
+          3,
+          1
         ],
-        "league_position": 19,
+        "league_position": 10,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Tottenham",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "W",
+          "L",
+          "L",
+          "D",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          1,
+          3,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          5,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0,
+          1,
+          1
+        ],
+        "league_position": 17,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Burnley FC",
-            "away": "Arsenal FC",
+            "home": "Tottenham Hotspur FC",
+            "away": "Chelsea FC",
             "score": [
               0,
-              2
-            ]
-          },
-          {
-            "home": "Burnley FC",
-            "away": "Arsenal FC",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "home": "Arsenal FC",
-            "away": "Burnley FC",
-            "score": [
-              3,
               1
             ]
           },
           {
-            "home": "Arsenal FC",
-            "away": "Burnley FC",
+            "home": "Chelsea FC",
+            "away": "Tottenham Hotspur FC",
             "score": [
-              0,
+              1,
               0
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Arsenal FC",
+            "home": "Tottenham Hotspur FC",
+            "away": "Chelsea FC",
             "score": [
-              0,
-              1
+              3,
+              4
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Arsenal FC",
+            "home": "Chelsea FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Tottenham Hotspur FC",
+            "away": "Chelsea FC",
             "score": [
               1,
-              1
+              4
             ]
           },
           {
-            "home": "Arsenal FC",
-            "away": "Burnley FC",
+            "home": "Tottenham Hotspur FC",
+            "away": "Chelsea FC",
             "score": [
-              0,
-              1
+              2,
+              0
             ]
           },
           {
-            "home": "Burnley FC",
-            "away": "Arsenal FC",
+            "home": "Chelsea FC",
+            "away": "Tottenham Hotspur FC",
             "score": [
-              0,
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Tottenham Hotspur FC",
+            "score": [
+              2,
               0
             ]
           }
