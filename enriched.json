@@ -1,273 +1,33 @@
 {
   "meta": {
-    "date": "2026-05-20",
-    "generatedAt": "2026-05-20T09:51:49.215104+03:00",
-    "scanned": 7,
-    "elapsedSeconds": 0.3
+    "date": "2026-05-21",
+    "generatedAt": "2026-05-21T09:57:04.925562+03:00",
+    "scanned": 10,
+    "elapsedSeconds": 30.7
   },
   "matches": [
     {
-      "id": "1487484",
-      "league": "3. liga - MSFL (Czech-Republic)",
-      "league_id": 349,
+      "id": "1396821",
+      "league": "Premier League (Ukraine)",
+      "league_id": 333,
       "season": 2025,
-      "time": "18:00",
-      "home": "Polanka nad Odrou",
-      "away": "Karvin\u00e1 II",
-      "home_id": 7332,
-      "away_id": 15134,
+      "time": "15:30",
+      "home": "Shakhtar Donetsk",
+      "away": "Kolos Kovalivka",
+      "home_id": 550,
+      "away_id": 3627,
       "source": "api-football",
       "total_teams_in_league": 20,
       "odds": {
-        "home": 2.9,
-        "draw": 3.7,
-        "away": 2.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Polanka nad Odrou",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Karvin\u00e1 II",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1489616",
-      "league": "3. liga - CFL B (Czech-Republic)",
-      "league_id": 685,
-      "season": 2025,
-      "time": "18:00",
-      "home": "Kol\u00edn",
-      "away": "Varnsdorf",
-      "home_id": 7309,
-      "away_id": 3728,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.4,
-        "draw": 3.9,
-        "away": 1.83,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Kol\u00edn",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Varnsdorf",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1487486",
-      "league": "3. liga - MSFL (Czech-Republic)",
-      "league_id": 349,
-      "season": 2025,
-      "time": "18:30",
-      "home": "T\u0159inec",
-      "away": "Slov\u00e1cko II",
-      "home_id": 3727,
-      "away_id": 8623,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 1.33,
-        "draw": 4.75,
-        "away": 7.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "T\u0159inec",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Slov\u00e1cko II",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1494229",
-      "league": "Allsvenskan (Sweden)",
-      "league_id": 113,
-      "season": 2026,
-      "time": "20:00",
-      "home": "Gais",
-      "away": "Hammarby FF",
-      "home_id": 2170,
-      "away_id": 363,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 3.5,
-        "draw": 3.4,
-        "away": 2.05,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Gais",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Hammarby FF",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1430619",
-      "league": "1. Liga Classic - Group 3 (Switzerland)",
-      "league_id": 601,
-      "season": 2025,
-      "time": "21:00",
-      "home": "Freienbach",
-      "away": "Baden",
-      "home_id": 6625,
-      "away_id": 12699,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 2.9,
-        "draw": 3.75,
-        "away": 2.0,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Freienbach",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Baden",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1436212",
-      "league": "Pro League (Saudi-Arabia)",
-      "league_id": 307,
-      "season": 2025,
-      "time": "21:00",
-      "home": "Al Khaleej Saihat",
-      "away": "Al-Ahli Jeddah",
-      "home_id": 2928,
-      "away_id": 2929,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 5.5,
-        "draw": 4.75,
-        "away": 1.48,
-        "over_15": null,
-        "over_25": null,
-        "btts_yes": null
-      },
-      "home_stats": {
-        "name": "Al Khaleej Saihat",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Al-Ahli Jeddah",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null
-    },
-    {
-      "id": "1438976",
-      "league": "Pro League (Saudi-Arabia)",
-      "league_id": 307,
-      "season": 2025,
-      "time": "21:00",
-      "home": "Al Najma",
-      "away": "Al Shabab",
-      "home_id": 2992,
-      "away_id": 2940,
-      "source": "api-football",
-      "total_teams_in_league": 20,
-      "odds": {
-        "home": 5.25,
+        "home": 1.28,
         "draw": 4.33,
-        "away": 1.5,
+        "away": 9.0,
         "over_15": null,
         "over_25": null,
         "btts_yes": null
       },
       "home_stats": {
-        "name": "Al Najma",
+        "name": "Shakhtar Donetsk",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -276,7 +36,367 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Al Shabab",
+        "name": "Kolos Kovalivka",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1397949",
+      "league": "Regionalliga - Mitte (Austria)",
+      "league_id": 222,
+      "season": 2025,
+      "time": "20:00",
+      "home": "Treibach",
+      "away": "Gleisdorf 09",
+      "home_id": 4962,
+      "away_id": 4940,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.75,
+        "draw": 3.7,
+        "away": 2.1,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Treibach",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Gleisdorf 09",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1436208",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Al Kholood",
+      "away": "Al-Fateh",
+      "home_id": 10509,
+      "away_id": 2931,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.5,
+        "draw": 3.8,
+        "away": 2.4,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Al Kholood",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al-Fateh",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1436209",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Al-Nassr",
+      "away": "Damac",
+      "home_id": 2939,
+      "away_id": 2956,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.1,
+        "draw": 9.0,
+        "away": 21.0,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Al-Nassr",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Damac",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1436210",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Al-Ittihad FC",
+      "away": "Al-Qadisiyah FC",
+      "home_id": 2938,
+      "away_id": 2933,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.8,
+        "draw": 3.6,
+        "away": 2.15,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Al-Ittihad FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al-Qadisiyah FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1436211",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "NEOM",
+      "away": "Al-Ettifaq",
+      "home_id": 10513,
+      "away_id": 2934,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.0,
+        "draw": 3.9,
+        "away": 3.2,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "NEOM",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al-Ettifaq",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1436213",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Al-Hazm",
+      "away": "Al Taawon",
+      "home_id": 2945,
+      "away_id": 2936,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 4.33,
+        "draw": 4.2,
+        "away": 1.62,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Al-Hazm",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al Taawon",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1438975",
+      "league": "Pro League (Saudi-Arabia)",
+      "league_id": 307,
+      "season": 2025,
+      "time": "21:00",
+      "home": "Al Riyadh",
+      "away": "Al Okhdood",
+      "home_id": 10511,
+      "away_id": 2977,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.38,
+        "draw": 5.0,
+        "away": 6.5,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Al Riyadh",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al Okhdood",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1389108",
+      "league": "Premijer Liga (Bosnia)",
+      "league_id": 315,
+      "season": 2025,
+      "time": "21:30",
+      "home": "Vele\u017e",
+      "away": "FK Sarajevo",
+      "home_id": 3381,
+      "away_id": 679,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 2.88,
+        "draw": 3.0,
+        "away": 2.25,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Vele\u017e",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "FK Sarajevo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null
+    },
+    {
+      "id": "1389109",
+      "league": "Premijer Liga (Bosnia)",
+      "league_id": 315,
+      "season": 2025,
+      "time": "21:30",
+      "home": "Zeljeznicar Sarajevo",
+      "away": "Siroki Brijeg",
+      "home_id": 654,
+      "away_id": 642,
+      "source": "api-football",
+      "total_teams_in_league": 20,
+      "odds": {
+        "home": 1.6,
+        "draw": 3.5,
+        "away": 4.75,
+        "over_15": null,
+        "over_25": null,
+        "btts_yes": null
+      },
+      "home_stats": {
+        "name": "Zeljeznicar Sarajevo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Siroki Brijeg",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
