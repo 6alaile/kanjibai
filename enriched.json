@@ -1,9 +1,42 @@
 {
   "meta": {
     "date": "2026-08-24",
-    "generatedAt": "2026-08-24T06:56:53.217883+03:00",
-    "scanned": 0,
-    "error": "No fixtures returned by scraper"
+    "generatedAt": "2026-08-24T17:28:57.613437+03:00",
+    "scanned": 1,
+    "elapsedSeconds": 62.9
   },
-  "matches": []
+  "matches": [
+    {
+      "id": "betonupcomingmatches",
+      "league": "BetPawa Premier League",
+      "home": "JOIN NOW",
+      "away": "POPULAR",
+      "odds": {
+        "home": 4.06,
+        "draw": 3.83,
+        "away": 1.94
+      },
+      "home_stats": {
+        "name": "JOIN NOW",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "POPULAR",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    }
+  ]
 }
