@@ -110,7 +110,7 @@ def find_team_id(team_name: str, league_code: str) -> Optional[int]:
 
 # ─── TEAM FORM ────────────────────────────────────────────────────────────────
 
-def fetch_team_form(team_id: int, n: int = 10) -> dict:
+def fetch_team_form(team_id: int, n: int = 15) -> dict:
     """Fetch last N finished matches for a team."""
     data = fd_get(f"teams/{team_id}/matches", params={"status": "FINISHED", "limit": n})
     delay()
