@@ -1,36 +1,937 @@
 {
   "meta": {
     "date": "2026-08-24",
-    "generatedAt": "2026-08-24T17:48:39.830497+03:00",
-    "scanned": 1,
-    "elapsedSeconds": 58.0
+    "generatedAt": "2026-08-24T18:41:15.007665+03:00",
+    "scanned": 20,
+    "elapsedSeconds": 640.4
   },
   "matches": [
     {
-      "id": "betonupcomingmatches",
-      "league": "BetPawa Premier League",
-      "home": "JOIN NOW",
-      "away": "POPULAR",
+      "id": "fulhamfcchelseafc",
+      "league": "Football / England / Premier League",
+      "home": "Fulham FC",
+      "away": "Chelsea FC",
       "odds": {
-        "home": 4.03,
+        "home": 3.9,
         "draw": 3.82,
-        "away": 1.95
+        "away": 1.89
       },
       "home_stats": {
-        "name": "JOIN NOW",
+        "name": "Fulham FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
+        "league_position": 11,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "POPULAR",
+        "name": "Chelsea FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "crystalpalacemanchestercity",
+      "league": "Football / England / Premier League",
+      "home": "Crystal Palace",
+      "away": "Manchester City",
+      "odds": {
+        "home": 5.02,
+        "draw": 4.36,
+        "away": 1.62
+      },
+      "home_stats": {
+        "name": "Crystal Palace",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Manchester City",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "liverpoolfcnottinghamforest",
+      "league": "Football / England / Premier League",
+      "home": "Liverpool FC",
+      "away": "Nottingham Forest",
+      "odds": {
+        "home": 1.47,
+        "draw": 5.03,
+        "away": 6.24
+      },
+      "home_stats": {
+        "name": "Liverpool FC",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Nottingham Forest",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "coventrycityhullcity",
+      "league": "Football / England / Premier League",
+      "home": "Coventry City",
+      "away": "Hull City",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.74,
+        "away": 3.99
+      },
+      "home_stats": {
+        "name": "Coventry City",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Hull City",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "afcbournemouthevertonfc",
+      "league": "Football / England / Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Everton FC",
+      "odds": {
+        "home": 2.06,
+        "draw": 3.61,
+        "away": 3.5
+      },
+      "home_stats": {
+        "name": "AFC Bournemouth",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Everton FC",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "tottenhamhotspurnewcastleunite",
+      "league": "Football / England / Premier League",
+      "home": "Tottenham Hotspur",
+      "away": "Newcastle United",
+      "odds": {
+        "home": 2.17,
+        "draw": 3.7,
+        "away": 3.07
+      },
+      "home_stats": {
+        "name": "Tottenham Hotspur",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Newcastle United",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "chelseafcbrightonhovealbion",
+      "league": "Football / England / Premier League",
+      "home": "Chelsea FC",
+      "away": "Brighton & Hove Albion",
+      "odds": {
+        "home": 2.0,
+        "draw": 3.78,
+        "away": 3.49
+      },
+      "home_stats": {
+        "name": "Chelsea FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Brighton & Hove Albion",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          4
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "leedsunitedbrentfordfc",
+      "league": "Football / England / Premier League",
+      "home": "Leeds United",
+      "away": "Brentford FC",
+      "odds": {
+        "home": 2.53,
+        "draw": 3.51,
+        "away": 2.71
+      },
+      "home_stats": {
+        "name": "Leeds United",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Brentford FC",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "sunderlandafcfulhamfc",
+      "league": "Football / England / Premier League",
+      "home": "Sunderland AFC",
+      "away": "Fulham FC",
+      "odds": {
+        "home": 2.58,
+        "draw": 3.39,
+        "away": 2.76
+      },
+      "home_stats": {
+        "name": "Sunderland AFC",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Fulham FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "manchesterunitedipswichtown",
+      "league": "Football / England / Premier League",
+      "home": "Manchester United",
+      "away": "Ipswich Town",
+      "odds": {
+        "home": 1.43,
+        "draw": 5.18,
+        "away": 6.79
+      },
+      "home_stats": {
+        "name": "Manchester United",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Ipswich Town",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "astonvillaarsenalfc",
+      "league": "Football / England / Premier League",
+      "home": "Aston Villa",
+      "away": "Arsenal FC",
+      "odds": {
+        "home": 6.1,
+        "draw": 4.39,
+        "away": 1.55
+      },
+      "home_stats": {
+        "name": "Aston Villa",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          4
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Arsenal FC",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "ipswichtownliverpoolfc",
+      "league": "Football / England / Premier League",
+      "home": "Ipswich Town",
+      "away": "Liverpool FC",
+      "odds": {
+        "home": 5.06,
+        "draw": 4.44,
+        "away": 1.6
+      },
+      "home_stats": {
+        "name": "Ipswich Town",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Liverpool FC",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "newcastleunitedafcbournemouth",
+      "league": "Football / England / Premier League",
+      "home": "Newcastle United",
+      "away": "AFC Bournemouth",
+      "odds": {
+        "home": 2.29,
+        "draw": 3.73,
+        "away": 2.83
+      },
+      "home_stats": {
+        "name": "Newcastle United",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "AFC Bournemouth",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "manchestercitycoventrycity",
+      "league": "Football / England / Premier League",
+      "home": "Manchester City",
+      "away": "Coventry City",
+      "odds": {
+        "home": 1.23,
+        "draw": 7.81,
+        "away": 10.6
+      },
+      "home_stats": {
+        "name": "Manchester City",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Coventry City",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "brightonhovealbionleedsunited",
+      "league": "Football / England / Premier League",
+      "home": "Brighton & Hove Albion",
+      "away": "Leeds United",
+      "odds": {
+        "home": 1.82,
+        "draw": 3.79,
+        "away": 4.35
+      },
+      "home_stats": {
+        "name": "Brighton & Hove Albion",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          4
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Leeds United",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "brentfordfcsunderlandafc",
+      "league": "Football / England / Premier League",
+      "home": "Brentford FC",
+      "away": "Sunderland AFC",
+      "odds": {
+        "home": 1.69,
+        "draw": 4.05,
+        "away": 4.9
+      },
+      "home_stats": {
+        "name": "Brentford FC",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Sunderland AFC",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "nottinghamforesttottenhamhotsp",
+      "league": "Football / England / Premier League",
+      "home": "Nottingham Forest",
+      "away": "Tottenham Hotspur",
+      "odds": {
+        "home": 2.67,
+        "draw": 3.43,
+        "away": 2.63
+      },
+      "home_stats": {
+        "name": "Nottingham Forest",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Tottenham Hotspur",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "fulhamfccrystalpalace",
+      "league": "Football / England / Premier League",
+      "home": "Fulham FC",
+      "away": "Crystal Palace",
+      "odds": {
+        "home": 2.3,
+        "draw": 3.49,
+        "away": 3.07
+      },
+      "home_stats": {
+        "name": "Fulham FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Crystal Palace",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "hullcityastonvilla",
+      "league": "Football / England / Premier League",
+      "home": "Hull City",
+      "away": "Aston Villa",
+      "odds": {
+        "home": 3.99,
+        "draw": 3.83,
+        "away": 1.87
+      },
+      "home_stats": {
+        "name": "Hull City",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Aston Villa",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          4
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "evertonfcmanchesterunited",
+      "league": "Football / England / Premier League",
+      "home": "Everton FC",
+      "away": "Manchester United",
+      "odds": {
+        "home": 2.93,
+        "draw": 3.5,
+        "away": 2.37
+      },
+      "home_stats": {
+        "name": "Everton FC",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Manchester United",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": 16,
         "total_teams_in_league": 20,
         "opponent_positions": null
       },
