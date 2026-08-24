@@ -2,18 +2,15 @@
 scrape_betpawa.py — Scout BetPawa Odds Scraper
 Uses Playwright to render dynamic SPAs (Cloudflare-protected).
 
-Data model matches app.js expectations:
-{
-    "id": fixture_id,
-    "league": league_name,
-    "home": home_team,
-    "away": away_team,
-    "odds": {"home": float, "draw": float, "away": float},
-    "home_stats": None,
-    "away_stats": None,
-    "h2h": None,
-    "source": "betpawa"
-}
+DOM Structure per match:
+  div.SportEvents_eventMatch_acfzx
+    ├─ div.ScoreBoard_scoreboardPeriodParticipantNameWrapper__P7Xgx (home)
+    ├─ div.ScoreBoard_scoreboardPeriodParticipantNameWrapper__P7Xgx (away)
+    ├─ p.SportEvents_subTitle__yJAJG[data-test-id="event-path"]    (league)
+    └─ div.BetlineList_betlineList__PWLcK
+        ├─ button[data-test-id="odd-{evt}-*"]  (1 / home)
+        ├─ button[data-test-id="odd-{evt}-*"]  (X / draw)
+        └─ button[data-test-id="odd-{evt}-*"]  (2 / away)
 """
 
 import json
@@ -30,193 +27,141 @@ log = logging.getLogger(__name__)
 
 EAT = timezone(timedelta(hours=3))
 
-# ── Configuration ──────────────────────────────────────────────────────
 BETPAWA_URLS = [
     "https://www.betpawa.co.tz/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
     "https://www.betpawa.ke/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
     "https://www.betpawa.ug/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
 ]
 
-RENDER_WAIT = 5
+RENDER_WAIT = 8
 MAX_ATTEMPTS = 3
 
-# ── Helpers ─────────────────────────────────────────────────────────────
 
-def _safe_float(val, fallback: float = 0.0) -> float:
-    """Convert to float, return fallback on failure."""
+def _safe_float(val: str, fallback: float = 0.0) -> float:
     try:
-        return float(val)
+        return float(val.strip())
     except (TypeError, ValueError):
         return fallback
 
 
-def _extract_odds_from_text(page_text: str) -> Optional[Dict]:
+def _extract_odds_from_buttons(btns) -> Optional[Dict]:
     """
-    Extract 1X2 odds from BetPawa page text.
-    Page structure has pattern: "1\n4.02\nX\n3.83\n2\n1.95"
-    Returns {home, draw, away} or None.
+    Extract 1X2 odds from bet buttons.
+    Buttons have text like "1\n1.81", "X\n3.72", "2\n4.36"
+    Map based on the label (1/X/2) not market ID.
     """
-    try:
-        # Find all odds-like numbers (decimal format, typical odds range)
-        # Match numbers like 1.50, 2.30, 3.20, etc. that appear near 1/X/2 labels
-        odd_values = re.findall(r'\d+\.\d{2}', page_text)
+    odds = {}
 
-        # Filter to valid odds range (1.01 to 100.0)
-        valid_odds = []
-        for v in odd_values:
+    for btn in btns:
+        test_id = btn.get_attribute("data-test-id") or ""
+        if not test_id.startswith("odd-"):
+            continue
+
+        btn_text = btn.inner_text().strip()
+        lines = [line.strip() for line in btn_text.split("\n") if line.strip()]
+
+        if not lines:
+            continue
+
+        label = lines[0]  # "1", "X", or "2"
+
+        # Find numeric value in remaining lines
+        value = None
+        for line in lines[1:]:
             try:
-                fv = float(v)
-                if 1.01 <= fv <= 100.0:
-                    valid_odds.append(fv)
+                val = float(line)
+                if 1.01 <= val <= 100.0:
+                    value = val
+                    break
             except ValueError:
                 continue
 
-        # We need at least 3 odds: home, draw, away
-        if len(valid_odds) >= 3:
-            # Take the first 3 valid odds we find
-            # These typically appear in order: 1, X, 2 on BetPawa
-            return {
-                "home": valid_odds[0],
-                "draw": valid_odds[1],
-                "away": valid_odds[2]
-            }
+        if value is not None:
+            if label == "1":
+                odds["home"] = value
+            elif label == "X":
+                odds["draw"] = value
+            elif label == "2":
+                odds["away"] = value
 
-        # Alternative: look for the "1 X 2" pattern with surrounding numbers
-        # Pattern: "1 [number] X [number] 2 [number]"
-        pattern = re.findall(r'(?:1|X|2)\s+(\d+\.\d{2})', page_text)
-        if len(pattern) >= 3:
-            values = []
-            for p in pattern[:6]:  # check up to 6 occurrences
-                try:
-                    fv = float(p)
-                    if 1.01 <= fv <= 100.0:
-                        values.append(fv)
-                except ValueError:
-                    continue
-            if len(values) >= 3:
-                return {"home": values[0], "draw": values[1], "away": values[2]}
-
-        log.warning(f"Not enough valid odds found in text. Got {len(valid_odds)} valid odds.")
-        return None
-
-    except Exception as e:
-        log.warning(f"Error extracting odds from text: {e}")
-        return None
+    return odds if len(odds) == 3 else None
 
 
-def _extract_odds_from_page(page: Page) -> Optional[Dict]:
+def _extract_matches_from_page(page: Page) -> List[Dict]:
     """
-    Extract odds by getting page content and parsing text.
-    Avoids ElementHandle.inner_text issues.
+    Extract all matches from the current BetPawa page.
     """
+    matches = []
+
     try:
-        # Get full page text content
-        page_text = page.inner_text("body")
+        event_divs = page.query_selector_all(
+            "[class*='SportEvents_eventMatch']"
+        )
 
-        # Also get the raw HTML snippet for odds patterns
-        html = page.content()
+        log.info(f"  Found {len(event_divs)} event divs")
 
-        # Try text-based extraction first
-        odds = _extract_odds_from_text(page_text)
+        for evt_div in event_divs:
+            try:
+                # Extract team names
+                team_wraps = evt_div.query_selector_all(
+                    "[class*='ScoreBoard_scoreboardPeriodParticipantNameWrapper']"
+                )
 
-        if not odds:
-            # Try extracting from HTML using regex for odd values
-            # BetPawa embeds odds as text nodes near "1", "X", "2"
-            html_odds = re.findall(r'<[^>]*?class="[^"]*odd[^"]*")[^>]*>', html)
-            if html_odds:
-                # Try to extract text from these elements
-                for h in html_odds[:5]:
-                    # Get text between tags
-                    txt_match = re.search(r'>([^<]+)<', h)
-                    if txt_match:
-                        txt = txt_match.group(1).strip()
-                        try:
-                            v = float(txt)
-                            if 1.01 <= v <= 100.0:
-                                # This is a valid odd, collect all such values
-                                pass
-                        except ValueError:
-                            pass
+                if len(team_wraps) < 2:
+                    continue
 
-        if not odds:
-            # Fallback: just use regex on full page text
-            odds = _extract_odds_from_text(page_text)
+                home_name = team_wraps[0].inner_text().strip()
+                away_name = team_wraps[1].inner_text().strip()
 
-        return odds
+                if not home_name or not away_name:
+                    continue
+
+                # Extract league
+                league_el = evt_div.query_selector(
+                    "p[class*='SportEvents_subTitle']"
+                )
+                league = league_el.inner_text().strip() if league_el else "Unknown League"
+
+                # Extract odds from bet buttons
+                bet_buttons = evt_div.query_selector_all(
+                    "button[data-test-id^='odd-']"
+                )
+
+                odds = _extract_odds_from_buttons(bet_buttons)
+
+                if not odds:
+                    log.warning(f"    No valid odds for {home_name} vs {away_name}")
+                    continue
+
+                match_id = re.sub(
+                    r"[^a-z0-9]", "",
+                    f"{home_name}_{away_name}".lower()
+                )[:30]
+
+                matches.append({
+                    "id": match_id,
+                    "league": league,
+                    "home": home_name,
+                    "away": away_name,
+                    "odds": odds,
+                    "home_stats": None,
+                    "away_stats": None,
+                    "h2h": None,
+                    "source": "betpawa"
+                })
+                log.info(
+                    f"    {home_name} vs {away_name}: "
+                    f"H={odds['home']} D={odds['draw']} A={odds['away']}"
+                )
+
+            except Exception as e:
+                log.warning(f"  Error parsing event div: {e}")
+                continue
 
     except Exception as e:
-        log.warning(f"Error extracting odds from page: {e}")
-        return None
+        log.warning(f"  Error extracting matches: {e}")
 
-
-def _get_team_names_from_text(page_text: str) -> tuple:
-    """
-    Extract home/away team names from page text.
-    Returns (home_team, away_team) or ("Home Team", "Away Team").
-    """
-    # Look for common team name patterns
-    # BetPawa typically shows: "Home Team vs Away Team" or individual team names
-    # Try to find words that look like team names (capitalized, 2-3 words)
-
-    # Split text and look for capitalized sequences
-    lines = page_text.split('\n')
-    potential_teams = []
-
-    for line in lines:
-        line = line.strip()
-        # Skip navigation, empty lines, short lines
-        if not line or len(line) < 3 or len(line) > 50:
-            continue
-        # Skip common non-team words
-        skip_words = {"LIVE", "UPCOMING", "TODAY", "MATCH", "FOOTBALL",
-                      "BET", "ODDS", "1X2", "LIVE", "RESULT", "SCORE",
-                      "LOGIN", "JOIN", "NOW", "Sign", "Up",
-                      "BetPawa", "Tanzania", "Kenya", "Uganda"}
-        if line.upper() in skip_words:
-            continue
-
-        # Check if line starts with a capital letter and contains letters/spaces
-        if line[0].isupper() and any(c.isalpha() for c in line):
-            # Don't add if it's just a number or odd
-            try:
-                float(line)
-                continue  # skip if it's a number (odd)
-            except ValueError:
-                pass
-
-            # Avoid very short likely-not-team strings
-            if len(line) > 2:
-                potential_teams.append(line)
-
-    # Deduplicate while preserving order
-    seen = set()
-    unique_teams = []
-    for t in potential_teams:
-        if t not in seen:
-            seen.add(t)
-            unique_teams.append(t)
-
-    if len(unique_teams) >= 2:
-        return (unique_teams[0], unique_teams[1])
-
-    return ("Home Team", "Away Team")
-
-
-# ── Build Match ──────────────────────────────────────────────────────────
-
-def _build_match(fixture_id: str, home: str, away: str, odds: Dict) -> Dict:
-    """Build match dict in app.js format."""
-    return {
-        "id": fixture_id,
-        "league": "BetPawa Premier League",
-        "home": home,
-        "away": away,
-        "odds": odds,
-        "home_stats": None,
-        "away_stats": None,
-        "h2h": None,
-        "source": "betpawa"
-    }
+    return matches
 
 
 # ── Main Scraper ────────────────────────────────────────────────────────
@@ -224,7 +169,6 @@ def _build_match(fixture_id: str, home: str, away: str, odds: Dict) -> Dict:
 def fetch_fixtures(date_str: Optional[str] = None) -> List[Dict]:
     """
     Fetch fixtures + odds from BetPawa using Playwright.
-
     Returns list of match dicts compatible with app.js scoring engine.
     """
     if not date_str:
@@ -239,8 +183,6 @@ def fetch_fixtures(date_str: Optional[str] = None) -> List[Dict]:
             headless=True,
             args=[
                 "--disable-blink-features=AutomationControlled",
-                "--disable-web-security",
-                "--disable-dev-shm-usage",
                 "--no-sandbox",
             ]
         )
@@ -254,88 +196,44 @@ def fetch_fixtures(date_str: Optional[str] = None) -> List[Dict]:
             ),
         )
 
-        # Add stealth script to avoid bot detection
         page = context.new_page()
         page.add_script_tag(
-            content="""
-            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            window.chrome = { runtime: {} };
-            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
-            Object.defineProperty(navigator, 'language', { get: () => 'en-US' });
-            """
+            content="Object.defineProperty(navigator, 'webdriver', { get: () => undefined });"
         )
 
-        attempted_urls = 0
-        for url in BETPAWA_URLS:
-            if attempted_urls >= MAX_ATTEMPTS:
-                log.warning("Max URL attempts reached, stopping.")
+        for i, url in enumerate(BETPAWA_URLS):
+            if i >= MAX_ATTEMPTS:
                 break
 
-            attempted_urls += 1
-            log.info(f"Attempting BetPawa URL ({attempted_urls}/{MAX_ATTEMPTS}): {url}")
-
+            log.info(f"  Trying URL ({i+1}/{MAX_ATTEMPTS}): {url}")
             try:
                 page.goto(url, wait_until="networkidle", timeout=60000)
                 page.wait_for_load_state("networkidle", timeout=30000)
                 time.sleep(RENDER_WAIT)
 
-                # Get full page text
-                page_text = page.inner_text("body")
-
-                # Extract team names
-                home, away = _get_team_names_from_text(page_text)
-                log.info(f"  Teams: {home} vs {away}")
-
-                # Extract odds from page text
-                odds = _extract_odds_from_text(page_text)
-
-                # Generate fixture ID from page title
-                title = page.title()
-                fixture_id = re.sub(r'[^a-z0-9]', '', title.lower())[:20] or "betpawa_01"
-
-                if odds:
-                    match = _build_match(fixture_id, home, away, odds)
-                    all_matches.append(match)
-                    log.info(f"  ✓ Odds extracted: home={odds['home']}, draw={odds['draw']}, away={odds['away']}")
-                else:
-                    log.warning("  ✗ Could not extract odds from page text")
-
-                    # Try scrolling to load more events
-                    for _ in range(3):
-                        page.evaluate("window.scrollBy(0, window.innerHeight)")
-                        time.sleep(1)
-
-                    # Re-get page text after scroll
-                    page_text = page.inner_text("body")
-                    odds = _extract_odds_from_text(page_text)
-                    if odds:
-                        match = _build_match(fixture_id, home, away, odds)
-                        all_matches.append(match)
-                        log.info(f"  ✓ Odds extracted after scroll: {odds}")
+                matches = _extract_matches_from_page(page)
+                all_matches.extend(matches)
+                log.info(f"  Got {len(matches)} matches from this URL")
 
             except Exception as e:
-                log.warning(f"Failed to load {url}: {e}")
+                log.warning(f"  Failed: {e}")
                 continue
 
         browser.close()
 
-    # Deduplicate matches by ID
+    # Deduplicate by match ID
     seen = set()
-    unique_matches = []
+    unique = []
     for m in all_matches:
-        mid = m.get("id", "")
-        if mid not in seen:
-            seen.add(mid)
-            unique_matches.append(m)
+        if m["id"] not in seen:
+            seen.add(m["id"])
+            unique.append(m)
 
-    log.info(f"  Total BetPawa matches: {len(unique_matches)}")
-    return unique_matches
+    log.info(f"Total BetPawa matches: {len(unique)}")
+    return unique
 
-
-# ── CLI Test ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     fixtures = fetch_fixtures()
-    output = json.dumps(fixtures, indent=2)
-    print(output)
-    print(f"\n[ OK ] {len(fixtures)} fixtures fetched from BetPawa")
+    print(json.dumps(fixtures, indent=2))
+    print(f"\n[OK] {len(fixtures)} fixtures fetched from BetPawa")
