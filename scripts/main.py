@@ -3,8 +3,10 @@ main.py — Scout Orchestrator
 Fetches fixtures + enriches with stats → writes enriched.json
 Scoring happens in the browser (app.js).
 
-Now supports BetPawa (Playwright) as primary odds source,
-with API-Football as fallback.
+Data sources:
+- BetPawa (Playwright) → primary odds
+- API-Football → fallback odds
+- football-data.org → enrichment (free tier leagues)
 """
 
 import json
@@ -14,7 +16,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from scrape import fetch_fixtures as fetch_api_fixtures
-from stats import enrich_all
+from stats import enrich_all, get_league_code
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
@@ -75,7 +77,7 @@ def run():
 
     log.info(f"  {len(raw_fixtures)} fixtures fetched")
 
-    # Step 2: Enrich with stats
+    # Step 2: Enrich with stats (football-data.org free tier)
     log.info("Step 2/2: Enriching with form, H2H, standings...")
     enriched = enrich_all(raw_fixtures)
     log.info(f"  {len(enriched)} matches enriched")
