@@ -22,24 +22,22 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install -r requirements.txt
 
       - name: Run Scout pipeline
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          # Pass today's EAT date explicitly so scraper never uses UTC date
           SCOUT_DATE: ""
         run: |
           python -c "
           from datetime import datetime, timezone, timedelta
-          import os
           eat = timezone(timedelta(hours=3))
           today = datetime.now(eat).strftime('%Y-%m-%d')
           print(f'Running scan for EAT date: {today}')
           with open('scout_date.txt','w') as f: f.write(today)
           "
-          python main.py
+          python scripts/main.py
 
       - name: Commit enriched.json
         run: |
