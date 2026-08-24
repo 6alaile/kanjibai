@@ -4,7 +4,7 @@ const { createApp, ref, computed, reactive } = Vue;
 // ─── FETCH ENRICHED DATA ─────────────────────────────────────────────────────
 async function loadEnriched() {
   try {
-    const resp = await fetch('https://raw.githubusercontent.com/6alaile/kanjibai/main/enriched.json?t=' + Date.now());
+    const resp = await fetch('/enriched.json?t=' + Date.now());
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     return await resp.json();
   } catch (e) {
