@@ -36,6 +36,15 @@ BETPAWA_URLS = [
 RENDER_WAIT = 8
 MAX_ATTEMPTS = 3
 
+EXCLUDED_COUNTRIES = {"israel"}
+EXCLUDED_KEYWORDS = {"israel", "ligat", "leumit", "toto cup"}
+
+
+def is_excluded(league_name: str) -> bool:
+    """Check if league should be excluded (Israeli leagues)."""
+    name = league_name.lower()
+    return any(kw in name for kw in EXCLUDED_KEYWORDS)
+
 
 def _safe_float(val: str, fallback: float = 0.0) -> float:
     try:
@@ -121,6 +130,10 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                     "p[class*='SportEvents_subTitle']"
                 )
                 league = league_el.inner_text().strip() if league_el else "Unknown League"
+
+                if is_excluded(league):
+                    log.info(f"    Skipping Israeli league: {league}")
+                    continue
 
                 # Extract odds from bet buttons
                 bet_buttons = evt_div.query_selector_all(
