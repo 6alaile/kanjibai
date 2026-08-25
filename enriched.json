@@ -1,23 +1,55 @@
 {
   "meta": {
-    "date": "2026-08-25",
-    "generatedAt": "2026-08-25T21:03:13.326609+03:00",
-    "scanned": 21,
-    "elapsedSeconds": 145.1
+    "date": "2026-08-26",
+    "generatedAt": "2026-08-26T00:05:09.861599+03:00",
+    "scanned": 23,
+    "elapsedSeconds": 271.3
   },
   "matches": [
     {
-      "id": "bodoeglimtnecnijmegen",
+      "id": "vikingfkgnkdinamozagreb",
       "league": "Football / International / UEFA Champions League",
-      "home": "Bodoe/Glimt",
-      "away": "NEC Nijmegen",
+      "home": "Viking FK",
+      "away": "GNK Dinamo Zagreb",
       "odds": {
-        "home": 1.5,
-        "draw": 5.25,
-        "away": 4.96
+        "home": 2.32,
+        "draw": 3.77,
+        "away": 2.75
       },
       "home_stats": {
-        "name": "Bodoe/Glimt",
+        "name": "Viking FK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 23,
+        "total_teams_in_league": 36,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "GNK Dinamo Zagreb",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 36,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 36
+    },
+    {
+      "id": "olympiquelyonfenerbahceistanbu",
+      "league": "Football / International / UEFA Champions League",
+      "home": "Olympique Lyon",
+      "away": "Fenerbahce Istanbul",
+      "odds": {
+        "home": 1.96,
+        "draw": 3.68,
+        "away": 3.76
+      },
+      "home_stats": {
+        "name": "Olympique Lyon",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -26,7 +58,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "NEC Nijmegen",
+        "name": "Fenerbahce Istanbul",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -39,17 +71,17 @@
       "total_teams_in_league": 20
     },
     {
-      "id": "lasklinzcelticglasgow",
+      "id": "nkceljeskslovanbratislava",
       "league": "Football / International / UEFA Champions League",
-      "home": "LASK Linz",
-      "away": "Celtic Glasgow",
+      "home": "NK Celje",
+      "away": "SK Slovan Bratislava",
       "odds": {
-        "home": 1.96,
-        "draw": 4.01,
-        "away": 3.33
+        "home": 2.45,
+        "draw": 3.33,
+        "away": 2.98
       },
       "home_stats": {
-        "name": "LASK Linz",
+        "name": "NK Celje",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -58,7 +90,39 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Celtic Glasgow",
+        "name": "SK Slovan Bratislava",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "aekathenspfclevskisofia",
+      "league": "Football / International / UEFA Champions League",
+      "home": "AEK Athens",
+      "away": "PFC Levski Sofia",
+      "odds": {
+        "home": 1.52,
+        "draw": 4.34,
+        "away": 6.76
+      },
+      "home_stats": {
+        "name": "AEK Athens",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "PFC Levski Sofia",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -102,156 +166,6 @@
       "source": "betpawa"
     },
     {
-      "id": "valenciacfrealbetisseville",
-      "league": "Football / Spain / LaLiga",
-      "home": "Valencia CF",
-      "away": "Real Betis Seville",
-      "odds": {
-        "home": 2.71,
-        "draw": 3.33,
-        "away": 2.66
-      },
-      "home_stats": {
-        "name": "Valencia CF",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          0
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Real Betis Seville",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Real Betis Balompi\u00e9",
-            "away": "Valencia CF",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Real Betis Balompi\u00e9",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Real Betis Balompi\u00e9",
-            "away": "Valencia CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Real Betis Balompi\u00e9",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Real Betis Balompi\u00e9",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Real Betis Balompi\u00e9",
-            "away": "Valencia CF",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "home": "Real Betis Balompi\u00e9",
-            "away": "Valencia CF",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Real Betis Balompi\u00e9",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "home": "Valencia CF",
-            "away": "Real Betis Balompi\u00e9",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "fcanyangincheonunitedfc",
-      "league": "Football / Republic of Korea / K-League 1",
-      "home": "FC Anyang",
-      "away": "Incheon United FC",
-      "odds": {
-        "home": 3.16,
-        "draw": 3.25,
-        "away": 2.35
-      },
-      "home_stats": {
-        "name": "FC Anyang",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Incheon United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
       "id": "gangwonfcgwangjufc",
       "league": "Football / Republic of Korea / K-League 1",
       "home": "Gangwon FC",
@@ -272,6 +186,37 @@
       },
       "away_stats": {
         "name": "Gwangju FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcanyangincheonunitedfc",
+      "league": "Football / Republic of Korea / K-League 1",
+      "home": "FC Anyang",
+      "away": "Incheon United FC",
+      "odds": {
+        "home": 3.26,
+        "draw": 3.26,
+        "away": 2.29
+      },
+      "home_stats": {
+        "name": "FC Anyang",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Incheon United FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -314,17 +259,17 @@
       "source": "betpawa"
     },
     {
-      "id": "ipswichtownleicestercity",
-      "league": "Football / England / EFL Cup",
-      "home": "Ipswich Town",
-      "away": "Leicester City",
+      "id": "csdindependientedelvallecdtoli",
+      "league": "Football / International / Copa Libertadores",
+      "home": "CSD Independiente del Valle",
+      "away": "CD Tolima",
       "odds": {
-        "home": 1.46,
-        "draw": 5.06,
-        "away": 6.4
+        "home": 1.51,
+        "draw": 4.1,
+        "away": 6.37
       },
       "home_stats": {
-        "name": "Ipswich Town",
+        "name": "CSD Independiente del Valle",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -333,7 +278,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Leicester City",
+        "name": "CD Tolima",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -345,17 +290,79 @@
       "source": "betpawa"
     },
     {
-      "id": "southamptonfcwesthamunited",
-      "league": "Football / England / EFL Cup",
-      "home": "Southampton FC",
-      "away": "West Ham United",
+      "id": "cucutadeportivofcalianzafcvall",
+      "league": "Football / Colombia / Primera A, Apertura",
+      "home": "Cucuta Deportivo FC",
+      "away": "Alianza FC Valledupar",
+      "odds": {
+        "home": 2.16,
+        "draw": 3.17,
+        "away": 3.47
+      },
+      "home_stats": {
+        "name": "Cucuta Deportivo FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Alianza FC Valledupar",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cs2demayoclubguaraniasuncion",
+      "league": "Football / Paraguay / Division de Honor, Apertura",
+      "home": "CS 2 de Mayo",
+      "away": "Club Guarani Asuncion",
+      "odds": {
+        "home": 2.79,
+        "draw": 3.0,
+        "away": 2.59
+      },
+      "home_stats": {
+        "name": "CS 2 de Mayo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Club Guarani Asuncion",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ecjuventuderscrbrasilal",
+      "league": "Football / Brazil / Brasileiro Serie B",
+      "home": "EC Juventude RS",
+      "away": "CR Brasil AL",
       "odds": {
         "home": 2.07,
-        "draw": 3.88,
-        "away": 3.15
+        "draw": 3.24,
+        "away": 3.72
       },
       "home_stats": {
-        "name": "Southampton FC",
+        "name": "EC Juventude RS",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -364,7 +371,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "West Ham United",
+        "name": "CR Brasil AL",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -376,17 +383,17 @@
       "source": "betpawa"
     },
     {
-      "id": "sheffieldwednesdaywolverhampto",
-      "league": "Football / England / EFL Cup",
-      "home": "Sheffield Wednesday",
-      "away": "Wolverhampton Wanderers",
+      "id": "acgoianiensegobotafogofcsp",
+      "league": "Football / Brazil / Brasileiro Serie B",
+      "home": "AC Goianiense GO",
+      "away": "Botafogo FC SP",
       "odds": {
-        "home": 5.49,
-        "draw": 4.52,
-        "away": 1.56
+        "home": 2.16,
+        "draw": 3.05,
+        "away": 3.68
       },
       "home_stats": {
-        "name": "Sheffield Wednesday",
+        "name": "AC Goianiense GO",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -395,7 +402,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Wolverhampton Wanderers",
+        "name": "Botafogo FC SP",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -407,17 +414,128 @@
       "source": "betpawa"
     },
     {
-      "id": "plymouthargylecoventrycity",
-      "league": "Football / England / EFL Cup",
-      "home": "Plymouth Argyle",
-      "away": "Coventry City",
+      "id": "realmadridrealsociedadsansebas",
+      "league": "Football / Spain / LaLiga",
+      "home": "Real Madrid",
+      "away": "Real Sociedad San Sebastian",
       "odds": {
-        "home": 4.88,
-        "draw": 4.34,
-        "away": 1.64
+        "home": 1.32,
+        "draw": 6.24,
+        "away": 8.04
       },
       "home_stats": {
-        "name": "Plymouth Argyle",
+        "name": "Real Madrid",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Real Sociedad San Sebastian",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Real Madrid CF",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Real Madrid CF",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Real Madrid CF",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Real Madrid CF",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Real Madrid CF",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Real Madrid CF",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Real Sociedad de F\u00fatbol",
+            "away": "Real Madrid CF",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Real Madrid CF",
+            "away": "Real Sociedad de F\u00fatbol",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "tottenhamhotspurcharltonathlet",
+      "league": "Football / England / EFL Cup",
+      "home": "Tottenham Hotspur",
+      "away": "Charlton Athletic",
+      "odds": {
+        "home": 1.24,
+        "draw": 6.95,
+        "away": 10.57
+      },
+      "home_stats": {
+        "name": "Tottenham Hotspur",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -426,7 +544,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Coventry City",
+        "name": "Charlton Athletic",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -438,17 +556,17 @@
       "source": "betpawa"
     },
     {
-      "id": "nottinghamforestleedsunited",
+      "id": "newcastleunitedwestbromwichalb",
       "league": "Football / England / EFL Cup",
-      "home": "Nottingham Forest",
-      "away": "Leeds United",
+      "home": "Newcastle United",
+      "away": "West Bromwich Albion",
       "odds": {
-        "home": 2.3,
-        "draw": 3.48,
-        "away": 3.08
+        "home": 1.35,
+        "draw": 5.73,
+        "away": 7.89
       },
       "home_stats": {
-        "name": "Nottingham Forest",
+        "name": "Newcastle United",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -457,7 +575,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Leeds United",
+        "name": "West Bromwich Albion",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -469,17 +587,17 @@
       "source": "betpawa"
     },
     {
-      "id": "birminghamcitybrentfordfc",
+      "id": "prestonnorthendevertonfc",
       "league": "Football / England / EFL Cup",
-      "home": "Birmingham City",
-      "away": "Brentford FC",
+      "home": "Preston North End",
+      "away": "Everton FC",
       "odds": {
-        "home": 3.97,
-        "draw": 3.76,
-        "away": 1.88
+        "home": 5.76,
+        "draw": 4.57,
+        "away": 1.54
       },
       "home_stats": {
-        "name": "Birmingham City",
+        "name": "Preston North End",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -488,7 +606,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Brentford FC",
+        "name": "Everton FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -500,17 +618,105 @@
       "source": "betpawa"
     },
     {
-      "id": "stokecityhullcity",
-      "league": "Football / England / EFL Cup",
-      "home": "Stoke City",
-      "away": "Hull City",
+      "id": "fcbarcelonaathleticbilbao",
+      "league": "Football / Spain / LaLiga",
+      "home": "FC Barcelona",
+      "away": "Athletic Bilbao",
       "odds": {
-        "home": 2.39,
-        "draw": 3.35,
-        "away": 3.06
+        "home": 1.32,
+        "draw": 6.24,
+        "away": 8.2
       },
       "home_stats": {
-        "name": "Stoke City",
+        "name": "FC Barcelona",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          5
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Athletic Bilbao",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "rcceltadevigocaosasuna",
+      "league": "Football / Spain / LaLiga",
+      "home": "RC Celta de Vigo",
+      "away": "CA Osasuna",
+      "odds": {
+        "home": 2.0,
+        "draw": 3.47,
+        "away": 3.95
+      },
+      "home_stats": {
+        "name": "RC Celta de Vigo",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "CA Osasuna",
+        "form": [
+          "D"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "asmonacogornikzabrze",
+      "league": "Football / International / UEFA Conference League",
+      "home": "AS Monaco",
+      "away": "Gornik Zabrze",
+      "odds": {
+        "home": 1.38,
+        "draw": 5.52,
+        "away": 7.42
+      },
+      "home_stats": {
+        "name": "AS Monaco",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -519,7 +725,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Hull City",
+        "name": "Gornik Zabrze",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -531,17 +737,17 @@
       "source": "betpawa"
     },
     {
-      "id": "doncasterroversmiddlesbroughfc",
+      "id": "bradfordcityfcburnleyfc",
       "league": "Football / England / EFL Cup",
-      "home": "Doncaster Rovers",
-      "away": "Middlesbrough FC",
+      "home": "Bradford City FC",
+      "away": "Burnley FC",
       "odds": {
-        "home": 6.04,
-        "draw": 4.78,
-        "away": 1.5
+        "home": 3.29,
+        "draw": 3.39,
+        "away": 2.16
       },
       "home_stats": {
-        "name": "Doncaster Rovers",
+        "name": "Bradford City FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -550,7 +756,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Middlesbrough FC",
+        "name": "Burnley FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -562,17 +768,17 @@
       "source": "betpawa"
     },
     {
-      "id": "blackburnroverssheffieldunited",
-      "league": "Football / England / EFL Cup",
-      "home": "Blackburn Rovers",
-      "away": "Sheffield United",
+      "id": "stabaekifranheim",
+      "league": "Football / Norway / 1st Division",
+      "home": "Stabaek IF",
+      "away": "Ranheim",
       "odds": {
-        "home": 2.65,
-        "draw": 3.48,
-        "away": 2.6
+        "home": 1.38,
+        "draw": 5.45,
+        "away": 5.36
       },
       "home_stats": {
-        "name": "Blackburn Rovers",
+        "name": "Stabaek IF",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -581,7 +787,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Sheffield United",
+        "name": "Ranheim",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -593,17 +799,17 @@
       "source": "betpawa"
     },
     {
-      "id": "cambridgeunitedmillwallfc",
-      "league": "Football / England / EFL Cup",
-      "home": "Cambridge United",
-      "away": "Millwall FC",
+      "id": "stroemsgodsetifhoeddil",
+      "league": "Football / Norway / 1st Division",
+      "home": "Stroemsgodset IF",
+      "away": "Hoedd IL",
       "odds": {
-        "home": 2.94,
-        "draw": 3.43,
-        "away": 2.42
+        "home": 1.23,
+        "draw": 6.62,
+        "away": 8.27
       },
       "home_stats": {
-        "name": "Cambridge United",
+        "name": "Stroemsgodset IF",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -612,131 +818,7 @@
         "opponent_positions": null
       },
       "away_stats": {
-        "name": "Millwall FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "blackpoolfclincolncity",
-      "league": "Football / England / EFL Cup",
-      "home": "Blackpool FC",
-      "away": "Lincoln City",
-      "odds": {
-        "home": 3.07,
-        "draw": 3.56,
-        "away": 2.25
-      },
-      "home_stats": {
-        "name": "Blackpool FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Lincoln City",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "watfordfcpeterboroughunited",
-      "league": "Football / England / EFL Cup",
-      "home": "Watford FC",
-      "away": "Peterborough United",
-      "odds": {
-        "home": 2.13,
-        "draw": 3.71,
-        "away": 3.15
-      },
-      "home_stats": {
-        "name": "Watford FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Peterborough United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "fleetwoodtownshrewsburytown",
-      "league": "Football / England / EFL Cup",
-      "home": "Fleetwood Town",
-      "away": "Shrewsbury Town",
-      "odds": {
-        "home": 2.09,
-        "draw": 3.48,
-        "away": 3.62
-      },
-      "home_stats": {
-        "name": "Fleetwood Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Shrewsbury Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "barnsleyfccrewealexandra",
-      "league": "Football / England / EFL Cup",
-      "home": "Barnsley FC",
-      "away": "Crewe Alexandra",
-      "odds": {
-        "home": 1.6,
-        "draw": 4.32,
-        "away": 4.75
-      },
-      "home_stats": {
-        "name": "Barnsley FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Crewe Alexandra",
+        "name": "Hoedd IL",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
