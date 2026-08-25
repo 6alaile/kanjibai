@@ -1,9 +1,6 @@
 name: Scout Daily Scan
 
 on:
-  schedule:
-    # 09:00 EAT = 06:00 UTC
-    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
