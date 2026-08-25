@@ -32,20 +32,28 @@ SESSION.headers.update(FD_HEADERS)
 
 # football-data.org league code map
 # Maps common league name fragments to their API codes
+# Order matters: more specific patterns first
 LEAGUE_CODE_MAP = {
     "premier league": "PL",
     "la liga": "PD",
+    "primera division": "PD",
+    "laliga": "PD",
+    "la liga ea sports": "PD",
+    "spain primera": "PD",
     "bundesliga": "BL1",
+    "serie a (brazil)": "BSA",
+    "brasileiro serie a": "BSA",
+    "campeonato brasileiro": "BSA",
+    "brasileirao": "BSA",
     "serie a": "SA",
     "ligue 1": "FL1",
     "champions league": "CL",
     "european championship": "EC",
     "primeira liga": "PPL",
+    "liga portugal": "PPL",
     "eredivisie": "DED",
-    "serie a (brazil)": "BSA",
     "championship": "ELC",
     "allsvenskan": "DED",
-    "liga portugal": "PPL",
     "superliga": "DED",  # Denmark/Sweden
     "k league": None,  # Not in free tier
     "liga 2": None,  # Not in free tier
