@@ -1,9 +1,831 @@
 {
   "meta": {
     "date": "2026-08-24",
-    "generatedAt": "2026-08-24T06:56:53.217883+03:00",
-    "scanned": 0,
-    "error": "No fixtures returned by scraper"
+    "generatedAt": "2026-08-24T20:07:03.457830+03:00",
+    "scanned": 21,
+    "elapsedSeconds": 193.2
   },
-  "matches": []
+  "matches": [
+    {
+      "id": "fulhamfcchelseafc",
+      "league": "Football / England / Premier League",
+      "home": "Fulham FC",
+      "away": "Chelsea FC",
+      "odds": {
+        "home": 3.9,
+        "draw": 3.79,
+        "away": 1.9
+      },
+      "home_stats": {
+        "name": "Fulham FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Chelsea FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "Chelsea FC",
+            "away": "Fulham FC",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "Fulham FC",
+            "away": "Chelsea FC",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "asromaacffiorentina",
+      "league": "Football / Italy / Serie A",
+      "home": "AS Roma",
+      "away": "ACF Fiorentina",
+      "odds": {
+        "home": 1.72,
+        "draw": 3.94,
+        "away": 4.82
+      },
+      "home_stats": {
+        "name": "AS Roma",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "ACF Fiorentina",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "AS Roma",
+            "away": "ACF Fiorentina",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "AS Roma",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "home": "AS Roma",
+            "away": "ACF Fiorentina",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "AS Roma",
+            "score": [
+              5,
+              1
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "AS Roma",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "AS Roma",
+            "away": "ACF Fiorentina",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "AS Roma",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "home": "AS Roma",
+            "away": "ACF Fiorentina",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "ACF Fiorentina",
+            "away": "AS Roma",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "home": "AS Roma",
+            "away": "ACF Fiorentina",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "caosasunalevanteud",
+      "league": "Football / Spain / LaLiga",
+      "home": "CA Osasuna",
+      "away": "Levante UD",
+      "odds": {
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 4.21
+      },
+      "home_stats": {
+        "name": "CA Osasuna",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Levante UD",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "malagacfrcdeportivodelacoruna",
+      "league": "Football / Spain / LaLiga",
+      "home": "Malaga CF",
+      "away": "RC Deportivo de La Coruna",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.18,
+        "away": 3.32
+      },
+      "home_stats": {
+        "name": "Malaga CF",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "RC Deportivo de La Coruna",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "granadacfrcdmallorca",
+      "league": "Football / Spain / LaLiga 2",
+      "home": "Granada CF",
+      "away": "RCD Mallorca",
+      "odds": {
+        "home": 3.07,
+        "draw": 3.05,
+        "away": 2.46
+      },
+      "home_stats": {
+        "name": "Granada CF",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "RCD Mallorca",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "jejuskfcfcpohangsteelers",
+      "league": "Football / Republic of Korea / K-League 1",
+      "home": "Jeju SK FC",
+      "away": "FC Pohang Steelers",
+      "odds": {
+        "home": 2.47,
+        "draw": 3.18,
+        "away": 3.02
+      },
+      "home_stats": {
+        "name": "Jeju SK FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "FC Pohang Steelers",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gimcheonsangmufcjeonbukfc",
+      "league": "Football / Republic of Korea / K-League 1",
+      "home": "Gimcheon Sangmu FC",
+      "away": "Jeonbuk FC",
+      "odds": {
+        "home": 3.38,
+        "draw": 3.4,
+        "away": 2.18
+      },
+      "home_stats": {
+        "name": "Gimcheon Sangmu FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Jeonbuk FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcseoulbucheonfc1995",
+      "league": "Football / Republic of Korea / K-League 1",
+      "home": "FC Seoul",
+      "away": "Bucheon FC 1995",
+      "odds": {
+        "home": 1.54,
+        "draw": 4.26,
+        "away": 6.03
+      },
+      "home_stats": {
+        "name": "FC Seoul",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Bucheon FC 1995",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "alittihadclubalhazm",
+      "league": "Football / Saudi Arabia / Saudi Prof. League",
+      "home": "Al-Ittihad Club",
+      "away": "Al-Hazm",
+      "odds": {
+        "home": 1.49,
+        "draw": 4.68,
+        "away": 5.49
+      },
+      "home_stats": {
+        "name": "Al-Ittihad Club",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Al-Hazm",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "stadereimsfcannecy",
+      "league": "Football / France / Ligue 2",
+      "home": "Stade Reims",
+      "away": "FC Annecy",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.74,
+        "away": 4.34
+      },
+      "home_stats": {
+        "name": "Stade Reims",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "FC Annecy",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gilvicentebarceloscasapialisbo",
+      "league": "Football / Portugal / Liga Portugal",
+      "home": "Gil Vicente Barcelos",
+      "away": "Casa Pia Lisbon",
+      "odds": {
+        "home": 1.73,
+        "draw": 3.69,
+        "away": 5.33
+      },
+      "home_stats": {
+        "name": "Gil Vicente Barcelos",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Casa Pia Lisbon",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "kocaelisporamedsportiffaaliyet",
+      "league": "Football / Turkey / Super Lig",
+      "home": "Kocaelispor",
+      "away": "Amed Sportif Faaliyetler",
+      "odds": {
+        "home": 2.27,
+        "draw": 3.42,
+        "away": 3.24
+      },
+      "home_stats": {
+        "name": "Kocaelispor",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Amed Sportif Faaliyetler",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "botafogofrrjcaparanaensepr",
+      "league": "Football / Brazil / Brasileiro Serie A",
+      "home": "Botafogo FR RJ",
+      "away": "CA Paranaense PR",
+      "odds": {
+        "home": 2.3,
+        "draw": 3.32,
+        "away": 3.06
+      },
+      "home_stats": {
+        "name": "Botafogo FR RJ",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "CA Paranaense PR",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "catigrecacentralcordobase",
+      "league": "Football / Argentina / Liga Profesional",
+      "home": "CA Tigre",
+      "away": "CA Central Cordoba SE",
+      "odds": {
+        "home": 1.62,
+        "draw": 3.5,
+        "away": 6.36
+      },
+      "home_stats": {
+        "name": "CA Tigre",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "CA Central Cordoba SE",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "calanusargentinosjuniors",
+      "league": "Football / Argentina / Liga Profesional",
+      "home": "CA Lanus",
+      "away": "Argentinos Juniors",
+      "odds": {
+        "home": 2.51,
+        "draw": 2.96,
+        "away": 3.09
+      },
+      "home_stats": {
+        "name": "CA Lanus",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Argentinos Juniors",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "catalleresdecordobacarosarioce",
+      "league": "Football / Argentina / Liga Profesional",
+      "home": "CA Talleres de Cordoba",
+      "away": "CA Rosario Central",
+      "odds": {
+        "home": 2.63,
+        "draw": 2.94,
+        "away": 2.95
+      },
+      "home_stats": {
+        "name": "CA Talleres de Cordoba",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "CA Rosario Central",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ifknorrkopingfkfalkenbergsff",
+      "league": "Football / Sweden / Superettan",
+      "home": "IFK Norrkoping FK",
+      "away": "Falkenbergs FF",
+      "odds": {
+        "home": 1.53,
+        "draw": 4.48,
+        "away": 5.28
+      },
+      "home_stats": {
+        "name": "IFK Norrkoping FK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Falkenbergs FF",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "libertadlojacsdmacara",
+      "league": "Football / Ecuador / LigaPro Primera A",
+      "home": "Libertad Loja",
+      "away": "CSD Macara",
+      "odds": {
+        "home": 3.33,
+        "draw": 3.26,
+        "away": 2.21
+      },
+      "home_stats": {
+        "name": "Libertad Loja",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "CSD Macara",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "charlestonbatterymiamifc",
+      "league": "Football / USA / USL Championship",
+      "home": "Charleston Battery",
+      "away": "Miami FC",
+      "odds": {
+        "home": 1.44,
+        "draw": 4.73,
+        "away": 6.13
+      },
+      "home_stats": {
+        "name": "Charleston Battery",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Miami FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "cdevertonvinadelmaruniversidad",
+      "league": "Football / Chile / Primera Division",
+      "home": "CD Everton Vina del Mar",
+      "away": "Universidad de Concepcion",
+      "odds": {
+        "home": 1.86,
+        "draw": 3.59,
+        "away": 4.05
+      },
+      "home_stats": {
+        "name": "CD Everton Vina del Mar",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Universidad de Concepcion",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "breidablikkopavogurframreykjav",
+      "league": "Football / Iceland / Besta deild",
+      "home": "Breidablik Kopavogur",
+      "away": "Fram Reykjavik",
+      "odds": {
+        "home": 2.32,
+        "draw": 3.97,
+        "away": 2.45
+      },
+      "home_stats": {
+        "name": "Breidablik Kopavogur",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Fram Reykjavik",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    }
+  ]
 }

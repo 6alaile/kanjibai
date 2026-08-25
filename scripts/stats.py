@@ -44,6 +44,11 @@ LEAGUE_CODE_MAP = {
     "eredivisie": "DED",
     "serie a (brazil)": "BSA",
     "championship": "ELC",
+    "allsvenskan": "DED",
+    "liga portugal": "PPL",
+    "superliga": "DED",  # Denmark/Sweden
+    "k league": None,  # Not in free tier
+    "liga 2": None,  # Not in free tier
 }
 
 # Rate limit: 10 requests/minute on free tier
@@ -90,8 +95,21 @@ def safe_int(val, fallback: int = 0) -> int:
         return fallback
 
 
-# ─── FIND TEAM ID ────────────────────────────────────────────────────────────
+import unicodedata
 
+def _normalize_name(name: str) -> str:
+    """Strip diacritics, lower case, remove common prefixes."""
+    n = unicodedata.normalize("NFKD", name)
+    n = "".join(c for c in n if not unicodedata.combining(c))
+    n = n.lower().strip()
+    for prefix in ("fc ", "sc ", "afc ", "cf ", "ac ", "rc "):
+        if n.startswith(prefix):
+            n = n[len(prefix):]
+    return n
+
+
+# ─── FIND TEAM ID ────────────────────────────────────────────────────────────
+ 
 def find_team_id(team_name: str, league_code: str) -> Optional[int]:
     """Find team ID by searching within a league."""
     data = fd_get(f"competitions/{league_code}/teams")
@@ -99,18 +117,29 @@ def find_team_id(team_name: str, league_code: str) -> Optional[int]:
     if not data:
         return None
     teams = data.get("teams", [])
-    name_low = team_name.lower()
+    target = _normalize_name(team_name)
+    best_match = None
+    best_score = 0
     for team in teams:
-        if (name_low in team.get("name", "").lower() or
-                name_low in team.get("shortName", "").lower() or
-                name_low in team.get("tla", "").lower()):
-            return team.get("id")
+        for field in ("name", "shortName", "tla"):
+            val = team.get(field, "")
+            if not val:
+                continue
+            norm = _normalize_name(val)
+            if target == norm:
+                return team.get("id")
+            if target in norm or norm in target:
+                score = len(set(target.split()) & set(norm.split()))
+                if score > best_score:
+                    best_score = score
+                    best_match = team.get("id")
+    return best_match
     return None
 
 
 # ─── TEAM FORM ────────────────────────────────────────────────────────────────
 
-def fetch_team_form(team_id: int, n: int = 10) -> dict:
+def fetch_team_form(team_id: int, n: int = 15) -> dict:
     """Fetch last N finished matches for a team."""
     data = fd_get(f"teams/{team_id}/matches", params={"status": "FINISHED", "limit": n})
     delay()

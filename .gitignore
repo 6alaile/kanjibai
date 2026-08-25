@@ -4,6 +4,13 @@ node_modules/
 # Generated at runtime
 scout_date.txt
 
+# Internal docs
+HANDOFF.md
+
+# Python cache
+__pycache__/
+*.pyc
+
 # OS files
 .DS_Store
 Thumbs.db

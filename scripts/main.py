@@ -2,6 +2,11 @@
 main.py — Scout Orchestrator
 Fetches fixtures + enriches with stats → writes enriched.json
 Scoring happens in the browser (app.js).
+
+Data sources:
+- BetPawa (Playwright) → primary odds
+- API-Football → fallback odds
+- football-data.org → enrichment (free tier leagues)
 """
 
 import json
@@ -10,8 +15,10 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from scrape import fetch_fixtures
-from stats import enrich_all
+from scrape import fetch_fixtures as fetch_api_fixtures
+from stats import enrich_all, get_league_code
+
+from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
 logging.basicConfig(level=logging.INFO, format="[scrape] %(asctime)s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger(__name__)
@@ -41,10 +48,18 @@ def run():
 
     today = get_today_eat()
 
-    # Step 1: Fetch fixtures + odds
-    log.info("Step 1/2: Fetching fixtures...")
-    raw_fixtures = fetch_fixtures(date_str=today)
-    scanned_count = len(raw_fixtures)
+    # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
+    log.info("Step 1/2: Fetching fixtures from BetPawa (primary) ...")
+
+    # Try BetPawa first (Playwright-rendered odds)
+    raw_fixtures = fetch_betpawa_fixtures(date_str=today)
+
+    # Fallback to API-Football if BetPawa returned no matches
+    if not raw_fixtures:
+        log.warning("BetPawa returned no fixtures — falling back to API-Football")
+        raw_fixtures = fetch_api_fixtures(date_str=today)
+    else:
+        log.info(f"  {len(raw_fixtures)} fixtures fetched from BetPawa")
 
     if not raw_fixtures:
         log.warning("No fixtures found. Writing empty enriched.json.")
@@ -54,15 +69,15 @@ def run():
                     "date": today,
                     "generatedAt": start.isoformat(),
                     "scanned": 0,
-                    "error": "No fixtures returned by scraper"
+                    "error": "No fixtures returned by any scraper"
                 },
                 "matches": []
             }, f, indent=2)
         sys.exit(0)
 
-    log.info(f"  {scanned_count} fixtures fetched")
+    log.info(f"  {len(raw_fixtures)} fixtures fetched")
 
-    # Step 2: Enrich with stats
+    # Step 2: Enrich with stats (football-data.org free tier)
     log.info("Step 2/2: Enriching with form, H2H, standings...")
     enriched = enrich_all(raw_fixtures)
     log.info(f"  {len(enriched)} matches enriched")
@@ -74,7 +89,7 @@ def run():
         "meta": {
             "date": today,
             "generatedAt": end.isoformat(),
-            "scanned": scanned_count,
+            "scanned": len(raw_fixtures),
             "elapsedSeconds": elapsed,
         },
         "matches": enriched
@@ -84,7 +99,7 @@ def run():
         json.dump(output, f, indent=2)
 
     log.info("=" * 50)
-    log.info(f"Done in {elapsed}s — {scanned_count} matches written to enriched.json")
+    log.info(f"Done in {elapsed}s — {len(raw_fixtures)} matches written to enriched.json")
     log.info("=" * 50)
 
 
