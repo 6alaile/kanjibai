@@ -733,7 +733,7 @@ header {
 @media (max-width: 768px) {
   .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .controls-body { grid-template-columns: 1fr; }
-  .card-main { grid-template-columns: 64px 1fr; gap: 12px; }
+  .card-main { grid-template-areas: 64px 1fr; gap: 12px; }
   .confidence-block { display: none; }
   .reasoning-inner { grid-template-columns: 1fr; }
   .bets-list { display: none; }
