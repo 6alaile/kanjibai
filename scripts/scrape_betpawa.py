@@ -29,15 +29,10 @@ EAT = timezone(timedelta(hours=3))
 
 BETPAWA_URLS = [
     "https://www.betpawa.co.tz/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
-    "https://www.betpawa.ke/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
-    "https://www.betpawa.ug/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
-    "https://www.betpawa.co.tz/events/popular?categoryId=2&marketId=1X2",
-    "https://www.betpawa.ke/events/popular?categoryId=2&marketId=1X2",
-    "https://www.betpawa.ug/events/popular?categoryId=2&marketId=1X2",
 ]
 
 RENDER_WAIT = 20
-MAX_ATTEMPTS = 6
+MAX_ATTEMPTS = 1
 
 EXCLUDED_COUNTRIES = {"israel"}
 EXCLUDED_KEYWORDS = {"israel", "ligat", "leumit", "toto cup"}
