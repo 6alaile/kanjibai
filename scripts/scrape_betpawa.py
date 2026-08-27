@@ -22,19 +22,31 @@ from typing import Optional, List, Dict
 
 from playwright.sync_api import Page, sync_playwright
 
-logging.basicConfig(level=logging.INFO, format="[betpawa] %(message)s")
+logging.basicConfig(level=logging.DEBUG, format="[betpawa] %(levelname)s: %(message)s")
 log = logging.getLogger(__name__)
 
 EAT = timezone(timedelta(hours=3))
 
 BETPAWA_URLS = [
+    "https://www.betpawa.co.tz/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
+    "https://www.betpawa.ke/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
+    "https://www.betpawa.ug/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
     "https://www.betpawa.co.tz/events/popular?categoryId=2&marketId=1X2",
     "https://www.betpawa.ke/events/popular?categoryId=2&marketId=1X2",
     "https://www.betpawa.ug/events/popular?categoryId=2&marketId=1X2",
 ]
 
-RENDER_WAIT = 8
-MAX_ATTEMPTS = 3
+RENDER_WAIT = 20
+MAX_ATTEMPTS = 6
+
+EXCLUDED_COUNTRIES = {"israel"}
+EXCLUDED_KEYWORDS = {"israel", "ligat", "leumit", "toto cup"}
+
+
+def is_excluded(league_name: str) -> bool:
+    """Check if league should be excluded (Israeli leagues)."""
+    name = league_name.lower()
+    return any(kw in name for kw in EXCLUDED_KEYWORDS)
 
 
 def _safe_float(val: str, fallback: float = 0.0) -> float:
@@ -100,25 +112,18 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
 
         log.info(f"  Found {len(event_divs)} event divs")
 
-<<<<<<< Updated upstream
-        for evt_div in event_divs:
-=======
         # DEBUG: Dump first event div HTML to understand structure
         if event_divs:
             first_div_html = event_divs[0].inner_html()
             log.debug(f"  First event div HTML (first 2000 chars): {first_div_html[:2000]}")
 
         for idx, evt_div in enumerate(event_divs):
->>>>>>> Stashed changes
             try:
-                # Extract team names
+                # Extract team names - try multiple selector patterns
                 team_wraps = evt_div.query_selector_all(
                     "[class*='ScoreBoard_scoreboardPeriodParticipantNameWrapper']"
                 )
 
-<<<<<<< Updated upstream
-                if len(team_wraps) < 2:
-=======
                 log.debug(f"    Event {idx}: found {len(team_wraps)} team wrappers (primary)")
 
                 if len(team_wraps) < 2:
@@ -132,34 +137,36 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                     # Last resort: get all text and try to parse
                     all_text = evt_div.inner_text().strip()
                     log.debug(f"    Event {idx}: insufficient team wrappers. Full text: {all_text[:200]}")
->>>>>>> Stashed changes
                     continue
 
                 home_name = team_wraps[0].inner_text().strip()
                 away_name = team_wraps[1].inner_text().strip()
 
+                log.debug(f"    Event {idx}: teams = '{home_name}' vs '{away_name}'")
+
                 if not home_name or not away_name:
+                    log.debug(f"    Event {idx}: empty team names, skipping")
                     continue
 
-                # Extract league
+                # Extract league - try multiple selectors
                 league_el = evt_div.query_selector(
                     "p[class*='SportEvents_subTitle']"
                 )
-<<<<<<< Updated upstream
-=======
                 if not league_el:
                     league_el = evt_div.query_selector(
                         "[class*='subTitle'], [class*='league'], [data-test-id*='event-path'], [data-test-id*='league'], [class*='competition']"
                     )
->>>>>>> Stashed changes
                 league = league_el.inner_text().strip() if league_el else "Unknown League"
+                log.debug(f"    Event {idx}: league = '{league}'")
 
-                # Extract odds from bet buttons
+                if is_excluded(league):
+                    log.info(f"    Skipping Israeli league: {league}")
+                    continue
+
+                # Extract odds from bet buttons - try multiple selectors
                 bet_buttons = evt_div.query_selector_all(
                     "button[data-test-id^='odd-']"
                 )
-<<<<<<< Updated upstream
-=======
                 log.debug(f"    Event {idx}: found {len(bet_buttons)} odds buttons (primary)")
 
                 if not bet_buttons:
@@ -167,14 +174,10 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                         "button[data-test-id*='odd'], [class*='Betline'] button, [class*='odd'] button, button[class*='bet']"
                     )
                     log.debug(f"    Event {idx}: fallback found {len(bet_buttons)} odds buttons")
->>>>>>> Stashed changes
 
                 odds = _extract_odds_from_buttons(bet_buttons)
 
                 if not odds:
-<<<<<<< Updated upstream
-                    log.warning(f"    No valid odds for {home_name} vs {away_name}")
-=======
                     log.warning(f"    No valid odds for {home_name} vs {away_name} (found {len(bet_buttons)} buttons)")
                     # Debug: dump button info
                     for btn in bet_buttons:
@@ -185,7 +188,6 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                     betline = evt_div.query_selector("[class*='Betline']")
                     if betline:
                         log.debug(f"      Betline HTML: {betline.inner_html()[:500]}")
->>>>>>> Stashed changes
                     continue
 
                 match_id = re.sub(
@@ -210,11 +212,15 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                 )
 
             except Exception as e:
-                log.warning(f"  Error parsing event div: {e}")
+                log.warning(f"  Error parsing event div {idx}: {e}")
+                import traceback
+                log.debug(f"    Traceback: {traceback.format_exc()}")
                 continue
 
     except Exception as e:
         log.warning(f"  Error extracting matches: {e}")
+        import traceback
+        log.debug(f"  Traceback: {traceback.format_exc()}")
 
     return matches
 
@@ -264,7 +270,16 @@ def fetch_fixtures(date_str: Optional[str] = None) -> List[Dict]:
             try:
                 page.goto(url, wait_until="networkidle", timeout=60000)
                 page.wait_for_load_state("networkidle", timeout=30000)
-                time.sleep(RENDER_WAIT)
+
+                # Wait for match elements to appear
+                try:
+                    page.wait_for_selector("[class*='SportEvents_eventMatch']", timeout=15000)
+                    log.info("    Match elements loaded")
+                except Exception:
+                    log.warning("    Match elements not found, waiting extra...")
+                    time.sleep(RENDER_WAIT)
+
+                time.sleep(3)  # Additional buffer for JS rendering
 
                 matches = _extract_matches_from_page(page)
                 all_matches.extend(matches)
