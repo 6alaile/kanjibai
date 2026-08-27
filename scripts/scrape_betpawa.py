@@ -100,14 +100,39 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
 
         log.info(f"  Found {len(event_divs)} event divs")
 
+<<<<<<< Updated upstream
         for evt_div in event_divs:
+=======
+        # DEBUG: Dump first event div HTML to understand structure
+        if event_divs:
+            first_div_html = event_divs[0].inner_html()
+            log.debug(f"  First event div HTML (first 2000 chars): {first_div_html[:2000]}")
+
+        for idx, evt_div in enumerate(event_divs):
+>>>>>>> Stashed changes
             try:
                 # Extract team names
                 team_wraps = evt_div.query_selector_all(
                     "[class*='ScoreBoard_scoreboardPeriodParticipantNameWrapper']"
                 )
 
+<<<<<<< Updated upstream
                 if len(team_wraps) < 2:
+=======
+                log.debug(f"    Event {idx}: found {len(team_wraps)} team wrappers (primary)")
+
+                if len(team_wraps) < 2:
+                    # Fallback: try alternative selectors
+                    team_wraps = evt_div.query_selector_all(
+                        "[class*='ParticipantName'], [class*='teamName'], [data-test-id*='team'], [class*='participant']"
+                    )
+                    log.debug(f"    Event {idx}: fallback found {len(team_wraps)} team wrappers")
+
+                if len(team_wraps) < 2:
+                    # Last resort: get all text and try to parse
+                    all_text = evt_div.inner_text().strip()
+                    log.debug(f"    Event {idx}: insufficient team wrappers. Full text: {all_text[:200]}")
+>>>>>>> Stashed changes
                     continue
 
                 home_name = team_wraps[0].inner_text().strip()
@@ -120,17 +145,47 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                 league_el = evt_div.query_selector(
                     "p[class*='SportEvents_subTitle']"
                 )
+<<<<<<< Updated upstream
+=======
+                if not league_el:
+                    league_el = evt_div.query_selector(
+                        "[class*='subTitle'], [class*='league'], [data-test-id*='event-path'], [data-test-id*='league'], [class*='competition']"
+                    )
+>>>>>>> Stashed changes
                 league = league_el.inner_text().strip() if league_el else "Unknown League"
 
                 # Extract odds from bet buttons
                 bet_buttons = evt_div.query_selector_all(
                     "button[data-test-id^='odd-']"
                 )
+<<<<<<< Updated upstream
+=======
+                log.debug(f"    Event {idx}: found {len(bet_buttons)} odds buttons (primary)")
+
+                if not bet_buttons:
+                    bet_buttons = evt_div.query_selector_all(
+                        "button[data-test-id*='odd'], [class*='Betline'] button, [class*='odd'] button, button[class*='bet']"
+                    )
+                    log.debug(f"    Event {idx}: fallback found {len(bet_buttons)} odds buttons")
+>>>>>>> Stashed changes
 
                 odds = _extract_odds_from_buttons(bet_buttons)
 
                 if not odds:
+<<<<<<< Updated upstream
                     log.warning(f"    No valid odds for {home_name} vs {away_name}")
+=======
+                    log.warning(f"    No valid odds for {home_name} vs {away_name} (found {len(bet_buttons)} buttons)")
+                    # Debug: dump button info
+                    for btn in bet_buttons:
+                        tid = btn.get_attribute("data-test-id") or "no-test-id"
+                        txt = btn.inner_text().strip()[:50]
+                        log.debug(f"      Button: test-id={tid}, text='{txt}'")
+                    # Also dump the betline container HTML
+                    betline = evt_div.query_selector("[class*='Betline']")
+                    if betline:
+                        log.debug(f"      Betline HTML: {betline.inner_html()[:500]}")
+>>>>>>> Stashed changes
                     continue
 
                 match_id = re.sub(
