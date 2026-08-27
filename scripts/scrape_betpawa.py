@@ -112,6 +112,11 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
 
         log.info(f"  Found {len(event_divs)} event divs")
 
+        # DEBUG: Dump first event div HTML to understand structure
+        if event_divs:
+            first_div_html = event_divs[0].inner_html()
+            log.debug(f"  First event div HTML (first 2000 chars): {first_div_html[:2000]}")
+
         for idx, evt_div in enumerate(event_divs):
             try:
                 # Extract team names - try multiple selector patterns
@@ -119,17 +124,19 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                     "[class*='ScoreBoard_scoreboardPeriodParticipantNameWrapper']"
                 )
 
-                log.debug(f"    Event {idx}: found {len(team_wraps)} team wrappers")
+                log.debug(f"    Event {idx}: found {len(team_wraps)} team wrappers (primary)")
 
                 if len(team_wraps) < 2:
                     # Fallback: try alternative selectors
                     team_wraps = evt_div.query_selector_all(
-                        "[class*='ParticipantName'], [class*='teamName'], [data-test-id*='team']"
+                        "[class*='ParticipantName'], [class*='teamName'], [data-test-id*='team'], [class*='participant']"
                     )
                     log.debug(f"    Event {idx}: fallback found {len(team_wraps)} team wrappers")
 
                 if len(team_wraps) < 2:
-                    log.debug(f"    Event {idx}: insufficient team wrappers, skipping")
+                    # Last resort: get all text and try to parse
+                    all_text = evt_div.inner_text().strip()
+                    log.debug(f"    Event {idx}: insufficient team wrappers. Full text: {all_text[:200]}")
                     continue
 
                 home_name = team_wraps[0].inner_text().strip()
@@ -147,7 +154,7 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                 )
                 if not league_el:
                     league_el = evt_div.query_selector(
-                        "[class*='subTitle'], [class*='league'], [data-test-id*='event-path'], [data-test-id*='league']"
+                        "[class*='subTitle'], [class*='league'], [data-test-id*='event-path'], [data-test-id*='league'], [class*='competition']"
                     )
                 league = league_el.inner_text().strip() if league_el else "Unknown League"
                 log.debug(f"    Event {idx}: league = '{league}'")
@@ -164,7 +171,7 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
 
                 if not bet_buttons:
                     bet_buttons = evt_div.query_selector_all(
-                        "button[data-test-id*='odd'], [class*='Betline'] button, [class*='odd'] button"
+                        "button[data-test-id*='odd'], [class*='Betline'] button, [class*='odd'] button, button[class*='bet']"
                     )
                     log.debug(f"    Event {idx}: fallback found {len(bet_buttons)} odds buttons")
 
@@ -177,6 +184,10 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                         tid = btn.get_attribute("data-test-id") or "no-test-id"
                         txt = btn.inner_text().strip()[:50]
                         log.debug(f"      Button: test-id={tid}, text='{txt}'")
+                    # Also dump the betline container HTML
+                    betline = evt_div.query_selector("[class*='Betline']")
+                    if betline:
+                        log.debug(f"      Betline HTML: {betline.inner_html()[:500]}")
                     continue
 
                 match_id = re.sub(
