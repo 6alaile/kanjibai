@@ -734,7 +734,7 @@ header {
   .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .controls-body { grid-template-columns: 1fr; }
   .card-main { grid-template-columns: 64px 1fr; gap: 12px; }
-  .confidence-block { display: none; }
+  .confidence-block { grid-template-areas: inherit; }
   .reasoning-inner { grid-template-columns: 1fr; }
-  .bets-list { display: none; }
+  .bets-list { grid-template-areas: inherit; }
 }

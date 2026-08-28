@@ -24,7 +24,7 @@ logging.basicConfig(level=logging.INFO, format="[scrape] %(asctime)s %(message)s
 log = logging.getLogger(__name__)
 
 EAT = timezone(timedelta(hours=3))
-OUTPUT_PATH = Path(__file__).parent.parent / "enriched.json"
+OUTPUT_PATH = Path(__file__).parent.parent / "data" / "enriched.json"
 DATE_FILE = Path(__file__).parent.parent / "scout_date.txt"
 
 
