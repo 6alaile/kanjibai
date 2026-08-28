@@ -28,7 +28,7 @@ log = logging.getLogger(__name__)
 EAT = timezone(timedelta(hours=3))
 
 BETPAWA_URLS = [
-    "https://www.betpawa.co.tz/events?categoryId=2&marketId=1X2&sorting=competitionPriority_DESC",
+    "https://www.betpawa.co.tz/events?categoryId=2&marketId=1X2",
 ]
 
 RENDER_WAIT = 20
