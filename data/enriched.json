@@ -1,9 +1,9 @@
 {
   "meta": {
     "date": "2026-09-01",
-    "generatedAt": "2026-09-01T09:02:01.954934+03:00",
+    "generatedAt": "2026-09-01T12:02:05.713874+03:00",
     "scanned": 20,
-    "elapsedSeconds": 84.4
+    "elapsedSeconds": 84.3
   },
   "matches": [
     {
@@ -12,9 +12,9 @@
       "home": "Sigma Olomouc U19",
       "away": "Sparta Prague U19",
       "odds": {
-        "home": 2.23,
-        "draw": 4.06,
-        "away": 2.67
+        "home": 2.29,
+        "draw": 4.07,
+        "away": 2.58
       },
       "home_stats": {
         "name": "Sigma Olomouc U19",
@@ -43,9 +43,9 @@
       "home": "FC Kharkiv Women",
       "away": "KFF Mitrovica Women",
       "odds": {
-        "home": 1.54,
-        "draw": 4.56,
-        "away": 5.55
+        "home": 1.62,
+        "draw": 4.36,
+        "away": 4.96
       },
       "home_stats": {
         "name": "FC Kharkiv Women",
@@ -105,9 +105,9 @@
       "home": "Lanzhou Longyuan Athletic",
       "away": "Beijing Guoan",
       "odds": {
-        "home": 14.57,
-        "draw": 7.77,
-        "away": 1.15
+        "home": 14.63,
+        "draw": 8.0,
+        "away": 1.14
       },
       "home_stats": {
         "name": "Lanzhou Longyuan Athletic",
@@ -136,8 +136,8 @@
       "home": "Shandong Taishan FC",
       "away": "Shanghai Port FC",
       "odds": {
-        "home": 2.38,
-        "draw": 3.71,
+        "home": 2.33,
+        "draw": 3.85,
         "away": 2.63
       },
       "home_stats": {
@@ -291,9 +291,9 @@
       "home": "Bristol City U21",
       "away": "Sheffield United U21",
       "odds": {
-        "home": 2.9,
+        "home": 2.71,
         "draw": 4.0,
-        "away": 2.02
+        "away": 2.12
       },
       "home_stats": {
         "name": "Bristol City U21",
@@ -322,9 +322,9 @@
       "home": "Brunei DPMM FC",
       "away": "Terengganu FC",
       "odds": {
-        "home": 4.1,
-        "draw": 3.75,
-        "away": 1.7
+        "home": 3.95,
+        "draw": 3.6,
+        "away": 1.76
       },
       "home_stats": {
         "name": "Brunei DPMM FC",
@@ -384,9 +384,9 @@
       "home": "NEC FC",
       "away": "Lugazi Municipal FC",
       "odds": {
-        "home": 1.6,
-        "draw": 3.15,
-        "away": 6.39
+        "home": 1.62,
+        "draw": 3.1,
+        "away": 6.2
       },
       "home_stats": {
         "name": "NEC FC",
@@ -447,7 +447,7 @@
       "home": "FK Akron Tolyatti",
       "away": "Lokomotiv Moscow",
       "odds": {
-        "home": 3.42,
+        "home": 3.41,
         "draw": 3.54,
         "away": 1.97
       },
@@ -473,45 +473,14 @@
       "source": "betpawa"
     },
     {
-      "id": "podhalenowytargpogongrodziskma",
-      "league": "Football / Poland / Puchar Polski",
-      "home": "Podhale Nowy Targ",
-      "away": "Pogon Grodzisk Mazowiecki",
-      "odds": {
-        "home": 2.91,
-        "draw": 3.49,
-        "away": 2.27
-      },
-      "home_stats": {
-        "name": "Podhale Nowy Targ",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "away_stats": {
-        "name": "Pogon Grodzisk Mazowiecki",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opponent_positions": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
       "id": "ghazlelmahallahalsharqiyaenppi",
       "league": "Football / Egypt / Premier League",
       "home": "Ghazl El Mahallah",
       "away": "Al Sharqiya Enppi",
       "odds": {
-        "home": 2.72,
+        "home": 2.53,
         "draw": 2.63,
-        "away": 3.21
+        "away": 3.51
       },
       "home_stats": {
         "name": "Ghazl El Mahallah",
@@ -541,9 +510,9 @@
       "home": "Al Sadd SC",
       "away": "Al Gharafa SC",
       "odds": {
-        "home": 1.55,
-        "draw": 4.58,
-        "away": 4.87
+        "home": 1.54,
+        "draw": 4.48,
+        "away": 5.07
       },
       "home_stats": {
         "name": "Al Sadd SC",
@@ -603,9 +572,9 @@
       "home": "Talaea El Gaish",
       "away": "Zed FC",
       "odds": {
-        "home": 2.48,
-        "draw": 2.83,
-        "away": 3.3
+        "home": 2.72,
+        "draw": 2.78,
+        "away": 3.01
       },
       "home_stats": {
         "name": "Talaea El Gaish",
@@ -628,6 +597,37 @@
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 20
+    },
+    {
+      "id": "zkskluczeviastargardpogonsiedl",
+      "league": "Football / Poland / Puchar Polski",
+      "home": "Zks Kluczevia Stargard",
+      "away": "Pogon Siedlce",
+      "odds": {
+        "home": 3.36,
+        "draw": 3.36,
+        "away": 2.11
+      },
+      "home_stats": {
+        "name": "Zks Kluczevia Stargard",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "away_stats": {
+        "name": "Pogon Siedlce",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opponent_positions": null
+      },
+      "h2h": null,
+      "source": "betpawa"
     }
   ]
 }
