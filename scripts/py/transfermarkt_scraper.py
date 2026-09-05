@@ -387,15 +387,47 @@ def scrape_league(league_url: str, league_name: str, browser) -> List[str]:
     team_urls = []
 
     try:
-        page.goto(league_url, wait_until="networkidle", timeout=30000)
-        page.wait_for_load_state("networkidle", timeout=15000)
-        time.sleep(3)
+        page.goto(league_url, wait_until="networkidle", timeout=60000)
+        page.wait_for_load_state("networkidle", timeout=30000)
+        time.sleep(5)
 
-        # Find team links in the league table
-        team_links = page.query_selector_all('table.items a[href*="/profil/verein/"]')
-        for link in team_links:
-            href = link.get_attribute("href")
-            if href and "/profil/verein/" in href:
+        # DEBUG: dump page HTML to understand structure
+        html = page.content()
+        log.debug(f"  Page HTML length: {len(html)}")
+        if "challenge" in html.lower() or "cloudflare" in html.lower() or "checking your browser" in html.lower():
+            log.warning(f"  Cloudflare challenge detected for {league_name}")
+            # Wait longer for challenge to resolve
+            time.sleep(15)
+            html = page.content()
+            log.debug(f"  After wait HTML length: {len(html)}")
+
+        # Try multiple selector strategies
+        selectors = [
+            'table.items a[href*="/profil/verein/"]',
+            '.items tbody tr td.hauptlink a[href*="/profil/verein/"]',
+            'table.items tbody tr td:first-child a[href*="/verein/"]',
+            'a[href*="/profil/verein/"]',
+            '.vereinprofil_tooltip',
+        ]
+
+        for selector in selectors:
+            team_links = page.query_selector_all(selector)
+            if team_links:
+                log.info(f"  Selector '{selector}' found {len(team_links)} links")
+                for link in team_links:
+                    href = link.get_attribute("href")
+                    if href and "/profil/verein/" in href:
+                        full_url = urljoin(BASE_URL, href)
+                        if full_url not in team_urls:
+                            team_urls.append(full_url)
+                if team_urls:
+                    break
+
+        if not team_urls:
+            # Fallback: search HTML directly
+            import re
+            matches = re.findall(r'href="(/[^"]*/profil/verein/\d+[^"]*)"', html)
+            for href in matches:
                 full_url = urljoin(BASE_URL, href)
                 if full_url not in team_urls:
                     team_urls.append(full_url)
