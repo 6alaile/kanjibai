@@ -40,14 +40,14 @@ function saveQueue(state: QueueState): void {
   writeFileSync(QUEUE_FILE, JSON.stringify(state, null, 2));
 }
 
-function loadCache(): any {
+export function loadCache(): any {
   if (existsSync(CACHE_FILE)) {
     return JSON.parse(readFileSync(CACHE_FILE, "utf-8"));
   }
   return { version: 1, lastUpdated: new Date().toISOString(), teams: {}, players: {}, fixtures: {}, leagues: {} };
 }
 
-function saveCache(cache: any): void {
+export function saveCache(cache: any): void {
   cache.lastUpdated = new Date().toISOString();
   writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2));
 }
