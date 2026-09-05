@@ -21,20 +21,23 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: scripts/ts/package-lock.json
+          python-version: "3.11"
       
       - name: Install dependencies
-        run: npm ci
-        working-directory: ./scripts/ts
+        run: pip install -r requirements.txt
+        working-directory: ./scripts/py
+      
+      - name: Install Playwright browsers
+        run: playwright install chromium
+        env:
+          PLAYWRIGHT_BROWSERS_INSTALL: true
       
       - name: Run Transfermarkt daily scraper
-        run: npx tsx transfermarkt_daily.ts
-        working-directory: ./scripts/ts
+        run: python transfermarkt_scraper.py
+        working-directory: ./scripts/py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
