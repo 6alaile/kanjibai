@@ -6,6 +6,10 @@
 
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = join(__filename, "..");
 
 const CACHE_FILE = join(__dirname, "..", "..", "data", "transfermarkt_cache.json");
 const QUEUE_FILE = join(__dirname, "transfermarkt_queue.json");
