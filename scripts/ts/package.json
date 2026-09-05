@@ -1,0 +1,18 @@
+{
+  "name": "kanjibai-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "transfermarkt:daily": "tsx transfermarkt_daily.ts",
+    "transfermarkt:seed": "tsx transfermarkt_queue.ts seed",
+    "transfermarkt:stats": "tsx transfermarkt_queue.ts stats",
+    "transfermarkt:next": "tsx transfermarkt_queue.ts next"
+  },
+  "dependencies": {
+    "tsx": "^4.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

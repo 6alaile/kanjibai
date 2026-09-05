@@ -464,6 +464,12 @@ createApp({
       else openCards.value.push(id);
     }
 
+    function getCompetition(league) {
+      if (!league) return '';
+      const parts = league.split('/');
+      return parts[parts.length - 1].trim();
+    }
+
     Vue.onMounted(() => { runScan(); });
 
     return {
@@ -471,7 +477,7 @@ createApp({
       activeFilter, loadingStep, loadingDetail,
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
-      runScan, toggleMarket, toggleReasoning
+      runScan, toggleMarket, toggleReasoning, getCompetition
     };
   }
 }).mount('#app');

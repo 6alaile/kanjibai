@@ -94,6 +94,56 @@ def _extract_odds_from_buttons(btns) -> Optional[Dict]:
     return odds if len(odds) == 3 else None
 
 
+def _extract_match_time(evt_div) -> str:
+    """
+    Extract match kick-off time from the event div.
+    Returns time in HH:MM format (EAT) or 'TBD' if not found.
+    """
+    time_selectors = [
+        "[class*='ScoreBoard_scoreboardPeriodTime']",
+        "[class*='matchTime']",
+        "[class*='eventTime']",
+        "[class*='kickoff']",
+        "[class*='startTime']",
+        "[data-test-id*='time']",
+        "[data-test-id*='kickoff']",
+        "span[class*='time']",
+        "div[class*='time']",
+        "time",
+    ]
+
+    for selector in time_selectors:
+        time_el = evt_div.query_selector(selector)
+        if time_el:
+            time_text = time_el.inner_text().strip()
+            if time_text:
+                # Try to parse various time formats
+                import re
+                # Match HH:MM or H:MM formats
+                time_match = re.search(r'(\d{1,2}):(\d{2})', time_text)
+                if time_match:
+                    hour = int(time_match.group(1))
+                    minute = int(time_match.group(2))
+                    if 0 <= hour <= 23 and 0 <= minute <= 59:
+                        return f"{hour:02d}:{minute:02d}"
+                # If just a time-like string, return as-is
+                if re.match(r'^\d{1,2}:\d{2}$', time_text):
+                    return time_text
+
+    # Also check the full div text for time patterns
+    all_text = evt_div.inner_text()
+    import re
+    time_matches = re.findall(r'\b(\d{1,2}:\d{2})\b', all_text)
+    if time_matches:
+        # Return the first valid-looking time
+        for t in time_matches:
+            hour, minute = map(int, t.split(':'))
+            if 0 <= hour <= 23 and 0 <= minute <= 59:
+                return f"{hour:02d}:{minute:02d}"
+
+    return "TBD"
+
+
 def _extract_matches_from_page(page: Page) -> List[Dict]:
     """
     Extract all matches from the current BetPawa page.
@@ -190,11 +240,14 @@ def _extract_matches_from_page(page: Page) -> List[Dict]:
                     f"{home_name}_{away_name}".lower()
                 )[:30]
 
+                match_time = _extract_match_time(evt_div)
+
                 matches.append({
                     "id": match_id,
                     "league": league,
                     "home": home_name,
                     "away": away_name,
+                    "time": match_time,
                     "odds": odds,
                     "home_stats": None,
                     "away_stats": None,

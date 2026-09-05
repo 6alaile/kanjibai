@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+        working-directory: ./scripts/py
 
       - name: Install Playwright browsers
         run: playwright install
@@ -39,7 +40,8 @@ jobs:
           print(f'Running scan for EAT date: {today}')
           with open('scout_date.txt','w') as f: f.write(today)
           "
-          python scripts/main.py
+          python main.py
+        working-directory: ./scripts/py
 
       - name: Commit enriched.json
         run: |
