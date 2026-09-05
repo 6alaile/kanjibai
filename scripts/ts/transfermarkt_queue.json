@@ -6,9 +6,9 @@
       "name": "Premier League",
       "url": "https://www.transfermarkt.com/premier-league/startseite/wettbewerb/GB1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411228+00:00",
-      "attempts": 1,
-      "lastAttempt": "2026-09-05T06:46:27.259757+00:00"
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 2,
+      "lastAttempt": "2026-09-05T09:59:54.048769+00:00"
     },
     {
       "id": "league:ES1",
@@ -16,9 +16,9 @@
       "name": "La Liga",
       "url": "https://www.transfermarkt.com/laliga/startseite/wettbewerb/ES1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411237+00:00",
-      "attempts": 1,
-      "lastAttempt": "2026-09-05T06:46:32.351082+00:00"
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 2,
+      "lastAttempt": "2026-09-05T09:59:54.054812+00:00"
     },
     {
       "id": "league:L1",
@@ -26,9 +26,9 @@
       "name": "Bundesliga",
       "url": "https://www.transfermarkt.com/bundesliga/startseite/wettbewerb/L1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411241+00:00",
-      "attempts": 1,
-      "lastAttempt": "2026-09-05T06:46:37.458594+00:00"
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 2,
+      "lastAttempt": "2026-09-05T09:59:54.058580+00:00"
     },
     {
       "id": "league:IT1",
@@ -36,9 +36,9 @@
       "name": "Serie A",
       "url": "https://www.transfermarkt.com/serie-a/startseite/wettbewerb/IT1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411244+00:00",
-      "attempts": 1,
-      "lastAttempt": "2026-09-05T06:46:42.553343+00:00"
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 2,
+      "lastAttempt": "2026-09-05T09:59:54.064638+00:00"
     },
     {
       "id": "league:FR1",
@@ -46,9 +46,9 @@
       "name": "Ligue 1",
       "url": "https://www.transfermarkt.com/ligue-1/startseite/wettbewerb/FR1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411248+00:00",
-      "attempts": 1,
-      "lastAttempt": "2026-09-05T06:46:47.652732+00:00"
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 2,
+      "lastAttempt": "2026-09-05T09:59:54.068664+00:00"
     },
     {
       "id": "league:NL1",
@@ -56,7 +56,7 @@
       "name": "Eredivisie",
       "url": "https://www.transfermarkt.com/eredivisie/startseite/wettbewerb/NL1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411251+00:00",
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
       "attempts": 0
     },
     {
@@ -65,7 +65,7 @@
       "name": "Primeira Liga",
       "url": "https://www.transfermarkt.com/primeira-liga/startseite/wettbewerb/PO1",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411255+00:00",
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
       "attempts": 0
     },
     {
@@ -74,7 +74,871 @@
       "name": "Championship",
       "url": "https://www.transfermarkt.com/championship/startseite/wettbewerb/GB2",
       "priority": 10,
-      "addedAt": "2026-09-05T06:46:21.411264+00:00",
+      "addedAt": "2026-09-05T09:54:08.768576+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:manchester-city",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/manchester-city/profil/verein/281",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-arsenal",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-arsenal/profil/verein/11",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-chelsea",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-chelsea/profil/verein/631",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-liverpool",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-liverpool/profil/verein/31",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:manchester-united",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/manchester-united/profil/verein/985",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:tottenham-hotspur",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/tottenham-hotspur/profil/verein/148",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:newcastle-united",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/newcastle-united/profil/verein/762",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:brighton-amp-hove-albion",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/brighton-amp-hove-albion/profil/verein/1237",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-brentford",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-brentford/profil/verein/1148",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:crystal-palace",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/crystal-palace/profil/verein/873",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:afc-bournemouth",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/afc-bournemouth/profil/verein/989",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:aston-villa",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/aston-villa/profil/verein/405",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:nottingham-forest",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/nottingham-forest/profil/verein/703",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:afc-sunderland",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/afc-sunderland/profil/verein/289",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:leeds-united",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/leeds-united/profil/verein/399",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-fulham",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-fulham/profil/verein/931",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-everton",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-everton/profil/verein/29",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ipswich-town",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ipswich-town/profil/verein/677",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:coventry-city",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/coventry-city/profil/verein/990",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:hull-city",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/hull-city/profil/verein/3008",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:31.985687+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:real-madrid",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/real-madrid/profil/verein/418",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-barcelona",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-barcelona/profil/verein/131",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:atletico-madrid",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/atletico-madrid/profil/verein/13",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-villarreal",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-villarreal/profil/verein/1050",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:real-sociedad-san-sebastian",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/real-sociedad-san-sebastian/profil/verein/681",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:real-betis-sevilla",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/real-betis-sevilla/profil/verein/150",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:athletic-bilbao",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/athletic-bilbao/profil/verein/621",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:celta-vigo",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/celta-vigo/profil/verein/940",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-sevilla",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-sevilla/profil/verein/368",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-valencia",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-valencia/profil/verein/1049",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:espanyol-barcelona",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/espanyol-barcelona/profil/verein/714",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:deportivo-la-coruna",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/deportivo-la-coruna/profil/verein/897",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:racing-santander",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/racing-santander/profil/verein/630",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-getafe",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-getafe/profil/verein/3709",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ud-levante",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ud-levante/profil/verein/3368",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rayo-vallecano",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/rayo-vallecano/profil/verein/367",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ca-osasuna",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ca-osasuna/profil/verein/331",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.714743+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-elche",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-elche/profil/verein/1531",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.715919+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:deportivo-alaves",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/deportivo-alaves/profil/verein/1108",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.715919+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-malaga",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-malaga/profil/verein/1084",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:43.715919+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-bayern-munchen",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-bayern-munchen/profil/verein/27",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:borussia-dortmund",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/borussia-dortmund/profil/verein/16",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rasenballsport-leipzig",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/rasenballsport-leipzig/profil/verein/23826",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:bayer-04-leverkusen",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/bayer-04-leverkusen/profil/verein/15",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:vfb-stuttgart",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/vfb-stuttgart/profil/verein/79",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:eintracht-frankfurt",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/eintracht-frankfurt/profil/verein/24",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:tsg-1899-hoffenheim",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/tsg-1899-hoffenheim/profil/verein/533",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sc-freiburg",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/sc-freiburg/profil/verein/60",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-augsburg",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-augsburg/profil/verein/167",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:1-fsv-mainz-05",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/1-fsv-mainz-05/profil/verein/39",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:1-fc-koln",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/1-fc-koln/profil/verein/3",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:hamburger-sv",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/hamburger-sv/profil/verein/41",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:borussia-monchengladbach",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/borussia-monchengladbach/profil/verein/18",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sv-werder-bremen",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/sv-werder-bremen/profil/verein/86",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:1-fc-union-berlin",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/1-fc-union-berlin/profil/verein/89",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-schalke-04",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-schalke-04/profil/verein/33",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sv-07-elversberg",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/sv-07-elversberg/profil/verein/64",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sc-paderborn-07",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/sc-paderborn-07/profil/verein/127",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:54:55.382450+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:inter-mailand",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/inter-mailand/profil/verein/46",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:juventus-turin",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/juventus-turin/profil/verein/506",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:como-1907",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/como-1907/profil/verein/1047",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:as-rom",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/as-rom/profil/verein/12",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ac-mailand",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ac-mailand/profil/verein/5",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:atalanta-bergamo",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/atalanta-bergamo/profil/verein/800",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ssc-neapel",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ssc-neapel/profil/verein/6195",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ac-florenz",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ac-florenz/profil/verein/430",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lazio-rom",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/lazio-rom/profil/verein/398",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-bologna",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-bologna/profil/verein/1025",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:us-sassuolo",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/us-sassuolo/profil/verein/6574",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-turin",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-turin/profil/verein/416",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:genua-cfc",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/genua-cfc/profil/verein/252",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:udinese-calcio",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/udinese-calcio/profil/verein/410",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:parma-calcio-1913",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/parma-calcio-1913/profil/verein/130",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:cagliari-calcio",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/cagliari-calcio/profil/verein/1390",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:venezia-fc",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/venezia-fc/profil/verein/607",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ac-monza",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ac-monza/profil/verein/2919",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:frosinone-calcio",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/frosinone-calcio/profil/verein/8970",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:us-lecce",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/us-lecce/profil/verein/1005",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:09.747603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-paris-saint-germain",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-paris-saint-germain/profil/verein/583",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:as-monaco",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/as-monaco/profil/verein/162",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rc-strassburg-alsace",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/rc-strassburg-alsace/profil/verein/667",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:olympique-lyon",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/olympique-lyon/profil/verein/1041",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:losc-lille",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/losc-lille/profil/verein/1082",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-stade-rennes",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-stade-rennes/profil/verein/273",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rc-lens",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/rc-lens/profil/verein/826",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:olympique-marseille",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/olympique-marseille/profil/verein/244",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:paris-fc",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/paris-fc/profil/verein/10004",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ogc-nizza",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ogc-nizza/profil/verein/417",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.378305+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-toulouse",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-toulouse/profil/verein/415",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:aj-auxerre",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/aj-auxerre/profil/verein/290",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc-lorient",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/fc-lorient/profil/verein/1158",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:stade-brest-29",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/stade-brest-29/profil/verein/3911",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sco-angers",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/sco-angers/profil/verein/1420",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ac-le-havre",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/ac-le-havre/profil/verein/738",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:es-troyes-ac",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/es-troyes-ac/profil/verein/1095",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:le-mans-fc",
+      "type": "team",
+      "name": "",
+      "url": "https://www.transfermarkt.com/le-mans-fc/profil/verein/1164",
+      "priority": 50,
+      "addedAt": "2026-09-05T09:55:23.380313+00:00",
       "attempts": 0
     }
   ],
