@@ -1,5 +1,83 @@
 {
-  "queue": [],
-  "processedToday": 10,
+  "queue": [
+    {
+      "id": "league:GB1",
+      "type": "league",
+      "name": "Premier League",
+      "url": "https://www.transfermarkt.com/premier-league/startseite/wettbewerb/GB1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411228+00:00",
+      "attempts": 1,
+      "lastAttempt": "2026-09-05T06:46:27.259757+00:00"
+    },
+    {
+      "id": "league:ES1",
+      "type": "league",
+      "name": "La Liga",
+      "url": "https://www.transfermarkt.com/laliga/startseite/wettbewerb/ES1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411237+00:00",
+      "attempts": 1,
+      "lastAttempt": "2026-09-05T06:46:32.351082+00:00"
+    },
+    {
+      "id": "league:L1",
+      "type": "league",
+      "name": "Bundesliga",
+      "url": "https://www.transfermarkt.com/bundesliga/startseite/wettbewerb/L1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411241+00:00",
+      "attempts": 1,
+      "lastAttempt": "2026-09-05T06:46:37.458594+00:00"
+    },
+    {
+      "id": "league:IT1",
+      "type": "league",
+      "name": "Serie A",
+      "url": "https://www.transfermarkt.com/serie-a/startseite/wettbewerb/IT1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411244+00:00",
+      "attempts": 1,
+      "lastAttempt": "2026-09-05T06:46:42.553343+00:00"
+    },
+    {
+      "id": "league:FR1",
+      "type": "league",
+      "name": "Ligue 1",
+      "url": "https://www.transfermarkt.com/ligue-1/startseite/wettbewerb/FR1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411248+00:00",
+      "attempts": 1,
+      "lastAttempt": "2026-09-05T06:46:47.652732+00:00"
+    },
+    {
+      "id": "league:NL1",
+      "type": "league",
+      "name": "Eredivisie",
+      "url": "https://www.transfermarkt.com/eredivisie/startseite/wettbewerb/NL1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411251+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "league:PO1",
+      "type": "league",
+      "name": "Primeira Liga",
+      "url": "https://www.transfermarkt.com/primeira-liga/startseite/wettbewerb/PO1",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411255+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "league:GB2",
+      "type": "league",
+      "name": "Championship",
+      "url": "https://www.transfermarkt.com/championship/startseite/wettbewerb/GB2",
+      "priority": 10,
+      "addedAt": "2026-09-05T06:46:21.411264+00:00",
+      "attempts": 0
+    }
+  ],
+  "processedToday": 0,
   "lastReset": "2026-09-05"
 }
