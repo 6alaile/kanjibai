@@ -1,6 +1,7 @@
 """
 stats.py — Scout Stats Enricher
 Uses football-data.org free tier for form, standings, H2H.
+Falls back to Transfermarkt cache for additional data.
 Current 2024/25 season data, no IP restrictions, no cost.
 
 Covered leagues (free tier):
@@ -16,9 +17,14 @@ import os
 import json
 import time
 import logging
+import sys
 from typing import Optional
 
 import requests
+
+# Add scripts directory to path for transfermarkt_cache import
+sys.path.insert(0, os.path.dirname(__file__))
+from transfermarkt_cache import get_team_data, get_recent_form, has_team, get_cache_stats
 
 logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
 log = logging.getLogger(__name__)
@@ -306,20 +312,33 @@ def enrich_match(match: dict) -> dict:
 
     league_code = get_league_code(league_name)
 
+    # Try Transfermarkt cache first for form data
+    tm_home_form = get_recent_form(home_name, n=10) if has_team(home_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
+    tm_away_form = get_recent_form(away_name, n=10) if has_team(away_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
+
     if not league_code:
-        log.info(f"  League '{league_name}' not in free tier — skipping enrichment")
-        enriched["home_stats"] = _empty_stats(home_name)
-        enriched["away_stats"] = _empty_stats(away_name)
+        log.info(f"  League '{league_name}' not in free tier — using Transfermarkt cache only")
+        enriched["home_stats"] = _build_stats(home_name, tm_home_form, None, total_teams)
+        enriched["away_stats"] = _build_stats(away_name, tm_away_form, None, total_teams)
         enriched["h2h"] = None
         return enriched
 
-    # Get team IDs
+    # Get team IDs from football-data.org
     home_id = get_team_id_cached(home_name, league_code)
     away_id = get_team_id_cached(away_name, league_code)
 
-    # Form data
-    home_form_data = fetch_team_form(home_id) if home_id else {}
-    away_form_data = fetch_team_form(away_id) if away_id else {}
+    # Form data - merge football-data.org with Transfermarkt
+    fd_home_form = fetch_team_form(home_id) if home_id else {}
+    fd_away_form = fetch_team_form(away_id) if away_id else {}
+
+    # Prefer football-data.org form, fall back to Transfermarkt
+    home_form = fd_home_form.get("form") or tm_home_form.get("form", [])
+    home_goals_scored = fd_home_form.get("goals_scored") or tm_home_form.get("goals_scored", [])
+    home_goals_conceded = fd_home_form.get("goals_conceded") or tm_home_form.get("goals_conceded", [])
+
+    away_form = fd_away_form.get("form") or tm_away_form.get("form", [])
+    away_goals_scored = fd_away_form.get("goals_scored") or tm_away_form.get("goals_scored", [])
+    away_goals_conceded = fd_away_form.get("goals_conceded") or tm_away_form.get("goals_conceded", [])
 
     # Standings
     home_pos = away_pos = None
@@ -336,27 +355,31 @@ def enrich_match(match: dict) -> dict:
     if match_id:
         h2h = fetch_h2h(match_id)
 
-    enriched["home_stats"] = {
-        "name": home_name,
-        "form": home_form_data.get("form", []),
-        "goals_scored": home_form_data.get("goals_scored", []),
-        "goals_conceded": home_form_data.get("goals_conceded", []),
-        "league_position": home_pos,
-        "total_teams_in_league": total_teams,
-        "opponent_positions": None
-    }
-    enriched["away_stats"] = {
-        "name": away_name,
-        "form": away_form_data.get("form", []),
-        "goals_scored": away_form_data.get("goals_scored", []),
-        "goals_conceded": away_form_data.get("goals_conceded", []),
-        "league_position": away_pos,
-        "total_teams_in_league": total_teams,
-        "opponent_positions": None
-    }
+    enriched["home_stats"] = _build_stats(home_name, {
+        "form": home_form,
+        "goals_scored": home_goals_scored,
+        "goals_conceded": home_goals_conceded
+    }, home_pos, total_teams)
+    enriched["away_stats"] = _build_stats(away_name, {
+        "form": away_form,
+        "goals_scored": away_goals_scored,
+        "goals_conceded": away_goals_conceded
+    }, away_pos, total_teams)
     enriched["h2h"] = h2h
     enriched["total_teams_in_league"] = total_teams
     return enriched
+
+
+def _build_stats(name: str, form_data: dict, position: Optional[int], total_teams: int) -> dict:
+    return {
+        "name": name,
+        "form": form_data.get("form", []),
+        "goals_scored": form_data.get("goals_scored", []),
+        "goals_conceded": form_data.get("goals_conceded", []),
+        "league_position": position,
+        "total_teams_in_league": total_teams,
+        "opponent_positions": None
+    }
 
 
 def _empty_stats(name: str) -> dict:
