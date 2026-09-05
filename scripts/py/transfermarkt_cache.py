@@ -69,7 +69,7 @@ def get_recent_form(team_name: str, n: int = 5) -> Dict[str, List]:
         return {"form": [], "goals_scored": [], "goals_conceded": []}
     
     # Filter finished matches with scores
-    finished = [f for f in fixtures if f.get("score") and "-" in f.get("score", "")]
+    finished = [f for f in fixtures if f.get("score") and ("-" in f.get("score", "") or ":" in f.get("score", ""))]
     # Sort by date descending (most recent first)
     finished.sort(key=lambda x: x.get("date", ""), reverse=True)
     finished = finished[:n]
@@ -115,6 +115,41 @@ def get_recent_form(team_name: str, n: int = 5) -> Dict[str, List]:
         "goals_scored": goals_scored,
         "goals_conceded": goals_conceded
     }
+
+
+def get_league_position(team_name: str) -> Optional[int]:
+    """Get league position from Transfermarkt cache."""
+    data = get_team_data(team_name)
+    if not data:
+        return None
+    return data.get("league_position")
+
+
+def get_opposition_position(home_team: str, away_team: str, is_knockout: bool = False) -> Optional[Any]:
+    """
+    Get opposition position for a match.
+    For league: returns opponent's league position (int).
+    For knockout: returns round name (str) like "R16", "QF", "SF", "F".
+    """
+    if is_knockout:
+        # For knockout tournaments, we'd need competition-specific logic
+        # For now return None - will be handled by competition name parsing
+        return None
+    
+    # For league matches, return away team's league position
+    return get_league_position(away_team)
+
+
+def get_h2h_data(home_team: str, away_team: str) -> Optional[List[Dict]]:
+    """Get H2H data between two teams from cache."""
+    cache = _load_cache()
+    home_key = _normalize_key(home_team)
+    away_key = _normalize_key(away_team)
+    
+    h2h_data = cache.get("h2h", {}).get(home_key, {}).get("data", {})
+    if h2h_data:
+        return h2h_data.get(away_key, [])
+    return None
 
 def get_team_market_value(team_name: str) -> Optional[str]:
     """Get team market value from profile."""
