@@ -72,7 +72,7 @@ def _cache_key(name: str) -> str:
 
 
 def is_cached(cache: Dict, type_: str, key: str) -> bool:
-    return !!cache.get(type_ + "s", {}).get(key)
+    return bool(cache.get(type_ + "s", {}).get(key))
 
 
 def set_cached(cache: Dict, type_: str, key: str, data: Any) -> None:
