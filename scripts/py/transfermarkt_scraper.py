@@ -296,11 +296,18 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
             if not date_str:
                 continue
 
-            # Parse score (format: "3:0", "-:-", "6:5 on pens", "2:1 AET")
+            # Parse score (format: "3:0", "-:-", "6:5 on pens", "2:1 AET", "6 on pens")
             score = None
             score_match = re.match(r'(\d+)\s*:\s*(\d+)', score_raw)
             if score_match:
-                score = [int(score_match.group(1)), int(score_match.group(2))]
+                try:
+                    score = [int(score_match.group(1)), int(score_match.group(2))]
+                except ValueError:
+                    log.warning(f"    Could not parse score: '{score_raw}'")
+                    score = None
+            elif score_raw and score_raw != "-:-":
+                # Handle non-standard formats like "6 on pens", "AET", "pen"
+                log.debug(f"    Non-standard score format (skipped): '{score_raw}'")
 
             # Parse opponent name (remove ranking in parentheses)
             opponent = re.sub(r'\s*\(\d+\.\)\s*', '', opponent_raw).strip()
@@ -511,9 +518,13 @@ def _parse_h2h(page: Page, match_id: str) -> List[Dict]:
             for ct in cell_texts:
                 sm = re.match(r'(\d+:\d+)', ct.strip())
                 if sm:
-                    parts = sm.group(1).split(":")
-                    score = [int(parts[0]), int(parts[1])]
-                    break
+                    try:
+                        parts = sm.group(1).split(":")
+                        score = [int(parts[0]), int(parts[1])]
+                        break
+                    except ValueError:
+                        log.debug(f"    Could not parse H2H score: '{sm.group(1)}'")
+                        continue
 
             if home and away and score:
                 h2h.append({
@@ -780,17 +791,24 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                         if league_teams:
                             log.info(f"    League {league_id}: {len(league_teams)} teams from table")
                             for tk, tdata in league_teams.items():
-                                team_entry = {
-                                    "id": tdata["id"],
-                                    "name": tdata["name"],
-                                    "league_position": tdata["position"],
-                                    "total_teams": len(league_teams),
-                                    "last_scraped": datetime.now(timezone.utc).isoformat(),
-                                    "recent_matches": [],
-                                    "form_summary": {"form": [], "goals_scored": [], "goals_conceded": []},
-                                    "h2h": {},
-                                }
-                                _upsert_team_in_cache(cache, league_id, league_name, tk, team_entry)
+                                # Preserve existing form data if team already in cache
+                                existing = cache.get("leagues", {}).get(league_id, {}).get("teams", {}).get(tk)
+                                if existing:
+                                    existing["league_position"] = tdata["position"]
+                                    existing["total_teams"] = len(league_teams)
+                                    existing["last_scraped"] = datetime.now(timezone.utc).isoformat()
+                                else:
+                                    team_entry = {
+                                        "id": tdata["id"],
+                                        "name": tdata["name"],
+                                        "league_position": tdata["position"],
+                                        "total_teams": len(league_teams),
+                                        "last_scraped": datetime.now(timezone.utc).isoformat(),
+                                        "recent_matches": [],
+                                        "form_summary": {"form": [], "goals_scored": [], "goals_conceded": []},
+                                        "h2h": {},
+                                    }
+                                    _upsert_team_in_cache(cache, league_id, league_name, tk, team_entry)
                             _save_cache(cache)
 
                     # Store our team's form data
