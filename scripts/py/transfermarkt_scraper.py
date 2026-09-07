@@ -651,6 +651,38 @@ def _seed_queue_from_leagues(queue: List[Dict]) -> List[Dict]:
             (1219, "Lorient"), (544, "Brest"), (1145, "Angers"),
             (1214, "Le Havre"), (1218, "Troyes"), (1223, "Le Mans"),
         ],
+        "UZB1": [
+            (0, "Fardu Ferghana"), (0, "FK Aral Samali"),
+            (0, "PFK Metallurg Bekabad"), (0, "FC Pakhtakor Tashkent II"),
+        ],
+        "ARE23": [
+            (0, "Ajman U23"), (0, "AL Nasr U23"),
+            (0, "AL Wahda FC U23"), (0, "AL Dhafra U23"),
+        ],
+        "URU_RES": [
+            (0, "Club Atletico Penarol Reserves"), (0, "CA Boston River Reserves"),
+            (0, "Montevideo City Torque Reserves"), (0, "Liverpool Montevideo Reserves"),
+        ],
+        "QAT2": [
+            (0, "Umm-Salal SC"), (0, "Al-Khor SC"),
+        ],
+        "BUL2": [
+            (0, "PFK Sportist Svoge"), (0, "Gorna Oryahovitsa"),
+            (0, "FC Fratria Varna"), (0, "PFC Chernomorets Burgas"),
+        ],
+        "TR2": [
+            (0, "Istanbulspor AS"), (0, "Igdir FK"),
+            (0, "Esenler Erokspor"), (0, "Kayserispor"),
+        ],
+        "RO1": [
+            (0, "SC FC Voluntari"), (0, "ACS Champions FC Arges"),
+        ],
+        "SVK2": [
+            (0, "MSK Zilina B"), (0, "Slovan Bratislava B U21"),
+        ],
+        "SAU1": [
+            (0, "Al-Khaleej Club"), (0, "Al-Riyadh SC"),
+        ],
     }
 
     seen = {q["id"] for q in queue}
