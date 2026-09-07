@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-07T18:06:31.397140+00:00",
+  "lastUpdated": "2026-09-07T21:05:26.078674+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -2057,6 +2057,20 @@
           "league_position": null,
           "total_teams": 9,
           "last_scraped": "2026-09-07T14:50:09.686837+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "club_plaza_colonia": {
+          "id": 6044,
+          "name": "Club Plaza Colonia",
+          "league_position": null,
+          "total_teams": 10,
+          "last_scraped": "2026-09-07T21:05:26.078660+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -7333,6 +7347,180 @@
               1,
               3
             ]
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "PR1C": {
+      "name": "Primera Divisi\u00f3n Clausura",
+      "table_fetched_at": "2026-09-07T21:02:48.314565+00:00",
+      "teams": {
+        "2_de_mayo": {
+          "id": 17484,
+          "name": "2 de Mayo",
+          "league_position": 1,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314547+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "libertad": {
+          "id": 9875,
+          "name": "Libertad",
+          "league_position": 2,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314572+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "olimpia": {
+          "id": 629,
+          "name": "Olimpia",
+          "league_position": 3,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314578+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "nacional": {
+          "id": 7098,
+          "name": "Nacional",
+          "league_position": 4,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314589+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "trinidense": {
+          "id": 17427,
+          "name": "Trinidense",
+          "league_position": 5,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314594+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "guaran\u00ed": {
+          "id": 11855,
+          "name": "Guaran\u00ed",
+          "league_position": 6,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314598+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cs_ameliano": {
+          "id": 95571,
+          "name": "CS Ameliano",
+          "league_position": 7,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314603+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cerro_porte\u00f1o": {
+          "id": 1214,
+          "name": "Cerro Porte\u00f1o",
+          "league_position": 8,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.323509+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "luque\u00f1o": {
+          "id": 7656,
+          "name": "Luque\u00f1o",
+          "league_position": 9,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314615+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "rubio_\u00f1\u00fa": {
+          "id": 23170,
+          "name": "Rubio \u00d1\u00fa",
+          "league_position": 10,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314621+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "recoleta_fc": {
+          "id": 14545,
+          "name": "Recoleta FC",
+          "league_position": 11,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314626+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cs_san_lorenzo": {
+          "id": 19124,
+          "name": "CS San Lorenzo",
+          "league_position": 12,
+          "total_teams": 12,
+          "last_scraped": "2026-09-07T21:02:48.314631+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
           },
           "h2h": {}
         }
