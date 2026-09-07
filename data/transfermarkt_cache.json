@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-07T09:54:12.159096+00:00",
+  "lastUpdated": "2026-09-07T10:25:15.606578+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -11,7 +11,7 @@
           "name": "Man City",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:54:12.159096+00:00",
+          "last_scraped": "2026-09-07T10:20:53.807268+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -105,7 +105,7 @@
           "name": "Arsenal",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.264499+00:00",
+          "last_scraped": "2026-09-07T10:20:16.836174+00:00",
           "recent_matches": [
             {
               "date": "Sun 16/08/26",
@@ -199,12 +199,92 @@
           "name": "Hull City",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:24:58.139654+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Stoke City",
+              "opponent_id": null,
+              "score": [
+                5,
+                6
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016470",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Coventry",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899195",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "1:30 PM",
+              "home_away": "H",
+              "opponent": "Man Utd",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899183",
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Aston Villa",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899272",
+              "ranking": "(3.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              6,
+              1,
+              2,
+              0
+            ],
+            "goals_conceded": [
+              5,
+              0,
+              0,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -213,7 +293,7 @@
           "name": "Chelsea",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:47.372152+00:00",
+          "last_scraped": "2026-09-07T10:20:40.873621+00:00",
           "recent_matches": [
             {
               "date": "Thu 27/08/26",
@@ -307,12 +387,92 @@
           "name": "Brentford",
           "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:22:15.272320+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Birmingham",
+              "opponent_id": null,
+              "score": [
+                1,
+                6
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016486",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Leeds",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899197",
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Tottenham",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899187",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Sunderland",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899268",
+              "ranking": "(5.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              6,
+              1,
+              3,
+              1
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -321,12 +481,73 @@
           "name": "Liverpool",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:21:23.126632+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 23/08/26",
+              "time": "5:30 PM",
+              "home_away": "A",
+              "opponent": "Newcastle",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899190",
+              "ranking": "(6.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "1:30 PM",
+              "home_away": "H",
+              "opponent": "Nott'm Forest",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899198",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Fri 04/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Ipswich",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899273",
+              "ranking": "(13.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              2,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -335,12 +556,92 @@
           "name": "Newcastle",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:21:40.614302+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 26/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "West Brom",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016471",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "5:30 PM",
+              "home_away": "H",
+              "opponent": "Liverpool",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899190",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Tottenham",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899201",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "1:30 PM",
+              "home_away": "H",
+              "opponent": "Bournemouth",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899275",
+              "ranking": "(6.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              0,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -349,12 +650,92 @@
           "name": "Everton",
           "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:23:31.476287+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 26/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Preston",
+              "opponent_id": null,
+              "score": [
+                0,
+                4
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016476",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Man Utd",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899270",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Bournemouth",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899193",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Crystal Palace",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899184",
+              "ranking": "(8.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              4,
+              2,
+              1,
+              2
+            ],
+            "goals_conceded": [
+              0,
+              2,
+              1,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -363,12 +744,92 @@
           "name": "Leeds",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:23:50.075832+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Nott'm Forest",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016473",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Brentford",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899197",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Nott'm Forest",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899186",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Brighton",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899269",
+              "ranking": "(8.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              2,
+              1,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              1,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -377,12 +838,111 @@
           "name": "Brighton",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:21:58.323496+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 27/08/26",
+              "time": "8:30 PM",
+              "home_away": "H",
+              "opponent": "Troms\u00f8 IL",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5013837",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 20/08/26",
+              "time": "7:00 PM",
+              "home_away": "A",
+              "opponent": "Troms\u00f8 IL",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5013813",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Chelsea",
+              "opponent_id": null,
+              "score": [
+                4,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899194",
+              "ranking": "(1.)"
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Aston Villa",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899188",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Leeds",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899269",
+              "ranking": "(9.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              4,
+              0,
+              3,
+              4,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              0,
+              4,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -391,7 +951,7 @@
           "name": "Man Utd",
           "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:24.335663+00:00",
+          "last_scraped": "2026-09-07T10:20:28.992997+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -466,12 +1026,73 @@
           "name": "Sunderland",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:25:15.606562+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 30/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Fulham",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899200",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Ipswich",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899185",
+              "ranking": "(12.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Brentford",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899268",
+              "ranking": "(11.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "D"
+            ],
+            "goals_scored": [
+              1,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              2,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -480,12 +1101,73 @@
           "name": "Crystal Palace",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:22:32.716113+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Everton",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899184",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Fulham",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899271",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Fri 28/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Man City",
+              "opponent_id": null,
+              "score": [
+                1,
+                4
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899196",
+              "ranking": "(16.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              3,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              4
+            ]
           },
           "h2h": {}
         },
@@ -494,12 +1176,92 @@
           "name": "Ipswich",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:24:24.163478+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Leicester",
+              "opponent_id": null,
+              "score": [
+                3,
+                1
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016482",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "5:30 PM",
+              "home_away": "A",
+              "opponent": "Man Utd",
+              "opponent_id": null,
+              "score": [
+                5,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899199",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Sunderland",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899185",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Fri 04/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Liverpool",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899273",
+              "ranking": "(12.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              2,
+              0
+            ],
+            "goals_conceded": [
+              1,
+              5,
+              1,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -508,12 +1270,73 @@
           "name": "Bournemouth",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:22:51.698628+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 23/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Man City",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899189",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Everton",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899193",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "1:30 PM",
+              "home_away": "A",
+              "opponent": "Newcastle",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899275",
+              "ranking": "(14.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "D",
+              "D"
+            ],
+            "goals_scored": [
+              1,
+              1,
+              2
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -522,7 +1345,7 @@
           "name": "Nott'm Forest",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
+          "last_scraped": "2026-09-07T10:20:16.835538+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -536,12 +1359,92 @@
           "name": "Aston Villa",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:23:08.947080+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 12/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "PSG",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Final",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4895595",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Brighton",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899188",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Hull City",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899272",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Mon 31/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Arsenal",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899192",
+              "ranking": "(20.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "goals_conceded": [
+              2,
+              4,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -550,12 +1453,92 @@
           "name": "Tottenham",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:21:05.625872+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 26/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Charlton",
+              "opponent_id": null,
+              "score": [
+                5,
+                1
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016469",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Newcastle",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899201",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Brentford",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899187",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Nott'm Forest",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899276",
+              "ranking": "(20.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "L",
+              "D"
+            ],
+            "goals_scored": [
+              5,
+              0,
+              0,
+              0
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              3,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -564,12 +1547,92 @@
           "name": "Fulham",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:24:07.432689+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 27/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "AFC Wimbledon",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016489",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Sunderland",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899200",
+              "ranking": "(12.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Crystal Palace",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899271",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Mon 24/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Chelsea",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899191",
+              "ranking": "(19.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              3,
+              0,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              0,
+              1,
+              3,
+              3
+            ]
           },
           "h2h": {}
         },
@@ -578,12 +1641,92 @@
           "name": "Coventry",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T09:53:01.258781+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-07T10:24:41.143760+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Plymouth",
+              "opponent_id": null,
+              "score": [
+                2,
+                4
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016467",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Hull City",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899195",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Man City",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899274",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Fri 21/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Arsenal",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899182",
+              "ranking": "(20.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              4,
+              0,
+              0,
+              0
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              1,
+              3
+            ]
           },
           "h2h": {}
         }
