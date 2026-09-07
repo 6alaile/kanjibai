@@ -6,6 +6,7 @@ Scoring happens in the browser (app.js).
 Data sources:
 - BetPawa (Playwright) → primary odds
 - API-Football → fallback odds
+- Transfermarkt → enrichment (team form, league position, H2H)
 - football-data.org → enrichment (free tier leagues)
 """
 
@@ -14,11 +15,30 @@ import logging
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from typing import Optional
 
 from scrape import fetch_fixtures as fetch_api_fixtures
 from stats import enrich_all, get_league_code
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
+
+sys.path.insert(0, str(Path(__file__).parent))
+from transfermarkt_scraper import run_daily_scrape
+
+CACHE_FILE = Path(__file__).parent.parent.parent / "data" / "transfermarkt_cache.json"
+
+
+def _ensure_cache_v2():
+    """Initialize cache with v2 structure if missing or outdated."""
+    if CACHE_FILE.exists():
+        with open(CACHE_FILE, "r") as f:
+            cache = json.load(f)
+        if cache.get("version") == 2:
+            return
+    # Create fresh v2 cache
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(CACHE_FILE, "w") as f:
+        json.dump({"version": 2, "lastUpdated": None, "leagues": {}}, f, indent=2)
 
 logging.basicConfig(level=logging.INFO, format="[scrape] %(asctime)s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger(__name__)
@@ -48,8 +68,10 @@ def run():
 
     today = get_today_eat()
 
+    _ensure_cache_v2()
+
     # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
-    log.info("Step 1/2: Fetching fixtures from BetPawa (primary) ...")
+    log.info("Step 1/3: Fetching fixtures from BetPawa (primary) ...")
 
     # Try BetPawa first (Playwright-rendered odds)
     raw_fixtures = fetch_betpawa_fixtures(date_str=today)
@@ -77,8 +99,18 @@ def run():
 
     log.info(f"  {len(raw_fixtures)} fixtures fetched")
 
-    # Step 2: Enrich with stats (football-data.org free tier)
-    log.info("Step 2/2: Enriching with form, H2H, standings...")
+    # ── Step 2: Run Transfermarkt scraper for teams in today's fixtures ──
+    log.info("Step 2/3: Running Transfermarkt scraper for today's teams...")
+    try:
+        run_daily_scrape(max_teams=20, betpawa_fixtures=raw_fixtures)
+        log.info("  Transfermarkt scrape complete")
+    except Exception as e:
+        log.warning(f"  Transfermarkt scrape failed: {e}")
+        import traceback
+        traceback.print_exc()
+
+    # Step 3: Enrich with stats (football-data.org free tier + Transfermarkt cache)
+    log.info("Step 3/3: Enriching with form, H2H, standings...")
     enriched = enrich_all(raw_fixtures)
     log.info(f"  {len(enriched)} matches enriched")
 
