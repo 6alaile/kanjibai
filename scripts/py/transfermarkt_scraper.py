@@ -1,6 +1,30 @@
 """
-transfermarkt_scraper.py — Transfermarkt Scraper using Playwright
-Renders JavaScript-heavy pages, handles Cloudflare challenges.
+transfermarkt_scraper.py — Transfermarkt Scraper (v2)
+
+Two data source URLs only:
+  1. {team}/spielplandatum/verein/{id}?saison_id={year}  → fixtures (form)
+  2. {league}/tabelle/wettbewerb/{league_id}              → league table
+  3. spielbericht/index/spielbericht/{matchId}            → H2H (lazy)
+
+Cache structure (v2, league-centric):
+{
+  "version": 2,
+  "lastUpdated": "ISO8601",
+  "leagues": {
+    "GB1": {
+      "name": "Premier League",
+      "table_fetched_at": "ISO8601",
+      "teams": {
+        "manchester_united": {
+          "id": 985, "name": "Manchester United",
+          "league_position": 8, "total_teams": 20, "last_scraped": "...",
+          "recent_matches": [...],
+          "h2h": { "liverpool": [...] }
+        }
+      }
+    }
+  }
+}
 """
 
 import json
@@ -10,8 +34,7 @@ import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional, List, Dict, Any
-from dataclasses import dataclass, asdict
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 
 from playwright.sync_api import Page, sync_playwright
 
@@ -22,37 +45,44 @@ CACHE_FILE = Path(__file__).parent.parent.parent / "data" / "transfermarkt_cache
 QUEUE_FILE = Path(__file__).parent.parent / "ts" / "transfermarkt_queue.json"
 
 RENDER_WAIT = 5
-MAX_RETRIES = 2
 REQUEST_DELAY = 3
-
 BASE_URL = "https://www.transfermarkt.com"
 
 
-@dataclass
-class TeamData:
-    name: str
-    url: str
-    market_value: Optional[str] = None
-    squad_size: Optional[int] = None
-    avg_age: Optional[float] = None
-    foreigners: Optional[int] = None
-    national_players: Optional[int] = None
-    stadium: Optional[str] = None
-    fixtures: List[Dict[str, Any]] = None
-
+# ── Cache helpers ──────────────────────────────────────────────────────────────
 
 def _load_cache() -> Dict:
     if CACHE_FILE.exists():
         with open(CACHE_FILE, "r") as f:
             return json.load(f)
-    return {"version": 1, "lastUpdated": datetime.now(timezone.utc).isoformat(), "teams": {}, "players": {}, "fixtures": {}, "leagues": {}}
+    return {"version": 2, "lastUpdated": None, "leagues": {}}
 
 
 def _save_cache(cache: Dict) -> None:
     cache["lastUpdated"] = datetime.now(timezone.utc).isoformat()
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(CACHE_FILE, "w") as f:
         json.dump(cache, f, indent=2)
 
+
+def _cache_key(name: str) -> str:
+    return name.lower().replace(" ", "_").replace(".", "").replace("'", "").replace("&", "").replace("-", "_")
+
+
+def _safe_text(el) -> str:
+    try:
+        return el.inner_text().strip() if el else ""
+    except Exception:
+        return ""
+
+
+def _current_season_id() -> str:
+    """Dynamic season: Jul–Dec → current year, Jan–Jun → previous year."""
+    now = datetime.now()
+    return str(now.year if now.month >= 7 else now.year - 1)
+
+
+# ── Queue helpers ──────────────────────────────────────────────────────────────
 
 def _load_queue() -> List[Dict]:
     if QUEUE_FILE.exists():
@@ -64,827 +94,738 @@ def _load_queue() -> List[Dict]:
 
 def _save_queue(queue: List[Dict]) -> None:
     with open(QUEUE_FILE, "w") as f:
-        json.dump({"queue": queue, "processedToday": 0, "lastReset": datetime.now().strftime("%Y-%m-%d")}, f, indent=2)
+        json.dump({
+            "queue": queue,
+            "processedToday": 0,
+            "lastReset": datetime.now().strftime("%Y-%m-%d")
+        }, f, indent=2)
 
 
-def _cache_key(name: str) -> str:
-    return name.lower().replace(" ", "_").replace(".", "").replace("'", "").replace("&", "").replace("-", "_")
+# ── Team search ────────────────────────────────────────────────────────────────
 
+def _search_team_url(browser, team_name: str) -> Optional[Dict]:
+    """Search Transfermarkt for a team. Returns {"id": int, "url": str, "name": str} or None."""
+    search_url = f"{BASE_URL}/schnellsuche/ergebnis/schnellsuche?query={team_name.replace(' ', '+')}"
+    log.info(f"  Searching for: {team_name}")
 
-def is_cached(cache: Dict, type_: str, key: str) -> bool:
-    return bool(cache.get(type_ + "s", {}).get(key))
-
-
-def set_cached(cache: Dict, type_: str, key: str, data: Any) -> None:
-    if type_ + "s" not in cache:
-        cache[type_ + "s"] = {}
-    cache[type_ + "s"][key] = {"data": data, "fetchedAt": datetime.now(timezone.utc).isoformat()}
-    _save_cache(cache)
-
-
-def get_cached(cache: Dict, type_: str, key: str) -> Optional[Any]:
-    return cache.get(type_ + "s", {}).get(key, {}).get("data")
-
-
-def _safe_text(el) -> str:
-    try:
-        return el.inner_text().strip() if el else ""
-    except:
-        return ""
-
-
-def _extract_team_profile(page: Page, team_url: str) -> Optional[Dict]:
-    """Extract team profile from Transfermarkt team page."""
-    try:
-        page.goto(team_url, wait_until="networkidle", timeout=60000)
-        page.wait_for_load_state("networkidle", timeout=30000)
-        time.sleep(3)
-    except Exception as e:
-        log.warning(f"Failed to load team page {team_url}: {e}")
-        return None
-
-    data = {"url": team_url, "name": ""}
-
-    # Team name - from header
-    try:
-        name_el = page.query_selector("h1.data-header__headline-wrapper, h1[itemprop='name'], .data-header__club, .data-header__headline")
-        if name_el:
-            data["name"] = _safe_text(name_el)
-    except:
-        pass
-
-    # Market value - from data-header
-    try:
-        mv_el = page.query_selector(".data-header__market-value-wrapper, .data-header__market-value, [itemprop='marketValue'], .data-header__value")
-        if mv_el:
-            data["market_value"] = _safe_text(mv_el)
-    except:
-        pass
-
-    # Squad info - from the info table
-    try:
-        rows = page.query_selector_all(".data-header__info-box table tr, .info-table tr, .data-header__details tr, .data-header__info tr")
-        for row in rows:
-            th = row.query_selector("th, td:first-child")
-            td = row.query_selector("td:last-child")
-            if not th or not td:
-                continue
-            label = _safe_text(th).lower()
-            value = _safe_text(td)
-            if "squad" in label and "size" in label:
-                data["squad_size"] = int(re.search(r"\d+", value).group()) if re.search(r"\d+", value) else None
-            elif "average age" in label or "avg. age" in label:
-                data["avg_age"] = float(re.search(r"[\d.]+", value).group()) if re.search(r"[\d.]+", value) else None
-            elif "foreigners" in label:
-                data["foreigners"] = int(re.search(r"\d+", value).group()) if re.search(r"\d+", value) else None
-            elif "national" in label:
-                data["national_players"] = int(re.search(r"\d+", value).group()) if re.search(r"\d+", value) else None
-            elif "stadium" in label:
-                data["stadium"] = value
-    except:
-        pass
-
-    return data if data.get("name") else None
-
-
-def _extract_team_fixtures(page: Page, team_url: str) -> Dict:
-    """Extract team fixtures from spielplan page - follows TypeScript patterns."""
-    fixtures_url = team_url.replace("/profil/", "/spielplan/") + "?saison_id=2025"
-    fixtures = []
-
-    try:
-        page.goto(fixtures_url, wait_until="networkidle", timeout=60000)
-        page.wait_for_load_state("networkidle", timeout=30000)
-        time.sleep(3)
-    except Exception as e:
-        log.warning(f"Failed to load fixtures page {fixtures_url}: {e}")
-        return {"fixtures": [], "recent_form": {"form": [], "goals_scored": [], "goals_conceded": []}}
-
-    try:
-        html = page.content()
-        
-        # Find ALL tables and look for the one with "Matchday" or "Spieltag" header
-        table_matches = re.findall(r'<table[^>]*>[\s\S]*?<\/table>', html)
-        if not table_matches:
-            log.warning(f"No tables found on fixtures page")
-            return {"fixtures": [], "recent_form": {"form": [], "goals_scored": [], "goals_conceded": []}}
-
-        fixtures_table = None
-        for table in table_matches:
-            if "Matchday" in table or "Spieltag" in table or "matchday" in table.lower():
-                fixtures_table = table
-                break
-        
-        if not fixtures_table:
-            log.warning(f"No table with Matchday/Spieltag found")
-            return {"fixtures": [], "recent_form": {"form": [], "goals_scored": [], "goals_conceded": []}}
-
-        # Parse rows - look for <tr> with enough <td> cells (9+ columns)
-        row_matches = re.findall(r'<tr[^>]*>[\s\S]*?<\/tr>', fixtures_table)
-        for row in row_matches:
-            cells = re.findall(r'<td[^>]*>[\s\S]*?<\/td>', row)
-            if len(cells) < 9:  # need at least matchday, date, time, H/A, opponent, formation, attendance, score
-                continue
-
-            clean_cells = [re.sub(r'<[^>]+>', '', c).replace('&nbsp;', ' ').strip() for c in cells]
-            if len(clean_cells) < 9:
-                continue
-                
-            # Column mapping (0-indexed):
-            # 0: matchday, 1: date, 2: time, 3: home/away, 4: position, 5: empty, 6: opponent, 7: formation, 8: attendance, 9: score
-            matchday = clean_cells[0]
-            date = clean_cells[1]
-            time_ = clean_cells[2]
-            home_away = clean_cells[3]
-            opponent = clean_cells[6] if len(clean_cells) > 6 else ""
-            formation = clean_cells[7] if len(clean_cells) > 7 else ""
-            attendance = clean_cells[8] if len(clean_cells) > 8 else ""
-            score = clean_cells[9] if len(clean_cells) > 9 else ""
-
-            if not matchday or not date or matchday in ("Matchday", "Spieltag"):
-                continue
-
-            # Extract opponent URL if present
-            opp_link_match = re.search(r'href="([^"]+)"', opponent)
-            opponent_url = urljoin(BASE_URL, opp_link_match.group(1)) if opp_link_match else None
-
-            # Extract match report URL if present
-            report_match = re.search(r'href="([^"]*spielbericht[^"]*)"', score)
-            match_report_url = urljoin(BASE_URL, report_match.group(1)) if report_match else None
-
-            # Clean opponent name (remove HTML)
-            opponent_clean = re.sub(r'<[^>]+>', '', opponent).strip()
-
-            fixtures.append({
-                "matchday": matchday.replace("(", "").replace(")", "").strip(),
-                "date": date.strip(),
-                "time": time_.strip(),
-                "homeAway": "H" if home_away.strip() == "H" else "A",
-                "opponent": opponent_clean,
-                "opponentUrl": opponent_url,
-                "formation": formation.strip() or None,
-                "attendance": attendance.strip() or None,
-                "score": re.sub(r'<[^>]+>', '', score).strip() or None,
-                "matchReportUrl": match_report_url
-            })
-    except Exception as e:
-        log.warning(f"Error parsing fixtures: {e}")
-
-    # Compute recent form from last 5 finished matches
-    recent_form = _compute_recent_form(fixtures)
-    
-    return {
-        "fixtures": fixtures,
-        "recent_form": recent_form
-    }
-
-
-def _compute_recent_form(fixtures: List[Dict]) -> Dict[str, List]:
-    """Compute form, goals_scored, goals_conceded from last 5 finished matches."""
-    # Filter finished matches with scores
-    finished = [f for f in fixtures if f.get("score") and ("-" in f.get("score", "") or ":" in f.get("score", ""))]
-    # Sort by date descending (most recent first)
-    finished.sort(key=lambda x: x.get("date", ""), reverse=True)
-    finished = finished[:5]
-    
-    form = []
-    goals_scored = []
-    goals_conceded = []
-    
-    for fixture in finished:
-        score = fixture.get("score", "")
-        home_away = fixture.get("homeAway", "H")
-        opponent = fixture.get("opponent", "")
-        
-        try:
-            # Score format: "2-1" or "1:2"
-            score_clean = score.replace(":", "-")
-            home_goals, away_goals = map(int, score_clean.split("-"))
-            
-            if home_away == "H":
-                scored, conceded = home_goals, away_goals
-            else:
-                scored, conceded = away_goals, home_goals
-            
-            goals_scored.append(scored)
-            goals_conceded.append(conceded)
-            
-            if scored > conceded:
-                form.append("W")
-            elif scored < conceded:
-                form.append("L")
-            else:
-                form.append("D")
-        except (ValueError, AttributeError):
-            continue
-    
-    # Reverse to chronological order (oldest first)
-    form.reverse()
-    goals_scored.reverse()
-    goals_conceded.reverse()
-    
-    return {
-        "form": form,
-        "goals_scored": goals_scored,
-        "goals_conceded": goals_conceded
-    }
-
-
-def _extract_h2h_from_fixtures(page: Page, team_url: str, fixtures: List[Dict]) -> Dict[str, List]:
-    """Extract H2H data from fixtures - group by opponent."""
-    h2h = {}
-    try:
-        # Group fixtures by opponent
-        opponent_matches = {}
-        for fixture in fixtures:
-            if not fixture.get("score") or ("-" not in fixture.get("score", "") and ":" not in fixture.get("score", "")):
-                continue
-            opponent = fixture.get("opponent", "")
-            if not opponent:
-                continue
-            opp_key = _cache_key(opponent)
-            if opp_key not in opponent_matches:
-                opponent_matches[opp_key] = []
-            opponent_matches[opp_key].append(fixture)
-        
-        # For each opponent, get last 5 H2H matches
-        for opp_key, matches in opponent_matches.items():
-            matches.sort(key=lambda x: x.get("date", ""), reverse=True)
-            h2h_matches = matches[:5]
-            h2h[opp_key] = []
-            for m in h2h_matches:
-                score = m.get("score", "")
-                home_away = m.get("homeAway", "H")
-                try:
-                    score_clean = score.replace(":", "-")
-                    home_goals, away_goals = map(int, score_clean.split("-"))
-                    if home_away == "H":
-                        h2h[opp_key].append({
-                            "home": "team",
-                            "away": "opponent",
-                            "score": [home_goals, away_goals],
-                            "date": m.get("date", "")
-                        })
-                    else:
-                        h2h[opp_key].append({
-                            "home": "opponent",
-                            "away": "team",
-                            "score": [home_goals, away_goals],
-                            "date": m.get("date", "")
-                        })
-                except:
-                    continue
-    except Exception as e:
-        log.warning(f"Error extracting H2H: {e}")
-    return h2h
-
-
-def _extract_match_events(page: Page, match_url: str) -> List[Dict]:
-    """Extract match events (goals, cards, subs) from match report."""
-    events = []
-    try:
-        page.goto(match_url, wait_until="networkidle", timeout=30000)
-        page.wait_for_load_state("networkidle", timeout=15000)
-        time.sleep(2)
-    except Exception as e:
-        log.warning(f"Failed to load match report {match_url}: {e}")
-        return []
-
-    try:
-        rows = page.query_selector_all('tr[class*="sb-aktion-heim"], tr[class*="sb-aktion-gast"]')
-        for row in rows:
-            is_home = "heim" in (row.get_attribute("class") or "")
-            minute_el = row.query_selector('td[class*="sb-aktion-uhr"]')
-            player_el = row.query_selector('td[class*="sb-aktion-spieler"]')
-            action_el = row.query_selector('td[class*="sb-aktion-aktion"]')
-            score_el = row.query_selector('td[class*="sb-aktion-spielstand"]')
-
-            minute = _safe_text(minute_el).replace("'", "")
-            player_html = player_el.inner_html() if player_el else ""
-            player_link = player_el.query_selector("a") if player_el else None
-            player_url = urljoin(BASE_URL, player_link.get_attribute("href")) if player_link else None
-            player = re.sub(r"<[^>]+>", "", player_html).strip()
-            action = _safe_text(action_el)
-            score = _safe_text(score_el)
-
-            if not minute and not player and not action:
-                continue
-
-            action_lower = action.lower()
-            if "yellow" in action_lower:
-                etype = "yellow_card"
-            elif "red" in action_lower:
-                etype = "red_card"
-            elif "substitut" in action_lower or "wechsl" in action_lower:
-                etype = "substitution"
-            elif "penalty" in action_lower or "elfmeter" in action_lower:
-                etype = "penalty"
-            elif "own goal" in action_lower or "eigentor" in action_lower:
-                etype = "own_goal"
-            else:
-                etype = "goal"
-
-            events.append({
-                "minute": minute,
-                "team": "home" if is_home else "away",
-                "player": player,
-                "playerUrl": player_url,
-                "type": etype,
-                "detail": action if action != etype else None
-            })
-    except Exception as e:
-        log.warning(f"Error parsing match events: {e}")
-
-    return events
-
-
-def _extract_match_lineups(page: Page, match_url: str) -> List[Dict]:
-    """Extract match lineups from match report."""
-    lineups = []
-    try:
-        page.goto(match_url, wait_until="networkidle", timeout=30000)
-        page.wait_for_load_state("networkidle", timeout=15000)
-        time.sleep(2)
-    except Exception as e:
-        log.warning(f"Failed to load match report for lineups {match_url}: {e}")
-        return []
-
-    try:
-        # Bench tables
-        bench_tables = page.query_selector_all('table.ersatzbank')
-        formations = page.query_selector_all('td[class*="formation"]')
-        home_formation = _safe_text(formations[0]) if formations else ""
-        away_formation = _safe_text(formations[1]) if len(formations) > 1 else ""
-
-        def parse_bench(table, team_side):
-            players = []
-            rows = table.query_selector_all("tr")
-            for row in rows:
-                cells = row.query_selector_all("td")
-                if len(cells) < 3:
-                    continue
-                num = _safe_text(cells[0])
-                name_cell = cells[1]
-                name_link = name_cell.query_selector("a")
-                name_url = urljoin(BASE_URL, name_link.get_attribute("href")) if name_link else None
-                name = _safe_text(name_cell)
-                pos = _safe_text(cells[2])
-                if name and num:
-                    players.append({"number": num, "name": name, "position": pos, "url": name_url})
-            return {"team": team_side, "formation": home_formation if team_side == "home" else away_formation,
-                    "startingXI": [], "bench": players}
-
-        if bench_tables:
-            if len(bench_tables) > 0:
-                lineups.append(parse_bench(bench_tables[0], "home"))
-            if len(bench_tables) > 1:
-                lineups.append(parse_bench(bench_tables[1], "away"))
-    except Exception as e:
-        log.warning(f"Error parsing lineups: {e}")
-
-    return lineups
-
-
-def scrape_team(team_url: str, team_name: str = None, browser=None) -> Optional[Dict]:
-    """Scrape a single team's profile and fixtures."""
-    cache = _load_cache()
-    # Extract team slug from URL: https://www.transfermarkt.com/manchester-city/profil/verein/281
-    # Team slug is the part before /profil/verein/
-    if team_name:
-        key = _cache_key(team_name)
-    else:
-        # Extract slug from URL: find the part before /profil/verein/
-        parts = team_url.split("/profil/verein/")
-        if len(parts) > 1:
-            slug = parts[0].split("/")[-1]
-        else:
-            slug = team_url.split("/")[-2]  # fallback
-        key = _cache_key(slug)
-
-    if is_cached(cache, "team", key):
-        log.info(f"  Already cached: {team_name or team_url}")
-        return get_cached(cache, "team", key)
-
-    if browser is None:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
-            try:
-                return _scrape_team_with_browser(browser, team_url, team_name, key)
-            finally:
-                browser.close()
-    else:
-        return _scrape_team_with_browser(browser, team_url, team_name, key)
-
-
-def _scrape_team_with_browser(browser, team_url: str, team_name: str, key: str) -> Optional[Dict]:
-    context = browser.new_context(
-        viewport={"width": 1920, "height": 1080},
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    )
-    page = context.new_page()
-
-    try:
-        cache = _load_cache()
-        
-        # Profile
-        log.info(f"  Fetching profile: {team_name}")
-        profile = _extract_team_profile(page, team_url)
-        if profile:
-            profile["name"] = team_name
-            set_cached(cache, "team", key, profile)
-            log.info(f"  ✓ Profile cached")
-
-        # Extract league position
-        time.sleep(REQUEST_DELAY)
-        league_pos = _extract_league_position(page, team_url, team_name)
-        if league_pos:
-            log.info(f"  ✓ League position: {league_pos}")
-            # Update team cache with league position
-            team_data = cache.get("teams", {}).get(key, {}).get("data", {})
-            if team_data:
-                team_data["league_position"] = league_pos
-                set_cached(cache, "team", key, team_data)
-                log.info(f"  ✓ League position saved: {league_pos}")
-
-        time.sleep(REQUEST_DELAY)
-
-        # Fixtures
-        log.info(f"  Fetching fixtures: {team_name}")
-        fixtures_data = _extract_team_fixtures(page, team_url)
-        fixtures = fixtures_data.get("fixtures", []) if fixtures_data else []
-        if fixtures:
-            recent_form = fixtures_data.get("recent_form", {})
-            fixture_data = {
-                "fixtures": fixtures, 
-                "url": team_url.replace("/profil/", "/spielplan/"),
-                "recent_form": recent_form
-            }
-            set_cached(cache, "fixture", key, fixture_data)
-            log.info(f"  ✓ {len(fixtures)} fixtures cached")
-            if recent_form.get("form"):
-                log.info(f"  ✓ Recent form: {recent_form['form']}, GS: {recent_form['goals_scored']}, GC: {recent_form['goals_conceded']}")
-
-        # Also extract H2H from fixtures
-        h2h_data = _extract_h2h_from_fixtures(page, team_url, fixtures)
-        if h2h_data:
-            set_cached(cache, "h2h", key, h2h_data)
-            log.info(f"  ✓ H2H data cached for {len(h2h_data)} opponents")
-
-        return get_cached(cache, "team", key)
-    finally:
-        context.close()
-
-
-def scrape_league(league_url: str, league_name: str, browser) -> List[str]:
-    """Extract team URLs from a league page."""
-    cache = _load_cache()
-    key = _cache_key(league_name)
-
-    if is_cached(cache, "league", key):
-        log.info(f"  League already cached: {league_name}")
-        return []
-
-    log.info(f"  Fetching league teams: {league_name}")
-    page = browser.new_page()
-    team_urls = []
-
-    try:
-        page.goto(league_url, wait_until="networkidle", timeout=60000)
-        page.wait_for_load_state("networkidle", timeout=30000)
-        time.sleep(5)
-
-        # DEBUG: dump page HTML to understand structure
-        html = page.content()
-        log.info(f"  Page HTML length: {len(html)}")
-        if "challenge" in html.lower() or "cloudflare" in html.lower() or "checking your browser" in html.lower():
-            log.warning(f"  Cloudflare challenge detected for {league_name}")
-            # Wait longer for challenge to resolve
-            time.sleep(20)
-            html = page.content()
-            log.info(f"  After wait HTML length: {len(html)}")
-
-        # Save HTML for debugging
-        debug_file = f"/tmp/transfermarkt_league_{_cache_key(league_name)}.html"
-        with open(debug_file, "w", encoding="utf-8") as f:
-            f.write(html)
-        log.info(f"  Saved HTML to {debug_file}")
-
-        # Try multiple selector strategies - Transfermarkt league tables
-        # Team links in league tables use /startseite/verein/ format
-        selectors = [
-            'table.items tbody tr td.hauptlink a[href*="/startseite/verein/"]',  # Main team column
-            'table.items tbody tr td:first-child a[href*="/startseite/verein/"]',
-            'table.items tbody tr td.zentriert a[href*="/startseite/verein/"]',
-            '.items tbody tr td.hauptlink a[href*="/startseite/verein/"]',
-            'table.items tbody tr a.vereinprofil_tooltip',
-            'a[href*="/startseite/verein/"]',
-        ]
-
-        for selector in selectors:
-            team_links = page.query_selector_all(selector)
-            if team_links:
-                log.info(f"  Selector '{selector}' found {len(team_links)} links")
-                for link in team_links:
-                    href = link.get_attribute("href")
-                    log.debug(f"    Found href: {href}")
-                    if href and "/startseite/verein/" in href:
-                        # Convert /startseite/verein/ to /profil/verein/ for profile page
-                        profil_href = href.replace("/startseite/verein/", "/profil/verein/")
-                        # Remove saison_id if present
-                        if "/saison_id/" in profil_href:
-                            profil_href = profil_href.split("/saison_id/")[0]
-                        full_url = urljoin(BASE_URL, profil_href)
-                        if full_url not in team_urls:
-                            team_urls.append(full_url)
-                if team_urls:
-                    log.info(f"  ✓ Using selector: {selector}")
-                    break
-
-        if not team_urls:
-            # Fallback: search HTML directly for startseite/verein/ links
-            matches = re.findall(r'href="(/[^"]*/startseite/verein/\d+[^"]*)"', html)
-            for href in matches:
-                profil_href = href.replace("/startseite/verein/", "/profil/verein/")
-                if "/saison_id/" in profil_href:
-                    profil_href = profil_href.split("/saison_id/")[0]
-                full_url = urljoin(BASE_URL, profil_href)
-                if full_url not in team_urls:
-                    team_urls.append(full_url)
-            log.info(f"  Regex fallback found {len(team_urls)} teams")
-
-        # Also try to get league position from the table page
-        league_position = _extract_league_position_from_table(page, league_name, html)
-
-        set_cached(cache, "league", key, {
-            "name": league_name, 
-            "url": league_url, 
-            "teams": team_urls,
-            "league_position_data": league_position
-        })
-        log.info(f"  ✓ Found {len(team_urls)} teams")
-    except Exception as e:
-        log.warning(f"Error scraping league {league_name}: {e}")
-        import traceback
-        traceback.print_exc()
-    finally:
-        page.close()
-
-    return team_urls
-
-
-def _extract_league_position_from_table(page: Page, league_name: str, html: str) -> Dict[str, int]:
-    """Extract team positions from league table page."""
-    positions = {}
-    try:
-        # Try to find the league table
-        tables = page.query_selector_all("table.items")
-        for table in tables:
-            header = table.query_selector("thead")
-            if header:
-                header_text = _safe_text(header).lower()
-                if "platz" in header_text or "position" in header_text or "team" in header_text or "verein" in header_text:
-                    rows = table.query_selector_all("tbody tr")
-                    for row in rows:
-                        cells = row.query_selector_all("td")
-                        if len(cells) >= 2:
-                            # First cell usually position, second cell team name
-                            pos_text = _safe_text(cells[0])
-                            team_cell = cells[1]
-                            team_link = team_cell.query_selector("a[href*='/profil/verein/']")
-                            if team_link and pos_text.isdigit():
-                                team_name = _safe_text(team_cell)
-                                pos = int(pos_text)
-                                positions[team_name.lower()] = pos
-                    if positions:
-                        break
-    except Exception as e:
-        log.warning(f"Error extracting league positions: {e}")
-    return positions
-
-
-def _extract_league_position(page: Page, team_url: str, team_name: str) -> Optional[int]:
-    """Extract league position from league table page."""
-    try:
-        # Navigate to league table - construct URL from team URL
-        # team_url format: https://www.transfermarkt.com/team-name/profil/verein/123
-        # League table: https://www.transfermarkt.com/league-name/tabelle/wettbewerb/GB1
-        parts = team_url.split("/")
-        verein_id = parts[-1] if parts[-1].isdigit() else None
-        if not verein_id:
-            return None
-        
-        # Try to get league ID from the team page first
-        page.goto(team_url, wait_until="networkidle", timeout=30000)
-        page.wait_for_load_state("networkidle", timeout=15000)
-        time.sleep(2)
-        
-        # Look for league link in breadcrumbs or header - prioritize domestic league over cups/CL
-        # Domestic leagues typically have IDs like GB1, ES1, L1, IT1, FR1, NL1, PO1, etc.
-        # Champions League is CL, Europa League is EL, etc.
-        league_links = page.query_selector_all("a[href*='/tabelle/wettbewerb/'], a[href*='/startseite/wettbewerb/']")
-        league_id = None
-        
-        # First, try to find a domestic league link (not CL, EL, etc.)
-        domestic_league_ids = {"GB1", "ES1", "L1", "IT1", "FR1", "NL1", "PO1", "GB2", "ES2", "L2", "IT2", "FR2", "NL2", "BE1", "PT1", "TR1", "AT1", "CH1", "DK1", "SC1", "RU1", "UA1", "PL1", "CZ1", "RO1", "HU1", "HR1", "SI1", "SK1", "CY1", "MT1", "IS1", "FI1", "NO1", "SE1", "EE1", "LV1", "LT1", "GE1", "AM1", "AZ1", "KZ1", "BY1", "MD1", "ME1", "RS1", "BA1", "MK1", "AL1", "KS1", "LI1", "AD1", "SM1", "VA1", "MC1", "IL1", "IR1", "SA1", "QA1", "AE1", "JO1", "LB1", "SY1", "IQ1", "YE1", "OM1", "BH1", "KW1", "PK1", "IN1", "CN1", "JP1", "KR1", "AU1", "NZ1", "ZA1", "EG1", "MA1", "TN1", "DZ1", "LY1", "NG1", "GH1", "CI1", "CM1", "SN1", "ML1", "BF1", "NE1", "TD1", "CF1", "CG1", "CD1", "GA1", "GQ1", "GW1", "LR1", "SL1", "GM1", "MR1", "MU1", "SC1", "ST1", "KM1", "DJ1", "SO1", "ET1", "ER1", "SS1", "UG1", "KE1", "TZ1", "RW1", "BI1", "MG1", "MZ1", "ZW1", "BW1", "NA1", "SZ1", "LS1", "MW1", "ZM1", "AO1", "TZ1", "KM1", "YT1", "RE1", "PM1", "MF1", "WF1", "PF1", "AS1", "GU1", "MP1", "VI1", "PR1", "UM1"}
-        
-        for link in league_links:
-            href = link.get_attribute("href")
-            if href and "/wettbewerb/" in href:
-                candidate_id = href.split("/wettbewerb/")[-1].split("/")[0]
-                # Prefer domestic league IDs over cup competitions (CL, EL, etc.)
-                if candidate_id in domestic_league_ids:
-                    league_id = candidate_id
-                    break
-                elif league_id is None and candidate_id not in {"CL", "EL", "EC", "WC", "UC"}:
-                    # Fallback to first non-cup competition
-                    league_id = candidate_id
-        
-        if not league_id:
-            # Try to find from current page URL
-            if "/wettbewerb/" in team_url:
-                league_id = team_url.split("/wettbewerb/")[-1].split("/")[0]
-        
-        if not league_id:
-            return None
-        
-        # Navigate to league table
-        table_url = f"https://www.transfermarkt.com/ligatabelle/wettbewerb/{league_id}"
-        log.info(f"  Fetching league table: {table_url}")
-        page.goto(table_url, wait_until="networkidle", timeout=30000)
-        page.wait_for_load_state("networkidle", timeout=15000)
-        time.sleep(3)
-        
-        # Parse table for team position
-        tables = page.query_selector_all("table.items")
-        for table in tables:
-            header = table.query_selector("thead")
-            if header:
-                header_text = _safe_text(header).lower()
-                if "platz" in header_text or "position" in header_text or "team" in header_text or "verein" in header_text:
-                    rows = table.query_selector_all("tbody tr")
-                    for row in rows:
-                        cells = row.query_selector_all("td")
-                        if len(cells) >= 2:
-                            pos_text = _safe_text(cells[0])
-                            team_cell = cells[1] if len(cells) > 1 else cells[0]
-                            team_link = team_cell.query_selector("a[href*='/profil/verein/']")
-                            if team_link:
-                                href = team_link.get_attribute("href")
-                                if href and verein_id in href:
-                                    if pos_text.isdigit():
-                                        return int(pos_text)
-                            # Also try matching by name
-                            team_text = _safe_text(team_cell)
-                            if team_name.lower() in team_text.lower() and pos_text.isdigit():
-                                return int(pos_text)
-    except Exception as e:
-        log.warning(f"Error extracting league position: {e}")
-    return None
-
-
-def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]] = None) -> None:
-    """Main entry point for daily scraping."""
-    log.info("=" * 50)
-    log.info(f"Transfermarkt Daily Scrape - {datetime.now(timezone.utc).isoformat()}")
-    log.info("=" * 50)
-
-    # Seed queue with teams from BetPawa fixtures if provided
-    queue = _load_queue()
-    
-    # Add teams from BetPawa fixtures to queue
-    if betpawa_fixtures:
-        log.info(f"  Seeding queue with {len(betpawa_fixtures)} BetPawa fixtures")
-        for fixture in betpawa_fixtures:
-            for team_key in ["home", "away"]:
-                team_name = fixture.get(team_key)
-                if not team_name:
-                    continue
-                # We need to find the Transfermarkt URL for this team
-                # For now, add to queue with name only - will be resolved when processing
-                tid = f"team:{_cache_key(team_name)}"
-                if not any(q["id"] == tid for q in queue):
-                    queue.append({
-                        "id": tid, "type": "team", "name": team_name, "url": "",
-                        "priority": 30, "addedAt": datetime.now(timezone.utc).isoformat(), "attempts": 0
-                    })
-    
-    # Seed leagues if queue is empty (fallback)
-    if not queue:
-        seed_leagues = [
-            {"name": "Premier League", "url": "https://www.transfermarkt.com/premier-league/startseite/wettbewerb/GB1"},
-            {"name": "La Liga", "url": "https://www.transfermarkt.com/laliga/startseite/wettbewerb/ES1"},
-            {"name": "Bundesliga", "url": "https://www.transfermarkt.com/bundesliga/startseite/wettbewerb/L1"},
-            {"name": "Serie A", "url": "https://www.transfermarkt.com/serie-a/startseite/wettbewerb/IT1"},
-            {"name": "Ligue 1", "url": "https://www.transfermarkt.com/ligue-1/startseite/wettbewerb/FR1"},
-            {"name": "Eredivisie", "url": "https://www.transfermarkt.com/eredivisie/startseite/wettbewerb/NL1"},
-            {"name": "Primeira Liga", "url": "https://www.transfermarkt.com/primeira-liga/startseite/wettbewerb/PO1"},
-            {"name": "Championship", "url": "https://www.transfermarkt.com/championship/startseite/wettbewerb/GB2"},
-        ]
-        for lg in seed_leagues:
-            queue.append({"id": f"league:{lg['url'].split('/')[-1]}", "type": "league", "name": lg["name"],
-                          "url": lg["url"], "priority": 10, "addedAt": datetime.now(timezone.utc).isoformat(),
-                          "attempts": 0})
-    _save_queue(queue)
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox"])
-
-        try:
-            # Process league items first to populate team queue
-            league_items = [q for q in queue if q["type"] == "league"][:5]
-            for item in league_items:
-                team_urls = scrape_league(item["url"], item["name"], browser)
-                for tu in team_urls:
-                    # URL format: https://www.transfermarkt.com/manchester-city/profil/verein/281
-                    # Team slug is at index -4 (manchester-city)
-                    parts = tu.split('/')
-                    team_slug = parts[-4] if len(parts) >= 4 else parts[-2]
-                    tid = f"team:{team_slug}"
-                    if not any(q["id"] == tid for q in queue):
-                        queue.append({"id": tid, "type": "team", "name": "", "url": tu,
-                                      "priority": 50, "addedAt": datetime.now(timezone.utc).isoformat(), "attempts": 0})
-                item["attempts"] += 1
-                item["lastAttempt"] = datetime.now(timezone.utc).isoformat()
-            _save_queue(queue)
-
-            # Process team items (prioritize BetPawa teams first)
-            team_items = [q for q in queue if q["type"] == "team" and q["attempts"] < 3]
-            # Sort by priority (lower = higher priority)
-            team_items.sort(key=lambda x: x.get("priority", 100))
-            team_items = team_items[:max_teams]
-            
-            for item in team_items:
-                # If URL is empty, we need to search for the team on Transfermarkt
-                team_url = item["url"]
-                team_name = item["name"]
-                
-                # Derive team_name from URL if name is empty but URL exists
-                if not team_name and team_url:
-                    # URL format: https://www.transfermarkt.com/manchester-city/profil/verein/281
-                    # Team slug is at index -4 (manchester-city)
-                    parts = team_url.split("/")
-                    team_name = parts[-4].replace("-", " ").title() if len(parts) >= 4 else parts[-2].replace("-", " ").title()
-                    item["name"] = team_name
-                
-                if not team_url and team_name:
-                    # Search for team on Transfermarkt
-                    team_url = _search_team_url(browser, team_name)
-                    if team_url:
-                        item["url"] = team_url
-                        # Update queue with the found URL
-                        for q in queue:
-                            if q["id"] == item["id"]:
-                                q["url"] = team_url
-                                break
-                        _save_queue(queue)
-                
-                if team_url:
-                    scrape_team(team_url, team_name, browser)
-                else:
-                    log.warning(f"  Could not find Transfermarkt URL for {team_name}")
-                
-                item["attempts"] += 1
-                item["lastAttempt"] = datetime.now(timezone.utc).isoformat()
-                time.sleep(REQUEST_DELAY)
-
-            # Mark completed
-            for item in queue:
-                if item["attempts"] >= 3:
-                    item["priority"] = 1000
-            _save_queue(queue)
-
-        finally:
-            browser.close()
-
-    log.info("=" * 50)
-    log.info("Daily scrape complete")
-    log.info("=" * 50)
-
-
-def _search_team_url(browser, team_name: str) -> Optional[str]:
-    """Search for a team on Transfermarkt and return its profile URL."""
-    search_url = f"https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query={team_name.replace(' ', '+')}"
-    log.info(f"  Searching for team: {team_name}")
-    
     page = browser.new_page()
     try:
         page.goto(search_url, wait_until="networkidle", timeout=30000)
         page.wait_for_load_state("networkidle", timeout=15000)
         time.sleep(3)
-        
-        # Find first team result link
-        team_links = page.query_selector_all('a[href*="/profil/verein/"]')
-        for link in team_links:
-            href = link.get_attribute("href")
-            if href and "/profil/verein/" in href:
-                full_url = urljoin(BASE_URL, href)
-                log.info(f"  Found team URL: {full_url}")
-                return full_url
+
+        # Find all team results
+        links = page.query_selector_all('a[href*="/startseite/verein/"]')
+        results = []
+        for link in links:
+            href = link.get_attribute("href") or ""
+            match = re.search(r'/([^/]+)/startseite/verein/(\d+)', href)
+            if match:
+                slug, team_id = match.group(1), int(match.group(2))
+                display_name = _safe_text(link) or slug.replace("-", " ").title()
+                results.append({
+                    "id": team_id,
+                    "url": f"{BASE_URL}/{slug}/startseite/verein/{team_id}",
+                    "name": display_name,
+                    "slug": slug,
+                })
+
+        if not results:
+            log.warning(f"  No results found for {team_name}")
+            return None
+
+        # Match by name similarity
+        target = team_name.lower().strip()
+        best_match = None
+        best_score = 0
+
+        # Common abbreviations
+        ABBREVIATIONS = {
+            "man city": "manchester city",
+            "man utd": "manchester united",
+            "man united": "manchester united",
+            "spurs": "tottenham",
+            "barca": "barcelona",
+            "real": "real madrid",
+            "bayern": "bayern munich",
+            "inter": "inter milan",
+            "juve": "juventus",
+            "ac milan": "milan",
+            "psg": "paris saint-germain",
+        }
+        expanded = ABBREVIATIONS.get(target, target)
+
+        for r in results:
+            dn_lower = r["name"].lower()
+            # Exact match
+            if expanded == dn_lower or target == dn_lower:
+                return r
+            # Score based on word overlap
+            expanded_words = set(expanded.split())
+            name_words = set(dn_lower.split())
+            score = len(expanded_words & name_words)
+            # Bonus for matching start of name
+            if dn_lower.startswith(expanded.split()[0]):
+                score += 1
+            if score > best_score:
+                best_score = score
+                best_match = r
+
+        if best_match and best_score >= 2:
+            log.info(f"  Found: {best_match['name']} (id={best_match['id']})")
+            return best_match
+
+        # Fallback: first result
+        log.warning(f"  No good match for '{team_name}', using first result: {results[0]['name']}")
+        return results[0]
+
     except Exception as e:
-        log.warning(f"Error searching for team {team_name}: {e}")
+        log.warning(f"  Search failed for {team_name}: {e}")
     finally:
         page.close()
     return None
+
+
+# ── Spielplandatum parsing (fixtures / form) ──────────────────────────────────
+
+def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[Dict]:
+    """Fetch spielplandatum page and extract fixtures using Playwright selectors.
+    Returns {"league_id": str, "league_name": str, "fixtures": [...]} or None.
+    """
+    season = _current_season_id()
+    url = f"{BASE_URL}/{team_slug}/spielplandatum/verein/{team_id}?saison_id={season}"
+    log.info(f"  Fetching: {url}")
+
+    try:
+        page.goto(url, wait_until="networkidle", timeout=60000)
+        page.wait_for_load_state("networkidle", timeout=30000)
+        time.sleep(RENDER_WAIT)
+    except Exception as e:
+        log.warning(f"  Failed to load spielplandatum: {e}")
+        return None
+
+    # Check for Cloudflare
+    html = page.content()
+    if "challenge" in html.lower() or "cloudflare" in html.lower():
+        log.warning("  Cloudflare challenge detected, waiting...")
+        time.sleep(20)
+
+    # Extract league ID from page analytics or competition links
+    league_id = None
+    league_name = None
+    league_match = re.search(r"eVar8:\s*'([^']+?)\s*\(([A-Z0-9]+)\)'", page.content())
+    if league_match:
+        league_name = league_match.group(1).strip()
+        league_id = league_match.group(2)
+
+    if not league_id:
+        # Fallback: find from competition links
+        comp_links = page.query_selector_all('a[href*="/wettbewerb/"]')
+        for link in comp_links:
+            href = link.get_attribute("href") or ""
+            m = re.search(r'/wettbewerb/([A-Z0-9]+)', href)
+            if m:
+                candidate = m.group(1)
+                if candidate not in {"CL", "EL", "EC", "WC", "UC"}:
+                    league_id = candidate
+                    league_name = _safe_text(link) or candidate
+                    break
+
+    # Find the Matchday table using Playwright
+    fixtures = []
+    tables = page.query_selector_all("table")
+    for table in tables:
+        header = table.query_selector("thead")
+        if not header:
+            continue
+        header_text = _safe_text(header)
+        if "Matchday" not in header_text and "Spieltag" not in header_text:
+            continue
+
+        rows = table.query_selector_all("tbody tr")
+        log.info(f"  Found {len(rows)} fixture rows")
+
+        for row in rows:
+            cells = row.query_selector_all("td")
+            if len(cells) < 10:
+                continue
+
+            cell_texts = [_safe_text(c) for c in cells]
+            matchday = cell_texts[0]
+            date_str = cell_texts[1]
+            time_str = cell_texts[2]
+            home_away = cell_texts[3]
+            ranking = cell_texts[4]
+            opponent_raw = cell_texts[6]
+            score_raw = cell_texts[9]
+
+            # Skip header-like rows or empty rows
+            if not matchday or matchday in ("Matchday", "Spieltag"):
+                continue
+            if not date_str:
+                continue
+
+            # Parse score (format: "3:0" or "-:-")
+            score = None
+            if re.match(r'\d+:\d+', score_raw):
+                parts = score_raw.split(":")
+                score = [int(parts[0]), int(parts[1])]
+
+            # Parse opponent name (remove ranking in parentheses)
+            opponent = re.sub(r'\s*\(\d+\.\)\s*', '', opponent_raw).strip()
+            if not opponent:
+                continue
+
+            # Extract opponent link for team ID
+            opp_link = cells[6].query_selector('a[href*="/startseite/verein/"]')
+            opp_id = None
+            if opp_link:
+                opp_href = opp_link.get_attribute("href") or ""
+                opp_match = re.search(r'/verein/(\d+)', opp_href)
+                if opp_match:
+                    opp_id = int(opp_match.group(1))
+
+            # Extract match report link for H2H
+            match_id = None
+            report_link = cells[9].query_selector('a[href*="/spielbericht/"]')
+            if report_link:
+                report_href = report_link.get_attribute("href") or ""
+                id_match = re.search(r'/spielbericht/(\d+)', report_href)
+                if id_match:
+                    match_id = id_match.group(1)
+
+            # Parse competition from row context
+            competition = league_name or ""
+
+            fixtures.append({
+                "date": date_str,
+                "time": time_str,
+                "home_away": home_away,
+                "opponent": opponent,
+                "opponent_id": opp_id,
+                "score": score,
+                "matchday": matchday,
+                "competition": competition,
+                "league_id": league_id or "",
+                "match_id": match_id,
+                "ranking": ranking,
+            })
+
+        break  # Only process the first Matchday table
+
+    # Sort by date descending (most recent first), take last 5 finished
+    def parse_date(d):
+        # Format: "Sun 16/08/26" or "16/08/2026"
+        m = re.search(r'(\d{2}/\d{2}/\d{2,4})', d)
+        if m:
+            parts = m.group(1).split("/")
+            return f"20{parts[2]}" if len(parts[2]) == 2 else parts[2]
+        return "0"
+
+    fixtures.sort(key=lambda x: x["date"], reverse=True)
+    finished = [f for f in fixtures if f["score"] is not None]
+    recent = finished[:5]
+
+    log.info(f"  {len(fixtures)} total fixtures, {len(finished)} finished, {len(recent)} recent")
+
+    return {
+        "league_id": league_id,
+        "league_name": league_name,
+        "fixtures": recent,
+        "all_fixtures": fixtures,
+    }
+
+
+# ── League table parsing ───────────────────────────────────────────────────────
+
+def _parse_league_table(page: Page, league_id: str) -> Dict[str, Dict]:
+    """Fetch league table from tabelle URL. Returns {team_key: {id, name, position}}."""
+    # Map league IDs to URL slugs
+    LEAGUE_SLUGS = {
+        "GB1": "premier-league", "ES1": "laliga", "L1": "bundesliga",
+        "IT1": "serie-a", "FR1": "ligue-1", "NL1": "eredivisie",
+        "PO1": "primeira-liga", "GB2": "championship",
+        "BE1": "jupiler-pro-league", "TR1": "super-lig",
+        "RU1": "premier-liga", "PL1": "ekstraklasa",
+    }
+    slug = LEAGUE_SLUGS.get(league_id, league_id.lower())
+    url = f"{BASE_URL}/{slug}/tabelle/wettbewerb/{league_id}"
+    log.info(f"  Fetching table: {url}")
+
+    try:
+        page.goto(url, wait_until="networkidle", timeout=60000)
+        page.wait_for_load_state("networkidle", timeout=30000)
+        time.sleep(RENDER_WAIT)
+    except Exception as e:
+        log.warning(f"  Failed to load table: {e}")
+        return {}
+
+    html = page.content()
+    if "challenge" in html.lower() or "cloudflare" in html.lower():
+        log.warning("  Cloudflare on table page, waiting...")
+        time.sleep(20)
+
+    teams = {}
+
+    # Find table with rows containing position numbers
+    tables = page.query_selector_all("table")
+    for table in tables:
+        rows = table.query_selector_all("tr")
+        if len(rows) < 10:
+            continue
+
+        for row in rows:
+            cells = row.query_selector_all("td")
+            if len(cells) < 3:
+                continue
+
+            cell_texts = [_safe_text(c) for c in cells]
+            # Check if first cell is a position number
+            if not cell_texts[0].isdigit():
+                continue
+
+            pos = int(cell_texts[0])
+
+            # Find team link — try both startseite andspielplan patterns
+            team_link = row.query_selector('a[href*="/startseite/verein/"]') or \
+                        row.query_selector('a[href*="/spielplan/verein/"]')
+            if not team_link:
+                continue
+
+            href = team_link.get_attribute("href") or ""
+            id_match = re.search(r'/verein/(\d+)', href)
+            if not id_match:
+                continue
+
+            team_id = int(id_match.group(1))
+
+            # Get team name — prefer the cell with text, not empty cell
+            team_name = ""
+            for cell in cells:
+                link = cell.query_selector('a[href*="/startseite/verein/"]') or \
+                       cell.query_selector('a[href*="/spielplan/verein/"]')
+                if link:
+                    name = _safe_text(link)
+                    if name:
+                        team_name = name
+                        break
+
+            key = _cache_key(team_name)
+            teams[key] = {"id": team_id, "name": team_name, "position": pos}
+
+        if teams:
+            break
+
+    log.info(f"  Parsed {len(teams)} teams from table")
+    return teams
+
+
+# ── H2H parsing (spielbericht) ────────────────────────────────────────────────
+
+def _parse_h2h(page: Page, match_id: str) -> List[Dict]:
+    """Fetch spielbericht page and extract H2H data."""
+    url = f"{BASE_URL}/spielbericht/index/spielbericht/{match_id}"
+    log.info(f"  Fetching H2H: {url}")
+
+    try:
+        page.goto(url, wait_until="networkidle", timeout=60000)
+        page.wait_for_load_state("networkidle", timeout=30000)
+        time.sleep(RENDER_WAIT)
+    except Exception as e:
+        log.warning(f"  Failed to load spielbericht: {e}")
+        return []
+
+    html = page.content()
+    if "challenge" in html.lower() or "cloudflare" in html.lower():
+        log.warning("  Cloudflare on H2H page, waiting...")
+        time.sleep(20)
+
+    h2h = []
+
+    # Look for H2H table — typically under "Direktvergleich" or "Head to Head"
+    # Find tables and look for one with past match data
+    tables = page.query_selector_all("table")
+    for table in tables:
+        rows = table.query_selector_all("tr")
+        if len(rows) < 3:
+            continue
+
+        for row in rows:
+            cells = row.query_selector_all("td")
+            if len(cells) < 4:
+                continue
+
+            cell_texts = [_safe_text(c) for c in cells]
+            # Look for date pattern (DD.MM.YYYY)
+            date_match = None
+            for ct in cell_texts:
+                dm = re.search(r'(\d{2}\.\d{2}\.\d{4})', ct)
+                if dm:
+                    date_match = dm.group(1)
+                    break
+
+            if not date_match:
+                continue
+
+            # Find team names and score
+            home = away = ""
+            score = None
+
+            team_links = row.query_selector_all('a[href*="/startseite/verein/"]')
+            if len(team_links) >= 2:
+                home = _safe_text(team_links[0])
+                away = _safe_text(team_links[1])
+
+            # Find score (X:Y pattern)
+            for ct in cell_texts:
+                sm = re.match(r'(\d+:\d+)', ct.strip())
+                if sm:
+                    parts = sm.group(1).split(":")
+                    score = [int(parts[0]), int(parts[1])]
+                    break
+
+            if home and away and score:
+                h2h.append({
+                    "date": date_match,
+                    "home": home,
+                    "away": away,
+                    "score": score,
+                })
+
+    # Sort by date descending, take last 5
+    h2h.sort(key=lambda x: x["date"], reverse=True)
+    result = h2h[:5]
+    log.info(f"  Parsed {len(result)} H2H matches")
+    return result
+
+
+# ── Form computation ───────────────────────────────────────────────────────────
+
+def _compute_team_form(team_name: str, fixtures: List[Dict]) -> Dict[str, List]:
+    """Compute W/D/L form for a team from fixture list."""
+    team_key = _cache_key(team_name)
+    form = []
+    gs = []
+    gc = []
+
+    for f in fixtures:
+        if f["score"] is None:
+            continue
+        hs, aws = f["score"]
+        is_home = f["home_away"] == "H"
+
+        if is_home:
+            scored, conceded = hs, aws
+        else:
+            scored, conceded = aws, hs
+
+        form.append("W" if scored > conceded else ("L" if scored < conceded else "D"))
+        gs.append(scored)
+        gc.append(conceded)
+
+    return {"form": form, "goals_scored": gs, "goals_conceded": gc}
+
+
+# ── Cache update helpers ──────────────────────────────────────────────────────
+
+def _upsert_team_in_cache(cache: Dict, league_id: str, league_name: str,
+                          team_key: str, team_data: Dict) -> None:
+    """Insert or update a team in the league-centric cache."""
+    if league_id not in cache["leagues"]:
+        cache["leagues"][league_id] = {
+            "name": league_name or league_id,
+            "table_fetched_at": datetime.now(timezone.utc).isoformat(),
+            "teams": {}
+        }
+    cache["leagues"][league_id]["teams"][team_key] = team_data
+
+
+def _seed_queue_from_fixtures(queue: List[Dict], fixtures: List[Dict]) -> List[Dict]:
+    """Add teams from BetPawa fixtures to the queue (priority 30)."""
+    seen = {q["id"] for q in queue}
+    for fixture in fixtures:
+        for team_name in [fixture.get("home"), fixture.get("away")]:
+            if not team_name:
+                continue
+            tid = f"team:{_cache_key(team_name)}"
+            if tid not in seen:
+                queue.append({
+                    "id": tid,
+                    "type": "team",
+                    "name": team_name,
+                    "url": "",
+                    "priority": 30,
+                    "addedAt": datetime.now(timezone.utc).isoformat(),
+                    "attempts": 0,
+                })
+                seen.add(tid)
+    return queue
+
+
+# ── Main entry point ──────────────────────────────────────────────────────────
+
+def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]] = None) -> None:
+    """Main entry point for daily scraping."""
+    log.info("=" * 50)
+    log.info(f"Transfermarkt Daily Scrape (v2) — {datetime.now(timezone.utc).isoformat()}")
+    log.info(f"Season: {_current_season_id()}")
+    log.info("=" * 50)
+
+    cache = _load_cache()
+    queue = _load_queue()
+
+    # Seed queue with BetPawa teams
+    if betpawa_fixtures:
+        log.info(f"  Seeding queue from {len(betpawa_fixtures)} BetPawa fixtures")
+        queue = _seed_queue_from_fixtures(queue, betpawa_fixtures)
+
+    if not queue:
+        log.warning("  Queue is empty — nothing to scrape")
+        return
+
+    _save_queue(queue)
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+        )
+
+        try:
+            # Step 1: Fetch league tables for all leagues we need
+            # First, collect league IDs from BetPawa fixtures
+            needed_leagues = set()
+            if betpawa_fixtures:
+                # We'll discover league IDs as we process teams
+                pass
+
+            # Step 2: Process team items — fetch spielplandatum for each team
+            team_items = [q for q in queue if q["type"] == "team" and q["attempts"] < 3]
+            team_items.sort(key=lambda x: x.get("priority", 100))
+            team_items = team_items[:max_teams]
+
+            log.info(f"\n  Processing {len(team_items)} teams...")
+
+            # Track which leagues we've already fetched table for
+            fetched_tables = set()
+
+            for item in team_items:
+                team_name = item["name"]
+                team_url = item.get("url", "")
+
+                log.info(f"\n  [{item['attempts']+1}] {team_name}")
+
+                # If no URL, search for team
+                if not team_url and team_name:
+                    result = _search_team_url(browser, team_name)
+                    if result:
+                        item["url"] = result["url"]
+                        item["name"] = result["name"]
+                        team_name = result["name"]
+                        item["team_id"] = result["id"]
+                        _save_queue(queue)
+                    else:
+                        log.warning(f"    Could not find URL for {team_name}")
+                        item["attempts"] += 1
+                        _save_queue(queue)
+                        continue
+
+                # Extract team_id from URL if not set
+                if "team_id" not in item and team_url:
+                    id_match = re.search(r'/verein/(\d+)', team_url)
+                    if id_match:
+                        item["team_id"] = int(id_match.group(1))
+                        _save_queue(queue)
+
+                team_id = item.get("team_id")
+                if not team_id:
+                    log.warning(f"    No team ID for {team_name}")
+                    item["attempts"] += 1
+                    _save_queue(queue)
+                    continue
+
+                # Extract slug from URL
+                slug_match = re.search(r'transfermarkt\.com/([^/]+)/', team_url)
+                team_slug = slug_match.group(1) if slug_match else _cache_key(team_name)
+
+                # Create page for this team
+                context = browser.new_context(
+                    viewport={"width": 1920, "height": 1080},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+                )
+                page = context.new_page()
+
+                try:
+                    # Fetch spielplandatum (fixtures)
+                    data = _parse_spielplandatum(page, team_id, team_slug)
+
+                    if not data:
+                        log.warning(f"    No data returned for {team_name}")
+                        item["attempts"] += 1
+                        _save_queue(queue)
+                        continue
+
+                    league_id = data.get("league_id") or "unknown"
+                    league_name = data.get("league_name") or league_id
+
+                    # Fetch league table if not already done
+                    if league_id not in fetched_tables and league_id != "unknown":
+                        fetched_tables.add(league_id)
+                        league_teams = _parse_league_table(page, league_id)
+                        if league_teams:
+                            log.info(f"    League {league_id}: {len(league_teams)} teams from table")
+                            for tk, tdata in league_teams.items():
+                                team_entry = {
+                                    "id": tdata["id"],
+                                    "name": tdata["name"],
+                                    "league_position": tdata["position"],
+                                    "total_teams": len(league_teams),
+                                    "last_scraped": datetime.now(timezone.utc).isoformat(),
+                                    "recent_matches": [],
+                                    "form_summary": {"form": [], "goals_scored": [], "goals_conceded": []},
+                                    "h2h": {},
+                                }
+                                _upsert_team_in_cache(cache, league_id, league_name, tk, team_entry)
+                            _save_cache(cache)
+
+                    # Store our team's form data
+                    team_key = _cache_key(team_name)
+                    fixtures = data.get("fixtures", [])
+                    form = _compute_team_form(team_name, fixtures)
+
+                    # Update team in cache — find by ID first (more reliable)
+                    if league_id in cache.get("leagues", {}):
+                        teams = cache["leagues"][league_id].get("teams", {})
+                        found = False
+                        for tk, td in teams.items():
+                            if td.get("id") == team_id:
+                                td["last_scraped"] = datetime.now(timezone.utc).isoformat()
+                                td["recent_matches"] = fixtures
+                                td["form_summary"] = form
+                                found = True
+                                break
+                        if not found:
+                            # Team not in table — create entry
+                            teams[team_key] = {
+                                "id": team_id,
+                                "name": team_name,
+                                "league_position": None,
+                                "total_teams": len(teams),
+                                "last_scraped": datetime.now(timezone.utc).isoformat(),
+                                "recent_matches": fixtures,
+                                "form_summary": form,
+                                "h2h": {},
+                            }
+                    else:
+                        # League not yet in cache — create it
+                        cache["leagues"][league_id] = {
+                            "name": league_name,
+                            "table_fetched_at": datetime.now(timezone.utc).isoformat(),
+                            "teams": {
+                                team_key: {
+                                    "id": team_id,
+                                    "name": team_name,
+                                    "league_position": None,
+                                    "total_teams": 0,
+                                    "last_scraped": datetime.now(timezone.utc).isoformat(),
+                                    "recent_matches": fixtures,
+                                    "form_summary": form,
+                                    "h2h": {},
+                                }
+                            }
+                        }
+
+                    _save_cache(cache)
+                    log.info(f"    Form: {form.get('form', [])}")
+
+                finally:
+                    context.close()
+
+                item["attempts"] += 1
+                item["lastAttempt"] = datetime.now(timezone.utc).isoformat()
+                _save_queue(queue)
+
+                time.sleep(REQUEST_DELAY)
+
+            # Step 3: Fetch H2H for today's matches (lazy — only for BetPawa fixtures)
+            if betpawa_fixtures:
+                log.info(f"\n  Fetching H2H for {len(betpawa_fixtures)} BetPawa matches...")
+                h2h_fetched = 0
+
+                for fixture in betpawa_fixtures:
+                    home_name = fixture.get("home")
+                    away_name = fixture.get("away")
+                    if not home_name or not away_name:
+                        continue
+
+                    home_key = _cache_key(home_name)
+                    away_key = _cache_key(away_name)
+
+                    # Check if H2H already cached
+                    h2h_exists = False
+                    for lid, ldata in cache.get("leagues", {}).items():
+                        t1 = ldata.get("teams", {}).get(home_key, {})
+                        if t1.get("h2h", {}).get(away_key):
+                            h2h_exists = True
+                            break
+
+                    if h2h_exists:
+                        continue
+
+                    # Find match ID from cached fixtures
+                    match_id = None
+                    for lid, ldata in cache.get("leagues", {}).items():
+                        t1 = ldata.get("teams", {}).get(home_key, {})
+                        for rm in t1.get("recent_matches", []):
+                            if (_cache_key(rm.get("opponent", "")) == away_key and
+                                rm.get("match_id")):
+                                match_id = rm["match_id"]
+                                break
+                        if match_id:
+                            break
+
+                    if not match_id:
+                        log.info(f"    No match ID for {home_name} vs {away_name} — skipping H2H")
+                        continue
+
+                    # Fetch H2H from spielbericht
+                    context = browser.new_context(
+                        viewport={"width": 1920, "height": 1080},
+                        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+                    )
+                    page = context.new_page()
+
+                    try:
+                        h2h_data = _parse_h2h(page, match_id)
+                    finally:
+                        context.close()
+
+                    if h2h_data:
+                        # Store H2H for both teams
+                        for lid, ldata in cache.get("leagues", {}).items():
+                            teams = ldata.get("teams", {})
+                            if home_key in teams:
+                                teams[home_key].setdefault("h2h", {})[away_key] = h2h_data
+                            if away_key in teams:
+                                teams[away_key].setdefault("h2h", {})[home_key] = h2h_data
+
+                        _save_cache(cache)
+                        h2h_fetched += 1
+                        log.info(f"    H2H cached: {home_name} vs {away_name} ({len(h2h_data)} matches)")
+
+                    time.sleep(REQUEST_DELAY)
+
+                log.info(f"  {h2h_fetched} H2H records fetched")
+
+        finally:
+            browser.close()
+
+    log.info("=" * 50)
+    log.info("Daily scrape complete (v2)")
+    log.info(f"  Leagues: {len(cache.get('leagues', {}))}")
+    total_teams = sum(len(l.get("teams", {})) for l in cache.get("leagues", {}).values())
+    log.info(f"  Teams: {total_teams}")
+    log.info("=" * 50)
 
 
 if __name__ == "__main__":

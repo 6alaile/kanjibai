@@ -22,9 +22,23 @@ from stats import enrich_all, get_league_code
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
-# Add transfermarkt scraper to path
 sys.path.insert(0, str(Path(__file__).parent))
 from transfermarkt_scraper import run_daily_scrape
+
+CACHE_FILE = Path(__file__).parent.parent.parent / "data" / "transfermarkt_cache.json"
+
+
+def _ensure_cache_v2():
+    """Initialize cache with v2 structure if missing or outdated."""
+    if CACHE_FILE.exists():
+        with open(CACHE_FILE, "r") as f:
+            cache = json.load(f)
+        if cache.get("version") == 2:
+            return
+    # Create fresh v2 cache
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(CACHE_FILE, "w") as f:
+        json.dump({"version": 2, "lastUpdated": None, "leagues": {}}, f, indent=2)
 
 logging.basicConfig(level=logging.INFO, format="[scrape] %(asctime)s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger(__name__)
@@ -53,6 +67,8 @@ def run():
     log.info("=" * 50)
 
     today = get_today_eat()
+
+    _ensure_cache_v2()
 
     # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
     log.info("Step 1/3: Fetching fixtures from BetPawa (primary) ...")

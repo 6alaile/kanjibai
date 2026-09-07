@@ -2,15 +2,12 @@
 stats.py — Scout Stats Enricher
 Uses football-data.org free tier for form, standings, H2H.
 Falls back to Transfermarkt cache for additional data.
-Current 2024/25 season data, no IP restrictions, no cost.
 
 Covered leagues (free tier):
 PL, PD, BL1, SA, FL1, CL, EC, PPL, DED, BSA, WC
 
 Register free at: https://www.football-data.org/client/register
 Set FOOTBALL_DATA_TOKEN as a GitHub Actions secret.
-
-Dependencies: requests
 """
 
 import os
@@ -22,9 +19,11 @@ from typing import Optional, Any
 
 import requests
 
-# Add scripts directory to path for transfermarkt_cache import
 sys.path.insert(0, os.path.dirname(__file__))
-from transfermarkt_cache import get_team_data, get_recent_form, has_team, get_cache_stats, get_league_position, get_opposition_position, get_h2h_data
+from transfermarkt_cache import (
+    get_team_data, get_recent_form, has_team, get_cache_stats,
+    get_league_position, get_opposition_position, get_h2h_data, get_total_teams
+)
 
 logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
 log = logging.getLogger(__name__)
@@ -37,8 +36,6 @@ SESSION = requests.Session()
 SESSION.headers.update(FD_HEADERS)
 
 # football-data.org league code map
-# Maps common league name fragments to their API codes
-# Order matters: more specific patterns first
 LEAGUE_CODE_MAP = {
     "premier league": "PL",
     "la liga": "PD",
@@ -60,13 +57,12 @@ LEAGUE_CODE_MAP = {
     "eredivisie": "DED",
     "championship": "ELC",
     "allsvenskan": "DED",
-    "superliga": "DED",  # Denmark/Sweden
-    "k league": None,  # Not in free tier
-    "liga 2": None,  # Not in free tier
+    "superliga": "DED",
+    "k league": None,
+    "liga 2": None,
 }
 
-# Rate limit: 10 requests/minute on free tier
-RATE_DELAY = 7  # seconds between calls to stay safe
+RATE_DELAY = 7
 
 
 def delay():
@@ -111,6 +107,7 @@ def safe_int(val, fallback: int = 0) -> int:
 
 import unicodedata
 
+
 def _normalize_name(name: str) -> str:
     """Strip diacritics, lower case, remove common prefixes."""
     n = unicodedata.normalize("NFKD", name)
@@ -123,7 +120,7 @@ def _normalize_name(name: str) -> str:
 
 
 # ─── FIND TEAM ID ────────────────────────────────────────────────────────────
- 
+
 def find_team_id(team_name: str, league_code: str) -> Optional[int]:
     """Find team ID by searching within a league."""
     data = fd_get(f"competitions/{league_code}/teams")
@@ -148,7 +145,6 @@ def find_team_id(team_name: str, league_code: str) -> Optional[int]:
                     best_score = score
                     best_match = team.get("id")
     return best_match
-    return None
 
 
 # ─── TEAM FORM ────────────────────────────────────────────────────────────────
@@ -161,7 +157,6 @@ def fetch_team_form(team_id: int, n: int = 15) -> dict:
         return {}
 
     matches = data.get("matches", [])
-    # Sort by date descending, take last N
     matches = sorted(matches, key=lambda m: m.get("utcDate", ""), reverse=True)[:n]
 
     form, goals_scored, goals_conceded = [], [], []
@@ -189,7 +184,6 @@ def fetch_team_form(team_id: int, n: int = 15) -> dict:
         goals_scored.append(scored)
         goals_conceded.append(conceded)
 
-    # Reverse so oldest first
     form.reverse()
     goals_scored.reverse()
     goals_conceded.reverse()
@@ -198,7 +192,6 @@ def fetch_team_form(team_id: int, n: int = 15) -> dict:
         "form": form,
         "goals_scored": goals_scored,
         "goals_conceded": goals_conceded,
-        "opponent_positions": None
     }
 
 
@@ -213,7 +206,6 @@ def fetch_standings(league_code: str) -> dict:
 
     result = {}
     standings = data.get("standings", [])
-    # Use TOTAL standings table
     for table in standings:
         if table.get("type") == "TOTAL":
             rows = table.get("table", [])
@@ -306,38 +298,36 @@ def enrich_match(match: dict) -> dict:
     away_name = match["away"]
     league_name = match.get("league", "")
     enriched = dict(match)
-    total_teams = 20
 
     log.info(f"  Enriching: {home_name} vs {away_name}")
 
     league_code = get_league_code(league_name)
 
-    # Try Transfermarkt cache first for form data
-    tm_home_form = get_recent_form(home_name, n=10) if has_team(home_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
-    tm_away_form = get_recent_form(away_name, n=10) if has_team(away_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
+    # Transfermarkt cache data
+    tm_home_form = get_recent_form(home_name, n=5) if has_team(home_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
+    tm_away_form = get_recent_form(away_name, n=5) if has_team(away_name) else {"form": [], "goals_scored": [], "goals_conceded": []}
 
-    # Get league position from Transfermarkt cache (fallback if football-data.org fails)
     tm_home_pos = get_league_position(home_name) if has_team(home_name) else None
     tm_away_pos = get_league_position(away_name) if has_team(away_name) else None
 
-    # Get opposition position from Transfermarkt cache
     tm_opposition_pos = get_opposition_position(home_name, away_name) if has_team(away_name) else None
 
-    # Get H2H from Transfermarkt cache
     tm_h2h = get_h2h_data(home_name, away_name) if has_team(home_name) else None
+
+    # Total teams from Transfermarkt
+    tm_total = get_total_teams(home_name)
 
     if not league_code:
         log.info(f"  League '{league_name}' not in free tier — using Transfermarkt cache only")
-        enriched["home_stats"] = _build_stats(home_name, tm_home_form, tm_home_pos, total_teams, tm_opposition_pos)
-        enriched["away_stats"] = _build_stats(away_name, tm_away_form, tm_away_pos, total_teams, tm_opposition_pos)
+        enriched["home_stats"] = _build_stats(home_name, tm_home_form, tm_home_pos, tm_total, tm_opposition_pos)
+        enriched["away_stats"] = _build_stats(away_name, tm_away_form, tm_away_pos, tm_total, tm_opposition_pos)
         enriched["h2h"] = tm_h2h
         return enriched
 
-    # Get team IDs from football-data.org
+    # football-data.org data
     home_id = get_team_id_cached(home_name, league_code)
     away_id = get_team_id_cached(away_name, league_code)
 
-    # Form data - merge football-data.org with Transfermarkt
     fd_home_form = fetch_team_form(home_id) if home_id else {}
     fd_away_form = fetch_team_form(away_id) if away_id else {}
 
@@ -350,12 +340,13 @@ def enrich_match(match: dict) -> dict:
     away_goals_scored = fd_away_form.get("goals_scored") or tm_away_form.get("goals_scored", [])
     away_goals_conceded = fd_away_form.get("goals_conceded") or tm_away_form.get("goals_conceded", [])
 
-    # Standings - prefer football-data.org, fall back to Transfermarkt
+    # Standings — prefer football-data.org, fall back to Transfermarkt
     home_pos = away_pos = None
+    total_teams = tm_total
     standings = get_standings_cached(league_code)
     if standings and home_id:
         home_pos = standings.get(home_id, {}).get("position")
-        total_teams = standings.get(home_id, {}).get("total_teams", 20)
+        total_teams = standings.get(home_id, {}).get("total_teams", tm_total)
     elif tm_home_pos:
         home_pos = tm_home_pos
     if standings and away_id:
@@ -363,7 +354,7 @@ def enrich_match(match: dict) -> dict:
     elif tm_away_pos:
         away_pos = tm_away_pos
 
-    # H2H - prefer football-data.org, fall back to Transfermarkt
+    # H2H — prefer football-data.org, fall back to Transfermarkt
     h2h = None
     match_id = find_match_id(home_name, away_name, league_code)
     if match_id:
@@ -371,7 +362,7 @@ def enrich_match(match: dict) -> dict:
     elif tm_h2h:
         h2h = tm_h2h
 
-    # Opposition position - prefer football-data.org standings, fall back to Transfermarkt
+    # Opposition position — prefer football-data.org, fall back to Transfermarkt
     opposition_pos = None
     if standings and away_id:
         opposition_pos = standings.get(away_id, {}).get("position")
