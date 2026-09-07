@@ -7,9 +7,9 @@
       "url": "https://www.transfermarkt.com/fc-arsenal/startseite/verein/11",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 1,
+      "attempts": 2,
       "team_id": 11,
-      "lastAttempt": "2026-09-07T09:53:01.285215+00:00"
+      "lastAttempt": "2026-09-07T10:20:16.846952+00:00"
     },
     {
       "id": "team:man_united",
@@ -18,9 +18,9 @@
       "url": "https://www.transfermarkt.com/manchester-united/startseite/verein/985",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 1,
+      "attempts": 2,
       "team_id": 985,
-      "lastAttempt": "2026-09-07T09:53:24.351728+00:00"
+      "lastAttempt": "2026-09-07T10:20:28.999429+00:00"
     },
     {
       "id": "team:chelsea",
@@ -29,9 +29,9 @@
       "url": "https://www.transfermarkt.com/fc-chelsea/startseite/verein/631",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 1,
+      "attempts": 2,
       "team_id": 631,
-      "lastAttempt": "2026-09-07T09:53:47.391664+00:00"
+      "lastAttempt": "2026-09-07T10:20:40.881283+00:00"
     },
     {
       "id": "team:man_city",
@@ -40,9 +40,9 @@
       "url": "https://www.transfermarkt.com/manchester-city/startseite/verein/281",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 1,
+      "attempts": 2,
       "team_id": 281,
-      "lastAttempt": "2026-09-07T09:54:12.191988+00:00"
+      "lastAttempt": "2026-09-07T10:20:53.815361+00:00"
     },
     {
       "id": "team:tottenham",
@@ -51,71 +51,86 @@
       "url": "https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0,
-      "team_id": 148
+      "attempts": 1,
+      "team_id": 148,
+      "lastAttempt": "2026-09-07T10:21:05.634976+00:00"
     },
     {
       "id": "team:liverpool",
       "type": "team",
-      "name": "Liverpool",
-      "url": "",
+      "name": "Liverpool FC",
+      "url": "https://www.transfermarkt.com/fc-liverpool/startseite/verein/31",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 31,
+      "lastAttempt": "2026-09-07T10:21:23.132486+00:00"
     },
     {
       "id": "team:newcastle",
       "type": "team",
-      "name": "Newcastle",
-      "url": "",
+      "name": "Newcastle United",
+      "url": "https://www.transfermarkt.com/newcastle-united/startseite/verein/762",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 762,
+      "lastAttempt": "2026-09-07T10:21:40.620968+00:00"
     },
     {
       "id": "team:brighton",
       "type": "team",
-      "name": "Brighton",
-      "url": "",
+      "name": "Brighton & Hove Albion",
+      "url": "https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 1237,
+      "lastAttempt": "2026-09-07T10:21:58.330565+00:00"
     },
     {
       "id": "team:brentford",
       "type": "team",
-      "name": "Brentford",
-      "url": "",
+      "name": "Brentford FC",
+      "url": "https://www.transfermarkt.com/fc-brentford/startseite/verein/1148",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 1148,
+      "lastAttempt": "2026-09-07T10:22:15.282821+00:00"
     },
     {
       "id": "team:crystal_palace",
       "type": "team",
       "name": "Crystal Palace",
-      "url": "",
+      "url": "https://www.transfermarkt.com/crystal-palace/startseite/verein/873",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 873,
+      "lastAttempt": "2026-09-07T10:22:32.722317+00:00"
     },
     {
       "id": "team:bournemouth",
       "type": "team",
-      "name": "Bournemouth",
-      "url": "",
+      "name": "AFC Bournemouth",
+      "url": "https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 989,
+      "lastAttempt": "2026-09-07T10:22:51.706753+00:00"
     },
     {
       "id": "team:aston_villa",
       "type": "team",
       "name": "Aston Villa",
-      "url": "",
+      "url": "https://www.transfermarkt.com/aston-villa/startseite/verein/405",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 405,
+      "lastAttempt": "2026-09-07T10:23:08.955140+00:00"
     },
     {
       "id": "team:nottm_forest",
@@ -124,70 +139,84 @@
       "url": "",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1
     },
     {
       "id": "team:everton",
       "type": "team",
-      "name": "Everton",
-      "url": "",
+      "name": "Everton FC",
+      "url": "https://www.transfermarkt.com/fc-everton/startseite/verein/29",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 29,
+      "lastAttempt": "2026-09-07T10:23:31.482781+00:00"
     },
     {
       "id": "team:leeds",
       "type": "team",
-      "name": "Leeds",
-      "url": "",
+      "name": "Leeds United",
+      "url": "https://www.transfermarkt.com/leeds-united/startseite/verein/399",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 399,
+      "lastAttempt": "2026-09-07T10:23:50.082392+00:00"
     },
     {
       "id": "team:fulham",
       "type": "team",
-      "name": "Fulham",
-      "url": "",
+      "name": "Fulham FC",
+      "url": "https://www.transfermarkt.com/fc-fulham/startseite/verein/931",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 931,
+      "lastAttempt": "2026-09-07T10:24:07.440172+00:00"
     },
     {
       "id": "team:ipswich",
       "type": "team",
-      "name": "Ipswich",
-      "url": "",
+      "name": "Ipswich Town",
+      "url": "https://www.transfermarkt.com/ipswich-town/startseite/verein/677",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 677,
+      "lastAttempt": "2026-09-07T10:24:24.171143+00:00"
     },
     {
       "id": "team:coventry",
       "type": "team",
-      "name": "Coventry",
-      "url": "",
+      "name": "Coventry City",
+      "url": "https://www.transfermarkt.com/coventry-city/startseite/verein/990",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 990,
+      "lastAttempt": "2026-09-07T10:24:41.151442+00:00"
     },
     {
       "id": "team:hull",
       "type": "team",
-      "name": "Hull",
-      "url": "",
+      "name": "Hull City",
+      "url": "https://www.transfermarkt.com/hull-city/startseite/verein/3008",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 3008,
+      "lastAttempt": "2026-09-07T10:24:58.148492+00:00"
     },
     {
       "id": "team:sunderland",
       "type": "team",
-      "name": "Sunderland",
-      "url": "",
+      "name": "Sunderland AFC",
+      "url": "https://www.transfermarkt.com/afc-sunderland/startseite/verein/289",
       "priority": 50,
       "addedAt": "2026-09-07T09:52:24.962712+00:00",
-      "attempts": 0
+      "attempts": 1,
+      "team_id": 289,
+      "lastAttempt": "2026-09-07T10:25:15.619660+00:00"
     },
     {
       "id": "team:real_madrid",
