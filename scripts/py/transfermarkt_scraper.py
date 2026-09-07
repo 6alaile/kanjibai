@@ -213,7 +213,13 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
     # Extract league ID from page analytics or competition links
     league_id = None
     league_name = None
-    league_match = re.search(r"eVar8:\s*'([^']+?)\s*\(([A-Z0-9]+)\)'", page.content())
+    content = page.content()
+
+    # Try eVar8 analytics — various formats
+    league_match = re.search(r"eVar8:\s*'([^']+?)\s*\(([A-Z0-9]+)\)'", content)
+    if not league_match:
+        # Alternate: "eVar8='Name (ID)'" or double quotes
+        league_match = re.search(r"eVar8[=:]\s*[\"']([^\"']+?)\s*\(([A-Z0-9]+)\)[\"']", content)
     if league_match:
         league_name = league_match.group(1).strip()
         league_id = league_match.group(2)
@@ -226,10 +232,35 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
             m = re.search(r'/wettbewerb/([A-Z0-9]+)', href)
             if m:
                 candidate = m.group(1)
-                if candidate not in {"CL", "EL", "EC", "WC", "UC"}:
+                if candidate not in {"CL", "EL", "EC", "WC", "UC", "CWC"}:
                     league_id = candidate
-                    league_name = _safe_text(link) or candidate
+                    # Try link text, title, aria-label
+                    league_name = _safe_text(link) or link.get_attribute("title") or link.get_attribute("aria-label") or candidate
                     break
+
+    # Last resort: look for league name in page title or heading
+    if not league_name or league_name == league_id:
+        title_el = page.query_selector("h1")
+        if title_el:
+            title_text = _safe_text(title_el)
+            # Extract name and ID from "Premier League Table" or "Premier League (GB1)"
+            tn_match = re.search(r"(.+?)\s*(?:Table|Tabelle|Fixture|Schedule|table|fixture|schedule|\(([A-Z0-9]+)\))", title_text)
+            if tn_match:
+                league_name = tn_match.group(1).strip()
+                if not league_id:
+                    league_id = tn_match.group(2) or league_id
+
+    # Fallback: known league name map
+    if not league_name or league_name == league_id:
+        LEAGUE_NAMES = {
+            "GB1": "Premier League", "ES1": "LaLiga", "L1": "Bundesliga",
+            "IT1": "Serie A", "FR1": "Ligue 1", "NL1": "Eredivisie",
+            "PO1": "Primeira Liga", "GB2": "Championship",
+            "BE1": "Jupiler Pro League", "TR1": "Süper Lig",
+            "RU1": "Premier-Liga", "PL1": "Ekstraklasa",
+        }
+        if league_id in LEAGUE_NAMES:
+            league_name = LEAGUE_NAMES[league_id]
 
     # Find the Matchday table using Playwright
     fixtures = []
@@ -265,11 +296,11 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
             if not date_str:
                 continue
 
-            # Parse score (format: "3:0" or "-:-")
+            # Parse score (format: "3:0", "-:-", "6:5 on pens", "2:1 AET")
             score = None
-            if re.match(r'\d+:\d+', score_raw):
-                parts = score_raw.split(":")
-                score = [int(parts[0]), int(parts[1])]
+            score_match = re.match(r'(\d+)\s*:\s*(\d+)', score_raw)
+            if score_match:
+                score = [int(score_match.group(1)), int(score_match.group(2))]
 
             # Parse opponent name (remove ranking in parentheses)
             opponent = re.sub(r'\s*\(\d+\.\)\s*', '', opponent_raw).strip()
