@@ -752,6 +752,29 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
             team_items.sort(key=lambda x: x.get("priority", 100))
             team_items = team_items[:max_teams]
 
+            # Filter out teams already cached with recent data (< 48h)
+            fresh_cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
+            filtered_items = []
+            for item in team_items:
+                team_key = _cache_key(item["name"])
+                cached = False
+                for lid, ldata in cache.get("leagues", {}).items():
+                    td = ldata.get("teams", {}).get(team_key)
+                    if td and td.get("last_scraped"):
+                        try:
+                            last = datetime.fromisoformat(td["last_scraped"].replace("Z", "+00:00"))
+                            if last > fresh_cutoff:
+                                cached = True
+                                break
+                        except Exception:
+                            pass
+                if cached:
+                    log.info(f"  Skipping {item['name']} — cached < 48h ago")
+                    queue.remove(item)
+                else:
+                    filtered_items.append(item)
+
+            team_items = filtered_items
             log.info(f"\n  Processing {len(team_items)} teams...")
 
             # Track which leagues we've already fetched table for
@@ -896,8 +919,8 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                 finally:
                     context.close()
 
-                item["attempts"] += 1
-                item["lastAttempt"] = datetime.now(timezone.utc).isoformat()
+                # Success — remove from queue instead of incrementing attempts
+                queue.remove(item)
                 _save_queue(queue)
 
                 time.sleep(REQUEST_DELAY)
