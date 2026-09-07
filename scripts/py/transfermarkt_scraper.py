@@ -562,6 +562,75 @@ def _seed_queue_from_fixtures(queue: List[Dict], fixtures: List[Dict]) -> List[D
     return queue
 
 
+def _seed_queue_from_leagues(queue: List[Dict]) -> List[Dict]:
+    """Seed queue with top teams from major leagues (standalone mode)."""
+    # Top teams from each major league (Transfermarkt team IDs)
+    LEAGUE_TEAMS = {
+        "GB1": [
+            (11, "Arsenal"), (985, "Man United"), (631, "Chelsea"),
+            (281, "Man City"), (1068, "Tottenham"), (14, "Liverpool"),
+            (1148, "Newcastle"), (1237, "Brighton"), (1178, "Brentford"),
+            (873, "Crystal Palace"), (523, "Bournemouth"), (405, "Aston Villa"),
+            (703, "Nottm Forest"), (289, "Everton"), (771, "Leeds"),
+            (543, "Fulham"), (379, "Ipswich"), (164, "Coventry"),
+            (168, "Hull"), (1224, "Sunderland"),
+        ],
+        "ES1": [
+            (418, "Real Madrid"), (131, "Barcelona"), (13, "Atletico Madrid"),
+            (1108, "Villarreal"), (331, "Real Sociedad"), (150, "Betis"),
+            (621, "Athletic Bilbao"), (940, "Celta Vigo"), (368, "Sevilla"),
+            (104, "Valencia"), (693, "Espanyol"), (859, "Deportivo"),
+            (366, "Racing"), (364, "Getafe"), (1021, "Levante"),
+            (367, "Rayo Vallecano"), (332, "Osasuna"), (596, "Elche"),
+            (420, "Alaves"), (1153, "Malaga"),
+        ],
+        "L1": [
+            (27, "Bayern Munich"), (16, "Dortmund"), (173, "RB Leipzig"),
+            (18, "Leverkusen"), (1133, "Stuttgart"), (44, "Frankfurt"),
+            (396, "Hoffenheim"), (524, "Freiburg"), (111, "Augsburg"),
+            (39, "Mainz"), (3, "Koln"), (43, "Hamburg"),
+            (18, "Gladbach"), (34, "Bremen"), (41, "Union Berlin"),
+            (33, "Schalke"), (2024, "Elversberg"), (301, "Paderborn"),
+        ],
+        "IT1": [
+            (46, "Inter Milan"), (45, "Juventus"), (624, "Como"),
+            (12, "Roma"), (5, "AC Milan"), (39, "Atalanta"),
+            (6197, "Napoli"), (430, "Fiorentina"), (398, "Lazio"),
+            (102, "Bologna"), (431, "Sassuolo"), (563, "Torino"),
+            (164, "Genoa"), (556, "Udinese"), (457, "Parma"),
+            (444, "Cagliari"), (318, "Venezia"), (1211, "Monza"),
+            (1210, "Frosinone"), (1212, "Lecce"),
+        ],
+        "FR1": [
+            (583, "PSG"), (454, "Monaco"), (967, "Strasbourg"),
+            (482, "Lyon"), (497, "Lille"), (536, "Rennes"),
+            (1063, "Lens"), (481, "Marseille"), (4268, "Paris FC"),
+            (521, "Nice"), (621, "Toulouse"), (545, "Auxerre"),
+            (1219, "Lorient"), (544, "Brest"), (1145, "Angers"),
+            (1214, "Le Havre"), (1218, "Troyes"), (1223, "Le Mans"),
+        ],
+    }
+
+    seen = {q["id"] for q in queue}
+    for league_id, teams in LEAGUE_TEAMS.items():
+        for team_id, team_name in teams:
+            tid = f"team:{_cache_key(team_name)}"
+            if tid not in seen:
+                queue.append({
+                    "id": tid,
+                    "type": "team",
+                    "name": team_name,
+                    "url": "",
+                    "priority": 50,
+                    "addedAt": datetime.now(timezone.utc).isoformat(),
+                    "attempts": 0,
+                })
+                seen.add(tid)
+
+    log.info(f"  Seeded queue with {len(seen)} teams from {len(LEAGUE_TEAMS)} leagues")
+    return queue
+
+
 # ── Main entry point ──────────────────────────────────────────────────────────
 
 def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]] = None) -> None:
@@ -578,6 +647,11 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
     if betpawa_fixtures:
         log.info(f"  Seeding queue from {len(betpawa_fixtures)} BetPawa fixtures")
         queue = _seed_queue_from_fixtures(queue, betpawa_fixtures)
+
+    # If queue is empty (standalone run), seed with top teams from major leagues
+    if not queue:
+        log.info("  No fixtures provided — seeding from major leagues")
+        queue = _seed_queue_from_leagues(queue)
 
     if not queue:
         log.warning("  Queue is empty — nothing to scrape")

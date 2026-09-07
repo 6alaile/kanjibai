@@ -31,7 +31,7 @@ jobs:
         working-directory: ./scripts/py
       
       - name: Install Playwright browsers
-        run: playwright install chromium
+        run: playwright install --with-deps chromium
         env:
           PLAYWRIGHT_BROWSERS_INSTALL: true
       

@@ -23,7 +23,7 @@ jobs:
         working-directory: ./scripts/py
 
       - name: Install Playwright browsers
-        run: playwright install
+        run: playwright install --with-deps chromium
         env:
           PLAYWRIGHT_BROWSERS_INSTALL: true
 
@@ -43,11 +43,11 @@ jobs:
           python main.py
         working-directory: ./scripts/py
 
-      - name: Commit enriched.json
+      - name: Commit enriched.json and cache
         run: |
           git config user.name "scout-bot"
           git config user.email "scout-bot@users.noreply.github.com"
-          git add data/enriched.json
+          git add data/enriched.json data/transfermarkt_cache.json
           git diff --staged --quiet || git commit -m "chore: daily scan $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
         env:
