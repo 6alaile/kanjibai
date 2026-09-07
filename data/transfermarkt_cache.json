@@ -1,5 +1,1108 @@
 {
   "version": 2,
-  "lastUpdated": null,
-  "leagues": {}
+  "lastUpdated": "2026-09-07T09:36:34.246780+00:00",
+  "leagues": {
+    "GB1": {
+      "name": "GB1",
+      "table_fetched_at": "2026-09-07T09:34:02.914630+00:00",
+      "teams": {
+        "man_city": {
+          "id": 281,
+          "name": "Man City",
+          "league_position": 1,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914617+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "arsenal": {
+          "id": 11,
+          "name": "Arsenal",
+          "league_position": 2,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914634+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "hull_city": {
+          "id": 3008,
+          "name": "Hull City",
+          "league_position": 3,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914637+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "chelsea": {
+          "id": 631,
+          "name": "Chelsea",
+          "league_position": 4,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914641+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "brentford": {
+          "id": 1148,
+          "name": "Brentford",
+          "league_position": 5,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914644+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "liverpool": {
+          "id": 31,
+          "name": "Liverpool",
+          "league_position": 6,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914657+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "newcastle": {
+          "id": 762,
+          "name": "Newcastle",
+          "league_position": 6,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914662+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "everton": {
+          "id": 29,
+          "name": "Everton",
+          "league_position": 8,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914666+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "leeds": {
+          "id": 399,
+          "name": "Leeds",
+          "league_position": 9,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914676+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "brighton": {
+          "id": 1237,
+          "name": "Brighton",
+          "league_position": 10,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914682+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "man_utd": {
+          "id": 985,
+          "name": "Man Utd",
+          "league_position": 11,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914687+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sunderland": {
+          "id": 289,
+          "name": "Sunderland",
+          "league_position": 12,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914692+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "crystal_palace": {
+          "id": 873,
+          "name": "Crystal Palace",
+          "league_position": 13,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914697+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ipswich": {
+          "id": 677,
+          "name": "Ipswich",
+          "league_position": 13,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914702+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "bournemouth": {
+          "id": 989,
+          "name": "Bournemouth",
+          "league_position": 15,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914707+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "nottm_forest": {
+          "id": 703,
+          "name": "Nott'm Forest",
+          "league_position": 16,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914712+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "aston_villa": {
+          "id": 405,
+          "name": "Aston Villa",
+          "league_position": 17,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914716+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "tottenham": {
+          "id": 148,
+          "name": "Tottenham",
+          "league_position": 17,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914721+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fulham": {
+          "id": 931,
+          "name": "Fulham",
+          "league_position": 19,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914726+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "coventry": {
+          "id": 990,
+          "name": "Coventry",
+          "league_position": 20,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.914730+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fc_kattaqorgon": {
+          "id": 129525,
+          "name": "FC Kattaqorgon",
+          "league_position": null,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:34:02.915373+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ajman_club_u23": {
+          "id": 123426,
+          "name": "Ajman Club U23",
+          "league_position": null,
+          "total_teams": 21,
+          "last_scraped": "2026-09-07T09:35:46.793440+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "T191": {
+      "name": "U19 S\u00fcper Lig",
+      "table_fetched_at": "2026-09-07T09:34:46.453689+00:00",
+      "teams": {
+        "galatasaray_u19": {
+          "id": 41591,
+          "name": "Galatasaray U19",
+          "league_position": 1,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453670+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "trabzonspor_u19": {
+          "id": 41798,
+          "name": "Trabzonspor U19",
+          "league_position": 2,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453697+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "besiktas_u19": {
+          "id": 41852,
+          "name": "Besiktas U19",
+          "league_position": 3,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453702+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "samsunspor_u19": {
+          "id": 83792,
+          "name": "Samsunspor U19",
+          "league_position": 4,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453707+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "kocaelispor_u19": {
+          "id": 76116,
+          "name": "Kocaelispor U19",
+          "league_position": 4,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453712+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "basaksehir_u19": {
+          "id": 73900,
+          "name": "Basaksehir U19",
+          "league_position": 6,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453717+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fenerbahce_u19": {
+          "id": 41854,
+          "name": "Fenerbahce U19",
+          "league_position": 7,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453723+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "gbirligi_u19": {
+          "id": 74474,
+          "name": "G.Birligi U19",
+          "league_position": 8,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453736+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ey\u00fcpspor_u19": {
+          "id": 89919,
+          "name": "Ey\u00fcpspor U19",
+          "league_position": 9,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453741+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "gantep_fk_u19": {
+          "id": 74653,
+          "name": "G.Antep FK U19",
+          "league_position": 10,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:35:06.378769+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 23/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Ey\u00fcpspor U19",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "2",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009219",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "C. Rizespor U19",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009227",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Alanyaspor U19",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009210",
+              "ranking": "(10.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              0,
+              3,
+              1
+            ],
+            "goals_conceded": [
+              4,
+              2,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "kasimpasa_u19": {
+          "id": 73905,
+          "name": "Kasimpasa U19",
+          "league_position": 11,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453751+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "konyaspor_u19": {
+          "id": 73906,
+          "name": "Konyaspor U19",
+          "league_position": 12,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453756+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "alanyaspor_u19": {
+          "id": 73902,
+          "name": "Alanyaspor U19",
+          "league_position": 13,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453760+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "erzurum_fk_u19": {
+          "id": 73909,
+          "name": "Erzurum FK U19",
+          "league_position": 14,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453768+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "c_rizespor_u19": {
+          "id": 73904,
+          "name": "C. Rizespor U19",
+          "league_position": 15,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:35:24.429078+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "G.Antep FK U19",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009227",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Samsunspor U19",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "2",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009221",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Konyaspor U19",
+              "opponent_id": null,
+              "score": [
+                4,
+                1
+              ],
+              "matchday": "1",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009212",
+              "ranking": "(15.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              2,
+              0,
+              1
+            ],
+            "goals_conceded": [
+              3,
+              0,
+              4
+            ]
+          },
+          "h2h": {}
+        },
+        "amed_u19": {
+          "id": 120040,
+          "name": "Amed U19",
+          "league_position": 16,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453777+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "g\u00f6ztepe_u19": {
+          "id": 73899,
+          "name": "G\u00f6ztepe U19",
+          "league_position": 17,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.454807+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 23/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "G.Birligi U19",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "2",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009222",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "1:00 PM",
+              "home_away": "A",
+              "opponent": "Galatasaray U19",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "3",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009233",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Mon 17/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Samsunspor U19",
+              "opponent_id": null,
+              "score": [
+                5,
+                1
+              ],
+              "matchday": "1",
+              "competition": "U19 S\u00fcper Lig",
+              "league_id": "T191",
+              "match_id": "5009217",
+              "ranking": "(17.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              0,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              5
+            ]
+          },
+          "h2h": {}
+        },
+        "corum_fk_u19": {
+          "id": 111069,
+          "name": "Corum FK U19",
+          "league_position": 18,
+          "total_teams": 18,
+          "last_scraped": "2026-09-07T09:34:46.453785+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "EGY1": {
+      "name": "Egyptian Premier League",
+      "table_fetched_at": "2026-09-07T09:36:34.245082+00:00",
+      "teams": {
+        "pyramids_fc": {
+          "id": 44664,
+          "name": "Pyramids FC",
+          "league_position": 1,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245066+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "al_ahly": {
+          "id": 7,
+          "name": "Al Ahly",
+          "league_position": 2,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245087+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "zamalek": {
+          "id": 664,
+          "name": "Zamalek",
+          "league_position": 3,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245092+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cleopatra_fc": {
+          "id": 57439,
+          "name": "Cleopatra FC",
+          "league_position": 4,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245096+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "el_masry": {
+          "id": 9094,
+          "name": "El Masry",
+          "league_position": 5,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245099+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "talaea_el_gaish": {
+          "id": 9219,
+          "name": "Talaea El Gaish",
+          "league_position": 5,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245103+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "wadi_degla": {
+          "id": 18234,
+          "name": "Wadi Degla",
+          "league_position": 7,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245107+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "qanah": {
+          "id": 24297,
+          "name": "Qanah",
+          "league_position": 8,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245111+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ittihad_alex": {
+          "id": 3963,
+          "name": "Ittihad Alex",
+          "league_position": 9,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245115+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "modern_sport": {
+          "id": 68770,
+          "name": "Modern Sport",
+          "league_position": 9,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245119+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "zed_fc": {
+          "id": 47010,
+          "name": "Zed FC",
+          "league_position": 11,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245122+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "el_mokawloon": {
+          "id": 3369,
+          "name": "El Mokawloon",
+          "league_position": 12,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245126+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "a_abo_qir": {
+          "id": 39575,
+          "name": "A. Abo Qir",
+          "league_position": 13,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245130+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "bank_el_ahly": {
+          "id": 62448,
+          "name": "Bank El Ahly",
+          "league_position": 13,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245134+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "el_gouna": {
+          "id": 20572,
+          "name": "El Gouna",
+          "league_position": 15,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245137+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "petrol_asyut": {
+          "id": 16216,
+          "name": "Petrol Asyut",
+          "league_position": 16,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.246773+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 26/08/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Smouha",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Egyptian Premier League",
+              "league_id": "EGY1",
+              "match_id": "5008927",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Suez Petrojet",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Egyptian Premier League",
+              "league_id": "EGY1",
+              "match_id": "5008944",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Mon 31/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Bank El Ahly",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Egyptian Premier League",
+              "league_id": "EGY1",
+              "match_id": "5008929",
+              "ranking": "(12.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              0,
+              1,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "suez_petrojet": {
+          "id": 10957,
+          "name": "Suez Petrojet",
+          "league_position": 17,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245144+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "smouha": {
+          "id": 23387,
+          "name": "Smouha",
+          "league_position": 18,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245147+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sharkia_enppi": {
+          "id": 9218,
+          "name": "Sharkia Enppi",
+          "league_position": 19,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245151+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "el_mahalla": {
+          "id": 13446,
+          "name": "El Mahalla",
+          "league_position": 20,
+          "total_teams": 20,
+          "last_scraped": "2026-09-07T09:36:34.245154+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    }
+  }
 }
