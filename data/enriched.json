@@ -1,44 +1,11 @@
 {
   "meta": {
     "date": "2026-09-09",
-    "generatedAt": "2026-09-09T06:02:39.478078+03:00",
+    "generatedAt": "2026-09-09T09:04:53.838128+03:00",
     "scanned": 20,
-    "elapsedSeconds": 120.3
+    "elapsedSeconds": 256.4
   },
   "matches": [
-    {
-      "id": "ramtharvengfcchanmarifc",
-      "league": "Football / India / Mizoram Premier League",
-      "home": "Ramthar Veng FC",
-      "away": "Chanmari FC",
-      "time": "08:30",
-      "odds": {
-        "home": 8.03,
-        "draw": 5.35,
-        "away": 1.28
-      },
-      "home_stats": {
-        "name": "Ramthar Veng FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "Chanmari FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 20,
-        "opposition_position": 1
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
     {
       "id": "sfcopavau19skdynamoceskebudejo",
       "league": "Football / Czech Republic / U19 1st Division",
@@ -52,21 +19,51 @@
       },
       "home_stats": {
         "name": "SFC Opava U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 22,
-        "opposition_position": null
+        "form": [
+          "L",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          4,
+          1,
+          4
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          2,
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 16,
+        "opposition_position": 8
       },
       "away_stats": {
         "name": "SK Dynamo Ceske Budejovice U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 22,
-        "opposition_position": null
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          4,
+          3,
+          0,
+          7
+        ],
+        "goals_conceded": [
+          3,
+          3,
+          2,
+          2
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 16,
+        "opposition_position": 8
       },
       "h2h": null,
       "source": "betpawa"
@@ -78,9 +75,9 @@
       "away": "Melaka FC",
       "time": "11:30",
       "odds": {
-        "home": 1.67,
+        "home": 1.64,
         "draw": 3.7,
-        "away": 4.4
+        "away": 4.5
       },
       "home_stats": {
         "name": "Penang FA",
@@ -104,15 +101,47 @@
       "source": "betpawa"
     },
     {
+      "id": "fcdac1904dunajskastredau19fcko",
+      "league": "Football / Slovakia / U19 1. Liga",
+      "home": "FC DAC 1904 Dunajska Streda U19",
+      "away": "FC Kosice U19",
+      "time": "12:00",
+      "odds": {
+        "home": 2.43,
+        "draw": 3.5,
+        "away": 2.47
+      },
+      "home_stats": {
+        "name": "FC DAC 1904 Dunajska Streda U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 38,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FC Kosice U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 38,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "aizawlfcdintharfc",
       "league": "Football / India / Mizoram Premier League",
       "home": "Aizawl FC",
       "away": "Dinthar FC",
       "time": "12:00",
       "odds": {
-        "home": 1.15,
-        "draw": 6.82,
-        "away": 13.64
+        "home": 1.12,
+        "draw": 8.0,
+        "away": 14.55
       },
       "home_stats": {
         "name": "Aizawl FC",
@@ -211,9 +240,9 @@
       "away": "Melbourne Victory FC",
       "time": "12:30",
       "odds": {
-        "home": 2.21,
-        "draw": 3.61,
-        "away": 2.98
+        "home": 2.27,
+        "draw": 3.54,
+        "away": 2.93
       },
       "home_stats": {
         "name": "Sydney FC",
@@ -243,9 +272,9 @@
       "away": "Montedio Yamagata",
       "time": "01:00",
       "odds": {
-        "home": 2.82,
-        "draw": 3.36,
-        "away": 2.52
+        "home": 2.91,
+        "draw": 3.41,
+        "away": 2.42
       },
       "home_stats": {
         "name": "Tochigi SC",
@@ -258,9 +287,27 @@
       },
       "away_stats": {
         "name": "Montedio Yamagata",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          2,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
         "league_position": 7,
         "total_teams_in_league": 20,
         "opposition_position": 7
@@ -275,24 +322,60 @@
       "away": "JEF United Chiba",
       "time": "01:00",
       "odds": {
-        "home": 5.13,
-        "draw": 4.15,
-        "away": 1.63
+        "home": 4.95,
+        "draw": 4.06,
+        "away": 1.66
       },
       "home_stats": {
         "name": "Kamatamare Sanuki",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          3,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          4,
+          0,
+          3
+        ],
         "league_position": 17,
         "total_teams_in_league": 20,
         "opposition_position": 20
       },
       "away_stats": {
         "name": "JEF United Chiba",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          2,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          4,
+          4,
+          3
+        ],
         "league_position": 20,
         "total_teams_in_league": 20,
         "opposition_position": 20
@@ -307,9 +390,9 @@
       "away": "Shonan Bellmare",
       "time": "01:00",
       "odds": {
-        "home": 3.02,
-        "draw": 3.32,
-        "away": 2.39
+        "home": 2.96,
+        "draw": 3.31,
+        "away": 2.44
       },
       "home_stats": {
         "name": "Matsumoto Yamaga FC",
@@ -407,9 +490,9 @@
       "away": "Giravanz Kitakyushu",
       "time": "01:00",
       "odds": {
-        "home": 2.12,
-        "draw": 3.56,
-        "away": 3.36
+        "home": 2.13,
+        "draw": 3.66,
+        "away": 3.26
       },
       "home_stats": {
         "name": "FC Ryukyu",
@@ -457,9 +540,9 @@
       "away": "Mito Hollyhock",
       "time": "01:00",
       "odds": {
-        "home": 7.11,
+        "home": 6.91,
         "draw": 4.84,
-        "away": 1.42
+        "away": 1.43
       },
       "home_stats": {
         "name": "AC Nagano Parceiro",
@@ -489,9 +572,9 @@
       "away": "V-Varen Nagasaki",
       "time": "01:00",
       "odds": {
-        "home": 5.34,
-        "draw": 4.35,
-        "away": 1.58
+        "home": 5.56,
+        "draw": 4.37,
+        "away": 1.56
       },
       "home_stats": {
         "name": "Kochi United SC",
@@ -513,6 +596,39 @@
       },
       "h2h": null,
       "source": "betpawa"
+    },
+    {
+      "id": "mylliemscshillonglajongfcreser",
+      "league": "Football / India / Shillong Premier League",
+      "home": "Mylliem SC",
+      "away": "Shillong Lajong FC Reserves",
+      "time": "01:10",
+      "odds": {
+        "home": 9.2,
+        "draw": 4.9,
+        "away": 1.27
+      },
+      "home_stats": {
+        "name": "Mylliem SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Shillong Lajong FC Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 41,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 41
     },
     {
       "id": "gwangjufcjejuskfc",
@@ -553,9 +669,9 @@
       "away": "Jeonbuk FC",
       "time": "01:30",
       "odds": {
-        "home": 2.69,
+        "home": 2.84,
         "draw": 3.19,
-        "away": 2.73
+        "away": 2.6
       },
       "home_stats": {
         "name": "Gangwon FC",
@@ -585,9 +701,9 @@
       "away": "Viking FK U19",
       "time": "01:30",
       "odds": {
-        "home": 1.23,
-        "draw": 7.34,
-        "away": 7.87
+        "home": 1.19,
+        "draw": 7.96,
+        "away": 9.34
       },
       "home_stats": {
         "name": "VfB Stuttgart U19",
@@ -629,9 +745,9 @@
       "away": "FC Anyang",
       "time": "01:30",
       "odds": {
-        "home": 1.58,
-        "draw": 4.25,
-        "away": 5.5
+        "home": 1.53,
+        "draw": 4.46,
+        "away": 5.8
       },
       "home_stats": {
         "name": "Daejeon Citizen FC",
@@ -661,9 +777,9 @@
       "away": "Gimcheon Sangmu FC",
       "time": "01:30",
       "odds": {
-        "home": 2.45,
-        "draw": 3.22,
-        "away": 3.02
+        "home": 2.59,
+        "draw": 3.14,
+        "away": 2.89
       },
       "home_stats": {
         "name": "FC Pohang Steelers",
@@ -717,39 +833,6 @@
       },
       "h2h": null,
       "source": "betpawa"
-    },
-    {
-      "id": "sardarapatfcfcpyunikyerevann",
-      "league": "Football / Armenia / Premier League",
-      "home": "Sardarapat FC",
-      "away": "FC Pyunik Yerevan (n)",
-      "time": "03:00",
-      "odds": {
-        "home": 7.07,
-        "draw": 4.44,
-        "away": 1.43
-      },
-      "home_stats": {
-        "name": "Sardarapat FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FC Pyunik Yerevan (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
     }
   ]
 }
