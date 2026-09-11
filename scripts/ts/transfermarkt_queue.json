@@ -1,5 +1,942 @@
 {
-  "queue": [],
+  "queue": [
+    {
+      "id": "team:real_madrid",
+      "type": "team",
+      "name": "Real Madrid",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333398+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:barcelona",
+      "type": "team",
+      "name": "Barcelona",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333402+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:atletico_madrid",
+      "type": "team",
+      "name": "Atletico Madrid",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333406+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:villarreal",
+      "type": "team",
+      "name": "Villarreal",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333410+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:real_sociedad",
+      "type": "team",
+      "name": "Real Sociedad",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333414+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:betis",
+      "type": "team",
+      "name": "Betis",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333418+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:athletic_bilbao",
+      "type": "team",
+      "name": "Athletic Bilbao",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333422+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:celta_vigo",
+      "type": "team",
+      "name": "Celta Vigo",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333425+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sevilla",
+      "type": "team",
+      "name": "Sevilla",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333431+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:valencia",
+      "type": "team",
+      "name": "Valencia",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333435+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:espanyol",
+      "type": "team",
+      "name": "Espanyol",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333439+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:deportivo",
+      "type": "team",
+      "name": "Deportivo",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333442+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:racing",
+      "type": "team",
+      "name": "Racing",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333446+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:getafe",
+      "type": "team",
+      "name": "Getafe",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333453+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:levante",
+      "type": "team",
+      "name": "Levante",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333456+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rayo_vallecano",
+      "type": "team",
+      "name": "Rayo Vallecano",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333460+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:osasuna",
+      "type": "team",
+      "name": "Osasuna",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333464+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:elche",
+      "type": "team",
+      "name": "Elche",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333468+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:alaves",
+      "type": "team",
+      "name": "Alaves",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333474+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:malaga",
+      "type": "team",
+      "name": "Malaga",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333479+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:bayern_munich",
+      "type": "team",
+      "name": "Bayern Munich",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333483+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:dortmund",
+      "type": "team",
+      "name": "Dortmund",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333489+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rb_leipzig",
+      "type": "team",
+      "name": "RB Leipzig",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333492+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:leverkusen",
+      "type": "team",
+      "name": "Leverkusen",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333494+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:stuttgart",
+      "type": "team",
+      "name": "Stuttgart",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333496+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:frankfurt",
+      "type": "team",
+      "name": "Frankfurt",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333498+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:hoffenheim",
+      "type": "team",
+      "name": "Hoffenheim",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333500+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:freiburg",
+      "type": "team",
+      "name": "Freiburg",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333502+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:augsburg",
+      "type": "team",
+      "name": "Augsburg",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333504+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:mainz",
+      "type": "team",
+      "name": "Mainz",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333506+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:koln",
+      "type": "team",
+      "name": "Koln",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333511+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:hamburg",
+      "type": "team",
+      "name": "Hamburg",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333513+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:gladbach",
+      "type": "team",
+      "name": "Gladbach",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333515+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:bremen",
+      "type": "team",
+      "name": "Bremen",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333519+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:union_berlin",
+      "type": "team",
+      "name": "Union Berlin",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333521+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:schalke",
+      "type": "team",
+      "name": "Schalke",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333523+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:elversberg",
+      "type": "team",
+      "name": "Elversberg",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333525+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:paderborn",
+      "type": "team",
+      "name": "Paderborn",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333527+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:inter_milan",
+      "type": "team",
+      "name": "Inter Milan",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333529+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:juventus",
+      "type": "team",
+      "name": "Juventus",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333531+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:como",
+      "type": "team",
+      "name": "Como",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333533+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:roma",
+      "type": "team",
+      "name": "Roma",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333536+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ac_milan",
+      "type": "team",
+      "name": "AC Milan",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333538+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:atalanta",
+      "type": "team",
+      "name": "Atalanta",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333540+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:napoli",
+      "type": "team",
+      "name": "Napoli",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333542+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fiorentina",
+      "type": "team",
+      "name": "Fiorentina",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333544+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lazio",
+      "type": "team",
+      "name": "Lazio",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333546+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:bologna",
+      "type": "team",
+      "name": "Bologna",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333548+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sassuolo",
+      "type": "team",
+      "name": "Sassuolo",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333550+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:torino",
+      "type": "team",
+      "name": "Torino",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333552+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:genoa",
+      "type": "team",
+      "name": "Genoa",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333554+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:udinese",
+      "type": "team",
+      "name": "Udinese",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333556+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:parma",
+      "type": "team",
+      "name": "Parma",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333561+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:cagliari",
+      "type": "team",
+      "name": "Cagliari",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333563+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:venezia",
+      "type": "team",
+      "name": "Venezia",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333565+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:monza",
+      "type": "team",
+      "name": "Monza",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333567+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:frosinone",
+      "type": "team",
+      "name": "Frosinone",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333569+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lecce",
+      "type": "team",
+      "name": "Lecce",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333574+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:psg",
+      "type": "team",
+      "name": "PSG",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333576+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:monaco",
+      "type": "team",
+      "name": "Monaco",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333578+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:strasbourg",
+      "type": "team",
+      "name": "Strasbourg",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333580+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lyon",
+      "type": "team",
+      "name": "Lyon",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333584+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lille",
+      "type": "team",
+      "name": "Lille",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333586+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:rennes",
+      "type": "team",
+      "name": "Rennes",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333588+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lens",
+      "type": "team",
+      "name": "Lens",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333590+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:marseille",
+      "type": "team",
+      "name": "Marseille",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333592+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:paris_fc",
+      "type": "team",
+      "name": "Paris FC",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333594+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:nice",
+      "type": "team",
+      "name": "Nice",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333596+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:toulouse",
+      "type": "team",
+      "name": "Toulouse",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333599+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:auxerre",
+      "type": "team",
+      "name": "Auxerre",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333601+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:lorient",
+      "type": "team",
+      "name": "Lorient",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333603+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:brest",
+      "type": "team",
+      "name": "Brest",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333605+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:angers",
+      "type": "team",
+      "name": "Angers",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333609+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:le_havre",
+      "type": "team",
+      "name": "Le Havre",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333613+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:troyes",
+      "type": "team",
+      "name": "Troyes",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333615+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:le_mans",
+      "type": "team",
+      "name": "Le Mans",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333617+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fardu_ferghana",
+      "type": "team",
+      "name": "Fardu Ferghana",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333619+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fk_aral_samali",
+      "type": "team",
+      "name": "FK Aral Samali",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333622+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:pfk_metallurg_bekabad",
+      "type": "team",
+      "name": "PFK Metallurg Bekabad",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333624+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc_pakhtakor_tashkent_ii",
+      "type": "team",
+      "name": "FC Pakhtakor Tashkent II",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333626+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ajman_u23",
+      "type": "team",
+      "name": "Ajman U23",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333628+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_nasr_u23",
+      "type": "team",
+      "name": "AL Nasr U23",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333631+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_wahda_fc_u23",
+      "type": "team",
+      "name": "AL Wahda FC U23",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333633+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_dhafra_u23",
+      "type": "team",
+      "name": "AL Dhafra U23",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333635+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:club_atletico_penarol_reserves",
+      "type": "team",
+      "name": "Club Atletico Penarol Reserves",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333637+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:ca_boston_river_reserves",
+      "type": "team",
+      "name": "CA Boston River Reserves",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333639+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:montevideo_city_torque_reserves",
+      "type": "team",
+      "name": "Montevideo City Torque Reserves",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333642+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:liverpool_montevideo_reserves",
+      "type": "team",
+      "name": "Liverpool Montevideo Reserves",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333644+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:umm_salal_sc",
+      "type": "team",
+      "name": "Umm-Salal SC",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333646+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_khor_sc",
+      "type": "team",
+      "name": "Al-Khor SC",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333649+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:pfk_sportist_svoge",
+      "type": "team",
+      "name": "PFK Sportist Svoge",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333651+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:gorna_oryahovitsa",
+      "type": "team",
+      "name": "Gorna Oryahovitsa",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333655+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:fc_fratria_varna",
+      "type": "team",
+      "name": "FC Fratria Varna",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333657+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:pfc_chernomorets_burgas",
+      "type": "team",
+      "name": "PFC Chernomorets Burgas",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333659+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:istanbulspor_as",
+      "type": "team",
+      "name": "Istanbulspor AS",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333662+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:igdir_fk",
+      "type": "team",
+      "name": "Igdir FK",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333664+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:esenler_erokspor",
+      "type": "team",
+      "name": "Esenler Erokspor",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333666+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:kayserispor",
+      "type": "team",
+      "name": "Kayserispor",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333668+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:sc_fc_voluntari",
+      "type": "team",
+      "name": "SC FC Voluntari",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333670+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:acs_champions_fc_arges",
+      "type": "team",
+      "name": "ACS Champions FC Arges",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333672+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:msk_zilina_b",
+      "type": "team",
+      "name": "MSK Zilina B",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333674+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:slovan_bratislava_b_u21",
+      "type": "team",
+      "name": "Slovan Bratislava B U21",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333678+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_khaleej_club",
+      "type": "team",
+      "name": "Al-Khaleej Club",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333681+00:00",
+      "attempts": 0
+    },
+    {
+      "id": "team:al_riyadh_sc",
+      "type": "team",
+      "name": "Al-Riyadh SC",
+      "url": "",
+      "priority": 50,
+      "addedAt": "2026-09-11T07:53:27.333685+00:00",
+      "attempts": 0
+    }
+  ],
   "processedToday": 0,
-  "lastReset": "2026-09-10"
+  "lastReset": "2026-09-11"
 }
