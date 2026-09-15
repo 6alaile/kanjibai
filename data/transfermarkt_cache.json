@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-15T06:04:59.612981+00:00",
+  "lastUpdated": "2026-09-15T08:34:30.074499+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -8977,9 +8977,9 @@
         "roma": {
           "id": 12,
           "name": "Roma",
-          "league_position": 2,
+          "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000372+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751410+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -8991,9 +8991,9 @@
         "inter": {
           "id": 46,
           "name": "Inter",
-          "league_position": 3,
+          "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.053702+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751425+00:00",
           "recent_matches": [
             {
               "date": "Tue 08/09/26",
@@ -9085,28 +9085,207 @@
         "como": {
           "id": 1047,
           "name": "Como",
-          "league_position": 6,
+          "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000389+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:29:00.812394+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 10/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Leipzig",
+              "opponent_id": null,
+              "score": [
+                4,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "5035985",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Napoli",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893361",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Udinese",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893351",
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Mon 14/09/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Parma",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893374",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Fri 04/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Genoa",
+              "opponent_id": null,
+              "score": [
+                1,
+                4
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893367",
+              "ranking": "(8.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "W",
+              "D",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              4,
+              2,
+              1,
+              2,
+              4
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
           },
           "h2h": {}
         },
         "ac_milan": {
           "id": 5,
           "name": "AC Milan",
-          "league_position": 5,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000385+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:29:45.901350+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 23/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Torino",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893350",
+              "ranking": "(6.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Juventus",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893369",
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Lazio",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893377",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Fri 28/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Venezia",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893359",
+              "ranking": "(5.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              2,
+              1,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              2,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -9115,7 +9294,7 @@
           "name": "Juventus",
           "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:51.269646+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751447+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -9190,21 +9369,120 @@
           "name": "Frosinone",
           "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000392+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:34:11.617352+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 02/09/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "Sassuolo",
+              "opponent_id": null,
+              "score": [
+                5,
+                4
+              ],
+              "matchday": "Round of 32",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904452",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Juventus",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893345",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sun 16/08/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Juve Stabia",
+              "opponent_id": null,
+              "score": [
+                4,
+                1
+              ],
+              "matchday": "First Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904465",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Venezia",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893366",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Fiorentina",
+              "opponent_id": null,
+              "score": [
+                0,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893355",
+              "ranking": "(16.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              4,
+              0,
+              4,
+              3,
+              3
+            ],
+            "goals_conceded": [
+              5,
+              1,
+              1,
+              2,
+              0
+            ]
           },
           "h2h": {}
         },
         "lazio": {
           "id": 398,
           "name": "Lazio",
-          "league_position": 1,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000358+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751436+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9216,37 +9494,235 @@
         "atalanta": {
           "id": 800,
           "name": "Atalanta",
-          "league_position": 9,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000399+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:30:04.424152+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 27/08/26",
+              "time": "8:00 PM",
+              "home_away": "A",
+              "opponent": "Hapoel Tel Aviv",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "5013842",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 20/08/26",
+              "time": "8:30 PM",
+              "home_away": "H",
+              "opponent": "Hapoel Tel Aviv",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "5013818",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Sassuolo",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893343",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Cagliari",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893373",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Roma",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893371",
+              "ranking": "(5.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              0,
+              2,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              0,
+              1,
+              2,
+              2
+            ]
           },
           "h2h": {}
         },
         "cagliari": {
           "id": 1390,
           "name": "Cagliari",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000381+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:33:16.820205+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 03/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Hellas Verona",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "Round of 32",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904451",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 30/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Inter",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893354",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Parma",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893348",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Atalanta",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893373",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Mon 07/09/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Lecce",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893364",
+              "ranking": "(12.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              1,
+              0,
+              1,
+              2,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              0,
+              1,
+              0
+            ]
           },
           "h2h": {}
         },
         "udinese": {
           "id": 410,
           "name": "Udinese",
-          "league_position": 10,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000402+00:00",
+          "last_scraped": "2026-09-15T08:32:39.591495+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -9294,7 +9770,7 @@
               "competition": "Serie A",
               "league_id": "IT1",
               "match_id": "4893351",
-              "ranking": "(10.)"
+              "ranking": "(13.)"
             },
             {
               "date": "Sat 15/08/26",
@@ -9311,6 +9787,22 @@
               "league_id": "IT1",
               "match_id": "4904466",
               "ranking": ""
+            },
+            {
+              "date": "Mon 14/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Inter",
+              "opponent_id": null,
+              "score": [
+                5,
+                3
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893376",
+              "ranking": "(10.)"
             }
           ],
           "form_summary": {
@@ -9318,19 +9810,22 @@
               "W",
               "W",
               "D",
-              "W"
+              "W",
+              "L"
             ],
             "goals_scored": [
               2,
               3,
               1,
-              1
+              1,
+              3
             ],
             "goals_conceded": [
               1,
               2,
               1,
-              0
+              0,
+              5
             ]
           },
           "h2h": {}
@@ -9338,9 +9833,9 @@
         "sassuolo": {
           "id": 6574,
           "name": "Sassuolo",
-          "league_position": 10,
+          "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000406+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751449+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9352,9 +9847,9 @@
         "napoli": {
           "id": 6195,
           "name": "Napoli",
-          "league_position": 12,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000409+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751451+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9366,23 +9861,122 @@
         "torino": {
           "id": 416,
           "name": "Torino",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000413+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:32:03.114574+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 01/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Monza",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Round of 32",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904449",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "AC Milan",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893350",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Sassuolo",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893362",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "9:15 PM",
+              "home_away": "H",
+              "opponent": "Carrarese",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "First Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904458",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Fiorentina",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893365",
+              "ranking": "(14.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              1,
+              1,
+              2
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              2,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
         "lecce": {
           "id": 1005,
           "name": "Lecce",
-          "league_position": 14,
+          "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000416+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751455+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9396,12 +9990,92 @@
           "name": "Bologna",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000423+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:31:26.444031+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 13/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Napoli",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893379",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Sassuolo",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893363",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Mon 31/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Atalanta",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893353",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Mon 24/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Lazio",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893344",
+              "ranking": "(16.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              1,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -9410,12 +10084,111 @@
           "name": "Parma",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000427+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:32:58.657731+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 01/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Cremonese",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "Round of 32",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904450",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Monza",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893370",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Juventus",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893356",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Cagliari",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893348",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Mon 14/09/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Como",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893374",
+              "ranking": "(16.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              2,
+              1,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -9424,7 +10197,7 @@
           "name": "Monza",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000430+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751469+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9438,12 +10211,111 @@
           "name": "Venezia",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000436+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:33:35.044786+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 02/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Udinese",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Round of 32",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904453",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Lecce",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893352",
+              "ranking": "(20.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Frosinone",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893366",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Modena",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "First Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904467",
+              "ranking": ""
+            },
+            {
+              "date": "Fri 28/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "AC Milan",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893359",
+              "ranking": "(18.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              0,
+              2,
+              3,
+              0
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              3,
+              2,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -9452,12 +10324,111 @@
           "name": "Genoa",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000434+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:32:21.348743+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 30/08/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Lazio",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893357",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Sun 16/08/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Ascoli",
+              "opponent_id": null,
+              "score": [
+                4,
+                1
+              ],
+              "matchday": "First Round",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4904430",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Napoli",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893346",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Frosinone",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893375",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Fri 04/09/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Como",
+              "opponent_id": null,
+              "score": [
+                1,
+                4
+              ],
+              "matchday": "3",
+              "competition": "Serie A",
+              "league_id": "IT1",
+              "match_id": "4893367",
+              "ranking": "(17.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              4,
+              0,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              2,
+              1,
+              4
+            ]
           },
           "h2h": {}
         },
@@ -9466,7 +10437,7 @@
           "name": "Fiorentina",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-13T08:12:33.000420+00:00",
+          "last_scraped": "2026-09-15T08:29:00.751462+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33115,7 +34086,7 @@
           "name": "Parma U20",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720126+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305401+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33129,7 +34100,7 @@
           "name": "Inter U20",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720114+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305388+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33141,9 +34112,9 @@
         "roma_u20": {
           "id": 11997,
           "name": "Roma U20",
-          "league_position": 5,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.773349+00:00",
+          "last_scraped": "2026-09-15T08:29:27.366116+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -33175,7 +34146,23 @@
               "competition": "Primavera 1",
               "league_id": "IJ1",
               "match_id": "4906502",
-              "ranking": "(5.)"
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Mon 14/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Como U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906532",
+              "ranking": "(3.)"
             },
             {
               "date": "Fri 04/09/26",
@@ -33198,16 +34185,19 @@
             "form": [
               "W",
               "W",
+              "D",
               "D"
             ],
             "goals_scored": [
               3,
               3,
+              1,
               1
             ],
             "goals_conceded": [
               1,
               2,
+              1,
               1
             ]
           },
@@ -33218,7 +34208,7 @@
           "name": "Milan U20",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720155+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305417+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33232,12 +34222,92 @@
           "name": "Lazio U20",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720129+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:31:08.194856+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "AlbinoLeffe U20",
+              "opponent_id": null,
+              "score": [
+                6,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906511",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Lecce U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906500",
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Cesena U20",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906526",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Parma U20",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906520",
+              "ranking": "(1.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              6,
+              2,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -33246,7 +34316,7 @@
           "name": "Bologna U20",
           "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720162+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305426+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33260,7 +34330,7 @@
           "name": "Cagliari U20",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720166+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305430+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33272,9 +34342,9 @@
         "empoli_u20": {
           "id": 8492,
           "name": "Empoli U20",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720135+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305413+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33286,9 +34356,9 @@
         "cesena_u20": {
           "id": 20106,
           "name": "Cesena U20",
-          "league_position": 10,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720169+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305437+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33300,9 +34370,9 @@
         "como_u20": {
           "id": 14694,
           "name": "Como U20",
-          "league_position": 11,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:02:04.356768+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305434+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -33377,7 +34447,7 @@
           "name": "Genoa U20",
           "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720184+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305449+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33391,12 +34461,92 @@
           "name": "Monza U20",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720180+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:33:53.192563+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 06/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Verona U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906524",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Roma U20",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906502",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "Lecce U20",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906530",
+              "ranking": "(12.)"
+            },
+            {
+              "date": "Mon 31/08/26",
+              "time": "4:45 PM",
+              "home_away": "H",
+              "opponent": "Genoa U20",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906512",
+              "ranking": "(14.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              2,
+              2,
+              2,
+              0
+            ],
+            "goals_conceded": [
+              1,
+              3,
+              2,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -33405,7 +34555,7 @@
           "name": "Verona U20",
           "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720159+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305422+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33419,7 +34569,7 @@
           "name": "Atalanta U20",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720194+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305460+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33433,12 +34583,92 @@
           "name": "Lecce U20",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720191+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:34:30.074486+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 30/08/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Torino U20",
+              "opponent_id": null,
+              "score": [
+                3,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906514",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "Lazio U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906500",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Monza U20",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906530",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Fri 04/09/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "Roma U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906521",
+              "ranking": "(14.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "L",
+              "D",
+              "D"
+            ],
+            "goals_scored": [
+              3,
+              1,
+              2,
+              1
+            ],
+            "goals_conceded": [
+              3,
+              2,
+              2,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -33447,12 +34677,111 @@
           "name": "Fiorentina U20",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720201+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:30:50.220853+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 09/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Atalanta U20",
+              "opponent_id": null,
+              "score": [
+                3,
+                4
+              ],
+              "matchday": "Final",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4914423",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 13/09/26",
+              "time": "1:00 PM",
+              "home_away": "H",
+              "opponent": "Empoli U20",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906527",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:45 PM",
+              "home_away": "A",
+              "opponent": "Sassuolo U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906503",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Genoa U20",
+              "opponent_id": null,
+              "score": [
+                3,
+                3
+              ],
+              "matchday": "3",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906519",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Mon 31/08/26",
+              "time": "4:45 PM",
+              "home_away": "H",
+              "opponent": "Verona U20",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906509",
+              "ranking": "(11.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "L"
+            ],
+            "goals_scored": [
+              3,
+              0,
+              1,
+              3,
+              0
+            ],
+            "goals_conceded": [
+              4,
+              1,
+              1,
+              3,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -33461,7 +34790,7 @@
           "name": "Juventus U20",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720205+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305473+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33475,7 +34804,7 @@
           "name": "Torino U20",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720177+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305441+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33489,12 +34818,92 @@
           "name": "Sassuolo U20",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720187+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-15T08:31:44.736804+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:45 PM",
+              "home_away": "H",
+              "opponent": "Fiorentina U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906503",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Bologna U20",
+              "opponent_id": null,
+              "score": [
+                5,
+                3
+              ],
+              "matchday": "4",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906533",
+              "ranking": "(19.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Cagliari U20",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906517",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Fri 28/08/26",
+              "time": "5:00 PM",
+              "home_away": "A",
+              "opponent": "Parma U20",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Primavera 1",
+              "league_id": "IJ1",
+              "match_id": "4906513",
+              "ranking": "(12.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              5,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              1,
+              3,
+              2,
+              4
+            ]
           },
           "h2h": {}
         },
@@ -33503,7 +34912,7 @@
           "name": "AlbinoLeffe U20",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-14T12:01:45.720198+00:00",
+          "last_scraped": "2026-09-15T08:29:27.305465+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -56066,6 +57475,278 @@
           "league_position": null,
           "total_teams": 0,
           "last_scraped": "2026-09-15T06:04:59.612976+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "IJ2B": {
+      "name": "Primavera 2 - B",
+      "table_fetched_at": "2026-09-15T08:30:32.064865+00:00",
+      "teams": {
+        "bari_u19": {
+          "id": 14907,
+          "name": "Bari U19",
+          "league_position": 1,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064841+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "perugia_u19": {
+          "id": 14926,
+          "name": "Perugia U19",
+          "league_position": 2,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064871+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "palermo_u19": {
+          "id": 11493,
+          "name": "Palermo U19",
+          "league_position": 3,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064877+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "avellino_u19": {
+          "id": 14902,
+          "name": "Avellino U19",
+          "league_position": 4,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064884+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "catanzaro_u19": {
+          "id": 93168,
+          "name": "Catanzaro U19",
+          "league_position": 4,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064889+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "benevento_u19": {
+          "id": 26332,
+          "name": "Benevento U19",
+          "league_position": 6,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064896+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "latina_u19": {
+          "id": 27623,
+          "name": "Latina U19",
+          "league_position": 6,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064902+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "monopoli_u19": {
+          "id": 100631,
+          "name": "Monopoli U19",
+          "league_position": 6,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064907+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "pisa_u19": {
+          "id": 14821,
+          "name": "Pisa U19",
+          "league_position": 9,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064913+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "pescara_u19": {
+          "id": 8525,
+          "name": "Pescara U19",
+          "league_position": 10,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064918+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "spezia_u19": {
+          "id": 14893,
+          "name": "Spezia U19",
+          "league_position": 11,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064924+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ascoli_u19": {
+          "id": 14909,
+          "name": "Ascoli U19",
+          "league_position": 12,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064929+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "napoli_u19": {
+          "id": 12819,
+          "name": "Napoli U19",
+          "league_position": 13,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.126386+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Catanzaro U19",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Primavera 2 - B",
+              "league_id": "IJ2B",
+              "match_id": "5014176",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Avellino U19",
+              "opponent_id": null,
+              "score": [
+                3,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Primavera 2 - B",
+              "league_id": "IJ2B",
+              "match_id": "5014165",
+              "ranking": "(13.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              2,
+              1
+            ],
+            "goals_conceded": [
+              3,
+              3
+            ]
+          },
+          "h2h": {}
+        },
+        "frosinone_u19": {
+          "id": 17664,
+          "name": "Frosinone U19",
+          "league_position": 14,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064940+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cosenza_u19": {
+          "id": 26337,
+          "name": "Cosenza U19",
+          "league_position": 15,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064944+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "salernitana_u19": {
+          "id": 14968,
+          "name": "Salernitana U19",
+          "league_position": 16,
+          "total_teams": 16,
+          "last_scraped": "2026-09-15T08:30:32.064949+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
