@@ -1,33 +1,423 @@
 {
   "meta": {
-    "date": "2026-09-15",
-    "generatedAt": "2026-09-15T21:09:23.653398+03:00",
+    "date": "2026-09-16",
+    "generatedAt": "2026-09-16T00:07:19.569863+03:00",
     "scanned": 20,
-    "elapsedSeconds": 526.0
+    "elapsedSeconds": 402.9
   },
   "matches": [
     {
-      "id": "alhilalsfcalgharafasc",
-      "league": "Football / International / AFC Champions League",
-      "home": "Al Hilal SFC",
-      "away": "Al Gharafa SC",
-      "time": "09:15",
+      "id": "academiadelbalompiebolivianoth",
+      "league": "Football / Bolivia / Division Profesional",
+      "home": "Academia del Balompie Boliviano",
+      "away": "The Strongest",
+      "time": "12:15",
       "odds": {
-        "home": 1.02,
-        "draw": 20.16,
-        "away": 58.78
+        "home": 4.36,
+        "draw": 4.37,
+        "away": 1.58
       },
       "home_stats": {
-        "name": "Al Hilal SFC",
+        "name": "Academia del Balompie Boliviano",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 29,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "The Strongest",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 3,
+        "total_teams_in_league": 29,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "crvascodagamarjindependientesa",
+      "league": "Football / International / Copa Sudamericana",
+      "home": "CR Vasco da Gama RJ",
+      "away": "Independiente Santa Fe",
+      "time": "01:00",
+      "odds": {
+        "home": 1.35,
+        "draw": 4.8,
+        "away": 8.55
+      },
+      "home_stats": {
+        "name": "CR Vasco da Gama RJ",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 4,
+        "total_teams_in_league": 14,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Independiente Santa Fe",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 14,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "barrafcscblumenauecsc",
+      "league": "Football / Brazil / Copa Santa Catarina",
+      "home": "Barra FC SC",
+      "away": "Blumenau EC SC",
+      "time": "01:00",
+      "odds": {
+        "home": 3.73,
+        "draw": 3.35,
+        "away": 1.76
+      },
+      "home_stats": {
+        "name": "Barra FC SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 20,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Al Gharafa SC",
+        "name": "Blumenau EC SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "tacuaryasuncion12dejuniodevill",
+      "league": "Football / Paraguay / Segunda Division",
+      "home": "Tacuary Asuncion",
+      "away": "12 de Junio de Villa Hayes",
+      "time": "01:00",
+      "odds": {
+        "home": 4.98,
+        "draw": 3.65,
+        "away": 1.63
+      },
+      "home_stats": {
+        "name": "Tacuary Asuncion",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 15,
+        "total_teams_in_league": 16,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "12 de Junio de Villa Hayes",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 16,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "carabobofcdeportivolaguaira",
+      "league": "Football / Venezuela / Primera Division",
+      "home": "Carabobo FC",
+      "away": "Deportivo La Guaira",
+      "time": "01:00",
+      "odds": {
+        "home": 1.74,
+        "draw": 3.5,
+        "away": 4.46
+      },
+      "home_stats": {
+        "name": "Carabobo FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 14,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Deportivo La Guaira",
+        "form": [
+          "D",
+          "D",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 14,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "barranquillafcindependienteval",
+      "league": "Football / Colombia / Primera B",
+      "home": "Barranquilla FC",
+      "away": "Independiente Valle Del Cauca",
+      "time": "01:00",
+      "odds": {
+        "home": 2.62,
+        "draw": 3.35,
+        "away": 2.57
+      },
+      "home_stats": {
+        "name": "Barranquilla FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Independiente Valle Del Cauca",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "caplatensefluminensefcrj",
+      "league": "Football / International / Copa Libertadores",
+      "home": "CA Platense",
+      "away": "Fluminense FC RJ",
+      "time": "01:00",
+      "odds": {
+        "home": 2.93,
+        "draw": 2.89,
+        "away": 2.69
+      },
+      "home_stats": {
+        "name": "CA Platense",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Fluminense FC RJ",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "deportivotachiraacademiapuerto",
+      "league": "Football / Venezuela / Primera Division",
+      "home": "Deportivo Tachira",
+      "away": "Academia Puerto Cabello",
+      "time": "01:30",
+      "odds": {
+        "home": 2.16,
+        "draw": 3.2,
+        "away": 3.28
+      },
+      "home_stats": {
+        "name": "Deportivo Tachira",
+        "form": [
+          "D",
+          "D",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "Academia Puerto Cabello",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "londrinaecpraapontepretasp",
+      "league": "Football / Brazil / Brasileiro Serie B",
+      "home": "Londrina EC PR",
+      "away": "AA Ponte Preta SP",
+      "time": "01:30",
+      "odds": {
+        "home": 1.28,
+        "draw": 5.4,
+        "away": 9.55
+      },
+      "home_stats": {
+        "name": "Londrina EC PR",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "away_stats": {
+        "name": "AA Ponte Preta SP",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gdprudentespcalinensesp",
+      "league": "Football / Brazil / Copa Paulista",
+      "home": "GD Prudente SP",
+      "away": "CA Linense SP",
+      "time": "01:30",
+      "odds": {
+        "home": 2.53,
+        "draw": 3.06,
+        "away": 2.72
+      },
+      "home_stats": {
+        "name": "GD Prudente SP",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CA Linense SP",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "nauticopeoperarioferroviarioec",
+      "league": "Football / Brazil / Brasileiro Serie B",
+      "home": "Nautico PE",
+      "away": "Operario Ferroviario EC PR",
+      "time": "01:30",
+      "odds": {
+        "home": 1.83,
+        "draw": 3.5,
+        "away": 4.28
+      },
+      "home_stats": {
+        "name": "Nautico PE",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Operario Ferroviario EC PR",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "forgefchamiltonfcsupraduquebec",
+      "league": "Football / Canada / Canadian Championship",
+      "home": "Forge FC Hamilton",
+      "away": "FC Supra Du Quebec",
+      "time": "02:00",
+      "odds": {
+        "home": 1.59,
+        "draw": 4.09,
+        "away": 4.75
+      },
+      "home_stats": {
+        "name": "Forge FC Hamilton",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FC Supra Du Quebec",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -40,945 +430,355 @@
       "total_teams_in_league": 20
     },
     {
-      "id": "koronakielcegornikzabrze",
-      "league": "Football / Poland / Ekstraklasa",
-      "home": "Korona Kielce",
-      "away": "Gornik Zabrze",
-      "time": "09:30",
+      "id": "indyelevenbrooklynfc",
+      "league": "Football / USA / USL Championship",
+      "home": "Indy Eleven",
+      "away": "Brooklyn FC",
+      "time": "02:00",
       "odds": {
-        "home": 2.66,
-        "draw": 3.38,
-        "away": 2.58
+        "home": 1.77,
+        "draw": 4.15,
+        "away": 3.78
       },
       "home_stats": {
-        "name": "Korona Kielce",
+        "name": "Indy Eleven",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Brooklyn FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "unionespanoladeportestemuco",
+      "league": "Football / Chile / Primera B",
+      "home": "Union Espanola",
+      "away": "Deportes Temuco",
+      "time": "02:30",
+      "odds": {
+        "home": 2.18,
+        "draw": 3.3,
+        "away": 3.13
+      },
+      "home_stats": {
+        "name": "Union Espanola",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "Deportes Temuco",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 20,
+        "opposition_position": 10
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ucvfcacademiaanzoateguifc",
+      "league": "Football / Venezuela / Primera Division",
+      "home": "UCV FC",
+      "away": "Academia Anzoategui FC",
+      "time": "02:30",
+      "odds": {
+        "home": 1.58,
+        "draw": 3.98,
+        "away": 5.02
+      },
+      "home_stats": {
+        "name": "UCV FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 8,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Academia Anzoategui FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "crbrasilalscrecifepe",
+      "league": "Football / Brazil / Brasileiro Serie B",
+      "home": "CR Brasil AL",
+      "away": "SC Recife PE",
+      "time": "03:00",
+      "odds": {
+        "home": 1.9,
+        "draw": 3.6,
+        "away": 3.79
+      },
+      "home_stats": {
+        "name": "CR Brasil AL",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "SC Recife PE",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "saopaulofcspbocajuniors",
+      "league": "Football / International / Copa Sudamericana",
+      "home": "Sao Paulo FC SP",
+      "away": "Boca Juniors",
+      "time": "03:30",
+      "odds": {
+        "home": 2.29,
+        "draw": 3.1,
+        "away": 3.33
+      },
+      "home_stats": {
+        "name": "Sao Paulo FC SP",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "Boca Juniors",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ecbahiabawomensccorinthiansspw",
+      "league": "Football / Brazil / Campeonato Brasileiro, Women",
+      "home": "EC Bahia BA Women",
+      "away": "SC Corinthians SP Women",
+      "time": "03:30",
+      "odds": {
+        "home": 4.98,
+        "draw": 3.98,
+        "away": 1.58
+      },
+      "home_stats": {
+        "name": "EC Bahia BA Women",
         "form": [
-          "W",
+          "D",
           "L",
           "D",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          1,
-          1,
-          1
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 18,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Gornik Zabrze",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          4
-        ],
-        "league_position": null,
-        "total_teams_in_league": 18,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "peterboroughunitedbarnsleyfc",
-      "league": "Football / England / EFL Cup",
-      "home": "Peterborough United",
-      "away": "Barnsley FC",
-      "time": "09:30",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.98,
-        "away": 2.64
-      },
-      "home_stats": {
-        "name": "Peterborough United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Barnsley FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "bostonunitedfcwokingfc",
-      "league": "Football / England / National League",
-      "home": "Boston United FC",
-      "away": "Woking FC",
-      "time": "09:45",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.49,
-        "away": 2.99
-      },
-      "home_stats": {
-        "name": "Boston United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Woking FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "penybontfcbritonferry",
-      "league": "Football / Wales / Cymru Premier",
-      "home": "Pen-y-Bont FC",
-      "away": "Briton Ferry",
-      "time": "09:45",
-      "odds": {
-        "home": 1.44,
-        "draw": 4.29,
-        "away": 7.02
-      },
-      "home_stats": {
-        "name": "Pen-y-Bont FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 12
-      },
-      "away_stats": {
-        "name": "Briton Ferry",
-        "form": [
           "L",
           "W",
-          "L",
           "W",
-          "L"
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "W",
+          "W",
+          "W",
+          "W"
         ],
         "goals_scored": [
+          2,
+          1,
           1,
           2,
-          0,
+          2,
+          2,
           1,
-          0
+          1,
+          0,
+          0,
+          3,
+          2,
+          3,
+          3,
+          2
         ],
         "goals_conceded": [
-          4,
+          2,
+          2,
           1,
           3,
+          1,
           0,
+          1,
+          1,
+          0,
+          0,
+          3,
+          0,
+          2,
+          2,
           1
         ],
-        "league_position": 12,
+        "league_position": 4,
         "total_teams_in_league": 20,
-        "opposition_position": 12
+        "opposition_position": 13
+      },
+      "away_stats": {
+        "name": "SC Corinthians SP Women",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "D",
+          "D",
+          "W",
+          "D",
+          "L",
+          "W",
+          "L",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          3,
+          3,
+          1,
+          0,
+          2,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "boyacachicofcalianzafcvalledup",
+      "league": "Football / Colombia / Primera A, Apertura",
+      "home": "Boyaca Chico FC",
+      "away": "Alianza FC Valledupar",
+      "time": "03:30",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.38,
+        "away": 4.47
+      },
+      "home_stats": {
+        "name": "Boyaca Chico FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 19
+      },
+      "away_stats": {
+        "name": "Alianza FC Valledupar",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opposition_position": 19
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "thenewsaintsfcflinttownunited",
-      "league": "Football / Wales / Cymru Premier",
-      "home": "The New Saints FC",
-      "away": "Flint Town United",
-      "time": "09:45",
+      "id": "csddoradossinaloacancunfc",
+      "league": "Football / Mexico / Liga de Expansion MX, Apertura",
+      "home": "CSD Dorados Sinaloa",
+      "away": "Cancun FC",
+      "time": "04:00",
       "odds": {
-        "home": 1.07,
-        "draw": 11.46,
-        "away": 23.79
+        "home": 2.47,
+        "draw": 3.44,
+        "away": 2.67
       },
       "home_stats": {
-        "name": "The New Saints FC",
+        "name": "CSD Dorados Sinaloa",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 1,
         "total_teams_in_league": 16,
-        "opposition_position": 13
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "Flint Town United",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          1,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          1,
-          1,
-          1
-        ],
-        "league_position": 13,
+        "name": "Cancun FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 16,
-        "opposition_position": 13
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "holywelltowncolwynbay",
-      "league": "Football / Wales / Cymru Premier",
-      "home": "Holywell Town",
-      "away": "Colwyn Bay",
-      "time": "09:45",
-      "odds": {
-        "home": 7.64,
-        "draw": 5.5,
-        "away": 1.29
-      },
-      "home_stats": {
-        "name": "Holywell Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Colwyn Bay",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          0,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          1,
-          0,
-          0
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 83,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "carlisleunitedforestgreenrover",
-      "league": "Football / England / National League",
-      "home": "Carlisle United",
-      "away": "Forest Green Rovers",
-      "time": "09:45",
-      "odds": {
-        "home": 1.95,
-        "draw": 3.98,
-        "away": 3.27
-      },
-      "home_stats": {
-        "name": "Carlisle United",
-        "form": [
-          "W",
-          "D",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          4,
-          1,
-          2,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          2,
-          3,
-          2
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 24,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Forest Green Rovers",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          4,
-          3,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          0,
-          2,
-          0
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 24,
-        "opposition_position": 7
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "hibernianfckilmarnockfc",
-      "league": "Football / Scotland / Premiership",
-      "home": "Hibernian FC",
-      "away": "Kilmarnock FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.38,
-        "draw": 5.16,
-        "away": 6.4
-      },
-      "home_stats": {
-        "name": "Hibernian FC",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          4,
-          2,
-          0,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          2,
-          0,
-          0
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 12,
-        "opposition_position": 12
-      },
-      "away_stats": {
-        "name": "Kilmarnock FC",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          4,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          2,
-          5,
-          4
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 12,
-        "opposition_position": 12
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "falkirkfcheartofmidlothianfc",
-      "league": "Football / Scotland / Premiership",
-      "home": "Falkirk FC",
-      "away": "Heart of Midlothian FC",
-      "time": "09:45",
-      "odds": {
-        "home": 3.43,
-        "draw": 3.66,
-        "away": 1.99
-      },
-      "home_stats": {
-        "name": "Falkirk FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Heart of Midlothian FC",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          6,
-          0,
-          0,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          5,
-          2,
-          4,
-          2,
-          1
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 20,
-        "opposition_position": 3
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "limavadyunitedfcbangorfc",
-      "league": "Football / Northern Ireland / Premiership",
-      "home": "Limavady United FC",
-      "away": "Bangor FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.96,
-        "draw": 3.74,
-        "away": 3.4
-      },
-      "home_stats": {
-        "name": "Limavady United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Bangor FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "motherwellfcaberdeenfc",
-      "league": "Football / Scotland / Premiership",
-      "home": "Motherwell FC",
-      "away": "Aberdeen FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.79,
-        "draw": 3.81,
-        "away": 4.03
-      },
-      "home_stats": {
-        "name": "Motherwell FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 12,
-        "opposition_position": 10
-      },
-      "away_stats": {
-        "name": "Aberdeen FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 10,
-        "total_teams_in_league": 12,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "larnefccliftonvillefc",
-      "league": "Football / Northern Ireland / Premiership",
-      "home": "Larne FC",
-      "away": "Cliftonville FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.48,
-        "draw": 4.48,
-        "away": 5.84
-      },
-      "home_stats": {
-        "name": "Larne FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Cliftonville FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "crusadersfcdungannonswifts",
-      "league": "Football / Northern Ireland / Premiership",
-      "home": "Crusaders FC",
-      "away": "Dungannon Swifts",
-      "time": "09:45",
-      "odds": {
-        "home": 3.4,
-        "draw": 3.74,
-        "away": 1.97
-      },
-      "home_stats": {
-        "name": "Crusaders FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Dungannon Swifts",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "trefelinbgccambrianunited",
-      "league": "Football / Wales / Cymru Premier",
-      "home": "Trefelin BGC",
-      "away": "Cambrian United",
-      "time": "09:45",
-      "odds": {
-        "home": 4.18,
-        "draw": 3.88,
-        "away": 1.75
-      },
-      "home_stats": {
-        "name": "Trefelin BGC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 10
-      },
-      "away_stats": {
-        "name": "Cambrian United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 10,
-        "total_teams_in_league": 16,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "billericaytownbraintreetownfc",
-      "league": "Football / England / National League South",
-      "home": "Billericay Town",
-      "away": "Braintree Town FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.68,
-        "draw": 4.07,
-        "away": 4.44
-      },
-      "home_stats": {
-        "name": "Billericay Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Braintree Town FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "bristolcitylincolncity",
-      "league": "Football / England / Championship",
-      "home": "Bristol City",
-      "away": "Lincoln City",
-      "time": "09:45",
-      "odds": {
-        "home": 1.9,
-        "draw": 3.67,
-        "away": 4.1
-      },
-      "home_stats": {
-        "name": "Bristol City",
-        "form": [
-          "L",
-          "D",
-          "W",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          2,
-          3,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          1,
-          1,
-          1,
-          4
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 24,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "Lincoln City",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "D",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          0,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          0,
-          0,
-          1,
-          0
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 24,
-        "opposition_position": 16
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 24
-    },
-    {
-      "id": "barrytownunitedfcammanford",
-      "league": "Football / Wales / Cymru Premier",
-      "home": "Barry Town United FC",
-      "away": "Ammanford",
-      "time": "09:45",
-      "odds": {
-        "home": 1.1,
-        "draw": 8.69,
-        "away": 23.23
-      },
-      "home_stats": {
-        "name": "Barry Town United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": 15
-      },
-      "away_stats": {
-        "name": "Ammanford",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 83,
-        "opposition_position": 15
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "middlesbroughfcmillwallfc",
-      "league": "Football / England / Championship",
-      "home": "Middlesbrough FC",
-      "away": "Millwall FC",
-      "time": "09:45",
-      "odds": {
-        "home": 1.43,
-        "draw": 5.23,
-        "away": 6.49
-      },
-      "home_stats": {
-        "name": "Middlesbrough FC",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          3,
-          1,
-          1,
-          4
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          1,
-          1,
-          0,
-          3
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 24,
-        "opposition_position": 13
-      },
-      "away_stats": {
-        "name": "Millwall FC",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          1,
-          0,
-          4,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          5,
-          3,
-          0,
-          3
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 24,
-        "opposition_position": 13
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Middlesbrough FC",
-            "away": "Millwall FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Millwall FC",
-            "away": "Middlesbrough FC",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "home": "Millwall FC",
-            "away": "Middlesbrough FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Middlesbrough FC",
-            "away": "Millwall FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Millwall FC",
-            "away": "Middlesbrough FC",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "home": "Middlesbrough FC",
-            "away": "Millwall FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Middlesbrough FC",
-            "away": "Millwall FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Millwall FC",
-            "away": "Middlesbrough FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Millwall FC",
-            "away": "Middlesbrough FC",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Middlesbrough FC",
-            "away": "Millwall FC",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 24
-    },
-    {
-      "id": "westhamunitedfulhamfc",
-      "league": "Football / England / EFL Cup",
-      "home": "West Ham United",
-      "away": "Fulham FC",
-      "time": "09:45",
-      "odds": {
-        "home": 2.65,
-        "draw": 3.79,
-        "away": 2.4
-      },
-      "home_stats": {
-        "name": "West Ham United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 22,
-        "total_teams_in_league": 31,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Fulham FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 31,
         "opposition_position": null
       },
       "h2h": null,
