@@ -1,620 +1,48 @@
 {
   "meta": {
     "date": "2026-09-15",
-    "generatedAt": "2026-09-15T12:07:58.954600+03:00",
-    "scanned": 20,
-    "elapsedSeconds": 421.6
+    "generatedAt": "2026-09-15T15:10:39.925296+03:00",
+    "scanned": 17,
+    "elapsedSeconds": 599.3
   },
   "matches": [
     {
-      "id": "coalindiaspabhawaniporefc",
-      "league": "Football / India / Calcutta Premier Div.",
-      "home": "Coal India Spa",
-      "away": "Bhawanipore FC",
-      "time": "12:30",
+      "id": "kasukakarketudilifc",
+      "league": "Football / International / AFC Challenge League",
+      "home": "Kasuka",
+      "away": "Karketu Dili FC",
+      "time": "03:15",
       "odds": {
-        "home": 4.59,
-        "draw": 3.24,
-        "away": 1.74
-      },
-      "home_stats": {
-        "name": "Coal India Spa",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Bhawanipore FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "southmelbournefclionsfc",
-      "league": "Football / Australia / Australia Cup",
-      "home": "South Melbourne FC",
-      "away": "Lions FC",
-      "time": "12:30",
-      "odds": {
-        "home": 1.74,
-        "draw": 3.92,
-        "away": 4.18
-      },
-      "home_stats": {
-        "name": "South Melbourne FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 4,
-        "total_teams_in_league": 14,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Lions FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 14,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "mlsfclawtngtlaidintharfc",
-      "league": "Football / India / Mizoram Premier League",
-      "home": "Mls FC Lawtngtlai",
-      "away": "Dinthar FC",
-      "time": "12:30",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.66,
-        "away": 2.93
-      },
-      "home_stats": {
-        "name": "Mls FC Lawtngtlai",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Dinthar FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "vietnamu23kuwaitu23n",
-      "league": "Football / International / Asian Games",
-      "home": "Vietnam U23",
-      "away": "Kuwait U23 (n)",
-      "time": "01:00",
-      "odds": {
-        "home": 1.79,
-        "draw": 3.4,
-        "away": 4.0
-      },
-      "home_stats": {
-        "name": "Vietnam U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 1,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kuwait U23 (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 1,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "politehnicatimisoarawomenafcun",
-      "league": "Football / Romania / Superliga, Women",
-      "home": "Politehnica Timisoara Women",
-      "away": "AFC Universitatea Olimpia Cluj Women",
-      "time": "01:00",
-      "odds": {
-        "home": 2.03,
-        "draw": 3.84,
-        "away": 3.16
-      },
-      "home_stats": {
-        "name": "Politehnica Timisoara Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "AFC Universitatea Olimpia Cluj Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "gambaosakaconganhanoifc",
-      "league": "Football / International / AFC Champions League",
-      "home": "Gamba Osaka",
-      "away": "Cong An Ha Noi FC",
-      "time": "01:00",
-      "odds": {
-        "home": 1.4,
-        "draw": 5.0,
-        "away": 6.24
-      },
-      "home_stats": {
-        "name": "Gamba Osaka",
-        "form": [
-          "D",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          2,
-          0,
-          3
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opposition_position": 13
-      },
-      "away_stats": {
-        "name": "Cong An Ha Noi FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 13,
-        "total_teams_in_league": 20,
-        "opposition_position": 13
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "daejeoncitizenfckyotosangafc",
-      "league": "Football / International / AFC Champions League",
-      "home": "Daejeon Citizen FC",
-      "away": "Kyoto Sanga FC",
-      "time": "01:00",
-      "odds": {
-        "home": 1.75,
-        "draw": 3.86,
-        "away": 4.23
-      },
-      "home_stats": {
-        "name": "Daejeon Citizen FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 113,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kyoto Sanga FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 113,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 113
-    },
-    {
-      "id": "ratchaburifcshanghaiportfc",
-      "league": "Football / International / AFC Champions League",
-      "home": "Ratchaburi FC",
-      "away": "Shanghai Port FC",
-      "time": "01:00",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.48,
-        "away": 2.38
-      },
-      "home_stats": {
-        "name": "Ratchaburi FC",
-        "form": [
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "Shanghai Port FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "kashimaantlersnewcastleunitedj",
-      "league": "Football / International / AFC Champions League",
-      "home": "Kashima Antlers",
-      "away": "Newcastle United Jets",
-      "time": "01:00",
-      "odds": {
-        "home": 1.22,
-        "draw": 6.97,
-        "away": 9.08
-      },
-      "home_stats": {
-        "name": "Kashima Antlers",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          2,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          4,
-          1,
-          0,
-          2,
-          1
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Newcastle United Jets",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "qataru23republicofkoreau23n",
-      "league": "Football / International / Asian Games",
-      "home": "Qatar U23",
-      "away": "Republic of Korea U23 (n)",
-      "time": "01:30",
-      "odds": {
-        "home": 16.0,
-        "draw": 6.6,
-        "away": 1.13
-      },
-      "home_stats": {
-        "name": "Qatar U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 0,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Republic of Korea U23 (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 0,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "chiangmaiunitedkhonkaenunitedf",
-      "league": "Football / Thailand / Thai League 2",
-      "home": "Chiangmai United",
-      "away": "Khon Kaen United FC",
-      "time": "02:00",
-      "odds": {
-        "home": 2.9,
-        "draw": 3.3,
-        "away": 2.22
-      },
-      "home_stats": {
-        "name": "Chiangmai United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": 15
-      },
-      "away_stats": {
-        "name": "Khon Kaen United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 61,
-        "opposition_position": 15
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "policeterofcsongkhlafc",
-      "league": "Football / Thailand / Thai League 2",
-      "home": "Police Tero FC",
-      "away": "Songkhla FC",
-      "time": "02:30",
-      "odds": {
-        "home": 2.11,
-        "draw": 3.15,
-        "away": 3.25
-      },
-      "home_stats": {
-        "name": "Police Tero FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 18,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Songkhla FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 18,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "coventrycityu21barnsleyfcu21",
-      "league": "Football / England / Professional Development League",
-      "home": "Coventry City U21",
-      "away": "Barnsley FC U21",
-      "time": "03:00",
-      "odds": {
-        "home": 2.11,
-        "draw": 4.11,
-        "away": 2.68
-      },
-      "home_stats": {
-        "name": "Coventry City U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 110,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Barnsley FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 110,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "peterboroughunitedu21bristolci",
-      "league": "Football / England / Professional Development League",
-      "home": "Peterborough United U21",
-      "away": "Bristol City U21",
-      "time": "03:00",
-      "odds": {
-        "home": 2.04,
-        "draw": 4.0,
-        "away": 2.86
-      },
-      "home_stats": {
-        "name": "Peterborough United U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 109,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Bristol City U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 109,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "ptsatunfcmuangthongunited",
-      "league": "Football / Thailand / Thai League 2",
-      "home": "PT Satun FC",
-      "away": "Muang Thong United",
-      "time": "03:00",
-      "odds": {
-        "home": 2.44,
-        "draw": 3.2,
+        "home": 2.17,
+        "draw": 3.8,
         "away": 2.65
       },
       "home_stats": {
-        "name": "PT Satun FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 14,
-        "total_teams_in_league": 18,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Muang Thong United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 18,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "derbycountyreservessalfordcity",
-      "league": "Football / England / England Central League Cup",
-      "home": "Derby County Reserves",
-      "away": "Salford City Reserves",
-      "time": "03:00",
-      "odds": {
-        "home": 1.66,
-        "draw": 4.59,
-        "away": 4.0
-      },
-      "home_stats": {
-        "name": "Derby County Reserves",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 104,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Salford City Reserves",
+        "name": "Kasuka",
         "form": [
-          "W",
-          "W",
           "L",
-          "W",
-          "W"
+          "L"
         ],
         "goals_scored": [
-          2,
-          2,
-          0,
           1,
-          4
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          3,
-          0,
           1
         ],
-        "league_position": 2,
-        "total_teams_in_league": 104,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "nottscountyreservesmansfieldto",
-      "league": "Football / England / England Central League",
-      "home": "Notts County Reserves",
-      "away": "Mansfield Town U21",
-      "time": "03:00",
-      "odds": {
-        "home": 3.66,
-        "draw": 4.29,
-        "away": 1.77
-      },
-      "home_stats": {
-        "name": "Notts County Reserves",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 104,
-        "opposition_position": null
+        "goals_conceded": [
+          4,
+          5
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 13,
+        "opposition_position": 3
       },
       "away_stats": {
-        "name": "Mansfield Town U21",
+        "name": "Karketu Dili FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 104,
-        "opposition_position": null
+        "league_position": 3,
+        "total_teams_in_league": 13,
+        "opposition_position": 3
       },
       "h2h": null,
       "source": "betpawa"
@@ -626,17 +54,17 @@
       "away": "FC Pohang Steelers",
       "time": "03:15",
       "odds": {
-        "home": 1.85,
-        "draw": 3.62,
-        "away": 4.0
+        "home": 1.45,
+        "draw": 4.64,
+        "away": 6.0
       },
       "home_stats": {
         "name": "Beijing Guoan",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "league_position": 3,
+        "total_teams_in_league": 16,
         "opposition_position": 8
       },
       "away_stats": {
@@ -645,12 +73,12 @@
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 8,
-        "total_teams_in_league": 20,
+        "total_teams_in_league": 16,
         "opposition_position": 8
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 20
+      "total_teams_in_league": 16
     },
     {
       "id": "johordarultazimburiramunited",
@@ -659,9 +87,9 @@
       "away": "Buriram United",
       "time": "03:15",
       "odds": {
-        "home": 1.48,
-        "draw": 4.52,
-        "away": 5.82
+        "home": 1.44,
+        "draw": 4.67,
+        "away": 6.2
       },
       "home_stats": {
         "name": "Johor Darul Ta'zim",
@@ -710,9 +138,9 @@
       "away": "La Luz FC Reserves",
       "time": "03:30",
       "odds": {
-        "home": 1.87,
-        "draw": 3.77,
-        "away": 3.72
+        "home": 1.97,
+        "draw": 3.55,
+        "away": 3.55
       },
       "home_stats": {
         "name": "Montevideo Wanderers Reserves",
@@ -734,6 +162,487 @@
       },
       "h2h": null,
       "source": "betpawa"
+    },
+    {
+      "id": "ligadesportivadesofalaferrovia",
+      "league": "Football / Mozambique / Mocambola",
+      "home": "Liga Desportiva De Sofala",
+      "away": "Ferroviario de Maputo",
+      "time": "03:45",
+      "odds": {
+        "home": 2.47,
+        "draw": 2.48,
+        "away": 3.44
+      },
+      "home_stats": {
+        "name": "Liga Desportiva De Sofala",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Ferroviario de Maputo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "millwallu21boltonwanderersu21",
+      "league": "Football / England / Professional Development League",
+      "home": "Millwall U21",
+      "away": "Bolton Wanderers U21",
+      "time": "04:00",
+      "odds": {
+        "home": 1.84,
+        "draw": 3.92,
+        "away": 3.44
+      },
+      "home_stats": {
+        "name": "Millwall U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 116,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Bolton Wanderers U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 116,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "wiganathleticu21colchesterunit",
+      "league": "Football / England / Professional Development League",
+      "home": "Wigan Athletic U21",
+      "away": "Colchester United U21",
+      "time": "04:00",
+      "odds": {
+        "home": 1.51,
+        "draw": 4.97,
+        "away": 4.4
+      },
+      "home_stats": {
+        "name": "Wigan Athletic U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 117,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Colchester United U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 117,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "albionfcreservesprogresoreserv",
+      "league": "Football / Uruguay / Uruguay Primera Divisi\u00f3n Reserves",
+      "home": "Albion FC Reserves",
+      "away": "Progreso Reserves",
+      "time": "04:00",
+      "odds": {
+        "home": 2.27,
+        "draw": 3.56,
+        "away": 2.87
+      },
+      "home_stats": {
+        "name": "Albion FC Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 119,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Progreso Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 119,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "bulfcblackspowerfc",
+      "league": "Football / Uganda / Premier League",
+      "home": "Bul FC",
+      "away": "Blacks Power FC",
+      "time": "04:00",
+      "odds": {
+        "home": 1.68,
+        "draw": 3.2,
+        "away": 5.2
+      },
+      "home_stats": {
+        "name": "Bul FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Blacks Power FC",
+        "form": [
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "scvillakigezihomeboyzfc",
+      "league": "Football / Uganda / Premier League",
+      "home": "SC Villa",
+      "away": "Kigezi Homeboyz FC",
+      "time": "04:00",
+      "odds": {
+        "home": 1.29,
+        "draw": 4.19,
+        "away": 11.96
+      },
+      "home_stats": {
+        "name": "SC Villa",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          0,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          4,
+          1,
+          0,
+          2,
+          2
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "away_stats": {
+        "name": "Kigezi Homeboyz FC",
+        "form": [
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          2
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "necfcurafc",
+      "league": "Football / Uganda / Premier League",
+      "home": "NEC FC",
+      "away": "URA FC",
+      "time": "04:00",
+      "odds": {
+        "home": 2.0,
+        "draw": 2.9,
+        "away": 3.9
+      },
+      "home_stats": {
+        "name": "NEC FC",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          0
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 18,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "URA FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 18,
+        "opposition_position": 9
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "widzewlodziipoloniabytom",
+      "league": "Football / Poland / Puchar Polski",
+      "home": "Widzew Lodz II",
+      "away": "Polonia Bytom",
+      "time": "04:00",
+      "odds": {
+        "home": 7.58,
+        "draw": 5.05,
+        "away": 1.35
+      },
+      "home_stats": {
+        "name": "Widzew Lodz II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 13,
+        "total_teams_in_league": 18,
+        "opposition_position": 14
+      },
+      "away_stats": {
+        "name": "Polonia Bytom",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 14,
+        "total_teams_in_league": 18,
+        "opposition_position": 14
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "druzstevnikvelkeludincedac1904",
+      "league": "Football / Slovakia / Slovensky Pohar",
+      "home": "Druzstevnik Velke Ludince",
+      "away": "DAC 1904 Dunajska Streda",
+      "time": "04:30",
+      "odds": {
+        "home": 38.74,
+        "draw": 16.46,
+        "away": 1.02
+      },
+      "home_stats": {
+        "name": "Druzstevnik Velke Ludince",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "DAC 1904 Dunajska Streda",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ramtharvengfckananfcaizawl",
+      "league": "Football / India / Mizoram Premier League",
+      "home": "Ramthar Veng FC",
+      "away": "Kanan FC Aizawl",
+      "time": "04:30",
+      "odds": {
+        "home": 1.77,
+        "draw": 3.99,
+        "away": 3.65
+      },
+      "home_stats": {
+        "name": "Ramthar Veng FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Kanan FC Aizawl",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "arkadagfkalmuharraqsc",
+      "league": "Football / International / AFC Cup",
+      "home": "Arkadag FK",
+      "away": "Al-Muharraq SC",
+      "time": "04:45",
+      "odds": {
+        "home": 3.26,
+        "draw": 3.21,
+        "away": 2.21
+      },
+      "home_stats": {
+        "name": "Arkadag FK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 51,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Al-Muharraq SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 51,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "golgoharsirjanfcaljazirauae",
+      "league": "Football / International / AFC Cup",
+      "home": "Gol Gohar Sirjan FC",
+      "away": "Al Jazira (UAE)",
+      "time": "04:45",
+      "odds": {
+        "home": 4.88,
+        "draw": 3.91,
+        "away": 1.64
+      },
+      "home_stats": {
+        "name": "Gol Gohar Sirjan FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Al Jazira (UAE)",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "asyutpetroleummodernsportfc",
+      "league": "Football / Egypt / Premier League",
+      "home": "Asyut Petroleum",
+      "away": "Modern Sport FC",
+      "time": "05:00",
+      "odds": {
+        "home": 4.83,
+        "draw": 3.07,
+        "away": 1.89
+      },
+      "home_stats": {
+        "name": "Asyut Petroleum",
+        "form": [
+          "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          1
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "Modern Sport FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
     }
   ]
 }
