@@ -1,43 +1,11 @@
 {
   "meta": {
     "date": "2026-09-16",
-    "generatedAt": "2026-09-16T06:03:13.525566+03:00",
+    "generatedAt": "2026-09-16T09:05:52.877135+03:00",
     "scanned": 20,
-    "elapsedSeconds": 144.4
+    "elapsedSeconds": 316.9
   },
   "matches": [
-    {
-      "id": "unitedarabemiratesu23iranu23n",
-      "league": "Football / International / Asian Games",
-      "home": "United Arab Emirates U23",
-      "away": "Iran U23 (n)",
-      "time": "08:00",
-      "odds": {
-        "home": 3.75,
-        "draw": 3.25,
-        "away": 1.92
-      },
-      "home_stats": {
-        "name": "United Arab Emirates U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 1,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Iran U23 (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 1,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
     {
       "id": "thailandu23kyrgyzstanu23n",
       "league": "Football / International / Asian Games",
@@ -45,9 +13,9 @@
       "away": "Kyrgyzstan U23 (n)",
       "time": "10:00",
       "odds": {
-        "home": 1.98,
+        "home": 2.08,
         "draw": 3.25,
-        "away": 3.5
+        "away": 3.2
       },
       "home_stats": {
         "name": "Thailand U23",
@@ -77,9 +45,9 @@
       "away": "Dewa United",
       "time": "11:30",
       "odds": {
-        "home": 2.15,
+        "home": 2.17,
         "draw": 3.61,
-        "away": 3.09
+        "away": 3.04
       },
       "home_stats": {
         "name": "Borneo Samarinda",
@@ -118,9 +86,9 @@
       "away": "Thimphu FC",
       "time": "12:00",
       "odds": {
-        "home": 3.01,
-        "draw": 3.84,
-        "away": 1.97
+        "home": 4.58,
+        "draw": 4.28,
+        "away": 1.54
       },
       "home_stats": {
         "name": "Tsirang FC",
@@ -151,9 +119,9 @@
       "away": "Slavia Prague U19",
       "time": "12:00",
       "odds": {
-        "home": 1.51,
-        "draw": 5.12,
-        "away": 4.73
+        "home": 1.45,
+        "draw": 5.48,
+        "away": 5.09
       },
       "home_stats": {
         "name": "FK Teplice U19",
@@ -216,8 +184,8 @@
       "away": "FC Hradec Kralove U19",
       "time": "12:00",
       "odds": {
-        "home": 3.15,
-        "draw": 4.23,
+        "home": 3.09,
+        "draw": 4.32,
         "away": 1.94
       },
       "home_stats": {
@@ -248,9 +216,9 @@
       "away": "Mizoram Police FC",
       "time": "12:30",
       "odds": {
-        "home": 1.14,
-        "draw": 7.03,
-        "away": 13.57
+        "home": 1.19,
+        "draw": 6.58,
+        "away": 10.24
       },
       "home_stats": {
         "name": "Aizawl FC",
@@ -281,17 +249,23 @@
       "away": "Korea DPR U23 (n)",
       "time": "01:00",
       "odds": {
-        "home": 2.31,
+        "home": 2.41,
         "draw": 3.0,
-        "away": 3.0
+        "away": 2.85
       },
       "home_stats": {
         "name": "China U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
         "league_position": null,
-        "total_teams_in_league": 21,
+        "total_teams_in_league": 2,
         "opposition_position": null
       },
       "away_stats": {
@@ -300,7 +274,7 @@
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 21,
+        "total_teams_in_league": 2,
         "opposition_position": null
       },
       "h2h": null,
@@ -322,18 +296,30 @@
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
+        "league_position": 13,
+        "total_teams_in_league": 18,
+        "opposition_position": 11
       },
       "away_stats": {
         "name": "Budoni Calcio",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
+        "form": [
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          2
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 18,
+        "opposition_position": 11
       },
       "h2h": null,
       "source": "betpawa"
@@ -345,9 +331,9 @@
       "away": "Persib Bandung",
       "time": "01:00",
       "odds": {
-        "home": 1.9,
-        "draw": 3.55,
-        "away": 3.84
+        "home": 1.65,
+        "draw": 4.0,
+        "away": 4.68
       },
       "home_stats": {
         "name": "FC Seoul",
@@ -360,9 +346,21 @@
       },
       "away_stats": {
         "name": "Persib Bandung",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          0
+        ],
         "league_position": 8,
         "total_teams_in_league": 12,
         "opposition_position": 8
@@ -377,9 +375,9 @@
       "away": "Kashiwa Reysol",
       "time": "01:00",
       "odds": {
-        "home": 3.27,
-        "draw": 3.4,
-        "away": 2.16
+        "home": 3.38,
+        "draw": 3.46,
+        "away": 2.1
       },
       "home_stats": {
         "name": "Jeonbuk FC",
@@ -411,8 +409,8 @@
       "time": "01:30",
       "odds": {
         "home": 1.01,
-        "draw": 13.0,
-        "away": 35.0
+        "draw": 12.0,
+        "away": 40.0
       },
       "home_stats": {
         "name": "Japan U23",
@@ -425,9 +423,15 @@
       },
       "away_stats": {
         "name": "Hong Kong, China U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
         "league_position": null,
         "total_teams_in_league": 21,
         "opposition_position": null
@@ -442,9 +446,9 @@
       "away": "Sevilla FC U19",
       "time": "01:30",
       "odds": {
-        "home": 4.56,
-        "draw": 3.88,
-        "away": 1.69
+        "home": 4.48,
+        "draw": 3.85,
+        "away": 1.7
       },
       "home_stats": {
         "name": "Cordoba CF U19",
@@ -506,9 +510,9 @@
       "away": "Astra HFC Budapest Women",
       "time": "02:00",
       "odds": {
-        "home": 1.44,
+        "home": 1.42,
         "draw": 4.4,
-        "away": 5.6
+        "away": 5.8
       },
       "home_stats": {
         "name": "Pecsi MFC Women",
@@ -538,9 +542,9 @@
       "away": "Atletico Melilla CF U19",
       "time": "02:00",
       "odds": {
-        "home": 1.42,
-        "draw": 4.46,
-        "away": 7.17
+        "home": 1.41,
+        "draw": 4.47,
+        "away": 7.38
       },
       "home_stats": {
         "name": "Cadiz CF U19",
@@ -608,9 +612,9 @@
       "away": "Ujpesti TE Women",
       "time": "02:00",
       "odds": {
-        "home": 1.67,
-        "draw": 3.8,
-        "away": 4.2
+        "home": 1.64,
+        "draw": 3.85,
+        "away": 4.3
       },
       "home_stats": {
         "name": "MTK Hungaria Budapest Women",
@@ -640,9 +644,9 @@
       "away": "Kanchanaburi Power FC",
       "time": "02:30",
       "odds": {
-        "home": 3.0,
+        "home": 3.2,
         "draw": 3.4,
-        "away": 2.13
+        "away": 2.02
       },
       "home_stats": {
         "name": "Nakhon Pathom United FC",
@@ -672,9 +676,9 @@
       "away": "Nakhon Ratchasima FC",
       "time": "03:00",
       "odds": {
-        "home": 2.05,
-        "draw": 3.3,
-        "away": 3.2
+        "home": 2.47,
+        "draw": 3.2,
+        "away": 2.6
       },
       "home_stats": {
         "name": "Mahasarakham United FC",
@@ -693,6 +697,53 @@
         "league_position": null,
         "total_teams_in_league": 15,
         "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "inkilapfutbolsporkulububeykoza",
+      "league": "Football / Turkey / Turkiye Kupasi",
+      "home": "Inkilap Futbol Spor Kulubu",
+      "away": "Beykoz Anadolu Spor AS",
+      "time": "03:00",
+      "odds": {
+        "home": 2.31,
+        "draw": 3.05,
+        "away": 2.95
+      },
+      "home_stats": {
+        "name": "Inkilap Futbol Spor Kulubu",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 18,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "Beykoz Anadolu Spor AS",
+        "form": [
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 18,
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa"
