@@ -1,33 +1,117 @@
 {
   "meta": {
     "date": "2026-09-17",
-    "generatedAt": "2026-09-17T15:07:05.335784+03:00",
-    "scanned": 20,
-    "elapsedSeconds": 386.7
+    "generatedAt": "2026-09-17T18:06:08.556033+03:00",
+    "scanned": 15,
+    "elapsedSeconds": 309.1
   },
   "matches": [
     {
-      "id": "shanghaishenhuafcbgtampinesrov",
-      "league": "Football / International / AFC Cup",
-      "home": "Shanghai Shenhua FC",
-      "away": "BG Tampines Rovers",
-      "time": "03:15",
+      "id": "fkrostovfkdinamomoscow",
+      "league": "Football / Russian Federation / Premier League",
+      "home": "FK Rostov",
+      "away": "FK Dinamo Moscow",
+      "time": "06:30",
       "odds": {
-        "home": 1.38,
-        "draw": 5.23,
-        "away": 6.59
+        "home": 3.5,
+        "draw": 3.36,
+        "away": 2.09
       },
       "home_stats": {
-        "name": "Shanghai Shenhua FC",
+        "name": "FK Rostov",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
+        "total_teams_in_league": 51,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FK Dinamo Moscow",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 51,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 51
+    },
+    {
+      "id": "fkakrontolyattirfkakhmatgrozny",
+      "league": "Football / Russian Federation / Premier League",
+      "home": "FK Akron Tolyatti",
+      "away": "RFK Akhmat Grozny",
+      "time": "06:30",
+      "odds": {
+        "home": 2.96,
+        "draw": 3.44,
+        "away": 2.3
+      },
+      "home_stats": {
+        "name": "FK Akron Tolyatti",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 15,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "RFK Akhmat Grozny",
+        "form": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          5,
+          2,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          6,
+          1,
+          3,
+          1,
+          2
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 16
+    },
+    {
+      "id": "alkarkhalnaftmaysan",
+      "league": "Football / Iraq / Iraqi League",
+      "home": "AL Karkh",
+      "away": "AL Naft Maysan",
+      "time": "06:45",
+      "odds": {
+        "home": 2.93,
+        "draw": 2.98,
+        "away": 2.54
+      },
+      "home_stats": {
+        "name": "AL Karkh",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
         "total_teams_in_league": 20,
         "opposition_position": 3
       },
       "away_stats": {
-        "name": "BG Tampines Rovers",
+        "name": "AL Naft Maysan",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -39,138 +123,372 @@
       "source": "betpawa"
     },
     {
-      "id": "phnompenhcrownfckuchingcityfc",
-      "league": "Football / International / AFC Cup",
-      "home": "Phnom Penh Crown FC",
-      "away": "Kuching City FC",
-      "time": "03:15",
+      "id": "mikkelinpallokissatkjpkouvola",
+      "league": "Football / Finland / Kolmonen",
+      "home": "Mikkelin Pallo-Kissat",
+      "away": "Kjp Kouvola",
+      "time": "06:45",
       "odds": {
-        "home": 2.76,
-        "draw": 3.58,
-        "away": 2.33
+        "home": 1.38,
+        "draw": 5.35,
+        "away": 5.54
       },
       "home_stats": {
-        "name": "Phnom Penh Crown FC",
+        "name": "Mikkelin Pallo-Kissat",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "league_position": 7,
+        "total_teams_in_league": 10,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "Kjp Kouvola",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 10,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "rosenborgbkkvinnerwomenstabaek",
+      "league": "Football / Norway / Toppserien, Women",
+      "home": "Rosenborg BK Kvinner Women",
+      "away": "Stabaek Fotball Women",
+      "time": "07:00",
+      "odds": {
+        "home": 1.47,
+        "draw": 4.99,
+        "away": 5.98
+      },
+      "home_stats": {
+        "name": "Rosenborg BK Kvinner Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "Stabaek Fotball Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vaalerengaoslowomenhaugesundwo",
+      "league": "Football / Norway / Toppserien, Women",
+      "home": "Vaalerenga Oslo Women",
+      "away": "Haugesund Women",
+      "time": "07:00",
+      "odds": {
+        "home": 1.19,
+        "draw": 7.88,
+        "away": 11.83
+      },
+      "home_stats": {
+        "name": "Vaalerenga Oslo Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 14,
+        "total_teams_in_league": 16,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Haugesund Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 16,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "skeidfotballvaalerengaif",
+      "league": "Football / Norway / NM Cup",
+      "home": "Skeid Fotball",
+      "away": "Vaalerenga IF",
+      "time": "07:00",
+      "odds": {
+        "home": 6.58,
+        "draw": 6.17,
+        "away": 1.31
+      },
+      "home_stats": {
+        "name": "Skeid Fotball",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          4
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 14,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Kuching City FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "name": "Vaalerenga IF",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0
+        ],
         "league_position": null,
-        "total_teams_in_league": 20,
+        "total_teams_in_league": 14,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "kitcheegangwonfc",
-      "league": "Football / International / AFC Cup",
-      "home": "Kitchee",
-      "away": "Gangwon FC",
-      "time": "03:15",
+      "id": "fciberia1999fcdilagori",
+      "league": "Football / Georgia / Erovnuli Liga",
+      "home": "FC Iberia 1999",
+      "away": "FC Dila Gori",
+      "time": "07:00",
       "odds": {
-        "home": 1.52,
-        "draw": 4.49,
-        "away": 5.27
+        "home": 2.17,
+        "draw": 3.29,
+        "away": 2.99
       },
       "home_stats": {
-        "name": "Kitchee",
+        "name": "FC Iberia 1999",
         "form": [
-          "W",
           "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          3,
+          0,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 10,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "FC Dila Gori",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          3,
+          4,
+          1,
+          1
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 10,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fkloznicafkjavorivanjica",
+      "league": "Football / Serbia / Prva Liga",
+      "home": "FK Loznica",
+      "away": "FK Javor Ivanjica",
+      "time": "07:00",
+      "odds": {
+        "home": 3.3,
+        "draw": 3.1,
+        "away": 2.11
+      },
+      "home_stats": {
+        "name": "FK Loznica",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FK Javor Ivanjica",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcilevadiatallinntartujktammek",
+      "league": "Football / Estonia / Premium Liiga",
+      "home": "FCI Levadia Tallinn",
+      "away": "Tartu JK Tammeka",
+      "time": "07:00",
+      "odds": {
+        "home": 1.2,
+        "draw": 7.37,
+        "away": 10.53
+      },
+      "home_stats": {
+        "name": "FCI Levadia Tallinn",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Tartu JK Tammeka",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "doqarahfcalsalt",
+      "league": "Football / Jordan / Jordan League",
+      "home": "Doqarah FC",
+      "away": "AL Salt",
+      "time": "07:00",
+      "odds": {
+        "home": 3.62,
+        "draw": 3.53,
+        "away": 1.96
+      },
+      "home_stats": {
+        "name": "Doqarah FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "AL Salt",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "viimsijktartujkwelco",
+      "league": "Football / Estonia / Esiliiga",
+      "home": "Viimsi JK",
+      "away": "Tartu JK Welco",
+      "time": "07:00",
+      "odds": {
+        "home": 2.52,
+        "draw": 3.85,
+        "away": 2.39
+      },
+      "home_stats": {
+        "name": "Viimsi JK",
+        "form": [
           "W",
           "W"
         ],
         "goals_scored": [
           4,
-          0,
-          3,
-          3
+          4
         ],
         "goals_conceded": [
           1,
-          0,
-          2,
-          1
+          0
         ],
+        "league_position": 2,
+        "total_teams_in_league": 10,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Tartu JK Welco",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 10,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "hayalamirhassansamaalsarhansc",
+      "league": "Football / Jordan / Jordan 1st Division",
+      "home": "Hay AL Amir Hassan",
+      "away": "Sama AL Sarhan SC",
+      "time": "07:00",
+      "odds": {
+        "home": 3.8,
+        "draw": 3.2,
+        "away": 1.91
+      },
+      "home_stats": {
+        "name": "Hay AL Amir Hassan",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": 3,
-        "total_teams_in_league": 11,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "Gangwon FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 11,
-        "opposition_position": 5
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "bakusportingsabailfk",
-      "league": "Football / Azerbaijan / First Division",
-      "home": "Baku Sporting",
-      "away": "Sabail FK",
-      "time": "03:30",
-      "odds": {
-        "home": 4.58,
-        "draw": 3.62,
-        "away": 1.68
-      },
-      "home_stats": {
-        "name": "Baku Sporting",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 55,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Sabail FK",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 55,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "simalshahdagqusarfk",
-      "league": "Football / Azerbaijan / First Division",
-      "home": "Simal",
-      "away": "Shahdag Qusar FK",
-      "time": "03:30",
-      "odds": {
-        "home": 5.33,
-        "draw": 3.81,
-        "away": 1.56
-      },
-      "home_stats": {
-        "name": "Simal",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
         "total_teams_in_league": 20,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Shahdag Qusar FK",
+        "name": "Sama AL Sarhan SC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -182,27 +500,27 @@
       "source": "betpawa"
     },
     {
-      "id": "energetikmingechevircabrayil",
-      "league": "Football / Azerbaijan / First Division",
-      "home": "Energetik Mingechevir",
-      "away": "Cabrayil",
-      "time": "03:30",
+      "id": "alsareehalahlyamman",
+      "league": "Football / Jordan / Jordan 1st Division",
+      "home": "AL Sareeh",
+      "away": "Al-Ahly Amman",
+      "time": "07:00",
       "odds": {
-        "home": 2.58,
-        "draw": 3.34,
-        "away": 2.48
+        "home": 2.47,
+        "draw": 3.1,
+        "away": 2.65
       },
       "home_stats": {
-        "name": "Energetik Mingechevir",
+        "name": "AL Sareeh",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
+        "league_position": 3,
         "total_teams_in_league": 20,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Cabrayil",
+        "name": "Al-Ahly Amman",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -214,83 +532,18 @@
       "source": "betpawa"
     },
     {
-      "id": "francewomenu20canadawomenu20",
-      "league": "Football / International / U20 FIFA World Cup, Women",
-      "home": "France Women U20",
-      "away": "Canada Women U20",
-      "time": "04:00",
-      "odds": {
-        "home": 2.46,
-        "draw": 3.39,
-        "away": 2.78
-      },
-      "home_stats": {
-        "name": "France Women U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 84,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Canada Women U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 84,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "djiboutiu20sudanu20",
+      "id": "burundiu20kenyau20",
       "league": "Football / International / CECAFA Championship U20",
-      "home": "Djibouti U20",
-      "away": "Sudan U20",
-      "time": "04:00",
+      "home": "Burundi U20",
+      "away": "Kenya U20",
+      "time": "07:00",
       "odds": {
-        "home": 25.76,
-        "draw": 11.39,
-        "away": 1.06
+        "home": 4.97,
+        "draw": 4.17,
+        "away": 1.59
       },
       "home_stats": {
-        "name": "Djibouti U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 143,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Sudan U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 143,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 143
-    },
-    {
-      "id": "englandwomenu20nigeriawomenu20",
-      "league": "Football / International / U20 FIFA World Cup, Women",
-      "home": "England Women U20",
-      "away": "Nigeria Women U20",
-      "time": "04:00",
-      "odds": {
-        "home": 1.83,
-        "draw": 3.72,
-        "away": 4.05
-      },
-      "home_stats": {
-        "name": "England Women U20",
+        "name": "Burundi U20",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -299,7 +552,7 @@
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Nigeria Women U20",
+        "name": "Kenya U20",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -308,363 +561,8 @@
         "opposition_position": null
       },
       "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "navbahorpfkdinamosamarqand",
-      "league": "Football / Uzbekistan / Superliga",
-      "home": "Navbahor",
-      "away": "PFK Dinamo Samarqand",
-      "time": "04:00",
-      "odds": {
-        "home": 1.33,
-        "draw": 4.5,
-        "away": 6.97
-      },
-      "home_stats": {
-        "name": "Navbahor",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 145,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "PFK Dinamo Samarqand",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 145,
-        "opposition_position": 3
-      },
-      "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 145
-    },
-    {
-      "id": "fcorenburgfkkrasnodar",
-      "league": "Football / Russian Federation / Premier League",
-      "home": "FC Orenburg",
-      "away": "FK Krasnodar",
-      "time": "04:15",
-      "odds": {
-        "home": 4.71,
-        "draw": 3.92,
-        "away": 1.67
-      },
-      "home_stats": {
-        "name": "FC Orenburg",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FK Krasnodar",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "paepskalamataaelarissafc",
-      "league": "Football / Greece / Greece Cup",
-      "home": "PAE PS Kalamata",
-      "away": "AE Larissa FC",
-      "time": "04:30",
-      "odds": {
-        "home": 1.89,
-        "draw": 3.4,
-        "away": 3.87
-      },
-      "home_stats": {
-        "name": "PAE PS Kalamata",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 10,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "AE Larissa FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 10,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "eldakhleyascelterasanah",
-      "league": "Football / Egypt / 2nd Division",
-      "home": "El Dakhleya Sc",
-      "away": "El Terasanah",
-      "time": "04:30",
-      "odds": {
-        "home": 3.46,
-        "draw": 2.58,
-        "away": 2.54
-      },
-      "home_stats": {
-        "name": "El Dakhleya Sc",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 60,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "El Terasanah",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 60,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "shababalahlidubaifcu21aljazira",
-      "league": "Football / United Arab Emirates / UAE U21 League",
-      "home": "Shabab Al-Ahli Dubai FC U21",
-      "away": "Al-Jazira Club U21",
-      "time": "04:30",
-      "odds": {
-        "home": 2.83,
-        "draw": 3.87,
-        "away": 2.18
-      },
-      "home_stats": {
-        "name": "Shabab Al-Ahli Dubai FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 116,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Al-Jazira Club U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 116,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "tantafcalnasrcairo",
-      "league": "Football / Egypt / 2nd Division",
-      "home": "Tanta FC",
-      "away": "Al Nasr Cairo",
-      "time": "04:30",
-      "odds": {
-        "home": 2.82,
-        "draw": 2.87,
-        "away": 2.72
-      },
-      "home_stats": {
-        "name": "Tanta FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Al Nasr Cairo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 20,
-        "opposition_position": 3
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "elmansurahteamfccairo",
-      "league": "Football / Egypt / 2nd Division",
-      "home": "El Mansurah",
-      "away": "Team FC Cairo",
-      "time": "04:30",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.02,
-        "away": 3.8
-      },
-      "home_stats": {
-        "name": "El Mansurah",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 60,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Team FC Cairo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 60,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "ismailyscharaselhodood",
-      "league": "Football / Egypt / 2nd Division",
-      "home": "Ismaily SC",
-      "away": "Haras El Hodood",
-      "time": "04:30",
-      "odds": {
-        "home": 2.81,
-        "draw": 2.9,
-        "away": 2.71
-      },
-      "home_stats": {
-        "name": "Ismaily SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Haras El Hodood",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "rfkgraficarbeogradfkbor1919",
-      "league": "Football / Serbia / Prva Liga",
-      "home": "RFK Graficar Beograd",
-      "away": "FK Bor 1919",
-      "time": "05:00",
-      "odds": {
-        "home": 1.82,
-        "draw": 3.5,
-        "away": 3.75
-      },
-      "home_stats": {
-        "name": "RFK Graficar Beograd",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 16,
-        "total_teams_in_league": 16,
-        "opposition_position": 12
-      },
-      "away_stats": {
-        "name": "FK Bor 1919",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 12,
-        "total_teams_in_league": 16,
-        "opposition_position": 12
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "tobolkostanayfcyelimai",
-      "league": "Football / Kazakhstan / Premier League",
-      "home": "Tobol Kostanay",
-      "away": "FC Yelimai",
-      "time": "05:00",
-      "odds": {
-        "home": 2.34,
-        "draw": 3.69,
-        "away": 2.84
-      },
-      "home_stats": {
-        "name": "Tobol Kostanay",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FC Yelimai",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "zedfcelqanahfc",
-      "league": "Football / Egypt / Premier League",
-      "home": "Zed FC",
-      "away": "El Qanah FC",
-      "time": "05:00",
-      "odds": {
-        "home": 2.28,
-        "draw": 2.87,
-        "away": 3.65
-      },
-      "home_stats": {
-        "name": "Zed FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "El Qanah FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
+      "total_teams_in_league": 84
     }
   ]
 }
