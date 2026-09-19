@@ -1,664 +1,819 @@
 {
   "meta": {
     "date": "2026-09-19",
-    "generatedAt": "2026-09-19T09:05:24.200341+03:00",
-    "scanned": 19,
-    "elapsedSeconds": 287.5
+    "generatedAt": "2026-09-19T12:05:55.777391+03:00",
+    "scanned": 20,
+    "elapsedSeconds": 320.0
   },
   "matches": [
     {
-      "id": "chifureaselfensaitamawomentoky",
-      "league": "Football / Japan / WE League Cup, Women",
-      "home": "Chifure AS Elfen Saitama Women",
-      "away": "Tokyo Verdy Beleza Women",
-      "time": "10:00",
+      "id": "ehimefckamatamaresanuki",
+      "league": "Football / Japan / J3 League",
+      "home": "Ehime FC",
+      "away": "Kamatamare Sanuki",
+      "time": "12:30",
       "odds": {
-        "home": 6.81,
-        "draw": 4.77,
-        "away": 1.4
+        "home": 1.55,
+        "draw": 4.46,
+        "away": 5.56
       },
       "home_stats": {
-        "name": "Chifure AS Elfen Saitama Women",
+        "name": "Ehime FC",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          4,
+          4,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opposition_position": 18
+      },
+      "away_stats": {
+        "name": "Kamatamare Sanuki",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          1,
+          1,
+          4
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opposition_position": 18
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fujiedamyfcrbomiyaardija",
+      "league": "Football / Japan / J.League 2",
+      "home": "Fujieda MYFC",
+      "away": "RB Omiya Ardija",
+      "time": "12:30",
+      "odds": {
+        "home": 3.08,
+        "draw": 3.63,
+        "away": 2.15
+      },
+      "home_stats": {
+        "name": "Fujieda MYFC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 126,
-        "opposition_position": 19
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
       },
       "away_stats": {
-        "name": "Tokyo Verdy Beleza Women",
+        "name": "RB Omiya Ardija",
         "form": [
           "L",
           "D",
           "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          4,
+          3
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          2,
+          1,
+          2
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "paidelinnameeskondwomensakuspo",
+      "league": "Football / Estonia / Meistriliiga Women",
+      "home": "Paide Linnameeskond Women",
+      "away": "Saku Sporting Women",
+      "time": "12:30",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.8,
+        "away": 4.58
+      },
+      "home_stats": {
+        "name": "Paide Linnameeskond Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Saku Sporting Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "scpopestileordenistintapolitim",
+      "league": "Football / Romania / Liga 2",
+      "home": "SC Popesti Leordeni",
+      "away": "Stinta Poli Timisoara",
+      "time": "12:30",
+      "odds": {
+        "home": 3.53,
+        "draw": 3.58,
+        "away": 1.9
+      },
+      "home_stats": {
+        "name": "SC Popesti Leordeni",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Stinta Poli Timisoara",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 2,
+        "total_teams_in_league": 41,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "urawareddiamondstokyoverdy",
+      "league": "Football / Japan / J.League",
+      "home": "Urawa Red Diamonds",
+      "away": "Tokyo Verdy",
+      "time": "12:30",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.43,
+        "away": 4.12
+      },
+      "home_stats": {
+        "name": "Urawa Red Diamonds",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 163,
+        "opposition_position": 19
+      },
+      "away_stats": {
+        "name": "Tokyo Verdy",
+        "form": [
+          "W",
           "L",
+          "D",
+          "D",
           "D"
         ],
         "goals_scored": [
+          1,
           0,
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          1,
+          0
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 163,
+        "opposition_position": 19
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "shimizuspulsejefunitedchiba",
+      "league": "Football / Japan / J.League",
+      "home": "Shimizu S-Pulse",
+      "away": "JEF United Chiba",
+      "time": "12:30",
+      "odds": {
+        "home": 1.87,
+        "draw": 3.39,
+        "away": 4.26
+      },
+      "home_stats": {
+        "name": "Shimizu S-Pulse",
+        "form": [
+          "D",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
           1,
           0,
           0,
           0
         ],
         "goals_conceded": [
+          1,
+          3,
+          1,
+          1,
+          1
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "away_stats": {
+        "name": "JEF United Chiba",
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          0,
           2,
           1,
           0,
+          4
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "melbournevictorynorthcotecity",
+      "league": "Football / Australia / NPL 2, Victoria",
+      "home": "Melbourne Victory",
+      "away": "Northcote City",
+      "time": "12:30",
+      "odds": {
+        "home": 2.53,
+        "draw": 3.89,
+        "away": 2.4
+      },
+      "home_stats": {
+        "name": "Melbourne Victory",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Northcote City",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vvarennagasakicerezoosaka",
+      "league": "Football / Japan / J.League",
+      "home": "V-Varen Nagasaki",
+      "away": "Cerezo Osaka",
+      "time": "12:30",
+      "odds": {
+        "home": 3.06,
+        "draw": 3.48,
+        "away": 2.22
+      },
+      "home_stats": {
+        "name": "V-Varen Nagasaki",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
           2,
+          2,
+          1,
           0
         ],
-        "league_position": 19,
-        "total_teams_in_league": 126,
-        "opposition_position": 19
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          3,
+          3
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 20,
+        "opposition_position": 10
       },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "bucheonfc1995gimcheonsangmufc",
-      "league": "Football / Republic of Korea / K-League 1",
-      "home": "Bucheon FC 1995",
-      "away": "Gimcheon Sangmu FC",
-      "time": "10:30",
-      "odds": {
-        "home": 2.91,
-        "draw": 3.4,
-        "away": 2.42
-      },
-      "home_stats": {
-        "name": "Bucheon FC 1995",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+      "away_stats": {
+        "name": "Cerezo Osaka",
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
         "league_position": 10,
-        "total_teams_in_league": 12,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "Gimcheon Sangmu FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 11,
-        "total_teams_in_league": 12,
-        "opposition_position": 11
+        "total_teams_in_league": 20,
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "chungnamasanfccheonancityfc",
-      "league": "Football / Republic of Korea / K-League 2",
-      "home": "Chungnam Asan FC",
-      "away": "Cheonan City FC",
-      "time": "10:30",
+      "id": "bhawaniporefcunitedsportsclub",
+      "league": "Football / India / Calcutta Premier Div.",
+      "home": "Bhawanipore FC",
+      "away": "United Sports Club",
+      "time": "12:30",
       "odds": {
-        "home": 2.01,
-        "draw": 3.46,
-        "away": 3.39
+        "home": 1.46,
+        "draw": 4.0,
+        "away": 6.0
       },
       "home_stats": {
-        "name": "Chungnam Asan FC",
+        "name": "Bhawanipore FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 90,
+        "total_teams_in_league": 73,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Cheonan City FC",
+        "name": "United Sports Club",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 90,
+        "total_teams_in_league": 73,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "armadalescuwanedlandsfc",
-      "league": "Football / Australia / Western Australia NPL",
-      "home": "Armadale SC",
-      "away": "UWA Nedlands FC",
-      "time": "10:30",
+      "id": "coalindiaspaeastbengalfcreserv",
+      "league": "Football / India / Calcutta Premier Div.",
+      "home": "Coal India Spa",
+      "away": "East BengaL FC Reserves",
+      "time": "12:30",
       "odds": {
-        "home": 1.87,
-        "draw": 3.89,
-        "away": 3.39
+        "home": 4.7,
+        "draw": 4.0,
+        "away": 1.57
       },
       "home_stats": {
-        "name": "Armadale SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "UWA Nedlands FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "jeonnamdragonssuwonfc",
-      "league": "Football / Republic of Korea / K-League 2",
-      "home": "Jeonnam Dragons",
-      "away": "Suwon FC",
-      "time": "10:30",
-      "odds": {
-        "home": 3.67,
-        "draw": 3.74,
-        "away": 1.84
-      },
-      "home_stats": {
-        "name": "Jeonnam Dragons",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 16,
-        "total_teams_in_league": 17,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Suwon FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 17,
-        "opposition_position": 3
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "fcpocheonbusantransportationco",
-      "league": "Football / Republic of Korea / Korea Republic K3/K4 Championship",
-      "home": "FC Pocheon",
-      "away": "Busan Transportation Corporation",
-      "time": "10:50",
-      "odds": {
-        "home": 1.66,
-        "draw": 3.85,
-        "away": 4.83
-      },
-      "home_stats": {
-        "name": "FC Pocheon",
+        "name": "Coal India Spa",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": 4
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "Busan Transportation Corporation",
+        "name": "East BengaL FC Reserves",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 4,
+        "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": 4
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "mlsfclawtngtlaimizorampolicefc",
+      "league": "Football / India / Mizoram Premier League",
+      "home": "Mls FC Lawtngtlai",
+      "away": "Mizoram Police FC",
+      "time": "12:30",
+      "odds": {
+        "home": 2.92,
+        "draw": 3.7,
+        "away": 2.09
+      },
+      "home_stats": {
+        "name": "Mls FC Lawtngtlai",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Mizoram Police FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 20
     },
     {
-      "id": "acsfcbacaucetatea1932suceava",
-      "league": "Football / Romania / Liga 2",
-      "home": "ACS FC Bacau",
-      "away": "Cetatea 1932 Suceava",
-      "time": "11:00",
+      "id": "mohunbagansgreservesmohammedan",
+      "league": "Football / India / Calcutta Premier Div.",
+      "home": "Mohun Bagan SG Reserves",
+      "away": "Mohammedan SC Reserves",
+      "time": "12:30",
       "odds": {
-        "home": 1.83,
-        "draw": 3.64,
-        "away": 3.73
+        "home": 1.56,
+        "draw": 3.8,
+        "away": 5.0
       },
       "home_stats": {
-        "name": "ACS FC Bacau",
+        "name": "Mohun Bagan SG Reserves",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 23,
-        "opposition_position": 9
+        "league_position": null,
+        "total_teams_in_league": 104,
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "Cetatea 1932 Suceava",
+        "name": "Mohammedan SC Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 104,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ifsibbovargarnatups",
+      "league": "Football / Finland / Kolmonen",
+      "home": "IF Sibbo Vargarna",
+      "away": "Tups",
+      "time": "01:00",
+      "odds": {
+        "home": 1.37,
+        "draw": 5.88,
+        "away": 5.31
+      },
+      "home_stats": {
+        "name": "IF Sibbo Vargarna",
         "form": [
-          "L",
-          "D",
-          "L",
           "W",
           "W"
         ],
         "goals_scored": [
-          0,
-          1,
-          1,
           2,
-          4
+          1
         ],
         "goals_conceded": [
-          1,
-          1,
-          3,
           0,
           0
         ],
+        "league_position": null,
+        "total_teams_in_league": 122,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Tups",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 122,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gainaretottorinaraclub",
+      "league": "Football / Japan / J3 League",
+      "home": "Gainare Tottori",
+      "away": "Nara Club",
+      "time": "01:00",
+      "odds": {
+        "home": 2.45,
+        "draw": 3.62,
+        "away": 2.73
+      },
+      "home_stats": {
+        "name": "Gainare Tottori",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": 9,
-        "total_teams_in_league": 23,
-        "opposition_position": 9
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "fehervarfcu19ferencvarositcu19",
-      "league": "Football / Hungary / U19 National",
-      "home": "Fehervar FC U19",
-      "away": "Ferencvarosi TC U19",
-      "time": "11:00",
-      "odds": {
-        "home": 8.2,
-        "draw": 5.2,
-        "away": 1.27
-      },
-      "home_stats": {
-        "name": "Fehervar FC U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 38,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ferencvarosi TC U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 38,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "shanghaisecondhubeiistar",
-      "league": "Football / China / China League 2",
-      "home": "Shanghai Second",
-      "away": "Hubei Istar",
-      "time": "11:00",
-      "odds": {
-        "home": 2.35,
-        "draw": 3.1,
-        "away": 2.95
-      },
-      "home_stats": {
-        "name": "Shanghai Second",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 12,
-        "total_teams_in_league": 12,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "Hubei Istar",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 12,
-        "opposition_position": 5
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "dalianyingbobguangzhoudandelio",
-      "league": "Football / China / China League 2",
-      "home": "Dalian Yingbo B",
-      "away": "Guangzhou Dandelion Alpha FC",
-      "time": "11:00",
-      "odds": {
-        "home": 2.35,
-        "draw": 3.0,
-        "away": 3.0
-      },
-      "home_stats": {
-        "name": "Dalian Yingbo B",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Guangzhou Dandelion Alpha FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "csmslatinacsc1599selimbar",
-      "league": "Football / Romania / Liga 2",
-      "home": "CSM Slatina",
-      "away": "CSC 1599 Selimbar",
-      "time": "11:00",
-      "odds": {
-        "home": 1.34,
-        "draw": 4.76,
-        "away": 7.42
-      },
-      "home_stats": {
-        "name": "CSM Slatina",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 23,
-        "opposition_position": 17
-      },
-      "away_stats": {
-        "name": "CSC 1599 Selimbar",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 17,
-        "total_teams_in_league": 23,
-        "opposition_position": 17
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "csasteauabucuresticsgloriabist",
-      "league": "Football / Romania / Liga 2",
-      "home": "Csa Steaua Bucuresti",
-      "away": "CS Gloria Bistrita",
-      "time": "11:00",
-      "odds": {
-        "home": 2.32,
-        "draw": 3.44,
-        "away": 2.72
-      },
-      "home_stats": {
-        "name": "Csa Steaua Bucuresti",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 21,
-        "total_teams_in_league": 23,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "CS Gloria Bistrita",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 23,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "cslstefanestiidejosmetaloglobu",
-      "league": "Football / Romania / Liga 2",
-      "home": "Csl Stefanestii de Jos",
-      "away": "Metaloglobus Bucuresti",
-      "time": "11:00",
-      "odds": {
-        "home": 3.43,
-        "draw": 3.58,
-        "away": 1.93
-      },
-      "home_stats": {
-        "name": "Csl Stefanestii de Jos",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
+        "total_teams_in_league": 20,
         "opposition_position": 13
       },
       "away_stats": {
-        "name": "Metaloglobus Bucuresti",
+        "name": "Nara Club",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 13,
-        "total_teams_in_league": 26,
+        "total_teams_in_league": 20,
         "opposition_position": 13
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "csmolimpiasatumarecsafumati",
-      "league": "Football / Romania / Liga 2",
-      "home": "Csm Olimpia Satu Mare",
-      "away": "CS Afumati",
-      "time": "11:00",
+      "id": "sagantosuiwakifc",
+      "league": "Football / Japan / J.League 2",
+      "home": "Sagan Tosu",
+      "away": "Iwaki FC",
+      "time": "01:00",
       "odds": {
-        "home": 3.19,
-        "draw": 3.38,
-        "away": 2.08
+        "home": 1.96,
+        "draw": 3.39,
+        "away": 3.88
       },
       "home_stats": {
-        "name": "Csm Olimpia Satu Mare",
+        "name": "Sagan Tosu",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 19,
-        "total_teams_in_league": 23,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "CS Afumati",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 11,
-        "total_teams_in_league": 23,
-        "opposition_position": 11
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "ofiu19asterastripolisu19",
-      "league": "Football / Greece / U19 Super League",
-      "home": "OFI U19",
-      "away": "Asteras Tripolis U19",
-      "time": "11:00",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.25,
-        "away": 2.8
-      },
-      "home_stats": {
-        "name": "OFI U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 14,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Asteras Tripolis U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 14,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "jecheoncitizenfcgeojefc",
-      "league": "Football / Republic of Korea / Korea Republic K4 League",
-      "home": "Jecheon Citizen FC",
-      "away": "Geoje FC",
-      "time": "11:00",
-      "odds": {
-        "home": 3.03,
-        "draw": 3.68,
-        "away": 2.14
-      },
-      "home_stats": {
-        "name": "Jecheon Citizen FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "league_position": 12,
         "total_teams_in_league": 20,
-        "opposition_position": null
+        "opposition_position": 18
       },
       "away_stats": {
-        "name": "Geoje FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "csconcordiachiajnaafcmetalulbu",
-      "league": "Football / Romania / Liga 2",
-      "home": "CS Concordia Chiajna",
-      "away": "AFC Metalul Buzau",
-      "time": "11:00",
-      "odds": {
-        "home": 2.04,
-        "draw": 3.49,
-        "away": 3.2
-      },
-      "home_stats": {
-        "name": "CS Concordia Chiajna",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 12,
-        "opposition_position": 10
-      },
-      "away_stats": {
-        "name": "AFC Metalul Buzau",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 10,
-        "total_teams_in_league": 12,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "afcunirea04sloboziaafcchindiat",
-      "league": "Football / Romania / Liga 2",
-      "home": "AFC Unirea 04 Slobozia",
-      "away": "AFC Chindia Targoviste",
-      "time": "11:00",
-      "odds": {
-        "home": 2.92,
-        "draw": 3.44,
-        "away": 2.19
-      },
-      "home_stats": {
-        "name": "AFC Unirea 04 Slobozia",
+        "name": "Iwaki FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 18,
-        "total_teams_in_league": 23,
-        "opposition_position": null
+        "total_teams_in_league": 20,
+        "opposition_position": 18
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "yokohamafcfcimabari",
+      "league": "Football / Japan / J.League 2",
+      "home": "Yokohama FC",
+      "away": "FC Imabari",
+      "time": "01:00",
+      "odds": {
+        "home": 1.46,
+        "draw": 4.45,
+        "away": 6.22
+      },
+      "home_stats": {
+        "name": "Yokohama FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
       },
       "away_stats": {
-        "name": "AFC Chindia Targoviste",
+        "name": "FC Imabari",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "shonanbellmareblaublitzakita",
+      "league": "Football / Japan / J.League 2",
+      "home": "Shonan Bellmare",
+      "away": "Blaublitz Akita",
+      "time": "01:00",
+      "odds": {
+        "home": 2.13,
+        "draw": 3.27,
+        "away": 3.49
+      },
+      "home_stats": {
+        "name": "Shonan Bellmare",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          6,
+          2,
+          0,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opposition_position": 11
+      },
+      "away_stats": {
+        "name": "Blaublitz Akita",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opposition_position": 11
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "wdaswieciezkskluczeviastargard",
+      "league": "Football / Poland / III Liga, Group 2",
+      "home": "WDA Swiecie",
+      "away": "Zks Kluczevia Stargard",
+      "time": "01:00",
+      "odds": {
+        "home": 2.55,
+        "draw": 3.55,
+        "away": 2.37
+      },
+      "home_stats": {
+        "name": "WDA Swiecie",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 23,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Zks Kluczevia Stargard",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "sksigmaolomoucbfczlinb",
-      "league": "Football / Czech Republic / MSFL",
-      "home": "SK Sigma Olomouc B",
-      "away": "FC Zlin B",
-      "time": "11:15",
+      "id": "bksspartakatowicemkskluczbork",
+      "league": "Football / Poland / III Liga, Group 3",
+      "home": "BKS Sparta Katowice",
+      "away": "MKS Kluczbork",
+      "time": "01:00",
       "odds": {
-        "home": 1.41,
-        "draw": 4.84,
-        "away": 6.39
+        "home": 1.73,
+        "draw": 3.65,
+        "away": 4.0
       },
       "home_stats": {
-        "name": "SK Sigma Olomouc B",
+        "name": "BKS Sparta Katowice",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 7,
+        "league_position": 10,
         "total_teams_in_league": 18,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "FC Zlin B",
-        "form": [
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          4,
-          1
-        ],
+        "name": "MKS Kluczbork",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 18,
         "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "kkhanhhoadaihocvanhien",
+      "league": "Football / Vietnam / Vietnam Cup",
+      "home": "K. Khanh Hoa",
+      "away": "Dai Hoc van Hien",
+      "time": "01:00",
+      "odds": {
+        "home": 2.57,
+        "draw": 3.01,
+        "away": 2.87
+      },
+      "home_stats": {
+        "name": "K. Khanh Hoa",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 95,
+        "opposition_position": 16
+      },
+      "away_stats": {
+        "name": "Dai Hoc van Hien",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 16,
+        "total_teams_in_league": 95,
+        "opposition_position": 16
       },
       "h2h": null,
       "source": "betpawa"
