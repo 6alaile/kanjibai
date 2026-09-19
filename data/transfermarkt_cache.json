@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-19T09:05:13.200564+00:00",
+  "lastUpdated": "2026-09-19T12:06:07.933236+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -9352,9 +9352,9 @@
         "legia_warszawa": {
           "id": 255,
           "name": "Legia Warszawa",
-          "league_position": 2,
+          "league_position": 3,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281262+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246803+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9368,7 +9368,7 @@
           "name": "G\u00f3rnik Zabrze",
           "league_position": 1,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281243+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246786+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9380,9 +9380,9 @@
         "jagiellonia": {
           "id": 2300,
           "name": "Jagiellonia",
-          "league_position": 9,
+          "league_position": 8,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281291+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246823+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9394,9 +9394,9 @@
         "wisla_krak\u00f3w": {
           "id": 422,
           "name": "Wisla Krak\u00f3w",
-          "league_position": 4,
+          "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281271+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246799+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9408,9 +9408,9 @@
         "piast_gliwice": {
           "id": 6112,
           "name": "Piast Gliwice",
-          "league_position": 5,
+          "league_position": 6,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281274+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246817+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9424,7 +9424,7 @@
           "name": "GKS Katowice",
           "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281294+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246830+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9436,9 +9436,9 @@
         "korona_kielce": {
           "id": 6110,
           "name": "Korona Kielce",
-          "league_position": 7,
+          "league_position": 9,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281283+00:00",
+          "last_scraped": "2026-09-19T12:05:49.326652+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -9455,6 +9455,22 @@
               "league_id": "PL1",
               "match_id": "5010563",
               "ranking": ""
+            },
+            {
+              "date": "Tue 15/09/26",
+              "time": "8:30 PM",
+              "home_away": "H",
+              "opponent": "G\u00f3rnik Zabrze",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "2",
+              "competition": "PKO BP Ekstraklasa",
+              "league_id": "PL1",
+              "match_id": "4895606",
+              "ranking": "(17.)"
             },
             {
               "date": "Sat 25/07/26",
@@ -9486,7 +9502,7 @@
               "competition": "PKO BP Ekstraklasa",
               "league_id": "PL1",
               "match_id": "4895633",
-              "ranking": "(11.)"
+              "ranking": "(13.)"
             },
             {
               "date": "Sat 15/08/26",
@@ -9502,22 +9518,6 @@
               "competition": "PKO BP Ekstraklasa",
               "league_id": "PL1",
               "match_id": "4895626",
-              "ranking": "(15.)"
-            },
-            {
-              "date": "Sat 08/08/26",
-              "time": "8:15 PM",
-              "home_away": "H",
-              "opponent": "Legia Warszawa",
-              "opponent_id": null,
-              "score": [
-                1,
-                1
-              ],
-              "matchday": "3",
-              "competition": "PKO BP Ekstraklasa",
-              "league_id": "PL1",
-              "match_id": "4895614",
               "ranking": "(16.)"
             }
           ],
@@ -9525,20 +9525,20 @@
             "form": [
               "W",
               "L",
+              "L",
               "D",
-              "W",
-              "D"
+              "W"
             ],
             "goals_scored": [
               1,
               0,
+              0,
               1,
-              2,
-              1
+              2
             ],
             "goals_conceded": [
               0,
-              1,
+              2,
               1,
               1,
               1
@@ -9549,9 +9549,9 @@
         "zaglebie_lubin": {
           "id": 168,
           "name": "Zaglebie Lubin",
-          "league_position": 8,
+          "league_position": 5,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:04:13.766353+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246813+00:00",
           "recent_matches": [
             {
               "date": "Tue 01/09/26",
@@ -9662,9 +9662,9 @@
         "pogon_szczecin": {
           "id": 324,
           "name": "Pogon Szczecin",
-          "league_position": 6,
+          "league_position": 7,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281278+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246821+00:00",
           "recent_matches": [
             {
               "date": "Thu 03/09/26",
@@ -9777,7 +9777,7 @@
           "name": "Cracovia",
           "league_position": 12,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281301+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246836+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9791,7 +9791,7 @@
           "name": "Radomiak",
           "league_position": 14,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281307+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246842+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9805,7 +9805,7 @@
           "name": "Widzew Lodz",
           "league_position": 11,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281297+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246833+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9819,7 +9819,7 @@
           "name": "Slask Wroclaw",
           "league_position": 15,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281310+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246845+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9831,9 +9831,9 @@
         "motor_lublin": {
           "id": 3527,
           "name": "Motor Lublin",
-          "league_position": 16,
+          "league_position": 17,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281313+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246852+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9845,9 +9845,9 @@
         "wieczysta": {
           "id": 30974,
           "name": "Wieczysta",
-          "league_position": 17,
+          "league_position": 16,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281317+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246849+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -9861,7 +9861,7 @@
           "name": "Wisla Plock",
           "league_position": 13,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.281304+00:00",
+          "last_scraped": "2026-09-19T12:05:49.246839+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -9974,8 +9974,24 @@
           "name": "Rak\u00f3w",
           "league_position": 18,
           "total_teams": 18,
-          "last_scraped": "2026-09-15T15:03:55.344899+00:00",
+          "last_scraped": "2026-09-19T12:06:07.933222+00:00",
           "recent_matches": [
+            {
+              "date": "Tue 15/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Zaglebie Lubin",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "3",
+              "competition": "PKO BP Ekstraklasa",
+              "league_id": "PL1",
+              "match_id": "4895618",
+              "ranking": "(16.)"
+            },
             {
               "date": "Thu 30/07/26",
               "time": "7:30 PM",
@@ -10039,46 +10055,44 @@
               "league_id": "PL1",
               "match_id": "5013814",
               "ranking": ""
-            },
-            {
-              "date": "Thu 13/08/26",
-              "time": "7:00 PM",
-              "home_away": "A",
-              "opponent": "Hammarby",
-              "opponent_id": null,
-              "score": [
-                0,
-                1
-              ],
-              "matchday": "Third Round",
-              "competition": "PKO BP Ekstraklasa",
-              "league_id": "PL1",
-              "match_id": "4973767",
-              "ranking": ""
             }
           ],
           "form_summary": {
             "form": [
+              "L",
               "W",
               "L",
               "W",
-              "D",
-              "W"
+              "D"
             ],
             "goals_scored": [
+              2,
               4,
               2,
               3,
-              2,
-              1
+              2
             ],
             "goals_conceded": [
+              3,
               0,
               3,
               1,
-              2,
-              0
+              2
             ]
+          },
+          "h2h": {}
+        },
+        "lech_pozna\u0144": {
+          "id": 238,
+          "name": "Lech Pozna\u0144",
+          "league_position": 4,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:05:49.246807+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
           },
           "h2h": {}
         }
@@ -10091,9 +10105,9 @@
         "potenza": {
           "id": 7197,
           "name": "Potenza",
-          "league_position": 1,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683113+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992314+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10105,9 +10119,9 @@
         "sorrento": {
           "id": 10118,
           "name": "Sorrento",
-          "league_position": 2,
+          "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683134+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992297+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10119,9 +10133,9 @@
         "picerno": {
           "id": 49430,
           "name": "Picerno",
-          "league_position": 3,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:05:20.036434+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992319+00:00",
           "recent_matches": [
             {
               "date": "Tue 01/09/26",
@@ -10213,9 +10227,9 @@
         "cerignola": {
           "id": 22249,
           "name": "Cerignola",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683142+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992317+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10227,23 +10241,122 @@
         "bari": {
           "id": 332,
           "name": "Bari",
-          "league_position": 5,
+          "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683145+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-19T12:05:23.913125+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 15/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Potenza",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "5",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979213",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Tue 01/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Picerno",
+              "opponent_id": null,
+              "score": [
+                5,
+                4
+              ],
+              "matchday": "Second Round",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "5018508",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 16/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Casarano",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "First Round",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979655",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Casarano",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979189",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Fri 28/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Barletta",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979182",
+              "ranking": "(2.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              5,
+              1,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              0,
+              4,
+              0,
+              0,
+              3
+            ]
           },
           "h2h": {}
         },
         "barletta": {
           "id": 5585,
           "name": "Barletta",
-          "league_position": 6,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683148+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992330+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10255,9 +10368,9 @@
         "casertana": {
           "id": 4106,
           "name": "Casertana",
-          "league_position": 7,
+          "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683152+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992308+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10269,9 +10382,9 @@
         "inter_u23": {
           "id": 41119,
           "name": "Inter U23",
-          "league_position": 8,
+          "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683155+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992326+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10283,9 +10396,9 @@
         "cavese": {
           "id": 6266,
           "name": "Cavese",
-          "league_position": 9,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683158+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992338+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10297,9 +10410,9 @@
         "altamura": {
           "id": 22408,
           "name": "Altamura",
-          "league_position": 10,
+          "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683162+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992344+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10311,9 +10424,9 @@
         "foggia": {
           "id": 704,
           "name": "Foggia",
-          "league_position": 10,
+          "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683165+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992340+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10325,9 +10438,9 @@
         "savoia": {
           "id": 4341,
           "name": "Savoia",
-          "league_position": 12,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683169+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992336+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10339,9 +10452,9 @@
         "monopoli": {
           "id": 33734,
           "name": "Monopoli",
-          "league_position": 13,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683173+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992324+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10353,9 +10466,9 @@
         "casarano": {
           "id": 6089,
           "name": "Casarano",
-          "league_position": 14,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683176+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992322+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10367,9 +10480,9 @@
         "salernitana": {
           "id": 380,
           "name": "Salernitana",
-          "league_position": 15,
+          "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683180+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992332+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10381,14 +10494,113 @@
         "scafatese": {
           "id": 22048,
           "name": "Scafatese",
-          "league_position": 16,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683182+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-19T12:01:59.450915+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 15/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Monopoli",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "5",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979205",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Tue 01/09/26",
+              "time": "8:00 PM",
+              "home_away": "A",
+              "opponent": "Campobasso",
+              "opponent_id": null,
+              "score": [
+                5,
+                3
+              ],
+              "matchday": "Second Round",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "5018341",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Casertana",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979191",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Salernitana",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "First Round",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979648",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Catania",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979203",
+              "ranking": "(17.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "L",
+              "D",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              3,
+              2,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              0,
+              5,
+              2,
+              1,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -10397,7 +10609,7 @@
           "name": "Giugliano",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683186+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992342+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -10409,9 +10621,9 @@
         "cosenza": {
           "id": 4031,
           "name": "Cosenza",
-          "league_position": 18,
+          "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:03:15.446902+00:00",
+          "last_scraped": "2026-09-19T12:01:41.069313+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -10428,6 +10640,22 @@
               "league_id": "IT3C",
               "match_id": "5018510",
               "ranking": ""
+            },
+            {
+              "date": "Tue 15/09/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Giugliano",
+              "opponent_id": null,
+              "score": [
+                5,
+                2
+              ],
+              "matchday": "5",
+              "competition": "Serie C - Girone C",
+              "league_id": "IT3C",
+              "match_id": "4979208",
+              "ranking": "(19.)"
             },
             {
               "date": "Sun 16/08/26",
@@ -10475,11 +10703,12 @@
               "competition": "Serie C - Girone C",
               "league_id": "IT3C",
               "match_id": "4979165",
-              "ranking": "(18.)"
+              "ranking": "(19.)"
             }
           ],
           "form_summary": {
             "form": [
+              "L",
               "L",
               "W",
               "L",
@@ -10488,11 +10717,13 @@
             "goals_scored": [
               0,
               2,
+              2,
               1,
               1
             ],
             "goals_conceded": [
               1,
+              5,
               0,
               2,
               3
@@ -10503,9 +10734,9 @@
         "catania": {
           "id": 1627,
           "name": "Catania",
-          "league_position": 19,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.688574+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992328+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -10618,7 +10849,7 @@
           "name": "Crotone",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-07T18:02:58.683195+00:00",
+          "last_scraped": "2026-09-19T12:01:40.992348+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52296,9 +52527,9 @@
         "police_tero_fc": {
           "id": 6726,
           "name": "Police Tero FC",
-          "league_position": 4,
+          "league_position": 7,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176819+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575248+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52310,9 +52541,9 @@
         "khon_kaen_utd": {
           "id": 53667,
           "name": "Khon Kaen Utd.",
-          "league_position": 2,
+          "league_position": 1,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176815+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575206+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52324,9 +52555,9 @@
         "kanchanaburi_fc": {
           "id": 94138,
           "name": "Kanchanaburi FC",
-          "league_position": 5,
+          "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176823+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575224+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52340,7 +52571,7 @@
           "name": "Chainat FC",
           "league_position": 9,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176838+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575256+00:00",
           "recent_matches": [
             {
               "date": "Sun 13/09/26",
@@ -52394,10 +52625,26 @@
         "nongbua_fc": {
           "id": 55226,
           "name": "Nongbua FC",
-          "league_position": 7,
+          "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176830+00:00",
+          "last_scraped": "2026-09-19T12:03:09.653926+00:00",
           "recent_matches": [
+            {
+              "date": "Wed 16/09/26",
+              "time": "1:00 PM",
+              "home_away": "A",
+              "opponent": "Uttaradit FC",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Thai League 2",
+              "league_id": "THA2",
+              "match_id": "4968069",
+              "ranking": "(7.)"
+            },
             {
               "date": "Sun 06/09/26",
               "time": "1:30 PM",
@@ -52412,7 +52659,7 @@
               "competition": "Thai League 2",
               "league_id": "THA2",
               "match_id": "4968055",
-              "ranking": "(10.)"
+              "ranking": "(8.)"
             },
             {
               "date": "Sat 12/09/26",
@@ -52433,14 +52680,17 @@
           ],
           "form_summary": {
             "form": [
+              "D",
               "W",
               "L"
             ],
             "goals_scored": [
               2,
+              2,
               1
             ],
             "goals_conceded": [
+              2,
               0,
               2
             ]
@@ -52450,9 +52700,9 @@
         "chiangmai_utd": {
           "id": 60393,
           "name": "Chiangmai Utd.",
-          "league_position": 2,
+          "league_position": 6,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176809+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575243+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52464,9 +52714,9 @@
         "pattaya_united": {
           "id": 94125,
           "name": "Pattaya United",
-          "league_position": 11,
+          "league_position": 13,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176846+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575271+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52478,9 +52728,9 @@
         "songkhla_fc": {
           "id": 74007,
           "name": "Songkhla FC",
-          "league_position": 7,
+          "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176834+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575263+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52492,9 +52742,9 @@
         "nakhonpathom": {
           "id": 20179,
           "name": "Nakhonpathom",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176853+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575274+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52506,9 +52756,9 @@
         "muangthong_utd": {
           "id": 21283,
           "name": "Muangthong Utd.",
-          "league_position": 10,
+          "league_position": 3,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176842+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575230+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52520,9 +52770,9 @@
         "uttaradit_fc": {
           "id": 55234,
           "name": "Uttaradit FC",
-          "league_position": 6,
+          "league_position": 8,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176826+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575252+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52534,9 +52784,9 @@
         "swat_cat": {
           "id": 27070,
           "name": "Swat Cat",
-          "league_position": 14,
+          "league_position": 15,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176856+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575278+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52548,9 +52798,9 @@
         "mahasarakham_fc": {
           "id": 55240,
           "name": "Mahasarakham FC",
-          "league_position": 15,
+          "league_position": 16,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176860+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575282+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52562,23 +52812,84 @@
         "pt_satun_fc": {
           "id": 52379,
           "name": "PT Satun FC",
-          "league_position": 1,
+          "league_position": 5,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176791+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-19T12:03:27.973949+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 15/09/26",
+              "time": "2:00 PM",
+              "home_away": "H",
+              "opponent": "Muangthong Utd.",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Thai League 2",
+              "league_id": "THA2",
+              "match_id": "4968068",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "2:00 PM",
+              "home_away": "H",
+              "opponent": "Kanchanaburi FC",
+              "opponent_id": null,
+              "score": [
+                2,
+                4
+              ],
+              "matchday": "1",
+              "competition": "Thai League 2",
+              "league_id": "THA2",
+              "match_id": "4968056",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "2:00 PM",
+              "home_away": "A",
+              "opponent": "Songkhla FC",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Thai League 2",
+              "league_id": "THA2",
+              "match_id": "4968060",
+              "ranking": "(16.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "W"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              3
+            ],
+            "goals_conceded": [
+              0,
+              4,
+              1
+            ]
           },
           "h2h": {}
         },
         "chanthaburi": {
           "id": 35381,
           "name": "Chanthaburi",
-          "league_position": 16,
+          "league_position": 12,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176863+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575267+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52590,9 +52901,9 @@
         "muang_loei_utd": {
           "id": 60372,
           "name": "Muang Loei Utd.",
-          "league_position": 12,
+          "league_position": 4,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176849+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575235+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52606,7 +52917,7 @@
           "name": "Phrae Utd.",
           "league_position": 17,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.249977+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575285+00:00",
           "recent_matches": [
             {
               "date": "Sun 13/09/26",
@@ -52662,7 +52973,7 @@
           "name": "Kasetsart FC",
           "league_position": 18,
           "total_teams": 18,
-          "last_scraped": "2026-09-17T09:04:59.176870+00:00",
+          "last_scraped": "2026-09-19T12:03:09.575288+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73985,6 +74296,1125 @@
           "league_position": 23,
           "total_teams": 23,
           "last_scraped": "2026-09-19T06:03:08.698249+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "NTD": {
+      "name": "Tweede Divisie",
+      "table_fetched_at": "2026-09-19T12:02:25.258091+00:00",
+      "teams": {
+        "quick_boys": {
+          "id": 7110,
+          "name": "Quick Boys",
+          "league_position": 1,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258076+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "hhc_hardenberg": {
+          "id": 11312,
+          "name": "HHC Hardenberg",
+          "league_position": 2,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:04:22.269313+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Sparta U21",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "3",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943163",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "Almere City U23",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943126",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Barendrecht",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "1",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943151",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:15 PM",
+              "home_away": "A",
+              "opponent": "AFC Amsterdam",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "5",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943211",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "De Treffers",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "4",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943171",
+              "ranking": "(2.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "D"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              3,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          "h2h": {}
+        },
+        "kozakken_boys": {
+          "id": 12285,
+          "name": "Kozakken Boys",
+          "league_position": 3,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258105+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "de_treffers": {
+          "id": 6160,
+          "name": "De Treffers",
+          "league_position": 4,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258110+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "spakenburg": {
+          "id": 10803,
+          "name": "Spakenburg",
+          "league_position": 5,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258116+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sparta_u21": {
+          "id": 8621,
+          "name": "Sparta U21",
+          "league_position": 6,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258121+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "katwijk": {
+          "id": 9933,
+          "name": "Katwijk",
+          "league_position": 7,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258125+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "rkav_volendam": {
+          "id": 17605,
+          "name": "RKAV Volendam",
+          "league_position": 8,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:03:45.895974+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "IJsselm.vogels",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943162",
+              "ranking": "(12.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "Spakenburg",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943128",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Quick Boys",
+              "opponent_id": null,
+              "score": [
+                5,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943155",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Kloetinge",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "5",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943208",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "Hoek",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "4",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943173",
+              "ranking": "(12.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D",
+              "W",
+              "L",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              1,
+              2,
+              0,
+              1,
+              2
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              5,
+              1,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "ijsselmvogels": {
+          "id": 7116,
+          "name": "IJsselm.vogels",
+          "league_position": 9,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258136+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "barendrecht": {
+          "id": 13642,
+          "name": "Barendrecht",
+          "league_position": 10,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:04:04.240005+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Katwijk",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943160",
+              "ranking": "(11.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "2:00 PM",
+              "home_away": "A",
+              "opponent": "Koninklijke HFC",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943124",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "HHC Hardenberg",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "1",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943151",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Hoek",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "5",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943205",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Spakenburg",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "4",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943177",
+              "ranking": "(15.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              2,
+              1,
+              1,
+              3
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              3,
+              1,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "afc_amsterdam": {
+          "id": 2838,
+          "name": "AFC Amsterdam",
+          "league_position": 11,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258145+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "hoek": {
+          "id": 3943,
+          "name": "Hoek",
+          "league_position": 12,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258150+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "koninklijke_hfc": {
+          "id": 28378,
+          "name": "Koninklijke HFC",
+          "league_position": 13,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258155+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "kloetinge": {
+          "id": 10716,
+          "name": "Kloetinge",
+          "league_position": 14,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:44.328791+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 01/09/26",
+              "time": "8:00 PM",
+              "home_away": "A",
+              "opponent": "NSVV",
+              "opponent_id": null,
+              "score": [
+                2,
+                4
+              ],
+              "matchday": "First Preliminary Round",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "5009111",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Quick Boys",
+              "opponent_id": null,
+              "score": [
+                4,
+                0
+              ],
+              "matchday": "3",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943165",
+              "ranking": "(5.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Kozakken Boys",
+              "opponent_id": null,
+              "score": [
+                3,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943131",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "3:15 PM",
+              "home_away": "A",
+              "opponent": "AFC Amsterdam",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "1",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943157",
+              "ranking": "(14.)"
+            },
+            {
+              "date": "Sat 12/09/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "RKAV Volendam",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "5",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943208",
+              "ranking": "(15.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W",
+              "L",
+              "D",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              4,
+              0,
+              3,
+              3,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              4,
+              3,
+              1,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "rijnsburgse_b": {
+          "id": 9545,
+          "name": "Rijnsburgse B.",
+          "league_position": 15,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258164+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "almere_city_u23": {
+          "id": 20298,
+          "name": "Almere City U23",
+          "league_position": 16,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258169+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "gvvv": {
+          "id": 19964,
+          "name": "GVVV",
+          "league_position": 17,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.336259+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 29/08/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Kozakken Boys",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943164",
+              "ranking": "(16.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "AFC Amsterdam",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943125",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 15/08/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "De Treffers",
+              "opponent_id": null,
+              "score": [
+                5,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943159",
+              "ranking": "(17.)"
+            },
+            {
+              "date": "Sat 05/09/26",
+              "time": "2:30 PM",
+              "home_away": "H",
+              "opponent": "Quick Boys",
+              "opponent_id": null,
+              "score": [
+                0,
+                3
+              ],
+              "matchday": "4",
+              "competition": "Tweede Divisie",
+              "league_id": "NTD",
+              "match_id": "4943170",
+              "ranking": "(17.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              2,
+              2,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              3,
+              3,
+              5,
+              3
+            ]
+          },
+          "h2h": {}
+        },
+        "rohda_raalte": {
+          "id": 7393,
+          "name": "ROHDA Raalte",
+          "league_position": 18,
+          "total_teams": 18,
+          "last_scraped": "2026-09-19T12:02:25.258177+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "IT3B": {
+      "name": "Serie C - Girone B",
+      "table_fetched_at": "2026-09-19T12:04:54.011113+00:00",
+      "teams": {
+        "spezia_calcio": {
+          "id": 3522,
+          "name": "Spezia Calcio",
+          "league_position": 1,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011096+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "reggiana": {
+          "id": 5621,
+          "name": "Reggiana",
+          "league_position": 2,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011120+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ravenna": {
+          "id": 1105,
+          "name": "Ravenna",
+          "league_position": 3,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011125+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "livorno": {
+          "id": 1210,
+          "name": "Livorno",
+          "league_position": 4,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011131+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "grosseto": {
+          "id": 4333,
+          "name": "Grosseto",
+          "league_position": 5,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011136+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "torres": {
+          "id": 2253,
+          "name": "Torres",
+          "league_position": 6,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011141+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "atalanta_u23": {
+          "id": 41110,
+          "name": "Atalanta U23",
+          "league_position": 6,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011146+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "guidonia": {
+          "id": 45894,
+          "name": "Guidonia",
+          "league_position": 8,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011151+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "forl\u00ec": {
+          "id": 9816,
+          "name": "Forl\u00ec",
+          "league_position": 9,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.090972+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 16/09/26",
+              "time": "6:30 PM",
+              "home_away": "A",
+              "opponent": "Pineto",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "5",
+              "competition": "Serie C - Girone B",
+              "league_id": "IT3B",
+              "match_id": "4978810",
+              "ranking": "(6.)"
+            },
+            {
+              "date": "Tue 01/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Ravenna",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Second Round",
+              "competition": "Serie C - Girone B",
+              "league_id": "IT3B",
+              "match_id": "5018502",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 23/08/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Sambenedettese",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Serie C - Girone B",
+              "league_id": "IT3B",
+              "match_id": "4978778",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Sun 16/08/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Juve Next Gen",
+              "opponent_id": null,
+              "score": [
+                3,
+                5
+              ],
+              "matchday": "First Round",
+              "competition": "Serie C - Girone B",
+              "league_id": "IT3B",
+              "match_id": "4979654",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Pescara",
+              "opponent_id": null,
+              "score": [
+                6,
+                3
+              ],
+              "matchday": "2",
+              "competition": "Serie C - Girone B",
+              "league_id": "IT3B",
+              "match_id": "4978787",
+              "ranking": "(7.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D",
+              "L",
+              "D",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              1,
+              1,
+              2,
+              5,
+              6
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          "h2h": {}
+        },
+        "as_gubbio": {
+          "id": 4326,
+          "name": "AS Gubbio",
+          "league_position": 10,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011160+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "campobasso": {
+          "id": 18642,
+          "name": "Campobasso",
+          "league_position": 11,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011165+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "perugia": {
+          "id": 839,
+          "name": "Perugia",
+          "league_position": 12,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011170+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "pineto": {
+          "id": 46337,
+          "name": "Pineto",
+          "league_position": 13,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011175+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "pescara": {
+          "id": 2921,
+          "name": "Pescara",
+          "league_position": 14,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011179+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "latina_calcio": {
+          "id": 22045,
+          "name": "Latina Calcio",
+          "league_position": 15,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011184+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "vado": {
+          "id": 11483,
+          "name": "Vado",
+          "league_position": 16,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011188+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ostiamare": {
+          "id": 9793,
+          "name": "Ostiamare",
+          "league_position": 17,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011193+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "pianese": {
+          "id": 34499,
+          "name": "Pianese",
+          "league_position": 18,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011198+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sambenedettese": {
+          "id": 4330,
+          "name": "Sambenedettese",
+          "league_position": 19,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011202+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "vis_pesaro": {
+          "id": 7030,
+          "name": "Vis Pesaro",
+          "league_position": 20,
+          "total_teams": 20,
+          "last_scraped": "2026-09-19T12:04:54.011207+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
