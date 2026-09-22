@@ -1,44 +1,11 @@
 {
   "meta": {
     "date": "2026-09-22",
-    "generatedAt": "2026-09-22T09:05:53.492622+03:00",
+    "generatedAt": "2026-09-22T12:05:51.140276+03:00",
     "scanned": 20,
-    "elapsedSeconds": 317.0
+    "elapsedSeconds": 313.0
   },
   "matches": [
-    {
-      "id": "rtcfctsirangfc",
-      "league": "Football / Bhutan / Premier League",
-      "home": "Rtc FC",
-      "away": "Tsirang FC",
-      "time": "12:00",
-      "odds": {
-        "home": 1.23,
-        "draw": 5.71,
-        "away": 8.93
-      },
-      "home_stats": {
-        "name": "Rtc FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Tsirang FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 20,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
     {
       "id": "ugandau20sudanu20",
       "league": "Football / International / CECAFA Championship U20",
@@ -46,9 +13,9 @@
       "away": "Sudan U20",
       "time": "12:30",
       "odds": {
-        "home": 1.68,
-        "draw": 3.45,
-        "away": 5.43
+        "home": 1.57,
+        "draw": 3.68,
+        "away": 6.21
       },
       "home_stats": {
         "name": "Uganda U20",
@@ -79,9 +46,9 @@
       "away": "Saudi Arabia U23 (n)",
       "time": "01:00",
       "odds": {
-        "home": 1.34,
-        "draw": 4.7,
-        "away": 7.0
+        "home": 1.35,
+        "draw": 4.8,
+        "away": 6.6
       },
       "home_stats": {
         "name": "Republic of Korea U23",
@@ -105,15 +72,47 @@
       "source": "betpawa"
     },
     {
+      "id": "ifelfsborgu21orgryteisu21n",
+      "league": "Football / Sweden / U21 Ligacupen Elit",
+      "home": "IF Elfsborg U21",
+      "away": "Orgryte IS U21 (n)",
+      "time": "01:00",
+      "odds": {
+        "home": 2.23,
+        "draw": 3.95,
+        "away": 2.5
+      },
+      "home_stats": {
+        "name": "IF Elfsborg U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 201,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Orgryte IS U21 (n)",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 201,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "farduferghanabukhorodavlatuniv",
       "league": "Football / Uzbekistan / Pro Liga",
       "home": "Fardu Ferghana",
       "away": "Bukhoro Davlat Universiteti",
       "time": "02:00",
       "odds": {
-        "home": 1.19,
-        "draw": 5.8,
-        "away": 12.0
+        "home": 1.15,
+        "draw": 6.4,
+        "away": 13.0
       },
       "home_stats": {
         "name": "Fardu Ferghana",
@@ -184,9 +183,9 @@
       "away": "Sheffield United U21",
       "time": "03:00",
       "odds": {
-        "home": 2.37,
-        "draw": 4.01,
-        "away": 2.39
+        "home": 2.39,
+        "draw": 3.82,
+        "away": 2.44
       },
       "home_stats": {
         "name": "Charlton Athletic U21",
@@ -216,9 +215,9 @@
       "away": "Seychelles U20",
       "time": "04:00",
       "odds": {
-        "home": 1.14,
-        "draw": 7.44,
-        "away": 16.87
+        "home": 1.17,
+        "draw": 6.91,
+        "away": 14.82
       },
       "home_stats": {
         "name": "Namibia U20",
@@ -243,6 +242,39 @@
       "total_teams_in_league": 195
     },
     {
+      "id": "mozambiqueu20mauritiusu20",
+      "league": "Football / International / COSAFA Championship U20",
+      "home": "Mozambique U20",
+      "away": "Mauritius U20",
+      "time": "04:00",
+      "odds": {
+        "home": 1.11,
+        "draw": 9.16,
+        "away": 16.84
+      },
+      "home_stats": {
+        "name": "Mozambique U20",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 202,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Mauritius U20",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 202,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 202
+    },
+    {
       "id": "tanzaniau20burundiu20",
       "league": "Football / International / CECAFA Championship U20",
       "home": "Tanzania U20",
@@ -250,8 +282,8 @@
       "time": "04:00",
       "odds": {
         "home": 1.39,
-        "draw": 4.66,
-        "away": 7.43
+        "draw": 4.68,
+        "away": 7.22
       },
       "home_stats": {
         "name": "Tanzania U20",
@@ -282,9 +314,9 @@
       "away": "FK Gazalkent",
       "time": "05:00",
       "odds": {
-        "home": 10.0,
+        "home": 9.4,
         "draw": 4.9,
-        "away": 1.25
+        "away": 1.26
       },
       "home_stats": {
         "name": "PFC Terdu",
@@ -314,9 +346,9 @@
       "away": "ACSM Resita",
       "time": "05:30",
       "odds": {
-        "home": 5.16,
-        "draw": 4.01,
-        "away": 1.55
+        "home": 5.32,
+        "draw": 4.09,
+        "away": 1.52
       },
       "home_stats": {
         "name": "CSC Dumbravita",
@@ -340,15 +372,123 @@
       "source": "betpawa"
     },
     {
+      "id": "dibbaalfujairahalittifaq",
+      "league": "Football / United Arab Emirates / Presidents Cup",
+      "home": "Dibba Al Fujairah",
+      "away": "AL Ittifaq",
+      "time": "05:40",
+      "odds": {
+        "home": 1.6,
+        "draw": 4.19,
+        "away": 4.87
+      },
+      "home_stats": {
+        "name": "Dibba Al Fujairah",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "away_stats": {
+        "name": "AL Ittifaq",
+        "form": [
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          1
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "aluroobauaedubaicityfc",
+      "league": "Football / United Arab Emirates / Presidents Cup",
+      "home": "Al Urooba (UAE)",
+      "away": "Dubai City FC",
+      "time": "05:40",
+      "odds": {
+        "home": 1.55,
+        "draw": 4.28,
+        "away": 5.26
+      },
+      "home_stats": {
+        "name": "Al Urooba (UAE)",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 181,
+        "opposition_position": 11
+      },
+      "away_stats": {
+        "name": "Dubai City FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 11,
+        "total_teams_in_league": 181,
+        "opposition_position": 11
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "alhamriyahaldhaid",
+      "league": "Football / United Arab Emirates / Presidents Cup",
+      "home": "Al-Hamriyah",
+      "away": "Al-Dhaid",
+      "time": "05:40",
+      "odds": {
+        "home": 2.2,
+        "draw": 3.59,
+        "away": 2.96
+      },
+      "home_stats": {
+        "name": "Al-Hamriyah",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 15,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Al-Dhaid",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 2,
+        "total_teams_in_league": 15,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "dcpowerfcwomenfortlauderdaleun",
       "league": "Football / USA / USL Super League, Women",
       "home": "DC Power FC Women",
       "away": "Fort Lauderdale United FC Women",
       "time": "06:00",
       "odds": {
-        "home": 1.45,
-        "draw": 4.2,
-        "away": 5.8
+        "home": 1.54,
+        "draw": 3.95,
+        "away": 5.0
       },
       "home_stats": {
         "name": "DC Power FC Women",
@@ -378,9 +518,9 @@
       "away": "Skjervoey",
       "time": "06:30",
       "odds": {
-        "home": 1.38,
-        "draw": 5.2,
-        "away": 4.98
+        "home": 1.33,
+        "draw": 5.4,
+        "away": 5.57
       },
       "home_stats": {
         "name": "Skjetten",
@@ -410,9 +550,9 @@
       "away": "JS Saoura",
       "time": "07:00",
       "odds": {
-        "home": 2.55,
-        "draw": 2.85,
-        "away": 3.13
+        "home": 2.08,
+        "draw": 2.89,
+        "away": 4.27
       },
       "home_stats": {
         "name": "US Biskra",
@@ -443,9 +583,9 @@
       "away": "Hacken Gothenburg Women",
       "time": "07:45",
       "odds": {
-        "home": 2.18,
-        "draw": 3.35,
-        "away": 2.9
+        "home": 2.21,
+        "draw": 3.4,
+        "away": 2.85
       },
       "home_stats": {
         "name": "Inter Milano Women",
@@ -497,9 +637,9 @@
       "away": "Manchester City WFC Women",
       "time": "07:45",
       "odds": {
-        "home": 2.09,
+        "home": 2.05,
         "draw": 3.8,
-        "away": 2.8
+        "away": 2.9
       },
       "home_stats": {
         "name": "Bayern Munich Women",
@@ -605,152 +745,6 @@
         "league_position": 8,
         "total_teams_in_league": 110,
         "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "husqvarnaffwomenvaxjodffwomen",
-      "league": "Football / Sweden / Svenska Cup Women",
-      "home": "Husqvarna FF Women",
-      "away": "Vaxjo DFF Women",
-      "time": "08:00",
-      "odds": {
-        "home": 6.6,
-        "draw": 5.0,
-        "away": 1.33
-      },
-      "home_stats": {
-        "name": "Husqvarna FF Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 4,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Vaxjo DFF Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "agfaarhuswomenfcnordsjaellandw",
-      "league": "Football / Denmark / Kvindeligaen, Women",
-      "home": "AGF Aarhus Women",
-      "away": "FC Nordsjaelland Women",
-      "time": "08:00",
-      "odds": {
-        "home": 25.75,
-        "draw": 10.4,
-        "away": 1.07
-      },
-      "home_stats": {
-        "name": "AGF Aarhus Women",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          3,
-          6,
-          2,
-          0,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          0,
-          1
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FC Nordsjaelland Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "asatargumurescsdinamobucuresti",
-      "league": "Football / Romania / Liga 2",
-      "home": "Asa Targu Mures",
-      "away": "CS Dinamo Bucuresti",
-      "time": "08:00",
-      "odds": {
-        "home": 1.07,
-        "draw": 9.59,
-        "away": 18.22
-      },
-      "home_stats": {
-        "name": "Asa Targu Mures",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 23,
-        "opposition_position": 21
-      },
-      "away_stats": {
-        "name": "CS Dinamo Bucuresti",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 21,
-        "total_teams_in_league": 23,
-        "opposition_position": 21
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "almesaimeeralwaab",
-      "league": "Football / Qatar / Stars Cup",
-      "home": "Al Mesaimeer",
-      "away": "AL Waab",
-      "time": "08:15",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.54,
-        "away": 2.91
-      },
-      "home_stats": {
-        "name": "Al Mesaimeer",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "AL Waab",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
       },
       "h2h": null,
       "source": "betpawa"
