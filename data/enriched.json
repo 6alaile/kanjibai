@@ -1,11 +1,49 @@
 {
   "meta": {
     "date": "2026-09-24",
-    "generatedAt": "2026-09-24T06:04:35.406162+03:00",
+    "generatedAt": "2026-09-24T09:03:47.367173+03:00",
     "scanned": 18,
-    "elapsedSeconds": 239.4
+    "elapsedSeconds": 193.5
   },
   "matches": [
+    {
+      "id": "papuanewguineanewcaledonia",
+      "league": "Football / International / Int. Friendly Games",
+      "home": "Papua New Guinea",
+      "away": "New Caledonia",
+      "time": "10:00",
+      "odds": {
+        "home": 2.07,
+        "draw": 3.65,
+        "away": 3.28
+      },
+      "home_stats": {
+        "name": "Papua New Guinea",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 151,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "New Caledonia",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 151,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
     {
       "id": "kuchingcityu20touchtronicsfcu2",
       "league": "Football / Malaysia / Malaysia Presidents Cup U20",
@@ -13,9 +51,9 @@
       "away": "Touchtronics FC U20",
       "time": "11:15",
       "odds": {
-        "home": 2.18,
-        "draw": 3.69,
-        "away": 2.77
+        "home": 2.19,
+        "draw": 3.6,
+        "away": 2.82
       },
       "home_stats": {
         "name": "Kuching City U20",
@@ -39,15 +77,65 @@
       "source": "betpawa"
     },
     {
+      "id": "austrialustenauschwarzweissbre",
+      "league": "Football / International / Club Friendly Games",
+      "home": "Austria Lustenau",
+      "away": "Schwarz-Weiss Bregenz",
+      "time": "11:30",
+      "odds": {
+        "home": 1.74,
+        "draw": 3.9,
+        "away": 4.2
+      },
+      "home_stats": {
+        "name": "Austria Lustenau",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 106,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "Schwarz-Weiss Bregenz",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          5,
+          3,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 106,
+        "opposition_position": 9
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "negerisembilanu20penangfcu20",
       "league": "Football / Malaysia / Malaysia Presidents Cup U20",
       "home": "Negeri Sembilan U20",
       "away": "Penang FC U20",
       "time": "11:45",
       "odds": {
-        "home": 5.81,
-        "draw": 4.36,
-        "away": 1.45
+        "home": 5.59,
+        "draw": 4.28,
+        "away": 1.48
       },
       "home_stats": {
         "name": "Negeri Sembilan U20",
@@ -77,9 +165,9 @@
       "away": "Finland U19",
       "time": "12:00",
       "odds": {
-        "home": 2.16,
-        "draw": 3.55,
-        "away": 3.07
+        "home": 2.36,
+        "draw": 3.44,
+        "away": 2.81
       },
       "home_stats": {
         "name": "Scotland U19",
@@ -133,9 +221,9 @@
       "away": "Uruguay",
       "time": "01:05",
       "odds": {
-        "home": 1.9,
-        "draw": 3.45,
-        "away": 4.04
+        "home": 1.68,
+        "draw": 3.79,
+        "away": 4.97
       },
       "home_stats": {
         "name": "Japan",
@@ -165,9 +253,9 @@
       "away": "Ecuador",
       "time": "02:00",
       "odds": {
-        "home": 2.28,
-        "draw": 3.3,
-        "away": 3.13
+        "home": 2.23,
+        "draw": 3.35,
+        "away": 3.18
       },
       "home_stats": {
         "name": "Korea Republic",
@@ -191,15 +279,48 @@
       "source": "betpawa"
     },
     {
+      "id": "ugandau20burundiu20",
+      "league": "Football / International / CECAFA Championship U20",
+      "home": "Uganda U20",
+      "away": "Burundi U20",
+      "time": "02:00",
+      "odds": {
+        "home": 1.86,
+        "draw": 3.66,
+        "away": 3.86
+      },
+      "home_stats": {
+        "name": "Uganda U20",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 192,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Burundi U20",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 192,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 192
+    },
+    {
       "id": "chinaprmaldives",
       "league": "Football / International / Int. Friendly Games",
       "home": "China PR",
       "away": "Maldives",
       "time": "02:35",
       "odds": {
-        "home": 1.02,
-        "draw": 17.97,
-        "away": 79.48
+        "home": 1.01,
+        "draw": 19.0,
+        "away": 16.84
       },
       "home_stats": {
         "name": "China PR",
@@ -229,9 +350,9 @@
       "away": "Timor-Leste",
       "time": "03:00",
       "odds": {
-        "home": 1.19,
-        "draw": 6.4,
-        "away": 9.6
+        "home": 1.13,
+        "draw": 7.2,
+        "away": 14.0
       },
       "home_stats": {
         "name": "Myanmar",
@@ -267,9 +388,9 @@
       "away": "Congo Republic",
       "time": "04:00",
       "odds": {
-        "home": 2.37,
-        "draw": 3.12,
-        "away": 3.25
+        "home": 2.43,
+        "draw": 3.05,
+        "away": 3.22
       },
       "home_stats": {
         "name": "Namibia",
@@ -299,9 +420,9 @@
       "away": "Shabab Al-Ahli Dubai FC U21",
       "time": "04:25",
       "odds": {
-        "home": 3.17,
-        "draw": 4.46,
-        "away": 1.88
+        "home": 3.68,
+        "draw": 4.47,
+        "away": 1.74
       },
       "home_stats": {
         "name": "Al-Thaid U21",
@@ -331,9 +452,9 @@
       "away": "Proxy SC",
       "time": "04:30",
       "odds": {
-        "home": 1.6,
-        "draw": 3.6,
-        "away": 6.03
+        "home": 1.58,
+        "draw": 3.54,
+        "away": 6.41
       },
       "home_stats": {
         "name": "FC Masar",
@@ -363,9 +484,9 @@
       "away": "El Mansurah",
       "time": "04:30",
       "odds": {
-        "home": 2.36,
-        "draw": 2.78,
-        "away": 3.51
+        "home": 2.28,
+        "draw": 2.68,
+        "away": 3.85
       },
       "home_stats": {
         "name": "Maleyat Kafr El Zayat",
@@ -427,9 +548,9 @@
       "away": "Al Orooba U21",
       "time": "04:30",
       "odds": {
-        "home": 1.39,
-        "draw": 5.19,
-        "away": 6.43
+        "home": 1.29,
+        "draw": 5.72,
+        "away": 8.21
       },
       "home_stats": {
         "name": "Al-Jazira Club U21",
@@ -459,9 +580,9 @@
       "away": "El Sekka El Hadid",
       "time": "04:30",
       "odds": {
-        "home": 2.38,
-        "draw": 3.06,
-        "away": 3.1
+        "home": 2.31,
+        "draw": 3.11,
+        "away": 3.16
       },
       "home_stats": {
         "name": "Al Nasr Cairo",
@@ -491,9 +612,9 @@
       "away": "Pharco FC",
       "time": "04:30",
       "odds": {
-        "home": 2.38,
-        "draw": 2.92,
-        "away": 3.26
+        "home": 2.39,
+        "draw": 2.83,
+        "away": 3.36
       },
       "home_stats": {
         "name": "Kahrabaa Ismailia",
@@ -511,117 +632,6 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "romaniau19hungaryu19",
-      "league": "Football / International / U19 Friendly Games",
-      "home": "Romania U19",
-      "away": "Hungary U19",
-      "time": "05:00",
-      "odds": {
-        "home": 2.17,
-        "draw": 3.6,
-        "away": 3.02
-      },
-      "home_stats": {
-        "name": "Romania U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 22,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Hungary U19",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 22,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "fcelvajktallinnakalev",
-      "league": "Football / Estonia / Cup",
-      "home": "FC Elva",
-      "away": "JK Tallinna Kalev",
-      "time": "05:00",
-      "odds": {
-        "home": 2.97,
-        "draw": 3.21,
-        "away": 2.37
-      },
-      "home_stats": {
-        "name": "FC Elva",
-        "form": [
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          6,
-          4
-        ],
-        "goals_conceded": [
-          0,
-          0
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 10,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "JK Tallinna Kalev",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 10,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "uzbekistaniriran",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Uzbekistan",
-      "away": "IR Iran",
-      "time": "05:00",
-      "odds": {
-        "home": 2.94,
-        "draw": 3.2,
-        "away": 2.45
-      },
-      "home_stats": {
-        "name": "Uzbekistan",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          2
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": null,
-        "total_teams_in_league": 0,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "IR Iran",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 0,
         "opposition_position": null
       },
       "h2h": null,
