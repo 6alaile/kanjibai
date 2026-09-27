@@ -1,697 +1,824 @@
 {
   "meta": {
     "date": "2026-09-27",
-    "generatedAt": "2026-09-27T03:08:32.582837+03:00",
+    "generatedAt": "2026-09-27T06:05:19.469347+03:00",
     "scanned": 20,
-    "elapsedSeconds": 470.1
+    "elapsedSeconds": 280.3
   },
   "matches": [
     {
-      "id": "fcdallaslosangelesfc",
-      "league": "Football / USA / Major League Soccer",
-      "home": "FC Dallas",
-      "away": "Los Angeles FC",
-      "time": "03:30",
+      "id": "clubsantoslagunacfpachuca",
+      "league": "Football / Mexico / Liga MX, Apertura",
+      "home": "Club Santos Laguna",
+      "away": "CF Pachuca",
+      "time": "06:05",
       "odds": {
-        "home": 2.18,
-        "draw": 3.45,
-        "away": 3.18
+        "home": 2.37,
+        "draw": 3.51,
+        "away": 2.78
       },
       "home_stats": {
-        "name": "FC Dallas",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Los Angeles FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "seattlesoundersminnesotaunited",
-      "league": "Football / USA / Major League Soccer",
-      "home": "Seattle Sounders",
-      "away": "Minnesota United FC",
-      "time": "03:30",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.81,
-        "away": 3.13
-      },
-      "home_stats": {
-        "name": "Seattle Sounders",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Minnesota United FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "montevideocitytorquedeportivom",
-      "league": "Football / Uruguay / Primera Division",
-      "home": "Montevideo City Torque",
-      "away": "Deportivo Maldonado",
-      "time": "03:30",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.46,
-        "away": 3.33
-      },
-      "home_stats": {
-        "name": "Montevideo City Torque",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Deportivo Maldonado",
+        "name": "Club Santos Laguna",
         "form": [
           "D",
-          "D",
-          "W",
-          "W",
-          "D",
           "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          2,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          3,
+          3,
+          2
+        ],
+        "league_position": 17,
+        "total_teams_in_league": 18,
+        "opposition_position": 15
+      },
+      "away_stats": {
+        "name": "CF Pachuca",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          4,
+          4,
+          3,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          5,
+          5,
+          5,
+          1
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 18,
+        "opposition_position": 15
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "tigresuanlclubpuebla",
+      "league": "Football / Mexico / Liga MX, Apertura",
+      "home": "Tigres UANL",
+      "away": "Club Puebla",
+      "time": "06:10",
+      "odds": {
+        "home": 1.64,
+        "draw": 3.91,
+        "away": 5.08
+      },
+      "home_stats": {
+        "name": "Tigres UANL",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 16,
+        "total_teams_in_league": 18,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Club Puebla",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 18,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vanuatunewcaledonia",
+      "league": "Football / International / International Friendlies",
+      "home": "Vanuatu",
+      "away": "New Caledonia",
+      "time": "07:00",
+      "odds": {
+        "home": 2.7,
+        "draw": 3.7,
+        "away": 2.45
+      },
+      "home_stats": {
+        "name": "Vanuatu",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 152,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "New Caledonia",
+        "form": [
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 152,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "asharimaalbionwomenehimefcladi",
+      "league": "Football / Japan / Nadeshiko League, Div. 1, Women",
+      "home": "AS Harima Albion Women",
+      "away": "Ehime FC Ladies Women",
+      "time": "07:00",
+      "odds": {
+        "home": 2.07,
+        "draw": 3.31,
+        "away": 3.5
+      },
+      "home_stats": {
+        "name": "AS Harima Albion Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 119,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Ehime FC Ladies Women",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "W",
           "D"
         ],
         "goals_scored": [
           1,
           1,
+          4,
+          4,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 119,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "viamaterasumiyazakiwomenshizuo",
+      "league": "Football / Japan / Nadeshiko League, Div. 1, Women",
+      "home": "Viamaterasu Miyazaki Women",
+      "away": "Shizuoka SSU Bonita Women",
+      "time": "07:00",
+      "odds": {
+        "home": 3.4,
+        "draw": 3.45,
+        "away": 2.06
+      },
+      "home_stats": {
+        "name": "Viamaterasu Miyazaki Women",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          4,
+          0,
+          1,
+          2
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Shizuoka SSU Bonita Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "mynavisendailadieswomenchifure",
+      "league": "Football / Japan / WE League Cup, Women",
+      "home": "Mynavi Sendai Ladies Women",
+      "away": "Chifure AS Elfen Saitama Women",
+      "time": "08:00",
+      "odds": {
+        "home": 2.15,
+        "draw": 3.54,
+        "away": 3.11
+      },
+      "home_stats": {
+        "name": "Mynavi Sendai Ladies Women",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
           3,
           3,
           1,
-          0,
-          1
+          4,
+          2
+        ],
+        "goals_conceded": [
+          4,
+          1,
+          1,
+          2,
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Chifure AS Elfen Saitama Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "orcakamogawafcwomennguloveledg",
+      "league": "Football / Japan / Nadeshiko League, Div. 1, Women",
+      "home": "Orca Kamogawa FC Women",
+      "away": "NGU Loveledge Nagoya Women",
+      "time": "08:00",
+      "odds": {
+        "home": 3.69,
+        "draw": 3.15,
+        "away": 2.08
+      },
+      "home_stats": {
+        "name": "Orca Kamogawa FC Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 17
+      },
+      "away_stats": {
+        "name": "NGU Loveledge Nagoya Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 17,
+        "total_teams_in_league": 20,
+        "opposition_position": 17
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "wsesupremefc",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "WSE",
+      "away": "Supreme FC",
+      "time": "08:30",
+      "odds": {
+        "home": 1.07,
+        "draw": 9.0,
+        "away": 20.0
+      },
+      "home_stats": {
+        "name": "WSE",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Supreme FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "yuenlongfctungsing",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Yuen Long FC",
+      "away": "Tung Sing",
+      "time": "08:30",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.65,
+        "away": 2.14
+      },
+      "home_stats": {
+        "name": "Yuen Long FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 104,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Tung Sing",
+        "form": [
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          2
         ],
         "goals_conceded": [
           1,
           1,
+          0
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 104,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "okayamayunogobellewomenigafcku",
+      "league": "Football / Japan / Nadeshiko League, Div. 1, Women",
+      "home": "Okayama Yunogo Belle Women",
+      "away": "Iga FC Kunoichi Women",
+      "time": "09:00",
+      "odds": {
+        "home": 3.02,
+        "draw": 3.45,
+        "away": 2.23
+      },
+      "home_stats": {
+        "name": "Okayama Yunogo Belle Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Iga FC Kunoichi Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "luckymilehoiking",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Lucky Mile",
+      "away": "Hoi King",
+      "time": "10:00",
+      "odds": {
+        "home": 8.2,
+        "draw": 5.8,
+        "away": 1.24
+      },
+      "home_stats": {
+        "name": "Lucky Mile",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          1
+        ],
+        "goals_conceded": [
+          5
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 14,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Hoi King",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 8,
+        "total_teams_in_league": 14,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fijipapuanewguinea",
+      "league": "Football / International / International Friendlies",
+      "home": "Fiji",
+      "away": "Papua New Guinea",
+      "time": "10:00",
+      "odds": {
+        "home": 2.0,
+        "draw": 3.8,
+        "away": 3.5
+      },
+      "home_stats": {
+        "name": "Fiji",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 153,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Papua New Guinea",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 153,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "rbomiyaardijawomenjefunitedich",
+      "league": "Football / Japan / WE League Cup, Women",
+      "home": "RB Omiya Ardija Women",
+      "away": "JEF United Ichihara Chiba Women",
+      "time": "10:00",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.35,
+        "away": 2.82
+      },
+      "home_stats": {
+        "name": "RB Omiya Ardija Women",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
           1,
+          0,
           2,
-          1,
+          4,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          2,
           1,
           1
         ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "away_stats": {
+        "name": "JEF United Ichihara Chiba Women",
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          0,
+          4
+        ],
+        "league_position": 20,
+        "total_teams_in_league": 20,
+        "opposition_position": 20
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "centralwesternkuitansc",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Central & Western",
+      "away": "Kui Tan SC",
+      "time": "10:30",
+      "odds": {
+        "home": 1.61,
+        "draw": 4.3,
+        "away": 4.0
+      },
+      "home_stats": {
+        "name": "Central & Western",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 14,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Kui Tan SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": 7,
-        "total_teams_in_league": 16,
+        "total_teams_in_league": 14,
         "opposition_position": 7
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 16
+      "source": "betpawa"
     },
     {
-      "id": "corpuschristifcacboise",
-      "league": "Football / USA / USL League One",
-      "home": "Corpus Christi FC",
-      "away": "AC Boise",
-      "time": "03:30",
+      "id": "citizenaashamshuiposa",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Citizen AA",
+      "away": "Sham Shui Po SA",
+      "time": "10:30",
       "odds": {
-        "home": 3.04,
-        "draw": 3.55,
-        "away": 2.13
+        "home": 2.55,
+        "draw": 3.75,
+        "away": 2.25
       },
       "home_stats": {
-        "name": "Corpus Christi FC",
+        "name": "Citizen AA",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 113,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "Sham Shui Po SA",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 10,
-        "total_teams_in_league": 17,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "AC Boise",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 17,
-        "opposition_position": 5
+        "total_teams_in_league": 113,
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "nashvillesctorontofc",
-      "league": "Football / USA / Major League Soccer",
-      "home": "Nashville SC",
-      "away": "Toronto FC",
-      "time": "03:30",
+      "id": "brightceruleanfcresourcescapit",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Bright Cerulean FC",
+      "away": "Resources Capital FC",
+      "time": "10:30",
       "odds": {
-        "home": 1.33,
-        "draw": 5.51,
-        "away": 7.0
+        "home": 29.0,
+        "draw": 11.0,
+        "away": 1.03
       },
       "home_stats": {
-        "name": "Nashville SC",
+        "name": "Bright Cerulean FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
+        "league_position": 13,
+        "total_teams_in_league": 14,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Toronto FC",
+        "name": "Resources Capital FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 41,
+        "total_teams_in_league": 14,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "houstondynamosportingkansascit",
-      "league": "Football / USA / Major League Soccer",
-      "home": "Houston Dynamo",
-      "away": "Sporting Kansas City",
-      "time": "03:30",
+      "id": "criacaoshinjukuokinawasv",
+      "league": "Football / Japan / Japan Football League",
+      "home": "Criacao Shinjuku",
+      "away": "Okinawa SV",
+      "time": "11:00",
       "odds": {
-        "home": 1.61,
-        "draw": 4.31,
-        "away": 4.67
+        "home": 2.85,
+        "draw": 3.1,
+        "away": 2.35
       },
       "home_stats": {
-        "name": "Houston Dynamo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 17,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Sporting Kansas City",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 17,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "austinfcsandiegofc",
-      "league": "Football / USA / Major League Soccer",
-      "home": "Austin FC",
-      "away": "San Diego FC",
-      "time": "03:30",
-      "odds": {
-        "home": 2.62,
-        "draw": 3.7,
-        "away": 2.41
-      },
-      "home_stats": {
-        "name": "Austin FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "San Diego FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "sanantoniofctampabayrowdies",
-      "league": "Football / USA / USL Championship",
-      "home": "San Antonio FC",
-      "away": "Tampa Bay Rowdies",
-      "time": "03:30",
-      "odds": {
-        "home": 3.35,
-        "draw": 3.47,
-        "away": 2.11
-      },
-      "home_stats": {
-        "name": "San Antonio FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Tampa Bay Rowdies",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "portlandthornsfcwomenhoustonda",
-      "league": "Football / USA / National Womens Soccer League",
-      "home": "Portland Thorns FC Women",
-      "away": "Houston Dash Women",
-      "time": "03:45",
-      "odds": {
-        "home": 1.47,
-        "draw": 4.76,
-        "away": 5.63
-      },
-      "home_stats": {
-        "name": "Portland Thorns FC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Houston Dash Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "aucklandfcreserveswellingtonol",
-      "league": "Football / New Zealand / National League",
-      "home": "Auckland FC Reserves",
-      "away": "Wellington Olympic",
-      "time": "04:00",
-      "odds": {
-        "home": 3.98,
-        "draw": 4.47,
-        "away": 1.68
-      },
-      "home_stats": {
-        "name": "Auckland FC Reserves",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 114,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "Wellington Olympic",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 114,
-        "opposition_position": 1
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "irapuatolobosulmx",
-      "league": "Football / Mexico / Liga Primera Premier",
-      "home": "Irapuato",
-      "away": "Lobos Ulmx",
-      "time": "04:00",
-      "odds": {
-        "home": 1.67,
-        "draw": 3.75,
-        "away": 4.2
-      },
-      "home_stats": {
-        "name": "Irapuato",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 191,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Lobos Ulmx",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 191,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "csddoradossinaloaalacranesdedu",
-      "league": "Football / Mexico / Liga de Expansion MX, Apertura",
-      "home": "CSD Dorados Sinaloa",
-      "away": "Alacranes de Durango",
-      "time": "04:00",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.44,
-        "away": 2.76
-      },
-      "home_stats": {
-        "name": "CSD Dorados Sinaloa",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Alacranes de Durango",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "mexicocolombian",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Mexico",
-      "away": "Colombia (n)",
-      "time": "04:00",
-      "odds": {
-        "home": 2.73,
-        "draw": 3.35,
-        "away": 2.5
-      },
-      "home_stats": {
-        "name": "Mexico",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Colombia (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "newmexicounitedsacramentorepub",
-      "league": "Football / USA / USL Championship",
-      "home": "New Mexico United",
-      "away": "Sacramento Republic FC",
-      "time": "04:00",
-      "odds": {
-        "home": 3.49,
-        "draw": 3.61,
-        "away": 1.99
-      },
-      "home_stats": {
-        "name": "New Mexico United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "Sacramento Republic FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "fcjuarezwomenclubtijuanadecali",
-      "league": "Football / Mexico / Liga MX, Women, Apertura",
-      "home": "FC Juarez Women",
-      "away": "Club Tijuana de Caliente Women",
-      "time": "04:06",
-      "odds": {
-        "home": 1.27,
-        "draw": 5.84,
-        "away": 9.16
-      },
-      "home_stats": {
-        "name": "FC Juarez Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Club Tijuana de Caliente Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "cdjuniorfcindependientemedelli",
-      "league": "Football / Colombia / Primera A, Apertura",
-      "home": "CD Junior FC",
-      "away": "Independiente Medellin",
-      "time": "04:20",
-      "odds": {
-        "home": 2.39,
-        "draw": 3.39,
-        "away": 2.87
-      },
-      "home_stats": {
-        "name": "CD Junior FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 20,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Independiente Medellin",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "taurofcsanfranciscofc",
-      "league": "Football / Panama / Liga Panamena de Futbol, Apertura",
-      "home": "Tauro FC",
-      "away": "San Francisco FC",
-      "time": "04:30",
-      "odds": {
-        "home": 2.52,
-        "draw": 3.01,
-        "away": 2.85
-      },
-      "home_stats": {
-        "name": "Tauro FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "San Francisco FC",
+        "name": "Criacao Shinjuku",
         "form": [
           "W",
-          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 16,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "Okinawa SV",
+        "form": [
           "W",
           "D",
           "L"
         ],
         "goals_scored": [
-          2,
           4,
-          2,
-          3,
+          1,
           1
         ],
         "goals_conceded": [
-          0,
           1,
           1,
-          3,
           2
         ],
-        "league_position": null,
+        "league_position": 6,
+        "total_teams_in_league": 16,
+        "opposition_position": 6
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "inackobeleonessawomensanfrecce",
+      "league": "Football / Japan / WE League Cup, Women",
+      "home": "INAC Kobe Leonessa Women",
+      "away": "Sanfrecce Hiroshima Regina Women",
+      "time": "11:00",
+      "odds": {
+        "home": 2.22,
+        "draw": 3.78,
+        "away": 2.81
+      },
+      "home_stats": {
+        "name": "INAC Kobe Leonessa Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
         "total_teams_in_league": 20,
-        "opposition_position": null
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Sanfrecce Hiroshima Regina Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "realsaltlakenewenglandrevoluti",
-      "league": "Football / USA / Major League Soccer",
-      "home": "Real Salt Lake",
-      "away": "New England Revolution",
-      "time": "04:30",
+      "id": "tsgalaxyfcu23polokwanecityu23",
+      "league": "Football / South Africa / Diski Challenge, Reserves",
+      "home": "TS Galaxy FC U23",
+      "away": "Polokwane City U23",
+      "time": "11:00",
       "odds": {
-        "home": 2.16,
-        "draw": 3.72,
-        "away": 2.97
+        "home": 1.98,
+        "draw": 3.3,
+        "away": 3.45
       },
       "home_stats": {
-        "name": "Real Salt Lake",
+        "name": "TS Galaxy FC U23",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 18,
-        "opposition_position": 2
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
       },
       "away_stats": {
-        "name": "New England Revolution",
+        "name": "Polokwane City U23",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 18,
-        "opposition_position": 2
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "orangecountyscpittsburghriverh",
-      "league": "Football / USA / USL Championship",
-      "home": "Orange County SC",
-      "away": "Pittsburgh Riverhounds",
-      "time": "05:00",
+      "id": "mfkhavirovskunicov",
+      "league": "Football / Czech Republic / MSFL",
+      "home": "MFK Havirov",
+      "away": "SK Unicov",
+      "time": "11:15",
       "odds": {
-        "home": 2.91,
-        "draw": 3.22,
-        "away": 2.47
+        "home": 3.88,
+        "draw": 4.17,
+        "away": 1.75
       },
       "home_stats": {
-        "name": "Orange County SC",
+        "name": "MFK Havirov",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 12,
+        "league_position": 16,
+        "total_teams_in_league": 16,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Pittsburgh Riverhounds",
+        "name": "SK Unicov",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 12,
+        "total_teams_in_league": 16,
         "opposition_position": null
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "montereybayfclexingtonsc",
-      "league": "Football / USA / USL Championship",
-      "home": "Monterey Bay FC",
-      "away": "Lexington SC",
-      "time": "05:00",
-      "odds": {
-        "home": 3.39,
-        "draw": 3.77,
-        "away": 1.97
-      },
-      "home_stats": {
-        "name": "Monterey Bay FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 12,
-        "total_teams_in_league": 12,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "Lexington SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 12,
-        "opposition_position": 5
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
+      "source": "betpawa"
     }
   ]
 }
