@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-28T12:03:27.322622+00:00",
+  "lastUpdated": "2026-09-28T15:05:37.162078+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -66316,12 +66316,35 @@
           "name": "Equatorial Guinea",
           "league_position": null,
           "total_teams": 4,
-          "last_scraped": "2026-09-24T15:05:58.838467+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-28T15:02:49.518983+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 24/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "DR Congo",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "Group Stage",
+              "competition": "Africa Cup of Nations Qualification",
+              "league_id": "AFCQ",
+              "match_id": "5046881",
+              "ranking": ""
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              0
+            ],
+            "goals_conceded": [
+              2
+            ]
           },
           "h2h": {}
         },
@@ -66573,6 +66596,80 @@
             "goals_conceded": [
               2,
               0
+            ]
+          },
+          "h2h": {}
+        },
+        "zimbabwe": {
+          "id": 3583,
+          "name": "Zimbabwe",
+          "league_position": null,
+          "total_teams": 14,
+          "last_scraped": "2026-09-28T15:01:31.246570+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 24/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Sierra Leone",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "Group Stage",
+              "competition": "Africa Cup of Nations Qualification",
+              "league_id": "AFCQ",
+              "match_id": "5046882",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W"
+            ],
+            "goals_scored": [
+              3
+            ],
+            "goals_conceded": [
+              2
+            ]
+          },
+          "h2h": {}
+        },
+        "sierra_leone": {
+          "id": 6187,
+          "name": "Sierra Leone",
+          "league_position": null,
+          "total_teams": 15,
+          "last_scraped": "2026-09-28T15:03:05.150489+00:00",
+          "recent_matches": [
+            {
+              "date": "Thu 24/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Zimbabwe",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "Group Stage",
+              "competition": "Africa Cup of Nations Qualification",
+              "league_id": "AFCQ",
+              "match_id": "5046882",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              2
+            ],
+            "goals_conceded": [
+              3
             ]
           },
           "h2h": {}
@@ -74930,6 +75027,191 @@
             "goals_conceded": []
           },
           "h2h": {}
+        },
+        "burkina_faso": {
+          "id": 5872,
+          "name": "Burkina Faso",
+          "league_position": null,
+          "total_teams": 51,
+          "last_scraped": "2026-09-28T15:01:07.825496+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Benin",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "5046883",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "georgia": {
+          "id": 3669,
+          "name": "Georgia",
+          "league_position": null,
+          "total_teams": 52,
+          "last_scraped": "2026-09-28T15:03:20.876836+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "N. Ireland",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4824845",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              0
+            ],
+            "goals_conceded": [
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "ukraine": {
+          "id": 3699,
+          "name": "Ukraine",
+          "league_position": null,
+          "total_teams": 53,
+          "last_scraped": "2026-09-28T15:03:36.556141+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Hungary",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4824848",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              0
+            ]
+          },
+          "h2h": {}
+        },
+        "armenia": {
+          "id": 6219,
+          "name": "Armenia",
+          "league_position": null,
+          "total_teams": 54,
+          "last_scraped": "2026-09-28T15:03:52.088590+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Latvia",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "Group Stage",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4824870",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W"
+            ],
+            "goals_scored": [
+              2
+            ],
+            "goals_conceded": [
+              0
+            ]
+          },
+          "h2h": {}
+        },
+        "cyprus": {
+          "id": 3668,
+          "name": "Cyprus",
+          "league_position": null,
+          "total_teams": 55,
+          "last_scraped": "2026-09-28T15:05:20.525998+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "8:45 PM",
+              "home_away": "A",
+              "opponent": "Montenegro",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4824872",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              2
+            ]
+          },
+          "h2h": {}
         }
       }
     },
@@ -80776,7 +81058,7 @@
           "name": "Borac Cacak",
           "league_position": 1,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707347+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391592+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -80790,7 +81072,7 @@
           "name": "FK TSC",
           "league_position": 2,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707361+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391607+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -80903,7 +81185,7 @@
           "name": "Javor-Matis",
           "league_position": 5,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707374+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391622+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -80917,7 +81199,7 @@
           "name": "Spartak",
           "league_position": 6,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707378+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391626+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -80931,7 +81213,7 @@
           "name": "Vrsac",
           "league_position": 4,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707370+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391618+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81044,7 +81326,7 @@
           "name": "Napredak",
           "league_position": 10,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707394+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391642+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -81058,7 +81340,7 @@
           "name": "Smederevo 1924",
           "league_position": 3,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707366+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391614+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -81072,7 +81354,7 @@
           "name": "Dubocica",
           "league_position": 9,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707390+00:00",
+          "last_scraped": "2026-09-28T15:05:37.162063+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81185,7 +81467,7 @@
           "name": "Metalac",
           "league_position": 7,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707382+00:00",
+          "last_scraped": "2026-09-28T15:04:49.357313+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81298,7 +81580,7 @@
           "name": "Vozdovac",
           "league_position": 8,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707386+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391635+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -81312,7 +81594,7 @@
           "name": "FK Loznica",
           "league_position": 11,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707398+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391647+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -81326,7 +81608,7 @@
           "name": "FK Bor",
           "league_position": 12,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707402+00:00",
+          "last_scraped": "2026-09-28T15:04:32.544956+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81439,7 +81721,7 @@
           "name": "Teleoptik",
           "league_position": 16,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.809377+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391665+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81552,7 +81834,7 @@
           "name": "Jedinstvo Ub",
           "league_position": 14,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707410+00:00",
+          "last_scraped": "2026-09-28T15:02:06.494403+00:00",
           "recent_matches": [
             {
               "date": "Wed 19/08/26",
@@ -81665,7 +81947,7 @@
           "name": "Proleter Zrenj.",
           "league_position": 13,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707406+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391655+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -81679,7 +81961,7 @@
           "name": "Graficar",
           "league_position": 14,
           "total_teams": 16,
-          "last_scraped": "2026-09-28T12:01:20.707414+00:00",
+          "last_scraped": "2026-09-28T15:02:06.391662+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91779,7 +92061,7 @@
           "name": "Lillehammer FK",
           "league_position": 1,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060172+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126134+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91793,7 +92075,7 @@
           "name": "Elverum",
           "league_position": 2,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060195+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126148+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91807,7 +92089,7 @@
           "name": "R\u00e5de IL",
           "league_position": 3,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060201+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126152+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91821,7 +92103,7 @@
           "name": "Gj\u00f8vik-Lyn",
           "league_position": 4,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060206+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126157+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91835,7 +92117,7 @@
           "name": "Oppsal Fotball",
           "league_position": 5,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060211+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126161+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91849,7 +92131,7 @@
           "name": "Dr\u00f8bak-Frogn",
           "league_position": 6,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060216+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126164+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91861,9 +92143,9 @@
         "\u00f8rn_horten": {
           "id": 7187,
           "name": "\u00d8rn Horten",
-          "league_position": 7,
+          "league_position": 8,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060220+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126172+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91875,9 +92157,9 @@
         "lyn_fk_ii": {
           "id": 47128,
           "name": "Lyn FK II",
-          "league_position": 8,
+          "league_position": 9,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060224+00:00",
+          "last_scraped": "2026-09-28T15:02:34.227938+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91889,9 +92171,9 @@
         "r\u00e6lingen": {
           "id": 48520,
           "name": "R\u00e6lingen",
-          "league_position": 9,
+          "league_position": 11,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060229+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126186+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91903,9 +92185,9 @@
         "sandefjord_ii": {
           "id": 55475,
           "name": "Sandefjord II",
-          "league_position": 10,
+          "league_position": 7,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060234+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126168+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91917,9 +92199,9 @@
         "sarpsborg_08_ii": {
           "id": 40211,
           "name": "Sarpsborg 08 II",
-          "league_position": 11,
+          "league_position": 10,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060238+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126182+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91933,7 +92215,7 @@
           "name": "Fram",
           "league_position": 12,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060242+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126191+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91947,7 +92229,7 @@
           "name": "Brumunddal",
           "league_position": 13,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.145682+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126195+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -91961,7 +92243,7 @@
           "name": "Bj\u00f8rkelangen",
           "league_position": 14,
           "total_teams": 14,
-          "last_scraped": "2026-09-21T15:04:32.060251+00:00",
+          "last_scraped": "2026-09-28T15:02:34.126198+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -98430,6 +98712,86 @@
             "goals_conceded": [
               0,
               3,
+              2
+            ]
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "UNLC": {
+      "name": "UEFA Nations League C",
+      "table_fetched_at": "2026-09-28T15:04:15.230131+00:00",
+      "teams": {
+        "montenegro": {
+          "id": 11953,
+          "name": "Montenegro",
+          "league_position": null,
+          "total_teams": 0,
+          "last_scraped": "2026-09-28T15:04:15.230146+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "Cyprus",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "UEFA Nations League C",
+              "league_id": "UNLC",
+              "match_id": "4824872",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W"
+            ],
+            "goals_scored": [
+              2
+            ],
+            "goals_conceded": [
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "latvia": {
+          "id": 3555,
+          "name": "Latvia",
+          "league_position": null,
+          "total_teams": 1,
+          "last_scraped": "2026-09-28T15:05:05.040033+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Armenia",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "Group Stage",
+              "competition": "UEFA Nations League C",
+              "league_id": "UNLC",
+              "match_id": "4824870",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              0
+            ],
+            "goals_conceded": [
               2
             ]
           },
