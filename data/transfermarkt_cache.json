@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-29T00:06:09.768244+00:00",
+  "lastUpdated": "2026-09-29T03:05:01.359404+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -32929,7 +32929,7 @@
           "name": "Ehime FC",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295355+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617868+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33042,7 +33042,7 @@
           "name": "Kagoshima Utd.",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295342+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617854+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33054,23 +33054,122 @@
         "fc_gifu": {
           "id": 13600,
           "name": "FC Gifu",
-          "league_position": 9,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295382+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-29T03:04:43.721305+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 02/09/26",
+              "time": "12:00 PM",
+              "home_away": "H",
+              "opponent": "Tokushima Vort.",
+              "opponent_id": null,
+              "score": [
+                3,
+                1
+              ],
+              "matchday": "First Round",
+              "competition": "J3 League",
+              "league_id": "JAP3",
+              "match_id": "4904245",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 20/09/26",
+              "time": "10:00 AM",
+              "home_away": "A",
+              "opponent": "Nagano Parceiro",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "7",
+              "competition": "J3 League",
+              "league_id": "JAP3",
+              "match_id": "4903493",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sun 09/08/26",
+              "time": "11:30 AM",
+              "home_away": "A",
+              "opponent": "Reilac Shiga",
+              "opponent_id": null,
+              "score": [
+                0,
+                3
+              ],
+              "matchday": "1",
+              "competition": "J3 League",
+              "league_id": "JAP3",
+              "match_id": "4903525",
+              "ranking": "(6.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "Tochigi SC",
+              "opponent_id": null,
+              "score": [
+                4,
+                1
+              ],
+              "matchday": "4",
+              "competition": "J3 League",
+              "league_id": "JAP3",
+              "match_id": "4903594",
+              "ranking": "(1.)"
+            },
+            {
+              "date": "Sat 26/09/26",
+              "time": "10:00 AM",
+              "home_away": "A",
+              "opponent": "Kamatam. Sanuki",
+              "opponent_id": null,
+              "score": [
+                3,
+                4
+              ],
+              "matchday": "8",
+              "competition": "J3 League",
+              "league_id": "JAP3",
+              "match_id": "4903537",
+              "ranking": "(9.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "W",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              3,
+              0,
+              3,
+              4,
+              4
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              0,
+              1,
+              3
+            ]
           },
           "h2h": {}
         },
         "reilac_shiga": {
           "id": 23573,
           "name": "Reilac Shiga",
-          "league_position": 5,
+          "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:04:57.188383+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617901+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -33181,9 +33280,9 @@
         "sc_sagamihara": {
           "id": 23548,
           "name": "SC Sagamihara",
-          "league_position": 6,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:03:47.377155+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617896+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33294,9 +33393,9 @@
         "tochigi_sc": {
           "id": 22179,
           "name": "Tochigi SC",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295397+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617921+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33310,7 +33409,7 @@
           "name": "FC Osaka",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295359+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617872+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33423,7 +33522,7 @@
           "name": "Reno. Yamaguchi",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:03:29.466073+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617877+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33534,9 +33633,9 @@
         "nagano_parceiro": {
           "id": 25738,
           "name": "Nagano Parceiro",
-          "league_position": 7,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295371+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617909+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33548,9 +33647,9 @@
         "gainare_tottori": {
           "id": 20805,
           "name": "Gainare Tottori",
-          "league_position": 12,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:29.312680+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617917+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33661,9 +33760,9 @@
         "roasso_kumamoto": {
           "id": 22175,
           "name": "Roasso Kumamoto",
-          "league_position": 10,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295386+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617888+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33675,9 +33774,9 @@
         "zweig_kanazawa": {
           "id": 24321,
           "name": "Zweig. Kanazawa",
-          "league_position": 14,
+          "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.394268+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617913+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33788,9 +33887,9 @@
         "nara_club": {
           "id": 34997,
           "name": "Nara Club",
-          "league_position": 8,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:04:39.430862+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617881+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -33901,9 +34000,9 @@
         "fukushima_utd": {
           "id": 28753,
           "name": "Fukushima Utd.",
-          "league_position": 19,
+          "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295417+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617926+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33915,9 +34014,9 @@
         "matsumoto_yama": {
           "id": 25765,
           "name": "Matsumoto Yama.",
-          "league_position": 17,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295410+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617924+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33929,9 +34028,9 @@
         "ryukyu_okinawa": {
           "id": 23569,
           "name": "Ryukyu Okinawa",
-          "league_position": 11,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295390+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617906+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33945,7 +34044,7 @@
           "name": "Kamatam. Sanuki",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295420+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617934+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -34056,9 +34155,9 @@
         "kochi_utd": {
           "id": 55744,
           "name": "Kochi Utd.",
-          "league_position": 18,
+          "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295413+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617932+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34070,9 +34169,9 @@
         "gir_kitakyushu": {
           "id": 23575,
           "name": "Gir. Kitakyushu",
-          "league_position": 15,
+          "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295403+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617928+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34183,9 +34282,9 @@
         "thespa_gunma": {
           "id": 22178,
           "name": "Thespa Gunma",
-          "league_position": 16,
+          "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T03:02:11.295407+00:00",
+          "last_scraped": "2026-09-29T03:04:43.617930+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34205,7 +34304,7 @@
           "name": "Machida Zelvia",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.643054+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990313+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34318,7 +34417,7 @@
           "name": "Vissel Kobe",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587009+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990289+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34332,7 +34431,7 @@
           "name": "Kashima Antlers",
           "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587034+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990327+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34445,7 +34544,7 @@
           "name": "Kashiwa Reysol",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587023+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990304+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34459,12 +34558,111 @@
           "name": "Sanf. Hiroshima",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587025+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-29T03:03:35.092880+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 02/09/26",
+              "time": "12:00 PM",
+              "home_away": "H",
+              "opponent": "Nagoya Grampus",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "5",
+              "competition": "J1 League",
+              "league_id": "JAP1",
+              "match_id": "4901535",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Fagiano Okayama",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "6",
+              "competition": "J1 League",
+              "league_id": "JAP1",
+              "match_id": "4901566",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Gamba Osaka",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "4",
+              "competition": "J1 League",
+              "league_id": "JAP1",
+              "match_id": "4901505",
+              "ranking": "(4.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "12:15 PM",
+              "home_away": "H",
+              "opponent": "Kawasaki Front.",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "3",
+              "competition": "J1 League",
+              "league_id": "JAP1",
+              "match_id": "4901527",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Sat 19/09/26",
+              "time": "11:00 AM",
+              "home_away": "A",
+              "opponent": "Avispa Fukuoka",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "8",
+              "competition": "J1 League",
+              "league_id": "JAP1",
+              "match_id": "4901546",
+              "ranking": "(4.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "D",
+              "D",
+              "W"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              0,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              3,
+              0,
+              1,
+              0
+            ]
           },
           "h2h": {}
         },
@@ -34473,7 +34671,7 @@
           "name": "FC Tokyo",
           "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587029+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990317+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34586,7 +34784,7 @@
           "name": "Yokohama F. M.",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587031+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990320+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34600,7 +34798,7 @@
           "name": "Fagiano Okayama",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587036+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990330+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34614,7 +34812,7 @@
           "name": "Cerezo Osaka",
           "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587040+00:00",
+          "last_scraped": "2026-09-29T03:04:18.408416+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34681,20 +34879,20 @@
               "ranking": "(12.)"
             },
             {
-              "date": "Sat 15/08/26",
-              "time": "12:00 PM",
+              "date": "Sat 19/09/26",
+              "time": "11:30 AM",
               "home_away": "A",
-              "opponent": "Avispa Fukuoka",
+              "opponent": "V-V. Nagasaki",
               "opponent_id": null,
               "score": [
-                3,
-                0
+                1,
+                1
               ],
-              "matchday": "2",
+              "matchday": "8",
               "competition": "J1 League",
               "league_id": "JAP1",
-              "match_id": "4901517",
-              "ranking": "(6.)"
+              "match_id": "4901547",
+              "ranking": "(10.)"
             }
           ],
           "form_summary": {
@@ -34703,21 +34901,21 @@
               "D",
               "L",
               "W",
-              "L"
+              "D"
             ],
             "goals_scored": [
               2,
               0,
               0,
               1,
-              0
+              1
             ],
             "goals_conceded": [
               0,
               0,
               1,
               0,
-              3
+              1
             ]
           },
           "h2h": {}
@@ -34727,7 +34925,7 @@
           "name": "Kawasaki Front.",
           "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587033+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990323+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34741,7 +34939,7 @@
           "name": "Mito HollyHock",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587044+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990345+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34755,7 +34953,7 @@
           "name": "Urawa Reds",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587038+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990334+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34868,7 +35066,7 @@
           "name": "Gamba Osaka",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587049+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990356+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -34981,7 +35179,7 @@
           "name": "Nagoya Grampus",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587050+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990359+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34995,7 +35193,7 @@
           "name": "Kyoto Sanga",
           "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587045+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990349+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -35009,7 +35207,7 @@
           "name": "Avispa Fukuoka",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587052+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990363+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -35122,7 +35320,7 @@
           "name": "Shimizu S-Pulse",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587042+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990341+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -35235,7 +35433,7 @@
           "name": "V-V. Nagasaki",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587047+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990352+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -35348,7 +35546,7 @@
           "name": "Tokyo Verdy",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587054+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990367+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -35461,7 +35659,7 @@
           "name": "JEF Utd. Chiba",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-23T03:02:57.587055+00:00",
+          "last_scraped": "2026-09-29T03:03:34.990371+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -35775,9 +35973,9 @@
         "rb_omiya": {
           "id": 7452,
           "name": "RB Omiya",
-          "league_position": 5,
+          "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:04:45.817388+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245476+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -35888,23 +36086,122 @@
         "yokohama_fc": {
           "id": 943,
           "name": "Yokohama FC",
-          "league_position": 4,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122624+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-29T03:05:01.359391+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 02/09/26",
+              "time": "12:00 PM",
+              "home_away": "A",
+              "opponent": "Ryukyu Okinawa",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "First Round",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4904253",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 16/08/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "J\u00fabilo Iwata",
+              "opponent_id": null,
+              "score": [
+                3,
+                1
+              ],
+              "matchday": "2",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4903091",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sun 06/09/26",
+              "time": "11:00 AM",
+              "home_away": "H",
+              "opponent": "Albirex Niigata",
+              "opponent_id": null,
+              "score": [
+                5,
+                0
+              ],
+              "matchday": "5",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4903194",
+              "ranking": "(8.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "12:00 PM",
+              "home_away": "H",
+              "opponent": "Sagan Tosu",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "4",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4903406",
+              "ranking": "(7.)"
+            },
+            {
+              "date": "Sat 26/09/26",
+              "time": "10:00 AM",
+              "home_away": "A",
+              "opponent": "Kataller Toyama",
+              "opponent_id": null,
+              "score": [
+                3,
+                3
+              ],
+              "matchday": "8",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4903145",
+              "ranking": "(4.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "D"
+            ],
+            "goals_scored": [
+              3,
+              3,
+              5,
+              2,
+              3
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              0,
+              2,
+              3
+            ]
           },
           "h2h": {}
         },
         "vegalta_sendai": {
           "id": 6395,
           "name": "Vegalta Sendai",
-          "league_position": 2,
+          "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:03:03.160700+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245465+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -36015,9 +36312,9 @@
         "fujieda_myfc": {
           "id": 25716,
           "name": "Fujieda MYFC",
-          "league_position": 7,
+          "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:29.804988+00:00",
+          "last_scraped": "2026-09-29T03:04:00.348297+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36052,6 +36349,22 @@
               "ranking": "(5.)"
             },
             {
+              "date": "Sat 26/09/26",
+              "time": "10:00 AM",
+              "home_away": "A",
+              "opponent": "Oita Trinita",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "8",
+              "competition": "J2 League",
+              "league_id": "JAP2",
+              "match_id": "4903149",
+              "ranking": "(7.)"
+            },
+            {
               "date": "Sat 22/08/26",
               "time": "12:00 PM",
               "home_away": "A",
@@ -36082,38 +36395,22 @@
               "league_id": "JAP2",
               "match_id": "4903139",
               "ranking": "(8.)"
-            },
-            {
-              "date": "Sat 15/08/26",
-              "time": "11:30 AM",
-              "home_away": "H",
-              "opponent": "Iwaki FC",
-              "opponent_id": null,
-              "score": [
-                3,
-                1
-              ],
-              "matchday": "2",
-              "competition": "J2 League",
-              "league_id": "JAP2",
-              "match_id": "4903098",
-              "ranking": "(4.)"
             }
           ],
           "form_summary": {
             "form": [
               "W",
               "W",
-              "L",
               "D",
-              "W"
+              "L",
+              "D"
             ],
             "goals_scored": [
               2,
               3,
-              0,
               1,
-              3
+              0,
+              1
             ],
             "goals_conceded": [
               0,
@@ -36128,9 +36425,9 @@
         "tochigi_city": {
           "id": 29307,
           "name": "Tochigi City",
-          "league_position": 8,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122632+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245518+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -36142,9 +36439,9 @@
         "kataller_toyama": {
           "id": 22173,
           "name": "Kataller Toyama",
-          "league_position": 3,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122622+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245495+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36255,9 +36552,9 @@
         "monte_yamagata": {
           "id": 16190,
           "name": "Monte. Yamagata",
-          "league_position": 11,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:05:18.990640+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245507+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -36368,9 +36665,9 @@
         "albirex_niigata": {
           "id": 8344,
           "name": "Albirex Niigata",
-          "league_position": 1,
+          "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:02:30.283381+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245485+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36481,9 +36778,9 @@
         "sagan_tosu": {
           "id": 22177,
           "name": "Sagan Tosu",
-          "league_position": 15,
+          "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:05:35.675145+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245541+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36594,9 +36891,9 @@
         "shonan_bellmare": {
           "id": 8457,
           "name": "Shonan Bellmare",
-          "league_position": 6,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:03:36.114377+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245490+00:00",
           "recent_matches": [
             {
               "date": "Wed 09/09/26",
@@ -36707,9 +37004,9 @@
         "j\u00fabilo_iwata": {
           "id": 937,
           "name": "J\u00fabilo Iwata",
-          "league_position": 9,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122634+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245526+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -36721,9 +37018,9 @@
         "tokushima_vort": {
           "id": 17832,
           "name": "Tokushima Vort.",
-          "league_position": 10,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:03:52.704717+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245503+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36834,9 +37131,9 @@
         "ventforet_kofu": {
           "id": 10999,
           "name": "Ventforet Kofu",
-          "league_position": 17,
+          "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:05:02.443374+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245544+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -36947,9 +37244,9 @@
         "vanr_hachinohe": {
           "id": 35000,
           "name": "Vanr. Hachinohe",
-          "league_position": 18,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122663+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245530+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -36963,7 +37260,7 @@
           "name": "Oita Trinita",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.199975+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245537+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -37076,7 +37373,7 @@
           "name": "Blaublitz Akita",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:02:13.625845+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245522+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -37189,7 +37486,7 @@
           "name": "H. C. Sapporo",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122665+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245548+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -37300,9 +37597,9 @@
         "iwaki_fc": {
           "id": 53668,
           "name": "Iwaki FC",
-          "league_position": 13,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:02:46.791207+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245533+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -37413,9 +37710,9 @@
         "teg_miyazaki": {
           "id": 50673,
           "name": "Teg. Miyazaki",
-          "league_position": 14,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:01:13.122652+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245515+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -37528,7 +37825,7 @@
           "name": "FC Imabari",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-09-26T06:03:19.782119+00:00",
+          "last_scraped": "2026-09-29T03:04:00.245551+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -60253,7 +60550,7 @@
           "name": "tonan Maebashi",
           "league_position": 1,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290530+00:00",
+          "last_scraped": "2026-09-29T03:03:09.739983+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60265,9 +60562,9 @@
         "tochigi_cty_u25": {
           "id": 99342,
           "name": "Tochigi Cty U25",
-          "league_position": 2,
+          "league_position": 4,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.367963+00:00",
+          "last_scraped": "2026-09-29T03:03:09.843745+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60281,7 +60578,7 @@
           "name": "Onodera FC",
           "league_position": 5,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290552+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740014+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60293,9 +60590,9 @@
         "coedo_kawagoe": {
           "id": 84738,
           "name": "Coedo Kawagoe",
-          "league_position": 3,
+          "league_position": 2,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290546+00:00",
+          "last_scraped": "2026-09-29T03:03:09.739999+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60309,7 +60606,7 @@
           "name": "Esperanza SC",
           "league_position": 6,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290555+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740018+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60321,9 +60618,9 @@
         "tokyo_iu_fc": {
           "id": 66726,
           "name": "Tokyo IU FC",
-          "league_position": 4,
+          "league_position": 3,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290550+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740004+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60337,7 +60634,7 @@
           "name": "Tsukuba FC",
           "league_position": 7,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290558+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740022+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60351,7 +60648,7 @@
           "name": "Hitachi BuilSys",
           "league_position": 8,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290560+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740026+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60365,7 +60662,7 @@
           "name": "Atsugi Hayabusa",
           "league_position": 9,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290562+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740030+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -60379,7 +60676,7 @@
           "name": "Vertfee Yaita",
           "league_position": 10,
           "total_teams": 10,
-          "last_scraped": "2026-09-26T06:04:14.290564+00:00",
+          "last_scraped": "2026-09-29T03:03:09.740033+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -74660,12 +74957,35 @@
           "name": "Australia",
           "league_position": null,
           "total_teams": 34,
-          "last_scraped": "2026-09-25T03:04:55.729612+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-29T03:02:31.219338+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "12:00 PM",
+              "home_away": "H",
+              "opponent": "Brazil",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "5052812",
+              "ranking": ""
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              1
+            ]
           },
           "h2h": {}
         },
@@ -74674,12 +74994,35 @@
           "name": "Brazil",
           "league_position": null,
           "total_teams": 35,
-          "last_scraped": "2026-09-25T03:05:13.084138+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-09-29T03:02:47.348193+00:00",
+          "recent_matches": [
+            {
+              "date": "Fri 25/09/26",
+              "time": "12:00 PM",
+              "home_away": "A",
+              "opponent": "Australia",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "1",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "5052812",
+              "ranking": ""
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              1
+            ]
           },
           "h2h": {}
         },
@@ -99272,6 +99615,86 @@
             ],
             "goals_conceded": [
               2
+            ]
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "SU20": {
+      "name": "U20 Elite League",
+      "table_fetched_at": "2026-09-29T03:01:32.901831+00:00",
+      "teams": {
+        "portugal_u20": {
+          "id": 16373,
+          "name": "Portugal U20",
+          "league_position": null,
+          "total_teams": 0,
+          "last_scraped": "2026-09-29T03:01:32.901850+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 26/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "Poland U20",
+              "opponent_id": null,
+              "score": [
+                1,
+                3
+              ],
+              "matchday": "Group Stage",
+              "competition": "U20 Elite League",
+              "league_id": "SU20",
+              "match_id": "5049354",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              1
+            ],
+            "goals_conceded": [
+              3
+            ]
+          },
+          "h2h": {}
+        },
+        "switzerland_u20": {
+          "id": 16817,
+          "name": "Switzerland U20",
+          "league_position": null,
+          "total_teams": 1,
+          "last_scraped": "2026-09-29T03:01:48.740700+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 26/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Czechia U20",
+              "opponent_id": null,
+              "score": [
+                5,
+                2
+              ],
+              "matchday": "Group Stage",
+              "competition": "U20 Elite League",
+              "league_id": "SU20",
+              "match_id": "4944329",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L"
+            ],
+            "goals_scored": [
+              2
+            ],
+            "goals_conceded": [
+              5
             ]
           },
           "h2h": {}
