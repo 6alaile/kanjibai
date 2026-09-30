@@ -1,81 +1,11 @@
 {
   "meta": {
     "date": "2026-09-30",
-    "generatedAt": "2026-09-30T06:04:53.253118+03:00",
+    "generatedAt": "2026-09-30T09:03:37.565420+03:00",
     "scanned": 15,
-    "elapsedSeconds": 243.6
+    "elapsedSeconds": 178.9
   },
   "matches": [
-    {
-      "id": "papuanewguineasolomonislands",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Papua New Guinea",
-      "away": "Solomon Islands",
-      "time": "07:00",
-      "odds": {
-        "home": 2.78,
-        "draw": 3.45,
-        "away": 2.44
-      },
-      "home_stats": {
-        "name": "Papua New Guinea",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 151,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Solomon Islands",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 151,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "republicofkoreau23chinau23",
-      "league": "Football / International / Asian Games",
-      "home": "Republic of Korea U23",
-      "away": "China U23",
-      "time": "09:00",
-      "odds": {
-        "home": 1.21,
-        "draw": 5.4,
-        "away": 12.0
-      },
-      "home_stats": {
-        "name": "Republic of Korea U23",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 240,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "China U23",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          2
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": null,
-        "total_teams_in_league": 240,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
     {
       "id": "fijinewcaledonia",
       "league": "Football / International / Int. Friendly Games",
@@ -83,9 +13,9 @@
       "away": "New Caledonia",
       "time": "10:00",
       "odds": {
-        "home": 1.58,
+        "home": 1.57,
         "draw": 4.5,
-        "away": 4.73
+        "away": 4.81
       },
       "home_stats": {
         "name": "Fiji",
@@ -124,9 +54,9 @@
       "away": "Negeri Sembilan U20",
       "time": "11:45",
       "odds": {
-        "home": 1.13,
-        "draw": 7.28,
-        "away": 15.53
+        "home": 1.14,
+        "draw": 7.05,
+        "away": 14.58
       },
       "home_stats": {
         "name": "Kuala Lumpur City FC U20",
@@ -156,9 +86,9 @@
       "away": "Cambodia",
       "time": "12:00",
       "odds": {
-        "home": 6.4,
-        "draw": 4.5,
-        "away": 1.38
+        "home": 7.2,
+        "draw": 4.8,
+        "away": 1.33
       },
       "home_stats": {
         "name": "Timor-Leste",
@@ -182,11 +112,79 @@
       "source": "betpawa"
     },
     {
+      "id": "scotlandu19ukraineu19",
+      "league": "Football / International / U19 Friendly Games",
+      "home": "Scotland U19",
+      "away": "Ukraine U19",
+      "time": "12:00",
+      "odds": {
+        "home": 2.96,
+        "draw": 3.45,
+        "away": 2.26
+      },
+      "home_stats": {
+        "name": "Scotland U19",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          3,
+          3,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          1,
+          5,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 17,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Ukraine U19",
+        "form": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          4,
+          1,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          2,
+          0,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 17,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "finlandu19germanyu19",
       "league": "Football / International / U19 Friendly Games",
       "home": "Finland U19",
       "away": "Germany U19",
-      "time": "12:00",
+      "time": "12:15",
       "odds": {
         "home": 5.63,
         "draw": 4.56,
@@ -247,83 +245,15 @@
       "source": "betpawa"
     },
     {
-      "id": "scotlandu19ukraineu19",
-      "league": "Football / International / U19 Friendly Games",
-      "home": "Scotland U19",
-      "away": "Ukraine U19",
-      "time": "12:00",
-      "odds": {
-        "home": 2.87,
-        "draw": 3.5,
-        "away": 2.29
-      },
-      "home_stats": {
-        "name": "Scotland U19",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          3,
-          0,
-          3
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          1,
-          5,
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 17,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ukraine U19",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          4,
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          2,
-          0,
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 17,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
       "id": "mlsfclawtngtlaisaikhamakawnfc",
       "league": "Football / India / Mizoram Premier League",
       "home": "Mls FC Lawtngtlai",
       "away": "Saikhamakawn FC",
       "time": "12:30",
       "odds": {
-        "home": 2.1,
-        "draw": 3.61,
-        "away": 2.98
+        "home": 2.18,
+        "draw": 3.49,
+        "away": 2.91
       },
       "home_stats": {
         "name": "Mls FC Lawtngtlai",
@@ -354,9 +284,9 @@
       "away": "Japan U23",
       "time": "01:30",
       "odds": {
-        "home": 4.5,
-        "draw": 3.35,
-        "away": 1.73
+        "home": 6.0,
+        "draw": 3.7,
+        "away": 1.51
       },
       "home_stats": {
         "name": "Uzbekistan U23",
@@ -392,8 +322,8 @@
       "away": "Hong Kong",
       "time": "03:00",
       "odds": {
-        "home": 35.0,
-        "draw": 12.0,
+        "home": 23.0,
+        "draw": 14.0,
         "away": 1.01
       },
       "home_stats": {
@@ -424,8 +354,8 @@
       "away": "CR Vasco da Gama RJ U20",
       "time": "04:00",
       "odds": {
-        "home": 7.97,
-        "draw": 4.66,
+        "home": 7.8,
+        "draw": 4.78,
         "away": 1.37
       },
       "home_stats": {
@@ -457,26 +387,44 @@
       "away": "Sri Lanka",
       "time": "04:00",
       "odds": {
-        "home": 3.42,
-        "draw": 3.45,
-        "away": 2.09
+        "home": 3.38,
+        "draw": 3.35,
+        "away": 2.13
       },
       "home_stats": {
         "name": "Seychelles",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          3
+        ],
         "league_position": null,
-        "total_teams_in_league": 196,
+        "total_teams_in_league": 77,
         "opposition_position": null
       },
       "away_stats": {
         "name": "Sri Lanka",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          0
+        ],
         "league_position": null,
-        "total_teams_in_league": 196,
+        "total_teams_in_league": 77,
         "opposition_position": null
       },
       "h2h": null,
@@ -522,9 +470,9 @@
       "away": "Lithuania U19",
       "time": "04:30",
       "odds": {
-        "home": 1.88,
-        "draw": 3.74,
-        "away": 3.69
+        "home": 1.92,
+        "draw": 3.55,
+        "away": 3.75
       },
       "home_stats": {
         "name": "Albania U19",
@@ -554,9 +502,9 @@
       "away": "Aljazeera Matrouh",
       "time": "04:30",
       "odds": {
-        "home": 1.48,
-        "draw": 4.55,
-        "away": 5.69
+        "home": 1.45,
+        "draw": 4.74,
+        "away": 5.98
       },
       "home_stats": {
         "name": "Al Olympi",
@@ -574,6 +522,70 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcvsetinbohemiansprague1905",
+      "league": "Football / Czech Republic / Cup",
+      "home": "FC Vsetin",
+      "away": "Bohemians Prague 1905",
+      "time": "04:30",
+      "odds": {
+        "home": 29.23,
+        "draw": 11.69,
+        "away": 1.05
+      },
+      "home_stats": {
+        "name": "FC Vsetin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Bohemians Prague 1905",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gezirascnogoomfc",
+      "league": "Football / Egypt / Egypt Second Division B",
+      "home": "Gezira SC",
+      "away": "Nogoom FC",
+      "time": "04:30",
+      "odds": {
+        "home": 4.56,
+        "draw": 3.37,
+        "away": 1.8
+      },
+      "home_stats": {
+        "name": "Gezira SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Nogoom FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
         "opposition_position": null
       },
       "h2h": null,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-09-30T03:03:30.089171+00:00",
+  "lastUpdated": "2026-09-30T06:02:05.133447+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -77551,6 +77551,118 @@
               2,
               0,
               3
+            ]
+          },
+          "h2h": {}
+        },
+        "seychelles": {
+          "id": 3562,
+          "name": "Seychelles",
+          "league_position": null,
+          "total_teams": 77,
+          "last_scraped": "2026-09-30T06:01:29.851180+00:00",
+          "recent_matches": [
+            {
+              "date": "Wed 25/03/26",
+              "time": "3:00 PM",
+              "home_away": "H",
+              "opponent": "Lesotho",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4841189",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 29/03/26",
+              "time": "5:00 PM",
+              "home_away": "A",
+              "opponent": "Lesotho",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "4841195",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 27/09/26",
+              "time": "2:00 PM",
+              "home_away": "H",
+              "opponent": "Sri Lanka",
+              "opponent_id": null,
+              "score": [
+                0,
+                3
+              ],
+              "matchday": "42",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "5067090",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              0
+            ],
+            "goals_conceded": [
+              0,
+              2,
+              3
+            ]
+          },
+          "h2h": {}
+        },
+        "sri_lanka": {
+          "id": 15358,
+          "name": "Sri Lanka",
+          "league_position": null,
+          "total_teams": 78,
+          "last_scraped": "2026-09-30T06:02:05.133436+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 27/09/26",
+              "time": "2:00 PM",
+              "home_away": "A",
+              "opponent": "Seychelles",
+              "opponent_id": null,
+              "score": [
+                0,
+                3
+              ],
+              "matchday": "42",
+              "competition": "International Friendlies",
+              "league_id": "FS",
+              "match_id": "5067090",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W"
+            ],
+            "goals_scored": [
+              3
+            ],
+            "goals_conceded": [
+              0
             ]
           },
           "h2h": {}
