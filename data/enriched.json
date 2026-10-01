@@ -1,99 +1,11 @@
 {
   "meta": {
     "date": "2026-10-01",
-    "generatedAt": "2026-10-01T09:02:42.606909+03:00",
+    "generatedAt": "2026-10-01T12:04:12.191967+03:00",
     "scanned": 19,
-    "elapsedSeconds": 120.4
+    "elapsedSeconds": 212.3
   },
   "matches": [
-    {
-      "id": "panamanewzealandn",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Panama",
-      "away": "New Zealand (n)",
-      "time": "09:10",
-      "odds": {
-        "home": 2.49,
-        "draw": 3.34,
-        "away": 2.78
-      },
-      "home_stats": {
-        "name": "Panama",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 89,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "New Zealand (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 89,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "polandu19kazakhstanu19n",
-      "league": "Football / International / U19 Friendly Games",
-      "home": "Poland U19",
-      "away": "Kazakhstan U19 (n)",
-      "time": "12:30",
-      "odds": {
-        "home": 1.47,
-        "draw": 4.48,
-        "away": 6.03
-      },
-      "home_stats": {
-        "name": "Poland U19",
-        "form": [
-          "D",
-          "L",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          1,
-          1,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 92,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kazakhstan U19 (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 92,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
     {
       "id": "slovakiau19switzerlandu19",
       "league": "Football / International / U19 Friendly Games",
@@ -101,9 +13,9 @@
       "away": "Switzerland U19",
       "time": "12:30",
       "odds": {
-        "home": 3.36,
-        "draw": 3.7,
-        "away": 1.99
+        "home": 3.8,
+        "draw": 3.8,
+        "away": 1.84
       },
       "home_stats": {
         "name": "Slovakia U19",
@@ -163,15 +75,83 @@
       "source": "betpawa"
     },
     {
+      "id": "olimpijaljubljanankslavenbelup",
+      "league": "Football / International / Club Friendly Games",
+      "home": "Olimpija Ljubljana",
+      "away": "NK Slaven Belupo",
+      "time": "01:00",
+      "odds": {
+        "home": 2.17,
+        "draw": 3.55,
+        "away": 3.06
+      },
+      "home_stats": {
+        "name": "Olimpija Ljubljana",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          0,
+          1,
+          2
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 10,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "NK Slaven Belupo",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          5,
+          0,
+          0,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          3,
+          1,
+          4,
+          1
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 10,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "japanecuador",
       "league": "Football / International / Int. Friendly Games",
       "home": "Japan",
       "away": "Ecuador",
       "time": "01:10",
       "odds": {
-        "home": 1.52,
-        "draw": 4.1,
-        "away": 6.17
+        "home": 1.46,
+        "draw": 4.38,
+        "away": 6.54
       },
       "home_stats": {
         "name": "Japan",
@@ -290,42 +270,69 @@
       "total_teams_in_league": 15
     },
     {
-      "id": "maldiveslebanon",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Maldives",
-      "away": "Lebanon",
+      "id": "jahnregensburgwsgtirol",
+      "league": "Football / International / Club Friendly Games",
+      "home": "Jahn Regensburg",
+      "away": "WSG Tirol",
       "time": "03:00",
       "odds": {
-        "home": 44.74,
-        "draw": 11.99,
-        "away": 1.04
+        "home": 2.72,
+        "draw": 3.64,
+        "away": 2.34
       },
       "home_stats": {
-        "name": "Maldives",
+        "name": "Jahn Regensburg",
         "form": [
+          "W",
+          "W",
+          "L",
           "L",
           "L"
         ],
         "goals_scored": [
+          4,
+          5,
+          1,
           0,
-          0
+          1
         ],
         "goals_conceded": [
-          3,
+          1,
+          1,
+          2,
+          1,
           5
         ],
-        "league_position": null,
-        "total_teams_in_league": 19,
-        "opposition_position": null
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
       },
       "away_stats": {
-        "name": "Lebanon",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 19,
-        "opposition_position": null
+        "name": "WSG Tirol",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          4,
+          1,
+          4
+        ],
+        "goals_conceded": [
+          0,
+          3,
+          0,
+          1,
+          0
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
       },
       "h2h": null,
       "source": "betpawa"
@@ -337,9 +344,9 @@
       "away": "Terengganu FA U20",
       "time": "03:30",
       "odds": {
-        "home": 8.75,
-        "draw": 4.67,
-        "away": 1.31
+        "home": 7.79,
+        "draw": 4.38,
+        "away": 1.36
       },
       "home_stats": {
         "name": "Touchtronics FC U20",
@@ -401,9 +408,9 @@
       "away": "Singapore",
       "time": "03:30",
       "odds": {
-        "home": 1.44,
-        "draw": 4.3,
-        "away": 5.8
+        "home": 1.4,
+        "draw": 4.4,
+        "away": 6.4
       },
       "home_stats": {
         "name": "Malaysia",
@@ -465,9 +472,9 @@
       "away": "Bangladesh",
       "time": "03:30",
       "odds": {
-        "home": 1.01,
+        "home": 1.02,
         "draw": 10.0,
-        "away": 60.0
+        "away": 40.0
       },
       "home_stats": {
         "name": "Indonesia",
@@ -561,9 +568,9 @@
       "away": "US Palmese 1914",
       "time": "04:00",
       "odds": {
-        "home": 1.05,
-        "draw": 11.74,
-        "away": 34.23
+        "home": 1.03,
+        "draw": 13.57,
+        "away": 43.61
       },
       "home_stats": {
         "name": "Juve Stabia",
@@ -625,9 +632,9 @@
       "away": "Hatta SC",
       "time": "04:15",
       "odds": {
-        "home": 1.88,
-        "draw": 3.75,
-        "away": 3.7
+        "home": 1.92,
+        "draw": 3.7,
+        "away": 3.6
       },
       "home_stats": {
         "name": "Dubai United FC",
@@ -676,8 +683,8 @@
       "time": "04:30",
       "odds": {
         "home": 1.77,
-        "draw": 3.57,
-        "away": 4.47
+        "draw": 3.72,
+        "away": 4.26
       },
       "home_stats": {
         "name": "Sila SC",
@@ -719,9 +726,9 @@
       "away": "Samail",
       "time": "04:30",
       "odds": {
-        "home": 1.71,
-        "draw": 3.98,
-        "away": 4.28
+        "home": 1.77,
+        "draw": 3.87,
+        "away": 4.07
       },
       "home_stats": {
         "name": "Al-Nasr",
@@ -752,6 +759,56 @@
         "league_position": 9,
         "total_teams_in_league": 14,
         "opposition_position": 9
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "croatiau19italyu19",
+      "league": "Football / International / U19 Friendly Games",
+      "home": "Croatia U19",
+      "away": "Italy U19",
+      "time": "04:30",
+      "odds": {
+        "home": 3.26,
+        "draw": 3.45,
+        "away": 2.11
+      },
+      "home_stats": {
+        "name": "Croatia U19",
+        "form": [
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          4,
+          2,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 44,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Italy U19",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 44,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
