@@ -568,6 +568,18 @@ def _compute_team_form(team_name: str, fixtures: List[Dict]) -> Dict[str, List]:
     return {"form": form, "goals_scored": gs, "goals_conceded": gc}
 
 
+def _strip_fixtures_for_cache(fixtures: List[Dict]) -> List[Dict]:
+    """Return fixtures stripped to only fields needed for form computation (score, home_away)."""
+    stripped = []
+    for f in fixtures:
+        if f.get("score") is not None:
+            stripped.append({
+                "score": f["score"],
+                "home_away": f.get("home_away", "H"),
+            })
+    return stripped
+
+
 # ── Cache update helpers ──────────────────────────────────────────────────────
 
 def _upsert_team_in_cache(cache: Dict, league_id: str, league_name: str,
@@ -780,6 +792,10 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
             # Track which leagues we've already fetched table for
             fetched_tables = set()
 
+            # In-memory index: league_id -> {home_key -> {away_key -> match_id}}
+            # Built from full fixtures during scraping; used for H2H lookup (no match_id in stripped recent_matches)
+            match_id_index: Dict[str, Dict[str, Dict[str, str]]] = {}
+
             for item in team_items:
                 team_name = item["name"]
                 team_url = item.get("url", "")
@@ -839,6 +855,24 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                     league_id = data.get("league_id") or "unknown"
                     league_name = data.get("league_name") or league_id
 
+                    # Build match_id_index from full fixtures (all_fixtures) for H2H lookup
+                    all_fixtures = data.get("all_fixtures", [])
+                    if all_fixtures and league_id != "unknown":
+                        idx = match_id_index.setdefault(league_id, {})
+                        team_key = _cache_key(team_name)
+                        for f in all_fixtures:
+                            match_id = f.get("match_id")
+                            if not match_id:
+                                continue
+                            opp_key = _cache_key(f.get("opponent", ""))
+                            if f.get("home_away") == "H":
+                                # This team was home, opponent was away
+                                home_key, away_key = team_key, opp_key
+                            else:
+                                # This team was away, opponent was home
+                                home_key, away_key = opp_key, team_key
+                            idx.setdefault(home_key, {})[away_key] = match_id
+
                     # Fetch league table if not already done
                     if league_id not in fetched_tables and league_id != "unknown":
                         fetched_tables.add(league_id)
@@ -871,6 +905,12 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                     fixtures = data.get("fixtures", [])
                     form = _compute_team_form(team_name, fixtures)
 
+                    # Persist stripped fixtures: complete form (>=5) -> empty list; partial -> stripped {score, home_away}
+                    if len(fixtures) >= 5:
+                        stored_fixtures = []
+                    else:
+                        stored_fixtures = _strip_fixtures_for_cache(fixtures)
+
                     # Update team in cache — find by ID first (more reliable)
                     if league_id in cache.get("leagues", {}):
                         teams = cache["leagues"][league_id].get("teams", {})
@@ -878,7 +918,7 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                         for tk, td in teams.items():
                             if td.get("id") == team_id:
                                 td["last_scraped"] = datetime.now(timezone.utc).isoformat()
-                                td["recent_matches"] = fixtures
+                                td["recent_matches"] = stored_fixtures
                                 td["form_summary"] = form
                                 found = True
                                 break
@@ -890,7 +930,7 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                                 "league_position": None,
                                 "total_teams": len(teams),
                                 "last_scraped": datetime.now(timezone.utc).isoformat(),
-                                "recent_matches": fixtures,
+                                "recent_matches": stored_fixtures,
                                 "form_summary": form,
                                 "h2h": {},
                             }
@@ -906,7 +946,7 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                                     "league_position": None,
                                     "total_teams": 0,
                                     "last_scraped": datetime.now(timezone.utc).isoformat(),
-                                    "recent_matches": fixtures,
+                                    "recent_matches": stored_fixtures,
                                     "form_summary": form,
                                     "h2h": {},
                                 }
@@ -950,16 +990,11 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                     if h2h_exists:
                         continue
 
-                    # Find match ID from cached fixtures
+                    # Find match ID from in-memory index (built from full fixtures during scraping)
                     match_id = None
-                    for lid, ldata in cache.get("leagues", {}).items():
-                        t1 = ldata.get("teams", {}).get(home_key, {})
-                        for rm in t1.get("recent_matches", []):
-                            if (_cache_key(rm.get("opponent", "")) == away_key and
-                                rm.get("match_id")):
-                                match_id = rm["match_id"]
-                                break
-                        if match_id:
+                    for lid, idx in match_id_index.items():
+                        if home_key in idx and away_key in idx[home_key]:
+                            match_id = idx[home_key][away_key]
                             break
 
                     if not match_id:
