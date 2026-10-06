@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-10-05T21:11:46.321802+00:00",
+  "lastUpdated": "2026-10-06T00:05:25.381109+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -19037,8 +19037,24 @@
           "name": "Uni\u00f3n Cocl\u00e9 FC",
           "league_position": null,
           "total_teams": 2,
-          "last_scraped": "2026-09-22T00:03:26.959088+00:00",
+          "last_scraped": "2026-10-06T00:02:50.957653+00:00",
           "recent_matches": [
+            {
+              "date": "Tue 22/09/26",
+              "time": "3:00 AM",
+              "home_away": "A",
+              "opponent": "UMECIT FC",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "9",
+              "competition": "Liga Paname\u00f1a de F\u00fatbol Apertura",
+              "league_id": "PN1A",
+              "match_id": "4926705",
+              "ranking": "(6.)"
+            },
             {
               "date": "Sun 30/08/26",
               "time": "11:00 PM",
@@ -19056,6 +19072,22 @@
               "ranking": "(6.)"
             },
             {
+              "date": "Sun 27/09/26",
+              "time": "11:00 PM",
+              "home_away": "H",
+              "opponent": "Plaza Amador",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "10",
+              "competition": "Liga Paname\u00f1a de F\u00fatbol Apertura",
+              "league_id": "PN1A",
+              "match_id": "4926709",
+              "ranking": "(5.)"
+            },
+            {
               "date": "Sun 26/07/26",
               "time": "11:00 PM",
               "home_away": "A",
@@ -19069,7 +19101,7 @@
               "competition": "Liga Paname\u00f1a de F\u00fatbol Apertura",
               "league_id": "PN1A",
               "match_id": "4926653",
-              "ranking": "(5.)"
+              "ranking": "(6.)"
             },
             {
               "date": "Sun 23/08/26",
@@ -19086,61 +19118,29 @@
               "league_id": "PN1A",
               "match_id": "4926675",
               "ranking": "(4.)"
-            },
-            {
-              "date": "Sun 16/08/26",
-              "time": "1:15 AM",
-              "home_away": "A",
-              "opponent": "Universitario",
-              "opponent_id": null,
-              "score": [
-                1,
-                1
-              ],
-              "matchday": "4",
-              "competition": "Liga Paname\u00f1a de F\u00fatbol Apertura",
-              "league_id": "PN1A",
-              "match_id": "4926673",
-              "ranking": "(5.)"
-            },
-            {
-              "date": "Sun 09/08/26",
-              "time": "11:00 PM",
-              "home_away": "H",
-              "opponent": "Veraguas United",
-              "opponent_id": null,
-              "score": [
-                0,
-                1
-              ],
-              "matchday": "3",
-              "competition": "Liga Paname\u00f1a de F\u00fatbol Apertura",
-              "league_id": "PN1A",
-              "match_id": "4926665",
-              "ranking": "(4.)"
             }
           ],
           "form_summary": {
             "form": [
+              "L",
               "D",
               "L",
               "L",
-              "D",
               "L"
             ],
             "goals_scored": [
+              0,
               2,
-              0,
-              0,
               1,
+              0,
               0
             ],
             "goals_conceded": [
+              1,
+              2,
               2,
               1,
-              3,
-              1,
-              1
+              3
             ]
           },
           "h2h": {}
@@ -34047,9 +34047,9 @@
         "gimnasia_(m)": {
           "id": 14687,
           "name": "Gimnasia (M)",
-          "league_position": 5,
+          "league_position": 7,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:08:06.695384+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340086+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34061,9 +34061,9 @@
         "v\u00e9lez_sarsfield": {
           "id": 1029,
           "name": "V\u00e9lez Sarsfield",
-          "league_position": 4,
+          "league_position": 2,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:08:23.052421+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340065+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34077,7 +34077,7 @@
           "name": "Instituto ACC",
           "league_position": 1,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596550+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340050+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34089,9 +34089,9 @@
         "defensa": {
           "id": 2402,
           "name": "Defensa",
-          "league_position": 2,
+          "league_position": 3,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596563+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340070+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34103,9 +34103,9 @@
         "uni\u00f3n_santa_fe": {
           "id": 7097,
           "name": "Uni\u00f3n Santa Fe",
-          "league_position": 9,
+          "league_position": 10,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596577+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340098+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34119,7 +34119,7 @@
           "name": "Independiente",
           "league_position": 8,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596575+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340090+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34131,9 +34131,9 @@
         "newells": {
           "id": 1286,
           "name": "Newell's",
-          "league_position": 7,
+          "league_position": 6,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596573+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340082+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34145,9 +34145,9 @@
         "boca_juniors": {
           "id": 189,
           "name": "Boca Juniors",
-          "league_position": 3,
+          "league_position": 4,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596565+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340075+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34159,9 +34159,9 @@
         "lan\u00fas": {
           "id": 333,
           "name": "Lan\u00fas",
-          "league_position": 6,
+          "league_position": 5,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596571+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340079+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34173,9 +34173,9 @@
         "san_lorenzo": {
           "id": 1775,
           "name": "San Lorenzo",
-          "league_position": 11,
+          "league_position": 12,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596582+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340105+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34187,9 +34187,9 @@
         "dep_riestra": {
           "id": 19775,
           "name": "Dep. Riestra",
-          "league_position": 10,
+          "league_position": 11,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596579+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340102+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34203,7 +34203,7 @@
           "name": "Platense",
           "league_position": 13,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:08:39.226928+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340109+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34215,9 +34215,9 @@
         "estudiantes_lp": {
           "id": 288,
           "name": "Estudiantes LP",
-          "league_position": 12,
+          "league_position": 9,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.667487+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340094+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34231,7 +34231,7 @@
           "name": "Central C\u00f3rdoba",
           "league_position": 14,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596587+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340112+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34245,7 +34245,7 @@
           "name": "CA Talleres",
           "league_position": 15,
           "total_teams": 15,
-          "last_scraped": "2026-10-05T21:07:50.596588+00:00",
+          "last_scraped": "2026-10-06T00:01:14.340115+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34259,7 +34259,7 @@
           "name": "CA Banfield",
           "league_position": null,
           "total_teams": 15,
-          "last_scraped": "2026-09-23T18:05:04.178637+00:00",
+          "last_scraped": "2026-10-06T00:01:14.461413+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34316,6 +34316,20 @@
           "league_position": null,
           "total_teams": 19,
           "last_scraped": "2026-10-03T00:01:37.184131+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ca_rosario_central": {
+          "id": 1418,
+          "name": "CA Rosario Central",
+          "league_position": null,
+          "total_teams": 20,
+          "last_scraped": "2026-10-06T00:01:30.659573+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -51939,7 +51953,7 @@
           "name": "Real Cartagena",
           "league_position": 5,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954656+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256503+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -51953,7 +51967,7 @@
           "name": "Atl\u00e9tico Huila",
           "league_position": 2,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954649+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256491+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -51967,7 +51981,7 @@
           "name": "Tigres FC",
           "league_position": 3,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954651+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256496+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -51981,7 +51995,7 @@
           "name": "Real Santander",
           "league_position": 10,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954667+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256524+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -51995,7 +52009,7 @@
           "name": "Orsomarso SC",
           "league_position": 13,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954674+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256537+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52009,7 +52023,7 @@
           "name": "Real C.",
           "league_position": 1,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954636+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256477+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52023,7 +52037,7 @@
           "name": "Quind\u00edo",
           "league_position": 9,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954665+00:00",
+          "last_scraped": "2026-10-06T00:01:55.376078+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52037,7 +52051,7 @@
           "name": "Patriotas",
           "league_position": 4,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954654+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256500+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52051,7 +52065,7 @@
           "name": "Atl\u00e9tico FC",
           "league_position": 7,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954661+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256512+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52065,7 +52079,7 @@
           "name": "Leones FC",
           "league_position": 14,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954676+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256543+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52079,7 +52093,7 @@
           "name": "Bogot\u00e1 FC",
           "league_position": 12,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954672+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256533+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52093,7 +52107,7 @@
           "name": "Barranquilla FC",
           "league_position": 16,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954680+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256548+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52107,7 +52121,7 @@
           "name": "Inter Palmira",
           "league_position": 8,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954663+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256516+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52121,7 +52135,7 @@
           "name": "Envigado",
           "league_position": 11,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:27.027685+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256528+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52135,7 +52149,7 @@
           "name": "CBJ Cali",
           "league_position": 6,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954658+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256507+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -52149,7 +52163,7 @@
           "name": "Uni\u00f3n Magdalena",
           "league_position": 15,
           "total_teams": 16,
-          "last_scraped": "2026-10-05T21:07:26.954678+00:00",
+          "last_scraped": "2026-10-06T00:01:55.256546+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73670,7 +73684,7 @@
           "name": "SD Taishan B",
           "league_position": 1,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637152+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074709+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73684,7 +73698,7 @@
           "name": "SH Port B",
           "league_position": 2,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637163+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074719+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73698,7 +73712,7 @@
           "name": "SX C. Ronghai",
           "league_position": 3,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637166+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074722+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73712,7 +73726,7 @@
           "name": "DL Kewei",
           "league_position": 4,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637169+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074725+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73726,7 +73740,7 @@
           "name": "TA Tiankuang",
           "league_position": 5,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637171+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074727+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73740,7 +73754,7 @@
           "name": "DL Yingbo B",
           "league_position": 6,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:46.181926+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074730+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73754,7 +73768,7 @@
           "name": "HM Codion",
           "league_position": 7,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637175+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074732+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73768,7 +73782,7 @@
           "name": "LZ Longyuan At.",
           "league_position": 8,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637177+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074735+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73782,7 +73796,7 @@
           "name": "QD Red Lions",
           "league_position": 9,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637179+00:00",
+          "last_scraped": "2026-10-06T00:04:23.507127+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73796,7 +73810,7 @@
           "name": "CC Xidu",
           "league_position": 10,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637181+00:00",
+          "last_scraped": "2026-10-06T00:04:01.194625+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73810,7 +73824,7 @@
           "name": "BJ IT",
           "league_position": 11,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.637183+00:00",
+          "last_scraped": "2026-10-06T00:04:01.074752+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -73824,7 +73838,7 @@
           "name": "SH Second",
           "league_position": 12,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:08.715165+00:00",
+          "last_scraped": "2026-10-06T00:05:25.381098+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79560,7 +79574,7 @@
           "name": "Tru Juice FC",
           "league_position": 4,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575400+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589157+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79574,7 +79588,7 @@
           "name": "Tivoli Gardens",
           "league_position": 3,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575397+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589154+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79588,7 +79602,7 @@
           "name": "Montego Bay Utd",
           "league_position": 1,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575382+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589140+00:00",
           "recent_matches": [
             {
               "date": "Sun 20/09/26",
@@ -79644,7 +79658,7 @@
           "name": "Cavalier FC",
           "league_position": 5,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575402+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589160+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79658,7 +79672,7 @@
           "name": "Portmore United",
           "league_position": 9,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575410+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589169+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79672,7 +79686,7 @@
           "name": "Waterhouse",
           "league_position": 6,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.644562+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589162+00:00",
           "recent_matches": [
             {
               "date": "Tue 22/09/26",
@@ -79728,7 +79742,7 @@
           "name": "Racing United",
           "league_position": 2,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575394+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589151+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -79803,12 +79817,73 @@
           "name": "Arnett Gardens",
           "league_position": 10,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575412+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-10-06T00:02:19.710776+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 22/09/26",
+              "time": "3:00 AM",
+              "home_away": "H",
+              "opponent": "Dunbeholden FC",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "2",
+              "competition": "Jamaica Premier League",
+              "league_id": "JPL1",
+              "match_id": "5049548",
+              "ranking": "(9.)"
+            },
+            {
+              "date": "Tue 15/09/26",
+              "time": "3:00 AM",
+              "home_away": "A",
+              "opponent": "Racing United",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "1",
+              "competition": "Jamaica Premier League",
+              "league_id": "JPL1",
+              "match_id": "5049541",
+              "ranking": "(10.)"
+            },
+            {
+              "date": "Sun 27/09/26",
+              "time": "10:30 PM",
+              "home_away": "A",
+              "opponent": "Cavalier FC",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "3",
+              "competition": "Jamaica Premier League",
+              "league_id": "JPL1",
+              "match_id": "5049551",
+              "ranking": "(6.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              2
+            ],
+            "goals_conceded": [
+              0,
+              3,
+              3
+            ]
           },
           "h2h": {}
         },
@@ -79817,7 +79892,7 @@
           "name": "Treasure Beach",
           "league_position": 12,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575416+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589182+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79831,7 +79906,7 @@
           "name": "Molynes United",
           "league_position": 11,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575414+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589174+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -79906,7 +79981,7 @@
           "name": "Dunbeholden FC",
           "league_position": 14,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575420+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589212+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79920,7 +79995,7 @@
           "name": "Chapelton",
           "league_position": 7,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575406+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589164+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -79934,7 +80009,7 @@
           "name": "Humble Lions",
           "league_position": 13,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575418+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589207+00:00",
           "recent_matches": [
             {
               "date": "Sun 13/09/26",
@@ -79971,7 +80046,7 @@
           "name": "Mount Pleasant",
           "league_position": 8,
           "total_teams": 14,
-          "last_scraped": "2026-10-05T21:09:49.575408+00:00",
+          "last_scraped": "2026-10-06T00:02:19.589166+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96747,7 +96822,7 @@
           "name": "GZ Guiyang At.",
           "league_position": 1,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871531+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070619+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96761,7 +96836,7 @@
           "name": "SZ 2028",
           "league_position": 2,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871545+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070636+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96775,7 +96850,7 @@
           "name": "JX Lushan",
           "league_position": 3,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871549+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070641+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96789,7 +96864,7 @@
           "name": "HZ LP Wu-Yue",
           "league_position": 4,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871553+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070645+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96803,7 +96878,7 @@
           "name": "HB Istar",
           "league_position": 5,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.949097+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070649+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96817,7 +96892,7 @@
           "name": "XM Feilu",
           "league_position": 6,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871562+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070653+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96831,7 +96906,7 @@
           "name": "GD Mingtu",
           "league_position": 7,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871566+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070657+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96845,7 +96920,7 @@
           "name": "GZ Ruishi",
           "league_position": 8,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871570+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070660+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96859,7 +96934,7 @@
           "name": "GZ Dandelion",
           "league_position": 9,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871574+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070664+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96873,7 +96948,7 @@
           "name": "CD Rongcheng B",
           "league_position": 10,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871578+00:00",
+          "last_scraped": "2026-10-06T00:05:09.166428+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96887,7 +96962,7 @@
           "name": "WZ FC",
           "league_position": 11,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871581+00:00",
+          "last_scraped": "2026-10-06T00:04:47.070672+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -96901,7 +96976,7 @@
           "name": "WH 3 Towns B",
           "league_position": 12,
           "total_teams": 12,
-          "last_scraped": "2026-09-19T06:04:30.871583+00:00",
+          "last_scraped": "2026-10-06T00:04:47.189130+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -108316,12 +108391,73 @@
           "name": "Honduras",
           "league_position": null,
           "total_teams": 5,
-          "last_scraped": "2026-09-26T00:02:11.313211+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-10-06T00:03:15.247974+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 29/09/26",
+              "time": "2:00 AM",
+              "home_away": "A",
+              "opponent": "Jamaica",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016270",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 26/09/26",
+              "time": "3:00 AM",
+              "home_away": "H",
+              "opponent": "Suriname",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016264",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 03/10/26",
+              "time": "2:00 AM",
+              "home_away": "A",
+              "opponent": "Martinique",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016276",
+              "ranking": ""
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              2,
+              1
+            ],
+            "goals_conceded": [
+              0,
+              3,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -108583,6 +108719,81 @@
               6,
               1,
               2
+            ]
+          },
+          "h2h": {}
+        },
+        "jamaica": {
+          "id": 3671,
+          "name": "Jamaica",
+          "league_position": null,
+          "total_teams": 10,
+          "last_scraped": "2026-10-06T00:03:31.585657+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 29/09/26",
+              "time": "2:00 AM",
+              "home_away": "H",
+              "opponent": "Honduras",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016270",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 26/09/26",
+              "time": "2:00 AM",
+              "home_away": "H",
+              "opponent": "Guatemala",
+              "opponent_id": null,
+              "score": [
+                3,
+                2
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016266",
+              "ranking": ""
+            },
+            {
+              "date": "Sat 03/10/26",
+              "time": "4:00 AM",
+              "home_away": "A",
+              "opponent": "El Salvador",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "Group Stage",
+              "competition": "CONCACAF Nations League A",
+              "league_id": "CNLA",
+              "match_id": "5016278",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              3,
+              2
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              0
             ]
           },
           "h2h": {}
