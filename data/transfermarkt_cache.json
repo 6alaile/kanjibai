@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-10-08T12:04:18.479799+00:00",
+  "lastUpdated": "2026-10-08T15:04:20.688417+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -12865,7 +12865,7 @@
           "name": "Legia Warszawa",
           "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833948+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854925+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -12879,7 +12879,7 @@
           "name": "G\u00f3rnik Zabrze",
           "league_position": 1,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833935+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854914+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -12893,7 +12893,7 @@
           "name": "Jagiellonia",
           "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833983+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854962+00:00",
           "recent_matches": [
             {
               "date": "Wed 16/09/26",
@@ -13006,7 +13006,7 @@
           "name": "Wisla Krak\u00f3w",
           "league_position": 4,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833958+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854941+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13020,7 +13020,7 @@
           "name": "Piast Gliwice",
           "league_position": 8,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833975+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854955+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13034,7 +13034,7 @@
           "name": "GKS Katowice",
           "league_position": 9,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833979+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854959+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13048,7 +13048,7 @@
           "name": "Korona Kielce",
           "league_position": 6,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833967+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854948+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -13161,8 +13161,24 @@
           "name": "Zaglebie Lubin",
           "league_position": 7,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833972+00:00",
+          "last_scraped": "2026-10-08T15:03:08.980372+00:00",
           "recent_matches": [
+            {
+              "date": "Tue 15/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Rak\u00f3w",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "3",
+              "competition": "PKO BP Ekstraklasa",
+              "league_id": "PL1",
+              "match_id": "4895618",
+              "ranking": "(9.)"
+            },
             {
               "date": "Tue 01/09/26",
               "time": "4:00 PM",
@@ -13193,7 +13209,23 @@
               "competition": "PKO BP Ekstraklasa",
               "league_id": "PL1",
               "match_id": "4895635",
-              "ranking": "(5.)"
+              "ranking": "(3.)"
+            },
+            {
+              "date": "Sun 20/09/26",
+              "time": "2:45 PM",
+              "home_away": "H",
+              "opponent": "Wisla Plock",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "9",
+              "competition": "PKO BP Ekstraklasa",
+              "league_id": "PL1",
+              "match_id": "4895792",
+              "ranking": "(4.)"
             },
             {
               "date": "Sun 02/08/26",
@@ -13210,61 +13242,29 @@
               "league_id": "PL1",
               "match_id": "4895609",
               "ranking": "(1.)"
-            },
-            {
-              "date": "Sat 29/08/26",
-              "time": "8:15 PM",
-              "home_away": "H",
-              "opponent": "Pogon Szczecin",
-              "opponent_id": null,
-              "score": [
-                0,
-                0
-              ],
-              "matchday": "6",
-              "competition": "PKO BP Ekstraklasa",
-              "league_id": "PL1",
-              "match_id": "4895765",
-              "ranking": "(6.)"
-            },
-            {
-              "date": "Sat 15/08/26",
-              "time": "2:45 PM",
-              "home_away": "H",
-              "opponent": "Slask Wroclaw",
-              "opponent_id": null,
-              "score": [
-                2,
-                1
-              ],
-              "matchday": "4",
-              "competition": "PKO BP Ekstraklasa",
-              "league_id": "PL1",
-              "match_id": "4895630",
-              "ranking": "(11.)"
             }
           ],
           "form_summary": {
             "form": [
+              "W",
               "L",
               "D",
               "L",
-              "D",
-              "W"
+              "L"
             ],
             "goals_scored": [
+              3,
               2,
               0,
-              1,
-              0,
-              2
-            ],
-            "goals_conceded": [
-              3,
-              0,
-              3,
               0,
               1
+            ],
+            "goals_conceded": [
+              2,
+              3,
+              0,
+              2,
+              3
             ]
           },
           "h2h": {}
@@ -13274,7 +13274,7 @@
           "name": "Pogon Szczecin",
           "league_position": 5,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833962+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854945+00:00",
           "recent_matches": [
             {
               "date": "Thu 03/09/26",
@@ -13387,7 +13387,7 @@
           "name": "Cracovia",
           "league_position": 13,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833995+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854973+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13401,7 +13401,7 @@
           "name": "Radomiak",
           "league_position": 14,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833998+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854977+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13415,7 +13415,7 @@
           "name": "Widzew Lodz",
           "league_position": 12,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833990+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854969+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13429,7 +13429,7 @@
           "name": "Slask Wroclaw",
           "league_position": 15,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.834000+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854981+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13443,7 +13443,7 @@
           "name": "Motor Lublin",
           "league_position": 16,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.834002+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854984+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13457,7 +13457,7 @@
           "name": "Wieczysta",
           "league_position": 17,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.834004+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854987+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -13471,7 +13471,7 @@
           "name": "Wisla Plock",
           "league_position": 11,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.944235+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854966+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -13584,7 +13584,7 @@
           "name": "Rak\u00f3w",
           "league_position": 18,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.834006+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854991+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -13697,7 +13697,7 @@
           "name": "Lech Pozna\u0144",
           "league_position": 3,
           "total_teams": 18,
-          "last_scraped": "2026-10-02T03:05:55.833953+00:00",
+          "last_scraped": "2026-10-08T15:03:08.854935+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118126,7 +118126,7 @@
           "name": "Al-Jazira",
           "league_position": 1,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951053+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036953+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118140,7 +118140,7 @@
           "name": "Al-Ain",
           "league_position": 2,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951065+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036967+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118154,7 +118154,7 @@
           "name": "Al-Wasl",
           "league_position": 3,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951068+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036972+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118168,7 +118168,7 @@
           "name": "Shabab Al-Ahli",
           "league_position": 4,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951071+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036976+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118182,7 +118182,7 @@
           "name": "Sharjah FC",
           "league_position": 5,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951073+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036980+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -118295,7 +118295,7 @@
           "name": "Al-Wahda",
           "league_position": 6,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951075+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036984+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118309,7 +118309,7 @@
           "name": "Ajman Club",
           "league_position": 7,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951077+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036988+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118323,7 +118323,7 @@
           "name": "United FC",
           "league_position": 8,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951079+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036993+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118337,7 +118337,7 @@
           "name": "Al-Nasr",
           "league_position": 9,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951081+00:00",
+          "last_scraped": "2026-10-08T15:01:24.036997+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118351,7 +118351,7 @@
           "name": "Kalba FC",
           "league_position": 10,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951082+00:00",
+          "last_scraped": "2026-10-08T15:01:24.037000+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118365,7 +118365,7 @@
           "name": "Khor Fakkan",
           "league_position": 11,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:32.022858+00:00",
+          "last_scraped": "2026-10-08T15:01:40.168680+00:00",
           "recent_matches": [
             {
               "date": "Sat 29/08/26",
@@ -118478,7 +118478,7 @@
           "name": "Hatta Club",
           "league_position": 12,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951086+00:00",
+          "last_scraped": "2026-10-08T15:01:24.178602+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -118591,7 +118591,7 @@
           "name": "Al-Dhafra FC",
           "league_position": 13,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951088+00:00",
+          "last_scraped": "2026-10-08T15:01:24.037011+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -118605,7 +118605,7 @@
           "name": "FC Baniyas",
           "league_position": 14,
           "total_teams": 14,
-          "last_scraped": "2026-10-02T15:01:31.951089+00:00",
+          "last_scraped": "2026-10-08T15:01:24.037015+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122068,7 +122068,7 @@
           "name": "Otrant-Olympic",
           "league_position": 1,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061174+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395658+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122082,7 +122082,7 @@
           "name": "FK Decic Tuzi",
           "league_position": 2,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.133544+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395671+00:00",
           "recent_matches": [
             {
               "date": "Wed 15/07/26",
@@ -122195,7 +122195,7 @@
           "name": "FK Bokelj",
           "league_position": 3,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061195+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395676+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122209,7 +122209,7 @@
           "name": "Sutjeska Niksic",
           "league_position": 4,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061197+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395681+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122223,7 +122223,7 @@
           "name": "B. Podgorica",
           "league_position": 4,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061199+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395685+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122237,12 +122237,111 @@
           "name": "Mornar Bar",
           "league_position": 6,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061202+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-10-08T15:03:37.519418+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 08/09/26",
+              "time": "8:00 PM",
+              "home_away": "A",
+              "opponent": "Sutjeska Niksic",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "7",
+              "competition": "Meridianbet 1. CFL",
+              "league_id": "MNE1",
+              "match_id": "4937265",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Thu 16/07/26",
+              "time": "8:45 PM",
+              "home_away": "H",
+              "opponent": "AC Escaldes",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "First Round",
+              "competition": "Meridianbet 1. CFL",
+              "league_id": "MNE1",
+              "match_id": "4897267",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 09/07/26",
+              "time": "4:00 PM",
+              "home_away": "A",
+              "opponent": "AC Escaldes",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "First Round",
+              "competition": "Meridianbet 1. CFL",
+              "league_id": "MNE1",
+              "match_id": "4897241",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 03/09/26",
+              "time": "8:00 PM",
+              "home_away": "H",
+              "opponent": "FK Bokelj",
+              "opponent_id": null,
+              "score": [
+                2,
+                0
+              ],
+              "matchday": "6",
+              "competition": "Meridianbet 1. CFL",
+              "league_id": "MNE1",
+              "match_id": "4937225",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Sun 20/09/26",
+              "time": "7:00 PM",
+              "home_away": "A",
+              "opponent": "FK Decic Tuzi",
+              "opponent_id": null,
+              "score": [
+                1,
+                1
+              ],
+              "matchday": "9",
+              "competition": "Meridianbet 1. CFL",
+              "league_id": "MNE1",
+              "match_id": "4937240",
+              "ranking": "(3.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "D"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              1,
+              2,
+              1
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              2,
+              0,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -122251,7 +122350,7 @@
           "name": "Mladost DG",
           "league_position": 7,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061204+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395693+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122265,7 +122364,7 @@
           "name": "FK Jezero",
           "league_position": 8,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061206+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395696+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122279,7 +122378,7 @@
           "name": "OFK Petrovac",
           "league_position": 9,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061209+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395699+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -122293,7 +122392,575 @@
           "name": "Arsenal Tivat",
           "league_position": 10,
           "total_teams": 10,
-          "last_scraped": "2026-10-08T09:03:53.061211+00:00",
+          "last_scraped": "2026-10-08T15:03:37.395702+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "MAR1": {
+      "name": "Botola Pro Inwi",
+      "table_fetched_at": "2026-10-08T15:02:13.050355+00:00",
+      "teams": {
+        "mas_f\u00e8s": {
+          "id": 3282,
+          "name": "MAS F\u00e8s",
+          "league_position": 1,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050334+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "union_touarga": {
+          "id": 79389,
+          "name": "Union Touarga",
+          "league_position": 2,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.174718+00:00",
+          "recent_matches": [
+            {
+              "date": "Sat 26/09/26",
+              "time": "6:00 PM",
+              "home_away": "H",
+              "opponent": "FUS Rabat",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Botola Pro Inwi",
+              "league_id": "MAR1",
+              "match_id": "5047391",
+              "ranking": "(2.)"
+            },
+            {
+              "date": "Fri 02/10/26",
+              "time": "8:00 PM",
+              "home_away": "A",
+              "opponent": "Widad T\u00e9mara",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "2",
+              "competition": "Botola Pro Inwi",
+              "league_id": "MAR1",
+              "match_id": "5060438",
+              "ranking": "(6.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              2,
+              1
+            ],
+            "goals_conceded": [
+              1,
+              0
+            ]
+          },
+          "h2h": {}
+        },
+        "ittihad_tanger": {
+          "id": 12721,
+          "name": "Ittihad Tanger",
+          "league_position": 3,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050369+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "cod_mekn\u00e8s": {
+          "id": 30625,
+          "name": "COD Mekn\u00e8s",
+          "league_position": 4,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050376+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "widad_t\u00e9mara": {
+          "id": 59814,
+          "name": "Widad T\u00e9mara",
+          "league_position": 5,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050382+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "raja_casablanca": {
+          "id": 2068,
+          "name": "Raja Casablanca",
+          "league_position": 6,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050387+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "hassania": {
+          "id": 22935,
+          "name": "Hassania",
+          "league_position": 7,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050393+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "wydad_ac": {
+          "id": 6603,
+          "name": "Wydad AC",
+          "league_position": 8,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050397+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "kacm_marrakech": {
+          "id": 4697,
+          "name": "KACM Marrakech",
+          "league_position": 8,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050403+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "amal_tiznit": {
+          "id": 85473,
+          "name": "Amal Tiznit",
+          "league_position": 10,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050408+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "moghreb_t\u00e9touan": {
+          "id": 9100,
+          "name": "Moghreb T\u00e9touan",
+          "league_position": 11,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050413+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "rs_berkane": {
+          "id": 37176,
+          "name": "RS Berkane",
+          "league_position": 12,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:28.605688+00:00",
+          "recent_matches": [
+            {
+              "date": "Sun 27/09/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Moghreb T\u00e9touan",
+              "opponent_id": null,
+              "score": [
+                0,
+                0
+              ],
+              "matchday": "1",
+              "competition": "Botola Pro Inwi",
+              "league_id": "MAR1",
+              "match_id": "5047393",
+              "ranking": "(12.)"
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "D"
+            ],
+            "goals_scored": [
+              0
+            ],
+            "goals_conceded": [
+              0
+            ]
+          },
+          "h2h": {}
+        },
+        "as_far_rabat": {
+          "id": 9099,
+          "name": "AS FAR Rabat",
+          "league_position": 13,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050424+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fus_rabat": {
+          "id": 6371,
+          "name": "FUS Rabat",
+          "league_position": 14,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050429+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "rca_zemamra": {
+          "id": 74953,
+          "name": "RCA Zemamra",
+          "league_position": 14,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050434+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "difa\u00e2_el_jadida": {
+          "id": 14462,
+          "name": "Difa\u00e2 El Jadida",
+          "league_position": 16,
+          "total_teams": 16,
+          "last_scraped": "2026-10-08T15:02:13.050439+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "FI1": {
+      "name": "Veikkausliiga",
+      "table_fetched_at": "2026-10-08T15:04:05.438690+00:00",
+      "teams": {
+        "kups": {
+          "id": 6251,
+          "name": "KuPS",
+          "league_position": 1,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.564497+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 28/07/26",
+              "time": "5:00 PM",
+              "home_away": "H",
+              "opponent": "Sabah FK",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "Second Round",
+              "competition": "Veikkausliiga",
+              "league_id": "FI1",
+              "match_id": "4897911",
+              "ranking": ""
+            },
+            {
+              "date": "Tue 21/07/26",
+              "time": "6:00 PM",
+              "home_away": "A",
+              "opponent": "Sabah FK",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "Second Round",
+              "competition": "Veikkausliiga",
+              "league_id": "FI1",
+              "match_id": "4897899",
+              "ranking": ""
+            },
+            {
+              "date": "Tue 14/07/26",
+              "time": "5:00 PM",
+              "home_away": "H",
+              "opponent": "Vardar",
+              "opponent_id": null,
+              "score": [
+                2,
+                3
+              ],
+              "matchday": "First Round",
+              "competition": "Veikkausliiga",
+              "league_id": "FI1",
+              "match_id": "4897205",
+              "ranking": ""
+            },
+            {
+              "date": "Tue 07/07/26",
+              "time": "7:00 PM",
+              "home_away": "A",
+              "opponent": "Vardar",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "First Round",
+              "competition": "Veikkausliiga",
+              "league_id": "FI1",
+              "match_id": "4897191",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 27/08/26",
+              "time": "5:00 PM",
+              "home_away": "H",
+              "opponent": "Shamrock Rovers",
+              "opponent_id": null,
+              "score": [
+                1,
+                0
+              ],
+              "matchday": "Qualifying Round",
+              "competition": "Veikkausliiga",
+              "league_id": "FI1",
+              "match_id": "5013829",
+              "ranking": ""
+            }
+          ],
+          "form_summary": {
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              0,
+              2,
+              2,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              1,
+              3,
+              0,
+              0
+            ]
+          },
+          "h2h": {}
+        },
+        "fc_inter": {
+          "id": 8042,
+          "name": "FC Inter",
+          "league_position": 2,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438698+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "hjk_helsinki": {
+          "id": 1008,
+          "name": "HJK Helsinki",
+          "league_position": 3,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438703+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "if_gnistan": {
+          "id": 23564,
+          "name": "IF Gnistan",
+          "league_position": 4,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438707+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ac_oulu": {
+          "id": 7008,
+          "name": "AC Oulu",
+          "league_position": 5,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:20.688406+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "vps": {
+          "id": 1102,
+          "name": "VPS",
+          "league_position": 6,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438722+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fc_lahti": {
+          "id": 2925,
+          "name": "FC Lahti",
+          "league_position": 7,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438727+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "tps": {
+          "id": 2275,
+          "name": "TPS",
+          "league_position": 8,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438732+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ilves": {
+          "id": 3189,
+          "name": "Ilves",
+          "league_position": 9,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438736+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sjk_sein\u00e4joki": {
+          "id": 23777,
+          "name": "SJK Sein\u00e4joki",
+          "league_position": 10,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438740+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ff_jaro": {
+          "id": 3650,
+          "name": "FF Jaro",
+          "league_position": 11,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438745+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "ifk_mariehamn": {
+          "id": 6017,
+          "name": "IFK Mariehamn",
+          "league_position": 12,
+          "total_teams": 12,
+          "last_scraped": "2026-10-08T15:04:05.438750+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
