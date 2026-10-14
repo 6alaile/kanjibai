@@ -1,51 +1,586 @@
 {
   "meta": {
-    "date": "2026-10-14",
-    "generatedAt": "2026-10-14T21:16:17.291168+03:00",
+    "date": "2026-10-15",
+    "generatedAt": "2026-10-15T00:09:01.297895+03:00",
     "scanned": 20,
-    "elapsedSeconds": 841.0
+    "elapsedSeconds": 498.5
   },
   "matches": [
     {
-      "id": "alfaisalyjoralnahda",
-      "league": "Football / International / AFC Cup",
-      "home": "Al Faisaly (JOR)",
-      "away": "Al Nahda",
-      "time": "09:15",
+      "id": "cdjuniorfcdeportivopereirafcsa",
+      "league": "Football / Colombia / Primera A, Apertura",
+      "home": "CD Junior FC",
+      "away": "Deportivo Pereira FC SA",
+      "time": "12:30",
       "odds": {
-        "home": 1.86,
-        "draw": 3.62,
-        "away": 3.76
+        "home": 1.28,
+        "draw": 5.19,
+        "away": 9.02
       },
       "home_stats": {
-        "name": "Al Faisaly (JOR)",
+        "name": "CD Junior FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 3,
+        "league_position": 17,
         "total_teams_in_league": 20,
-        "opposition_position": 4
+        "opposition_position": 10
       },
       "away_stats": {
-        "name": "Al Nahda",
+        "name": "Deportivo Pereira FC SA",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 20,
+        "opposition_position": 10
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "atleticomineiromgmontevideocit",
+      "league": "Football / International / Copa Sudamericana",
+      "home": "Atletico Mineiro MG",
+      "away": "Montevideo City Torque",
+      "time": "01:00",
+      "odds": {
+        "home": 1.42,
+        "draw": 4.39,
+        "away": 7.55
+      },
+      "home_stats": {
+        "name": "Atletico Mineiro MG",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 84,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Montevideo City Torque",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 84,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "quinterounidofccdsconstitucion",
+      "league": "Football / Chile / Chile Tercera Division",
+      "home": "Quintero Unido FC",
+      "away": "CDS Constitucion Unido",
+      "time": "01:00",
+      "odds": {
+        "home": 1.55,
+        "draw": 4.2,
+        "away": 4.9
+      },
+      "home_stats": {
+        "name": "Quintero Unido FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CDS Constitucion Unido",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "realcundinamarcabogotafc",
+      "league": "Football / Colombia / Primera B",
+      "home": "Real Cundinamarca",
+      "away": "Bogota FC",
+      "time": "01:00",
+      "odds": {
+        "home": 1.88,
+        "draw": 3.32,
+        "away": 4.04
+      },
+      "home_stats": {
+        "name": "Real Cundinamarca",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 214,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Bogota FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 214,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "casarmientojunincariverplatear",
+      "league": "Football / Argentina / Liga Profesional",
+      "home": "CA Sarmiento Junin",
+      "away": "CA River Plate (ARG)",
+      "time": "01:00",
+      "odds": {
+        "home": 6.71,
+        "draw": 4.07,
+        "away": 1.49
+      },
+      "home_stats": {
+        "name": "CA Sarmiento Junin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "CA River Plate (ARG)",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 26,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "monagasscdynamopuertofc",
+      "league": "Football / Venezuela / Copa Venezuela",
+      "home": "Monagas SC",
+      "away": "Dynamo Puerto FC",
+      "time": "01:00",
+      "odds": {
+        "home": 1.15,
+        "draw": 6.6,
+        "away": 13.0
+      },
+      "home_stats": {
+        "name": "Monagas SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Dynamo Puerto FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cerroportenosportivosanlorenzo",
+      "league": "Football / Paraguay / Copa Paraguay",
+      "home": "Cerro Porteno",
+      "away": "Sportivo San Lorenzo",
+      "time": "01:30",
+      "odds": {
+        "home": 1.39,
+        "draw": 4.84,
+        "away": 6.59
+      },
+      "home_stats": {
+        "name": "Cerro Porteno",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 12,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Sportivo San Lorenzo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 12,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "greenvilletriumphscspokanevelo",
+      "league": "Football / USA / USL League One",
+      "home": "Greenville Triumph SC",
+      "away": "Spokane Velocity FC",
+      "time": "02:00",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.43,
+        "away": 2.3
+      },
+      "home_stats": {
+        "name": "Greenville Triumph SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Spokane Velocity FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "hartfordathleticcharlestonbatt",
+      "league": "Football / USA / USL Championship",
+      "home": "Hartford Athletic",
+      "away": "Charleston Battery",
+      "time": "02:00",
+      "odds": {
+        "home": 2.77,
+        "draw": 3.57,
+        "away": 2.32
+      },
+      "home_stats": {
+        "name": "Hartford Athletic",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Charleston Battery",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 12
+    },
+    {
+      "id": "deportivolaraurenasc",
+      "league": "Football / Venezuela / Copa Venezuela",
+      "home": "Deportivo Lara",
+      "away": "Urena SC",
+      "time": "02:00",
+      "odds": {
+        "home": 1.61,
+        "draw": 3.8,
+        "away": 4.7
+      },
+      "home_stats": {
+        "name": "Deportivo Lara",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 9,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Urena SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 9,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "comunicacionesfcaurorafc",
+      "league": "Football / Guatemala / Liga Nacional. Apertura",
+      "home": "Comunicaciones FC",
+      "away": "Aurora FC",
+      "time": "02:00",
+      "odds": {
+        "home": 1.55,
+        "draw": 3.62,
+        "away": 5.9
+      },
+      "home_stats": {
+        "name": "Comunicaciones FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Aurora FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "unanmanaguadiriangenfcdiriamba",
+      "league": "Football / Nicaragua / Primera Division",
+      "home": "Unan Managua",
+      "away": "Diriangen FC Diriamba",
+      "time": "02:00",
+      "odds": {
+        "home": 4.6,
+        "draw": 3.75,
+        "away": 1.62
+      },
+      "home_stats": {
+        "name": "Unan Managua",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 4,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Diriangen FC Diriamba",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 10
+    },
+    {
+      "id": "sportingjaxbirminghamlegionfc",
+      "league": "Football / USA / USL Championship",
+      "home": "Sporting Jax",
+      "away": "Birmingham Legion FC",
+      "time": "02:00",
+      "odds": {
+        "home": 3.41,
+        "draw": 4.04,
+        "away": 1.86
+      },
+      "home_stats": {
+        "name": "Sporting Jax",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 98,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Birmingham Legion FC",
         "form": [
           "D",
+          "D",
+          "W",
+          "D",
+          "D",
+          "L",
+          "W",
           "D",
           "W",
           "W"
         ],
         "goals_scored": [
+          0,
+          2,
+          2,
           1,
+          2,
           1,
+          2,
+          2,
           1,
-          3
+          4
         ],
         "goals_conceded": [
-          1,
-          1,
           0,
-          2
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          0,
+          0
         ],
+        "league_position": 3,
+        "total_teams_in_league": 98,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 98
+    },
+    {
+      "id": "perezzeledoncdescorpionesbelen",
+      "league": "Football / Costa Rica / Primera Division, Apertura",
+      "home": "Perez Zeledon",
+      "away": "CD Escorpiones Belen",
+      "time": "02:00",
+      "odds": {
+        "home": 1.84,
+        "draw": 3.51,
+        "away": 3.78
+      },
+      "home_stats": {
+        "name": "Perez Zeledon",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CD Escorpiones Belen",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "rhodeislandfcloudoununitedfc",
+      "league": "Football / USA / USL Championship",
+      "home": "Rhode Island FC",
+      "away": "Loudoun United FC",
+      "time": "02:30",
+      "odds": {
+        "home": 1.48,
+        "draw": 4.61,
+        "away": 5.44
+      },
+      "home_stats": {
+        "name": "Rhode Island FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 15,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Loudoun United FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 15,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 15
+    },
+    {
+      "id": "dcunitednewyorkredbulls",
+      "league": "Football / USA / Major League Soccer",
+      "home": "DC United",
+      "away": "New York Red Bulls",
+      "time": "02:30",
+      "odds": {
+        "home": 2.33,
+        "draw": 3.94,
+        "away": 2.56
+      },
+      "home_stats": {
+        "name": "DC United",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 15,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "New York Red Bulls",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 15,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fccincinnatinewenglandrevoluti",
+      "league": "Football / USA / Major League Soccer",
+      "home": "FC Cincinnati",
+      "away": "New England Revolution",
+      "time": "02:30",
+      "odds": {
+        "home": 1.82,
+        "draw": 4.32,
+        "away": 3.41
+      },
+      "home_stats": {
+        "name": "FC Cincinnati",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "New England Revolution",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": 4,
         "total_teams_in_league": 20,
         "opposition_position": 4
@@ -54,1338 +589,114 @@
       "source": "betpawa"
     },
     {
-      "id": "rcrecreativodehuelvacdanavalca",
-      "league": "Football / Spain / Copa Federacion",
-      "home": "RC Recreativo de Huelva",
-      "away": "CDA Navalcarnero",
-      "time": "09:30",
+      "id": "torontofcorlandocitysc",
+      "league": "Football / USA / Major League Soccer",
+      "home": "Toronto FC",
+      "away": "Orlando City SC",
+      "time": "02:30",
       "odds": {
-        "home": 1.9,
-        "draw": 3.25,
-        "away": 3.91
-      },
-      "home_stats": {
-        "name": "RC Recreativo de Huelva",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": 10
-      },
-      "away_stats": {
-        "name": "CDA Navalcarnero",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          4,
-          2,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          0,
-          3,
-          2
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 26,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "deportivomaritimobullasdeporti",
-      "league": "Football / Spain / Tercera Federacion, Group 13",
-      "home": "Deportivo Maritimo",
-      "away": "Bullas Deportivo",
-      "time": "09:30",
-      "odds": {
-        "home": 2.85,
-        "draw": 3.05,
-        "away": 2.37
-      },
-      "home_stats": {
-        "name": "Deportivo Maritimo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 149,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Bullas Deportivo",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 149,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "cpsancristobalfegrama",
-      "league": "Football / Spain / Tercera Federacion, Group 5",
-      "home": "CP San Cristobal",
-      "away": "FE Grama",
-      "time": "09:30",
-      "odds": {
-        "home": 3.05,
-        "draw": 3.1,
-        "away": 2.22
-      },
-      "home_stats": {
-        "name": "CP San Cristobal",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 396,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FE Grama",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 396,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "norwichcitysouthamptonfc",
-      "league": "Football / England / Championship",
-      "home": "Norwich City",
-      "away": "Southampton FC",
-      "time": "09:45",
-      "odds": {
-        "home": 2.28,
-        "draw": 3.73,
-        "away": 2.83
-      },
-      "home_stats": {
-        "name": "Norwich City",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "L",
-          "W",
-          "W",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          4,
-          0,
-          3,
-          2,
-          3,
-          3,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          1,
-          1,
-          1,
-          1,
-          4,
-          4,
-          2
-        ],
-        "league_position": 19,
-        "total_teams_in_league": 24,
-        "opposition_position": 13
-      },
-      "away_stats": {
-        "name": "Southampton FC",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "D",
-          "W",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          5,
-          1,
-          1,
-          3,
-          4,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          2,
-          0
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 24,
-        "opposition_position": 13
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Southampton FC",
-            "away": "Norwich City FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Norwich City FC",
-            "away": "Southampton FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Norwich City FC",
-            "away": "Southampton FC",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "home": "Southampton FC",
-            "away": "Norwich City FC",
-            "score": [
-              4,
-              4
-            ]
-          },
-          {
-            "home": "Southampton FC",
-            "away": "Norwich City FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Norwich City FC",
-            "away": "Southampton FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Norwich City FC",
-            "away": "Southampton FC",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 24
-    },
-    {
-      "id": "queensparkrangersderbycounty",
-      "league": "Football / England / Championship",
-      "home": "Queens Park Rangers",
-      "away": "Derby County",
-      "time": "09:45",
-      "odds": {
-        "home": 1.82,
-        "draw": 3.81,
-        "away": 4.3
-      },
-      "home_stats": {
-        "name": "Queens Park Rangers",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L",
-          "D",
-          "D",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          0,
-          2,
-          2,
-          0,
-          0,
-          1,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          1,
-          1,
-          1,
-          0,
-          1,
-          2,
-          1
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 24,
-        "opposition_position": 23
-      },
-      "away_stats": {
-        "name": "Derby County",
-        "form": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L",
-          "L",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          2,
-          0,
-          0,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          3,
-          0,
-          3,
-          1,
-          2,
-          1,
-          1
-        ],
-        "league_position": 23,
-        "total_teams_in_league": 24,
-        "opposition_position": 23
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Queens Park Rangers FC",
-            "away": "Derby County FC",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "home": "Derby County FC",
-            "away": "Queens Park Rangers FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Queens Park Rangers FC",
-            "away": "Derby County FC",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "home": "Derby County FC",
-            "away": "Queens Park Rangers FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Queens Park Rangers FC",
-            "away": "Derby County FC",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "home": "Derby County FC",
-            "away": "Queens Park Rangers FC",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "home": "Queens Park Rangers FC",
-            "away": "Derby County FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Derby County FC",
-            "away": "Queens Park Rangers FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Queens Park Rangers FC",
-            "away": "Derby County FC",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 24
-    },
-    {
-      "id": "portsmouthfcsheffieldunited",
-      "league": "Football / England / Championship",
-      "home": "Portsmouth FC",
-      "away": "Sheffield United",
-      "time": "09:45",
-      "odds": {
-        "home": 2.36,
-        "draw": 3.44,
-        "away": 3.01
-      },
-      "home_stats": {
-        "name": "Portsmouth FC",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "L",
-          "W",
-          "D",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          1,
-          0,
-          2,
-          0,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          2,
-          2,
-          0,
-          0,
-          2,
-          1
-        ],
-        "league_position": 20,
-        "total_teams_in_league": 24,
-        "opposition_position": 15
-      },
-      "away_stats": {
-        "name": "Sheffield United",
-        "form": [
-          "D",
-          "D",
-          "D",
-          "W",
-          "L",
-          "W",
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          2,
-          3,
-          1,
-          2,
-          0,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          2,
-          2,
-          3,
-          1,
-          1,
-          2,
-          0
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 24,
-        "opposition_position": 15
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Portsmouth FC",
-            "away": "Sheffield United FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Sheffield United FC",
-            "away": "Portsmouth FC",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "home": "Sheffield United FC",
-            "away": "Portsmouth FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Portsmouth FC",
-            "away": "Sheffield United FC",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 24
-    },
-    {
-      "id": "lautarodebuinaguara",
-      "league": "Football / Chile / Chile Tercera Division",
-      "home": "Lautaro de Buin",
-      "away": "Aguara",
-      "time": "10:00",
-      "odds": {
-        "home": 1.7,
+        "home": 2.26,
         "draw": 3.9,
-        "away": 4.1
+        "away": 2.62
       },
       "home_stats": {
-        "name": "Lautaro de Buin",
+        "name": "Toronto FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 301,
-        "opposition_position": null
+        "total_teams_in_league": 3,
+        "opposition_position": 1
       },
       "away_stats": {
-        "name": "Aguara",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 301,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "astonvillafenerbahceistanbul",
-      "league": "Football / International / UEFA Champions League",
-      "home": "Aston Villa",
-      "away": "Fenerbahce Istanbul",
-      "time": "10:00",
-      "odds": {
-        "home": 1.65,
-        "draw": 4.29,
-        "away": 4.74
-      },
-      "home_stats": {
-        "name": "Aston Villa",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "W",
-          "L",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          0,
-          3,
-          1,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          4,
-          1,
-          0,
-          2,
-          2,
-          2,
-          2
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 36,
-        "opposition_position": 25
-      },
-      "away_stats": {
-        "name": "Fenerbahce Istanbul",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "league_position": 25,
-        "total_teams_in_league": 36,
-        "opposition_position": 25
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "manchestercityparissaintgermai",
-      "league": "Football / International / UEFA Champions League",
-      "home": "Manchester City",
-      "away": "Paris Saint-Germain",
-      "time": "10:00",
-      "odds": {
-        "home": 1.93,
-        "draw": 4.2,
-        "away": 3.22
-      },
-      "home_stats": {
-        "name": "Manchester City",
+        "name": "Orlando City SC",
         "form": [
           "W",
           "W",
           "W",
           "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          1,
-          2,
-          1,
-          5,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          0,
-          0,
-          3,
-          0
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 36,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "Paris Saint-Germain",
-        "form": [
-          "D",
-          "D",
-          "L",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          1,
-          6,
-          1,
-          2,
-          3
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          2,
-          1,
-          0,
-          1,
-          1
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 36,
-        "opposition_position": 6
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Manchester City FC",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Manchester City FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Manchester City FC",
-            "away": "Paris Saint-Germain FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Paris Saint-Germain FC",
-            "away": "Manchester City FC",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "bodoeglimtborussiadortmund",
-      "league": "Football / International / UEFA Champions League",
-      "home": "Bodoe/Glimt",
-      "away": "Borussia Dortmund",
-      "time": "10:00",
-      "odds": {
-        "home": 2.65,
-        "draw": 4.05,
-        "away": 2.24
-      },
-      "home_stats": {
-        "name": "Bodoe/Glimt",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 15
-      },
-      "away_stats": {
-        "name": "Borussia Dortmund",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          3,
-          3,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          2,
-          0,
-          0,
-          2
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opposition_position": 15
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "skslovanbratislavavfbstuttgart",
-      "league": "Football / International / UEFA Champions League",
-      "home": "SK Slovan Bratislava",
-      "away": "VfB Stuttgart",
-      "time": "10:00",
-      "odds": {
-        "home": 6.3,
-        "draw": 5.92,
-        "away": 1.38
-      },
-      "home_stats": {
-        "name": "SK Slovan Bratislava",
-        "form": [
           "L"
         ],
         "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          6
-        ],
-        "league_position": 34,
-        "total_teams_in_league": 36,
-        "opposition_position": 9
-      },
-      "away_stats": {
-        "name": "VfB Stuttgart",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          4,
-          3,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
+          2,
           5,
-          1,
-          1,
           2,
-          1,
-          0
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 36,
-        "opposition_position": 9
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "asromarealmadrid",
-      "league": "Football / International / UEFA Champions League",
-      "home": "AS Roma",
-      "away": "Real Madrid",
-      "time": "10:00",
-      "odds": {
-        "home": 3.42,
-        "draw": 4.11,
-        "away": 1.9
-      },
-      "home_stats": {
-        "name": "AS Roma",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          4,
-          4,
-          2,
-          1,
-          2,
-          2,
+          5,
           0
         ],
         "goals_conceded": [
           0,
           0,
           1,
-          1,
-          0,
-          2,
-          0
-        ],
-        "league_position": 23,
-        "total_teams_in_league": 36,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "Real Madrid",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "W",
-          "W",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          4,
-          0,
-          2,
-          4,
           3,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          1,
-          1,
-          1,
-          2,
-          2,
-          0
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 36,
-        "opposition_position": 16
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "bolivarscminerosdeguayana",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "Bolivar SC",
-      "away": "Mineros de Guayana",
-      "time": "10:00",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.4,
-        "away": 2.25
-      },
-      "home_stats": {
-        "name": "Bolivar SC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Mineros de Guayana",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 41,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "lincolncitywesthamunited",
-      "league": "Football / England / Championship",
-      "home": "Lincoln City",
-      "away": "West Ham United",
-      "time": "10:00",
-      "odds": {
-        "home": 4.65,
-        "draw": 3.92,
-        "away": 1.75
-      },
-      "home_stats": {
-        "name": "Lincoln City",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "D",
-          "D",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          0,
-          1,
-          1,
-          1,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          0,
-          0,
-          1,
-          0,
-          0,
-          2,
           3
         ],
-        "league_position": 17,
-        "total_teams_in_league": 24,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "West Ham United",
-        "form": [
-          "D",
-          "L",
-          "D",
-          "W",
-          "W",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          4,
-          3,
-          3,
-          6,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          1,
-          2,
-          0,
-          2,
-          0,
-          2,
-          1
-        ],
-        "league_position": 5,
-        "total_teams_in_league": 24,
-        "opposition_position": 5
+        "league_position": 1,
+        "total_teams_in_league": 3,
+        "opposition_position": 1
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 24
+      "source": "betpawa"
     },
     {
-      "id": "realbetissevillefcporto",
-      "league": "Football / International / UEFA Champions League",
-      "home": "Real Betis Seville",
-      "away": "FC Porto",
-      "time": "10:00",
+      "id": "columbuscrewcharlottefc",
+      "league": "Football / USA / Major League Soccer",
+      "home": "Columbus Crew",
+      "away": "Charlotte FC",
+      "time": "02:30",
       "odds": {
-        "home": 2.12,
-        "draw": 3.79,
-        "away": 3.15
+        "home": 1.95,
+        "draw": 4.0,
+        "away": 3.19
       },
       "home_stats": {
-        "name": "Real Betis Seville",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          1,
-          3,
-          2,
-          1,
-          1,
-          5
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          5,
-          0,
-          2,
-          1,
-          0,
-          1,
-          2
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 36,
-        "opposition_position": 29
-      },
-      "away_stats": {
-        "name": "FC Porto",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "L",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          2,
-          3,
-          2,
-          0,
-          4,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          2,
-          1,
-          1,
-          1
-        ],
-        "league_position": 29,
-        "total_teams_in_league": 36,
-        "opposition_position": 29
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "fcshakhtardonetskaekathens",
-      "league": "Football / International / UEFA Champions League",
-      "home": "FC Shakhtar Donetsk",
-      "away": "AEK Athens",
-      "time": "10:00",
-      "odds": {
-        "home": 2.63,
-        "draw": 3.45,
-        "away": 2.66
-      },
-      "home_stats": {
-        "name": "FC Shakhtar Donetsk",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "league_position": 23,
-        "total_teams_in_league": 36,
-        "opposition_position": 17
-      },
-      "away_stats": {
-        "name": "AEK Athens",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": 17,
-        "total_teams_in_league": 36,
-        "opposition_position": 17
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "atleticoavilafcacademiaanzoate",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "Atletico Avila FC",
-      "away": "Academia Anzoategui FC",
-      "time": "10:30",
-      "odds": {
-        "home": 2.29,
-        "draw": 3.55,
-        "away": 2.65
-      },
-      "home_stats": {
-        "name": "Atletico Avila FC",
+        "name": "Columbus Crew",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "league_position": 13,
+        "total_teams_in_league": 15,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Academia Anzoategui FC",
+        "name": "Charlotte FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 20,
+        "total_teams_in_league": 15,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "araguafccaracasfc",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "Aragua FC",
-      "away": "Caracas FC",
-      "time": "10:30",
+      "id": "cfmontrealatlantaunitedfc",
+      "league": "Football / USA / Major League Soccer",
+      "home": "CF Montreal",
+      "away": "Atlanta United FC",
+      "time": "02:30",
       "odds": {
-        "home": 1.57,
-        "draw": 3.5,
-        "away": 5.6
+        "home": 2.37,
+        "draw": 3.69,
+        "away": 2.67
       },
       "home_stats": {
-        "name": "Aragua FC",
+        "name": "CF Montreal",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "Caracas FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 11,
-        "total_teams_in_league": 20,
-        "opposition_position": 11
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "clubatleticobarinasrealfronter",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "Club Atletico Barinas",
-      "away": "Real Frontera FC",
-      "time": "10:30",
-      "odds": {
-        "home": 1.16,
-        "draw": 6.6,
-        "away": 11.0
-      },
-      "home_stats": {
-        "name": "Club Atletico Barinas",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 84,
+        "total_teams_in_league": 127,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Real Frontera FC",
+        "name": "Atlanta United FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 84,
+        "total_teams_in_league": 127,
         "opposition_position": null
       },
       "h2h": null,
