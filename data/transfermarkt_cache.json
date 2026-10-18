@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-10-18T12:06:14.140173+00:00",
+  "lastUpdated": "2026-10-18T15:04:20.239117+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -11,7 +11,7 @@
           "name": "Man City",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218706+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748943+00:00",
           "recent_matches": [
             {
               "date": "Tue 08/09/26",
@@ -122,10 +122,58 @@
         "arsenal": {
           "id": 11,
           "name": "Arsenal",
-          "league_position": 2,
+          "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218721+00:00",
+          "last_scraped": "2026-10-18T15:03:08.547106+00:00",
           "recent_matches": [
+            {
+              "date": "Wed 09/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Napoli",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5035940",
+              "ranking": ""
+            },
+            {
+              "date": "Tue 15/09/26",
+              "time": "9:00 PM",
+              "home_away": "A",
+              "opponent": "Ipswich",
+              "opponent_id": null,
+              "score": [
+                2,
+                4
+              ],
+              "matchday": "Third Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5045446",
+              "ranking": ""
+            },
+            {
+              "date": "Tue 13/10/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Lille",
+              "opponent_id": null,
+              "score": [
+                3,
+                0
+              ],
+              "matchday": "Group Stage",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5035882",
+              "ranking": ""
+            },
             {
               "date": "Sun 16/08/26",
               "time": "4:00 PM",
@@ -157,38 +205,6 @@
               "league_id": "GB1",
               "match_id": "4899267",
               "ranking": "(2.)"
-            },
-            {
-              "date": "Mon 31/08/26",
-              "time": "9:00 PM",
-              "home_away": "A",
-              "opponent": "Aston Villa",
-              "opponent_id": null,
-              "score": [
-                0,
-                1
-              ],
-              "matchday": "2",
-              "competition": "Premier League",
-              "league_id": "GB1",
-              "match_id": "4899192",
-              "ranking": "(2.)"
-            },
-            {
-              "date": "Fri 21/08/26",
-              "time": "9:00 PM",
-              "home_away": "H",
-              "opponent": "Coventry",
-              "opponent_id": null,
-              "score": [
-                3,
-                0
-              ],
-              "matchday": "1",
-              "competition": "Premier League",
-              "league_id": "GB1",
-              "match_id": "4899182",
-              "ranking": "(2.)"
             }
           ],
           "form_summary": {
@@ -196,19 +212,22 @@
               "W",
               "W",
               "W",
+              "W",
               "W"
             ],
             "goals_scored": [
-              3,
-              2,
               1,
-              3
+              4,
+              3,
+              3,
+              2
             ],
             "goals_conceded": [
               0,
-              1,
+              2,
               0,
-              0
+              0,
+              1
             ]
           },
           "h2h": {}
@@ -218,7 +237,7 @@
           "name": "Hull City",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218740+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748987+00:00",
           "recent_matches": [
             {
               "date": "Tue 25/08/26",
@@ -331,7 +350,7 @@
           "name": "Chelsea",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218728+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748967+00:00",
           "recent_matches": [
             {
               "date": "Thu 27/08/26",
@@ -425,7 +444,7 @@
           "name": "Brentford",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218733+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748975+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -439,7 +458,7 @@
           "name": "Liverpool",
           "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218731+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748971+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -514,7 +533,7 @@
           "name": "Newcastle",
           "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218746+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748995+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -526,9 +545,9 @@
         "everton": {
           "id": 29,
           "name": "Everton",
-          "league_position": 7,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218735+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748982+00:00",
           "recent_matches": [
             {
               "date": "Wed 26/08/26",
@@ -639,9 +658,9 @@
         "leeds": {
           "id": 399,
           "name": "Leeds",
-          "league_position": 8,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218738+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748979+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -653,9 +672,9 @@
         "brighton": {
           "id": 1237,
           "name": "Brighton",
-          "league_position": 3,
+          "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218724+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748957+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -667,9 +686,9 @@
         "man_utd": {
           "id": 985,
           "name": "Man Utd",
-          "league_position": 14,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218754+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749002+00:00",
           "recent_matches": [
             {
               "date": "Thu 10/09/26",
@@ -761,9 +780,9 @@
         "sunderland": {
           "id": 289,
           "name": "Sunderland",
-          "league_position": 18,
+          "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218763+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749027+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -775,9 +794,9 @@
         "crystal_palace": {
           "id": 873,
           "name": "Crystal Palace",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218751+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749006+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -791,7 +810,7 @@
           "name": "Ipswich",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218743+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748991+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -803,9 +822,9 @@
         "bournemouth": {
           "id": 989,
           "name": "Bournemouth",
-          "league_position": 19,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218765+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749009+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -817,14 +836,113 @@
         "nottm_forest": {
           "id": 703,
           "name": "Nott'm Forest",
-          "league_position": 17,
+          "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218761+00:00",
-          "recent_matches": [],
+          "last_scraped": "2026-10-18T15:02:50.893859+00:00",
+          "recent_matches": [
+            {
+              "date": "Tue 25/08/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "Leeds",
+              "opponent_id": null,
+              "score": [
+                0,
+                2
+              ],
+              "matchday": "Second Round",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "5016473",
+              "ranking": ""
+            },
+            {
+              "date": "Sun 11/10/26",
+              "time": "3:00 PM",
+              "home_away": "A",
+              "opponent": "Crystal Palace",
+              "opponent_id": null,
+              "score": [
+                3,
+                1
+              ],
+              "matchday": "6",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899301",
+              "ranking": "(13.)"
+            },
+            {
+              "date": "Sat 29/08/26",
+              "time": "1:30 PM",
+              "home_away": "A",
+              "opponent": "Liverpool",
+              "opponent_id": null,
+              "score": [
+                2,
+                2
+              ],
+              "matchday": "2",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899198",
+              "ranking": "(15.)"
+            },
+            {
+              "date": "Sat 22/08/26",
+              "time": "4:00 PM",
+              "home_away": "H",
+              "opponent": "Leeds",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "1",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899186",
+              "ranking": "(18.)"
+            },
+            {
+              "date": "Sat 19/09/26",
+              "time": "6:30 PM",
+              "home_away": "H",
+              "opponent": "Coventry",
+              "opponent_id": null,
+              "score": [
+                0,
+                1
+              ],
+              "matchday": "5",
+              "competition": "Premier League",
+              "league_id": "GB1",
+              "match_id": "4899295",
+              "ranking": "(11.)"
+            }
+          ],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "D",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              0,
+              1,
+              2,
+              0,
+              0
+            ],
+            "goals_conceded": [
+              2,
+              3,
+              2,
+              1,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -833,7 +951,7 @@
           "name": "Aston Villa",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218749+00:00",
+          "last_scraped": "2026-10-18T15:02:50.748998+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -847,7 +965,7 @@
           "name": "Tottenham",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218767+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749030+00:00",
           "recent_matches": [
             {
               "date": "Wed 26/08/26",
@@ -939,9 +1057,9 @@
         "fulham": {
           "id": 931,
           "name": "Fulham",
-          "league_position": 16,
+          "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218759+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749018+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -953,9 +1071,9 @@
         "coventry": {
           "id": 990,
           "name": "Coventry",
-          "league_position": 15,
+          "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:01:32.218757+00:00",
+          "last_scraped": "2026-10-18T15:02:50.749014+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14170,7 +14288,7 @@
           "name": "Mantova",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:53.106393+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159379+00:00",
           "recent_matches": [
             {
               "date": "Thu 03/09/26",
@@ -14281,9 +14399,9 @@
         "s\u00fcdtirol": {
           "id": 4554,
           "name": "S\u00fcdtirol",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961139+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159391+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14295,9 +14413,9 @@
         "ascoli": {
           "id": 408,
           "name": "Ascoli",
-          "league_position": 5,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961145+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159394+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14309,9 +14427,9 @@
         "pisa": {
           "id": 4172,
           "name": "Pisa",
-          "league_position": 8,
+          "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961158+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159384+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14323,9 +14441,9 @@
         "modena": {
           "id": 1385,
           "name": "Modena",
-          "league_position": 3,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961134+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159387+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14337,9 +14455,9 @@
         "avellino": {
           "id": 2331,
           "name": "Avellino",
-          "league_position": 7,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961154+00:00",
+          "last_scraped": "2026-10-18T15:01:33.347852+00:00",
           "recent_matches": [
             {
               "date": "Sun 13/09/26",
@@ -14403,7 +14521,7 @@
               "competition": "Serie B",
               "league_id": "IT2",
               "match_id": "4968006",
-              "ranking": "(7.)"
+              "ranking": "(8.)"
             },
             {
               "date": "Sat 19/09/26",
@@ -14452,7 +14570,7 @@
           "name": "Palermo",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:02:12.323124+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159366+00:00",
           "recent_matches": [
             {
               "date": "Thu 03/09/26",
@@ -14563,9 +14681,9 @@
         "fc_empoli": {
           "id": 749,
           "name": "FC Empoli",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961177+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159421+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14577,9 +14695,9 @@
         "cesena": {
           "id": 1429,
           "name": "Cesena",
-          "league_position": 11,
+          "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961170+00:00",
+          "last_scraped": "2026-10-18T15:01:15.363413+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -14595,7 +14713,7 @@
               "competition": "Serie B",
               "league_id": "IT2",
               "match_id": "4968009",
-              "ranking": "(8.)"
+              "ranking": "(11.)"
             },
             {
               "date": "Sun 06/09/26",
@@ -14646,20 +14764,20 @@
               "ranking": "(9.)"
             },
             {
-              "date": "Mon 17/08/26",
-              "time": "6:30 PM",
+              "date": "Sat 10/10/26",
+              "time": "3:00 PM",
               "home_away": "A",
-              "opponent": "Sassuolo",
+              "opponent": "Benevento",
               "opponent_id": null,
               "score": [
-                3,
+                2,
                 0
               ],
-              "matchday": "First Round",
+              "matchday": "6",
               "competition": "Serie B",
               "league_id": "IT2",
-              "match_id": "4904464",
-              "ranking": ""
+              "match_id": "4968170",
+              "ranking": "(8.)"
             }
           ],
           "form_summary": {
@@ -14682,7 +14800,7 @@
               1,
               1,
               2,
-              3
+              2
             ]
           },
           "h2h": {}
@@ -14692,7 +14810,7 @@
           "name": "Hellas Verona",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961166+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159408+00:00",
           "recent_matches": [
             {
               "date": "Thu 03/09/26",
@@ -14803,9 +14921,9 @@
         "padova": {
           "id": 3037,
           "name": "Padova",
-          "league_position": 14,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961181+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159424+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -14916,9 +15034,9 @@
         "lr_vicenza": {
           "id": 2655,
           "name": "LR Vicenza",
-          "league_position": 17,
+          "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961191+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159433+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14930,9 +15048,9 @@
         "cremonese": {
           "id": 2239,
           "name": "Cremonese",
-          "league_position": 16,
+          "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961188+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159430+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14944,9 +15062,9 @@
         "arezzo": {
           "id": 4255,
           "name": "Arezzo",
-          "league_position": 15,
+          "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961184+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159427+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14960,7 +15078,7 @@
           "name": "Sampdoria",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961201+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159439+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14974,7 +15092,7 @@
           "name": "Virtus Entella",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961162+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159404+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -14986,9 +15104,9 @@
         "carrarese": {
           "id": 4159,
           "name": "Carrarese",
-          "league_position": 12,
+          "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961174+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159418+00:00",
           "recent_matches": [
             {
               "date": "Sat 29/08/26",
@@ -15099,9 +15217,9 @@
         "benevento": {
           "id": 4171,
           "name": "Benevento",
-          "league_position": 6,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961150+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159398+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -15113,9 +15231,9 @@
         "juve_stabia": {
           "id": 5587,
           "name": "Juve Stabia",
-          "league_position": 18,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961195+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159411+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -15129,7 +15247,7 @@
           "name": "Catanzaro",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:01:52.961198+00:00",
+          "last_scraped": "2026-10-18T15:01:15.159436+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -16312,7 +16430,7 @@
           "name": "Potenza",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334860+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154435+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -16425,7 +16543,7 @@
           "name": "Sorrento",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334876+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154450+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -16437,9 +16555,9 @@
         "picerno": {
           "id": 49430,
           "name": "Picerno",
-          "league_position": 11,
+          "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334890+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154491+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -16550,9 +16668,9 @@
         "cerignola": {
           "id": 22249,
           "name": "Cerignola",
-          "league_position": 7,
+          "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:34.854420+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154459+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -16665,7 +16783,7 @@
           "name": "Bari",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334874+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154446+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -16776,9 +16894,9 @@
         "barletta": {
           "id": 5585,
           "name": "Barletta",
-          "league_position": 16,
+          "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334901+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154509+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -16790,9 +16908,9 @@
         "casertana": {
           "id": 4106,
           "name": "Casertana",
-          "league_position": 5,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334881+00:00",
+          "last_scraped": "2026-10-18T15:03:49.300974+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -16872,7 +16990,7 @@
               "competition": "Serie C - Girone C",
               "league_id": "IT3C",
               "match_id": "4979167",
-              "ranking": "(8.)"
+              "ranking": "(7.)"
             }
           ],
           "form_summary": {
@@ -16903,9 +17021,9 @@
         "inter_u23": {
           "id": 41119,
           "name": "Inter U23",
-          "league_position": 10,
+          "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334888+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154488+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -16917,9 +17035,9 @@
         "cavese": {
           "id": 6266,
           "name": "Cavese",
-          "league_position": 12,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.428041+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154468+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17030,9 +17148,9 @@
         "altamura": {
           "id": 22408,
           "name": "Altamura",
-          "league_position": 17,
+          "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334904+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154502+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -17046,7 +17164,7 @@
           "name": "Foggia",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334893+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154495+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17157,9 +17275,9 @@
         "savoia": {
           "id": 4341,
           "name": "Savoia",
-          "league_position": 15,
+          "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334899+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154506+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -17171,9 +17289,9 @@
         "monopoli": {
           "id": 33734,
           "name": "Monopoli",
-          "league_position": 6,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334882+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154476+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17286,7 +17404,7 @@
           "name": "Casarano",
           "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334897+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154499+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -17298,9 +17416,9 @@
         "salernitana": {
           "id": 380,
           "name": "Salernitana",
-          "league_position": 9,
+          "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334887+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154484+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17411,9 +17529,9 @@
         "scafatese": {
           "id": 22048,
           "name": "Scafatese",
-          "league_position": 8,
+          "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334885+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154480+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17526,7 +17644,7 @@
           "name": "Giugliano",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334906+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154513+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -17639,7 +17757,7 @@
           "name": "Cosenza",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:59.544263+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154516+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -17750,9 +17868,9 @@
         "catania": {
           "id": 1627,
           "name": "Catania",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334878+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154464+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -17865,7 +17983,7 @@
           "name": "Crotone",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-10-18T12:04:10.334910+00:00",
+          "last_scraped": "2026-10-18T15:03:49.154520+00:00",
           "recent_matches": [
             {
               "date": "Tue 15/09/26",
@@ -20078,7 +20196,7 @@
           "name": "Cittadella",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950581+00:00",
+          "last_scraped": "2026-10-18T15:04:20.093990+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -20191,7 +20309,7 @@
           "name": "Union Brescia",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950594+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094001+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -20304,7 +20422,7 @@
           "name": "Ospitaletto",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950599+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094004+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -20318,7 +20436,7 @@
           "name": "Dolomiti",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950635+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094026+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -20431,7 +20549,7 @@
           "name": "Juve Next Gen",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950649+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094034+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -20445,7 +20563,7 @@
           "name": "Alcione",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950625+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094020+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -20558,7 +20676,7 @@
           "name": "Trento",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950603+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094007+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -20671,7 +20789,7 @@
           "name": "UC AlbinoLeffe",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950621+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094018+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -20685,7 +20803,7 @@
           "name": "Carpi",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950642+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094030+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -20798,7 +20916,7 @@
           "name": "Arzignano",
           "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950607+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094009+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -20909,9 +21027,9 @@
         "treviso": {
           "id": 2251,
           "name": "Treviso",
-          "league_position": 7,
+          "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:51.798874+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094011+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -21024,7 +21142,7 @@
           "name": "Lumezzane",
           "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950628+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094022+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -21036,9 +21154,9 @@
         "desenzano": {
           "id": 56265,
           "name": "Desenzano",
-          "league_position": 7,
+          "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950615+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094016+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -21151,7 +21269,7 @@
           "name": "Caratese",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:33.093913+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094036+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -21264,7 +21382,7 @@
           "name": "Novara",
           "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950639+00:00",
+          "last_scraped": "2026-10-18T15:04:20.239095+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -21377,7 +21495,7 @@
           "name": "Pro Vercelli",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950646+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094032+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -21488,9 +21606,9 @@
         "lecco": {
           "id": 5514,
           "name": "Lecco",
-          "league_position": 6,
+          "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950610+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094014+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -21603,7 +21721,7 @@
           "name": "Pergolettese",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950632+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094024+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -21617,7 +21735,7 @@
           "name": "Giana Erminio",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950656+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094038+00:00",
           "recent_matches": [
             {
               "date": "Wed 02/09/26",
@@ -21730,7 +21848,7 @@
           "name": "Renate",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-10-17T15:04:32.950659+00:00",
+          "last_scraped": "2026-10-18T15:04:20.094040+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -48426,9 +48544,9 @@
         "monaco": {
           "id": 162,
           "name": "Monaco",
-          "league_position": 1,
+          "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465607+00:00",
+          "last_scraped": "2026-10-18T15:02:08.299615+00:00",
           "recent_matches": [
             {
               "date": "Thu 27/08/26",
@@ -48463,6 +48581,22 @@
               "ranking": ""
             },
             {
+              "date": "Thu 15/10/26",
+              "time": "6:45 PM",
+              "home_away": "A",
+              "opponent": "CSKA Sofia",
+              "opponent_id": null,
+              "score": [
+                1,
+                2
+              ],
+              "matchday": "Group Stage",
+              "competition": "Ligue 1",
+              "league_id": "FR1",
+              "match_id": "5037605",
+              "ranking": ""
+            },
+            {
               "date": "Sun 30/08/26",
               "time": "8:45 PM",
               "home_away": "H",
@@ -48492,23 +48626,7 @@
               "competition": "Ligue 1",
               "league_id": "FR1",
               "match_id": "4894901",
-              "ranking": "(2.)"
-            },
-            {
-              "date": "Fri 04/09/26",
-              "time": "9:05 PM",
-              "home_away": "A",
-              "opponent": "PSG",
-              "opponent_id": null,
-              "score": [
-                1,
-                2
-              ],
-              "matchday": "3",
-              "competition": "Ligue 1",
-              "league_id": "FR1",
-              "match_id": "4894924",
-              "ranking": "(1.)"
+              "ranking": "(3.)"
             }
           ],
           "form_summary": {
@@ -48523,15 +48641,15 @@
               4,
               3,
               2,
-              1,
-              2
+              2,
+              1
             ],
             "goals_conceded": [
               1,
               2,
+              1,
               0,
-              0,
-              1
+              0
             ]
           },
           "h2h": {}
@@ -48539,9 +48657,9 @@
         "lyon": {
           "id": 1041,
           "name": "Lyon",
-          "league_position": 4,
+          "league_position": 5,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465631+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154601+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -48553,9 +48671,9 @@
         "paris_fc": {
           "id": 10004,
           "name": "Paris FC",
-          "league_position": 5,
+          "league_position": 6,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465635+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154605+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -48649,7 +48767,7 @@
           "name": "Lille",
           "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465621+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154587+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -48663,7 +48781,7 @@
           "name": "Stade Rennais",
           "league_position": 3,
           "total_teams": 18,
-          "last_scraped": "2026-10-11T15:01:04.889923+00:00",
+          "last_scraped": "2026-10-18T15:02:26.045477+00:00",
           "recent_matches": [
             {
               "date": "Wed 16/09/26",
@@ -48679,6 +48797,22 @@
               "competition": "Ligue 1",
               "league_id": "FR1",
               "match_id": "5037386",
+              "ranking": ""
+            },
+            {
+              "date": "Thu 15/10/26",
+              "time": "9:00 PM",
+              "home_away": "H",
+              "opponent": "OFI Crete",
+              "opponent_id": null,
+              "score": [
+                2,
+                1
+              ],
+              "matchday": "Group Stage",
+              "competition": "Ligue 1",
+              "league_id": "FR1",
+              "match_id": "5037380",
               "ranking": ""
             },
             {
@@ -48711,62 +48845,46 @@
               "competition": "Ligue 1",
               "league_id": "FR1",
               "match_id": "4894906",
-              "ranking": "(6.)"
+              "ranking": "(4.)"
             },
             {
-              "date": "Sun 06/09/26",
+              "date": "Sun 11/10/26",
               "time": "5:15 PM",
-              "home_away": "A",
-              "opponent": "Angers SCO",
-              "opponent_id": null,
-              "score": [
-                1,
-                2
-              ],
-              "matchday": "3",
-              "competition": "Ligue 1",
-              "league_id": "FR1",
-              "match_id": "4894918",
-              "ranking": "(5.)"
-            },
-            {
-              "date": "Sat 19/09/26",
-              "time": "8:45 PM",
-              "home_away": "A",
-              "opponent": "Lyon",
+              "home_away": "H",
+              "opponent": "AJ Auxerre",
               "opponent_id": null,
               "score": [
                 4,
-                0
+                1
               ],
-              "matchday": "5",
+              "matchday": "6",
               "competition": "Ligue 1",
               "league_id": "FR1",
-              "match_id": "4894939",
-              "ranking": "(3.)"
+              "match_id": "4894952",
+              "ranking": "(5.)"
             }
           ],
           "form_summary": {
             "form": [
               "D",
               "W",
-              "D",
               "W",
-              "L"
+              "D",
+              "W"
             ],
             "goals_scored": [
               0,
+              2,
               3,
               2,
-              2,
-              0
+              4
             ],
             "goals_conceded": [
               0,
-              2,
-              2,
               1,
-              4
+              2,
+              2,
+              1
             ]
           },
           "h2h": {}
@@ -48774,9 +48892,9 @@
         "r_strasbourg": {
           "id": 667,
           "name": "R. Strasbourg",
-          "league_position": 12,
+          "league_position": 13,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.611977+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154630+00:00",
           "recent_matches": [
             {
               "date": "Sun 11/10/26",
@@ -48887,9 +49005,9 @@
         "stade_brestois": {
           "id": 3911,
           "name": "Stade Brestois",
-          "league_position": 8,
+          "league_position": 9,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465647+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154616+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -48901,9 +49019,9 @@
         "fc_lorient": {
           "id": 1158,
           "name": "FC Lorient",
-          "league_position": 9,
+          "league_position": 11,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465651+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154623+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -48917,7 +49035,7 @@
           "name": "Troyes",
           "league_position": 17,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465680+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154643+00:00",
           "recent_matches": [
             {
               "date": "Sun 13/09/26",
@@ -49028,9 +49146,9 @@
         "lens": {
           "id": 826,
           "name": "Lens",
-          "league_position": 11,
+          "league_position": 7,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465658+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154609+00:00",
           "recent_matches": [
             {
               "date": "Thu 10/09/26",
@@ -49141,9 +49259,9 @@
         "marseille": {
           "id": 244,
           "name": "Marseille",
-          "league_position": 14,
+          "league_position": 8,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465670+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154612+00:00",
           "recent_matches": [
             {
               "date": "Thu 17/09/26",
@@ -49254,9 +49372,9 @@
         "angers_sco": {
           "id": 1420,
           "name": "Angers SCO",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465666+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154633+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -49348,9 +49466,9 @@
         "psg": {
           "id": 583,
           "name": "PSG",
-          "league_position": 6,
+          "league_position": 1,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:26.464577+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154570+00:00",
           "recent_matches": [
             {
               "date": "Wed 14/10/26",
@@ -49463,7 +49581,7 @@
           "name": "Le Mans FC",
           "league_position": 15,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465673+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154637+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -49555,9 +49673,9 @@
         "nice": {
           "id": 417,
           "name": "Nice",
-          "league_position": 10,
+          "league_position": 12,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465654+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154627+00:00",
           "recent_matches": [
             {
               "date": "Sun 30/08/26",
@@ -49651,7 +49769,7 @@
           "name": "Le Havre AC",
           "league_position": 18,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465684+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154646+00:00",
           "recent_matches": [
             {
               "date": "Sun 23/08/26",
@@ -49762,9 +49880,9 @@
         "toulouse": {
           "id": 415,
           "name": "Toulouse",
-          "league_position": 7,
+          "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465643+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154619+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -49778,7 +49896,7 @@
           "name": "AJ Auxerre",
           "league_position": 16,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465677+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154640+00:00",
           "recent_matches": [
             {
               "date": "Sat 29/08/26",
@@ -49870,9 +49988,9 @@
         "rennes": {
           "id": 273,
           "name": "Rennes",
-          "league_position": 3,
+          "league_position": 4,
           "total_teams": 18,
-          "last_scraped": "2026-10-17T15:01:07.465627+00:00",
+          "last_scraped": "2026-10-18T15:02:08.154596+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
