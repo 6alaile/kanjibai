@@ -1,98 +1,271 @@
 {
   "meta": {
     "date": "2026-11-01",
-    "generatedAt": "2026-11-01T15:06:01.430792+03:00",
+    "generatedAt": "2026-11-01T18:06:06.586771+03:00",
     "scanned": 20,
-    "elapsedSeconds": 333.2
+    "elapsedSeconds": 314.5
   },
   "matches": [
     {
-      "id": "fcdynamomakhachkalafkrostov",
-      "league": "Football / Russian Federation / Premier League",
-      "home": "FC Dynamo-Makhachkala",
-      "away": "FK Rostov",
-      "time": "03:15",
+      "id": "adceutasportinggijon",
+      "league": "Football / Spain / LaLiga 2",
+      "home": "AD Ceuta",
+      "away": "Sporting Gijon",
+      "time": "06:15",
       "odds": {
-        "home": 3.46,
-        "draw": 3.12,
-        "away": 2.21
+        "home": 2.35,
+        "draw": 3.33,
+        "away": 2.99
       },
       "home_stats": {
-        "name": "FC Dynamo-Makhachkala",
+        "name": "AD Ceuta",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
+        "league_position": 21,
+        "total_teams_in_league": 22,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "FK Rostov",
+        "name": "Sporting Gijon",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 20,
+        "total_teams_in_league": 22,
         "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "racingsantanderrealmadrid",
+      "league": "Football / Spain / LaLiga",
+      "home": "Racing Santander",
+      "away": "Real Madrid",
+      "time": "06:15",
+      "odds": {
+        "home": 10.29,
+        "draw": 8.4,
+        "away": 1.22
+      },
+      "home_stats": {
+        "name": "Racing Santander",
+        "form": [
+          "D",
+          "L",
+          "W",
+          "L",
+          "W",
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          3,
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          2,
+          3,
+          1,
+          7,
+          5,
+          2,
+          2,
+          1
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Real Madrid",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W",
+          "W",
+          "W",
+          "L",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          4,
+          4,
+          0,
+          2,
+          4,
+          3,
+          1,
+          1,
+          4,
+          4,
+          4,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          0,
+          3,
+          1,
+          1,
+          1
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 20
     },
     {
-      "id": "fksuduvamarijampolefkbangagarg",
-      "league": "Football / Lithuania / A Lyga",
-      "home": "FK Suduva Marijampole",
-      "away": "FK Banga Gargzdai",
-      "time": "03:15",
+      "id": "granpenafcracingclubvillalbes",
+      "league": "Football / Spain / Tercera Federacion, Group 1",
+      "home": "Gran Pena FC",
+      "away": "Racing Club Villalbes",
+      "time": "06:15",
       "odds": {
-        "home": 1.6,
-        "draw": 3.84,
-        "away": 5.1
+        "home": 2.35,
+        "draw": 3.2,
+        "away": 2.8
       },
       "home_stats": {
-        "name": "FK Suduva Marijampole",
+        "name": "Gran Pena FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 51,
+        "total_teams_in_league": 412,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "FK Banga Gargzdai",
+        "name": "Racing Club Villalbes",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 51,
+        "total_teams_in_league": 412,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "almabarrahreyadyabaseya",
-      "league": "Football / Lebanon / Premier League",
-      "home": "AL Mabarrah",
-      "away": "Reyady Abaseya",
-      "time": "03:15",
+      "id": "cdaceroherculescfb",
+      "league": "Football / Spain / Tercera Federacion, Group 6",
+      "home": "CD Acero",
+      "away": "Hercules CF B",
+      "time": "06:30",
       "odds": {
-        "home": 3.05,
-        "draw": 3.2,
-        "away": 2.22
+        "home": 2.08,
+        "draw": 3.05,
+        "away": 3.4
       },
       "home_stats": {
-        "name": "AL Mabarrah",
+        "name": "CD Acero",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 2,
+        "league_position": null,
+        "total_teams_in_league": 120,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Hercules CF B",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 120,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cduniversidadcatolicauniversid",
+      "league": "Football / Chile / Primera Division",
+      "home": "CD Universidad Catolica",
+      "away": "Universidad de Chile",
+      "time": "06:30",
+      "odds": {
+        "home": 2.86,
+        "draw": 3.57,
+        "away": 2.27
+      },
+      "home_stats": {
+        "name": "CD Universidad Catolica",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 120,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Universidad de Chile",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 120,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 120
+    },
+    {
+      "id": "lusitaniafclourosascfarense",
+      "league": "Football / Portugal / Liga Portugal 2",
+      "home": "Lusitania FC Lourosa",
+      "away": "SC Farense",
+      "time": "06:30",
+      "odds": {
+        "home": 2.59,
+        "draw": 3.23,
+        "away": 2.68
+      },
+      "home_stats": {
+        "name": "Lusitania FC Lourosa",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
         "total_teams_in_league": 20,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Reyady Abaseya",
+        "name": "SC Farense",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -105,100 +278,100 @@
       "total_teams_in_league": 20
     },
     {
-      "id": "kftiranakfegnatiarrogozhine",
-      "league": "Football / Albania / Kategoria Superiore",
-      "home": "KF Tirana",
-      "away": "KF Egnatia Rrogozhine",
-      "time": "03:30",
+      "id": "cfatleticodemonzoncdcuarte",
+      "league": "Football / Spain / Tercera Federacion, Group 17",
+      "home": "CF Atletico de Monzon",
+      "away": "CD Cuarte",
+      "time": "06:30",
       "odds": {
-        "home": 3.45,
-        "draw": 3.2,
-        "away": 2.02
+        "home": 2.9,
+        "draw": 3.15,
+        "away": 2.3
       },
       "home_stats": {
-        "name": "KF Tirana",
+        "name": "CF Atletico de Monzon",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 4,
-        "total_teams_in_league": 10,
-        "opposition_position": 3
+        "league_position": null,
+        "total_teams_in_league": 84,
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "KF Egnatia Rrogozhine",
+        "name": "CD Cuarte",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 84,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cdmalagajuniorsfccdhuetorvega",
+      "league": "Football / Spain / Tercera Federacion, Group 9",
+      "home": "CD Malaga Juniors FC",
+      "away": "CD Huetor Vega",
+      "time": "06:30",
+      "odds": {
+        "home": 2.55,
+        "draw": 3.35,
+        "away": 2.43
+      },
+      "home_stats": {
+        "name": "CD Malaga Juniors FC",
         "form": [
-          "L",
-          "L",
+          "D",
+          "W",
           "W",
           "D",
           "W"
         ],
         "goals_scored": [
+          2,
+          4,
+          2,
           1,
-          0,
-          2,
-          2,
-          1
+          5
         ],
         "goals_conceded": [
-          5,
-          1,
-          0,
           2,
+          0,
+          0,
+          1,
           0
         ],
-        "league_position": 3,
-        "total_teams_in_league": 10,
-        "opposition_position": 3
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "beyogluyenicarsiankarademirspo",
-      "league": "Football / Turkey / 2. Lig",
-      "home": "Beyoglu Yeni Carsi",
-      "away": "Ankara Demirspor",
-      "time": "03:30",
-      "odds": {
-        "home": 2.43,
-        "draw": 3.15,
-        "away": 2.7
-      },
-      "home_stats": {
-        "name": "Beyoglu Yeni Carsi",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 17,
-        "opposition_position": 18
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "Ankara Demirspor",
+        "name": "CD Huetor Vega",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 18,
-        "total_teams_in_league": 17,
-        "opposition_position": 18
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "puskasakademiafcfelcsutdebrece",
-      "league": "Football / Hungary / NB I",
-      "home": "Puskas Akademia FC Felcsut",
-      "away": "Debreceni VSC",
-      "time": "03:30",
+      "id": "ueporrerescdcardassar",
+      "league": "Football / Spain / Tercera Federacion, Group 11",
+      "home": "UE Porreres",
+      "away": "CD Cardassar",
+      "time": "06:30",
       "odds": {
-        "home": 2.26,
-        "draw": 3.63,
-        "away": 2.81
+        "home": 1.8,
+        "draw": 3.35,
+        "away": 4.1
       },
       "home_stats": {
-        "name": "Puskas Akademia FC Felcsut",
+        "name": "UE Porreres",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -207,7 +380,7 @@
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Debreceni VSC",
+        "name": "CD Cardassar",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -219,613 +392,429 @@
       "source": "betpawa"
     },
     {
-      "id": "tallinnafcflorajknarvatrans",
-      "league": "Football / Estonia / Premium Liiga",
-      "home": "Tallinna FC Flora",
-      "away": "JK Narva Trans",
-      "time": "03:30",
+      "id": "udourenseculturalleonesa",
+      "league": "Football / Spain / Primera Federacion",
+      "home": "UD Ourense",
+      "away": "Cultural Leonesa",
+      "time": "06:30",
       "odds": {
-        "home": 1.16,
-        "draw": 7.64,
-        "away": 12.68
+        "home": 3.86,
+        "draw": 3.42,
+        "away": 1.89
       },
       "home_stats": {
-        "name": "Tallinna FC Flora",
+        "name": "UD Ourense",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 10,
+        "league_position": 19,
+        "total_teams_in_league": 20,
         "opposition_position": 10
       },
       "away_stats": {
-        "name": "JK Narva Trans",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 10,
-        "total_teams_in_league": 10,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "naegohyangwomensfcayeyawadyfcw",
-      "league": "Football / International / AFC Women's Champions League",
-      "home": "Naegohyang Womens FC",
-      "away": "Ayeyawady FC Women",
-      "time": "03:30",
-      "odds": {
-        "home": 1.03,
-        "draw": 11.0,
-        "away": 26.0
-      },
-      "home_stats": {
-        "name": "Naegohyang Womens FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ayeyawady FC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "1fcsaarbruckensvwaldhofmannhei",
-      "league": "Football / Germany / 3. Liga",
-      "home": "1. FC Saarbrucken",
-      "away": "SV Waldhof Mannheim 07",
-      "time": "03:30",
-      "odds": {
-        "home": 2.18,
-        "draw": 3.9,
-        "away": 2.81
-      },
-      "home_stats": {
-        "name": "1. FC Saarbrucken",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "SV Waldhof Mannheim 07",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "cerclebruggeroyalantwerpfc",
-      "league": "Football / Belgium / Pro League",
-      "home": "Cercle Brugge",
-      "away": "Royal Antwerp FC",
-      "time": "03:30",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.64,
-        "away": 3.28
-      },
-      "home_stats": {
-        "name": "Cercle Brugge",
+        "name": "Cultural Leonesa",
         "form": [
+          "D",
+          "W",
           "L",
-          "L",
-          "L",
-          "L",
+          "W",
           "D"
         ],
         "goals_scored": [
           0,
+          1,
           0,
-          0,
-          2,
-          1
+          1,
+          2
         ],
         "goals_conceded": [
+          0,
+          0,
           1,
-          3,
-          1,
-          3,
-          1
+          0,
+          2
         ],
-        "league_position": 18,
-        "total_teams_in_league": 18,
+        "league_position": 10,
+        "total_teams_in_league": 20,
+        "opposition_position": 10
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "lausannesportfcthun",
+      "league": "Football / Switzerland / Super League",
+      "home": "Lausanne-Sport",
+      "away": "FC Thun",
+      "time": "06:30",
+      "odds": {
+        "home": 2.34,
+        "draw": 3.66,
+        "away": 2.73
+      },
+      "home_stats": {
+        "name": "Lausanne-Sport",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 12,
         "opposition_position": 13
       },
       "away_stats": {
-        "name": "Royal Antwerp FC",
+        "name": "FC Thun",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 13,
-        "total_teams_in_league": 18,
+        "total_teams_in_league": 12,
         "opposition_position": 13
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "greutherfurthholsteinkiel",
-      "league": "Football / Germany / 2nd Bundesliga",
-      "home": "Greuther Furth",
-      "away": "Holstein Kiel",
-      "time": "03:30",
+      "id": "fcluganofcbasel1893",
+      "league": "Football / Switzerland / Super League",
+      "home": "FC Lugano",
+      "away": "FC Basel 1893",
+      "time": "06:30",
       "odds": {
-        "home": 2.5,
-        "draw": 3.74,
-        "away": 2.51
+        "home": 1.46,
+        "draw": 4.9,
+        "away": 5.46
       },
       "home_stats": {
-        "name": "Greuther Furth",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 9,
-        "total_teams_in_league": 18,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "Holstein Kiel",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 16,
-        "total_teams_in_league": 18,
-        "opposition_position": 16
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 18
-    },
-    {
-      "id": "fcstpauli1fcnuremberg",
-      "league": "Football / Germany / 2nd Bundesliga",
-      "home": "FC St. Pauli",
-      "away": "1 FC Nuremberg",
-      "time": "03:30",
-      "odds": {
-        "home": 2.09,
-        "draw": 3.68,
-        "away": 3.14
-      },
-      "home_stats": {
-        "name": "FC St. Pauli",
+        "name": "FC Lugano",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 82,
+        "total_teams_in_league": 20,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "1 FC Nuremberg",
+        "name": "FC Basel 1893",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 82,
+        "total_teams_in_league": 20,
         "opposition_position": null
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 82
+      "source": "betpawa"
     },
     {
-      "id": "hannover96dynamodresden",
-      "league": "Football / Germany / 2nd Bundesliga",
-      "home": "Hannover 96",
-      "away": "Dynamo Dresden",
-      "time": "03:30",
+      "id": "bkhackenifkgoteborg",
+      "league": "Football / Sweden / Allsvenskan",
+      "home": "BK Hacken",
+      "away": "IFK Goteborg",
+      "time": "06:30",
       "odds": {
-        "home": 1.91,
-        "draw": 3.85,
-        "away": 3.47
+        "home": 1.66,
+        "draw": 4.3,
+        "away": 4.25
       },
       "home_stats": {
-        "name": "Hannover 96",
+        "name": "BK Hacken",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "IFK Goteborg",
         "form": [
-          "W",
-          "W",
-          "L",
-          "L",
-          "W"
+          "L"
         ],
         "goals_scored": [
-          1,
-          2,
-          0,
-          1,
-          9
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          1,
-          3,
           1
         ],
-        "league_position": 14,
-        "total_teams_in_league": 18,
-        "opposition_position": 17
-      },
-      "away_stats": {
-        "name": "Dynamo Dresden",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 17,
-        "total_teams_in_league": 18,
-        "opposition_position": 17
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 18
-    },
-    {
-      "id": "fcpalmcityalbataehuae",
-      "league": "Football / United Arab Emirates / Division 1",
-      "home": "FC Palm City",
-      "away": "AL Bataeh (UAE)",
-      "time": "03:50",
-      "odds": {
-        "home": 2.64,
-        "draw": 3.5,
-        "away": 2.25
-      },
-      "home_stats": {
-        "name": "FC Palm City",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 68,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "AL Bataeh (UAE)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 68,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "fortevirtusfcaluroobauae",
-      "league": "Football / United Arab Emirates / Division 1",
-      "home": "Forte Virtus FC",
-      "away": "Al Urooba (UAE)",
-      "time": "03:50",
-      "odds": {
-        "home": 3.08,
-        "draw": 3.2,
-        "away": 2.1
-      },
-      "home_stats": {
-        "name": "Forte Virtus FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Al Urooba (UAE)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "alarabiuaealdhaid",
-      "league": "Football / United Arab Emirates / Division 1",
-      "home": "AL Arabi (UAE)",
-      "away": "Al-Dhaid",
-      "time": "03:55",
-      "odds": {
-        "home": 1.82,
-        "draw": 3.55,
-        "away": 3.53
-      },
-      "home_stats": {
-        "name": "AL Arabi (UAE)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 181,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Al-Dhaid",
-        "form": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          5,
-          1,
-          2,
-          3
-        ],
         "goals_conceded": [
-          1,
-          1,
-          1,
-          0,
           2
         ],
-        "league_position": 2,
-        "total_teams_in_league": 181,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "odenseboldklubsilkeborgif",
-      "league": "Football / Denmark / Superliga",
-      "home": "Odense Boldklub",
-      "away": "Silkeborg IF",
-      "time": "04:00",
-      "odds": {
-        "home": 1.87,
-        "draw": 3.85,
-        "away": 3.61
-      },
-      "home_stats": {
-        "name": "Odense Boldklub",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 9,
+        "league_position": null,
         "total_teams_in_league": 12,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Silkeborg IF",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 12,
-        "opposition_position": 7
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 12
     },
     {
-      "id": "viborgffachorsens",
-      "league": "Football / Denmark / Superliga",
-      "home": "Viborg FF",
-      "away": "AC Horsens",
-      "time": "04:00",
+      "id": "ifelfsborgorgryteis",
+      "league": "Football / Sweden / Allsvenskan",
+      "home": "IF Elfsborg",
+      "away": "Orgryte IS",
+      "time": "06:30",
       "odds": {
-        "home": 1.51,
-        "draw": 4.56,
-        "away": 5.25
+        "home": 1.33,
+        "draw": 5.43,
+        "away": 7.45
       },
       "home_stats": {
-        "name": "Viborg FF",
+        "name": "IF Elfsborg",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 201,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Orgryte IS",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 201,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 201
+    },
+    {
+      "id": "vasteraasskifbrommapojkarna",
+      "league": "Football / Sweden / Allsvenskan",
+      "home": "Vasteraas SK",
+      "away": "IF Brommapojkarna",
+      "time": "06:30",
+      "odds": {
+        "home": 1.85,
+        "draw": 3.83,
+        "away": 3.78
+      },
+      "home_stats": {
+        "name": "Vasteraas SK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 105,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "IF Brommapojkarna",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 105,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 105
+    },
+    {
+      "id": "sgsonnenhofgrossaspachrotweiss",
+      "league": "Football / Germany / 3. Liga",
+      "home": "SG Sonnenhof Grossaspach",
+      "away": "Rot-Weiss Essen",
+      "time": "06:30",
+      "odds": {
+        "home": 3.45,
+        "draw": 3.73,
+        "away": 1.95
+      },
+      "home_stats": {
+        "name": "SG Sonnenhof Grossaspach",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Rot-Weiss Essen",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 3,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "AC Horsens",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
+        "total_teams_in_league": 16,
+        "opposition_position": 3
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
+      "source": "betpawa"
     },
     {
-      "id": "getafecfsevillafc",
-      "league": "Football / Spain / LaLiga",
-      "home": "Getafe CF",
-      "away": "Sevilla FC",
-      "time": "04:00",
+      "id": "fguraunitedfcmgarrunitedfc",
+      "league": "Football / Malta / Challenge League",
+      "home": "Fgura United FC",
+      "away": "Mgarr United FC",
+      "time": "06:30",
       "odds": {
-        "home": 3.29,
-        "draw": 3.12,
-        "away": 2.42
+        "home": 2.09,
+        "draw": 3.4,
+        "away": 3.05
       },
       "home_stats": {
-        "name": "Getafe CF",
+        "name": "Fgura United FC",
         "form": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "D",
-          "L",
-          "W",
-          "L",
-          "D",
           "L"
         ],
         "goals_scored": [
-          0,
-          1,
-          0,
-          1,
-          1,
-          0,
-          1,
-          0,
-          1,
-          0
+          3
         ],
         "goals_conceded": [
-          3,
-          0,
-          1,
-          1,
-          1,
-          1,
-          0,
-          3,
-          1,
           4
         ],
-        "league_position": 18,
-        "total_teams_in_league": 20,
-        "opposition_position": 6
+        "league_position": null,
+        "total_teams_in_league": 326,
+        "opposition_position": 2
       },
       "away_stats": {
-        "name": "Sevilla FC",
+        "name": "Mgarr United FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 2,
+        "total_teams_in_league": 326,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cfperaladacfpoblademafumet",
+      "league": "Football / Spain / Tercera Federacion, Group 5",
+      "home": "CF Peralada",
+      "away": "CF Pobla de Mafumet",
+      "time": "06:30",
+      "odds": {
+        "home": 2.18,
+        "draw": 3.0,
+        "away": 3.25
+      },
+      "home_stats": {
+        "name": "CF Peralada",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 127,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CF Pobla de Mafumet",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 127,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcaroucanacionaldamadeira",
+      "league": "Football / Portugal / Liga Portugal",
+      "home": "FC Arouca",
+      "away": "Nacional da Madeira",
+      "time": "06:30",
+      "odds": {
+        "home": 1.61,
+        "draw": 4.26,
+        "away": 5.4
+      },
+      "home_stats": {
+        "name": "FC Arouca",
         "form": [
           "W",
           "W",
           "L",
-          "D",
           "W",
-          "W",
-          "L",
           "D",
           "L",
+          "D",
+          "W",
           "W"
         ],
         "goals_scored": [
+          1,
+          4,
+          0,
           2,
-          3,
+          0,
           1,
+          2,
           1,
-          1,
-          1,
-          1,
-          3,
-          1,
-          2
+          1
         ],
         "goals_conceded": [
-          1,
-          1,
-          3,
-          1,
           0,
           0,
-          3,
-          3,
-          4,
+          2,
+          1,
+          0,
+          2,
+          2,
+          0,
           0
         ],
-        "league_position": 6,
-        "total_teams_in_league": 20,
-        "opposition_position": 6
+        "league_position": 5,
+        "total_teams_in_league": 18,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Nacional da Madeira",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 18,
+        "opposition_position": null
       },
       "h2h": {
         "matches": [
           {
-            "home": "Getafe CF",
-            "away": "Sevilla FC",
+            "home": "FC Arouca",
+            "away": "CD Nacional",
             "score": [
-              0,
-              1
+              3,
+              0
             ]
           },
           {
-            "home": "Sevilla FC",
-            "away": "Getafe CF",
+            "home": "CD Nacional",
+            "away": "FC Arouca",
             "score": [
               1,
               2
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "Sevilla FC",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Getafe CF",
+            "home": "CD Nacional",
+            "away": "FC Arouca",
             "score": [
               1,
-              0
+              2
             ]
           },
           {
-            "home": "Getafe CF",
-            "away": "Sevilla FC",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Getafe CF",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "home": "Getafe CF",
-            "away": "Sevilla FC",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Getafe CF",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "home": "Sevilla FC",
-            "away": "Getafe CF",
+            "home": "FC Arouca",
+            "away": "CD Nacional",
             "score": [
               1,
               0
@@ -834,36 +823,36 @@
         ]
       },
       "source": "betpawa",
-      "total_teams_in_league": 20
+      "total_teams_in_league": 18
     },
     {
-      "id": "skolomoucsigmawomenfcteplicewo",
-      "league": "Football / Czech Republic / 2. Liga, Women",
-      "home": "SK Olomouc Sigma Women",
-      "away": "FC Teplice Women",
-      "time": "04:00",
+      "id": "csuniversitateacraiovafcbotosa",
+      "league": "Football / Romania / Liga I",
+      "home": "CS Universitatea Craiova",
+      "away": "FC Botosani",
+      "time": "06:30",
       "odds": {
-        "home": 1.34,
-        "draw": 4.94,
-        "away": 6.13
+        "home": 1.23,
+        "draw": 6.26,
+        "away": 9.66
       },
       "home_stats": {
-        "name": "SK Olomouc Sigma Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FC Teplice Women",
+        "name": "CS Universitatea Craiova",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 16,
-        "opposition_position": null
+        "total_teams_in_league": 262,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "FC Botosani",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 262,
+        "opposition_position": 9
       },
       "h2h": null,
       "source": "betpawa"
