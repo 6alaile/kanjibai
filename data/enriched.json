@@ -1,722 +1,1035 @@
 {
   "meta": {
-    "date": "2026-11-03",
-    "generatedAt": "2026-11-03T21:04:01.721327+03:00",
+    "date": "2026-11-04",
+    "generatedAt": "2026-11-04T00:05:34.585302+03:00",
     "scanned": 20,
-    "elapsedSeconds": 184.8
+    "elapsedSeconds": 271.9
   },
   "matches": [
     {
-      "id": "alhilalsfcshababalahlidubain",
-      "league": "Football / International / AFC Champions League",
-      "home": "Al Hilal SFC",
-      "away": "Shabab Al Ahli Dubai (n)",
-      "time": "09:15",
+      "id": "monagassccaracasfc",
+      "league": "Football / Venezuela / Primera Division",
+      "home": "Monagas SC",
+      "away": "Caracas FC",
+      "time": "12:30",
       "odds": {
-        "home": 1.49,
-        "draw": 4.68,
-        "away": 5.37
+        "home": 2.21,
+        "draw": 3.3,
+        "away": 2.79
       },
       "home_stats": {
-        "name": "Al Hilal SFC",
+        "name": "Monagas SC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 378,
-        "opposition_position": 2
+        "league_position": 7,
+        "total_teams_in_league": 14,
+        "opposition_position": 10
       },
       "away_stats": {
-        "name": "Shabab Al Ahli Dubai (n)",
+        "name": "Caracas FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 378,
-        "opposition_position": 2
+        "league_position": 10,
+        "total_teams_in_league": 14,
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 378
+      "total_teams_in_league": 14
     },
     {
-      "id": "hornchurchfcwesthamunitedfcu21",
-      "league": "Football / England / National League Cup",
-      "home": "Hornchurch FC",
-      "away": "West Ham United FC U21",
-      "time": "10:00",
+      "id": "ecbahiabawomencrflamengorjwome",
+      "league": "Football / Brazil / Copa do Brasil, Women",
+      "home": "EC Bahia BA Women",
+      "away": "CR Flamengo RJ Women",
+      "time": "01:00",
       "odds": {
-        "home": 2.52,
-        "draw": 3.97,
-        "away": 2.32
+        "home": 2.68,
+        "draw": 3.25,
+        "away": 2.44
       },
       "home_stats": {
-        "name": "Hornchurch FC",
+        "name": "EC Bahia BA Women",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 15
+        "total_teams_in_league": 139,
+        "opposition_position": 1
       },
       "away_stats": {
-        "name": "West Ham United FC U21",
+        "name": "CR Flamengo RJ Women",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 20,
-        "opposition_position": 15
+        "league_position": 1,
+        "total_teams_in_league": 139,
+        "opposition_position": 1
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "gillinghamfcreserveu21huddersf",
-      "league": "Football / England / Premier League Cup",
-      "home": "Gillingham FC Reserve U21",
-      "away": "Huddersfield Town U21",
-      "time": "10:00",
-      "odds": {
-        "home": 6.75,
-        "draw": 5.54,
-        "away": 1.33
-      },
-      "home_stats": {
-        "name": "Gillingham FC Reserve U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 116,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Huddersfield Town U21",
-        "form": [
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          4,
-          2,
-          4
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 116,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 116
-    },
-    {
-      "id": "hartlepoolunitedleedsunitedu21",
-      "league": "Football / England / National League Cup",
-      "home": "Hartlepool United",
-      "away": "Leeds United U21",
-      "time": "10:00",
-      "odds": {
-        "home": 2.18,
-        "draw": 3.87,
-        "away": 2.76
-      },
-      "home_stats": {
-        "name": "Hartlepool United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Leeds United U21",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "middlesbroughfcu21valenciacfme",
-      "league": "Football / International / U21 Premier League International Cup",
-      "home": "Middlesbrough FC U21",
-      "away": "Valencia CF Mestalla U21",
-      "time": "10:00",
-      "odds": {
-        "home": 2.54,
-        "draw": 3.72,
-        "away": 2.4
-      },
-      "home_stats": {
-        "name": "Middlesbrough FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 116,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Valencia CF Mestalla U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 116,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 116
-    },
-    {
-      "id": "fchalifaxtownnottinghamforestf",
-      "league": "Football / England / National League Cup",
-      "home": "FC Halifax Town",
-      "away": "Nottingham Forest FC U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.52,
-        "draw": 4.43,
-        "away": 5.06
-      },
-      "home_stats": {
-        "name": "FC Halifax Town",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Nottingham Forest FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "scunthorpeunitedwolverhamptonw",
-      "league": "Football / England / National League Cup",
-      "home": "Scunthorpe United",
-      "away": "Wolverhampton Wanderers FC U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.69,
-        "draw": 4.25,
-        "away": 3.96
-      },
-      "home_stats": {
-        "name": "Scunthorpe United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Wolverhampton Wanderers FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "trurocitywestbromwichalbionu21",
-      "league": "Football / England / National League Cup",
-      "home": "Truro City",
-      "away": "West Bromwich Albion U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.5,
-        "draw": 4.64,
-        "away": 5.07
-      },
-      "home_stats": {
-        "name": "Truro City",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 4,
-        "total_teams_in_league": 24,
-        "opposition_position": 28
-      },
-      "away_stats": {
-        "name": "West Bromwich Albion U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 28,
-        "total_teams_in_league": 24,
-        "opposition_position": 28
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "wealdstonefcderbycountyu21",
-      "league": "Football / England / National League Cup",
-      "home": "Wealdstone FC",
-      "away": "Derby County U21",
-      "time": "10:00",
+      "id": "cariverplateargreservecatigrer",
+      "league": "Football / Argentina / Liga Profesional, Reserves",
+      "home": "CA River Plate (Arg) Reserve",
+      "away": "CA Tigre Reserve",
+      "time": "01:00",
       "odds": {
         "home": 1.37,
-        "draw": 5.07,
-        "away": 6.52
+        "draw": 4.33,
+        "away": 6.83
       },
       "home_stats": {
-        "name": "Wealdstone FC",
+        "name": "CA River Plate (Arg) Reserve",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 18,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CA Tigre Reserve",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 20
+        "total_teams_in_league": 18,
+        "opposition_position": null
       },
-      "away_stats": {
-        "name": "Derby County U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "chapecoensescmirassolfcsp",
+      "league": "Football / Brazil / Brasileiro Serie A",
+      "home": "Chapecoense SC",
+      "away": "Mirassol FC SP",
+      "time": "01:30",
+      "odds": {
+        "home": 3.54,
+        "draw": 3.58,
+        "away": 1.98
+      },
+      "home_stats": {
+        "name": "Chapecoense SC",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "D",
+          "W",
+          "L",
+          "W",
+          "L",
+          "D",
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          4,
+          2,
+          2,
+          3,
+          0,
+          3,
+          1,
+          2,
+          1,
+          4,
+          4,
+          1,
+          1,
+          3
+        ],
         "league_position": 20,
         "total_teams_in_league": 20,
-        "opposition_position": 20
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "bostonunitedfcleicestercityu21",
-      "league": "Football / England / National League Cup",
-      "home": "Boston United FC",
-      "away": "Leicester City U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.8,
-        "draw": 4.08,
-        "away": 3.59
-      },
-      "home_stats": {
-        "name": "Boston United FC",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          4
-        ],
-        "league_position": null,
-        "total_teams_in_league": 326,
-        "opposition_position": null
+        "opposition_position": 16
       },
       "away_stats": {
-        "name": "Leicester City U21",
+        "name": "Mirassol FC SP",
         "form": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
           "W",
+          "D",
           "W",
+          "D",
+          "L",
+          "W",
+          "D",
           "L"
         ],
         "goals_scored": [
-          3,
+          1,
+          1,
+          1,
           4,
-          1
-        ],
-        "goals_conceded": [
+          1,
+          1,
+          0,
+          2,
+          2,
           2,
           1,
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 326,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "newportcountycrystalpalacefcu2",
-      "league": "Football / England / EFL Trophy",
-      "home": "Newport County",
-      "away": "Crystal Palace FC U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.69,
-        "draw": 4.11,
-        "away": 4.41
-      },
-      "home_stats": {
-        "name": "Newport County",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 8,
-        "total_teams_in_league": 12,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "Crystal Palace FC U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 14,
-        "total_teams_in_league": 12,
-        "opposition_position": 14
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "gatesheadfcstokecityu21",
-      "league": "Football / England / National League Cup",
-      "home": "Gateshead FC",
-      "away": "Stoke City U21",
-      "time": "10:00",
-      "odds": {
-        "home": 1.8,
-        "draw": 4.08,
-        "away": 3.59
-      },
-      "home_stats": {
-        "name": "Gateshead FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Stoke City U21",
-        "form": [
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          4,
-          1
-        ],
-        "goals_conceded": [
+          0,
           2,
           1,
-          3
+          0
         ],
-        "league_position": null,
+        "goals_conceded": [
+          3,
+          1,
+          5,
+          5,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        "league_position": 16,
         "total_teams_in_league": 20,
+        "opposition_position": 16
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "nacionalasuncionsportivosanlor",
+      "league": "Football / Paraguay / Division de Honor, Apertura",
+      "home": "Nacional Asuncion",
+      "away": "Sportivo San Lorenzo",
+      "time": "01:30",
+      "odds": {
+        "home": 1.23,
+        "draw": 5.58,
+        "away": 9.87
+      },
+      "home_stats": {
+        "name": "Nacional Asuncion",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 324,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Sportivo San Lorenzo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 324,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "club2demayoreservesclubsportiv",
+      "league": "Football / Paraguay / Paraguay Reserve League",
+      "home": "Club 2 de Mayo Reserves",
+      "away": "Club Sportivo Trinidense Reserves",
+      "time": "01:30",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.72,
+        "away": 2.59
+      },
+      "home_stats": {
+        "name": "Club 2 de Mayo Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Club Sportivo Trinidense Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "cambridgeunitedbrightonandhove",
-      "league": "Football / England / EFL Trophy",
-      "home": "Cambridge United",
-      "away": "Brighton and Hove Albion U21",
-      "time": "10:00",
+      "id": "clubauroraindependientepetrole",
+      "league": "Football / Bolivia / Copa Division Profesional",
+      "home": "Club Aurora",
+      "away": "Independiente Petrolero",
+      "time": "02:00",
       "odds": {
-        "home": 1.64,
-        "draw": 4.61,
+        "home": 1.6,
+        "draw": 4.31,
         "away": 4.31
       },
       "home_stats": {
-        "name": "Cambridge United",
+        "name": "Club Aurora",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 61,
+        "total_teams_in_league": 21,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Brighton and Hove Albion U21",
+        "name": "Independiente Petrolero",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 61,
+        "total_teams_in_league": 21,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "suttonunitedsouthamptonfcu21",
-      "league": "Football / England / National League Cup",
-      "home": "Sutton United",
-      "away": "Southampton FC U21",
-      "time": "10:00",
+      "id": "adpastojaguaresdecordoba",
+      "league": "Football / Colombia / Primera A, Apertura",
+      "home": "AD Pasto",
+      "away": "Jaguares de Cordoba",
+      "time": "02:20",
       "odds": {
-        "home": 2.13,
-        "draw": 4.06,
-        "away": 2.75
+        "home": 1.62,
+        "draw": 3.73,
+        "away": 5.37
       },
       "home_stats": {
-        "name": "Sutton United",
+        "name": "AD Pasto",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 61,
+        "total_teams_in_league": 27,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Southampton FC U21",
+        "name": "Jaguares de Cordoba",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 61,
+        "total_teams_in_league": 27,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "rotherhamunitednewcastleunited",
-      "league": "Football / England / EFL Trophy",
-      "home": "Rotherham United",
-      "away": "Newcastle United FC U21",
-      "time": "10:00",
+      "id": "deportivotachiraacademiapuerto",
+      "league": "Football / Venezuela / Primera Division",
+      "home": "Deportivo Tachira",
+      "away": "Academia Puerto Cabello",
+      "time": "02:30",
       "odds": {
-        "home": 2.04,
-        "draw": 3.83,
-        "away": 3.24
+        "home": 2.16,
+        "draw": 3.05,
+        "away": 3.13
       },
       "home_stats": {
-        "name": "Rotherham United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Newcastle United FC U21",
+        "name": "Deportivo Tachira",
         "form": [
+          "D",
+          "D",
+          "W",
+          "W",
+          "D",
+          "L",
+          "D",
+          "L",
+          "D",
+          "L",
           "W"
         ],
         "goals_scored": [
-          3
+          1,
+          1,
+          3,
+          3,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2
         ],
         "goals_conceded": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
           1
         ],
-        "league_position": null,
-        "total_teams_in_league": 61,
-        "opposition_position": null
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Academia Puerto Cabello",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
       },
       "h2h": null,
-      "source": "betpawa"
+      "source": "betpawa",
+      "total_teams_in_league": 20
     },
     {
-      "id": "charltonathleticu21stockportco",
-      "league": "Football / England / Premier League Cup",
-      "home": "Charlton Athletic U21",
-      "away": "Stockport County U21",
-      "time": "10:00",
+      "id": "scinternacionalrscoritibafcpr",
+      "league": "Football / Brazil / Brasileiro Serie A",
+      "home": "SC Internacional RS",
+      "away": "Coritiba FC PR",
+      "time": "03:30",
       "odds": {
-        "home": 1.7,
-        "draw": 4.27,
-        "away": 3.88
+        "home": 1.55,
+        "draw": 4.21,
+        "away": 5.45
       },
       "home_stats": {
-        "name": "Charlton Athletic U21",
+        "name": "SC Internacional RS",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "L",
+          "W",
+          "L",
+          "W",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1,
+          0,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          2
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opposition_position": 11
+      },
+      "away_stats": {
+        "name": "Coritiba FC PR",
+        "form": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "D",
+          "W",
+          "W",
+          "L",
+          "D",
+          "L",
+          "L",
+          "D",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          0,
+          2,
+          1,
+          2,
+          3,
+          1,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          5,
+          4,
+          1,
+          1,
+          1,
+          0
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opposition_position": 11
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Coritiba FBC",
+            "away": "SC Internacional",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "SC Internacional",
+            "away": "Coritiba FBC",
+            "score": [
+              3,
+              4
+            ]
+          },
+          {
+            "home": "Coritiba FBC",
+            "away": "SC Internacional",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "home": "Coritiba FBC",
+            "away": "SC Internacional",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "home": "SC Internacional",
+            "away": "Coritiba FBC",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "home": "SC Internacional",
+            "away": "Coritiba FBC",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "home": "Coritiba FBC",
+            "away": "SC Internacional",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "alianzalimacienciano",
+      "league": "Football / Peru / Primera Division",
+      "home": "Alianza Lima",
+      "away": "Cienciano",
+      "time": "04:00",
+      "odds": {
+        "home": 1.38,
+        "draw": 4.8,
+        "away": 7.01
+      },
+      "home_stats": {
+        "name": "Alianza Lima",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 194,
+        "total_teams_in_league": 99,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Stockport County U21",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          1
-        ],
+        "name": "Cienciano",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 194,
+        "total_teams_in_league": 99,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 194
+      "total_teams_in_league": 99
     },
     {
-      "id": "rochdaleafcdoncasterrovers",
-      "league": "Football / England / EFL Trophy",
-      "home": "Rochdale AFC",
-      "away": "Doncaster Rovers",
-      "time": "10:00",
+      "id": "sportingfcperezzeledon",
+      "league": "Football / Costa Rica / Primera Division, Apertura",
+      "home": "Sporting FC",
+      "away": "Perez Zeledon",
+      "time": "04:00",
       "odds": {
-        "home": 2.94,
-        "draw": 3.92,
-        "away": 2.15
+        "home": 1.31,
+        "draw": 5.02,
+        "away": 7.3
       },
       "home_stats": {
-        "name": "Rochdale AFC",
+        "name": "Sporting FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 289,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Doncaster Rovers",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 289,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "braintreetownfcnorwichcityfcu2",
-      "league": "Football / England / National League Cup",
-      "home": "Braintree Town FC",
-      "away": "Norwich City FC U21",
-      "time": "10:30",
-      "odds": {
-        "home": 3.38,
-        "draw": 3.96,
-        "away": 1.88
-      },
-      "home_stats": {
-        "name": "Braintree Town FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
+        "league_position": 3,
+        "total_teams_in_league": 10,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Norwich City FC U21",
+        "name": "Perez Zeledon",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 83,
+        "total_teams_in_league": 10,
         "opposition_position": null
       },
       "h2h": null,
-      "source": "betpawa"
+      "source": "betpawa",
+      "total_teams_in_league": 10
     },
     {
-      "id": "crflamengorju20operarioferrovi",
-      "league": "Football / Brazil / U20 Copa do Brasil",
-      "home": "CR Flamengo RJ U20",
-      "away": "Operario Ferroviario EC PR U20",
-      "time": "10:30",
+      "id": "realcartagenafcdeportesquindio",
+      "league": "Football / Colombia / Primera B",
+      "home": "Real Cartagena FC",
+      "away": "Deportes Quindio",
+      "time": "04:30",
       "odds": {
-        "home": 1.49,
-        "draw": 4.1,
-        "away": 5.4
+        "home": 1.88,
+        "draw": 3.26,
+        "away": 4.13
       },
       "home_stats": {
-        "name": "CR Flamengo RJ U20",
+        "name": "Real Cartagena FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 84,
+        "total_teams_in_league": 354,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Operario Ferroviario EC PR U20",
+        "name": "Deportes Quindio",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 84,
+        "total_teams_in_league": 354,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "aldershottownfcipswichtownu21",
-      "league": "Football / England / National League Cup",
-      "home": "Aldershot Town FC",
-      "away": "Ipswich Town U21",
-      "time": "10:45",
+      "id": "jleasefcyokogawamusashinofc",
+      "league": "Football / Japan / Japan Football League",
+      "home": "J-Lease FC",
+      "away": "Yokogawa Musashino FC",
+      "time": "07:00",
       "odds": {
-        "home": 1.9,
-        "draw": 3.99,
-        "away": 3.31
+        "home": 1.87,
+        "draw": 3.35,
+        "away": 3.75
       },
       "home_stats": {
-        "name": "Aldershot Town FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 83,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ipswich Town U21",
+        "name": "J-Lease FC",
         "form": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          2,
+          0,
+          2
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Yokogawa Musashino FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcosakaroassokumamoto",
+      "league": "Football / Japan / J3 League",
+      "home": "FC Osaka",
+      "away": "Roasso Kumamoto",
+      "time": "08:00",
+      "odds": {
+        "home": 2.27,
+        "draw": 3.39,
+        "away": 3.09
+      },
+      "home_stats": {
+        "name": "FC Osaka",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          3,
+          0,
+          4,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "Roasso Kumamoto",
+        "form": [
+          "W",
+          "L",
           "W",
           "D",
           "W"
         ],
         "goals_scored": [
-          4,
           2,
+          0,
+          2,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": 9
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "philippinearmyazkalsdevelopmen",
+      "league": "Football / Philippines / Philippines Footb. League",
+      "home": "Philippine Army",
+      "away": "Azkals Development Team",
+      "time": "10:00",
+      "odds": {
+        "home": 5.8,
+        "draw": 5.2,
+        "away": 1.37
+      },
+      "home_stats": {
+        "name": "Philippine Army",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
           4
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Azkals Development Team",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "melbournevictoryfcpersibbandun",
+      "league": "Football / International / AFC Cup",
+      "home": "Melbourne Victory FC",
+      "away": "Persib Bandung",
+      "time": "10:45",
+      "odds": {
+        "home": 1.99,
+        "draw": 3.28,
+        "away": 3.67
+      },
+      "home_stats": {
+        "name": "Melbourne Victory FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Persib Bandung",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          3,
+          2,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          1,
+          2,
+          1
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcyeniseykrasnoyarskfcnizhnyno",
+      "league": "Football / Russian Federation / Russian Cup",
+      "home": "FC Yenisey Krasnoyarsk",
+      "away": "FC Nizhny Novgorod",
+      "time": "11:00",
+      "odds": {
+        "home": 5.19,
+        "draw": 3.87,
+        "away": 1.56
+      },
+      "home_stats": {
+        "name": "FC Yenisey Krasnoyarsk",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FC Nizhny Novgorod",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "spartapraguebfcviktoriaplzenb",
+      "league": "Football / Czech Republic / CFL",
+      "home": "Sparta Prague B",
+      "away": "FC Viktoria Plzen B",
+      "time": "12:15",
+      "odds": {
+        "home": 1.84,
+        "draw": 3.91,
+        "away": 3.43
+      },
+      "home_stats": {
+        "name": "Sparta Prague B",
+        "form": [
+          "D",
+          "W",
+          "L",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          4,
+          0,
+          4,
+          0
         ],
         "goals_conceded": [
           1,
-          2,
-          2
+          0,
+          1,
+          1,
+          0
         ],
+        "league_position": 7,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FC Viktoria Plzen B",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 83,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "mendiolafcdynamicherbcebufc",
+      "league": "Football / Philippines / Philippines Footb. League",
+      "home": "Mendiola FC",
+      "away": "Dynamic Herb Cebu FC",
+      "time": "12:45",
+      "odds": {
+        "home": 8.0,
+        "draw": 7.8,
+        "away": 1.18
+      },
+      "home_stats": {
+        "name": "Mendiola FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Dynamic Herb Cebu FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
         "opposition_position": null
       },
       "h2h": null,
