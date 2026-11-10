@@ -1,9 +1,9 @@
 {
   "meta": {
     "date": "2026-11-10",
-    "generatedAt": "2026-11-10T06:02:53.019691+03:00",
+    "generatedAt": "2026-11-10T09:02:54.571197+03:00",
     "scanned": 20,
-    "elapsedSeconds": 138.5
+    "elapsedSeconds": 139.3
   },
   "matches": [
     {
@@ -13,9 +13,9 @@
       "away": "Singapore U23",
       "time": "11:00",
       "odds": {
-        "home": 1.21,
-        "draw": 5.4,
-        "away": 11.0
+        "home": 1.17,
+        "draw": 6.2,
+        "away": 12.0
       },
       "home_stats": {
         "name": "Qatar U23",
@@ -45,9 +45,9 @@
       "away": "Terengganu FA U20",
       "time": "11:45",
       "odds": {
-        "home": 11.72,
+        "home": 12.69,
         "draw": 4.88,
-        "away": 1.25
+        "away": 1.24
       },
       "home_stats": {
         "name": "Penang FC U20",
@@ -97,6 +97,111 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 217,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "gabonwomenchadwomen",
+      "league": "Football / International / International Friendlies Women",
+      "home": "Gabon Women",
+      "away": "Chad Women",
+      "time": "01:00",
+      "odds": {
+        "home": 5.09,
+        "draw": 5.09,
+        "away": 1.46
+      },
+      "home_stats": {
+        "name": "Gabon Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Chad Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "congorepublicwomencentralafric",
+      "league": "Football / International / Int. Friendly Games W",
+      "home": "Congo Republic Women",
+      "away": "Central African Republic Women",
+      "time": "03:00",
+      "odds": {
+        "home": 1.38,
+        "draw": 5.11,
+        "away": 7.27
+      },
+      "home_stats": {
+        "name": "Congo Republic Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 240,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Central African Republic Women",
+        "form": [
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0
+        ],
+        "goals_conceded": [
+          3,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 240,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vietnamu23thailandu23",
+      "league": "Football / International / U23 Friendly Games",
+      "home": "Vietnam U23",
+      "away": "Thailand U23",
+      "time": "03:00",
+      "odds": {
+        "home": 1.88,
+        "draw": 3.25,
+        "away": 3.85
+      },
+      "home_stats": {
+        "name": "Vietnam U23",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 1,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Thailand U23",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 1,
         "opposition_position": null
       },
       "h2h": null,
@@ -238,9 +343,9 @@
       "away": "RC Arbaa",
       "time": "05:00",
       "odds": {
-        "home": 2.22,
+        "home": 2.19,
         "draw": 2.89,
-        "away": 3.52
+        "away": 3.61
       },
       "home_stats": {
         "name": "WA Tlemcen",
@@ -289,8 +394,8 @@
       "time": "05:00",
       "odds": {
         "home": 3.05,
-        "draw": 4.39,
-        "away": 1.87
+        "draw": 4.38,
+        "away": 1.88
       },
       "home_stats": {
         "name": "Colchester United U21",
@@ -314,15 +419,47 @@
       "source": "betpawa"
     },
     {
+      "id": "mobejaiairbnezla",
+      "league": "Football / Algeria / Ligue 2",
+      "home": "MO Bejaia",
+      "away": "IRB Nezla",
+      "time": "05:00",
+      "odds": {
+        "home": 1.31,
+        "draw": 4.74,
+        "away": 9.67
+      },
+      "home_stats": {
+        "name": "MO Bejaia",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 418,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "IRB Nezla",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 418,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "paradouacjsmskikda",
       "league": "Football / Algeria / Ligue 2",
       "home": "Paradou AC",
       "away": "JSM Skikda",
       "time": "05:00",
       "odds": {
-        "home": 1.63,
-        "draw": 3.56,
-        "away": 5.4
+        "home": 1.6,
+        "draw": 3.62,
+        "away": 5.59
       },
       "home_stats": {
         "name": "Paradou AC",
@@ -352,9 +489,9 @@
       "away": "CR Beni Thour",
       "time": "05:00",
       "odds": {
-        "home": 1.49,
-        "draw": 3.86,
-        "away": 6.76
+        "home": 1.52,
+        "draw": 3.62,
+        "away": 6.95
       },
       "home_stats": {
         "name": "JS Djidjel",
@@ -384,9 +521,9 @@
       "away": "We SC",
       "time": "06:00",
       "odds": {
-        "home": 1.61,
-        "draw": 3.59,
-        "away": 5.55
+        "home": 1.62,
+        "draw": 3.6,
+        "away": 5.38
       },
       "home_stats": {
         "name": "Al Mokawloon Al Arab",
@@ -416,9 +553,9 @@
       "away": "Csa Steaua Bucuresti",
       "time": "08:30",
       "odds": {
-        "home": 2.02,
-        "draw": 3.34,
-        "away": 3.39
+        "home": 1.96,
+        "draw": 3.43,
+        "away": 3.48
       },
       "home_stats": {
         "name": "AFC Metalul Buzau",
@@ -644,134 +781,6 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 120,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "americapeserranope",
-      "league": "Football / Brazil / Pernambucano",
-      "home": "America PE",
-      "away": "Serrano PE",
-      "time": "09:00",
-      "odds": {
-        "home": 1.34,
-        "draw": 4.4,
-        "away": 7.6
-      },
-      "home_stats": {
-        "name": "America PE",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Serrano PE",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "gimnasiademendozareservecaaldo",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "Gimnasia de Mendoza Reserve",
-      "away": "CA Aldosivi Reserve",
-      "time": "09:00",
-      "odds": {
-        "home": 1.64,
-        "draw": 3.47,
-        "away": 4.69
-      },
-      "home_stats": {
-        "name": "Gimnasia de Mendoza Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 415,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "CA Aldosivi Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 415,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "caquilmesreserveindependienter",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "CA Quilmes Reserve",
-      "away": "Independiente Rivadavia de Mendoza Reserve",
-      "time": "09:00",
-      "odds": {
-        "home": 1.77,
-        "draw": 3.49,
-        "away": 3.86
-      },
-      "home_stats": {
-        "name": "CA Quilmes Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Independiente Rivadavia de Mendoza Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "catigrereservevelezsarsfieldre",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "CA Tigre Reserve",
-      "away": "Velez Sarsfield Reserve",
-      "time": "09:00",
-      "odds": {
-        "home": 5.91,
-        "draw": 3.87,
-        "away": 1.46
-      },
-      "home_stats": {
-        "name": "CA Tigre Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Velez Sarsfield Reserve",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 26,
         "opposition_position": null
       },
       "h2h": null,
