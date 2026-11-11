@@ -1,9 +1,927 @@
 {
   "meta": {
     "date": "2026-11-11",
-    "generatedAt": "2026-11-11T09:00:39.931729+03:00",
-    "scanned": 0,
-    "error": "No fixtures returned by any scraper"
+    "generatedAt": "2026-11-11T12:06:58.696736+03:00",
+    "scanned": 20,
+    "elapsedSeconds": 383.4
   },
-  "matches": []
+  "matches": [
+    {
+      "id": "indiamaldives",
+      "league": "Football / International / SAFF Championship",
+      "home": "India",
+      "away": "Maldives",
+      "time": "12:30",
+      "odds": {
+        "home": 1.08,
+        "draw": 8.2,
+        "away": 18.0
+      },
+      "home_stats": {
+        "name": "India",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Maldives",
+        "form": [
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0
+        ],
+        "goals_conceded": [
+          3,
+          5
+        ],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "fcchernigivfcinguletspetrove",
+      "league": "Football / Ukraine / Persha Liga",
+      "home": "FC Chernigiv",
+      "away": "FC Ingulets Petrove",
+      "time": "12:30",
+      "odds": {
+        "home": 1.87,
+        "draw": 3.55,
+        "away": 3.55
+      },
+      "home_stats": {
+        "name": "FC Chernigiv",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FC Ingulets Petrove",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "yokohamafmarinoskashimaantlers",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Yokohama F Marinos",
+      "away": "Kashima Antlers",
+      "time": "01:00",
+      "odds": {
+        "home": 2.85,
+        "draw": 3.63,
+        "away": 2.31
+      },
+      "home_stats": {
+        "name": "Yokohama F Marinos",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Kashima Antlers",
+        "form": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          7,
+          0,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          4,
+          1,
+          1,
+          0,
+          2
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "georgiau19denmarku19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Georgia U19",
+      "away": "Denmark U19",
+      "time": "01:00",
+      "odds": {
+        "home": 6.2,
+        "draw": 4.6,
+        "away": 1.39
+      },
+      "home_stats": {
+        "name": "Georgia U19",
+        "form": [
+          "D",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          3,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 103,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Denmark U19",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          6,
+          2,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          2,
+          0,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 103,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 103
+    },
+    {
+      "id": "azerbaijanu19montenegrou19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Azerbaijan U19",
+      "away": "Montenegro U19",
+      "time": "01:00",
+      "odds": {
+        "home": 4.8,
+        "draw": 3.7,
+        "away": 1.61
+      },
+      "home_stats": {
+        "name": "Azerbaijan U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Montenegro U19",
+        "form": [
+          "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "visselkobemachidazelvia",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Vissel Kobe",
+      "away": "Machida Zelvia",
+      "time": "01:00",
+      "odds": {
+        "home": 2.56,
+        "draw": 3.2,
+        "away": 2.8
+      },
+      "home_stats": {
+        "name": "Vissel Kobe",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Machida Zelvia",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          3,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          4,
+          1
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opposition_position": 4
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "kawasakifrontalekashiwareysol",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Kawasaki Frontale",
+      "away": "Kashiwa Reysol",
+      "time": "01:00",
+      "odds": {
+        "home": 2.85,
+        "draw": 3.74,
+        "away": 2.26
+      },
+      "home_stats": {
+        "name": "Kawasaki Frontale",
+        "form": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          2,
+          1,
+          1
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Kashiwa Reysol",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "lyngbybkreserveshbkgereserves",
+      "league": "Football / Denmark / Denmark Future Cup",
+      "home": "Lyngby BK Reserves",
+      "away": "HB K\u00f8ge Reserves",
+      "time": "01:00",
+      "odds": {
+        "home": 1.43,
+        "draw": 4.73,
+        "away": 5.91
+      },
+      "home_stats": {
+        "name": "Lyngby BK Reserves",
+        "form": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          3,
+          2,
+          1
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "HB K\u00f8ge Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "urawareddiamondscerezoosaka",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Urawa Red Diamonds",
+      "away": "Cerezo Osaka",
+      "time": "01:30",
+      "odds": {
+        "home": 1.92,
+        "draw": 3.73,
+        "away": 3.68
+      },
+      "home_stats": {
+        "name": "Urawa Red Diamonds",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 163,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Cerezo Osaka",
+        "form": [
+          "W",
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "league_position": 12,
+        "total_teams_in_league": 163,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "villarrealcfwomencdalbafundaci",
+      "league": "Football / Spain / Primera Federacion, Women",
+      "home": "Villarreal CF Women",
+      "away": "CD Alba Fundacion Women",
+      "time": "02:00",
+      "odds": {
+        "home": 2.11,
+        "draw": 3.0,
+        "away": 3.52
+      },
+      "home_stats": {
+        "name": "Villarreal CF Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 367,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CD Alba Fundacion Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 367,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "andorrau19polandu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Andorra U19",
+      "away": "Poland U19",
+      "time": "02:00",
+      "odds": {
+        "home": 18.0,
+        "draw": 9.6,
+        "away": 1.06
+      },
+      "home_stats": {
+        "name": "Andorra U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Poland U19",
+        "form": [
+          "D",
+          "L",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          3,
+          1,
+          1,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "ukraineu19israelu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Ukraine U19",
+      "away": "Israel U19",
+      "time": "02:00",
+      "odds": {
+        "home": 2.23,
+        "draw": 3.25,
+        "away": 2.9
+      },
+      "home_stats": {
+        "name": "Ukraine U19",
+        "form": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          4,
+          1,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          2,
+          0,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 76,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Israel U19",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 76,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 76
+    },
+    {
+      "id": "mtkbudapestu19illesakademiau19",
+      "league": "Football / Hungary / U19 National",
+      "home": "MTK Budapest U19",
+      "away": "Illes Akademia U19",
+      "time": "02:00",
+      "odds": {
+        "home": 1.49,
+        "draw": 4.5,
+        "away": 4.9
+      },
+      "home_stats": {
+        "name": "MTK Budapest U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Illes Akademia U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "croatiau19hungaryu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Croatia U19",
+      "away": "Hungary U19",
+      "time": "02:00",
+      "odds": {
+        "home": 1.63,
+        "draw": 3.8,
+        "away": 4.5
+      },
+      "home_stats": {
+        "name": "Croatia U19",
+        "form": [
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          4,
+          2,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 44,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Hungary U19",
+        "form": [
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          4,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 44,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 44
+    },
+    {
+      "id": "belgiumu19kosovou19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Belgium U19",
+      "away": "Kosovo U19",
+      "time": "02:15",
+      "odds": {
+        "home": 1.15,
+        "draw": 6.8,
+        "away": 12.0
+      },
+      "home_stats": {
+        "name": "Belgium U19",
+        "form": [
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          4,
+          3,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 25,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Kosovo U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 25,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 25
+    },
+    {
+      "id": "vietnamchinesetaipei",
+      "league": "Football / International / Int. Friendly Games",
+      "home": "Vietnam",
+      "away": "Chinese Taipei",
+      "time": "03:00",
+      "odds": {
+        "home": 1.08,
+        "draw": 10.0,
+        "away": 20.9
+      },
+      "home_stats": {
+        "name": "Vietnam",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          4
+        ],
+        "goals_conceded": [
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Chinese Taipei",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 41,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "czarnisosnowieciiwomenu18resov",
+      "league": "Football / Poland / 1. Liga, Women",
+      "home": "Czarni Sosnowiec II Women U18",
+      "away": "RESOVIA RZESZOW Women",
+      "time": "03:00",
+      "odds": {
+        "home": 2.05,
+        "draw": 3.8,
+        "away": 2.85
+      },
+      "home_stats": {
+        "name": "Czarni Sosnowiec II Women U18",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 26,
+        "opposition_position": 18
+      },
+      "away_stats": {
+        "name": "RESOVIA RZESZOW Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 18,
+        "total_teams_in_league": 26,
+        "opposition_position": 18
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "sloveniau19englandu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Slovenia U19",
+      "away": "England U19",
+      "time": "03:00",
+      "odds": {
+        "home": 16.0,
+        "draw": 10.0,
+        "away": 1.07
+      },
+      "home_stats": {
+        "name": "Slovenia U19",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "England U19",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          3,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 22,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "asfarrabatwomenlekiefillesfcwo",
+      "league": "Football / International / CAF Champions League, Women",
+      "home": "AS Far Rabat Women",
+      "away": "Lekie Filles FC Women",
+      "time": "03:00",
+      "odds": {
+        "home": 1.54,
+        "draw": 3.85,
+        "away": 5.2
+      },
+      "home_stats": {
+        "name": "AS Far Rabat Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 13,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Lekie Filles FC Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 16
+    },
+    {
+      "id": "northmacedoniau19northernirela",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "North Macedonia U19",
+      "away": "Northern Ireland U19",
+      "time": "03:00",
+      "odds": {
+        "home": 2.95,
+        "draw": 3.3,
+        "away": 2.18
+      },
+      "home_stats": {
+        "name": "North Macedonia U19",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          2
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 49,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Northern Ireland U19",
+        "form": [
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 49,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 49
+    }
+  ]
 }
