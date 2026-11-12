@@ -1,120 +1,11 @@
 {
   "meta": {
     "date": "2026-11-12",
-    "generatedAt": "2026-11-12T09:04:03.543713+03:00",
-    "scanned": 20,
-    "elapsedSeconds": 205.9
+    "generatedAt": "2026-11-12T12:04:44.392533+03:00",
+    "scanned": 19,
+    "elapsedSeconds": 232.5
   },
   "matches": [
-    {
-      "id": "thailandu23qataru23",
-      "league": "Football / International / U23 Friendly Games",
-      "home": "Thailand U23",
-      "away": "Qatar U23",
-      "time": "11:00",
-      "odds": {
-        "home": 3.1,
-        "draw": 3.1,
-        "away": 2.22
-      },
-      "home_stats": {
-        "name": "Thailand U23",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          0
-        ],
-        "goals_conceded": [
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 122,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Qatar U23",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          0
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "league_position": null,
-        "total_teams_in_league": 122,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "apialeichhardtadelaidecityfc",
-      "league": "Football / Australia / Australian Championship",
-      "home": "APIA Leichhardt",
-      "away": "Adelaide City FC",
-      "time": "11:30",
-      "odds": {
-        "home": 1.24,
-        "draw": 5.61,
-        "away": 8.78
-      },
-      "home_stats": {
-        "name": "APIA Leichhardt",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Adelaide City FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "kualalumpurcityfcu20kuchingcit",
-      "league": "Football / Malaysia / Malaysia Presidents Cup U20",
-      "home": "Kuala Lumpur City FC U20",
-      "away": "Kuching City U20",
-      "time": "11:45",
-      "odds": {
-        "home": 1.34,
-        "draw": 4.47,
-        "away": 8.26
-      },
-      "home_stats": {
-        "name": "Kuala Lumpur City FC U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 68,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kuching City U20",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 68,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
     {
       "id": "hwacheonkspofcwomengyeongjufcw",
       "league": "Football / Republic of Korea / WK-League",
@@ -122,9 +13,9 @@
       "away": "Gyeongju FC Women",
       "time": "01:00",
       "odds": {
-        "home": 1.73,
-        "draw": 3.57,
-        "away": 4.07
+        "home": 1.77,
+        "draw": 3.49,
+        "away": 3.99
       },
       "home_stats": {
         "name": "Hwacheon KSPO FC Women",
@@ -148,15 +39,83 @@
       "source": "betpawa"
     },
     {
+      "id": "rbleipzigfkmladboleslav",
+      "league": "Football / International / Club Friendlies",
+      "home": "RB Leipzig",
+      "away": "FK Mlad\u00e1 Boleslav",
+      "time": "01:00",
+      "odds": {
+        "home": 1.1,
+        "draw": 9.08,
+        "away": 16.68
+      },
+      "home_stats": {
+        "name": "RB Leipzig",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          7,
+          4,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          2,
+          4,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 0,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "FK Mlad\u00e1 Boleslav",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          0,
+          0,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 0,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "hannover96tsvhavelse",
       "league": "Football / International / Club Friendly Games",
       "home": "Hannover 96",
       "away": "TSV Havelse",
       "time": "02:00",
       "odds": {
-        "home": 1.21,
-        "draw": 6.76,
-        "away": 9.66
+        "home": 1.2,
+        "draw": 7.14,
+        "away": 9.64
       },
       "home_stats": {
         "name": "Hannover 96",
@@ -266,9 +225,9 @@
       "away": "Vejle BK Reserves",
       "time": "03:00",
       "odds": {
-        "home": 1.96,
+        "home": 2.01,
         "draw": 4.32,
-        "away": 2.95
+        "away": 2.85
       },
       "home_stats": {
         "name": "Viborg FF Reserves",
@@ -298,9 +257,9 @@
       "away": "El Terasanah",
       "time": "03:30",
       "odds": {
-        "home": 2.14,
-        "draw": 2.94,
-        "away": 3.66
+        "home": 2.0,
+        "draw": 3.02,
+        "away": 4.03
       },
       "home_stats": {
         "name": "FC Masar",
@@ -406,9 +365,9 @@
       "away": "Baladiyyat AL Mehalla",
       "time": "03:30",
       "odds": {
-        "home": 2.6,
-        "draw": 2.7,
-        "away": 3.08
+        "home": 2.5,
+        "draw": 2.89,
+        "away": 2.99
       },
       "home_stats": {
         "name": "El Entag El Harby",
@@ -476,9 +435,9 @@
       "away": "Vipers SC",
       "time": "04:00",
       "odds": {
-        "home": 5.96,
-        "draw": 3.52,
-        "away": 1.52
+        "home": 6.75,
+        "draw": 3.67,
+        "away": 1.45
       },
       "home_stats": {
         "name": "Kigezi Homeboyz FC",
@@ -518,9 +477,9 @@
       "away": "Ukraine U21",
       "time": "04:00",
       "odds": {
-        "home": 3.03,
-        "draw": 3.67,
-        "away": 2.18
+        "home": 2.99,
+        "draw": 3.53,
+        "away": 2.26
       },
       "home_stats": {
         "name": "Scotland U21",
@@ -556,9 +515,9 @@
       "away": "Sweden U19",
       "time": "04:00",
       "odds": {
-        "home": 1.48,
-        "draw": 4.3,
-        "away": 5.2
+        "home": 1.42,
+        "draw": 4.4,
+        "away": 5.8
       },
       "home_stats": {
         "name": "Germany U19",
@@ -604,9 +563,9 @@
       "away": "Greece U21",
       "time": "04:00",
       "odds": {
-        "home": 3.0,
+        "home": 2.9,
         "draw": 3.44,
-        "away": 2.3
+        "away": 2.35
       },
       "home_stats": {
         "name": "Iceland U21",
@@ -725,9 +684,9 @@
       "away": "Al Yarmouk",
       "time": "04:00",
       "odds": {
-        "home": 4.1,
-        "draw": 3.25,
-        "away": 1.82
+        "home": 4.6,
+        "draw": 3.4,
+        "away": 1.7
       },
       "home_stats": {
         "name": "Maan SC",
@@ -778,6 +737,50 @@
         "league_position": 1,
         "total_teams_in_league": 14,
         "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "surclubdhofarclub",
+      "league": "Football / Oman / Oman Professional League Cup",
+      "home": "Sur Club",
+      "away": "Dhofar Club",
+      "time": "04:50",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.09,
+        "away": 2.55
+      },
+      "home_stats": {
+        "name": "Sur Club",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 21,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Dhofar Club",
+        "form": [
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          0
+        ],
+        "league_position": 12,
+        "total_teams_in_league": 21,
+        "opposition_position": 12
       },
       "h2h": null,
       "source": "betpawa"
