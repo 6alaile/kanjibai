@@ -1,70 +1,11 @@
 {
   "meta": {
     "date": "2026-11-12",
-    "generatedAt": "2026-11-12T06:05:52.339816+03:00",
+    "generatedAt": "2026-11-12T09:04:03.543713+03:00",
     "scanned": 20,
-    "elapsedSeconds": 320.8
+    "elapsedSeconds": 205.9
   },
   "matches": [
-    {
-      "id": "newzealandindia",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "New Zealand",
-      "away": "India",
-      "time": "09:00",
-      "odds": {
-        "home": 1.22,
-        "draw": 6.2,
-        "away": 11.94
-      },
-      "home_stats": {
-        "name": "New Zealand",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          5,
-          3,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          3,
-          0,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 100,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "India",
-        "form": [
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          6,
-          4,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 100,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
     {
       "id": "thailandu23qataru23",
       "league": "Football / International / U23 Friendly Games",
@@ -72,9 +13,9 @@
       "away": "Qatar U23",
       "time": "11:00",
       "odds": {
-        "home": 3.0,
-        "draw": 3.2,
-        "away": 2.19
+        "home": 3.1,
+        "draw": 3.1,
+        "away": 2.22
       },
       "home_stats": {
         "name": "Thailand U23",
@@ -116,9 +57,9 @@
       "away": "Adelaide City FC",
       "time": "11:30",
       "odds": {
-        "home": 1.25,
-        "draw": 5.59,
-        "away": 8.17
+        "home": 1.24,
+        "draw": 5.61,
+        "away": 8.78
       },
       "home_stats": {
         "name": "APIA Leichhardt",
@@ -149,9 +90,9 @@
       "away": "Kuching City U20",
       "time": "11:45",
       "odds": {
-        "home": 1.4,
-        "draw": 4.16,
-        "away": 7.26
+        "home": 1.34,
+        "draw": 4.47,
+        "away": 8.26
       },
       "home_stats": {
         "name": "Kuala Lumpur City FC U20",
@@ -181,9 +122,9 @@
       "away": "Gyeongju FC Women",
       "time": "01:00",
       "odds": {
-        "home": 1.77,
+        "home": 1.73,
         "draw": 3.57,
-        "away": 4.09
+        "away": 4.07
       },
       "home_stats": {
         "name": "Hwacheon KSPO FC Women",
@@ -213,9 +154,9 @@
       "away": "TSV Havelse",
       "time": "02:00",
       "odds": {
-        "home": 1.24,
-        "draw": 5.98,
-        "away": 9.65
+        "home": 1.21,
+        "draw": 6.76,
+        "away": 9.66
       },
       "home_stats": {
         "name": "Hannover 96",
@@ -281,9 +222,9 @@
       "away": "Vietnam U23",
       "time": "03:00",
       "odds": {
-        "home": 14.0,
+        "home": 15.0,
         "draw": 6.75,
-        "away": 1.19
+        "away": 1.18
       },
       "home_stats": {
         "name": "Singapore U23",
@@ -326,8 +267,8 @@
       "time": "03:00",
       "odds": {
         "home": 1.96,
-        "draw": 4.22,
-        "away": 2.99
+        "draw": 4.32,
+        "away": 2.95
       },
       "home_stats": {
         "name": "Viborg FF Reserves",
@@ -372,9 +313,15 @@
       },
       "away_stats": {
         "name": "El Terasanah",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
         "league_position": null,
         "total_teams_in_league": 59,
         "opposition_position": null
@@ -427,26 +374,26 @@
       },
       "home_stats": {
         "name": "Delta United FC",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          4
-        ],
-        "league_position": null,
-        "total_teams_in_league": 326,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "El Sekka El Hadid",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
-        "total_teams_in_league": 326,
+        "total_teams_in_league": 430,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "El Sekka El Hadid",
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 430,
         "opposition_position": null
       },
       "h2h": null,
@@ -459,15 +406,21 @@
       "away": "Baladiyyat AL Mehalla",
       "time": "03:30",
       "odds": {
-        "home": 2.55,
-        "draw": 2.79,
-        "away": 3.03
+        "home": 2.6,
+        "draw": 2.7,
+        "away": 3.08
       },
       "home_stats": {
         "name": "El Entag El Harby",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "form": [
+          "L"
+        ],
+        "goals_scored": [
+          0
+        ],
+        "goals_conceded": [
+          3
+        ],
         "league_position": null,
         "total_teams_in_league": 60,
         "opposition_position": 2
@@ -603,9 +556,9 @@
       "away": "Sweden U19",
       "time": "04:00",
       "odds": {
-        "home": 1.54,
-        "draw": 4.1,
-        "away": 4.7
+        "home": 1.48,
+        "draw": 4.3,
+        "away": 5.2
       },
       "home_stats": {
         "name": "Germany U19",
@@ -684,15 +637,47 @@
       "total_teams_in_league": 109
     },
     {
+      "id": "borussiamonchengladbachstandar",
+      "league": "Football / International / Club Friendly Games",
+      "home": "Borussia Monchengladbach",
+      "away": "Standard Liege",
+      "time": "04:00",
+      "odds": {
+        "home": 1.68,
+        "draw": 4.3,
+        "away": 4.3
+      },
+      "home_stats": {
+        "name": "Borussia Monchengladbach",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "Standard Liege",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": 9
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
       "id": "serbiau21northmacedoniau21",
       "league": "Football / International / U21 Friendly Games",
       "home": "Serbia U21",
       "away": "North Macedonia U21",
       "time": "04:00",
       "odds": {
-        "home": 1.33,
-        "draw": 5.5,
-        "away": 8.06
+        "home": 1.32,
+        "draw": 5.51,
+        "away": 8.27
       },
       "home_stats": {
         "name": "Serbia U21",
@@ -740,9 +725,9 @@
       "away": "Al Yarmouk",
       "time": "04:00",
       "odds": {
-        "home": 3.85,
-        "draw": 3.2,
-        "away": 1.9
+        "home": 4.1,
+        "draw": 3.25,
+        "away": 1.82
       },
       "home_stats": {
         "name": "Maan SC",
@@ -772,9 +757,9 @@
       "away": "Al-Nasr",
       "time": "04:50",
       "odds": {
-        "home": 2.35,
-        "draw": 3.18,
-        "away": 2.94
+        "home": 2.36,
+        "draw": 3.15,
+        "away": 2.95
       },
       "home_stats": {
         "name": "Oman Club",
