@@ -1,792 +1,455 @@
 {
   "meta": {
     "date": "2026-11-13",
-    "generatedAt": "2026-11-13T18:08:17.107860+03:00",
+    "generatedAt": "2026-11-13T21:09:26.340406+03:00",
     "scanned": 20,
-    "elapsedSeconds": 466.0
+    "elapsedSeconds": 526.9
   },
   "matches": [
     {
-      "id": "gfkdubocicafkproleterzrenjanin",
-      "league": "Football / Serbia / Prva Liga",
-      "home": "Gfk Dubocica",
-      "away": "FK Proleter Zrenjanin 023",
-      "time": "07:00",
+      "id": "malirwanda",
+      "league": "Football / International / Africa Cup of Nations, Qualification",
+      "home": "Mali",
+      "away": "Rwanda",
+      "time": "10:00",
       "odds": {
-        "home": 2.33,
-        "draw": 3.2,
-        "away": 2.8
+        "home": 1.27,
+        "draw": 5.16,
+        "away": 11.49
       },
       "home_stats": {
-        "name": "Gfk Dubocica",
+        "name": "Mali",
         "form": [
-          "L",
           "W",
-          "L",
-          "W",
-          "L"
+          "D",
+          "W"
         ],
         "goals_scored": [
           1,
-          2,
+          1,
+          3
+        ],
+        "goals_conceded": [
           0,
+          1,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 139,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Rwanda",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
           2,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 139,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "bermudasaintlucian",
+      "league": "Football / International / CONCACAF Nations League",
+      "home": "Bermuda",
+      "away": "Saint Lucia (n)",
+      "time": "10:00",
+      "odds": {
+        "home": 9.95,
+        "draw": 6.8,
+        "away": 1.15
+      },
+      "home_stats": {
+        "name": "Bermuda",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
           1
         ],
         "goals_conceded": [
+          5,
           2,
-          0,
-          2,
-          1,
+          4,
           2
         ],
-        "league_position": 5,
-        "total_teams_in_league": 16,
+        "league_position": null,
+        "total_teams_in_league": 10,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "FK Proleter Zrenjanin 023",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "gabonlesotho",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Gabon",
-      "away": "Lesotho",
-      "time": "07:00",
-      "odds": {
-        "home": 1.21,
-        "draw": 6.05,
-        "away": 13.3
-      },
-      "home_stats": {
-        "name": "Gabon",
+        "name": "Saint Lucia (n)",
         "form": [
           "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 27,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Lesotho",
-        "form": [
-          "D",
           "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          1,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 27,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "tunisialibya",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Tunisia",
-      "away": "Libya",
-      "time": "07:00",
-      "odds": {
-        "home": 1.34,
-        "draw": 4.61,
-        "away": 9.42
-      },
-      "home_stats": {
-        "name": "Tunisia",
-        "form": [
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 134,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Libya",
-        "form": [
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 134,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "southafricakenya",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "South Africa",
-      "away": "Kenya",
-      "time": "07:00",
-      "odds": {
-        "home": 1.29,
-        "draw": 5.09,
-        "away": 10.55
-      },
-      "home_stats": {
-        "name": "South Africa",
-        "form": [
-          "W",
-          "W",
           "W"
         ],
         "goals_scored": [
           5,
-          1,
-          2
-        ],
-        "goals_conceded": [
           0,
-          0,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 135,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kenya",
-        "form": [
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 135,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "nigeriatanzania",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Nigeria",
-      "away": "Tanzania",
-      "time": "07:00",
-      "odds": {
-        "home": 1.17,
-        "draw": 7.05,
-        "away": 14.76
-      },
-      "home_stats": {
-        "name": "Nigeria",
-        "form": [
-          "L",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          3,
-          3,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 40,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Tanzania",
-        "form": [
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 40,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "burkinafasomauritania",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Burkina Faso",
-      "away": "Mauritania",
-      "time": "07:00",
-      "odds": {
-        "home": 1.54,
-        "draw": 3.83,
-        "away": 6.47
-      },
-      "home_stats": {
-        "name": "Burkina Faso",
-        "form": [
-          "L",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          7,
-          0,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 51,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Mauritania",
-        "form": [
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
           3
         ],
         "goals_conceded": [
           2,
-          1
+          2,
+          0
         ],
         "league_position": null,
-        "total_teams_in_league": 51,
+        "total_teams_in_league": 10,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "turkiyeu21czechiau21",
-      "league": "Football / International / U21 UEFA European Championship, Qualification",
-      "home": "Turkiye U21",
-      "away": "Czechia U21",
-      "time": "07:00",
+      "id": "polandu20germanyu20",
+      "league": "Football / International / U20 Friendly Games",
+      "home": "Poland U20",
+      "away": "Germany U20",
+      "time": "10:00",
       "odds": {
-        "home": 2.49,
-        "draw": 3.17,
-        "away": 2.92
+        "home": 3.94,
+        "draw": 3.66,
+        "away": 1.81
       },
       "home_stats": {
-        "name": "Turkiye U21",
+        "name": "Poland U20",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 141,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Germany U20",
+        "form": [
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 141,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "dijonfcousorleans",
+      "league": "Football / France / Coupe de France",
+      "home": "Dijon FCO",
+      "away": "US Orleans",
+      "time": "10:00",
+      "odds": {
+        "home": 1.65,
+        "draw": 4.2,
+        "away": 4.63
+      },
+      "home_stats": {
+        "name": "Dijon FCO",
+        "form": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          2,
+          4,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          3,
+          2,
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 18,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "US Orleans",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 12,
+        "total_teams_in_league": 18,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "puertoricodominican",
+      "league": "Football / International / CONCACAF Nations League",
+      "home": "Puerto Rico",
+      "away": "Dominica (n)",
+      "time": "10:00",
+      "odds": {
+        "home": 1.16,
+        "draw": 6.6,
+        "away": 9.95
+      },
+      "home_stats": {
+        "name": "Puerto Rico",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 5,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Dominica (n)",
         "form": [
           "W"
         ],
         "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
           1
         ],
+        "goals_conceded": [
+          0
+        ],
         "league_position": null,
-        "total_teams_in_league": 109,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Czechia U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 109,
+        "total_teams_in_league": 5,
         "opposition_position": null
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 109
+      "source": "betpawa"
     },
     {
-      "id": "capeverdeliberia",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Cape Verde",
-      "away": "Liberia",
-      "time": "07:00",
+      "id": "peterboroughunitedu21newcastle",
+      "league": "Football / England / Premier League Cup",
+      "home": "Peterborough United U21",
+      "away": "Newcastle United FC U21",
+      "time": "10:00",
       "odds": {
-        "home": 1.22,
-        "draw": 5.9,
-        "away": 13.28
+        "home": 1.29,
+        "draw": 5.85,
+        "away": 7.56
       },
       "home_stats": {
-        "name": "Cape Verde",
+        "name": "Peterborough United U21",
         "form": [
+          "W",
           "L",
           "L"
         ],
         "goals_scored": [
+          4,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          5
+        ],
+        "league_position": null,
+        "total_teams_in_league": 438,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Newcastle United FC U21",
+        "form": [
+          "D",
+          "W",
+          "D",
+          "L",
+          "W",
+          "L",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          2,
           1,
+          2,
+          1,
+          0,
+          2,
+          0,
           1
         ],
         "goals_conceded": [
           2,
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 28,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Liberia",
-        "form": [
-          "L",
-          "L"
-        ],
-        "goals_scored": [
           0,
+          2,
+          4,
+          1,
+          4,
+          1,
+          0,
+          1,
           1
         ],
-        "goals_conceded": [
-          1,
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 28,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "finlandu21irelandu21",
-      "league": "Football / International / U21 UEFA European Championship, Qualification",
-      "home": "Finland U21",
-      "away": "Ireland U21",
-      "time": "07:15",
-      "odds": {
-        "home": 1.81,
-        "draw": 3.57,
-        "away": 4.4
-      },
-      "home_stats": {
-        "name": "Finland U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 237,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ireland U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 237,
-        "opposition_position": null
+        "league_position": 12,
+        "total_teams_in_league": 438,
+        "opposition_position": 12
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 237
+      "total_teams_in_league": 438
     },
     {
-      "id": "norwayu21polandu21",
-      "league": "Football / International / U21 Friendly Games",
-      "home": "Norway U21",
-      "away": "Poland U21",
-      "time": "07:30",
+      "id": "egyptmalawi",
+      "league": "Football / International / Africa Cup of Nations, Qualification",
+      "home": "Egypt",
+      "away": "Malawi",
+      "time": "10:00",
       "odds": {
-        "home": 2.6,
-        "draw": 3.63,
-        "away": 2.5
+        "home": 1.08,
+        "draw": 9.34,
+        "away": 30.63
       },
       "home_stats": {
-        "name": "Norway U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 265,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Poland U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 265,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "kuwaitsyria",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Kuwait",
-      "away": "Syria",
-      "time": "07:30",
-      "odds": {
-        "home": 3.23,
-        "draw": 3.45,
-        "away": 2.16
-      },
-      "home_stats": {
-        "name": "Kuwait",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Syria",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "youngvioletsaustriawiensrdonau",
-      "league": "Football / International / Club Friendlies",
-      "home": "Young Violets Austria Wien",
-      "away": "SR Donaufeld",
-      "time": "07:30",
-      "odds": {
-        "home": 1.54,
-        "draw": 4.4,
-        "away": 4.88
-      },
-      "home_stats": {
-        "name": "Young Violets Austria Wien",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 16,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "SR Donaufeld",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 7,
-        "total_teams_in_league": 16,
-        "opposition_position": 7
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "alhalaalbudaiya",
-      "league": "Football / Bahrain / 2nd Division",
-      "home": "AL Hala",
-      "away": "AL Budaiya",
-      "time": "07:30",
-      "odds": {
-        "home": 2.65,
-        "draw": 3.3,
-        "away": 2.38
-      },
-      "home_stats": {
-        "name": "AL Hala",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "AL Budaiya",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "nddravinjakrkanovomesto",
-      "league": "Football / Slovenia / 2. Liga",
-      "home": "Nd Dravinja",
-      "away": "Krka Novo Mesto",
-      "time": "07:30",
-      "odds": {
-        "home": 2.67,
-        "draw": 3.38,
-        "away": 2.38
-      },
-      "home_stats": {
-        "name": "Nd Dravinja",
+        "name": "Egypt",
         "form": [
           "W",
           "L",
-          "D",
-          "L",
-          "L"
+          "D"
         ],
         "goals_scored": [
-          3,
-          1,
-          1,
+          5,
           0,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          1,
-          1,
-          4
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 16,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "Krka Novo Mesto",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 14
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "moldovakazakhstan",
-      "league": "Football / International / UEFA Nations League",
-      "home": "Moldova",
-      "away": "Kazakhstan",
-      "time": "08:00",
-      "odds": {
-        "home": 2.48,
-        "draw": 3.18,
-        "away": 3.09
-      },
-      "home_stats": {
-        "name": "Moldova",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
           0
         ],
         "goals_conceded": [
-          2
+          0,
+          1,
+          0
         ],
         "league_position": null,
-        "total_teams_in_league": 69,
+        "total_teams_in_league": 62,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Kazakhstan",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
+        "name": "Malawi",
+        "form": [
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          1
+        ],
         "league_position": null,
-        "total_teams_in_league": 69,
+        "total_teams_in_league": 62,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "germanyu21belgiumu21",
-      "league": "Football / International / U21 Friendly Games",
-      "home": "Germany U21",
-      "away": "Belgium U21",
-      "time": "08:00",
+      "id": "deportivolarazamorafcbarinasii",
+      "league": "Football / Venezuela / Segunda Division",
+      "home": "Deportivo Lara",
+      "away": "Zamora FC Barinas II",
+      "time": "10:00",
       "odds": {
-        "home": 1.82,
-        "draw": 3.83,
-        "away": 4.03
+        "home": 1.3,
+        "draw": 4.6,
+        "away": 9.0
       },
       "home_stats": {
-        "name": "Germany U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 113,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Belgium U21",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 113,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "mkszniczpruszkowsokolkleczew",
-      "league": "Football / Poland / II Liga",
-      "home": "MKS Znicz Pruszkow",
-      "away": "Sokol Kleczew",
-      "time": "08:00",
-      "odds": {
-        "home": 1.57,
-        "draw": 4.35,
-        "away": 4.73
-      },
-      "home_stats": {
-        "name": "MKS Znicz Pruszkow",
+        "name": "Deportivo Lara",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 1,
-        "total_teams_in_league": 18,
-        "opposition_position": 16
+        "total_teams_in_league": 9,
+        "opposition_position": 5
       },
       "away_stats": {
-        "name": "Sokol Kleczew",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          6,
-          2,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          6,
-          1,
-          1
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 18,
-        "opposition_position": 16
+        "name": "Zamora FC Barinas II",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 9,
+        "opposition_position": 5
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "sksturmgrazwomenfirstviennafc1",
-      "league": "Football / Austria / Bundesliga, Women",
-      "home": "SK Sturm Graz Women",
-      "away": "First Vienna FC 1894 Women",
-      "time": "08:00",
+      "id": "millwallu21sheffieldunitedu21",
+      "league": "Football / England / Premier League Cup",
+      "home": "Millwall U21",
+      "away": "Sheffield United U21",
+      "time": "10:00",
       "odds": {
-        "home": 1.24,
-        "draw": 5.96,
-        "away": 8.03
+        "home": 2.52,
+        "draw": 3.69,
+        "away": 2.43
       },
       "home_stats": {
-        "name": "SK Sturm Graz Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 5,
-        "total_teams_in_league": 12,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "First Vienna FC 1894 Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 12,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "jssaourausmkhenchela",
-      "league": "Football / Algeria / Ligue 1",
-      "home": "JS Saoura",
-      "away": "USM Khenchela",
-      "time": "08:00",
-      "odds": {
-        "home": 1.62,
-        "draw": 3.37,
-        "away": 6.3
-      },
-      "home_stats": {
-        "name": "JS Saoura",
+        "name": "Millwall U21",
         "form": [
           "L",
           "L",
@@ -799,54 +462,438 @@
         ],
         "goals_conceded": [
           3,
-          4,
+          2,
           0
         ],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 13
+        "league_position": null,
+        "total_teams_in_league": 116,
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "USM Khenchela",
+        "name": "Sheffield United U21",
+        "form": [
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          3,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 116,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 116
+    },
+    {
+      "id": "betikozkorkedoneztebeft",
+      "league": "Football / Spain / Tercera Federacion, Group 15",
+      "home": "Beti Kozkor KE",
+      "away": "Doneztebe Ft",
+      "time": "10:15",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 3.15
+      },
+      "home_stats": {
+        "name": "Beti Kozkor KE",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 13,
-        "total_teams_in_league": 16,
+        "league_position": null,
+        "total_teams_in_league": 439,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Doneztebe Ft",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 439,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "cdleganesburgoscf",
+      "league": "Football / Spain / LaLiga 2",
+      "home": "CD Leganes",
+      "away": "Burgos CF",
+      "time": "10:30",
+      "odds": {
+        "home": 2.39,
+        "draw": 3.15,
+        "away": 3.07
+      },
+      "home_stats": {
+        "name": "CD Leganes",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 120,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Burgos CF",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 8,
+        "total_teams_in_league": 120,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 120
+    },
+    {
+      "id": "pureswanseatreowenstars",
+      "league": "Football / Wales / Cymru Championship South",
+      "home": "Pure Swansea",
+      "away": "Treowen Stars",
+      "time": "10:30",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.82,
+        "away": 5.41
+      },
+      "home_stats": {
+        "name": "Pure Swansea",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          1,
+          0,
+          4
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 24,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Treowen Stars",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 8,
+        "total_teams_in_league": 24,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 24
+    },
+    {
+      "id": "englandu21portugalu21",
+      "league": "Football / International / U21 Friendly Games",
+      "home": "England U21",
+      "away": "Portugal U21",
+      "time": "10:30",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.87,
+        "away": 3.67
+      },
+      "home_stats": {
+        "name": "England U21",
+        "form": [
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          3,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 109,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Portugal U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 109,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "acdospitalettodolomitibellunes",
+      "league": "Football / Italy / Serie C, Group A",
+      "home": "ACD Ospitaletto",
+      "away": "Dolomiti Bellunesi",
+      "time": "10:30",
+      "odds": {
+        "home": 1.39,
+        "draw": 4.14,
+        "away": 7.28
+      },
+      "home_stats": {
+        "name": "ACD Ospitaletto",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 3,
+        "total_teams_in_league": 20,
         "opposition_position": 13
+      },
+      "away_stats": {
+        "name": "Dolomiti Bellunesi",
+        "form": [
+          "W",
+          "D",
+          "D",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          7,
+          0,
+          0,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          5,
+          0,
+          0,
+          1,
+          0
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 20,
+        "opposition_position": 13
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "latinacalciocampobassofc",
+      "league": "Football / Italy / Serie C, Group B",
+      "home": "Latina Calcio",
+      "away": "Campobasso FC",
+      "time": "10:30",
+      "odds": {
+        "home": 2.06,
+        "draw": 3.32,
+        "away": 3.3
+      },
+      "home_stats": {
+        "name": "Latina Calcio",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Campobasso FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "denbightowngresfordathletic",
+      "league": "Football / Wales / Cymru Championship, North",
+      "home": "Denbigh Town",
+      "away": "Gresford Athletic",
+      "time": "10:30",
+      "odds": {
+        "home": 1.23,
+        "draw": 6.37,
+        "away": 9.32
+      },
+      "home_stats": {
+        "name": "Denbigh Town",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 83,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Gresford Athletic",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 83,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 83
+    },
+    {
+      "id": "montevideocitytorqueracingclub",
+      "league": "Football / Uruguay / Primera Division",
+      "home": "Montevideo City Torque",
+      "away": "Racing Club Montevideo",
+      "time": "10:30",
+      "odds": {
+        "home": 1.83,
+        "draw": 3.63,
+        "away": 4.0
+      },
+      "home_stats": {
+        "name": "Montevideo City Torque",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Racing Club Montevideo",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 16
     },
     {
-      "id": "kswislokadebicamksczarnipolani",
-      "league": "Football / Poland / III Liga, Group 4",
-      "home": "KS Wisloka Debica",
-      "away": "MKS Czarni Polaniec",
-      "time": "08:00",
+      "id": "jeugdsportinghasseltu21rfclieg",
+      "league": "Football / Belgium / U21 Pro League",
+      "home": "Jeugd Sporting Hasselt U21",
+      "away": "RFC Liege U21",
+      "time": "10:30",
       "odds": {
-        "home": 3.3,
-        "draw": 3.55,
-        "away": 1.93
+        "home": 3.08,
+        "draw": 3.95,
+        "away": 1.99
       },
       "home_stats": {
-        "name": "KS Wisloka Debica",
+        "name": "Jeugd Sporting Hasselt U21",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 4,
-        "total_teams_in_league": 18,
-        "opposition_position": 6
+        "league_position": 8,
+        "total_teams_in_league": 11,
+        "opposition_position": 7
       },
       "away_stats": {
-        "name": "MKS Czarni Polaniec",
+        "name": "RFC Liege U21",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 18,
-        "opposition_position": 6
+        "league_position": 7,
+        "total_teams_in_league": 11,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "jeugdroyalfrancsborainsu21raal",
+      "league": "Football / Belgium / U21 Pro League",
+      "home": "Jeugd Royal Francs Borains U21",
+      "away": "RAAL La Louviere U21",
+      "time": "10:30",
+      "odds": {
+        "home": 2.7,
+        "draw": 3.95,
+        "away": 2.19
+      },
+      "home_stats": {
+        "name": "Jeugd Royal Francs Borains U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 11,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "RAAL La Louviere U21",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 2,
+        "total_teams_in_league": 11,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "adsanjuanpamplonacfgazteberria",
+      "league": "Football / Spain / Tercera Federacion, Group 15",
+      "home": "AD San Juan Pamplona",
+      "away": "CF Gazte Berriak",
+      "time": "10:30",
+      "odds": {
+        "home": 1.73,
+        "draw": 3.4,
+        "away": 4.4
+      },
+      "home_stats": {
+        "name": "AD San Juan Pamplona",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 5,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "CF Gazte Berriak",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
