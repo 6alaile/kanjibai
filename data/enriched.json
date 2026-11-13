@@ -1,77 +1,11 @@
 {
   "meta": {
     "date": "2026-11-13",
-    "generatedAt": "2026-11-13T09:06:40.549127+03:00",
+    "generatedAt": "2026-11-13T12:05:49.979962+03:00",
     "scanned": 20,
-    "elapsedSeconds": 361.8
+    "elapsedSeconds": 314.9
   },
   "matches": [
-    {
-      "id": "oakleighcannonsmarconistallion",
-      "league": "Football / Australia / Australian Championship",
-      "home": "Oakleigh Cannons",
-      "away": "Marconi Stallions",
-      "time": "11:30",
-      "odds": {
-        "home": 1.54,
-        "draw": 4.13,
-        "away": 4.98
-      },
-      "home_stats": {
-        "name": "Oakleigh Cannons",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 14,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Marconi Stallions",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 3,
-        "total_teams_in_league": 14,
-        "opposition_position": 3
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 14
-    },
-    {
-      "id": "prestonlionsfclionsfc",
-      "league": "Football / Australia / Australian Championship",
-      "home": "Preston Lions FC",
-      "away": "Lions FC",
-      "time": "11:30",
-      "odds": {
-        "home": 2.35,
-        "draw": 3.48,
-        "away": 2.65
-      },
-      "home_stats": {
-        "name": "Preston Lions FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 69,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Lions FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 69,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 69
-    },
     {
       "id": "fcprykarpattyaivanofrankivskfc",
       "league": "Football / Ukraine / Persha Liga",
@@ -79,9 +13,9 @@
       "away": "FC Kolos Kovalivka 2",
       "time": "01:00",
       "odds": {
-        "home": 1.55,
-        "draw": 3.8,
-        "away": 5.2
+        "home": 1.54,
+        "draw": 3.75,
+        "away": 5.4
       },
       "home_stats": {
         "name": "FC Prykarpattya Ivano-Frankivsk",
@@ -100,6 +34,129 @@
         "league_position": 3,
         "total_teams_in_league": 373,
         "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vstersskfkifbrommapojkarna",
+      "league": "Football / International / Club Friendlies",
+      "home": "V\u00e4ster\u00e5s SK FK",
+      "away": "IF Brommapojkarna",
+      "time": "02:00",
+      "odds": {
+        "home": 1.9,
+        "draw": 4.1,
+        "away": 3.22
+      },
+      "home_stats": {
+        "name": "V\u00e4ster\u00e5s SK FK",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "IF Brommapojkarna",
+        "form": [
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          0
+        ],
+        "league_position": null,
+        "total_teams_in_league": 16,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "uzbekistanu20venezuelau20",
+      "league": "Football / International / International Friendlies U20",
+      "home": "Uzbekistan U20",
+      "away": "Venezuela U20",
+      "time": "02:00",
+      "odds": {
+        "home": 2.17,
+        "draw": 3.38,
+        "away": 3.09
+      },
+      "home_stats": {
+        "name": "Uzbekistan U20",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          4,
+          3,
+          6
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0,
+          0,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 131,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Venezuela U20",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 131,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "turunpalloseuratampereenilves",
+      "league": "Football / International / Club Friendly Games",
+      "home": "Turun Palloseura",
+      "away": "Tampereen Ilves",
+      "time": "02:30",
+      "odds": {
+        "home": 3.22,
+        "draw": 3.75,
+        "away": 1.99
+      },
+      "home_stats": {
+        "name": "Turun Palloseura",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Tampereen Ilves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa"
@@ -131,6 +188,56 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 277,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "tsveggerglashartbergfloridsdor",
+      "league": "Football / International / Club Friendlies",
+      "home": "TSV Egger Glas Hartberg",
+      "away": "Floridsdorfer AC",
+      "time": "02:30",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.59,
+        "away": 5.86
+      },
+      "home_stats": {
+        "name": "TSV Egger Glas Hartberg",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          6,
+          3,
+          3,
+          3,
+          0
+        ],
+        "goals_conceded": [
+          4,
+          2,
+          1,
+          3,
+          2
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 12,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Floridsdorfer AC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 12,
         "opposition_position": null
       },
       "h2h": null,
@@ -175,9 +282,9 @@
       "away": "AL Sahel SC",
       "time": "02:55",
       "odds": {
-        "home": 2.43,
-        "draw": 3.1,
-        "away": 2.75
+        "home": 2.31,
+        "draw": 3.15,
+        "away": 2.85
       },
       "home_stats": {
         "name": "Nairea",
@@ -207,9 +314,9 @@
       "away": "KS Stilon Gorzow Wlkp",
       "time": "03:00",
       "odds": {
-        "home": 1.87,
-        "draw": 3.5,
-        "away": 3.6
+        "home": 1.84,
+        "draw": 3.55,
+        "away": 3.65
       },
       "home_stats": {
         "name": "LKS Goczalkowice-Zdroj",
@@ -289,9 +396,9 @@
       "away": "Paraguay",
       "time": "03:00",
       "odds": {
-        "home": 29.85,
-        "draw": 11.0,
-        "away": 1.06
+        "home": 34.71,
+        "draw": 11.96,
+        "away": 1.05
       },
       "home_stats": {
         "name": "Singapore",
@@ -330,9 +437,9 @@
       "away": "AL Rayan",
       "time": "03:25",
       "odds": {
-        "home": 2.55,
-        "draw": 3.2,
-        "away": 2.55
+        "home": 2.6,
+        "draw": 3.15,
+        "away": 2.5
       },
       "home_stats": {
         "name": "Afief",
@@ -394,8 +501,8 @@
       "away": "El Dakhleya Sc",
       "time": "03:30",
       "odds": {
-        "home": 1.7,
-        "draw": 3.28,
+        "home": 1.67,
+        "draw": 3.38,
         "away": 5.4
       },
       "home_stats": {
@@ -438,9 +545,9 @@
       "away": "Mudhar",
       "time": "03:30",
       "odds": {
-        "home": 2.65,
-        "draw": 3.35,
-        "away": 2.37
+        "home": 2.6,
+        "draw": 3.3,
+        "away": 2.43
       },
       "home_stats": {
         "name": "Hetten FC",
@@ -470,9 +577,9 @@
       "away": "La Viena FC",
       "time": "03:30",
       "odds": {
-        "home": 2.4,
-        "draw": 2.75,
-        "away": 3.33
+        "home": 2.17,
+        "draw": 2.74,
+        "away": 3.95
       },
       "home_stats": {
         "name": "Tanta FC",
@@ -528,6 +635,50 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 60,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "montenegrou21bosniaandherzegov",
+      "league": "Football / International / U21 Friendly Games",
+      "home": "Montenegro U21",
+      "away": "Bosnia and Herzegovina U21",
+      "time": "04:00",
+      "odds": {
+        "home": 2.65,
+        "draw": 3.34,
+        "away": 2.6
+      },
+      "home_stats": {
+        "name": "Montenegro U21",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 109,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Bosnia and Herzegovina U21",
+        "form": [
+          "W"
+        ],
+        "goals_scored": [
+          3
+        ],
+        "goals_conceded": [
+          1
+        ],
+        "league_position": null,
+        "total_teams_in_league": 109,
         "opposition_position": null
       },
       "h2h": null,
@@ -592,138 +743,6 @@
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 11,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "mozambiqueethiopia",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Mozambique",
-      "away": "Ethiopia",
-      "time": "04:00",
-      "odds": {
-        "home": 1.57,
-        "draw": 3.91,
-        "away": 5.8
-      },
-      "home_stats": {
-        "name": "Mozambique",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 9,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ethiopia",
-        "form": [
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 9,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "comoroscongorepublic",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Comoros",
-      "away": "Congo Republic",
-      "time": "04:00",
-      "odds": {
-        "home": 1.81,
-        "draw": 3.35,
-        "away": 4.76
-      },
-      "home_stats": {
-        "name": "Comoros",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 176,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Congo Republic",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 176,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "zambiaburundi",
-      "league": "Football / International / Africa Cup of Nations, Qualification",
-      "home": "Zambia",
-      "away": "Burundi",
-      "time": "04:00",
-      "odds": {
-        "home": 1.62,
-        "draw": 3.8,
-        "away": 5.54
-      },
-      "home_stats": {
-        "name": "Zambia",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          3
-        ],
-        "league_position": null,
-        "total_teams_in_league": 19,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Burundi",
-        "form": [
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          4,
-          4,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          1
-        ],
-        "league_position": null,
-        "total_teams_in_league": 19,
         "opposition_position": null
       },
       "h2h": null,
