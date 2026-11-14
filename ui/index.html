@@ -151,7 +151,7 @@
           <div class="card-main" @click="toggleReasoning(match.id)">
 
             <div class="match-time">
-              <div class="time-val">{{ match.time }}</div>
+              <div class="time-val">{{ formatTime24(match.time) }}</div>
               <div class="time-league">{{ getCompetition(match.league) }}</div>
             </div>
 

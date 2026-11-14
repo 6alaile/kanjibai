@@ -411,6 +411,29 @@ createApp({
     updateClock();
     setInterval(updateClock, 1000);
 
+    // 24h time formatting helper
+    function formatTime24(timeStr) {
+      if (!timeStr) return '';
+      // Remove any AM/PM suffix and ensure HH:MM format
+      const cleaned = timeStr.replace(/\s?(AM|PM)?$/i, '').trim();
+      const parts = cleaned.split(':');
+      if (parts.length === 2) {
+        let [hours, minutes] = parts;
+        // Ensure 2-digit hours
+        hours = parseInt(hours, 10).toString().padStart(2, '0');
+        minutes = minutes.toString().padStart(2, '0');
+        // Convert 12h to 24h if needed
+        const ampm = timeStr.match(/\s(AM|PM)$/i);
+        if (ampm) {
+          const period = ampm[1].toUpperCase();
+          if (period === 'AM' && hours === '12') hours = '00';
+          if (period === 'PM' && hours !== '12') hours = String(parseInt(hours, 10) + 12);
+        }
+        return `${hours}:${minutes}`;
+      }
+      return cleaned;
+    }
+
     const filters = reactive({
       homeOddsMax: 2.00,
       awayOddsMin: 5.00,
@@ -505,7 +528,8 @@ createApp({
       activeFilter, loadingStep, loadingDetail,
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
-      runScan, toggleMarket, toggleReasoning, getCompetition
+      runScan, toggleMarket, toggleReasoning, getCompetition,
+      formatTime24
     };
   }
 }).mount('#app');
