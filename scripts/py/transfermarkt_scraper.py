@@ -170,7 +170,12 @@ def _distinctive_tokens(name: str) -> set:
 
 def _search_team_url(browser, team_name: str) -> Optional[Dict]:
     """Search Transfermarkt for a team. Returns {"id": int, "url": str, "name": str} or None."""
-    search_url = f"{BASE_URL}/schnellsuche/ergebnis/schnellsuche?query={team_name.replace(' ', '+')}"
+    # If the name marks a women's side, keep the marker in the query so
+    # Transfermarkt returns the women's team rather than the men's default.
+    query = team_name.replace(' ', '+')
+    if _detect_gender(team_name) == "w":
+        query = query + "+women"
+    search_url = f"{BASE_URL}/schnellsuche/ergebnis/schnellsuche?query={query}"
     log.info(f"  Searching for: {team_name}")
 
     page = browser.new_page()
@@ -203,6 +208,7 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
         target_raw = team_name.lower().strip()
         target_norm = _normalize_name(team_name)
         target_tokens = _distinctive_tokens(target_norm)
+        target_gender = _detect_gender(team_name)
 
         best_match = None
         best_score = 0.0
@@ -211,6 +217,15 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
             dn_raw = r["name"].lower()
             dn_norm = _normalize_name(r["name"])
             dn_tokens = _distinctive_tokens(dn_norm)
+            dn_gender = _detect_gender(r["name"])
+
+            # Gender guard: never cross-match men's and women's sides
+            if target_gender == "w" and dn_gender != "w":
+                continue
+            if target_gender is None and dn_gender == "w":
+                # Unmarked target is ambiguous; skip explicit women's entries
+                # unless the name also carries the marker, which it doesn't here.
+                continue
 
             # Exact match on raw or normalized form → immediate return
             if target_raw == dn_raw or target_norm == dn_norm:
@@ -261,18 +276,22 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
             log.info(f"  Close match: {best_match['name']} (id={best_match['id']}, score={best_score:.2f})")
             return best_match
 
-        # Fuzzy string matching fallback
-        result_names = [r["name"].lower() for r in results]
-        fuzzy = difflib.get_close_matches(target_raw, result_names, n=1, cutoff=0.5)
+        # Fuzzy string matching fallback — still respect the gender guard
+        eligible = [r for r in results if _detect_gender(r["name"]) != "w" or target_gender == "w"]
+        if not eligible:
+            log.warning(f"  All {len(results)} results excluded by gender guard for '{team_name}'")
+            return None
+        fuzzy_pool = [r["name"].lower() for r in eligible]
+        fuzzy = difflib.get_close_matches(target_raw, fuzzy_pool, n=1, cutoff=0.5)
         if fuzzy:
-            for r in results:
+            for r in eligible:
                 if r["name"].lower() == fuzzy[0]:
                     log.info(f"  Fuzzy match: {r['name']} (id={r['id']})")
                     return r
 
-        # Last resort: first result
-        log.warning(f"  No confident match for '{team_name}' (best={best_score:.2f}), using first: {results[0]['name']}")
-        return results[0]
+        # Last resort: first eligible result
+        log.warning(f"  No confident match for '{team_name}' (best={best_score:.2f}), using first eligible: {eligible[0]['name']}")
+        return eligible[0]
 
     except Exception as e:
         log.warning(f"  Search failed for {team_name}: {e}")
