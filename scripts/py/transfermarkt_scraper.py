@@ -104,6 +104,70 @@ def _save_queue(queue: List[Dict]) -> None:
 
 # ── Team search ────────────────────────────────────────────────────────────────
 
+def _normalize_name(name: str) -> str:
+    """Normalize team name for matching: strip prefixes/suffixes/filler words."""
+    name = name.lower().strip()
+    name = re.sub(r'[.,\'"&/]', '', name)
+    # Remove common club prefixes (longest first so "club atletico" beats "atletico")
+    prefixes = [
+        "club social y deportivo ", "club atletico ", "club deportivo ",
+        "clube atletico ", "foot ball club ", "foot-ball club ", "football club ",
+        "sporting club ", "sport club ", "sociedad deportiva ", "sociedad ",
+        "atletico ", "deportivo ", "club social ", "club ", "sporting ", "sport ",
+        "asociacion ", "associacao ", "associacao esportiva ", "esporte clube ",
+        "futebol clube ", "foot ball club ",
+    ]
+    for prefix in sorted(prefixes, key=len, reverse=True):
+        if name.startswith(prefix):
+            name = name[len(prefix):]
+            break
+    # Remove common suffixes
+    suffixes = [" fc", " cf", " sc", " cd", " ec", " ac", " af", " cs", " ss"]
+    for suffix in sorted(suffixes, key=len, reverse=True):
+        if name.endswith(suffix):
+            name = name[:-len(suffix)]
+            break
+    # Remove filler words that carry no identity: de/del/la/el/los/las/y/the
+    filler = {"de", "del", "la", "el", "los", "las", "y", "the", "van", "von", "da", "do"}
+    tokens = [t for t in name.split() if t not in filler]
+    name = " ".join(tokens)
+    # Remove extra spaces
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def _detect_gender(name: str) -> Optional[str]:
+    """Detect whether a team name refers to a women's side.
+
+    Returns 'w' for women, None when there is no explicit marker
+    (an unmarked name is treated as ambiguous/men's-default).
+    """
+    lower = name.lower()
+    # Word-boundary tokens so 'w' inside other words isn't matched
+    tokens = set(re.findall(r"[a-zà-ÿ]+", lower))
+    if tokens & {"women", "woman", "femenino", "femenina", "femenil",
+                 "damen", "weiblich", "wfc", "ladies"}:
+        return "w"
+    return None
+
+
+def _strip_gender_marker(name: str) -> str:
+    """Remove women's-side markers so the core club identity can be compared."""
+    lower = name.lower().strip()
+    lower = re.sub(r"\b(women|woman|femenino|femenina|femenil|damen|weiblich|wfc|ladies)\b",
+                   "", lower)
+    return re.sub(r"\s+", " ", lower).strip()
+
+
+def _distinctive_tokens(name: str) -> set:
+    """Return the set of distinctive (non-filler) words in a normalized name."""
+    filler = {"de", "del", "la", "el", "los", "las", "y", "the", "van", "von", "da", "do",
+              "atletico", "deportivo", "club", "sporting", "sport", "united", "city",
+              "women", "woman", "femenino", "femenina", "femenil", "damen", "weiblich",
+              "wfc", "ladies"}
+    return {t for t in name.split() if t not in filler}
+
+
 def _search_team_url(browser, team_name: str) -> Optional[Dict]:
     """Search Transfermarkt for a team. Returns {"id": int, "url": str, "name": str} or None."""
     search_url = f"{BASE_URL}/schnellsuche/ergebnis/schnellsuche?query={team_name.replace(' ', '+')}"
@@ -135,80 +199,79 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
             log.warning(f"  No results found for {team_name}")
             return None
 
-        # Match by name similarity
-        target = team_name.lower().strip()
-        best_match = None
-        best_score = 0
+        # ── Name similarity scoring ─────────────────────────────────────────────
+        target_raw = team_name.lower().strip()
+        target_norm = _normalize_name(team_name)
+        target_tokens = _distinctive_tokens(target_norm)
 
-        # Common abbreviations
-        ABBREVIATIONS = {
-            "man city": "manchester city",
-            "man utd": "manchester united",
-            "man united": "manchester united",
-            "spurs": "tottenham",
-            "barca": "barcelona",
-            "real": "real madrid",
-            "bayern": "bayern munich",
-            "inter": "inter milan",
-            "juve": "juventus",
-            "ac milan": "milan",
-            "psg": "paris saint-germain",
-            "arsenal": "arsenal",
-            "liverpool": "liverpool",
-            "chelsea": "chelsea",
-            "tottenham": "tottenham",
-            "newcastle": "newcastle",
-            "wichita": "wolverhampton",
-            " wolves": "wolverhampton",
-            "newc": "newcastle",
-        }
-        expanded = ABBREVIATIONS.get(target, target)
+        best_match = None
+        best_score = 0.0
 
         for r in results:
-            dn_lower = r["name"].lower()
-            # Exact match
-            if expanded == dn_lower or target == dn_lower:
+            dn_raw = r["name"].lower()
+            dn_norm = _normalize_name(r["name"])
+            dn_tokens = _distinctive_tokens(dn_norm)
+
+            # Exact match on raw or normalized form → immediate return
+            if target_raw == dn_raw or target_norm == dn_norm:
                 return r
-            # Score based on word overlap
-            expanded_words = set(expanded.split())
-            name_words = set(dn_lower.split())
-            score = len(expanded_words & name_words)
-            # Bonus for matching start of name
-            if dn_lower.startswith(expanded.split()[0]):
-                score += 2
-            # Bonus for full name containment
-            if expanded == dn_lower:
-                score += 5
-            # Bonus for target being a substring of the display name
-            if target in dn_lower:
-                score += 3
+
+            # Token overlap ratio (Jaccard-like, weighted by distinctiveness)
+            if target_tokens and dn_tokens:
+                inter = len(target_tokens & dn_tokens)
+                union = len(target_tokens | dn_tokens)
+                token_ratio = inter / union if union else 0
+            else:
+                token_ratio = 0
+
+            # Substring containment bonus
+            contains = 0.0
+            if target_norm in dn_norm or dn_norm in target_norm:
+                contains = 0.5
+            elif target_raw in dn_raw or dn_raw in target_raw:
+                contains = 0.3
+
+            # Prefix bonus (first distinctive word matches)
+            prefix_bonus = 0.0
+            t_first = target_norm.split()[0] if target_norm.split() else ""
+            d_first = dn_norm.split()[0] if dn_norm.split() else ""
+            if t_first and d_first and (t_first == d_first or t_first.startswith(d_first) or d_first.startswith(t_first)):
+                prefix_bonus = 0.2
+
+            # Slug similarity (URL slug often encodes the team name)
+            slug_bonus = 0.0
+            slug_tokens = set(re.split(r'[-_]', r["slug"].lower()))
+            slug_overlap = len(target_tokens & slug_tokens)
+            if slug_overlap:
+                slug_bonus = min(0.3, slug_overlap * 0.15)
+
+            # Combined score
+            score = token_ratio + contains + prefix_bonus + slug_bonus
+
             if score > best_score:
                 best_score = score
                 best_match = r
 
-        if best_match and best_score >= 2:
-            log.info(f"  Found: {best_match['name']} (id={best_match['id']})")
+        # Decision thresholds
+        if best_match and best_score >= 0.6:
+            log.info(f"  Found: {best_match['name']} (id={best_match['id']}, score={best_score:.2f})")
             return best_match
 
-        # Close match fallback: use best result even with lower score
-        if best_match and best_score >= 1:
-            log.info(f"  Found: {best_match['name']} (id={best_match['id']}, score={best_score})")
+        if best_match and best_score >= 0.3:
+            log.info(f"  Close match: {best_match['name']} (id={best_match['id']}, score={best_score:.2f})")
             return best_match
 
-        # Fuzzy string matching fallback: use difflib to find close matches
-        target = team_name.lower().strip()
+        # Fuzzy string matching fallback
         result_names = [r["name"].lower() for r in results]
-        matches = difflib.get_close_matches(target, result_names, n=1, cutoff=0.5)
-        if matches:
-            matched_name = matches[0]
-            # Find the result with this name
+        fuzzy = difflib.get_close_matches(target_raw, result_names, n=1, cutoff=0.5)
+        if fuzzy:
             for r in results:
-                if r["name"].lower() == matched_name:
+                if r["name"].lower() == fuzzy[0]:
                     log.info(f"  Fuzzy match: {r['name']} (id={r['id']})")
                     return r
 
-        # Fallback: first result
-        log.warning(f"  No good match for '{team_name}', using first result: {results[0]['name']}")
+        # Last resort: first result
+        log.warning(f"  No confident match for '{team_name}' (best={best_score:.2f}), using first: {results[0]['name']}")
         return results[0]
 
     except Exception as e:
