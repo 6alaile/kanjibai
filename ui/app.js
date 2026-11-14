@@ -278,7 +278,34 @@ function compositeConfidence(side, ht, at, h2h, pos, lowConfidence) {
 function scoreMatch(match, cfg) {
   const odds = match.odds;
   const [passes, side] = passesOddsFilter(odds, cfg);
-  if (!passes) return null;
+  if (!passes) return {
+    id: match.id,
+    time: match.time,
+    league: match.league,
+    home: match.home,
+    away: match.away,
+    homePos: null,
+    awayPos: null,
+    h2hSummary: 'No H2H data',
+    odds: { home: odds.home, draw: odds.draw, away: odds.away },
+    confidence: 0,
+    lowConfidence: true,
+    lowConfTeam: '',
+    recommendation: '',
+    reason: 'Odds do not meet filter criteria (home odds > ' + cfg.homeOddsMax + ' or away odds < ' + cfg.awayOddsMin + ')',
+    bets: [],
+    homeStats: {
+      name: match.home,
+      form: [],
+      notes: ['Odds below filtering threshold']
+    },
+    awayStats: {
+      name: match.away,
+      form: [],
+      notes: ['Odds below filtering threshold']
+    },
+    signals: []
+  };
 
   const homeStats = match.home_stats || match.homeStats || {};
   const awayStats = match.away_stats || match.awayStats || {};
@@ -334,6 +361,7 @@ function scoreMatch(match, cfg) {
     lowConfidence,
     lowConfTeam,
     recommendation: side,
+    reason: '',
     bets: bets.map(b => ({ label: b.label, type: b.type })),
     homeStats: {
       name: match.home,

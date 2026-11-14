@@ -35,6 +35,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 from urllib.parse import urljoin
+import difflib  # fuzzy string matching for team name correction
 
 from playwright.sync_api import Page, sync_playwright
 
@@ -152,6 +153,14 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
             "juve": "juventus",
             "ac milan": "milan",
             "psg": "paris saint-germain",
+            "arsenal": "arsenal",
+            "liverpool": "liverpool",
+            "chelsea": "chelsea",
+            "tottenham": "tottenham",
+            "newcastle": "newcastle",
+            "wichita": "wolverhampton",
+            " wolves": "wolverhampton",
+            "newc": "newcastle",
         }
         expanded = ABBREVIATIONS.get(target, target)
 
@@ -166,7 +175,13 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
             score = len(expanded_words & name_words)
             # Bonus for matching start of name
             if dn_lower.startswith(expanded.split()[0]):
-                score += 1
+                score += 2
+            # Bonus for full name containment
+            if expanded == dn_lower:
+                score += 5
+            # Bonus for target being a substring of the display name
+            if target in dn_lower:
+                score += 3
             if score > best_score:
                 best_score = score
                 best_match = r
@@ -174,6 +189,23 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
         if best_match and best_score >= 2:
             log.info(f"  Found: {best_match['name']} (id={best_match['id']})")
             return best_match
+
+        # Close match fallback: use best result even with lower score
+        if best_match and best_score >= 1:
+            log.info(f"  Found: {best_match['name']} (id={best_match['id']}, score={best_score})")
+            return best_match
+
+        # Fuzzy string matching fallback: use difflib to find close matches
+        target = team_name.lower().strip()
+        result_names = [r["name"].lower() for r in results]
+        matches = difflib.get_close_matches(target, result_names, n=1, cutoff=0.5)
+        if matches:
+            matched_name = matches[0]
+            # Find the result with this name
+            for r in results:
+                if r["name"].lower() == matched_name:
+                    log.info(f"  Fuzzy match: {r['name']} (id={r['id']})")
+                    return r
 
         # Fallback: first result
         log.warning(f"  No good match for '{team_name}', using first result: {results[0]['name']}")

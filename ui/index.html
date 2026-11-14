@@ -185,6 +185,12 @@
             Low data confidence — fewer than {{ filters.minFormMatches }} form matches available for {{ match.lowConfTeam }}
           </div>
 
+          <!-- NO BET REASON BANNER -->
+          <div class="no-bet-reason" v-if="!match.recommendation">
+            <div class="reason-icon">ℹ</div>
+            <span>{{ match.reason || 'Odds do not meet filtering criteria' }}</span>
+          </div>
+
           <!-- REASONING PANEL -->
           <div class="reasoning-panel" :class="{ open: openCards.includes(match.id) }">
             <div class="reasoning-inner">
