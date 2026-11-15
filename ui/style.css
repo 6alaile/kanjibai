@@ -387,8 +387,8 @@ header {
 /* Header Banner */
 .card-header {
   display: grid;
-  grid-template-columns: 80px 1fr auto;
-  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
   gap: 16px;
   padding: 16px 20px;
   background: var(--surface2);
@@ -399,7 +399,12 @@ header {
 
 .card-header:hover { background: var(--overlay); }
 
-.header-left { text-align: left; }
+.header-left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .header-time {
   font-family: var(--font-mono);
@@ -414,17 +419,23 @@ header {
   color: var(--text2);
   letter-spacing: 0.05em;
   margin-top: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 76px;
 }
 
 .header-matchup {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
   gap: 10px;
   min-width: 0;
+}
+
+.team-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  text-align: center;
 }
 
 .header-matchup .team-name {
@@ -432,9 +443,6 @@ header {
   font-weight: 600;
   color: var(--snow);
   letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .header-matchup .vs-sep {
@@ -442,11 +450,15 @@ header {
   color: var(--text2);
   font-weight: 500;
   text-transform: uppercase;
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
 .header-right {
   text-align: center;
   min-width: 56px;
+  align-self: center;
+  justify-self: end;
 }
 
 .header-right .conf-score {
@@ -457,18 +469,7 @@ header {
   margin-bottom: 2px;
 }
 
-/* Position Context */
-.position-context {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  font-size: 11px;
-  color: var(--text2);
-  flex-wrap: wrap;
-  border-bottom: 1px solid var(--border);
-}
-
+/* Position badge (header, under team name) */
 .pos-badge {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -478,8 +479,6 @@ header {
   padding: 3px 8px;
   border-radius: var(--radius-sm);
 }
-
-.pos-sep { color: var(--text2); }
 
 /* H2H Score History */
 .h2h-scores {
@@ -707,9 +706,9 @@ header {
 .form-opponent {
   color: var(--text2);
   flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
 }
 
 .form-score {
@@ -814,6 +813,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 100%;
 }
 
 .h2h-row {
@@ -1117,8 +1117,9 @@ header {
 @media (max-width: 768px) {
   .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .controls-body { grid-template-columns: 1fr; }
-  .card-header { grid-template-columns: 64px 1fr auto; gap: 10px; }
+  .card-header { grid-template-columns: 84px 1fr auto; gap: 10px; }
   .header-matchup { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }
   .card-body.open { max-height: 2000px; }
 }

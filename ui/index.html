@@ -160,9 +160,15 @@
               <div class="header-league">{{ getCompetition(match.league) }}</div>
             </div>
             <div class="header-matchup">
-              <span class="team-name">{{ match.home }}</span>
+              <div class="team-block">
+                <span class="team-name">{{ match.home }}</span>
+                <span class="pos-badge" v-if="match.homePos">#{{ match.homePos }}{{ match.totalTeams ? '/' + match.totalTeams : '' }}</span>
+              </div>
               <span class="vs-sep">vs</span>
-              <span class="team-name">{{ match.away }}</span>
+              <div class="team-block">
+                <span class="team-name">{{ match.away }}</span>
+                <span class="pos-badge" v-if="match.awayPos">#{{ match.awayPos }}</span>
+              </div>
             </div>
             <div class="header-right">
               <div class="conf-score"
@@ -187,13 +193,6 @@
 
           <!-- COLLAPSIBLE BODY -->
           <div class="card-body" :class="{ open: openCards.includes(match.id) }">
-
-            <!-- POSITION CONTEXT -->
-            <div class="position-context" v-if="match.homePos">
-              <span class="pos-badge">#{{ match.homePos }}{{ match.totalTeams ? '/' + match.totalTeams : '' }}</span>
-              <span class="pos-sep">vs</span>
-              <span class="pos-badge">#{{ match.awayPos }}</span>
-            </div>
 
             <!-- QUALIFIED PICKS -->
             <div class="picks-section">
@@ -237,7 +236,7 @@
                       <div v-for="(r, idx) in team.form" :key="idx" class="form-row">
                         <span class="form-dot" :class="r">{{ r }}</span>
                         <span class="form-venue">{{ team.recent_results && team.recent_results[idx] ? (team.recent_results[idx].home_away === 'H' ? 'H' : '@') : '' }}</span>
-                        <span class="form-opponent">{{ (team.recent_results && team.recent_results[idx] && team.recent_results[idx].opponent) ? (team.recent_results[idx].opponent.length > 10 ? team.recent_results[idx].opponent.slice(0,8) + '..' : team.recent_results[idx].opponent) : '' }}</span>
+                        <span class="form-opponent">{{ team.recent_results?.[idx]?.opponent || '' }}</span>
                         <span class="form-score">{{ (team.goals_scored && team.goals_scored[idx] !== undefined && team.goals_conceded && team.goals_conceded[idx] !== undefined) ? (team.goals_scored[idx] + ':' + team.goals_conceded[idx]) : '' }}</span>
                       </div>
                     </div>
@@ -261,7 +260,7 @@
                       <div v-for="(r, idx) in team.form" :key="idx" class="form-row">
                         <span class="form-dot" :class="r">{{ r }}</span>
                         <span class="form-venue">{{ team.recent_results && team.recent_results[idx] ? (team.recent_results[idx].home_away === 'H' ? 'H' : '@') : '' }}</span>
-                        <span class="form-opponent">{{ (team.recent_results && team.recent_results[idx] && team.recent_results[idx].opponent) ? (team.recent_results[idx].opponent.length > 10 ? team.recent_results[idx].opponent.slice(0,8) + '..' : team.recent_results[idx].opponent) : '' }}</span>
+                        <span class="form-opponent">{{ team.recent_results?.[idx]?.opponent || '' }}</span>
                         <span class="form-score">{{ (team.goals_scored && team.goals_scored[idx] !== undefined && team.goals_conceded && team.goals_conceded[idx] !== undefined) ? (team.goals_scored[idx] + ':' + team.goals_conceded[idx]) : '' }}</span>
                       </div>
                     </div>
