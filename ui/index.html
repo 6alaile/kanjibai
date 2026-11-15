@@ -151,7 +151,7 @@
           <div class="card-main" @click="toggleReasoning(match.id)">
 
             <div class="match-time">
-              <div class="time-val">{{ match.time }}</div>
+              <div class="time-val">{{ formatTime24(match.time) }}</div>
               <div class="time-league">{{ getCompetition(match.league) }}</div>
             </div>
 
@@ -183,6 +183,12 @@
           <!-- LOW CONF BANNER -->
           <div class="low-conf-banner" v-if="match.lowConfidence">
             Low data confidence — fewer than {{ filters.minFormMatches }} form matches available for {{ match.lowConfTeam }}
+          </div>
+
+          <!-- NO BET REASON BANNER -->
+          <div class="no-bet-reason" v-if="!match.recommendation">
+            <div class="reason-icon">ℹ</div>
+            <span>{{ match.reason || 'Odds do not meet filtering criteria' }}</span>
           </div>
 
           <!-- REASONING PANEL -->
