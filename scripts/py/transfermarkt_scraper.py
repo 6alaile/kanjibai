@@ -70,6 +70,14 @@ def _cache_key(name: str) -> str:
     return name.lower().replace(" ", "_").replace(".", "").replace("'", "").replace("&", "").replace("-", "_")
 
 
+def _slugify(name: str) -> str:
+    """Convert a team name to a Transfermarkt-style URL slug (hyphenated)."""
+    slug = name.lower().strip()
+    slug = re.sub(r"[.,'\"&]", "", slug)
+    slug = re.sub(r"[^a-z0-9À-ÿ]+", "-", slug).strip("-")
+    return slug
+
+
 def _safe_text(el) -> str:
     try:
         return el.inner_text().strip() if el else ""
@@ -302,44 +310,46 @@ def _search_team_url(browser, team_name: str) -> Optional[Dict]:
 
 # ── Spielplandatum parsing (fixtures / form) ──────────────────────────────────
 
-def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[Dict]:
-    """Fetch spielplandatum page and extract fixtures using Playwright selectors.
-    Returns {"league_id": str, "league_name": str, "fixtures": [...]} or None.
+def _fixture_url(team_slug: str, team_id: int, season: str) -> str:
+    """Build a Transfermarkt fixture URL in the canonical /plus/0 form.
+
+    The bare ?saison_id= variant returns an unfiltered shell for many clubs;
+    the /plus/0 path with explicit filter params is what actually renders
+    the matchday table.
     """
-    season = _current_season_id()
-    url = f"{BASE_URL}/{team_slug}/spielplandatum/verein/{team_id}?saison_id={season}"
-    log.info(f"  Fetching: {url}")
+    return (
+        f"{BASE_URL}/{team_slug}/spielplandatum/verein/{team_id}/plus/0"
+        f"?saison_id={season}&wettbewerb_id=&day=&heim_gast=&punkte="
+        f"&datum_von=&datum_bis="
+    )
 
-    try:
-        page.goto(url, wait_until="networkidle", timeout=60000)
-        page.wait_for_load_state("networkidle", timeout=30000)
-        time.sleep(RENDER_WAIT)
-    except Exception as e:
-        log.warning(f"  Failed to load spielplandatum: {e}")
-        return None
 
-    # Check for Cloudflare
-    html = page.content()
-    if "challenge" in html.lower() or "cloudflare" in html.lower():
-        log.warning("  Cloudflare challenge detected, waiting...")
-        time.sleep(20)
+def _candidate_seasons() -> List[str]:
+    """Seasons to try, newest first.
 
-    # Extract league ID from page analytics or competition links
+    Many leagues publish their table/fixtures under the previous season id,
+    and some lower-tier competitions lag by two or more years. Trying a
+    small window keeps working without hammering the site.
+    """
+    current = int(_current_season_id())
+    return [str(current - offset) for offset in range(0, 3)]
+
+
+def _extract_league_from_page(page: Page) -> tuple:
+    """Extract (league_id, league_name) from a loaded fixture page."""
+    content = page.content()
     league_id = None
     league_name = None
-    content = page.content()
 
     # Try eVar8 analytics — various formats
     league_match = re.search(r"eVar8:\s*'([^']+?)\s*\(([A-Z0-9]+)\)'", content)
     if not league_match:
-        # Alternate: "eVar8='Name (ID)'" or double quotes
         league_match = re.search(r"eVar8[=:]\s*[\"']([^\"']+?)\s*\(([A-Z0-9]+)\)[\"']", content)
     if league_match:
         league_name = league_match.group(1).strip()
         league_id = league_match.group(2)
 
     if not league_id:
-        # Fallback: find from competition links
         comp_links = page.query_selector_all('a[href*="/wettbewerb/"]')
         for link in comp_links:
             href = link.get_attribute("href") or ""
@@ -348,23 +358,23 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
                 candidate = m.group(1)
                 if candidate not in {"CL", "EL", "EC", "WC", "UC", "CWC"}:
                     league_id = candidate
-                    # Try link text, title, aria-label
-                    league_name = _safe_text(link) or link.get_attribute("title") or link.get_attribute("aria-label") or candidate
+                    league_name = (_safe_text(link) or link.get_attribute("title")
+                                   or link.get_attribute("aria-label") or candidate)
                     break
 
-    # Last resort: look for league name in page title or heading
     if not league_name or league_name == league_id:
         title_el = page.query_selector("h1")
         if title_el:
             title_text = _safe_text(title_el)
-            # Extract name and ID from "Premier League Table" or "Premier League (GB1)"
-            tn_match = re.search(r"(.+?)\s*(?:Table|Tabelle|Fixture|Schedule|table|fixture|schedule|\(([A-Z0-9]+)\))", title_text)
+            tn_match = re.search(
+                r"(.+?)\s*(?:Table|Tabelle|Fixture|Schedule|table|fixture|schedule|\(([A-Z0-9]+)\))",
+                title_text,
+            )
             if tn_match:
                 league_name = tn_match.group(1).strip()
                 if not league_id:
                     league_id = tn_match.group(2) or league_id
 
-    # Fallback: known league name map
     if not league_name or league_name == league_id:
         LEAGUE_NAMES = {
             "GB1": "Premier League", "ES1": "LaLiga", "L1": "Bundesliga",
@@ -376,7 +386,11 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
         if league_id in LEAGUE_NAMES:
             league_name = LEAGUE_NAMES[league_id]
 
-    # Find the Matchday table using Playwright
+    return league_id, league_name
+
+
+def _extract_fixtures_from_page(page: Page, league_id, league_name) -> List[Dict]:
+    """Parse fixture rows out of the currently loaded page."""
     fixtures = []
     tables = page.query_selector_all("table")
     for table in tables:
@@ -404,13 +418,11 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
             opponent_raw = cell_texts[6]
             score_raw = cell_texts[9]
 
-            # Skip header-like rows or empty rows
             if not matchday or matchday in ("Matchday", "Spieltag"):
                 continue
             if not date_str:
                 continue
 
-            # Parse score (format: "3:0", "-:-", "6:5 on pens", "2:1 AET", "6 on pens")
             score = None
             score_match = re.match(r'(\d+)\s*:\s*(\d+)', score_raw)
             if score_match:
@@ -419,16 +431,11 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
                 except ValueError:
                     log.warning(f"    Could not parse score: '{score_raw}'")
                     score = None
-            elif score_raw and score_raw != "-:-":
-                # Handle non-standard formats like "6 on pens", "AET", "pen"
-                log.debug(f"    Non-standard score format (skipped): '{score_raw}'")
 
-            # Parse opponent name (remove ranking in parentheses)
             opponent = re.sub(r'\s*\(\d+\.\)\s*', '', opponent_raw).strip()
             if not opponent:
                 continue
 
-            # Extract opponent link for team ID
             opp_link = cells[6].query_selector('a[href*="/startseite/verein/"]')
             opp_id = None
             if opp_link:
@@ -437,7 +444,6 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
                 if opp_match:
                     opp_id = int(opp_match.group(1))
 
-            # Extract match report link for H2H
             match_id = None
             report_link = cells[9].query_selector('a[href*="/spielbericht/"]')
             if report_link:
@@ -445,9 +451,6 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
                 id_match = re.search(r'/spielbericht/(\d+)', report_href)
                 if id_match:
                     match_id = id_match.group(1)
-
-            # Parse competition from row context
-            competition = league_name or ""
 
             fixtures.append({
                 "date": date_str,
@@ -457,13 +460,52 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
                 "opponent_id": opp_id,
                 "score": score,
                 "matchday": matchday,
-                "competition": competition,
+                "competition": league_name or "",
                 "league_id": league_id or "",
                 "match_id": match_id,
                 "ranking": ranking,
             })
 
         break  # Only process the first Matchday table
+
+    return fixtures
+
+
+def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[Dict]:
+    """Fetch spielplandatum page and extract fixtures using Playwright selectors.
+    Returns {"league_id": str, "league_name": str, "fixtures": [...]} or None.
+
+    Tries the current season first, then walks backwards up to two seasons
+    so leagues whose data lags still resolve.
+    """
+    for season in _candidate_seasons():
+        url = _fixture_url(team_slug, team_id, season)
+        log.info(f"  Fetching: {url}")
+
+        try:
+            page.goto(url, wait_until="networkidle", timeout=60000)
+            page.wait_for_load_state("networkidle", timeout=30000)
+            time.sleep(RENDER_WAIT)
+        except Exception as e:
+            log.warning(f"  Failed to load spielplandatum ({season}): {e}")
+            continue
+
+        # Check for Cloudflare
+        html = page.content()
+        if "challenge" in html.lower() or "cloudflare" in html.lower():
+            log.warning("  Cloudflare challenge detected, waiting...")
+            time.sleep(20)
+
+        league_id, league_name = _extract_league_from_page(page)
+        fixtures = _extract_fixtures_from_page(page, league_id, league_name)
+
+        if fixtures:
+            break  # Got data for this season, stop trying older ones
+        log.info(f"  No fixtures for season {season}, trying previous...")
+
+    if not fixtures:
+        log.warning(f"  No fixtures found for {team_slug} across seasons {_candidate_seasons()}")
+        return None
 
     # Sort by date descending (most recent first), take last 5 finished
     def parse_date(d):
@@ -922,6 +964,7 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                     if result:
                         item["url"] = result["url"]
                         item["name"] = result["name"]
+                        item["slug"] = result.get("slug") or _slugify(result["name"])
                         team_name = result["name"]
                         item["team_id"] = result["id"]
                         _save_queue(queue)
@@ -945,9 +988,14 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                     _save_queue(queue)
                     continue
 
-                # Extract slug from URL
-                slug_match = re.search(r'transfermarkt\.com/([^/]+)/', team_url)
-                team_slug = slug_match.group(1) if slug_match else _cache_key(team_name)
+                # Slug: prefer the one resolved during search, then URL, then name-derived
+                if item.get("slug"):
+                    team_slug = item["slug"]
+                else:
+                    slug_match = re.search(r'transfermarkt\.com/([^/]+)/', team_url)
+                    team_slug = slug_match.group(1) if slug_match else _slugify(team_name)
+                    item["slug"] = team_slug
+                    _save_queue(queue)
 
                 # Create page for this team
                 context = browser.new_context(
