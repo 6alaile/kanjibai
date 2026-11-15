@@ -1,787 +1,455 @@
 {
   "meta": {
     "date": "2026-11-15",
-    "generatedAt": "2026-11-15T00:25:08.894518+03:00",
+    "generatedAt": "2026-11-15T06:52:06.977114+03:00",
     "scanned": 20,
-    "elapsedSeconds": 484.0
+    "elapsedSeconds": 449.3
   },
   "matches": [
     {
-      "id": "coquimbounidocdohiggins",
-      "league": "Football / Chile / Copa de la Liga",
-      "home": "Coquimbo Unido",
-      "away": "CD O\u00b4Higgins",
-      "time": "12:30",
+      "id": "sutherlandsharkscanberracroati",
+      "league": "Football / Australia / Australian Championship",
+      "home": "Sutherland Sharks",
+      "away": "Canberra Croatia FC",
+      "time": "07:00",
       "odds": {
-        "home": 2.07,
-        "draw": 3.28,
-        "away": 3.42
+        "home": 1.5,
+        "draw": 4.44,
+        "away": 4.99
       },
       "home_stats": {
-        "name": "Coquimbo Unido",
+        "name": "Sutherland Sharks",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 287,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Canberra Croatia FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 287,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 287
+    },
+    {
+      "id": "broadmeadowmagicfcavondalefc",
+      "league": "Football / Australia / Australian Championship",
+      "home": "Broadmeadow Magic FC",
+      "away": "Avondale FC",
+      "time": "07:00",
+      "odds": {
+        "home": 4.11,
+        "draw": 4.23,
+        "away": 1.63
+      },
+      "home_stats": {
+        "name": "Broadmeadow Magic FC",
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "league_position": null,
+        "total_teams_in_league": 313,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "Avondale FC",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          4,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          5,
+          0,
+          0,
+          1
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 313,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 313
+    },
+    {
+      "id": "kagoshimaunitedgainaretottori",
+      "league": "Football / Japan / J3 League",
+      "home": "Kagoshima United",
+      "away": "Gainare Tottori",
+      "time": "07:00",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.78,
+        "away": 4.42
+      },
+      "home_stats": {
+        "name": "Kagoshima United",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 61,
+        "opposition_position": 17
+      },
+      "away_stats": {
+        "name": "Gainare Tottori",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          3,
+          2,
+          0
+        ],
+        "goals_conceded": [
+          3,
+          3,
+          1,
+          0,
+          1
+        ],
+        "league_position": 17,
+        "total_teams_in_league": 61,
+        "opposition_position": 17
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "tiamohirakatahondafc",
+      "league": "Football / Japan / Japan Football League",
+      "home": "Tiamo Hirakata",
+      "away": "Honda FC",
+      "time": "07:00",
+      "odds": {
+        "home": 3.45,
+        "draw": 3.55,
+        "away": 1.88
+      },
+      "home_stats": {
+        "name": "Tiamo Hirakata",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          6,
+          0,
+          1
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 16,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Honda FC",
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 16,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "rbomiyaardijawomenmynavisendai",
+      "league": "Football / Japan / WE League, Women",
+      "home": "RB Omiya Ardija Women",
+      "away": "Mynavi Sendai Ladies Women",
+      "time": "07:00",
+      "odds": {
+        "home": 2.55,
+        "draw": 3.17,
+        "away": 2.69
+      },
+      "home_stats": {
+        "name": "RB Omiya Ardija Women",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          4,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          2,
+          1,
+          1
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "Mynavi Sendai Ladies Women",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          3,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          4,
+          1,
+          2,
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "ysccyokohamaverspahoita",
+      "league": "Football / Japan / Japan Football League",
+      "home": "YSCC Yokohama",
+      "away": "Verspah Oita",
+      "time": "07:00",
+      "odds": {
+        "home": 3.6,
+        "draw": 3.5,
+        "away": 1.88
+      },
+      "home_stats": {
+        "name": "YSCC Yokohama",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": 6,
-        "total_teams_in_league": 16,
-        "opposition_position": null
+        "total_teams_in_league": 20,
+        "opposition_position": 4
       },
       "away_stats": {
-        "name": "CD O\u00b4Higgins",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "zacatepecfcmontanesesfc",
-      "league": "Football / Mexico / Liga Primera Premier",
-      "home": "Zacatepec FC",
-      "away": "Montaneses FC",
-      "time": "12:30",
-      "odds": {
-        "home": 1.92,
-        "draw": 3.52,
-        "away": 3.27
-      },
-      "home_stats": {
-        "name": "Zacatepec FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 171,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Montaneses FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 171,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "mirassolfcspatleticomineiromg",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "Mirassol FC SP",
-      "away": "Atletico Mineiro MG",
-      "time": "12:30",
-      "odds": {
-        "home": 2.13,
-        "draw": 3.46,
-        "away": 3.25
-      },
-      "home_stats": {
-        "name": "Mirassol FC SP",
+        "name": "Verspah Oita",
         "form": [
           "D",
           "L",
-          "L",
-          "D",
-          "D",
-          "L",
-          "W",
           "D",
           "W",
-          "D",
-          "L",
-          "W",
-          "D",
-          "L",
-          "W"
+          "D"
         ],
         "goals_scored": [
           1,
-          1,
-          4,
-          1,
-          1,
           0,
-          2,
-          2,
-          2,
-          1,
           0,
-          2,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          5,
-          5,
-          1,
-          1,
-          2,
-          1,
-          2,
-          0,
-          1,
-          1,
-          0,
-          1,
-          2,
+          3,
           1
         ],
-        "league_position": 14,
-        "total_teams_in_league": 20,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Atletico Mineiro MG",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "D",
-          "W",
-          "L",
-          "W",
-          "D",
-          "W",
-          "D",
-          "W",
-          "W",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          3,
-          0,
-          2,
-          0,
-          3,
-          1,
-          1,
-          2,
-          2,
-          1,
-          2,
-          0,
-          0
-        ],
         "goals_conceded": [
           1,
-          2,
-          0,
-          0,
-          1,
-          2,
-          1,
           1,
           0,
-          2,
-          1,
-          0,
-          3,
           1,
           1
         ],
-        "league_position": 7,
+        "league_position": 4,
         "total_teams_in_league": 20,
-        "opposition_position": 7
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "haitiusan",
-      "league": "Football / International / CONCACAF Nations League",
-      "home": "Haiti",
-      "away": "USA (n)",
-      "time": "12:30",
-      "odds": {
-        "home": 10.95,
-        "draw": 7.0,
-        "away": 1.13
-      },
-      "home_stats": {
-        "name": "Haiti",
-        "form": [
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          3
-        ],
-        "goals_conceded": [
-          0,
-          2
-        ],
-        "league_position": null,
-        "total_teams_in_league": 2,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "USA (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 2,
-        "opposition_position": null
+        "opposition_position": 4
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "tritonesvallartamfctapachulaso",
-      "league": "Football / Mexico / Liga Primera Premier",
-      "home": "Tritones Vallarta MFC",
-      "away": "Tapachula Soconusco FC",
-      "time": "01:00",
+      "id": "vanraurehachinohefciwakifc",
+      "league": "Football / Japan / J.League 2",
+      "home": "Vanraure Hachinohe FC",
+      "away": "Iwaki FC",
+      "time": "07:00",
       "odds": {
-        "home": 1.98,
-        "draw": 3.32,
-        "away": 3.27
+        "home": 3.47,
+        "draw": 3.35,
+        "away": 2.07
       },
       "home_stats": {
-        "name": "Tritones Vallarta MFC",
+        "name": "Vanraure Hachinohe FC",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": null
+        "opposition_position": 9
       },
       "away_stats": {
-        "name": "Tapachula Soconusco FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "cabanfieldbocajuniors",
-      "league": "Football / Argentina / Copa Argentina",
-      "home": "CA Banfield",
-      "away": "Boca Juniors",
-      "time": "01:00",
-      "odds": {
-        "home": 7.21,
-        "draw": 4.31,
-        "away": 1.42
-      },
-      "home_stats": {
-        "name": "CA Banfield",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 15,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Boca Juniors",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 15,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "deportivomadryncdmaipu",
-      "league": "Football / Argentina / Primera Nacional",
-      "home": "Deportivo Madryn",
-      "away": "CD Maipu",
-      "time": "01:00",
-      "odds": {
-        "home": 1.81,
-        "draw": 3.37,
-        "away": 4.76
-      },
-      "home_stats": {
-        "name": "Deportivo Madryn",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 310,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "CD Maipu",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 310,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "realpilarfccatalleresderemedio",
-      "league": "Football / Argentina / Primera B",
-      "home": "Real Pilar FC",
-      "away": "CA Talleres de Remedios (n)",
-      "time": "01:00",
-      "odds": {
-        "home": 2.78,
-        "draw": 2.98,
-        "away": 2.69
-      },
-      "home_stats": {
-        "name": "Real Pilar FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 309,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "CA Talleres de Remedios (n)",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 309,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "gorilasdejuanacatlaninternacio",
-      "league": "Football / Mexico / Liga Premier Serie B",
-      "home": "Gorilas de Juanacatlan",
-      "away": "Internacional Laguna",
-      "time": "01:00",
-      "odds": {
-        "home": 1.15,
-        "draw": 6.15,
-        "away": 12.89
-      },
-      "home_stats": {
-        "name": "Gorilas de Juanacatlan",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 312,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "Internacional Laguna",
+        "name": "Iwaki FC",
         "form": [
           "D",
           "L",
           "L",
-          "L",
+          "D",
           "W"
         ],
         "goals_scored": [
-          0,
-          0,
-          2,
-          2,
-          3
-        ],
-        "goals_conceded": [
+          1,
           0,
           1,
-          3,
-          3,
-          2
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 312,
-        "opposition_position": 16
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "charlestonbatterylouisvillecit",
-      "league": "Football / USA / USL Championship",
-      "home": "Charleston Battery",
-      "away": "Louisville City FC",
-      "time": "02:00",
-      "odds": {
-        "home": 2.21,
-        "draw": 3.49,
-        "away": 3.02
-      },
-      "home_stats": {
-        "name": "Charleston Battery",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Louisville City FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "queretarofccfmonterrey",
-      "league": "Football / Mexico / Liga MX, Apertura",
-      "home": "Queretaro FC",
-      "away": "CF Monterrey",
-      "time": "02:00",
-      "odds": {
-        "home": 3.59,
-        "draw": 3.6,
-        "away": 1.96
-      },
-      "home_stats": {
-        "name": "Queretaro FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "CF Monterrey",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "clubnacionaldefootballalbionfc",
-      "league": "Football / Uruguay / Primera Division",
-      "home": "Club Nacional de Football",
-      "away": "Albion FC",
-      "time": "02:00",
-      "odds": {
-        "home": 1.46,
-        "draw": 4.42,
-        "away": 6.06
-      },
-      "home_stats": {
-        "name": "Club Nacional de Football",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 47,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "Albion FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 16,
-        "total_teams_in_league": 47,
-        "opposition_position": 16
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 47
-    },
-    {
-      "id": "cftigresuanlwomenpumasunamwome",
-      "league": "Football / Mexico / Liga MX, Women, Apertura",
-      "home": "CF Tigres UANL Women",
-      "away": "Pumas Unam Women",
-      "time": "02:00",
-      "odds": {
-        "home": 1.41,
-        "draw": 4.83,
-        "away": 5.56
-      },
-      "home_stats": {
-        "name": "CF Tigres UANL Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 15,
-        "total_teams_in_league": 18,
-        "opposition_position": 12
-      },
-      "away_stats": {
-        "name": "Pumas Unam Women",
-        "form": [
-          "W",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          0,
-          0,
+          1,
           5
         ],
         "goals_conceded": [
           1,
-          3,
-          0,
+          1,
           2,
-          1
+          1,
+          0
         ],
-        "league_position": 12,
-        "total_teams_in_league": 18,
-        "opposition_position": 12
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "wellingtonphoenixwomensouthern",
-      "league": "Football / New Zealand / National League, Women",
-      "home": "Wellington Phoenix Women",
-      "away": "Southern United Women",
-      "time": "02:00",
-      "odds": {
-        "home": 2.06,
-        "draw": 3.75,
-        "away": 2.85
-      },
-      "home_stats": {
-        "name": "Wellington Phoenix Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 88,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Southern United Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 88,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "gimnasiayesgrimadejujuyclubalm",
-      "league": "Football / Argentina / Primera Nacional",
-      "home": "Gimnasia y Esgrima de Jujuy",
-      "away": "Club Almirante Brown",
-      "time": "02:00",
-      "odds": {
-        "home": 1.83,
-        "draw": 3.32,
-        "away": 4.44
-      },
-      "home_stats": {
-        "name": "Gimnasia y Esgrima de Jujuy",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 19,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "Club Almirante Brown",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 6,
-        "total_teams_in_league": 19,
-        "opposition_position": 6
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "comunicacionesfccsdcobanimperi",
-      "league": "Football / Guatemala / Liga Nacional. Apertura",
-      "home": "Comunicaciones FC",
-      "away": "CSD Coban Imperial",
-      "time": "02:00",
-      "odds": {
-        "home": 1.65,
-        "draw": 3.62,
-        "away": 4.56
-      },
-      "home_stats": {
-        "name": "Comunicaciones FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
+        "league_position": 9,
         "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "CSD Coban Imperial",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
+        "opposition_position": 9
       },
       "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "chapecoensesccrvascodagamarj",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "Chapecoense SC",
-      "away": "CR Vasco da Gama RJ",
-      "time": "02:30",
+      "id": "hokkaidoconsadolesapporosagant",
+      "league": "Football / Japan / J.League 2",
+      "home": "Hokkaido Consadole Sapporo",
+      "away": "Sagan Tosu",
+      "time": "07:00",
       "odds": {
-        "home": 7.41,
-        "draw": 5.14,
-        "away": 1.35
+        "home": 3.71,
+        "draw": 3.56,
+        "away": 1.91
       },
       "home_stats": {
-        "name": "Chapecoense SC",
+        "name": "Hokkaido Consadole Sapporo",
         "form": [
-          "L",
-          "D",
-          "L",
-          "D",
+          "W",
           "W",
           "L",
           "W",
-          "L",
-          "D",
-          "L",
-          "L",
-          "L",
-          "W",
-          "L",
-          "L"
+          "W"
         ],
         "goals_scored": [
-          0,
-          2,
-          1,
-          3,
-          1,
-          1,
           2,
           1,
           1,
-          0,
-          1,
-          0,
-          2,
-          0,
+          4,
           1
         ],
         "goals_conceded": [
-          4,
-          2,
-          2,
-          3,
           0,
-          3,
-          1,
+          0,
           2,
-          1,
-          4,
-          4,
-          1,
-          1,
-          3,
-          2
+          0,
+          0
         ],
-        "league_position": 20,
+        "league_position": 7,
         "total_teams_in_league": 20,
         "opposition_position": 13
       },
       "away_stats": {
-        "name": "CR Vasco da Gama RJ",
+        "name": "Sagan Tosu",
         "form": [
           "L",
-          "D",
-          "D",
-          "L",
-          "L",
-          "W",
           "L",
           "W",
           "W",
-          "W",
-          "D",
-          "L",
-          "W",
-          "L",
           "W"
         ],
         "goals_scored": [
           0,
           1,
-          0,
-          0,
-          1,
-          3,
-          0,
           2,
-          5,
           2,
-          0,
-          0,
-          3,
-          1,
-          3
+          2
         ],
         "goals_conceded": [
-          1,
-          1,
-          0,
-          3,
-          4,
-          1,
-          1,
-          1,
-          0,
-          1,
-          0,
-          1,
           2,
-          4,
+          2,
+          1,
+          1,
           1
         ],
         "league_position": 13,
@@ -789,123 +457,643 @@
         "opposition_position": 13
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "cashmeretechnicalwellingtonoly",
-      "league": "Football / New Zealand / National League",
-      "home": "Cashmere Technical",
-      "away": "Wellington Olympic",
-      "time": "02:30",
-      "odds": {
-        "home": 1.91,
-        "draw": 3.96,
-        "away": 3.28
-      },
-      "home_stats": {
-        "name": "Cashmere Technical",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 10,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "Wellington Olympic",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 10,
-        "opposition_position": 1
-      },
-      "h2h": null,
       "source": "betpawa"
     },
     {
-      "id": "napiercityroversafcferrymeadba",
-      "league": "Football / New Zealand / National League",
-      "home": "Napier City Rovers AFC",
-      "away": "Ferrymead Bays",
-      "time": "03:00",
+      "id": "canberraunitedfcwomenbrisbaner",
+      "league": "Football / Australia / A-League, Women",
+      "home": "Canberra United FC Women",
+      "away": "Brisbane Roar FC Women",
+      "time": "07:00",
       "odds": {
-        "home": 1.53,
-        "draw": 4.61,
-        "away": 4.8
+        "home": 1.65,
+        "draw": 4.12,
+        "away": 4.44
       },
       "home_stats": {
-        "name": "Napier City Rovers AFC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 1,
-        "total_teams_in_league": 10,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Ferrymead Bays",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "league_position": 2,
-        "total_teams_in_league": 10,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa"
-    },
-    {
-      "id": "intersantateclacdcacahuatique",
-      "league": "Football / El Salvador / Primera Division, Apertura",
-      "home": "Inter Santa Tecla",
-      "away": "CD. Cacahuatique",
-      "time": "03:00",
-      "odds": {
-        "home": 1.72,
-        "draw": 3.53,
-        "away": 4.43
-      },
-      "home_stats": {
-        "name": "Inter Santa Tecla",
+        "name": "Canberra United FC Women",
         "form": [
+          "W",
           "D",
           "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          3,
+          1,
+          3,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          3,
+          1,
+          3
+        ],
+        "league_position": null,
+        "total_teams_in_league": 6,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Brisbane Roar FC Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 6,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "vegaltasendaiblaublitzakita",
+      "league": "Football / Japan / J.League 2",
+      "home": "Vegalta Sendai",
+      "away": "Blaublitz Akita",
+      "time": "07:05",
+      "odds": {
+        "home": 1.5,
+        "draw": 4.11,
+        "away": 6.0
+      },
+      "home_stats": {
+        "name": "Vegalta Sendai",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          3,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          4,
+          1,
+          2,
+          1
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 12
+      },
+      "away_stats": {
+        "name": "Blaublitz Akita",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          2,
+          0,
+          1
+        ],
+        "league_position": 12,
+        "total_teams_in_league": 20,
+        "opposition_position": 12
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "machidazelviavisselkobe",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Machida Zelvia",
+      "away": "Vissel Kobe",
+      "time": "08:00",
+      "odds": {
+        "home": 2.23,
+        "draw": 3.29,
+        "away": 3.24
+      },
+      "home_stats": {
+        "name": "Machida Zelvia",
+        "form": [
+          "W",
+          "W",
           "W",
           "L",
           "W"
         ],
         "goals_scored": [
           2,
+          2,
+          3,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          4,
+          1
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Vissel Kobe",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "kamatamaresanukirenofayamaguch",
+      "league": "Football / Japan / J3 League",
+      "home": "Kamatamare Sanuki",
+      "away": "Renofa Yamaguchi",
+      "time": "08:00",
+      "odds": {
+        "home": 4.21,
+        "draw": 3.82,
+        "away": 1.78
+      },
+      "home_stats": {
+        "name": "Kamatamare Sanuki",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
           0,
           2,
-          0,
           3
         ],
         "goals_conceded": [
           2,
+          2,
+          1,
+          1,
+          4
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "Renofa Yamaguchi",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
           0,
           0,
+          2,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          1,
           3,
           0
         ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "katallertoyamatokushimavortis",
+      "league": "Football / Japan / J.League 2",
+      "home": "Kataller Toyama",
+      "away": "Tokushima Vortis",
+      "time": "08:00",
+      "odds": {
+        "home": 1.72,
+        "draw": 3.83,
+        "away": 4.32
+      },
+      "home_stats": {
+        "name": "Kataller Toyama",
+        "form": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          4,
+          4
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          3,
+          0,
+          0
+        ],
         "league_position": 4,
-        "total_teams_in_league": 12,
-        "opposition_position": 11
+        "total_teams_in_league": 20,
+        "opposition_position": 16
       },
       "away_stats": {
-        "name": "CD. Cacahuatique",
+        "name": "Tokushima Vortis",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          0,
+          0,
+          2
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opposition_position": 16
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "acnaganoparceiroehimefc",
+      "league": "Football / Japan / J3 League",
+      "home": "AC Nagano Parceiro",
+      "away": "Ehime FC",
+      "time": "08:00",
+      "odds": {
+        "home": 3.09,
+        "draw": 3.58,
+        "away": 2.19
+      },
+      "home_stats": {
+        "name": "AC Nagano Parceiro",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
-        "league_position": 11,
-        "total_teams_in_league": 12,
-        "opposition_position": 11
+        "league_position": null,
+        "total_teams_in_league": 50,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Ehime FC",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          4,
+          4,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 50,
+        "opposition_position": 7
       },
       "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
+      "source": "betpawa"
+    },
+    {
+      "id": "zweigenkanazawaroassokumamoto",
+      "league": "Football / Japan / J3 League",
+      "home": "Zweigen Kanazawa",
+      "away": "Roasso Kumamoto",
+      "time": "08:00",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.39,
+        "away": 2.95
+      },
+      "home_stats": {
+        "name": "Zweigen Kanazawa",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          1,
+          2,
+          2
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 20,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Roasso Kumamoto",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          2,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "fcimabarijubiloiwata",
+      "league": "Football / Japan / J.League 2",
+      "home": "FC Imabari",
+      "away": "Jubilo Iwata",
+      "time": "08:00",
+      "odds": {
+        "home": 3.83,
+        "draw": 3.71,
+        "away": 1.84
+      },
+      "home_stats": {
+        "name": "FC Imabari",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          2,
+          1,
+          3,
+          4
+        ],
+        "league_position": 19,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Jubilo Iwata",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "tochigiscnaraclub",
+      "league": "Football / Japan / J3 League",
+      "home": "Tochigi SC",
+      "away": "Nara Club",
+      "time": "08:00",
+      "odds": {
+        "home": 2.23,
+        "draw": 3.53,
+        "away": 3.04
+      },
+      "home_stats": {
+        "name": "Tochigi SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 14,
+        "total_teams_in_league": 20,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Nara Club",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          4,
+          2,
+          2
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 20,
+        "opposition_position": 2
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "citizenaakuitansc",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Citizen AA",
+      "away": "Kui Tan SC",
+      "time": "08:30",
+      "odds": {
+        "home": 1.8,
+        "draw": 4.0,
+        "away": 3.4
+      },
+      "home_stats": {
+        "name": "Citizen AA",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 113,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "Kui Tan SC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 7,
+        "total_teams_in_league": 113,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "shamshuiposaresourcescapitalfc",
+      "league": "Football / Hong Kong / Division 1",
+      "home": "Sham Shui Po SA",
+      "away": "Resources Capital FC",
+      "time": "08:30",
+      "odds": {
+        "home": 16.0,
+        "draw": 7.0,
+        "away": 1.12
+      },
+      "home_stats": {
+        "name": "Sham Shui Po SA",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 10,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Resources Capital FC",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": null,
+        "total_teams_in_league": 14,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa"
+    },
+    {
+      "id": "kashimaantlersyokohamafmarinos",
+      "league": "Football / Japan / J.League Cup",
+      "home": "Kashima Antlers",
+      "away": "Yokohama F Marinos",
+      "time": "09:00",
+      "odds": {
+        "home": 1.64,
+        "draw": 4.22,
+        "away": 4.71
+      },
+      "home_stats": {
+        "name": "Kashima Antlers",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          2,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          4,
+          1,
+          0,
+          2,
+          1
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "Yokohama F Marinos",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "h2h": null,
+      "source": "betpawa"
     }
   ]
 }
