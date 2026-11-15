@@ -13,6 +13,34 @@ async function loadEnriched() {
   }
 }
 
+// ─── TIME ──────────────────────────────────────────────────────────────────────
+
+// Kick-off times arrive as HH:MM (BetPawa renders EAT). Normalise defensively:
+// 12h values ("7:30 PM"), ISO timestamps and malformed values are handled so
+// the card always shows a 24h clock.
+function parseTime(timeStr) {
+  if (!timeStr) return null;
+  const s = String(timeStr).trim();
+  const m = /(\d{1,2}):(\d{2})/.exec(s);
+  if (!m) return null;
+  let hours = parseInt(m[1], 10);
+  const minutes = parseInt(m[2], 10);
+  if (hours > 23 || minutes > 59) return null;
+  const ampm = /\s?(AM|PM)\b/i.exec(s);
+  if (ampm) {
+    const period = ampm[1].toUpperCase();
+    if (period === 'PM' && hours < 12) hours += 12;
+    if (period === 'AM' && hours === 12) hours = 0;
+  }
+  return { hours, minutes };
+}
+
+// Minutes since midnight — numeric sort key for kick-off order.
+function timeMinutes(timeStr) {
+  const t = parseTime(timeStr);
+  return t ? t.hours * 60 + t.minutes : 24 * 60;
+}
+
 // ─── SCORER ────────────────────────────────────────────────────────────────────
 
 const N = 5;
@@ -451,24 +479,9 @@ createApp({
     // 24h time formatting helper
     function formatTime24(timeStr) {
       if (!timeStr) return '';
-      // Remove any AM/PM suffix and ensure HH:MM format
-      const cleaned = timeStr.replace(/\s?(AM|PM)?$/i, '').trim();
-      const parts = cleaned.split(':');
-      if (parts.length === 2) {
-        let [hours, minutes] = parts;
-        // Ensure 2-digit hours
-        hours = parseInt(hours, 10).toString().padStart(2, '0');
-        minutes = minutes.toString().padStart(2, '0');
-        // Convert 12h to 24h if needed
-        const ampm = timeStr.match(/\s(AM|PM)$/i);
-        if (ampm) {
-          const period = ampm[1].toUpperCase();
-          if (period === 'AM' && hours === '12') hours = '00';
-          if (period === 'PM' && hours !== '12') hours = String(parseInt(hours, 10) + 12);
-        }
-        return `${hours}:${minutes}`;
-      }
-      return cleaned;
+      const t = parseTime(timeStr);
+      if (!t) return String(timeStr).trim();
+      return `${String(t.hours).padStart(2, '0')}:${String(t.minutes).padStart(2, '0')}`;
     }
 
     const filters = reactive({
@@ -528,11 +541,7 @@ createApp({
         : rawMatches.value;
 
       const scored = scoreAll(filtered, filters);
-      return scored.sort((a, b) => {
-        const ta = (a.time || '23:59').replace(/\s?(AM|PM)?$/i, '').trim();
-        const tb = (b.time || '23:59').replace(/\s?(AM|PM)?$/i, '').trim();
-        return ta.localeCompare(tb);
-      });
+      return scored.sort((a, b) => timeMinutes(a.time) - timeMinutes(b.time));
     });
 
     const qualifiedMatches = computed(() => matches.value);
