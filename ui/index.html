@@ -161,7 +161,7 @@
                 <span class="vs-sep">vs</span>
                 <span class="team-name">{{ match.away }}</span>
               </div>
-              <div class="match-meta">{{ match.homePos ? `#${match.homePos} vs #${match.awayPos}` : '' }} · H2H: {{ match.h2hSummary }}</div>
+              <div class="match-meta">{{ match.homePos ? `#${match.homePos}${match.awayPos ? ` vs #${match.awayPos}` : ''}` : '' }} · H2H: {{ match.h2hSummary }}</div>
             </div>
 
             <div class="bets-list">

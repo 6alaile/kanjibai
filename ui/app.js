@@ -435,8 +435,8 @@ createApp({
     }
 
     const filters = reactive({
-      homeOddsMax: 2.00,
-      awayOddsMin: 5.00,
+      homeOddsMax: 10.00,
+      awayOddsMin: 1.20,
       minFormMatches: 5,
       leaguePositionWeight: 0.5,
       oppStrengthWeight: 0.5,
