@@ -100,18 +100,8 @@ def run():
 
     log.info(f"  {len(raw_fixtures)} fixtures fetched")
 
-    # ── Step 2: Run Transfermarkt scraper for teams in today's fixtures ──
-    log.info("Step 2/4: Running Transfermarkt scraper for today's teams...")
-    try:
-        run_daily_scrape(max_teams=20, betpawa_fixtures=raw_fixtures)
-        log.info("  Transfermarkt scrape complete")
-    except Exception as e:
-        log.warning(f"  Transfermarkt scrape failed: {e}")
-        import traceback
-        traceback.print_exc()
-
-    # ── Step 3: Refresh the Flashscore cache for today's teams ──
-    log.info("Step 3/4: Refreshing Flashscore cache for today's teams...")
+    # ── Step 2: Refresh the Flashscore cache for today's teams (primary) ──
+    log.info("Step 2/4: Refreshing Flashscore cache for today's teams...")
     team_names = []
     for fixture in raw_fixtures:
         for name in (fixture.get("home"), fixture.get("away")):
@@ -124,6 +114,32 @@ def run():
         log.warning(f"  Flashscore refresh failed: {e}")
         import traceback
         traceback.print_exc()
+
+    # ── Step 3: Transfermarkt — only for teams Flashscore couldn't cover ──
+    # A team is considered covered if Flashscore has both form and a league position.
+    from flashscore_cache import has_team as fs_has_team, get_recent_form as fs_get_form, get_league_position as fs_get_pos
+    missing = [
+        n for n in team_names
+        if not fs_has_team(n)
+        or not fs_get_form(n).get("form")
+        or fs_get_pos(n) is None
+    ]
+    if missing:
+        log.info(f"Step 3/4: Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
+        log.info(f"  Missing: {', '.join(missing)}")
+        missing_fixtures = [
+            f for f in raw_fixtures
+            if f.get("home") in missing or f.get("away") in missing
+        ]
+        try:
+            run_daily_scrape(max_teams=len(missing), betpawa_fixtures=missing_fixtures)
+            log.info("  Transfermarkt scrape complete")
+        except Exception as e:
+            log.warning(f"  Transfermarkt scrape failed: {e}")
+            import traceback
+            traceback.print_exc()
+    else:
+        log.info("Step 3/4: All teams covered by Flashscore — skipping Transfermarkt")
 
     # ── Step 4: Enrich with form, standings, H2H ─────────────────────────
     log.info("Step 4/4: Enriching with form, H2H, standings...")
