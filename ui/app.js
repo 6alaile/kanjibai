@@ -13,7 +13,7 @@ async function loadEnriched() {
   }
 }
 
-// ─── SCORER (ported from scorer.py) ──────────────────────────────────────────
+// ─── SCORER ────────────────────────────────────────────────────────────────────
 
 const N = 5;
 
@@ -355,7 +355,9 @@ function scoreMatch(match, cfg) {
     away: match.away,
     homePos: homeStats.league_position || null,
     awayPos: awayStats.league_position || null,
+    totalTeams: match.total_teams_in_league || null,
     h2hSummary: h2h.summary,
+    h2hMatches: h2h.available ? h2h.matches.slice(-5) : null,
     odds: { home: odds.home, draw: odds.draw, away: odds.away },
     confidence,
     lowConfidence,
@@ -366,11 +368,15 @@ function scoreMatch(match, cfg) {
     homeStats: {
       name: match.home,
       form: cap5(homeStats.form || []),
+      goals_scored: cap5(homeStats.goals_scored || []),
+      goals_conceded: cap5(homeStats.goals_conceded || []),
       notes: buildTeamNotes(match.home, ht)
     },
     awayStats: {
       name: match.away,
       form: cap5(awayStats.form || []),
+      goals_scored: cap5(awayStats.goals_scored || []),
+      goals_conceded: cap5(awayStats.goals_conceded || []),
       notes: buildTeamNotes(match.away, at)
     },
     signals: generateSignals(match.home, match.away, ht, at, h2h, side)
@@ -440,7 +446,8 @@ createApp({
       minFormMatches: 5,
       leaguePositionWeight: 0.5,
       oppStrengthWeight: 0.5,
-      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'btts_over25', 'combo']
+      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'btts_over25', 'combo'],
+      excludeLeague: ''
     });
 
     const marketOptions = [
@@ -460,8 +467,25 @@ createApp({
       { key: 'warn', label: 'Low Conf Flag' }
     ];
 
+    const competitionOptions = computed(() => {
+      const comps = new Set((rawMatches.value || []).map(m => getCompetition(m.league)).filter(Boolean));
+      return Array.from(comps).sort();
+    });
+
     // Scored matches — recomputed whenever filters change
-    const matches = computed(() => scoreAll(rawMatches.value, filters));
+    const matches = computed(() => {
+      const excludeLeague = (filters.excludeLeague || '').toLowerCase();
+      const filtered = excludeLeague
+        ? rawMatches.value.filter(m => !m.league.toLowerCase().includes(excludeLeague))
+        : rawMatches.value;
+
+      const scored = scoreAll(filtered, filters);
+      return scored.sort((a, b) => {
+        const ta = (a.time || '23:59').replace(/\s?(AM|PM)?$/i, '').trim();
+        const tb = (b.time || '23:59').replace(/\s?(AM|PM)?$/i, '').trim();
+        return ta.localeCompare(tb);
+      });
+    });
 
     const qualifiedMatches = computed(() => matches.value);
 
@@ -529,7 +553,7 @@ createApp({
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition,
-      formatTime24
+      formatTime24, competitionOptions
     };
   }
 }).mount('#app');

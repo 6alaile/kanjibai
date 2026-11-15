@@ -117,6 +117,12 @@
       <span v-for="f in filterOptions" :key="f.key"
         class="filter-chip" :class="{ active: activeFilter === f.key }"
         @click="activeFilter = f.key">{{ f.label }}</span>
+      <span class="filter-divider"></span>
+      <span class="filter-label">Competition:</span>
+      <select class="filter-select" v-model="filters.excludeLeague">
+        <option value="">All competitions</option>
+        <option v-for="comp in competitionOptions" :key="comp" :value="comp">{{ comp }}</option>
+      </select>
     </div>
 
     <!-- LOADING -->
@@ -161,8 +167,19 @@
                 <span class="vs-sep">vs</span>
                 <span class="team-name">{{ match.away }}</span>
               </div>
-              <div class="match-meta">{{ match.homePos ? `#${match.homePos}${match.awayPos ? ` vs #${match.awayPos}` : ''}` : '' }} · H2H: {{ match.h2hSummary }}</div>
-            </div>
+              <div class="match-meta">
+                {{ match.homePos ? `#${match.homePos}${match.awayPos ? ` vs #${match.awayPos}` : ''}` : '' }}
+                <span v-if="match.totalTeams">/ {{ match.totalTeams }}</span>
+                <span v-if="match.h2hMatches && match.h2hMatches.length"> · H2H: {{ match.h2hSummary }}</span>
+                <span v-else> · H2H: {{ match.h2hSummary }}</span>
+                <div class="h2h-scores" v-if="match.h2hMatches && match.h2hMatches.length">
+                  <div v-for="h in match.h2hMatches" :key="h.ts" class="h2h-score">
+                    <span class="h2h-home">{{ h.home }}</span>
+                    <span class="h2h-score-val">{{ h.score[0] }}-{{ h.score[1] }}</span>
+                    <span class="h2h-away">{{ h.away }}</span>
+                  </div>
+                </div>
+              </div>
 
             <div class="bets-list">
               <span v-for="bet in match.bets" :key="bet.label"
@@ -221,6 +238,12 @@
                   <div style="font-size:12px;color:#fff;font-weight:700;margin-bottom:6px">{{ team.name }}</div>
                   <div class="form-strip">
                     <div v-for="r in team.form" :key="r" class="form-dot" :class="r">{{ r }}</div>
+                  </div>
+                  <div class="goals-strip" v-if="team.goals_scored && team.goals_scored.length">
+                    <span class="goals-label">GF:</span>
+                    <span v-for="(g, idx) in team.goals_scored" :key="'gf'+idx" class="goal-dot">{{ g }}</span>
+                    <span class="goals-label">GA:</span>
+                    <span v-for="(g, idx) in team.goals_conceded" :key="'ga'+idx" class="goal-dot conceded">{{ g }}</span>
                   </div>
                   <div v-for="item in team.notes" :key="item" class="reason-item">
                     <div class="reason-dot blue"></div>
