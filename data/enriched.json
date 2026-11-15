@@ -1,1406 +1,157 @@
 {
   "meta": {
     "date": "2026-11-15",
-    "generatedAt": "2026-11-15T09:29:33.107069+03:00",
+    "generatedAt": "2026-11-15T15:02:36.889816+03:00",
     "scanned": 20,
-    "elapsedSeconds": 188.5
+    "elapsedSeconds": 117.8
   },
   "matches": [
     {
-      "id": "guizhouguiyangathleticjiangxid",
-      "league": "Football / China / China League 1",
-      "home": "Guizhou Guiyang Athletic",
-      "away": "Jiangxi Dingnan United",
-      "time": "10:00",
+      "id": "alkawkabnajransc",
+      "league": "Football / Saudi Arabia / Second Division",
+      "home": "AL Kawkab",
+      "away": "Najran SC",
+      "time": "03:05",
       "odds": {
-        "home": 2.3,
-        "draw": 3.13,
-        "away": 3.08
-      },
-      "home_stats": {
-        "name": "Guizhou Guiyang Athletic",
-        "form": [
-          "D",
-          "L",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1752399000,
-            "opponent": "Quanzhou Yassin",
-            "opponent_id": "fyk7Hc2s",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1753011000,
-            "opponent": "Chengdu Rongcheng B",
-            "opponent_id": "W2NCMiB7",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1753603200,
-            "opponent": "Shenzhen",
-            "opponent_id": "nRHE5gqe",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1754208000,
-            "opponent": "Wuhan Three Towns B",
-            "opponent_id": "UwReQZBr",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1755948600,
-            "opponent": "Wuxi Wugou",
-            "opponent_id": "EHTX2bml",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 8,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Jiangxi Dingnan United",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 8,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 8
-    },
-    {
-      "id": "fcryukyukochiunitedsc",
-      "league": "Football / Japan / J3 League",
-      "home": "FC Ryukyu",
-      "away": "Kochi United SC",
-      "time": "10:00",
-      "odds": {
-        "home": 2.04,
-        "draw": 3.64,
-        "away": 3.4
-      },
-      "home_stats": {
-        "name": "FC Ryukyu",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          5,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ],
-        "recent_results": [
-          {
-            "ts": 1763269200,
-            "opponent": "Sagamihara",
-            "opponent_id": "nXumKCoo",
-            "home_away": "A",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1763870400,
-            "opponent": "Kagoshima Utd",
-            "opponent_id": "8jbnAT1B",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1764396000,
-            "opponent": "Vanraure",
-            "opponent_id": "hKLJFla1",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1768528800,
-            "opponent": "Kawasaki Frontale (Jpn)",
-            "opponent_id": "bF5XL0H9",
-            "home_away": "A",
-            "score": [
-              1,
-              6
-            ]
-          },
-          {
-            "ts": 1768960800,
-            "opponent": "Hokkaido Consadole Sapporo (Jpn)",
-            "opponent_id": "Ak9yLKWF",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 20,
-        "opposition_position": 20
-      },
-      "away_stats": {
-        "name": "Kochi United SC",
-        "form": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          4,
-          0
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          3,
-          0,
-          5
-        ],
-        "recent_results": [
-          {
-            "ts": 1762066800,
-            "opponent": "Nagano",
-            "opponent_id": "4UgFVol8",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1762664580,
-            "opponent": "Yamaga",
-            "opponent_id": "0lMXpXdr",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1763182800,
-            "opponent": "Vanraure",
-            "opponent_id": "hKLJFla1",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1763960400,
-            "opponent": "Osaka",
-            "opponent_id": "E3uzKMdT",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1764396000,
-            "opponent": "Kusatsu",
-            "opponent_id": "UFZb6lCI",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 20,
-        "total_teams_in_league": 20,
-        "opposition_position": 20
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "southchinafcbrightceruleanfc",
-      "league": "Football / Hong Kong / Division 1",
-      "home": "South China FC",
-      "away": "Bright Cerulean FC",
-      "time": "10:30",
-      "odds": {
-        "home": 1.03,
-        "draw": 11.0,
-        "away": 24.0
-      },
-      "home_stats": {
-        "name": "South China FC",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          0,
-          2,
-          6
-        ],
-        "recent_results": [
-          {
-            "ts": 1457524800,
-            "opponent": "Mohun Bagan (Ind)",
-            "opponent_id": "nu3kFdnl",
-            "home_away": "H",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1457764200,
-            "opponent": "Wong Tai Sin",
-            "opponent_id": "l0OqGgz4",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1458126000,
-            "opponent": "Maziya (Mdv)",
-            "opponent_id": "v5uDhU56",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1459148400,
-            "opponent": "Eastern AA",
-            "opponent_id": "zw5XchAA",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1459665000,
-            "opponent": "Dreams Metro Gallery FC",
-            "opponent_id": "KpDFS5Ut",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 20,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "Bright Cerulean FC",
-        "form": [
-          "L",
-          "D",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          4,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          2,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1740834000,
-            "opponent": "BUL",
-            "opponent_id": "612q3z1G",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1741438800,
-            "opponent": "Mbarara City",
-            "opponent_id": "lba9cS49",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1741957200,
-            "opponent": "Villa",
-            "opponent_id": "ALztxK6e",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1743177600,
-            "opponent": "Kampala City",
-            "opponent_id": "fwjo7kpb",
-            "home_away": "A",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1743685200,
-            "opponent": "Police",
-            "opponent_id": "O6V1NhPB",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 20,
-        "opposition_position": 14
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "hoikingsupremefc",
-      "league": "Football / Hong Kong / Division 1",
-      "home": "Hoi King",
-      "away": "Supreme FC",
-      "time": "10:30",
-      "odds": {
-        "home": 1.72,
-        "draw": 4.1,
-        "away": 3.6
-      },
-      "home_stats": {
-        "name": "Hoi King",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          5,
-          5,
-          3,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1536388200,
-            "opponent": "Southern District",
-            "opponent_id": "O2vzL3qa",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1537531200,
-            "opponent": "Tai Po",
-            "opponent_id": "MizqYhMB",
-            "home_away": "A",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1538289000,
-            "opponent": "Lee Man Warriors",
-            "opponent_id": "6ycFL8p7",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1538893800,
-            "opponent": "Guangzhou R&F (HK)",
-            "opponent_id": "d6V5voQb",
-            "home_away": "H",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1540103400,
-            "opponent": "Pegasus",
-            "opponent_id": "bFdRQ7At",
-            "home_away": "H",
-            "score": [
-              2,
-              6
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 10,
-        "opposition_position": 4
-      },
-      "away_stats": {
-        "name": "Supreme FC",
-        "form": [
-          "W",
-          "W",
-          "D",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1536498000,
-            "opponent": "Shooting",
-            "opponent_id": "thJIFAIJ",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1537110000,
-            "opponent": "Go Round",
-            "opponent_id": "2ZbDfZtC",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1537794000,
-            "opponent": "Sunshine Stars",
-            "opponent_id": "Cpisq6j2",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1537974000,
-            "opponent": "Rangers Int'l",
-            "opponent_id": "KxX6KECj",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1538146800,
-            "opponent": "El Kanemi",
-            "opponent_id": "d2LNmdTt",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 10,
-        "opposition_position": 4
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 10
-    },
-    {
-      "id": "yuenlongfcwse",
-      "league": "Football / Hong Kong / Division 1",
-      "home": "Yuen Long FC",
-      "away": "WSE",
-      "time": "10:30",
-      "odds": {
-        "home": 3.0,
+        "home": 1.68,
         "draw": 3.65,
-        "away": 2.02
+        "away": 4.3
       },
       "home_stats": {
-        "name": "Yuen Long FC",
-        "form": [
-          "D",
-          "L",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          4,
-          2,
-          4
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          3,
-          2,
-          5
-        ],
-        "recent_results": [
-          {
-            "ts": 1540027800,
-            "opponent": "King Fung Football Club",
-            "opponent_id": "h0tin5D5",
-            "home_away": "H",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1540632600,
-            "opponent": "Guangzhou R&F (HK)",
-            "opponent_id": "d6V5voQb",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1540987200,
-            "opponent": "Eastern AA",
-            "opponent_id": "zw5XchAA",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1543645800,
-            "opponent": "Guangzhou R&F (HK)",
-            "opponent_id": "d6V5voQb",
-            "home_away": "A",
-            "score": [
-              2,
-              5
-            ]
-          },
-          {
-            "ts": 1544337000,
-            "opponent": "Hoi King",
-            "opponent_id": "OU2uDif1",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "WSE",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "sekhukhuneunitedu23stellenbosc",
-      "league": "Football / South Africa / Diski Challenge, Reserves",
-      "home": "Sekhukhune United U23",
-      "away": "Stellenbosch FC U23",
-      "time": "11:00",
-      "odds": {
-        "home": 2.21,
-        "draw": 3.35,
-        "away": 2.85
-      },
-      "home_stats": {
-        "name": "Sekhukhune United U23",
+        "name": "AL Kawkab",
         "form": [
           "W",
           "W",
-          "W",
           "L",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          3,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          5,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1742648400,
-            "opponent": "Marumo Gallants U23",
-            "opponent_id": "YcCdQXCS",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1743321600,
-            "opponent": "Stellenbosch U23",
-            "opponent_id": "pz1eOpsr",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1744452000,
-            "opponent": "Magesi U23",
-            "opponent_id": "Sz4qDYm1",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1745136000,
-            "opponent": "Cape Town City U23",
-            "opponent_id": "bupJsZs3",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1745654400,
-            "opponent": "Mamelodi Sundowns U23",
-            "opponent_id": "EPtnEyQB",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 5,
-        "total_teams_in_league": 16,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "Stellenbosch FC U23",
-        "form": [
-          "W",
           "D",
-          "W",
-          "L",
           "W"
         ],
         "goals_scored": [
           2,
-          0,
-          5,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          4,
           3,
-          0
+          1,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          4,
+          2,
+          1
         ],
         "recent_results": [
           {
-            "ts": 1743321600,
-            "opponent": "Sekhukhune U23",
-            "opponent_id": "UFtN8KMn",
+            "ts": 1649182800,
+            "match_id": "",
+            "opponent": "Al Nahda",
+            "opponent_id": "6aq6uYjE",
             "home_away": "A",
             "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1743847200,
-            "opponent": "Kaizer Chiefs U23",
-            "opponent_id": "jZMiRDcM",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1744444800,
-            "opponent": "Richards Bay U23",
-            "opponent_id": "8noo1Sym",
-            "home_away": "A",
-            "score": [
-              3,
+              2,
               2
             ]
           },
           {
-            "ts": 1745049600,
-            "opponent": "Amazulu U23",
-            "opponent_id": "rX1WJVkd",
+            "ts": 1649874600,
+            "match_id": "",
+            "opponent": "Al Jeel",
+            "opponent_id": "hSOFdMch",
             "home_away": "H",
             "score": [
-              2,
-              0
+              1,
+              2
             ]
           },
           {
-            "ts": 1745654400,
-            "opponent": "Marumo Gallants U23",
-            "opponent_id": "YcCdQXCS",
+            "ts": 1650479700,
+            "match_id": "",
+            "opponent": "Al Orubah",
+            "opponent_id": "A3ZAc2rn",
+            "home_away": "H",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1651766400,
+            "match_id": "",
+            "opponent": "Al Jabalain",
+            "opponent_id": "IiU3CHMA",
             "home_away": "H",
             "score": [
               0,
-              3
+              2
+            ]
+          },
+          {
+            "ts": 1652286600,
+            "match_id": "",
+            "opponent": "Ohod",
+            "opponent_id": "2VpJYLjK",
+            "home_away": "A",
+            "score": [
+              0,
+              0
             ]
           }
         ],
-        "league_position": 11,
-        "total_teams_in_league": 16,
-        "opposition_position": 11
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Stellenbosch FC U23",
-            "away": "Sekhukhune United U23",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1776499200
-          },
-          {
-            "home": "Sekhukhune United U23",
-            "away": "Stellenbosch FC U23",
-            "score": [
-              1,
-              3
-            ],
-            "ts": 1764410400
-          },
-          {
-            "home": "Sekhukhune United U23",
-            "away": "Stellenbosch FC U23",
-            "score": [
-              1,
-              3
-            ],
-            "ts": 1743321600
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "inackobeleonessawomencerezoosa",
-      "league": "Football / Japan / WE League, Women",
-      "home": "INAC Kobe Leonessa Women",
-      "away": "Cerezo Osaka Sakai Ladies Women",
-      "time": "11:00",
-      "odds": {
-        "home": 2.15,
-        "draw": 3.28,
-        "away": 3.23
-      },
-      "home_stats": {
-        "name": "INAC Kobe Leonessa Women",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          4,
-          2,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1758963600,
-            "match_id": "",
-            "opponent": "Parceiro Nagano W",
-            "opponent_id": "46e2P3RO",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1759636800,
-            "match_id": "",
-            "opponent": "JEF United W",
-            "opponent_id": "pKYUsPbt",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1760335200,
-            "match_id": "",
-            "opponent": "Mynavi Sendai W",
-            "opponent_id": "Yufh7cU6",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1760760000,
-            "match_id": "",
-            "opponent": "Albirex Niigata W",
-            "opponent_id": "WvTfrqEn",
-            "home_away": "A",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1761368400,
-            "match_id": "",
-            "opponent": "Sanfrecce Hiroshima W",
-            "opponent_id": "UPml0M85",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
+        "league_position": 4,
+        "total_teams_in_league": 32,
+        "opposition_position": 16
       },
       "away_stats": {
-        "name": "Cerezo Osaka Sakai Ladies Women",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          4,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          2,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1758344400,
-            "match_id": "",
-            "opponent": "Albirex Niigata W",
-            "opponent_id": "WvTfrqEn",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1758956400,
-            "match_id": "",
-            "opponent": "Sanfrecce Hiroshima W",
-            "opponent_id": "UPml0M85",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1759636800,
-            "match_id": "",
-            "opponent": "Omiya Ardija W",
-            "opponent_id": "pxnx3OOn",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1760245200,
-            "match_id": "",
-            "opponent": "JEF United W",
-            "opponent_id": "pKYUsPbt",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1760763600,
-            "match_id": "",
-            "opponent": "Urawa W",
-            "opponent_id": "Opt8O1bI",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "INAC Kobe Leonessa Women",
-            "away": "Cerezo Osaka Sakai Ladies Women",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1794729600
-          },
-          {
-            "home": "Cerezo Osaka Sakai Ladies Women",
-            "away": "INAC Kobe Leonessa Women",
-            "score": [
-              2,
-              2
-            ],
-            "ts": 1766206800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "kashiwareysolkawasakifrontale",
-      "league": "Football / Japan / J.League Cup",
-      "home": "Kashiwa Reysol",
-      "away": "Kawasaki Frontale",
-      "time": "11:00",
-      "odds": {
-        "home": 2.03,
-        "draw": 3.93,
-        "away": 3.19
-      },
-      "home_stats": {
-        "name": "Kashiwa Reysol",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          4,
-          2,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1770530400,
-            "opponent": "Kawasaki Frontale",
-            "opponent_id": "bF5XL0H9",
-            "home_away": "A",
-            "score": [
-              3,
-              5
-            ]
-          },
-          {
-            "ts": 1771131600,
-            "opponent": "Verdy",
-            "opponent_id": "ppNYGTQb",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1771657200,
-            "opponent": "Kashima Antlers",
-            "opponent_id": "4nNKlKo9",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1772258400,
-            "opponent": "FC Tokyo",
-            "opponent_id": "8zCQQGg2",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1772856000,
-            "opponent": "Chiba",
-            "opponent_id": "zNLhJb1S",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kawasaki Frontale",
+        "name": "Najran SC",
         "form": [
           "W",
           "W",
           "L",
-          "L",
+          "D",
           "L"
         ],
         "goals_scored": [
+          3,
           2,
-          2,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
           0,
-          4,
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1764997200,
-            "opponent": "Urawa Reds",
-            "opponent_id": "C8IHSxPk",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1768528800,
-            "opponent": "Ryukyu (Jpn)",
-            "opponent_id": "tM115Db3",
-            "home_away": "H",
-            "score": [
-              6,
-              1
-            ]
-          },
-          {
-            "ts": 1770530400,
-            "opponent": "Kashiwa Reysol",
-            "opponent_id": "hEbtKvnM",
-            "home_away": "H",
-            "score": [
-              5,
-              3
-            ]
-          },
-          {
-            "ts": 1771128000,
-            "opponent": "Chiba",
-            "opponent_id": "zNLhJb1S",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1771653600,
-            "opponent": "FC Tokyo",
-            "opponent_id": "8zCQQGg2",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Kawasaki Frontale",
-            "away": "Kashiwa Reysol",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1794391200
-          },
-          {
-            "home": "Kashiwa Reysol",
-            "away": "Kawasaki Frontale",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1794034800
-          },
-          {
-            "home": "Kashiwa Reysol",
-            "away": "Kawasaki Frontale",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1778396400
-          },
-          {
-            "home": "Kawasaki Frontale",
-            "away": "Kashiwa Reysol",
-            "score": [
-              3,
-              5
-            ],
-            "ts": 1770530400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "reilacshigafcfcosaka",
-      "league": "Football / Japan / J3 League",
-      "home": "Reilac Shiga FC",
-      "away": "FC Osaka",
-      "time": "12:00",
-      "odds": {
-        "home": 3.53,
-        "draw": 3.63,
-        "away": 1.99
-      },
-      "home_stats": {
-        "name": "Reilac Shiga FC",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
           1,
           0
         ],
         "goals_conceded": [
+          2,
           1,
-          5,
-          3,
-          0,
+          2,
+          1,
           1
         ],
         "recent_results": [
           {
-            "ts": 1528279200,
-            "opponent": "Hokkaido Consadole Sapporo",
-            "opponent_id": "Ak9yLKWF",
-            "home_away": "A",
+            "ts": 1679154300,
+            "match_id": "",
+            "opponent": "Al Arabi",
+            "opponent_id": "8f20POYF",
+            "home_away": "H",
             "score": [
               1,
-              2
+              0
             ]
           },
           {
-            "ts": 1686132000,
-            "opponent": "Albirex Niigata",
-            "opponent_id": "CAwa47eB",
+            "ts": 1681152600,
+            "match_id": "",
+            "opponent": "Jeddah",
+            "opponent_id": "CfPZn6fq",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1682440200,
+            "match_id": "",
+            "opponent": "Al Orubah",
+            "opponent_id": "A3ZAc2rn",
             "home_away": "A",
             "score": [
               0,
@@ -1408,46 +159,137 @@
             ]
           },
           {
-            "ts": 1765080000,
-            "opponent": "Azul Claro Numazu",
-            "opponent_id": "K8znKTMa",
+            "ts": 1682957100,
+            "match_id": "",
+            "opponent": "Al Qaisumah",
+            "opponent_id": "Ei9GUmBo",
             "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1765688400,
-            "opponent": "Azul Claro Numazu",
-            "opponent_id": "K8znKTMa",
-            "home_away": "A",
             "score": [
               1,
               1
             ]
           },
           {
-            "ts": 1771131600,
-            "opponent": "Renofa Yamaguchi",
-            "opponent_id": "f1DPrs5c",
+            "ts": 1683302700,
+            "match_id": "",
+            "opponent": "Al Faisaly",
+            "opponent_id": "AsIgIB3d",
             "home_away": "A",
             "score": [
-              1,
+              2,
               2
             ]
           }
         ],
         "league_position": 16,
+        "total_teams_in_league": 32,
+        "opposition_position": 16
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 32
+    },
+    {
+      "id": "wesckahrabaaismailia",
+      "league": "Football / Egypt / 2nd Division",
+      "home": "We SC",
+      "away": "Kahrabaa Ismailia",
+      "time": "03:30",
+      "odds": {
+        "home": 3.66,
+        "draw": 2.74,
+        "away": 2.26
+      },
+      "home_stats": {
+        "name": "We SC",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          3,
+          0,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          0,
+          4,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1759494600,
+            "match_id": "",
+            "opponent": "Baladiyat El Mahalla",
+            "opponent_id": "4t3wxbUl",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1760099400,
+            "match_id": "",
+            "opponent": "La Viena",
+            "opponent_id": "bih8ssHt",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1760634000,
+            "match_id": "",
+            "opponent": "Tersana",
+            "opponent_id": "Onos85dp",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1761309000,
+            "match_id": "",
+            "opponent": "Raya",
+            "opponent_id": "IFdBPyDC",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1761913800,
+            "match_id": "",
+            "opponent": "El Mansoura",
+            "opponent_id": "dt3L4JJS",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": 6
+        "opposition_position": null
       },
       "away_stats": {
-        "name": "FC Osaka",
+        "name": "Kahrabaa Ismailia",
         "form": [
-          "W",
-          "W",
+          "D",
           "L",
+          "D",
           "W",
           "W"
         ],
@@ -1456,20 +298,226 @@
           2,
           0,
           2,
-          2
+          1
         ],
         "goals_conceded": [
+          2,
+          3,
           0,
           1,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1761487200,
+            "match_id": "",
+            "opponent": "Ceramica Cleopatra",
+            "opponent_id": "ATasWtPS",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1762020000,
+            "match_id": "",
+            "opponent": "El Ismaily",
+            "opponent_id": "Q79lCRYM",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1763920800,
+            "match_id": "",
+            "opponent": "ZED",
+            "opponent_id": "SxS0BA1C",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1764428400,
+            "match_id": "",
+            "opponent": "Al Ittihad",
+            "opponent_id": "WpApD7JG",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1764784800,
+            "match_id": "",
+            "opponent": "Pyramids",
+            "opponent_id": "zyHMiDZ6",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "scraltachyouthfcwolfurt",
+      "league": "Football / Austria / Regionalliga West",
+      "home": "SCR Altach YOUTH",
+      "away": "FC Wolfurt",
+      "time": "03:30",
+      "odds": {
+        "home": 1.36,
+        "draw": 4.9,
+        "away": 5.57
+      },
+      "home_stats": {
+        "name": "SCR Altach YOUTH",
+        "form": [
+          "W",
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          4,
           1,
+          0,
+          5
+        ],
+        "goals_conceded": [
           1,
+          0,
+          1,
+          3,
           1
         ],
         "recent_results": [
           {
-            "ts": 1765083600,
-            "opponent": "Kanazawa",
-            "opponent_id": "KY7LrA6d",
+            "ts": 1768395600,
+            "match_id": "",
+            "opponent": "Trencin (Svk)",
+            "opponent_id": "lSieUMnE",
+            "home_away": "H",
+            "score": [
+              3,
+              3
+            ]
+          },
+          {
+            "ts": 1768654800,
+            "match_id": "",
+            "opponent": "Floridsdorfer AC (Aut)",
+            "opponent_id": "r9HwRaWH",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1769346000,
+            "match_id": "",
+            "opponent": "Schaffhausen (Sui)",
+            "opponent_id": "zcUpovW3",
+            "home_away": "H",
+            "score": [
+              4,
+              2
+            ]
+          },
+          {
+            "ts": 1769963400,
+            "match_id": "",
+            "opponent": "Sturm Graz",
+            "opponent_id": "zsktjfsD",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1770557400,
+            "match_id": "",
+            "opponent": "BW Linz",
+            "opponent_id": "KIrFH87n",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 16
+      },
+      "away_stats": {
+        "name": "FC Wolfurt",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          4,
+          5,
+          3,
+          4,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1748790000,
+            "match_id": "",
+            "opponent": "Brauerei Egg",
+            "opponent_id": "jaZai9eN",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1749308400,
+            "match_id": "",
+            "opponent": "Admira Dornbirn",
+            "opponent_id": "0CcUxA5U",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1755441000,
+            "match_id": "",
+            "opponent": "Brauerei Egg",
+            "opponent_id": "jaZai9eN",
             "home_away": "H",
             "score": [
               1,
@@ -1477,398 +525,193 @@
             ]
           },
           {
-            "ts": 1765688400,
-            "opponent": "Tegevajaro Miyazaki",
-            "opponent_id": "2DLKhMtU",
+            "ts": 1755957600,
+            "match_id": "",
+            "opponent": "Feldkirch",
+            "opponent_id": "Q5poAJIR",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1756650600,
+            "match_id": "",
+            "opponent": "Bizau",
+            "opponent_id": "dxzdhktH",
             "home_away": "H",
+            "score": [
+              4,
+              1
+            ]
+          }
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 20,
+        "opposition_position": 16
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "fcpirinblagoevgradpfcmontana19",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "FC Pirin Blagoevgrad",
+      "away": "PFC Montana 1921",
+      "time": "03:30",
+      "odds": {
+        "home": 4.83,
+        "draw": 4.15,
+        "away": 1.58
+      },
+      "home_stats": {
+        "name": "FC Pirin Blagoevgrad",
+        "form": [
+          "D",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          0,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          4,
+          2,
+          2,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1760270400,
+            "match_id": "",
+            "opponent": "Spartak Plovdiv",
+            "opponent_id": "Cpl3qSPL",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1760792400,
+            "match_id": "",
+            "opponent": "Hebar",
+            "opponent_id": "IwK3Sxle",
+            "home_away": "A",
+            "score": [
+              2,
+              4
+            ]
+          },
+          {
+            "ts": 1761481800,
+            "match_id": "",
+            "opponent": "Etar",
+            "opponent_id": "OICsE7P8",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1762086600,
+            "match_id": "",
+            "opponent": "Marek",
+            "opponent_id": "W68WWjRM",
+            "home_away": "A",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1762605000,
+            "match_id": "",
+            "opponent": "Svoge",
+            "opponent_id": "KfDQ6H86",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 18,
+        "opposition_position": 15
+      },
+      "away_stats": {
+        "name": "PFC Montana 1921",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          2,
+          1,
+          2,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1765294200,
+            "match_id": "",
+            "opponent": "Botev Vratsa",
+            "opponent_id": "revfhoot",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1765720800,
+            "match_id": "",
+            "opponent": "Lok. Plovdiv",
+            "opponent_id": "zFPKyZRc",
+            "home_away": "A",
             "score": [
               0,
               4
             ]
           },
           {
-            "ts": 1770526800,
-            "opponent": "Kamatamare",
-            "opponent_id": "S6HnxZqN",
+            "ts": 1769169600,
+            "match_id": "",
+            "opponent": "KF Llapi (Kos)",
+            "opponent_id": "GjpUT7MF",
             "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1771131600,
-            "opponent": "Kochi United",
-            "opponent_id": "A13oDV39",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1771736400,
-            "opponent": "Imabari",
-            "opponent_id": "0fQDWIvJ",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 20,
-        "opposition_position": 6
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "FC Osaka",
-            "away": "Reilac Shiga FC",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1780117200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "fkteplicebfchradeckraloveb",
-      "league": "Football / Czech Republic / CFL",
-      "home": "FK Teplice B",
-      "away": "FC Hradec Kralove B",
-      "time": "12:15",
-      "odds": {
-        "home": 2.03,
-        "draw": 3.72,
-        "away": 3.05
-      },
-      "home_stats": {
-        "name": "FK Teplice B",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          4,
-          4,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1759654800,
-            "opponent": "Benatky n. Jiz.",
-            "opponent_id": "tAVP3kOu",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1760257800,
-            "opponent": "Velke Hamry",
-            "opponent_id": "tb9IUvwd",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1760875200,
-            "opponent": "Liberec B",
-            "opponent_id": "CjtOK2Br",
-            "home_away": "H",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1761380100,
-            "opponent": "Jablonec B",
-            "opponent_id": "KQOdJ0e1",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1761658200,
-            "opponent": "Brozany",
-            "opponent_id": "pb7cIgFA",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 9
-      },
-      "away_stats": {
-        "name": "FC Hradec Kralove B",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          1,
-          4
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          0,
-          3,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1763200800,
-            "opponent": "Teplice B",
-            "opponent_id": "QecLnRID",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1763802900,
-            "opponent": "Usti nad Orlici",
-            "opponent_id": "GtpaZ1Y7",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1768037400,
-            "opponent": "Mlada Boleslav",
-            "opponent_id": "0f7GpAMu",
-            "home_away": "A",
-            "score": [
-              1,
-              5
-            ]
-          },
-          {
-            "ts": 1768469400,
-            "opponent": "Chrudim",
-            "opponent_id": "rLwm2Ork",
-            "home_away": "A",
-            "score": [
-              2,
-              6
-            ]
-          },
-          {
-            "ts": 1769160600,
-            "opponent": "Liberec B",
-            "opponent_id": "CjtOK2Br",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          }
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 16,
-        "opposition_position": 9
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "FC Hradec Kralove B",
-            "away": "FK Teplice B",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1772356500
-          },
-          {
-            "home": "FK Teplice B",
-            "away": "FC Hradec Kralove B",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1763200800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "fkadmirapragueskslaviapraguecu",
-      "league": "Football / Czech Republic / CFL",
-      "home": "FK Admira Prague",
-      "away": "SK Slavia Prague C U20",
-      "time": "12:15",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.71,
-        "away": 2.86
-      },
-      "home_stats": {
-        "name": "FK Admira Prague",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          4,
-          3,
-          1,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          2,
-          4,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1762679700,
-            "opponent": "Kraluv Dvur",
-            "opponent_id": "IPEU3St0",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1763296200,
-            "opponent": "Taborsko akademie",
-            "opponent_id": "xrJTg97r",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1763802900,
-            "opponent": "Aritma Prague",
-            "opponent_id": "tSev8gcr",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1768654800,
-            "opponent": "Benatky n. Jiz. (Cze)",
-            "opponent_id": "tAVP3kOu",
-            "home_away": "A",
             "score": [
               2,
               2
             ]
           },
           {
-            "ts": 1769850000,
-            "opponent": "Meteor Prague (Cze)",
-            "opponent_id": "nsxXAIia",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 10
-      },
-      "away_stats": {
-        "name": "SK Slavia Prague C U20",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          4,
-          1,
-          3,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          4,
-          3,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1759652100,
-            "opponent": "Domazlice",
-            "opponent_id": "pSlT9AlQ",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1760170500,
-            "opponent": "Loko Praha",
-            "opponent_id": "W4Q6EmU6",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1760775300,
-            "opponent": "Pisek",
-            "opponent_id": "6smE5lCm",
+            "ts": 1769428800,
+            "match_id": "",
+            "opponent": "Sepsi Sf. Gheorghe (Rou)",
+            "opponent_id": "IDsPIcMA",
             "home_away": "H",
             "score": [
               1,
@@ -1876,258 +719,76 @@
             ]
           },
           {
-            "ts": 1761380100,
-            "opponent": "Motorlet Prague",
-            "opponent_id": "GMJK27qD",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1761988500,
-            "opponent": "Pribram B",
-            "opponent_id": "feVYtjYu",
+            "ts": 1769688000,
+            "match_id": "",
+            "opponent": "Leningradets (Rus)",
+            "opponent_id": "bkQFEaqI",
             "home_away": "H",
             "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 16,
-        "opposition_position": 10
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "SK Slavia Prague C U20",
-            "away": "FK Admira Prague",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1777215600
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "mfkhavirovfkblansko",
-      "league": "Football / Czech Republic / MSFL",
-      "home": "MFK Havirov",
-      "away": "FK Blansko",
-      "time": "12:15",
-      "odds": {
-        "home": 2.33,
-        "draw": 3.57,
-        "away": 2.7
-      },
-      "home_stats": {
-        "name": "MFK Havirov",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          3,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          2,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1759500000,
-            "opponent": "Pusta Polom",
-            "opponent_id": "zeDjghqs",
-            "home_away": "A",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1760256900,
-            "opponent": "Rymarov",
-            "opponent_id": "dQMosvKe",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1760877000,
-            "opponent": "Zabreh",
-            "opponent_id": "88nE4yeg",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1761470100,
-            "opponent": "Bohumin",
-            "opponent_id": "bLfyffy5",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1761988500,
-            "opponent": "Vratimov",
-            "opponent_id": "vLIxHQRc",
-            "home_away": "A",
-            "score": [
-              6,
+              0,
               1
             ]
           }
         ],
-        "league_position": 17,
+        "league_position": 15,
         "total_teams_in_league": 18,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "FK Blansko",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          0,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          3,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1762606800,
-            "opponent": "Hodonin",
-            "opponent_id": "pn7nNssO",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1763211600,
-            "opponent": "Slovacko B",
-            "opponent_id": "4v6lZEB6",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1769187600,
-            "opponent": "Brno B (Cze)",
-            "opponent_id": "Yobq5cQt",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1769860800,
-            "opponent": "Velka Bites (Cze)",
-            "opponent_id": "vupGNGYJ",
-            "home_away": "H",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1770465600,
-            "opponent": "Unicov (Cze)",
-            "opponent_id": "byjY1T8J",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 18,
-        "opposition_position": 14
+        "opposition_position": 15
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 18
     },
     {
-      "id": "bohemiansprague1905bfkkraluvdv",
-      "league": "Football / Czech Republic / CFL",
-      "home": "Bohemians Prague 1905 B",
-      "away": "FK Kraluv Dvur",
-      "time": "12:15",
+      "id": "pfcrilskisportistsamokovfkheba",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "PFC Rilski Sportist Samokov",
+      "away": "FK Hebar Pazardzhik",
+      "time": "03:30",
       "odds": {
-        "home": 3.19,
-        "draw": 4.1,
-        "away": 1.88
+        "home": 1.84,
+        "draw": 3.46,
+        "away": 4.04
       },
       "home_stats": {
-        "name": "Bohemians Prague 1905 B",
+        "name": "PFC Rilski Sportist Samokov",
         "form": [
           "D",
-          "W",
+          "L",
           "L",
           "D",
           "L"
         ],
         "goals_scored": [
-          3,
-          7,
+          0,
+          2,
           1,
-          1,
+          0,
           1
         ],
         "goals_conceded": [
+          0,
           3,
-          2,
-          2,
-          1,
-          2
+          3,
+          0,
+          3
         ],
         "recent_results": [
           {
-            "ts": 1762074900,
-            "opponent": "Admira Prague",
-            "opponent_id": "UkaqAx75",
+            "ts": 1761310800,
+            "match_id": "",
+            "opponent": "Levski Sofia II",
+            "opponent_id": "QkzUA12n",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1761651000,
+            "match_id": "",
+            "opponent": "Lok. Sofia",
+            "opponent_id": "xp9SXWBG",
             "home_away": "H",
             "score": [
               2,
@@ -2135,19 +796,10 @@
             ]
           },
           {
-            "ts": 1762606800,
-            "opponent": "Domazlice",
-            "opponent_id": "pSlT9AlQ",
-            "home_away": "A",
-            "score": [
-              2,
-              5
-            ]
-          },
-          {
-            "ts": 1763284500,
-            "opponent": "Loko Praha",
-            "opponent_id": "W4Q6EmU6",
+            "ts": 1761998400,
+            "match_id": "",
+            "opponent": "CSKA Sofia III",
+            "opponent_id": "dArgbmrK",
             "home_away": "H",
             "score": [
               2,
@@ -2155,443 +807,474 @@
             ]
           },
           {
-            "ts": 1763744400,
-            "opponent": "Pisek",
-            "opponent_id": "6smE5lCm",
+            "ts": 1762603200,
+            "match_id": "",
+            "opponent": "Botev Ihtiman",
+            "opponent_id": "AiTY7qzI",
             "home_away": "A",
             "score": [
-              0,
-              2
+              1,
+              1
             ]
           },
           {
-            "ts": 1764669600,
-            "opponent": "Zizkov (Cze)",
-            "opponent_id": "xWWzm0zj",
-            "home_away": "A",
+            "ts": 1763208000,
+            "match_id": "",
+            "opponent": "Gotse Delchev",
+            "opponent_id": "EBoYeJOm",
+            "home_away": "H",
             "score": [
               3,
-              1
+              0
             ]
           }
         ],
         "league_position": 12,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
+        "total_teams_in_league": 18,
+        "opposition_position": 17
       },
       "away_stats": {
-        "name": "FK Kraluv Dvur",
+        "name": "FK Hebar Pazardzhik",
         "form": [
-          "W",
-          "D",
-          "D",
-          "W",
-          "W"
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
         ],
         "goals_scored": [
-          4,
-          3,
-          1,
-          4,
-          5
+          0,
+          0,
+          0,
+          0,
+          0
         ],
         "goals_conceded": [
           3,
           3,
-          1,
-          0,
-          0
+          3,
+          3,
+          3
         ],
         "recent_results": [
           {
-            "ts": 1763200800,
-            "opponent": "Domazlice",
-            "opponent_id": "pSlT9AlQ",
+            "ts": 1313938800,
+            "match_id": "",
+            "opponent": "Mesta",
+            "opponent_id": "xfD9BRzg",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1314543600,
+            "match_id": "",
+            "opponent": "PFC Velbazhd Kyustendil",
+            "opponent_id": "SOCj7yOC",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1314802800,
+            "match_id": "",
+            "opponent": "Rilski Sportist",
+            "opponent_id": "WWDpewvf",
             "home_away": "H",
             "score": [
               2,
-              5
-            ]
-          },
-          {
-            "ts": 1763802900,
-            "opponent": "Loko Praha",
-            "opponent_id": "W4Q6EmU6",
-            "home_away": "A",
-            "score": [
-              1,
               1
             ]
           },
           {
-            "ts": 1768651200,
-            "opponent": "Steti (Cze)",
-            "opponent_id": "4QR6RdDK",
+            "ts": 1315144800,
+            "match_id": "",
+            "opponent": "Vitosha Bistritsa",
+            "opponent_id": "E9iCTFyE",
             "home_away": "A",
             "score": [
-              7,
-              1
+              3,
+              2
             ]
           },
           {
-            "ts": 1769331600,
-            "opponent": "Zapy (Cze)",
-            "opponent_id": "29pnwlUc",
-            "home_away": "A",
-            "score": [
-              4,
-              5
-            ]
-          },
-          {
-            "ts": 1770465600,
-            "opponent": "Velke Hamry (Cze)",
-            "opponent_id": "tb9IUvwd",
-            "home_away": "A",
+            "ts": 1315749600,
+            "match_id": "",
+            "opponent": "Minyor Bobov",
+            "opponent_id": "hro0XBfm",
+            "home_away": "H",
             "score": [
               5,
-              3
+              1
             ]
           }
         ],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
+        "league_position": 17,
+        "total_teams_in_league": 18,
+        "opposition_position": 17
       },
-      "h2h": {
-        "matches": [
-          {
-            "home": "FK Kraluv Dvur",
-            "away": "Bohemians Prague 1905 B",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1776524400
-          }
-        ]
-      },
+      "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 16
+      "total_teams_in_league": 18
     },
     {
-      "id": "skslovanhacsimmeringersc",
-      "league": "Football / Austria / Wien, Wiener Stadtliga",
-      "home": "SK Slovan HAC",
-      "away": "Simmeringer SC",
-      "time": "12:30",
+      "id": "leopardsscmombasaunitedfc",
+      "league": "Football / Kenya / Premier League",
+      "home": "Leopards SC",
+      "away": "Mombasa United FC",
+      "time": "03:30",
       "odds": {
-        "home": 1.6,
-        "draw": 4.1,
-        "away": 4.18
+        "home": 1.4,
+        "draw": 3.97,
+        "away": 6.95
       },
       "home_stats": {
-        "name": "SK Slovan HAC",
+        "name": "Leopards SC",
         "form": [
-          "L",
+          "W",
           "D",
           "D",
           "W",
           "D"
         ],
         "goals_scored": [
-          1,
-          0,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          4,
-          0,
           2,
           0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1749225600,
-            "opponent": "Red Star-Penzing",
-            "opponent_id": "SKA47RHl",
-            "home_away": "A",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1749909600,
-            "opponent": "Stammersdorf",
-            "opponent_id": "QDJF1BmN",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1755189000,
-            "opponent": "First Vienna (Am)",
-            "opponent_id": "GIMYJgYP",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1755957600,
-            "opponent": "A XIII-Auhof Center",
-            "opponent_id": "AebjulIq",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1756629000,
-            "opponent": "Kagran",
-            "opponent_id": "MFMlI3yj",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 16,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "Simmeringer SC",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
           0,
-          2,
-          2,
           2,
           0
         ],
         "goals_conceded": [
-          4,
           1,
-          1,
-          3,
-          1
+          0,
+          0,
+          0,
+          0
         ],
         "recent_results": [
           {
-            "ts": 1749370500,
-            "opponent": "Lac Inter",
-            "opponent_id": "vNjRdbqb",
+            "ts": 1749988800,
+            "match_id": "",
+            "opponent": "Talanta FC",
+            "opponent_id": "OKFmZVik",
             "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1749907800,
-            "opponent": "A XIII-Auhof Center",
-            "opponent_id": "AebjulIq",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1755356400,
-            "opponent": "Dinamo Helfort",
-            "opponent_id": "pb7HHJtD",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1756562400,
-            "opponent": "Wienerberger",
-            "opponent_id": "UTB3RJoO",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1757167200,
-            "opponent": "Floridsdorfer AC (Am)",
-            "opponent_id": "06kAjzCD",
-            "home_away": "H",
             "score": [
               3,
               1
             ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": 14
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "SK Slovan HAC",
-            "away": "Simmeringer SC",
-            "score": [
-              4,
-              0
-            ],
-            "ts": 1777192200
           },
           {
-            "home": "Simmeringer SC",
-            "away": "SK Slovan HAC",
+            "ts": 1750593600,
+            "match_id": "",
+            "opponent": "KCB",
+            "opponent_id": "YJdDMY7P",
+            "home_away": "H",
             "score": [
-              4,
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1758373200,
+            "match_id": "",
+            "opponent": "Sofapaka",
+            "opponent_id": "xU9afFkD",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1759496400,
+            "match_id": "",
+            "opponent": "Posta Rangers",
+            "opponent_id": "WfxlGWpg",
+            "home_away": "A",
+            "score": [
+              2,
               2
-            ],
-            "ts": 1759586400
+            ]
+          },
+          {
+            "ts": 1760533200,
+            "match_id": "",
+            "opponent": "Bandari",
+            "opponent_id": "AuYxVndl",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
           }
-        ]
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 18,
+        "opposition_position": 18
       },
+      "away_stats": {
+        "name": "Mombasa United FC",
+        "form": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          3,
+          2,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1761480000,
+            "match_id": "",
+            "opponent": "3K FC",
+            "opponent_id": "8reiOTYF",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1761732000,
+            "match_id": "",
+            "opponent": "Naivas FC",
+            "opponent_id": "jJ1fISq1",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1762077600,
+            "match_id": "",
+            "opponent": "Nzoia Sugar",
+            "opponent_id": "4Khsu9rn",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1762768800,
+            "match_id": "",
+            "opponent": "Darajani Gogo",
+            "opponent_id": "67U3M9If",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1763208000,
+            "match_id": "",
+            "opponent": "Kisumu All-Stars",
+            "opponent_id": "StIlac6f",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          }
+        ],
+        "league_position": 18,
+        "total_teams_in_league": 18,
+        "opposition_position": 18
+      },
+      "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 16
+      "total_teams_in_league": 18
     },
     {
-      "id": "slovanbratislavabu21ofkdynamom",
-      "league": "Football / Slovakia / 2. Liga",
-      "home": "Slovan Bratislava B U21",
-      "away": "OFK Dynamo Malzenice",
-      "time": "12:30",
+      "id": "astrahfcbudapestwomenmtkhungar",
+      "league": "Football / Hungary / NB I, Women",
+      "home": "Astra HFC Budapest Women",
+      "away": "MTK Hungaria Budapest Women",
+      "time": "03:30",
       "odds": {
-        "home": 1.89,
-        "draw": 3.55,
-        "away": 3.45
+        "home": 16.83,
+        "draw": 6.73,
+        "away": 1.11
       },
       "home_stats": {
-        "name": "Slovan Bratislava B U21",
-        "form": [
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          4
-        ],
-        "recent_results": [
-          {
-            "ts": 1642845600,
-            "opponent": "Artis Brno (Cze)",
-            "opponent_id": "zHLktbZ1",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1705744800,
-            "opponent": "Artis Brno (Cze)",
-            "opponent_id": "zHLktbZ1",
-            "home_away": "H",
-            "score": [
-              0,
-              4
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "OFK Dynamo Malzenice",
+        "name": "Astra HFC Budapest Women",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "recent_results": [],
         "league_position": null,
         "total_teams_in_league": 20,
-        "opposition_position": null
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "MTK Hungaria Budapest Women",
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          0,
+          9,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1755961200,
+            "match_id": "",
+            "opponent": "Szekszardi W",
+            "opponent_id": "YVcnZHWq",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1756566000,
+            "match_id": "",
+            "opponent": "Puskas Academy W",
+            "opponent_id": "hlEEGPm6",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1757170800,
+            "match_id": "",
+            "opponent": "Pecsi MFC W",
+            "opponent_id": "h8QwedF6",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1757773800,
+            "match_id": "",
+            "opponent": "Honved W",
+            "opponent_id": "tCt8MIXK",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1758380400,
+            "match_id": "",
+            "opponent": "Viktoria FC W",
+            "opponent_id": "67HwBx3g",
+            "home_away": "H",
+            "score": [
+              4,
+              0
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 20,
+        "opposition_position": 4
       },
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 20
     },
     {
-      "id": "centralwesterntungsing",
-      "league": "Football / Hong Kong / Division 1",
-      "home": "Central & Western",
-      "away": "Tung Sing",
-      "time": "12:30",
+      "id": "gornaoryahovitsapfccskasofiaii",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "Gorna Oryahovitsa",
+      "away": "PFC CSKA SOFIA II",
+      "time": "03:30",
       "odds": {
-        "home": 2.19,
-        "draw": 3.65,
-        "away": 2.7
+        "home": 2.47,
+        "draw": 3.14,
+        "away": 2.81
       },
       "home_stats": {
-        "name": "Central & Western",
+        "name": "Gorna Oryahovitsa",
         "form": [
-          "W",
           "D",
           "W",
-          "D",
-          "W"
+          "W",
+          "W",
+          "L"
         ],
         "goals_scored": [
+          0,
           2,
-          1,
           2,
           2,
-          2
+          1
         ],
         "goals_conceded": [
           0,
           1,
-          1,
-          2,
-          0
+          0,
+          0,
+          3
         ],
         "recent_results": [
           {
-            "ts": 1764014400,
-            "opponent": "Dep. Riestra",
-            "opponent_id": "2iZ4q0z6",
+            "ts": 1763901000,
+            "match_id": "",
+            "opponent": "CSKA Sofia II",
+            "opponent_id": "Ewt618S6",
             "home_away": "A",
             "score": [
               1,
-              0
+              1
             ]
           },
           {
-            "ts": 1764619200,
-            "opponent": "Gimnasia L.P.",
-            "opponent_id": "jiDN9Zaj",
-            "home_away": "H",
+            "ts": 1764419400,
+            "match_id": "",
+            "opponent": "Vihren",
+            "opponent_id": "69Af3hdc",
+            "home_away": "A",
             "score": [
               0,
-              2
+              6
             ]
           },
           {
-            "ts": 1769284800,
-            "opponent": "River Plate",
-            "opponent_id": "EVqSBe2f",
+            "ts": 1764948600,
+            "match_id": "",
+            "opponent": "Dunav Ruse",
+            "opponent_id": "dhGu1AeM",
             "home_away": "H",
             "score": [
               0,
@@ -2599,19 +1282,105 @@
             ]
           },
           {
-            "ts": 1769630400,
-            "opponent": "Aldosivi",
-            "opponent_id": "Eu4qrEcB",
+            "ts": 1769256000,
+            "match_id": "",
+            "opponent": "Ludogorets II (Bul)",
+            "opponent_id": "4Ktg0O16",
             "home_away": "A",
             "score": [
               0,
+              5
+            ]
+          },
+          {
+            "ts": 1769598000,
+            "match_id": "",
+            "opponent": "Cherno More (Bul)",
+            "opponent_id": "EeRUF2go",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 18,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "PFC CSKA SOFIA II",
+        "form": [
+          "W",
+          "D",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          3,
+          3,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          3,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1760965200,
+            "match_id": "",
+            "opponent": "Sevlievo",
+            "opponent_id": "pb8z6fyK",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1761310800,
+            "match_id": "",
+            "opponent": "Fratria",
+            "opponent_id": "Wjajeq2r",
+            "home_away": "H",
+            "score": [
+              1,
               0
             ]
           },
           {
-            "ts": 1769976000,
-            "opponent": "Dep. Riestra",
-            "opponent_id": "2iZ4q0z6",
+            "ts": 1762182000,
+            "match_id": "",
+            "opponent": "Yantra Gabrovo",
+            "opponent_id": "6FBf6ewJ",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1762518600,
+            "match_id": "",
+            "opponent": "Minyor Pernik",
+            "opponent_id": "SOb31WQ9",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1763901000,
+            "match_id": "",
+            "opponent": "Lok. Gorna",
+            "opponent_id": "t8sdYius",
             "home_away": "H",
             "score": [
               1,
@@ -2619,129 +1388,688 @@
             ]
           }
         ],
-        "league_position": 5,
-        "total_teams_in_league": 30,
-        "opposition_position": 5
+        "league_position": 2,
+        "total_teams_in_league": 18,
+        "opposition_position": 2
       },
-      "away_stats": {
-        "name": "Tung Sing",
+      "h2h": {
+        "matches": [
+          {
+            "home": "Gorna Oryahovitsa",
+            "away": "PFC CSKA SOFIA II",
+            "score": [
+              0,
+              3
+            ],
+            "ts": 1779548400
+          },
+          {
+            "home": "PFC CSKA SOFIA II",
+            "away": "Gorna Oryahovitsa",
+            "score": [
+              1,
+              1
+            ],
+            "ts": 1763901000
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "ofcnesebarfcfratriavarna",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "OFC Nesebar",
+      "away": "FC Fratria Varna",
+      "time": "03:30",
+      "odds": {
+        "home": 4.24,
+        "draw": 3.66,
+        "away": 1.75
+      },
+      "home_stats": {
+        "name": "OFC Nesebar",
         "form": [
-          "W",
-          "W",
-          "W"
+          "D",
+          "L",
+          "L",
+          "L",
+          "L"
         ],
         "goals_scored": [
-          2,
-          2,
-          2
-        ],
-        "goals_conceded": [
+          0,
+          0,
           1,
           1,
           0
         ],
-        "recent_results": [],
-        "league_position": 5,
-        "total_teams_in_league": 30,
-        "opposition_position": 5
+        "goals_conceded": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1761397200,
+            "match_id": "",
+            "opponent": "Rozova Dolina",
+            "opponent_id": "dQWqhFpe",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1762000200,
+            "match_id": "",
+            "opponent": "Yambol 1915",
+            "opponent_id": "xSWBpOcj",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1762691400,
+            "match_id": "",
+            "opponent": "Maritsa Plovdiv",
+            "opponent_id": "ro8q9lJq",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1763209800,
+            "match_id": "",
+            "opponent": "Spartak Plovdiv",
+            "opponent_id": "Cpl3qSPL",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1763901000,
+            "match_id": "",
+            "opponent": "Zagorets",
+            "opponent_id": "Ya3YX64M",
+            "home_away": "H",
+            "score": [
+              3,
+              0
+            ]
+          }
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "FC Fratria Varna",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          3,
+          0,
+          1,
+          1,
+          6
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1761659100,
+            "match_id": "",
+            "opponent": "Arda",
+            "opponent_id": "G4CP0a82",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1761924600,
+            "match_id": "",
+            "opponent": "Vihren",
+            "opponent_id": "69Af3hdc",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1762788600,
+            "match_id": "",
+            "opponent": "Dunav Ruse",
+            "opponent_id": "dhGu1AeM",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1763206200,
+            "match_id": "",
+            "opponent": "Belasitsa",
+            "opponent_id": "6qIPe9Nl",
+            "home_away": "H",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "ts": 1763730000,
+            "match_id": "",
+            "opponent": "Pirin Blagoevgrad",
+            "opponent_id": "rDzaLOVN",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 30
+      "total_teams_in_league": 18
     },
     {
-      "id": "mskzilinabfkinterbratislava",
-      "league": "Football / Slovakia / 2. Liga",
-      "home": "MSK Zilina B",
-      "away": "FK Inter Bratislava",
-      "time": "12:30",
+      "id": "fcyantragabrovopfcludogoretsra",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "FC Yantra Gabrovo",
+      "away": "PFC Ludogorets Razgrad II",
+      "time": "03:30",
       "odds": {
-        "home": 2.8,
-        "draw": 3.3,
-        "away": 2.27
+        "home": 3.24,
+        "draw": 3.38,
+        "away": 2.11
       },
       "home_stats": {
-        "name": "MSK Zilina B",
+        "name": "FC Yantra Gabrovo",
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          3,
+          3,
+          3
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          3,
+          0,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1764603000,
+            "match_id": "",
+            "opponent": "Pirin Blagoevgrad",
+            "opponent_id": "rDzaLOVN",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1765022400,
+            "match_id": "",
+            "opponent": "Chernomorets 1919",
+            "opponent_id": "IeVD4qkM",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1768998600,
+            "match_id": "",
+            "opponent": "Beroe (Bul)",
+            "opponent_id": "4MyeM4GH",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1769256000,
+            "match_id": "",
+            "opponent": "Spartak Pleven (Bul)",
+            "opponent_id": "Ee3kfcg0",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1769857200,
+            "match_id": "",
+            "opponent": "Lok. Gorna (Bul)",
+            "opponent_id": "t8sdYius",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 18,
+        "opposition_position": 9
+      },
+      "away_stats": {
+        "name": "PFC Ludogorets Razgrad II",
+        "form": [
+          "D",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          3,
+          5,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1763987400,
+            "match_id": "",
+            "opponent": "Spartak Pleven",
+            "opponent_id": "Ee3kfcg0",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1764331200,
+            "match_id": "",
+            "opponent": "Etar",
+            "opponent_id": "OICsE7P8",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1764676800,
+            "match_id": "",
+            "opponent": "Marek",
+            "opponent_id": "W68WWjRM",
+            "home_away": "H",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "ts": 1765108800,
+            "match_id": "",
+            "opponent": "CSKA Sofia II",
+            "opponent_id": "Ewt618S6",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1765540800,
+            "match_id": "",
+            "opponent": "Hebar",
+            "opponent_id": "IwK3Sxle",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 18,
+        "opposition_position": 9
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "FC Yantra Gabrovo",
+            "away": "PFC Ludogorets Razgrad II",
+            "score": [
+              3,
+              2
+            ],
+            "ts": 1783177200
+          },
+          {
+            "home": "PFC Ludogorets Razgrad II",
+            "away": "FC Yantra Gabrovo",
+            "score": [
+              3,
+              1
+            ],
+            "ts": 1774704600
+          },
+          {
+            "home": "PFC Ludogorets Razgrad II",
+            "away": "FC Yantra Gabrovo",
+            "score": [
+              1,
+              2
+            ],
+            "ts": 1770206400
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "pfksportistsvogepfcspartakplev",
+      "league": "Football / Bulgaria / Second Prof. League",
+      "home": "PFK Sportist Svoge",
+      "away": "PFC Spartak Pleven",
+      "time": "03:30",
+      "odds": {
+        "home": 1.96,
+        "draw": 3.12,
+        "away": 4.03
+      },
+      "home_stats": {
+        "name": "PFK Sportist Svoge",
         "form": [
           "L",
+          "L",
+          "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          1,
+          1,
+          6
+        ],
+        "recent_results": [
+          {
+            "ts": 1763296200,
+            "match_id": "",
+            "opponent": "Chernomorets 1919",
+            "opponent_id": "IeVD4qkM",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1763814600,
+            "match_id": "",
+            "opponent": "Hebar",
+            "opponent_id": "IwK3Sxle",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1764676800,
+            "match_id": "",
+            "opponent": "Etar",
+            "opponent_id": "OICsE7P8",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1765108800,
+            "match_id": "",
+            "opponent": "Marek",
+            "opponent_id": "W68WWjRM",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1768993200,
+            "match_id": "",
+            "opponent": "Hebar (Bul)",
+            "opponent_id": "IwK3Sxle",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ],
+        "league_position": 17,
+        "total_teams_in_league": 18,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "PFC Spartak Pleven",
+        "form": [
+          "D",
+          "L",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1765022400,
+            "match_id": "",
+            "opponent": "Vihren",
+            "opponent_id": "69Af3hdc",
+            "home_away": "H",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1769256000,
+            "match_id": "",
+            "opponent": "Yantra Gabrovo (Bul)",
+            "opponent_id": "6FBf6ewJ",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1769860800,
+            "match_id": "",
+            "opponent": "Beroe (Bul)",
+            "opponent_id": "4MyeM4GH",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1770294600,
+            "match_id": "",
+            "opponent": "Sevlievo (Bul)",
+            "opponent_id": "pb8z6fyK",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1770467400,
+            "match_id": "",
+            "opponent": "Etar (Bul)",
+            "opponent_id": "OICsE7P8",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 18,
+        "opposition_position": 10
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "PFC Spartak Pleven",
+            "away": "PFK Sportist Svoge",
+            "score": [
+              0,
+              0
+            ],
+            "ts": 1775311200
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "alwahdafcuaekhorfakkanclub",
+      "league": "Football / United Arab Emirates / League Cup",
+      "home": "Al Wahda FC (UAE)",
+      "away": "Khor Fakkan Club",
+      "time": "03:50",
+      "odds": {
+        "home": 1.68,
+        "draw": 4.03,
+        "away": 4.22
+      },
+      "home_stats": {
+        "name": "Al Wahda FC (UAE)",
+        "form": [
+          "W",
           "W",
           "W",
           "L",
           "D"
         ],
         "goals_scored": [
-          0,
-          2,
+          3,
+          1,
           2,
           1,
           0
         ],
         "goals_conceded": [
           2,
-          1,
-          1,
-          2,
-          0
-        ],
-        "recent_results": [],
-        "league_position": 4,
-        "total_teams_in_league": 16,
-        "opposition_position": 9
-      },
-      "away_stats": {
-        "name": "FK Inter Bratislava",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": 9,
-        "total_teams_in_league": 16,
-        "opposition_position": 9
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "scraltachwomenskrapidwienwomen",
-      "league": "Football / Austria / Bundesliga, Women",
-      "home": "SCR Altach Women",
-      "away": "SK Rapid Wien Women",
-      "time": "01:00",
-      "odds": {
-        "home": 1.63,
-        "draw": 4.15,
-        "away": 4.22
-      },
-      "home_stats": {
-        "name": "SCR Altach Women",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          6,
-          0,
-          1,
-          0
-        ],
-        "goals_conceded": [
           0,
           1,
           2,
-          1,
-          4
+          0
         ],
         "recent_results": [
           {
-            "ts": 1742047200,
+            "ts": 1765380600,
             "match_id": "",
-            "opponent": "LASK W",
-            "opponent_id": "jVy2IQha",
+            "opponent": "Al Nassr (Sau)",
+            "opponent_id": "h4I89ZuE",
+            "home_away": "H",
+            "score": [
+              2,
+              4
+            ]
+          },
+          {
+            "ts": 1765630200,
+            "match_id": "",
+            "opponent": "Al Jazira",
+            "opponent_id": "WUREBBlh",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1766427300,
+            "match_id": "",
+            "opponent": "Al Gharafa (Qat)",
+            "opponent_id": "SQrTeoKd",
             "home_away": "A",
             "score": [
               0,
@@ -2749,21 +2077,10 @@
             ]
           },
           {
-            "ts": 1742724000,
+            "ts": 1766926200,
             "match_id": "",
-            "opponent": "Neulengbach W",
-            "opponent_id": "CbvdXuYd",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1744541100,
-            "match_id": "",
-            "opponent": "LASK W",
-            "opponent_id": "jVy2IQha",
+            "opponent": "Khorfakkan",
+            "opponent_id": "AwzVzPeC",
             "home_away": "H",
             "score": [
               1,
@@ -2771,289 +2088,298 @@
             ]
           },
           {
-            "ts": 1745084700,
+            "ts": 1767358500,
             "match_id": "",
-            "opponent": "Bergheim W",
-            "opponent_id": "SOvVRYHq",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1745752500,
-            "match_id": "",
-            "opponent": "Neulengbach W",
-            "opponent_id": "CbvdXuYd",
+            "opponent": "Al Wasl",
+            "opponent_id": "OQuUcn3P",
             "home_away": "A",
             "score": [
-              2,
+              0,
               1
             ]
           }
         ],
         "league_position": 5,
-        "total_teams_in_league": 10,
-        "opposition_position": 7
+        "total_teams_in_league": 14,
+        "opposition_position": 11
       },
       "away_stats": {
-        "name": "SK Rapid Wien Women",
+        "name": "Khor Fakkan Club",
         "form": [
+          "W",
+          "L",
           "L",
           "D",
-          "L",
-          "W",
           "L"
         ],
         "goals_scored": [
+          2,
           0,
           1,
+          0,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          5,
+          0,
+          5
+        ],
+        "recent_results": [],
+        "league_position": 11,
+        "total_teams_in_league": 14,
+        "opposition_position": 11
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "dubaiunitedfcsharjahfc",
+      "league": "Football / United Arab Emirates / League Cup",
+      "home": "Dubai United FC",
+      "away": "Sharjah FC",
+      "time": "03:50",
+      "odds": {
+        "home": 3.42,
+        "draw": 3.71,
+        "away": 1.93
+      },
+      "home_stats": {
+        "name": "Dubai United FC",
+        "form": [
+          "W",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          4,
+          3,
           0,
           1,
           0
         ],
         "goals_conceded": [
-          6,
+          2,
+          2,
+          3,
           1,
-          4,
-          0,
-          3
+          1
         ],
         "recent_results": [
           {
-            "ts": 1782547200,
+            "ts": 1708416000,
             "match_id": "",
-            "opponent": "Kleinmunchen W (Aut)",
-            "opponent_id": "fcTUxGBp",
+            "opponent": "Melbourne Victory",
+            "opponent_id": "Qql6CzOP",
             "home_away": "A",
             "score": [
-              5,
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1708677900,
+            "match_id": "",
+            "opponent": "Brisbane Roar",
+            "opponent_id": "SSr7kDGC",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1709359200,
+            "match_id": "",
+            "opponent": "Perth Glory",
+            "opponent_id": "hjY9yg16",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1709887500,
+            "match_id": "",
+            "opponent": "WS Wanderers",
+            "opponent_id": "l00pXxBN",
+            "home_away": "A",
+            "score": [
+              3,
               1
             ]
           },
           {
-            "ts": 1785675600,
+            "ts": 1710403200,
             "match_id": "",
-            "opponent": "First Vienna W",
-            "opponent_id": "z1FVTFqG",
+            "opponent": "Melbourne Victory",
+            "opponent_id": "Qql6CzOP",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 20,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Sharjah FC",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          3,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1761839100,
+            "match_id": "",
+            "opponent": "Shabab Al Ahli Dubai",
+            "opponent_id": "EiQ5g3JL",
             "home_away": "A",
             "score": [
-              3,
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1762280100,
+            "match_id": "",
+            "opponent": "Al Ittihad (Sau)",
+            "opponent_id": "QmsyAjWh",
+            "home_away": "A",
+            "score": [
+              0,
               3
             ]
           },
           {
-            "ts": 1786881600,
+            "ts": 1763220600,
             "match_id": "",
-            "opponent": "Sudburgenland W",
-            "opponent_id": "dv9kxBfq",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1787475600,
-            "match_id": "",
-            "opponent": "SCR Altach W",
-            "opponent_id": "SdYhoXZe",
+            "opponent": "Al Ain",
+            "opponent_id": "UX1exRBg",
             "home_away": "H",
             "score": [
-              0,
-              1
+              1,
+              3
             ]
           },
           {
-            "ts": 1788008400,
+            "ts": 1763739000,
             "match_id": "",
-            "opponent": "Kleinmunchen W",
-            "opponent_id": "fcTUxGBp",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 10,
-        "opposition_position": 7
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "SK Rapid Wien Women",
-            "away": "SCR Altach Women",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1787475600
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 10
-    },
-    {
-      "id": "trabzonsporaswomenyuksekovaskw",
-      "league": "Football / Turkey / Super Lig, Women",
-      "home": "Trabzonspor AS Women",
-      "away": "Yuksekova SK Women",
-      "time": "01:00",
-      "odds": {
-        "home": 1.31,
-        "draw": 4.6,
-        "away": 8.4
-      },
-      "home_stats": {
-        "name": "Trabzonspor AS Women",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          4,
-          6,
-          4,
-          0,
-          7
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1745137800,
-            "match_id": "",
-            "opponent": "Fomget GSK W",
-            "opponent_id": "GGRe8I06",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1745751600,
-            "match_id": "",
-            "opponent": "Cekmekoy W",
-            "opponent_id": "CMG466zp",
+            "opponent": "Bani Yas",
+            "opponent_id": "8riCzYNT",
             "home_away": "H",
             "score": [
-              17,
-              0
+              1,
+              4
             ]
           },
           {
-            "ts": 1746360000,
+            "ts": 1764008100,
             "match_id": "",
-            "opponent": "Unye Kadin W",
-            "opponent_id": "6eplV2Nj",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1758556800,
-            "match_id": "",
-            "opponent": "Fomget GSK W",
-            "opponent_id": "GGRe8I06",
+            "opponent": "Al Ahli SC (Sau)",
+            "opponent_id": "0MHmoCY0",
             "home_away": "A",
             "score": [
               1,
-              2
-            ]
-          },
-          {
-            "ts": 1759060800,
-            "match_id": "",
-            "opponent": "Yuksekova W",
-            "opponent_id": "x4fkjKZ2",
-            "home_away": "H",
-            "score": [
-              2,
               0
             ]
           }
         ],
         "league_position": 2,
-        "total_teams_in_league": 16,
-        "opposition_position": 7
+        "total_teams_in_league": 20,
+        "opposition_position": 2
       },
-      "away_stats": {
-        "name": "Yuksekova SK Women",
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "hammarbyifwomenkristianstadsdf",
+      "league": "Football / Sweden / Damallsvenskan",
+      "home": "Hammarby IF Women",
+      "away": "Kristianstads DFF Women",
+      "time": "04:00",
+      "odds": {
+        "home": 1.19,
+        "draw": 6.91,
+        "away": 10.55
+      },
+      "home_stats": {
+        "name": "Hammarby IF Women",
         "form": [
-          "D",
           "W",
-          "D",
           "W",
-          "D"
+          "W",
+          "W",
+          "W"
         ],
         "goals_scored": [
-          1,
-          13,
-          1,
+          3,
+          3,
+          7,
           2,
-          0
+          4
         ],
         "goals_conceded": [
-          1,
           0,
           1,
+          0,
           0,
           0
         ],
         "recent_results": [
           {
-            "ts": 1758456000,
+            "ts": 1771869600,
             "match_id": "",
-            "opponent": "Amed SK W",
-            "opponent_id": "hSREh3wN",
-            "home_away": "H",
+            "opponent": "Rosengard W",
+            "opponent_id": "pYerGrm9",
+            "home_away": "A",
             "score": [
-              1,
-              1
+              4,
+              0
             ]
           },
           {
-            "ts": 1759060800,
+            "ts": 1773338400,
             "match_id": "",
-            "opponent": "Trabzonspor W",
-            "opponent_id": "nkKnHeva",
-            "home_away": "A",
+            "opponent": "Vaxjo DFF W",
+            "opponent_id": "4nmt4OBG",
+            "home_away": "H",
             "score": [
-              0,
+              2,
               2
             ]
           },
           {
-            "ts": 1759654800,
+            "ts": 1773684000,
             "match_id": "",
-            "opponent": "Fatih Vatan Spor W",
-            "opponent_id": "dtSSuu27",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1760176800,
-            "match_id": "",
-            "opponent": "Cekmekoy W",
-            "opponent_id": "CMG466zp",
+            "opponent": "Vittsjo W",
+            "opponent_id": "ANkH9YTp",
             "home_away": "H",
             "score": [
               3,
@@ -3061,80 +2387,868 @@
             ]
           },
           {
-            "ts": 1760518800,
+            "ts": 1774029600,
             "match_id": "",
-            "opponent": "Giresun W",
-            "opponent_id": "nc8KKa1l",
+            "opponent": "Kristianstad W",
+            "opponent_id": "OOfnF22F",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1774458000,
+            "match_id": "",
+            "opponent": "Sparta Prague W",
+            "opponent_id": "bBYdAIQq",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          }
+        ],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Kristianstads DFF Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "hackengothenburgwomenpiteaaifd",
+      "league": "Football / Sweden / Damallsvenskan",
+      "home": "Hacken Gothenburg Women",
+      "away": "Piteaa IF DFF Women",
+      "time": "04:00",
+      "odds": {
+        "home": 1.14,
+        "draw": 8.12,
+        "away": 12.56
+      },
+      "home_stats": {
+        "name": "Hacken Gothenburg Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Piteaa IF DFF Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "ifknorrkopingdfkwomenaikdffwom",
+      "league": "Football / Sweden / Damallsvenskan",
+      "home": "IFK Norrkoping DFK Women",
+      "away": "AIK DFF Women",
+      "time": "04:00",
+      "odds": {
+        "home": 2.59,
+        "draw": 3.5,
+        "away": 2.45
+      },
+      "home_stats": {
+        "name": "IFK Norrkoping DFK Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "AIK DFF Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "paris13atleticoredstarfc",
+      "league": "Football / France / Coupe de France",
+      "home": "Paris 13 Atletico",
+      "away": "Red Star FC",
+      "time": "04:00",
+      "odds": {
+        "home": 5.2,
+        "draw": 3.82,
+        "away": 1.65
+      },
+      "home_stats": {
+        "name": "Paris 13 Atletico",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1758303000,
+            "match_id": "",
+            "opponent": "Chateauroux",
+            "opponent_id": "jZ2ZFJqe",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1758907800,
+            "match_id": "",
+            "opponent": "Le Puy-en-Velay",
+            "opponent_id": "xnng4dGk",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1759512600,
+            "match_id": "",
+            "opponent": "Orleans",
+            "opponent_id": "AqswAEFD",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1760722200,
+            "match_id": "",
+            "opponent": "Rouen",
+            "opponent_id": "z5PJrrtm",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1761067800,
+            "match_id": "",
+            "opponent": "Stade Briochin",
+            "opponent_id": "CQxeodfa",
+            "home_away": "H",
+            "score": [
+              3,
+              0
+            ]
+          }
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 18,
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "Red Star FC",
+        "form": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          3,
+          0,
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          2,
+          4,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1761679800,
+            "match_id": "",
+            "opponent": "Dunkerque",
+            "opponent_id": "tAAobNse",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1762023600,
+            "match_id": "",
+            "opponent": "St Etienne",
+            "opponent_id": "YL2QybFe",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1762606800,
+            "match_id": "",
+            "opponent": "Le Mans",
+            "opponent_id": "ER0NeOOp",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1763304300,
+            "match_id": "",
+            "opponent": "Forbach",
+            "opponent_id": "lvUYA69I",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1763816400,
+            "match_id": "",
+            "opponent": "Clermont",
+            "opponent_id": "IRuMRua1",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 18,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "fkcaslavfkbanikmostsous",
+      "league": "Football / Czech Republic / CFL",
+      "home": "FK Caslav",
+      "away": "FK Banik Most-Sous",
+      "time": "04:00",
+      "odds": {
+        "home": 3.11,
+        "draw": 3.63,
+        "away": 2.03
+      },
+      "home_stats": {
+        "name": "FK Caslav",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          4,
+          0,
+          2,
+          4
+        ],
+        "recent_results": [
+          {
+            "ts": 1757752200,
+            "match_id": "",
+            "opponent": "Hlinsko",
+            "opponent_id": "pIHl0mwb",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1758465000,
+            "match_id": "",
+            "opponent": "Svitavy",
+            "opponent_id": "0xxkq8wB",
             "home_away": "H",
             "score": [
               5,
               0
             ]
+          },
+          {
+            "ts": 1758961800,
+            "match_id": "",
+            "opponent": "Kosmonosy",
+            "opponent_id": "8f2RCz82",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1759672800,
+            "match_id": "",
+            "opponent": "Trutnov",
+            "opponent_id": "nkjEfwxK",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1760191200,
+            "match_id": "",
+            "opponent": "Nachod",
+            "opponent_id": "xKAStK4k",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
           }
         ],
-        "league_position": 7,
+        "league_position": 12,
         "total_teams_in_league": 16,
-        "opposition_position": 7
+        "opposition_position": 8
+      },
+      "away_stats": {
+        "name": "FK Banik Most-Sous",
+        "form": [
+          "D",
+          "W",
+          "L",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          0,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          2,
+          1,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1762002000,
+            "match_id": "",
+            "opponent": "Kolin",
+            "opponent_id": "EuEPYusS",
+            "home_away": "H",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1762606800,
+            "match_id": "",
+            "opponent": "Velvary",
+            "opponent_id": "ADDOtaOg",
+            "home_away": "H",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1763296200,
+            "match_id": "",
+            "opponent": "Varnsdorf",
+            "opponent_id": "IsUetO2E",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1768640400,
+            "match_id": "",
+            "opponent": "Chomutov (Cze)",
+            "opponent_id": "4rArQuc9",
+            "home_away": "H",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "ts": 1769851800,
+            "match_id": "",
+            "opponent": "SK Kladno (Cze)",
+            "opponent_id": "Q7o2x7yO",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ],
+        "league_position": 8,
+        "total_teams_in_league": 16,
+        "opposition_position": 8
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 16
+    },
+    {
+      "id": "tenerifecdadceuta",
+      "league": "Football / Spain / LaLiga 2",
+      "home": "Tenerife CD",
+      "away": "AD Ceuta",
+      "time": "04:00",
+      "odds": {
+        "home": 1.79,
+        "draw": 3.66,
+        "away": 4.3
+      },
+      "home_stats": {
+        "name": "Tenerife CD",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          1,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1765135800,
+            "match_id": "",
+            "opponent": "Lugo",
+            "opponent_id": "IJTeVFYq",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1765647000,
+            "match_id": "",
+            "opponent": "Real Aviles",
+            "opponent_id": "dKc4L5vq",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1766251800,
+            "match_id": "",
+            "opponent": "Ponferradina",
+            "opponent_id": "0UFPgH6a",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1767532500,
+            "match_id": "",
+            "opponent": "Osasuna B",
+            "opponent_id": "Q14fiPNg",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1767989700,
+            "match_id": "",
+            "opponent": "CF Talavera",
+            "opponent_id": "W0xBI7Xo",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 22,
+        "opposition_position": 22
+      },
+      "away_stats": {
+        "name": "AD Ceuta",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          1,
+          2,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1765742400,
+            "match_id": "",
+            "opponent": "Las Palmas",
+            "opponent_id": "IyRQC2vM",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1766330100,
+            "match_id": "",
+            "opponent": "Real Sociedad B",
+            "opponent_id": "UJOGLItN",
+            "home_away": "A",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1767539700,
+            "match_id": "",
+            "opponent": "Andorra",
+            "opponent_id": "O6ucWgAa",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1768144500,
+            "match_id": "",
+            "opponent": "Malaga",
+            "opponent_id": "25tIqYiJ",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1768654800,
+            "match_id": "",
+            "opponent": "Valladolid",
+            "opponent_id": "zkpajjvm",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ],
+        "league_position": 22,
+        "total_teams_in_league": 22,
+        "opposition_position": 22
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "ndslovannkkrskoposavje",
+      "league": "Football / Slovenia / 2. Liga",
+      "home": "Nd Slovan",
+      "away": "NK Krsko Posavje",
+      "time": "04:00",
+      "odds": {
+        "home": 1.96,
+        "draw": 3.45,
+        "away": 3.45
+      },
+      "home_stats": {
+        "name": "Nd Slovan",
+        "form": [
+          "D",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1755961200,
+            "match_id": "",
+            "opponent": "Beltinci",
+            "opponent_id": "27oZF415",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1756566000,
+            "match_id": "",
+            "opponent": "Grosuplje",
+            "opponent_id": "Kb6aUTS7",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1757257200,
+            "match_id": "",
+            "opponent": "Triglav",
+            "opponent_id": "vuyqLqnk",
+            "home_away": "A",
+            "score": [
+              1,
+              4
+            ]
+          },
+          {
+            "ts": 1757860200,
+            "match_id": "",
+            "opponent": "Ilirija",
+            "opponent_id": "6LEbWnr1",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1758463200,
+            "match_id": "",
+            "opponent": "Rudar",
+            "opponent_id": "2kObFR9d",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 16,
+        "opposition_position": 15
+      },
+      "away_stats": {
+        "name": "NK Krsko Posavje",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          3,
+          6,
+          2,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1756652400,
+            "match_id": "",
+            "opponent": "Tabor Sezana",
+            "opponent_id": "t87eV9D1",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1757170800,
+            "match_id": "",
+            "opponent": "NK Bistrica",
+            "opponent_id": "EL97OrH3",
+            "home_away": "A",
+            "score": [
+              0,
+              6
+            ]
+          },
+          {
+            "ts": 1757772000,
+            "match_id": "",
+            "opponent": "Nafta",
+            "opponent_id": "dGr5Vw5a",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1758376800,
+            "match_id": "",
+            "opponent": "Bilje",
+            "opponent_id": "v9kOHP6i",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1758981600,
+            "match_id": "",
+            "opponent": "Beltinci",
+            "opponent_id": "27oZF415",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 16,
+        "opposition_position": 15
       },
       "h2h": {
         "matches": [
           {
-            "home": "Yuksekova SK Women",
-            "away": "Trabzonspor AS Women",
+            "home": "NK Krsko Posavje",
+            "away": "Nd Slovan",
             "score": [
               1,
               1
             ],
-            "ts": 1774260000
+            "ts": 1777563000
           },
           {
-            "home": "Trabzonspor AS Women",
-            "away": "Yuksekova SK Women",
+            "home": "Nd Slovan",
+            "away": "NK Krsko Posavje",
             "score": [
-              2,
-              0
+              1,
+              1
             ],
-            "ts": 1759060800
+            "ts": 1760788800
           }
         ]
       },
       "source": "betpawa",
       "total_teams_in_league": 16
-    },
-    {
-      "id": "koronaiikielcesamoraviamorawic",
-      "league": "Football / Poland / III Liga, Group 4",
-      "home": "Korona II Kielce SA",
-      "away": "Moravia Morawica",
-      "time": "01:00",
-      "odds": {
-        "home": 1.58,
-        "draw": 4.2,
-        "away": 4.3
-      },
-      "home_stats": {
-        "name": "Korona II Kielce SA",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": 15,
-        "total_teams_in_league": 18,
-        "opposition_position": 17
-      },
-      "away_stats": {
-        "name": "Moravia Morawica",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": 17,
-        "total_teams_in_league": 18,
-        "opposition_position": 17
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 18
     }
   ]
 }
