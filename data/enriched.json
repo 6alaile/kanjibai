@@ -1,217 +1,1186 @@
 {
   "meta": {
     "date": "2026-11-15",
-    "generatedAt": "2026-11-15T16:53:26.481374+03:00",
+    "generatedAt": "2026-11-15T18:02:25.714510+03:00",
     "scanned": 20,
-    "elapsedSeconds": 277.4
+    "elapsedSeconds": 109.7
   },
   "matches": [
     {
-      "id": "como1907womenssdfccomowomen",
-      "league": "Football / Italy / Serie A, Women",
-      "home": "Como 1907 Women",
-      "away": "SSD FC Como Women",
-      "time": "05:00",
+      "id": "granadacfudlaspalmas",
+      "league": "Football / Spain / LaLiga 2",
+      "home": "Granada CF",
+      "away": "UD Las Palmas",
+      "time": "06:15",
       "odds": {
-        "home": 2.19,
-        "draw": 3.57,
-        "away": 3.08
+        "home": 1.93,
+        "draw": 3.5,
+        "away": 3.8
       },
       "home_stats": {
-        "name": "Como 1907 Women",
+        "name": "Granada CF",
         "form": [
           "W",
           "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1767722400,
+            "match_id": "",
+            "opponent": "Rayo Vallecano",
+            "opponent_id": "8bcjFy6O",
+            "home_away": "H",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1768144500,
+            "match_id": "",
+            "opponent": "Castellon",
+            "opponent_id": "QyHHzdwl",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1768851000,
+            "match_id": "",
+            "opponent": "Eibar",
+            "opponent_id": "OEsEpExD",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1769284800,
+            "match_id": "",
+            "opponent": "Cadiz CF",
+            "opponent_id": "hdWjLJUJ",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1769976000,
+            "match_id": "",
+            "opponent": "Racing Santander",
+            "opponent_id": "nVpEwOrl",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 22,
+        "opposition_position": 11
+      },
+      "away_stats": {
+        "name": "UD Las Palmas",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          3,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          0,
+          1,
+          2,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1768066200,
+            "match_id": "",
+            "opponent": "Dep. A Coruna",
+            "opponent_id": "Q51ZzMS6",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1768749300,
+            "match_id": "",
+            "opponent": "Racing Santander",
+            "opponent_id": "nVpEwOrl",
+            "home_away": "A",
+            "score": [
+              1,
+              4
+            ]
+          },
+          {
+            "ts": 1769275800,
+            "match_id": "",
+            "opponent": "Cordoba",
+            "opponent_id": "CWuejruc",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1769801400,
+            "match_id": "",
+            "opponent": "Real Sociedad B",
+            "opponent_id": "UJOGLItN",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1770477300,
+            "match_id": "",
+            "opponent": "Burgos CF",
+            "opponent_id": "vTxTEFi6",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 22,
+        "opposition_position": 11
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "UD Las Palmas",
+            "away": "Granada CF",
+            "score": [
+              0,
+              2
+            ],
+            "ts": 1775149200
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 22
+    },
+    {
+      "id": "aljazirauaebaniyasclub",
+      "league": "Football / United Arab Emirates / League Cup",
+      "home": "Al Jazira (UAE)",
+      "away": "Baniyas Club",
+      "time": "06:30",
+      "odds": {
+        "home": 1.63,
+        "draw": 3.95,
+        "away": 4.72
+      },
+      "home_stats": {
+        "name": "Al Jazira (UAE)",
+        "form": [
           "D",
-          "D",
-          "L"
+          "W",
+          "W",
+          "W",
+          "W"
         ],
         "goals_scored": [
           2,
+          1,
           4,
+          3,
+          2
+        ],
+        "goals_conceded": [
           2,
+          0,
+          2,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1764948600,
+            "match_id": "",
+            "opponent": "Al Wahda",
+            "opponent_id": "21AL1RQp",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1765630200,
+            "match_id": "",
+            "opponent": "Al Wahda",
+            "opponent_id": "21AL1RQp",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1766331000,
+            "match_id": "",
+            "opponent": "Al Dhafra",
+            "opponent_id": "WnyRy5t6",
+            "home_away": "H",
+            "score": [
+              4,
+              2
+            ]
+          },
+          {
+            "ts": 1767012600,
+            "match_id": "",
+            "opponent": "Ittihad Kalba",
+            "opponent_id": "CxR74upk",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1767455100,
+            "match_id": "",
+            "opponent": "Shabab Al Ahli Dubai",
+            "opponent_id": "EiQ5g3JL",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          }
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 14,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Baniyas Club",
+        "form": [
+          "D",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          1,
+          3,
           1,
           0
         ],
         "goals_conceded": [
           1,
+          0,
           2,
           2,
-          1,
-          4
+          0
         ],
         "recent_results": [
           {
-            "ts": 1757163600,
+            "ts": 1761055200,
             "match_id": "",
-            "opponent": "Bologna W",
-            "opponent_id": "dnVJoL85",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1757854800,
-            "match_id": "",
-            "opponent": "Lumezzane W",
-            "opponent_id": "jTZnh40E",
+            "opponent": "Monastir",
+            "opponent_id": "zixQ6fq8",
             "home_away": "H",
             "score": [
               2,
-              0
-            ]
-          },
-          {
-            "ts": 1758459600,
-            "match_id": "",
-            "opponent": "RES Roma W",
-            "opponent_id": "SMIbyEEH",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1759064400,
-            "match_id": "",
-            "opponent": "RES Roma W",
-            "opponent_id": "SMIbyEEH",
-            "home_away": "H",
-            "score": [
-              5,
               1
             ]
           },
           {
-            "ts": 1759579200,
+            "ts": 1761399000,
             "match_id": "",
-            "opponent": "Frosinone W",
-            "opponent_id": "z9Z8GvGM",
+            "opponent": "JS Kairouan",
+            "opponent_id": "rVdSw2PP",
             "home_away": "A",
             "score": [
-              4,
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1762003800,
+            "match_id": "",
+            "opponent": "Soliman",
+            "opponent_id": "n5jl3GmP",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1762435800,
+            "match_id": "",
+            "opponent": "Stade Tunisien",
+            "opponent_id": "IVPZsB67",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1762695000,
+            "match_id": "",
+            "opponent": "Esperance Tunis",
+            "opponent_id": "bVINpDMl",
+            "home_away": "H",
+            "score": [
+              0,
               0
             ]
           }
         ],
         "league_position": 4,
-        "total_teams_in_league": 12,
+        "total_teams_in_league": 14,
+        "opposition_position": 4
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "adllerenenseatleticoclubpueblo",
+      "league": "Football / Spain / Tercera Federacion, Group 14",
+      "home": "AD Llerenense",
+      "away": "Atletico Club Pueblonuevo",
+      "time": "06:30",
+      "odds": {
+        "home": 1.48,
+        "draw": 4.0,
+        "away": 5.8
+      },
+      "home_stats": {
+        "name": "AD Llerenense",
+        "form": [
+          "W",
+          "W",
+          "D",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          0,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1757845800,
+            "match_id": "",
+            "opponent": "Azuaga",
+            "opponent_id": "AizHP7s7",
+            "home_away": "A",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1758470400,
+            "match_id": "",
+            "opponent": "Santa Amalia",
+            "opponent_id": "CCv1Tv4c",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1759053600,
+            "match_id": "",
+            "opponent": "Don Benito",
+            "opponent_id": "UV0LgBv7",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1759680000,
+            "match_id": "",
+            "opponent": "Villafranca",
+            "opponent_id": "nZJbZVh9",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1760263200,
+            "match_id": "",
+            "opponent": "Diocesano",
+            "opponent_id": "OrO2dp84",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 18,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "SSD FC Como Women",
+        "name": "Atletico Club Pueblonuevo",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "recent_results": [],
         "league_position": null,
-        "total_teams_in_league": 12,
+        "total_teams_in_league": 18,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 12
+      "total_teams_in_league": 18
     },
     {
-      "id": "westhamunitedfcwomencharltonat",
-      "league": "Football / England / The FA Women's Super League",
-      "home": "West Ham United FC Women",
-      "away": "Charlton Athletic Women",
-      "time": "05:00",
+      "id": "cfalgecirasantequeracf",
+      "league": "Football / Spain / Primera Federacion",
+      "home": "CF Algeciras",
+      "away": "Antequera CF",
+      "time": "06:30",
       "odds": {
-        "home": 1.23,
-        "draw": 6.11,
-        "away": 9.61
+        "home": 2.16,
+        "draw": 3.27,
+        "away": 3.22
       },
       "home_stats": {
-        "name": "West Ham United FC Women",
+        "name": "CF Algeciras",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          0,
+          3,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1761393600,
+            "match_id": "",
+            "opponent": "Alcorcon",
+            "opponent_id": "0ranWp9D",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1762010100,
+            "match_id": "",
+            "opponent": "Eldense",
+            "opponent_id": "8WUSyF3F",
+            "home_away": "A",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1762621200,
+            "match_id": "",
+            "opponent": "Antequera",
+            "opponent_id": "UTX26rhg",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1763290800,
+            "match_id": "",
+            "opponent": "Torremolinos",
+            "opponent_id": "AB8XRSBQ",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1763895600,
+            "match_id": "",
+            "opponent": "Sanluqueno",
+            "opponent_id": "r1N5s49f",
+            "home_away": "H",
+            "score": [
+              3,
+              0
+            ]
+          }
+        ],
+        "league_position": 15,
+        "total_teams_in_league": 20,
+        "opposition_position": 14
+      },
+      "away_stats": {
+        "name": "Antequera CF",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          1,
+          2,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          0,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1761854400,
+            "match_id": "",
+            "opponent": "Murcia",
+            "opponent_id": "YqQG18wC",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1762095600,
+            "match_id": "",
+            "opponent": "Hercules",
+            "opponent_id": "EgDgrOO2",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1762621200,
+            "match_id": "",
+            "opponent": "Algeciras",
+            "opponent_id": "lSHMFchs",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1763290800,
+            "match_id": "",
+            "opponent": "Sevilla FC B",
+            "opponent_id": "dY03Jvn2",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1763816400,
+            "match_id": "",
+            "opponent": "Murcia",
+            "opponent_id": "YqQG18wC",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          }
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 20,
+        "opposition_position": 14
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Antequera CF",
+            "away": "CF Algeciras",
+            "score": [
+              0,
+              2
+            ],
+            "ts": 1773252000
+          },
+          {
+            "home": "CF Algeciras",
+            "away": "Antequera CF",
+            "score": [
+              1,
+              0
+            ],
+            "ts": 1762621200
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "ittihadkalbafcshababalahliduba",
+      "league": "Football / United Arab Emirates / League Cup",
+      "home": "Ittihad Kalba FC",
+      "away": "Shabab Al Ahli Dubai",
+      "time": "06:30",
+      "odds": {
+        "home": 2.85,
+        "draw": 3.47,
+        "away": 2.27
+      },
+      "home_stats": {
+        "name": "Ittihad Kalba FC",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          2,
+          2,
+          3
+        ],
+        "goals_conceded": [
+          4,
+          2,
+          2,
+          3,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1748102400,
+            "match_id": "",
+            "opponent": "Bani Yas",
+            "opponent_id": "8riCzYNT",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1752766200,
+            "match_id": "",
+            "opponent": "Vukovar 1991 (Cro)",
+            "opponent_id": "nDCpAOpa",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1753797600,
+            "match_id": "",
+            "opponent": "Al Sailiya (Qat)",
+            "opponent_id": "4xuOqBYn",
+            "home_away": "A",
+            "score": [
+              4,
+              2
+            ]
+          },
+          {
+            "ts": 1755361800,
+            "match_id": "",
+            "opponent": "Al Nasr",
+            "opponent_id": "40ZYZrBI",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1755871200,
+            "match_id": "",
+            "opponent": "Bani Yas",
+            "opponent_id": "8riCzYNT",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 9,
+        "total_teams_in_league": 14,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Shabab Al Ahli Dubai",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          2,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0,
+          2,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1767800700,
+            "match_id": "",
+            "opponent": "Al Bataeh",
+            "opponent_id": "ABf8Ftqg",
+            "home_away": "A",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "ts": 1768146300,
+            "match_id": "",
+            "opponent": "Al Wasl",
+            "opponent_id": "OQuUcn3P",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1768491900,
+            "match_id": "",
+            "opponent": "Ajman",
+            "opponent_id": "CtP7yoRa",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1768837500,
+            "match_id": "",
+            "opponent": "Dibba Al Fujairah",
+            "opponent_id": "2eHlABP4",
+            "home_away": "H",
+            "score": [
+              7,
+              0
+            ]
+          },
+          {
+            "ts": 1769270400,
+            "match_id": "",
+            "opponent": "Al Sadd",
+            "opponent_id": "AkENgqwB",
+            "home_away": "A",
+            "score": [
+              2,
+              3
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 14,
+        "opposition_position": 4
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Shabab Al Ahli Dubai",
+            "away": "Ittihad Kalba FC",
+            "score": [
+              1,
+              5
+            ],
+            "ts": 1773250200
+          },
+          {
+            "home": "Ittihad Kalba FC",
+            "away": "Shabab Al Ahli Dubai",
+            "score": [
+              0,
+              0
+            ],
+            "ts": 1760715900
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 14
+    },
+    {
+      "id": "cpcalasanciocdcenicero",
+      "league": "Football / Spain / Tercera Federacion, Group 16",
+      "home": "Cp Calasancio",
+      "away": "CD Cenicero",
+      "time": "06:30",
+      "odds": {
+        "home": 2.0,
+        "draw": 3.2,
+        "away": 3.45
+      },
+      "home_stats": {
+        "name": "Cp Calasancio",
         "form": [
           "L",
           "L",
           "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          2,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          4,
+          1,
+          0,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1582385400,
+            "match_id": "",
+            "opponent": "Anguiano",
+            "opponent_id": "WzbcpECU",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1583076600,
+            "match_id": "",
+            "opponent": "CDFC Calzada",
+            "opponent_id": "AqpDl1r8",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1583683200,
+            "match_id": "",
+            "opponent": "Naxara",
+            "opponent_id": "4jrAJpKS",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1603013400,
+            "match_id": "",
+            "opponent": "Calahorra B",
+            "opponent_id": "dYHMO9Ya",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1603640700,
+            "match_id": "",
+            "opponent": "UD Logrones B",
+            "opponent_id": "t4IsWd19",
+            "home_away": "H",
+            "score": [
+              0,
+              4
+            ]
+          }
+        ],
+        "league_position": 13,
+        "total_teams_in_league": 18,
+        "opposition_position": 16
+      },
+      "away_stats": {
+        "name": "CD Cenicero",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          1,
+          1,
+          4,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1304262000,
+            "match_id": "",
+            "opponent": "Oyonesa",
+            "opponent_id": "WOpjk5sI",
+            "home_away": "A",
+            "score": [
+              0,
+              4
+            ]
+          },
+          {
+            "ts": 1304866800,
+            "match_id": "",
+            "opponent": "Calasancio",
+            "opponent_id": "fVQ4I51D",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1305475200,
+            "match_id": "",
+            "opponent": "Haro Deportivo",
+            "opponent_id": "Q3wkYIPr",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1631462400,
+            "match_id": "",
+            "opponent": "Berceo",
+            "opponent_id": "UeuT1Fs5",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1632067200,
+            "match_id": "",
+            "opponent": "Arnedo",
+            "opponent_id": "v7nG4Hcn",
+            "home_away": "A",
+            "score": [
+              0,
+              5
+            ]
+          }
+        ],
+        "league_position": 16,
+        "total_teams_in_league": 18,
+        "opposition_position": 16
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "athleticbilbaobwomencdalbafund",
+      "league": "Football / Spain / Primera Federacion, Women",
+      "home": "Athletic Bilbao B Women",
+      "away": "CD Alba Fundacion Women",
+      "time": "06:30",
+      "odds": {
+        "home": 2.45,
+        "draw": 3.17,
+        "away": 2.74
+      },
+      "home_stats": {
+        "name": "Athletic Bilbao B Women",
+        "form": [
+          "D",
+          "L",
+          "D",
           "W",
           "L"
         ],
         "goals_scored": [
           1,
           0,
-          2,
-          4,
-          0
+          0,
+          5,
+          1
         ],
         "goals_conceded": [
-          2,
-          3,
           1,
-          1,
-          5
+          6,
+          0,
+          0,
+          3
         ],
         "recent_results": [
           {
-            "ts": 1757242800,
+            "ts": 1680451200,
             "match_id": "",
-            "opponent": "Tottenham W",
-            "opponent_id": "zJscgDii",
-            "home_away": "A",
+            "opponent": "Cordoba W",
+            "opponent_id": "zBT2ZXRm",
+            "home_away": "H",
             "score": [
               0,
+              2
+            ]
+          },
+          {
+            "ts": 1681642800,
+            "match_id": "",
+            "opponent": "CD Juan Grande W",
+            "opponent_id": "lIV8vDVs",
+            "home_away": "A",
+            "score": [
+              2,
               1
             ]
           },
           {
-            "ts": 1757701800,
+            "ts": 1682244000,
             "match_id": "",
-            "opponent": "Arsenal W",
-            "opponent_id": "8CKOoQdn",
+            "opponent": "Logrono W",
+            "opponent_id": "CYmmY1W5",
             "home_away": "H",
             "score": [
               1,
-              5
+              0
             ]
           },
           {
-            "ts": 1758452400,
+            "ts": 1682848800,
             "match_id": "",
-            "opponent": "Brighton W",
-            "opponent_id": "KxpSSJgi",
+            "opponent": "Cacereno W",
+            "opponent_id": "lORPcDNb",
             "home_away": "A",
             "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1758736800,
-            "match_id": "",
-            "opponent": "Charlton W",
-            "opponent_id": "pKJCyg2G",
-            "home_away": "A",
-            "score": [
-              5,
+              3,
               1
             ]
           },
           {
-            "ts": 1759066200,
+            "ts": 1683453600,
             "match_id": "",
-            "opponent": "Chelsea W",
-            "opponent_id": "Q7Hu2UDD",
+            "opponent": "Rayo Vallecano W",
+            "opponent_id": "lxPwRRB4",
             "home_away": "H",
             "score": [
-              0,
-              4
+              2,
+              0
             ]
           }
         ],
-        "league_position": 11,
+        "league_position": 10,
         "total_teams_in_league": 14,
         "opposition_position": null
       },
       "away_stats": {
-        "name": "Charlton Athletic Women",
+        "name": "CD Alba Fundacion Women",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
@@ -225,1111 +1194,45 @@
       "total_teams_in_league": 14
     },
     {
-      "id": "latviaarmenia",
-      "league": "Football / International / UEFA Nations League",
-      "home": "Latvia",
-      "away": "Armenia",
-      "time": "05:00",
+      "id": "olimpicototanafccartagenab",
+      "league": "Football / Spain / Tercera Federacion, Group 13",
+      "home": "Olimpico Totana",
+      "away": "FC Cartagena B",
+      "time": "06:30",
       "odds": {
-        "home": 3.02,
-        "draw": 3.25,
-        "away": 2.48
+        "home": 1.8,
+        "draw": 3.4,
+        "away": 4.0
       },
       "home_stats": {
-        "name": "Latvia",
+        "name": "Olimpico Totana",
         "form": [
+          "W",
           "L",
-          "D",
-          "L",
+          "W",
           "L",
           "L"
         ],
         "goals_scored": [
-          0,
-          0,
           1,
           1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          2,
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1663862400,
-            "match_id": "",
-            "opponent": "Moldova",
-            "opponent_id": "zsDPKQGb",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1664110800,
-            "match_id": "",
-            "opponent": "Andorra",
-            "opponent_id": "dnO5z404",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1668618000,
-            "match_id": "",
-            "opponent": "Estonia",
-            "opponent_id": "YJwM4R15",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1668866400,
-            "match_id": "",
-            "opponent": "Iceland",
-            "opponent_id": "6TsAIrGN",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1679514300,
-            "match_id": "",
-            "opponent": "Ireland",
-            "opponent_id": "Gfyqk1aG",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 16,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Armenia",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
           3,
-          2,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1655222400,
-            "match_id": "",
-            "opponent": "Scotland",
-            "opponent_id": "fZRU25WH",
-            "home_away": "H",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1664024400,
-            "match_id": "",
-            "opponent": "Ukraine",
-            "opponent_id": "j1JtDMwo",
-            "home_away": "H",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1664304300,
-            "match_id": "",
-            "opponent": "Ireland",
-            "opponent_id": "Gfyqk1aG",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1668618000,
-            "match_id": "",
-            "opponent": "Kosovo",
-            "opponent_id": "v1DTPQwI",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1668875400,
-            "match_id": "",
-            "opponent": "Albania",
-            "opponent_id": "ELP2K4oB",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 16,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Armenia",
-            "away": "Latvia",
-            "score": [
-              0,
-              2
-            ],
-            "ts": 1790352000
-          },
-          {
-            "home": "Latvia",
-            "away": "Armenia",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1731852000
-          },
-          {
-            "home": "Armenia",
-            "away": "Latvia",
-            "score": [
-              1,
-              4
-            ],
-            "ts": 1725724800
-          },
-          {
-            "home": "Latvia",
-            "away": "Armenia",
-            "score": [
-              2,
-              0
-            ],
-            "ts": 1697126400
-          },
-          {
-            "home": "Armenia",
-            "away": "Latvia",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1687190400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "sunderlandafcwomennewcastleuni",
-      "league": "Football / England / Championship, Women",
-      "home": "Sunderland AFC Women",
-      "away": "Newcastle United WFC Women",
-      "time": "05:00",
-      "odds": {
-        "home": 3.24,
-        "draw": 3.43,
-        "away": 2.09
-      },
-      "home_stats": {
-        "name": "Sunderland AFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Newcastle United WFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "gfarumillyvallieresassaintetie",
-      "league": "Football / France / Coupe de France",
-      "home": "GFA Rumilly-Vallieres",
-      "away": "AS Saint-Etienne",
-      "time": "05:00",
-      "odds": {
-        "home": 5.47,
-        "draw": 4.8,
-        "away": 1.5
-      },
-      "home_stats": {
-        "name": "GFA Rumilly-Vallieres",
-        "form": [
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1
-        ],
-        "goals_conceded": [
           1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1164477600,
-            "match_id": "",
-            "opponent": "Miserieux Trevoux",
-            "opponent_id": "xvAw1sDU",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1166284800,
-            "match_id": "",
-            "opponent": "Cheruy",
-            "opponent_id": "tQotf6V2",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 20,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "AS Saint-Etienne",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          0,
           2
         ],
         "goals_conceded": [
           0,
-          0,
-          0,
-          3,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1763838000,
-            "match_id": "",
-            "opponent": "Nancy",
-            "opponent_id": "dnIrsS0A",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1764444600,
-            "match_id": "",
-            "opponent": "Ecotay Moingt",
-            "opponent_id": "lzfCZUal",
-            "home_away": "H",
-            "score": [
-              11,
-              1
-            ]
-          },
-          {
-            "ts": 1765047600,
-            "match_id": "",
-            "opponent": "Dunkerque",
-            "opponent_id": "tAAobNse",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1765652400,
-            "match_id": "",
-            "opponent": "Bastia",
-            "opponent_id": "AZwK8L6R",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1766324700,
-            "match_id": "",
-            "opponent": "Nice",
-            "opponent_id": "YagoQJpq",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 20,
-        "opposition_position": 1
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "nottinghamforestlfcwomenleices",
-      "league": "Football / England / Championship, Women",
-      "home": "Nottingham Forest Lfc Women",
-      "away": "Leicester City WFC Women",
-      "time": "05:00",
-      "odds": {
-        "home": 1.76,
-        "draw": 3.8,
-        "away": 4.04
-      },
-      "home_stats": {
-        "name": "Nottingham Forest Lfc Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Leicester City WFC Women",
-        "form": [
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1480856400,
-            "match_id": "",
-            "opponent": "Sheffield Utd W",
-            "opponent_id": "zHQ5bitm",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1541948400,
-            "match_id": "",
-            "opponent": "West Brom W",
-            "opponent_id": "6ZRkhIhC",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "cyprusmontenegro",
-      "league": "Football / International / UEFA Nations League",
-      "home": "Cyprus",
-      "away": "Montenegro",
-      "time": "05:00",
-      "odds": {
-        "home": 2.77,
-        "draw": 3.57,
-        "away": 2.45
-      },
-      "home_stats": {
-        "name": "Cyprus",
-        "form": [
-          "L",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          2,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1664045100,
-            "match_id": "",
-            "opponent": "Greece",
-            "opponent_id": "COuk57Ci",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1664304300,
-            "match_id": "",
-            "opponent": "Kosovo",
-            "opponent_id": "v1DTPQwI",
-            "home_away": "A",
-            "score": [
-              1,
-              5
-            ]
-          },
-          {
-            "ts": 1668621600,
-            "match_id": "",
-            "opponent": "Bulgaria",
-            "opponent_id": "WEeqYLaT",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1668961800,
-            "match_id": "",
-            "opponent": "Israel",
-            "opponent_id": "rqK1ypob",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1679752800,
-            "match_id": "",
-            "opponent": "Scotland",
-            "opponent_id": "fZRU25WH",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "Montenegro",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          2,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          1,
           2,
           1,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1663958700,
-            "match_id": "",
-            "opponent": "Bosnia & Herzegovina",
-            "opponent_id": "fqe7WYTr",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1664217900,
-            "match_id": "",
-            "opponent": "Finland",
-            "opponent_id": "QuVpPpic",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1668704400,
-            "match_id": "",
-            "opponent": "Slovakia",
-            "opponent_id": "KpLb2q1U",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1668952800,
-            "match_id": "",
-            "opponent": "Slovenia",
-            "opponent_id": "tfMf3PoO",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1679677200,
-            "match_id": "",
-            "opponent": "Bulgaria",
-            "opponent_id": "WEeqYLaT",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Montenegro",
-            "away": "Cyprus",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1790361900
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "burnleyfcwomensouthamptonfcwom",
-      "league": "Football / England / Championship, Women",
-      "home": "Burnley FC Women",
-      "away": "Southampton FC Women",
-      "time": "05:00",
-      "odds": {
-        "home": 5.02,
-        "draw": 4.35,
-        "away": 1.54
-      },
-      "home_stats": {
-        "name": "Burnley FC Women",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
           3,
-          0,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          4,
-          3,
-          4,
           3
         ],
         "recent_results": [
           {
-            "ts": 1743339600,
+            "ts": 1759680900,
             "match_id": "",
-            "opponent": "Wolverhampton W",
-            "opponent_id": "t8Aui8CP",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1744549200,
-            "match_id": "",
-            "opponent": "Rugby Borough W",
-            "opponent_id": "U3hQ10Bh",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1744829100,
-            "match_id": "",
-            "opponent": "FC Halifax W",
-            "opponent_id": "OU9qgWSK",
-            "home_away": "H",
-            "score": [
-              7,
-              0
-            ]
-          },
-          {
-            "ts": 1745758800,
-            "match_id": "",
-            "opponent": "Sporting Khalsa W",
-            "opponent_id": "tGxO2FYp",
-            "home_away": "H",
-            "score": [
-              7,
-              0
-            ]
-          },
-          {
-            "ts": 1755435600,
-            "match_id": "",
-            "opponent": "Middlesbrough W",
-            "opponent_id": "KnJqtau9",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          }
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Southampton FC Women",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          4,
-          3,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          3,
-          0,
-          6
-        ],
-        "recent_results": [
-          {
-            "ts": 1481461200,
-            "match_id": "",
-            "opponent": "Swindon W",
-            "opponent_id": "Oz8kIem2",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1483884000,
-            "match_id": "",
-            "opponent": "Cambridge Utd W",
-            "opponent_id": "f3rNPxtb",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1636900200,
-            "match_id": "",
-            "opponent": "Abingdon W",
-            "opponent_id": "f9UICQgH",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1638108000,
-            "match_id": "",
-            "opponent": "Cheltenham W",
-            "opponent_id": "KAZ4aVhO",
-            "home_away": "A",
-            "score": [
-              4,
-              3
-            ]
-          },
-          {
-            "ts": 1639922400,
-            "match_id": "",
-            "opponent": "Exeter W",
-            "opponent_id": "YBV1Rm2r",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 12,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "intermilanowomenjuventusturinw",
-      "league": "Football / Italy / Serie A, Women",
-      "home": "Inter Milano Women",
-      "away": "Juventus Turin Women",
-      "time": "05:00",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.58,
-        "away": 3.29
-      },
-      "home_stats": {
-        "name": "Inter Milano Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Juventus Turin Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "astonvillawfcwomenbirminghamci",
-      "league": "Football / England / The FA Women's Super League",
-      "home": "Aston Villa WFC Women",
-      "away": "Birmingham City WFC Women",
-      "time": "05:00",
-      "odds": {
-        "home": 2.04,
-        "draw": 3.72,
-        "away": 3.14
-      },
-      "home_stats": {
-        "name": "Aston Villa WFC Women",
-        "form": [
-          "W",
-          "W",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          2,
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          1,
-          1,
-          4
-        ],
-        "recent_results": [
-          {
-            "ts": 1757242800,
-            "match_id": "",
-            "opponent": "Brighton W",
-            "opponent_id": "KxpSSJgi",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1757847600,
-            "match_id": "",
-            "opponent": "Chelsea W",
-            "opponent_id": "Q7Hu2UDD",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1758736800,
-            "match_id": "",
-            "opponent": "Tottenham W",
-            "opponent_id": "zJscgDii",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1758970800,
-            "match_id": "",
-            "opponent": "Arsenal W",
-            "opponent_id": "8CKOoQdn",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1759661700,
-            "match_id": "",
-            "opponent": "West Ham W",
-            "opponent_id": "f5LnX3Gl",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 23,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Birmingham City WFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 23,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 23
-    },
-    {
-      "id": "wolverhamptonwandererswfcwomen",
-      "league": "Football / England / Championship, Women",
-      "home": "Wolverhampton Wanderers WFC Women",
-      "away": "Durham LFC Women",
-      "time": "05:00",
-      "odds": {
-        "home": 1.55,
-        "draw": 4.61,
-        "away": 4.61
-      },
-      "home_stats": {
-        "name": "Wolverhampton Wanderers WFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Durham LFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "watfordlfcwomenipswichtownlfcw",
-      "league": "Football / England / Championship, Women",
-      "home": "Watford LFC Women",
-      "away": "Ipswich Town Lfc Women",
-      "time": "05:00",
-      "odds": {
-        "home": 3.75,
-        "draw": 3.75,
-        "away": 1.83
-      },
-      "home_stats": {
-        "name": "Watford LFC Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Ipswich Town Lfc Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "kkslechpoznaniiwomenkkpbydgosz",
-      "league": "Football / Poland / 1. Liga, Women",
-      "home": "KKS Lech Poznan II Women",
-      "away": "Kkp Bydgoszcz Women",
-      "time": "05:00",
-      "odds": {
-        "home": 2.39,
-        "draw": 3.8,
-        "away": 2.39
-      },
-      "home_stats": {
-        "name": "KKS Lech Poznan II Women",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          2,
-          0,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          4,
-          1,
-          4,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1699461900,
-            "match_id": "",
-            "opponent": "Grodzisk Wielkopolski W",
-            "opponent_id": "xj1X6xws",
+            "opponent": "Mazarron",
+            "opponent_id": "0U3e5WIA",
             "home_away": "H",
             "score": [
               3,
@@ -1337,130 +1240,10 @@
             ]
           },
           {
-            "ts": 1700919000,
+            "ts": 1760283000,
             "match_id": "",
-            "opponent": "Ostrovia W",
-            "opponent_id": "IXeijQHM",
-            "home_away": "H",
-            "score": [
-              2,
-              4
-            ]
-          },
-          {
-            "ts": 1729094400,
-            "match_id": "",
-            "opponent": "Sroda W",
-            "opponent_id": "zVZqpxiQ",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1760781600,
-            "match_id": "",
-            "opponent": "Tczew W",
-            "opponent_id": "byVw4qnM",
-            "home_away": "H",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1792855800,
-            "match_id": "",
-            "opponent": "Legia II W",
-            "opponent_id": "p0zm5fl4",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Kkp Bydgoszcz Women",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "gkstychyrekordbielskobiala",
-      "league": "Football / Poland / II Liga",
-      "home": "GKS Tychy",
-      "away": "Rekord Bielsko Biala",
-      "time": "05:00",
-      "odds": {
-        "home": 1.44,
-        "draw": 4.53,
-        "away": 6.16
-      },
-      "home_stats": {
-        "name": "GKS Tychy",
-        "form": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          2,
-          0,
-          4,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1768552200,
-            "match_id": "",
-            "opponent": "Kecskemeti TE (Hun)",
-            "opponent_id": "vsq0Rrxm",
-            "home_away": "A",
-            "score": [
-              4,
-              3
-            ]
-          },
-          {
-            "ts": 1768912200,
-            "match_id": "",
-            "opponent": "Gjilani (Kos)",
-            "opponent_id": "l4bJeHHC",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1769248800,
-            "match_id": "",
-            "opponent": "Polonia Bytom (Pol)",
-            "opponent_id": "vRn3UqXP",
+            "opponent": "UCAM Murcia B",
+            "opponent_id": "dvg22kJp",
             "home_away": "A",
             "score": [
               0,
@@ -1468,94 +1251,105 @@
             ]
           },
           {
-            "ts": 1769765400,
+            "ts": 1760887800,
             "match_id": "",
-            "opponent": "Zaglebie Sosnowiec (Pol)",
-            "opponent_id": "043sUkrq",
+            "opponent": "Aguilas FC B",
+            "opponent_id": "OjZ1yuJO",
             "home_away": "H",
             "score": [
-              3,
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1761476400,
+            "match_id": "",
+            "opponent": "Pulpileno",
+            "opponent_id": "jBLkdUo3",
+            "home_away": "A",
+            "score": [
+              1,
               1
             ]
           },
           {
-            "ts": 1769779800,
+            "ts": 1762099200,
             "match_id": "",
-            "opponent": "Povazska Bystrica (Svk)",
-            "opponent_id": "dnnEbaWK",
+            "opponent": "Minerva",
+            "opponent_id": "pMGZR5gO",
             "home_away": "H",
             "score": [
-              2,
+              1,
               0
             ]
           }
         ],
-        "league_position": 3,
+        "league_position": 12,
         "total_teams_in_league": 18,
         "opposition_position": 15
       },
       "away_stats": {
-        "name": "Rekord Bielsko Biala",
+        "name": "FC Cartagena B",
         "form": [
-          "D",
           "L",
-          "D",
+          "W",
           "L",
-          "L"
+          "L",
+          "D"
         ],
         "goals_scored": [
           1,
-          0,
+          3,
           1,
           2,
-          1
+          2
         ],
         "goals_conceded": [
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           3,
           2
         ],
         "recent_results": [
           {
-            "ts": 1763294400,
+            "ts": 1758380400,
             "match_id": "",
-            "opponent": "Chojniczanka",
-            "opponent_id": "pGdjhJ01",
+            "opponent": "EG El Palmar CF",
+            "opponent_id": "vN4RB37f",
             "home_away": "H",
             "score": [
-              0,
-              5
+              4,
+              1
             ]
           },
           {
-            "ts": 1763812800,
+            "ts": 1759075200,
             "match_id": "",
-            "opponent": "Slask Wroclaw II",
-            "opponent_id": "QgsdWk7h",
-            "home_away": "H",
+            "opponent": "Mazarron",
+            "opponent_id": "0U3e5WIA",
+            "home_away": "A",
             "score": [
               1,
               1
             ]
           },
           {
-            "ts": 1764414000,
+            "ts": 1759653000,
             "match_id": "",
-            "opponent": "Podhale Nowy Targ",
-            "opponent_id": "CCAPVoLp",
-            "home_away": "A",
+            "opponent": "UCAM Murcia B",
+            "opponent_id": "dvg22kJp",
+            "home_away": "H",
             "score": [
-              2,
-              3
+              1,
+              2
             ]
           },
           {
-            "ts": 1768654800,
+            "ts": 1760263200,
             "match_id": "",
-            "opponent": "Sandecja Nowy S. (Pol)",
-            "opponent_id": "CCbwwqt7",
+            "opponent": "Aguilas FC B",
+            "opponent_id": "OjZ1yuJO",
             "home_away": "A",
             "score": [
               0,
@@ -1563,14 +1357,14 @@
             ]
           },
           {
-            "ts": 1769166000,
+            "ts": 1760860800,
             "match_id": "",
-            "opponent": "Slask Wroclaw (Pol)",
-            "opponent_id": "E1Oxemse",
-            "home_away": "A",
+            "opponent": "Pulpileno",
+            "opponent_id": "jBLkdUo3",
+            "home_away": "H",
             "score": [
-              0,
-              4
+              1,
+              2
             ]
           }
         ],
@@ -1581,13 +1375,22 @@
       "h2h": {
         "matches": [
           {
-            "home": "GKS Tychy",
-            "away": "Rekord Bielsko Biala",
+            "home": "Olimpico Totana",
+            "away": "FC Cartagena B",
             "score": [
               0,
               2
             ],
-            "ts": 1770460200
+            "ts": 1775058300
+          },
+          {
+            "home": "FC Cartagena B",
+            "away": "Olimpico Totana",
+            "score": [
+              1,
+              0
+            ],
+            "ts": 1763823600
           }
         ]
       },
@@ -1595,1005 +1398,1704 @@
       "total_teams_in_league": 18
     },
     {
-      "id": "portimonensesadacademicadecoim",
-      "league": "Football / Portugal / Liga Portugal 2",
-      "home": "Portimonense SAD",
-      "away": "Academica de Coimbra",
-      "time": "05:00",
+      "id": "cdtoledosadcpvillarrobledo",
+      "league": "Football / Spain / Tercera Federacion, Group 18",
+      "home": "CD Toledo Sad",
+      "away": "CP Villarrobledo",
+      "time": "06:30",
       "odds": {
-        "home": 2.26,
-        "draw": 3.29,
-        "away": 3.07
+        "home": 1.41,
+        "draw": 4.0,
+        "away": 7.0
       },
       "home_stats": {
-        "name": "Portimonense SAD",
-        "form": [
-          "D",
-          "L",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          4,
-          2,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1754820000,
-            "match_id": "",
-            "opponent": "Torreense U23",
-            "opponent_id": "vawaGyGO",
-            "home_away": "H",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1755284400,
-            "match_id": "",
-            "opponent": "Sporting CP U23",
-            "opponent_id": "4pAwOBJs",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1755788400,
-            "match_id": "",
-            "opponent": "Leiria U23",
-            "opponent_id": "EoJ6gNl3",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1756310400,
-            "match_id": "",
-            "opponent": "Estrela U23",
-            "opponent_id": "MLRUusOb",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1758708000,
-            "match_id": "",
-            "opponent": "Benfica U23",
-            "opponent_id": "MaZ3dRTi",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 17,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Academica de Coimbra",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          3,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1458489600,
-            "match_id": "",
-            "opponent": "Operario",
-            "opponent_id": "G2bcAvno",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1459004400,
-            "match_id": "",
-            "opponent": "Sporting Ideal",
-            "opponent_id": "6eSlJahM",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1459695600,
-            "match_id": "",
-            "opponent": "GD Tourizense",
-            "opponent_id": "Eqn4Njch",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1460300400,
-            "match_id": "",
-            "opponent": "Pampilhosa",
-            "opponent_id": "QRR8Qef8",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1460905200,
-            "match_id": "",
-            "opponent": "Oliveira Hospital",
-            "opponent_id": "zTJAaiQP",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "nigertornadoesfcenugurangersin",
-      "league": "Football / Nigeria / NPFL",
-      "home": "Niger Tornadoes FC",
-      "away": "Enugu Rangers International FC",
-      "time": "06:00",
-      "odds": {
-        "home": 1.53,
-        "draw": 3.42,
-        "away": 6.15
-      },
-      "home_stats": {
-        "name": "Niger Tornadoes FC",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1760281200,
-            "match_id": "",
-            "opponent": "Warri Wolves",
-            "opponent_id": "4dauChz4",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1760886000,
-            "match_id": "",
-            "opponent": "Plateau United",
-            "opponent_id": "8QFGSB43",
-            "home_away": "H",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1761404400,
-            "match_id": "",
-            "opponent": "Kano Pillars",
-            "opponent_id": "8fXi1zgC",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1762095600,
-            "match_id": "",
-            "opponent": "Abia Warriors",
-            "opponent_id": "OlLhCm2D",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1762700400,
-            "match_id": "",
-            "opponent": "Wikki Tourist",
-            "opponent_id": "nZg9p86q",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 20,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Enugu Rangers International FC",
-        "form": [
-          "D",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          2,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          2,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1768149000,
-            "match_id": "",
-            "opponent": "Aberdeen",
-            "opponent_id": "AmdbMiWq",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1768592700,
-            "match_id": "",
-            "opponent": "Annan",
-            "opponent_id": "MusLmn5f",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1769112000,
-            "match_id": "",
-            "opponent": "Ludogorets",
-            "opponent_id": "GrLjfV3M",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1769353200,
-            "match_id": "",
-            "opponent": "Dundee FC",
-            "opponent_id": "hjIyrgaj",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1769716800,
-            "match_id": "",
-            "opponent": "FC Porto",
-            "opponent_id": "S2NmScGp",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "fkmetalacgornjimilanovacfknapr",
-      "league": "Football / Serbia / Prva Liga",
-      "home": "FK Metalac Gornji Milanovac",
-      "away": "FK Napredak Krusevac",
-      "time": "06:00",
-      "odds": {
-        "home": 2.37,
-        "draw": 3.15,
-        "away": 2.8
-      },
-      "home_stats": {
-        "name": "FK Metalac Gornji Milanovac",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          5,
-          2,
-          3,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1759671000,
-            "match_id": "",
-            "opponent": "Real Podunavci",
-            "opponent_id": "Onuo8AqC",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1760185800,
-            "match_id": "",
-            "opponent": "Josanica",
-            "opponent_id": "xvdID5v6",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1760790600,
-            "match_id": "",
-            "opponent": "Omladinac Zablace",
-            "opponent_id": "EaM6zRKO",
-            "home_away": "H",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1761391800,
-            "match_id": "",
-            "opponent": "Sumadija 1903",
-            "opponent_id": "tdINQGMl",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1762000200,
-            "match_id": "",
-            "opponent": "Zlatibor Cajetina",
-            "opponent_id": "0bKt3xB1",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 16,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "FK Napredak Krusevac",
-        "form": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          0,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          2,
-          2,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1768204800,
-            "match_id": "",
-            "opponent": "FC Hermannstadt (Rou)",
-            "opponent_id": "pUUuFXvI",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1768487400,
-            "match_id": "",
-            "opponent": "Tobol (Kaz)",
-            "opponent_id": "C2dM0UAp",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1768744800,
-            "match_id": "",
-            "opponent": "Navbahor Namangan (Uzb)",
-            "opponent_id": "AiFncn0b",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1769076000,
-            "match_id": "",
-            "opponent": "Lok. Plovdiv (Bul)",
-            "opponent_id": "zFPKyZRc",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1769860800,
-            "match_id": "",
-            "opponent": "Javor",
-            "opponent_id": "00NeCQbK",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 16,
-        "opposition_position": 8
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "FK Napredak Krusevac",
-            "away": "FK Metalac Gornji Milanovac",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1786730400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "santiagowanderersdeportescopia",
-      "league": "Football / Chile / Primera B",
-      "home": "Santiago Wanderers",
-      "away": "Deportes Copiapo",
-      "time": "06:00",
-      "odds": {
-        "home": 2.59,
-        "draw": 2.74,
-        "away": 2.97
-      },
-      "home_stats": {
-        "name": "Santiago Wanderers",
-        "form": [
-          "D"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1326317400,
-            "match_id": "",
-            "opponent": "Chile U17",
-            "opponent_id": "zDNx9Fqf",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": 20,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Deportes Copiapo",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          4,
-          3,
-          2,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          1,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1757977200,
-            "match_id": "",
-            "opponent": "Antofagasta",
-            "opponent_id": "QVQVyHNa",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1759590000,
-            "match_id": "",
-            "opponent": "Recoleta",
-            "opponent_id": "jc0w1RUn",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1760214600,
-            "match_id": "",
-            "opponent": "San Marcos de Arica",
-            "opponent_id": "hSKmWrtQ",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1760896800,
-            "match_id": "",
-            "opponent": "Magallanes",
-            "opponent_id": "hhzzduQ7",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1761345000,
-            "match_id": "",
-            "opponent": "San Luis",
-            "opponent_id": "tjbndIRL",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 20,
-        "opposition_position": 8
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "pogonszczecinwomengkskatowicew",
-      "league": "Football / Poland / Ekstraliga, Women",
-      "home": "Pogon Szczecin Women",
-      "away": "GKS Katowice Women",
-      "time": "06:00",
-      "odds": {
-        "home": 2.69,
-        "draw": 3.71,
-        "away": 2.22
-      },
-      "home_stats": {
-        "name": "Pogon Szczecin Women",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          8,
-          3,
-          3
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          1,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1752678000,
-            "match_id": "",
-            "opponent": "Liberec W (Cze)",
-            "opponent_id": "p8bHGQm8",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1752926400,
-            "match_id": "",
-            "opponent": "Sparta Prague W (Cze)",
-            "opponent_id": "bBYdAIQq",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1754132400,
-            "match_id": "",
-            "opponent": "Union Berlin W (Ger)",
-            "opponent_id": "0CApK8nk",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1754733600,
-            "match_id": "",
-            "opponent": "UKS SMS Lodz W",
-            "opponent_id": "tY3Kautc",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1755432000,
-            "match_id": "",
-            "opponent": "Gdansk W",
-            "opponent_id": "WjKgHzCb",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 12,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "GKS Katowice Women",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          6,
-          4,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          1,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1758967200,
-            "match_id": "",
-            "opponent": "Pogon Szczecin W",
-            "opponent_id": "I1Div3tI",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1759503600,
-            "match_id": "",
-            "opponent": "Leczna W",
-            "opponent_id": "r1zVPNd0",
-            "home_away": "H",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1759856400,
-            "match_id": "",
-            "opponent": "Hacken W",
-            "opponent_id": "bDld9pGs",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1760263200,
-            "match_id": "",
-            "opponent": "Slask Wroclaw W",
-            "opponent_id": "d6oyi5l4",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1760630400,
-            "match_id": "",
-            "opponent": "Hacken W",
-            "opponent_id": "bDld9pGs",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 12,
-        "opposition_position": 1
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "GKS Katowice Women",
-            "away": "Pogon Szczecin Women",
-            "score": [
-              2,
-              4
-            ],
-            "ts": 1777107600
-          },
-          {
-            "home": "Pogon Szczecin Women",
-            "away": "GKS Katowice Women",
-            "score": [
-              0,
-              2
-            ],
-            "ts": 1758967200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "sevillafcwomenatleticomadridwo",
-      "league": "Football / Spain / Primera Division Women",
-      "home": "Sevilla FC Women",
-      "away": "Atletico Madrid Women",
-      "time": "06:00",
-      "odds": {
-        "home": 5.98,
-        "draw": 4.43,
-        "away": 1.46
-      },
-      "home_stats": {
-        "name": "Sevilla FC Women",
-        "form": [
-          "D",
-          "D",
-          "D",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          0,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          3,
-          1,
-          0,
-          3,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1759053600,
-            "match_id": "",
-            "opponent": "Athletic Bilbao W",
-            "opponent_id": "QH04QG25",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1759595400,
-            "match_id": "",
-            "opponent": "Espanyol W",
-            "opponent_id": "rBhPzPFk",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1760263200,
-            "match_id": "",
-            "opponent": "Levante W",
-            "opponent_id": "UVjgz3p2",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1760868000,
-            "match_id": "",
-            "opponent": "Madrid CFF W",
-            "opponent_id": "QB6Fb0WK",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1761994800,
-            "match_id": "",
-            "opponent": "Badalona W",
-            "opponent_id": "pIrz79P6",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 16,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Atletico Madrid Women",
+        "name": "CD Toledo Sad",
         "form": [],
         "goals_scored": [],
         "goals_conceded": [],
         "recent_results": [],
         "league_position": null,
-        "total_teams_in_league": 16,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "CP Villarrobledo",
+        "form": [
+          "D",
+          "D",
+          "W",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1758472200,
+            "match_id": "",
+            "opponent": "Pedroneras",
+            "opponent_id": "A9DBX0HD",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1759053600,
+            "match_id": "",
+            "opponent": "Tarancon",
+            "opponent_id": "2ooQP2Cr",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1759595400,
+            "match_id": "",
+            "opponent": "Villarrubia",
+            "opponent_id": "tEsiKrc2",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1760284800,
+            "match_id": "",
+            "opponent": "Azuqueca",
+            "opponent_id": "8tiK3yDh",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1760887800,
+            "match_id": "",
+            "opponent": "Marchamalo",
+            "opponent_id": "naQ4fvLg",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 20,
+        "opposition_position": 6
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "fcpenafiellusitaniafclourosa",
+      "league": "Football / Portugal / Liga Portugal 2",
+      "home": "FC Penafiel",
+      "away": "Lusitania FC Lourosa",
+      "time": "06:30",
+      "odds": {
+        "home": 1.78,
+        "draw": 3.61,
+        "away": 4.28
+      },
+      "home_stats": {
+        "name": "FC Penafiel",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          4,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          1,
+          0,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1762081200,
+            "match_id": "",
+            "opponent": "Vizela",
+            "opponent_id": "baN9J93D",
+            "home_away": "A",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1762599600,
+            "match_id": "",
+            "opponent": "Sporting CP B",
+            "opponent_id": "KKfzlNbq",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1763906400,
+            "match_id": "",
+            "opponent": "Maritimo",
+            "opponent_id": "noguvetP",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1764414000,
+            "match_id": "",
+            "opponent": "Academico Viseu",
+            "opponent_id": "GrRgeTHo",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1764957600,
+            "match_id": "",
+            "opponent": "Leiria",
+            "opponent_id": "AceEgPi5",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Lusitania FC Lourosa",
+        "form": [
+          "D",
+          "W",
+          "D",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1763895600,
+            "match_id": "",
+            "opponent": "Torreense",
+            "opponent_id": "8jQErKhN",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1764500400,
+            "match_id": "",
+            "opponent": "FC Porto B",
+            "opponent_id": "vNt65kUG",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1765105200,
+            "match_id": "",
+            "opponent": "Portimonense",
+            "opponent_id": "6ecm9Xlr",
+            "home_away": "H",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1765735200,
+            "match_id": "",
+            "opponent": "Pacos Ferreira",
+            "opponent_id": "hxT1f5xa",
+            "home_away": "A",
+            "score": [
+              5,
+              1
+            ]
+          },
+          {
+            "ts": 1766436300,
+            "match_id": "",
+            "opponent": "Oliveirense",
+            "opponent_id": "tA7VEKwU",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "FC Penafiel",
+            "away": "Lusitania FC Lourosa",
+            "score": [
+              2,
+              0
+            ],
+            "ts": 1771264800
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "pontevedracfbcaarteixo",
+      "league": "Football / Spain / Tercera Federacion, Group 1",
+      "home": "Pontevedra CF B",
+      "away": "CA Arteixo",
+      "time": "06:30",
+      "odds": {
+        "home": 2.01,
+        "draw": 3.3,
+        "away": 3.35
+      },
+      "home_stats": {
+        "name": "Pontevedra CF B",
+        "form": [
+          "L",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          3,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          0,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1694880000,
+            "match_id": "",
+            "opponent": "Viveiro",
+            "opponent_id": "2wYbN6SP",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1695488400,
+            "match_id": "",
+            "opponent": "Rapido de Bouzas",
+            "opponent_id": "AXqPPdgM",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1696086000,
+            "match_id": "",
+            "opponent": "Gran Pena",
+            "opponent_id": "8EJDcWmn",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1696777200,
+            "match_id": "",
+            "opponent": "Arzua",
+            "opponent_id": "nmbX28gk",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1697126400,
+            "match_id": "",
+            "opponent": "Barbadas-Bentraces",
+            "opponent_id": "4nmaBaEa",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": 11,
+        "total_teams_in_league": 18,
+        "opposition_position": 6
+      },
+      "away_stats": {
+        "name": "CA Arteixo",
+        "form": [
+          "D",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1760283000,
+            "match_id": "",
+            "opponent": "Noia",
+            "opponent_id": "j9bT3eHF",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1760868000,
+            "match_id": "",
+            "opponent": "Viveiro",
+            "opponent_id": "2wYbN6SP",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1761408000,
+            "match_id": "",
+            "opponent": "Arosa SC",
+            "opponent_id": "tzVaKjl9",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1762081200,
+            "match_id": "",
+            "opponent": "Montaneros",
+            "opponent_id": "UDJ1c5QE",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1762623000,
+            "match_id": "",
+            "opponent": "Somozas",
+            "opponent_id": "SYVzWCqn",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 18,
+        "opposition_position": 6
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Pontevedra CF B",
+            "away": "CA Arteixo",
+            "score": [
+              0,
+              2
+            ],
+            "ts": 1706367600
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "fctwenteenschedewomenpsveindho",
+      "league": "Football / Netherlands / Eredivisie, Women",
+      "home": "FC Twente Enschede Women",
+      "away": "PSV Eindhoven Women",
+      "time": "06:45",
+      "odds": {
+        "home": 1.92,
+        "draw": 3.76,
+        "away": 3.42
+      },
+      "home_stats": {
+        "name": "FC Twente Enschede Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "PSV Eindhoven Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
         "opposition_position": null
       },
       "h2h": null,
       "source": "betpawa",
-      "total_teams_in_league": 16
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "peczwolleladieswomenfcutrechtw",
+      "league": "Football / Netherlands / Eredivisie, Women",
+      "home": "PEC Zwolle Ladies Women",
+      "away": "FC Utrecht Women",
+      "time": "06:45",
+      "odds": {
+        "home": 1.31,
+        "draw": 5.18,
+        "away": 8.26
+      },
+      "home_stats": {
+        "name": "PEC Zwolle Ladies Women",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          3,
+          2,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          3,
+          2,
+          2,
+          1,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1747483200,
+            "match_id": "",
+            "opponent": "Utrecht W",
+            "opponent_id": "846Go5PK",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1751112000,
+            "match_id": "",
+            "opponent": "Twente W (Ned)",
+            "opponent_id": "8Wb4V5AR",
+            "home_away": "H",
+            "score": [
+              2,
+              4
+            ]
+          },
+          {
+            "ts": 1751713200,
+            "match_id": "",
+            "opponent": "Bochum W (Ger)",
+            "opponent_id": "K8TgIZLj",
+            "home_away": "A",
+            "score": [
+              6,
+              1
+            ]
+          },
+          {
+            "ts": 1752242400,
+            "match_id": "",
+            "opponent": "Bayer Leverkusen W (Ger)",
+            "opponent_id": "hjuyw2Kb",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1754740800,
+            "match_id": "",
+            "opponent": "Leuven W (Bel)",
+            "opponent_id": "I9I2jkpo",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ],
+        "league_position": 6,
+        "total_teams_in_league": 10,
+        "opposition_position": 10
+      },
+      "away_stats": {
+        "name": "FC Utrecht Women",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          3,
+          2,
+          2,
+          0,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1747483200,
+            "match_id": "",
+            "opponent": "PEC Zwolle W",
+            "opponent_id": "dp1HOsI7",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1747848600,
+            "match_id": "",
+            "opponent": "Twente W",
+            "opponent_id": "8Wb4V5AR",
+            "home_away": "A",
+            "score": [
+              4,
+              7
+            ]
+          },
+          {
+            "ts": 1751630400,
+            "match_id": "",
+            "opponent": "Twente W (Ned)",
+            "opponent_id": "8Wb4V5AR",
+            "home_away": "H",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1752228000,
+            "match_id": "",
+            "opponent": "AZ Alkmaar W (Ned)",
+            "opponent_id": "lM3YzVDN",
+            "home_away": "H",
+            "score": [
+              3,
+              3
+            ]
+          },
+          {
+            "ts": 1755626400,
+            "match_id": "",
+            "opponent": "DTS Ede W (Ned)",
+            "opponent_id": "nZnkXmWM",
+            "home_away": "A",
+            "score": [
+              7,
+              3
+            ]
+          }
+        ],
+        "league_position": 10,
+        "total_teams_in_league": 10,
+        "opposition_position": 10
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "FC Utrecht Women",
+            "away": "PEC Zwolle Ladies Women",
+            "score": [
+              4,
+              3
+            ],
+            "ts": 1789310700
+          },
+          {
+            "home": "FC Utrecht Women",
+            "away": "PEC Zwolle Ladies Women",
+            "score": [
+              0,
+              3
+            ],
+            "ts": 1775400300
+          },
+          {
+            "home": "PEC Zwolle Ladies Women",
+            "away": "FC Utrecht Women",
+            "score": [
+              1,
+              2
+            ],
+            "ts": 1757248200
+          },
+          {
+            "home": "FC Utrecht Women",
+            "away": "PEC Zwolle Ladies Women",
+            "score": [
+              0,
+              0
+            ],
+            "ts": 1747483200
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 10
+    },
+    {
+      "id": "feyenoordrotterdamwomenscheere",
+      "league": "Football / Netherlands / Eredivisie, Women",
+      "home": "Feyenoord Rotterdam Women",
+      "away": "SC Heerenveen Women",
+      "time": "06:45",
+      "odds": {
+        "home": 1.66,
+        "draw": 4.23,
+        "away": 4.13
+      },
+      "home_stats": {
+        "name": "Feyenoord Rotterdam Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "SC Heerenveen Women",
+        "form": [
+          "D",
+          "W",
+          "D",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        "goals_conceded": [
+          2,
+          0,
+          2,
+          0,
+          5
+        ],
+        "recent_results": [
+          {
+            "ts": 1741977000,
+            "match_id": "",
+            "opponent": "Feyenoord W",
+            "opponent_id": "M3Bc9Twt",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1742728500,
+            "match_id": "",
+            "opponent": "Twente W",
+            "opponent_id": "8Wb4V5AR",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1743012000,
+            "match_id": "",
+            "opponent": "AZ Alkmaar W",
+            "opponent_id": "lM3YzVDN",
+            "home_away": "H",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1743345900,
+            "match_id": "",
+            "opponent": "PEC Zwolle W",
+            "opponent_id": "dp1HOsI7",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1745160300,
+            "match_id": "",
+            "opponent": "PSV W",
+            "opponent_id": "hUGpYn1P",
+            "home_away": "A",
+            "score": [
+              1,
+              5
+            ]
+          }
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 20,
+        "opposition_position": 7
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "azalkmaarwomenajaxamsterdamwom",
+      "league": "Football / Netherlands / Eredivisie, Women",
+      "home": "AZ Alkmaar Women",
+      "away": "Ajax Amsterdam Women",
+      "time": "06:45",
+      "odds": {
+        "home": 10.57,
+        "draw": 6.54,
+        "away": 1.2
+      },
+      "home_stats": {
+        "name": "AZ Alkmaar Women",
+        "form": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          5,
+          5,
+          3,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1746273600,
+            "match_id": "",
+            "opponent": "Den Haag W",
+            "opponent_id": "WY3qQqYl",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1747483200,
+            "match_id": "",
+            "opponent": "Twente W",
+            "opponent_id": "8Wb4V5AR",
+            "home_away": "A",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1750762800,
+            "match_id": "",
+            "opponent": "NAC Breda W (Ned)",
+            "opponent_id": "KCXeRv77",
+            "home_away": "A",
+            "score": [
+              6,
+              1
+            ]
+          },
+          {
+            "ts": 1752228000,
+            "match_id": "",
+            "opponent": "Utrecht W (Ned)",
+            "opponent_id": "846Go5PK",
+            "home_away": "A",
+            "score": [
+              3,
+              3
+            ]
+          },
+          {
+            "ts": 1754661600,
+            "match_id": "",
+            "opponent": "Den Haag W (Ned)",
+            "opponent_id": "WY3qQqYl",
+            "home_away": "A",
+            "score": [
+              5,
+              1
+            ]
+          }
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Ajax Amsterdam Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 10,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 10
+    },
+    {
+      "id": "cdusanmartinunioncomercio",
+      "league": "Football / Peru / Segunda Division",
+      "home": "CDU San Martin",
+      "away": "Union Comercio",
+      "time": "06:45",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.1,
+        "away": 2.85
+      },
+      "home_stats": {
+        "name": "CDU San Martin",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "away_stats": {
+        "name": "Union Comercio",
+        "form": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "D"
+        ],
+        "goals_scored": [
+          1,
+          5,
+          1,
+          0,
+          3
+        ],
+        "goals_conceded": [
+          4,
+          0,
+          1,
+          1,
+          3
+        ],
+        "recent_results": [
+          {
+            "ts": 1748808000,
+            "match_id": "",
+            "opponent": "U. San Martin",
+            "opponent_id": "2yYthCYB",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1749413700,
+            "match_id": "",
+            "opponent": "Tacna Heroica",
+            "opponent_id": "nJCdDV2e",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1749932100,
+            "match_id": "",
+            "opponent": "Santos",
+            "opponent_id": "tEeeECCb",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1750623300,
+            "match_id": "",
+            "opponent": "AD Cantolao",
+            "opponent_id": "fez8a7k5",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1751227200,
+            "match_id": "",
+            "opponent": "Comerciantes",
+            "opponent_id": "p0DSATP5",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 20,
+        "opposition_position": 1
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "cdtropezoncfvimenor",
+      "league": "Football / Spain / Tercera Federacion, Group 3",
+      "home": "CD Tropezon",
+      "away": "CF Vimenor",
+      "time": "07:00",
+      "odds": {
+        "home": 1.69,
+        "draw": 3.45,
+        "away": 4.6
+      },
+      "home_stats": {
+        "name": "CD Tropezon",
+        "form": [
+          "W",
+          "D",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          2,
+          4,
+          3
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1761678000,
+            "match_id": "",
+            "opponent": "Cultural Leonesa",
+            "opponent_id": "O6FowKBc",
+            "home_away": "H",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1762018200,
+            "match_id": "",
+            "opponent": "Revilla",
+            "opponent_id": "l8Cb26LN",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1762704000,
+            "match_id": "",
+            "opponent": "Torrelavega",
+            "opponent_id": "8ARuFaCD",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1763217000,
+            "match_id": "",
+            "opponent": "UC Cartes",
+            "opponent_id": "KfZxGnun",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1763913600,
+            "match_id": "",
+            "opponent": "Atletico Albericia",
+            "opponent_id": "f5akdK5P",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 18,
+        "opposition_position": 7
+      },
+      "away_stats": {
+        "name": "CF Vimenor",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          3,
+          1,
+          3
+        ],
+        "goals_conceded": [
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1758466800,
+            "match_id": "",
+            "opponent": "CD Barquereno",
+            "opponent_id": "EHYtF6fh",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1759073400,
+            "match_id": "",
+            "opponent": "Torina",
+            "opponent_id": "O4Rsa7kc",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1759593600,
+            "match_id": "",
+            "opponent": "Bezana",
+            "opponent_id": "tpUWQui7",
+            "home_away": "A",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1760283000,
+            "match_id": "",
+            "opponent": "Laredo",
+            "opponent_id": "SStPzDHM",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1760886000,
+            "match_id": "",
+            "opponent": "Selaya",
+            "opponent_id": "QDq1LYOm",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ],
+        "league_position": 7,
+        "total_teams_in_league": 18,
+        "opposition_position": 7
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "CF Vimenor",
+            "away": "CD Tropezon",
+            "score": [
+              3,
+              1
+            ],
+            "ts": 1775923200
+          },
+          {
+            "home": "CD Tropezon",
+            "away": "CF Vimenor",
+            "score": [
+              5,
+              0
+            ],
+            "ts": 1765122300
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "oudheverleeleuvenwomenkrcgenkw",
+      "league": "Football / Belgium / Super League, Women",
+      "home": "Oud-Heverlee Leuven Women",
+      "away": "KRC Genk Women",
+      "time": "07:00",
+      "odds": {
+        "home": 1.24,
+        "draw": 5.98,
+        "away": 9.65
+      },
+      "home_stats": {
+        "name": "Oud-Heverlee Leuven Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "KRC Genk Women",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": null
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
+    },
+    {
+      "id": "cotillascdcdalgar",
+      "league": "Football / Spain / Tercera Federacion, Group 13",
+      "home": "Cotillas CD",
+      "away": "CD Algar",
+      "time": "07:00",
+      "odds": {
+        "home": 1.57,
+        "draw": 3.7,
+        "away": 5.2
+      },
+      "home_stats": {
+        "name": "Cotillas CD",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1788710400,
+            "match_id": "",
+            "opponent": "Mazarron",
+            "opponent_id": "0U3e5WIA",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1789315200,
+            "match_id": "",
+            "opponent": "Aguilas FC B",
+            "opponent_id": "OjZ1yuJO",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1789920000,
+            "match_id": "",
+            "opponent": "Alcantarilla",
+            "opponent_id": "0CX9thTe",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1790524800,
+            "match_id": "",
+            "opponent": "Pulpileno",
+            "opponent_id": "jBLkdUo3",
+            "home_away": "H",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "ts": 1791129600,
+            "match_id": "",
+            "opponent": "Bala Azul",
+            "opponent_id": "OnITgbSp",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ],
+        "league_position": 14,
+        "total_teams_in_league": 18,
+        "opposition_position": 17
+      },
+      "away_stats": {
+        "name": "CD Algar",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          2,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          3,
+          1,
+          2,
+          7
+        ],
+        "recent_results": [
+          {
+            "ts": 1694966400,
+            "match_id": "",
+            "opponent": "UCAM Murcia B",
+            "opponent_id": "dvg22kJp",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1695549600,
+            "match_id": "",
+            "opponent": "Lorca Deportiva",
+            "opponent_id": "WdE9xSOs",
+            "home_away": "A",
+            "score": [
+              1,
+              5
+            ]
+          },
+          {
+            "ts": 1696176000,
+            "match_id": "",
+            "opponent": "Caravaca",
+            "opponent_id": "6wRFyKxh",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1696756500,
+            "match_id": "",
+            "opponent": "Molinense",
+            "opponent_id": "8IgEM4mJ",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1697383800,
+            "match_id": "",
+            "opponent": "CAP Ciudad de Murcia",
+            "opponent_id": "K4UT2hZk",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ],
+        "league_position": 17,
+        "total_teams_in_league": 18,
+        "opposition_position": 17
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 18
+    },
+    {
+      "id": "sdleioarealsociedadc",
+      "league": "Football / Spain / Tercera Federacion, Group 4",
+      "home": "SD Leioa",
+      "away": "Real Sociedad C",
+      "time": "07:00",
+      "odds": {
+        "home": 1.98,
+        "draw": 3.5,
+        "away": 3.2
+      },
+      "home_stats": {
+        "name": "SD Leioa",
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          4,
+          2,
+          3,
+          3,
+          4
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          0,
+          2,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1763830800,
+            "match_id": "",
+            "opponent": "Touring KE",
+            "opponent_id": "YklaFJbk",
+            "home_away": "H",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1765121400,
+            "match_id": "",
+            "opponent": "Derio",
+            "opponent_id": "OhOcCpEa",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1765641600,
+            "match_id": "",
+            "opponent": "San Ignacio",
+            "opponent_id": "trw8NB3e",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1766250000,
+            "match_id": "",
+            "opponent": "Portugalete",
+            "opponent_id": "n7BGfiP0",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1767544200,
+            "match_id": "",
+            "opponent": "SD Deusto",
+            "opponent_id": "Uoxwy7bk",
+            "home_away": "H",
+            "score": [
+              3,
+              2
+            ]
+          }
+        ],
+        "league_position": 1,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Real Sociedad C",
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          2,
+          3,
+          4
+        ],
+        "goals_conceded": [
+          0,
+          2,
+          2,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1758447000,
+            "match_id": "",
+            "opponent": "Aurrera de Vitoria",
+            "opponent_id": "IV2PZfX0",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1759082400,
+            "match_id": "",
+            "opponent": "Alaves C",
+            "opponent_id": "KKH6AOrC",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1759588200,
+            "match_id": "",
+            "opponent": "Touring KE",
+            "opponent_id": "YklaFJbk",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1760277600,
+            "match_id": "",
+            "opponent": "Derio",
+            "opponent_id": "OhOcCpEa",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1760887800,
+            "match_id": "",
+            "opponent": "San Ignacio",
+            "opponent_id": "trw8NB3e",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 18,
+        "opposition_position": 4
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "SD Leioa",
+            "away": "Real Sociedad C",
+            "score": [
+              2,
+              1
+            ],
+            "ts": 1769270400
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": 18
     }
   ]
 }
