@@ -114,6 +114,7 @@ function analyseH2H(h2h, homeTeam) {
   const avg = safeAvg(goalTotals);
   return {
     available: true,
+    matches: matches,
     home_win_rate: homeWins / total,
     over_15_rate: goalTotals.filter(g => g > 1).length / total,
     over_25_rate: goalTotals.filter(g => g > 2).length / total,
@@ -262,6 +263,28 @@ function buildTeamNotes(name, t) {
   return notes;
 }
 
+// Form row helpers — recent_results aligned with form array
+function venueFor(team, idx) {
+  const r = team.recent_results && team.recent_results[idx];
+  if (!r) return '';
+  return r.home_away === 'H' ? 'H' : '@';  // @ = away
+}
+
+function opponentFor(team, idx) {
+  const r = team.recent_results && team.recent_results[idx];
+  if (!r || !r.opponent) return '';
+  // Abbreviate opponent name
+  const name = r.opponent;
+  return name.length > 12 ? name.slice(0, 10) + '..' : name;
+}
+
+function scorelineFor(team, idx) {
+  const gs = team.goals_scored && team.goals_scored[idx];
+  const gc = team.goals_conceded && team.goals_conceded[idx];
+  if (gs === undefined || gc === undefined) return '';
+  return `${gs}:${gc}`;
+}
+
 function compositeConfidence(side, ht, at, h2h, pos, lowConfidence) {
   const n = ht.n;
   if (!n) return 30;
@@ -370,14 +393,20 @@ function scoreMatch(match, cfg) {
       form: cap5(homeStats.form || []),
       goals_scored: cap5(homeStats.goals_scored || []),
       goals_conceded: cap5(homeStats.goals_conceded || []),
-      notes: buildTeamNotes(match.home, ht)
+      recent_results: cap5(homeStats.recent_results || []),
+      notes: buildTeamNotes(match.home, ht),
+      winningStreak: ht.winning_streak,
+      unbeatenStreak: ht.unbeaten_streak
     },
     awayStats: {
       name: match.away,
       form: cap5(awayStats.form || []),
       goals_scored: cap5(awayStats.goals_scored || []),
       goals_conceded: cap5(awayStats.goals_conceded || []),
-      notes: buildTeamNotes(match.away, at)
+      recent_results: cap5(awayStats.recent_results || []),
+      notes: buildTeamNotes(match.away, at),
+      winningStreak: at.winning_streak,
+      unbeatenStreak: at.unbeaten_streak
     },
     signals: generateSignals(match.home, match.away, ht, at, h2h, side)
   };
@@ -553,7 +582,7 @@ createApp({
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition,
-      formatTime24, competitionOptions
+      formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor
     };
   }
 }).mount('#app');

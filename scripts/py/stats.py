@@ -27,6 +27,7 @@ from flashscore_cache import (
     get_league_position as fs_get_league_position,
     get_total_teams as fs_get_total_teams,
     get_h2h_data as fs_get_h2h_data,
+    get_recent_results as fs_get_recent_results,
 )
 
 logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
@@ -95,23 +96,27 @@ def enrich_match(match: dict) -> dict:
         "form": home_form,
         "goals_scored": home_goals_scored,
         "goals_conceded": home_goals_conceded
-    }, home_pos, total_teams, opposition_pos)
+    }, home_pos, total_teams, opposition_pos,
+       fs_get_recent_results(home_name, n=5) if fs_has_team(home_name) else [])
+
     enriched["away_stats"] = _build_stats(away_name, {
         "form": away_form,
         "goals_scored": away_goals_scored,
         "goals_conceded": away_goals_conceded
-    }, away_pos, total_teams, opposition_pos)
+    }, away_pos, total_teams, opposition_pos,
+       fs_get_recent_results(away_name, n=5) if fs_has_team(away_name) else [])
     enriched["h2h"] = h2h
     enriched["total_teams_in_league"] = total_teams
     return enriched
 
 
-def _build_stats(name: str, form_data: dict, position: Optional[int], total_teams: int, opposition_pos: Optional[Any] = None) -> dict:
+def _build_stats(name: str, form_data: dict, position: Optional[int], total_teams: int, opposition_pos: Optional[Any] = None, recent_results: Optional[list] = None) -> dict:
     return {
         "name": name,
         "form": form_data.get("form", []),
         "goals_scored": form_data.get("goals_scored", []),
         "goals_conceded": form_data.get("goals_conceded", []),
+        "recent_results": recent_results or [],
         "league_position": position,
         "total_teams_in_league": total_teams,
         "opposition_position": opposition_pos

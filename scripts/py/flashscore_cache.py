@@ -230,6 +230,19 @@ def get_recent_form(team_name: str, n: int = 5) -> Dict[str, List]:
     }
 
 
+def get_recent_results(team_name: str, n: int = 5) -> List[Dict[str, Any]]:
+    """Per-match results: {opponent, home_away (H/A), score: [scored, conceded]}.
+
+    Oldest first, aligned with the form/goals arrays (form_summary).
+    """
+    team = _find_team(team_name)
+    if not team:
+        return []
+    results = team.get("results") or []
+    # results are stored most-recent-first; reverse to match form order
+    return list(reversed(results))[:n]
+
+
 def get_league_position(team_name: str) -> Optional[int]:
     team = _find_team(team_name)
     return team.get("league_position") if team else None

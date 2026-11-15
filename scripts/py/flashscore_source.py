@@ -75,6 +75,17 @@ ABBREV = {
     "futebol": "fb", "club": "cl", "futbol": "fb", "deportivo": "dep",
 }
 
+# Women's team name aliases (bookmaker name -> Flashscore name).
+# Flashscore abbreviates women's clubs as "<Name> W"; some are so heavily
+# renamed (Cerezo Osaka Sakai Ladies -> "C-Osaka W") that token matching
+# can never connect them, so map them directly.
+WOMEN_ALIASES = {
+    "rapid vienna women": "SK Rapid W",
+    "rapid wien women": "SK Rapid W",
+    "cerezo osaka sakai ladies": "C-Osaka W",
+    "cerezo osaka sakai ladies women": "C-Osaka W",
+}
+
 SESSION = requests.Session()
 SESSION.headers.update({
     "User-Agent": USER_AGENT,
@@ -124,7 +135,8 @@ def _distinctive(name: str) -> set:
 def target_gender(name: str) -> str:
     """'Women' when the name carries a women's marker, otherwise 'Men'."""
     tokens = set(re.findall(r"[a-z0-9]+", name.lower()))
-    if tokens & WOMEN_MARKERS or "w" in tokens:
+    # Only consider women markers explicitly in the name, not standalone "w" from words like "wien"
+    if tokens & WOMEN_MARKERS:
         return "Women"
     return "Men"
 
@@ -132,20 +144,28 @@ def target_gender(name: str) -> str:
 def _query_variants(name: str) -> List[str]:
     """Search queries to try, most specific first.
 
-    Flashscore's search ranks poorly on long names, so drop club-type and
-    gender tokens and retry with the first two words.
+    Flashscore's search ranks poorly on long names, so drop club-type tokens
+    and retry with the first two words. Women's clubs are stored as
+    "<Name> W", so append a " W" variant for women's teams.
     """
     variants = [name]
     stripped = " ".join(
         word for word in name.split()
         if word.lower().strip(".") not in GENERIC
-        and word.lower() not in WOMEN_MARKERS
     )
     if stripped and stripped != name:
         variants.append(stripped)
     words = stripped.split()
     if len(words) > 2:
         variants.append(" ".join(words[:2]))
+
+    if target_gender(name) == "Women":
+        core = " ".join(w for w in stripped.split() if w.lower() not in WOMEN_MARKERS)
+        if core and core != stripped:
+            variants.append(f"{core} W")
+            core_words = core.split()
+            if len(core_words) > 1:
+                variants.append(" ".join(core_words[:2]) + " W")
 
     seen, out = set(), []
     for variant in variants:
@@ -164,11 +184,21 @@ def search_team(name: str) -> Optional[Dict]:
     Returns {id, slug, name, gender, country, score} or None when nothing
     plausible is found.  Men and women are never matched across.
     """
+    # Women's clubs are stored as "<Name> W" on Flashscore and the search API
+    # never indexes the "Women"/"Ladies" tokens, so swap in the canonical name
+    # before querying (but keep the original gender for filtering).
     wanted_gender = target_gender(name)
-    target = _distinctive(name)
+    query_name = name
+    name_lower = name.lower().strip()
+    for alias, flashscore_name in WOMEN_ALIASES.items():
+        if alias in name_lower:
+            query_name = flashscore_name
+            break
+
+    target = _distinctive(query_name)
     best, best_score = None, 0.0
 
-    for query in _query_variants(name):
+    for query in _query_variants(query_name):
         try:
             response = SESSION.get(
                 FS_SEARCH.format(q=query.replace(" ", "+")), timeout=20)
