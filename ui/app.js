@@ -396,7 +396,8 @@ function scoreMatch(match, cfg) {
       recent_results: cap5(homeStats.recent_results || []),
       notes: buildTeamNotes(match.home, ht),
       winningStreak: ht.winning_streak,
-      unbeatenStreak: ht.unbeaten_streak
+      unbeatenStreak: ht.unbeaten_streak,
+      cleanSheets: ht.clean_sheets
     },
     awayStats: {
       name: match.away,
@@ -406,7 +407,8 @@ function scoreMatch(match, cfg) {
       recent_results: cap5(awayStats.recent_results || []),
       notes: buildTeamNotes(match.away, at),
       winningStreak: at.winning_streak,
-      unbeatenStreak: at.unbeaten_streak
+      unbeatenStreak: at.unbeaten_streak,
+      cleanSheets: at.clean_sheets
     },
     signals: generateSignals(match.home, match.away, ht, at, h2h, side)
   };
@@ -574,6 +576,34 @@ createApp({
       return parts[parts.length - 1].trim();
     }
 
+    // League string is "Football / <Country> / <Competition>" → ISO code for flagcdn.com
+    const FLAGS = {
+      'Albania':'al','Algeria':'dz','Andorra':'ad','Angola':'ao','Argentina':'ar','Armenia':'am','Australia':'au',
+      'Austria':'at','Azerbaijan':'az','Bahrain':'bh','Bangladesh':'bd','Belarus':'by','Belgium':'be','Bolivia':'bo',
+      'Bosnia and Herzegovina':'ba','Bosnia & Herzegovina':'ba','Botswana':'bw','Brazil':'br','Bulgaria':'bg',
+      'Burkina Faso':'bf','Cameroon':'cm','Canada':'ca','Cape Verde':'cv','Chile':'cl','China':'cn','Colombia':'co',
+      'Costa Rica':'cr','Croatia':'hr','Cyprus':'cy','Czech Republic':'cz','Czechia':'cz','Denmark':'dk',
+      'DR Congo':'cd','Ecuador':'ec','Egypt':'eg','El Salvador':'sv','England':'gb-eng','Estonia':'ee',
+      'Ethiopia':'et','Faroe Islands':'fo','Finland':'fi','France':'fr','Georgia':'ge','Germany':'de','Ghana':'gh',
+      'Greece':'gr','Guatemala':'gt','Honduras':'hn','Hong Kong':'hk','Hungary':'hu','Iceland':'is','India':'in',
+      'Indonesia':'id','Iran':'ir','Iraq':'iq','Ireland':'ie','Israel':'il','Italy':'it','Ivory Coast':'ci',
+      'Jamaica':'jm','Japan':'jp','Jordan':'jo','Kazakhstan':'kz','Kenya':'ke','Kosovo':'xk','Kuwait':'kw',
+      'Latvia':'lv','Lebanon':'lb','Libya':'ly','Lithuania':'lt','Luxembourg':'lu','Malawi':'mw','Malaysia':'my',
+      'Malta':'mt','Mexico':'mx','Moldova':'md','Montenegro':'me','Morocco':'ma','Mozambique':'mz','Namibia':'na',
+      'Netherlands':'nl','New Zealand':'nz','Nigeria':'ng','North Macedonia':'mk','Northern Ireland':'gb-nir',
+      'Norway':'no','Oman':'om','Panama':'pa','Paraguay':'py','Peru':'pe','Philippines':'ph','Poland':'pl',
+      'Portugal':'pt','Qatar':'qa','Romania':'ro','Russia':'ru','Rwanda':'rw','Saudi Arabia':'sa','Scotland':'gb-sct',
+      'Senegal':'sn','Serbia':'rs','Singapore':'sg','Slovakia':'sk','Slovenia':'si','South Africa':'za',
+      'South Korea':'kr','Spain':'es','Sudan':'sd','Sweden':'se','Switzerland':'ch','Syria':'sy','Tanzania':'tz',
+      'Thailand':'th','Tunisia':'tn','Turkey':'tr','Turkiye':'tr','Uganda':'ug','Ukraine':'ua',
+      'United Arab Emirates':'ae','Uruguay':'uy','USA':'us','Uzbekistan':'uz','Venezuela':'ve','Vietnam':'vn',
+      'Wales':'gb-wls','Zambia':'zm','Zimbabwe':'zw'
+    };
+
+    function flagCode(league) {
+      return FLAGS[((league || '').split('/')[1] || '').trim()] || '';
+    }
+
     Vue.onMounted(() => { runScan(); });
 
     return {
@@ -581,7 +611,7 @@ createApp({
       activeFilter, loadingStep, loadingDetail,
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
-      runScan, toggleMarket, toggleReasoning, getCompetition,
+      runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor
     };
   }

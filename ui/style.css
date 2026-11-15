@@ -419,6 +419,17 @@ header {
   color: var(--text2);
   letter-spacing: 0.05em;
   margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-league .flag {
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .header-matchup {
@@ -615,13 +626,9 @@ header {
 
 .form-comparison {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.65fr 1fr;
   gap: 12px;
   align-items: start;
-}
-
-@media (min-width: 769px) {
-  .form-comparison:has(.h2h-center-col) { grid-template-columns: 1fr 1.65fr 1fr; }
 }
 
 .form-team-col {
@@ -758,31 +765,37 @@ header {
   text-overflow: ellipsis;
 }
 
-.streaks-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
+.streaks-table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  margin: 0 -4px;
+  width: calc(100% + 8px);
 }
 
-.streak-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 6px;
-  background: var(--surface);
-  border-radius: var(--radius-sm);
-}
-
-.streak-label {
+.streaks-table th {
   font-size: 9px;
+  font-weight: 400;
   color: var(--text2);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 6px 2px 4px;
+  background: var(--surface);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.streaks-table td {
+  text-align: center;
+  padding: 4px 2px 6px;
+  background: var(--surface);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
 .streak-val {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text);
 }
@@ -831,6 +844,14 @@ header {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--text);
+}
+
+.h2h-home { text-align: right; }
+
+.h2h-empty {
+  font-size: 10px;
+  color: var(--text2);
+  padding: 4px 0;
 }
 
 .h2h-score {
@@ -1117,7 +1138,8 @@ header {
 @media (max-width: 768px) {
   .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .controls-body { grid-template-columns: 1fr; }
-  .card-header { grid-template-columns: 84px 1fr auto; gap: 10px; }
+  .card-header { grid-template-columns: 96px 1fr auto; gap: 10px; }
+  .goals-streaks-grid { grid-template-columns: 1fr; }
   .header-matchup { flex-direction: column; align-items: flex-start; gap: 2px; }
   .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }

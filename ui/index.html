@@ -157,7 +157,13 @@
           <div class="card-header" @click="toggleReasoning(match.id)">
             <div class="header-left">
               <div class="header-time">{{ formatTime24(match.time) }}</div>
-              <div class="header-league">{{ getCompetition(match.league) }}</div>
+              <div class="header-league">
+                <img v-if="flagCode(match.league)" class="flag" alt=""
+                  :src="'https://flagcdn.com/w20/' + flagCode(match.league) + '.png'"
+                  :srcset="'https://flagcdn.com/w40/' + flagCode(match.league) + '.png 2x'"
+                  @error="$event.target.style.display = 'none'">
+                <span>{{ getCompetition(match.league) }}</span>
+              </div>
             </div>
             <div class="header-matchup">
               <div class="team-block">
@@ -243,15 +249,16 @@
                   </div>
                 </div>
                 <!-- H2H SCORE HISTORY CENTERED BETWEEN FORM COLUMNS -->
-                <div class="h2h-center-col" v-if="match.h2hMatches && match.h2hMatches.length">
+                <div class="h2h-center-col">
                   <div class="h2h-title">Head-to-Head</div>
-                  <div class="h2h-rows">
+                  <div class="h2h-rows" v-if="match.h2hMatches && match.h2hMatches.length">
                     <div v-for="h in match.h2hMatches" :key="h.ts" class="h2h-row">
                       <span class="h2h-home">{{ h.home }}</span>
                       <span class="h2h-score">{{ h.score[0] }}-{{ h.score[1] }}</span>
                       <span class="h2h-away">{{ h.away }}</span>
                     </div>
                   </div>
+                  <div class="h2h-empty" v-else>No H2H data</div>
                 </div>
                 <div class="form-team-col">
                   <div v-for="team in [match.awayStats]" :key="team.name" class="form-team">
@@ -275,24 +282,26 @@
               <div class="goals-streaks-grid">
                 <div v-for="team in [match.homeStats, match.awayStats]" :key="team.name" class="goals-streaks-team">
                   <div class="streaks-team-name">{{ team.name }}</div>
-                  <div class="streaks-stats">
-                    <div class="streak-row">
-                      <span class="streak-label">Scored</span>
-                      <span class="streak-val">{{ team.notes && team.notes[0] ? team.notes[0].match(/(\d+) of last/)?.[1] || '-' : '-' }}</span>
-                    </div>
-                    <div class="streak-row">
-                      <span class="streak-label">Conceded</span>
-                      <span class="streak-val">{{ team.notes && team.notes[1] ? team.notes[1].match(/(\d+) of last/)?.[1] || '-' : '-' }}</span>
-                    </div>
-                    <div class="streak-row">
-                      <span class="streak-label">Win Streak</span>
-                      <span class="streak-val streak-w">{{ team.winningStreak || 0 }}</span>
-                    </div>
-                    <div class="streak-row">
-                      <span class="streak-label">Unbeaten</span>
-                      <span class="streak-val streak-u">{{ team.unbeatenStreak || 0 }}</span>
-                    </div>
-                  </div>
+                  <table class="streaks-table">
+                    <thead>
+                      <tr>
+                        <th>Scored</th>
+                        <th>Conceded</th>
+                        <th>Clean Sheets</th>
+                        <th>Unbeaten</th>
+                        <th>Winning Streak</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="streak-val">{{ team.notes && team.notes[0] ? team.notes[0].match(/(\d+) of last/)?.[1] || '-' : '-' }}</td>
+                        <td class="streak-val">{{ team.notes && team.notes[1] ? team.notes[1].match(/(\d+) of last/)?.[1] || '-' : '-' }}</td>
+                        <td class="streak-val">{{ team.cleanSheets ?? '-' }}</td>
+                        <td class="streak-val streak-u">{{ team.unbeatenStreak || 0 }}</td>
+                        <td class="streak-val streak-w">{{ team.winningStreak || 0 }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
