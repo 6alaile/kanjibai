@@ -262,6 +262,7 @@ def team_form(events: List[Dict], team_id: str, n: int = 5) -> Dict:
         conceded = event["away_score"] if is_home else event["home_score"]
         played.append({
             "ts": event["ts"],
+            "match_id": event.get("AA", ""),
             "opponent": event["away"] if is_home else event["home"],
             "opponent_id": event["away_id"] if is_home else event["home_id"],
             "home_away": "H" if is_home else "A",
@@ -443,6 +444,66 @@ def fetch_league_context(seed_name: str) -> Optional[Dict]:
         "league": ref,
         "table": fetch_standings(ref["table_id"], ref["season_id"]),
     }
+
+
+def fetch_match_h2h(match_id: str, home_name: str, away_name: str,
+                    home_fs_id: str, away_fs_id: str,
+                    limit: int = 5) -> List[Dict]:
+    """H2H via Flashscore's per-fixture df_hh_1_{match_id} feed (52KB, no browser).
+
+    Fields per match row:
+      KC=epoch  KU=home goals  KT=away goals  UO=home team id  UQ=away team id
+    Names are normalised to the odds-feed names so app.js comparisons work.
+    """
+    url = f"{FS_FEED.format(f'df_hh_1_{match_id}')}"
+    try:
+        resp = SESSION.get(url, headers={"x-fsign": FS_FSIGN}, timeout=10)
+        if resp.status_code != 200 or len(resp.content) < 10:
+            return []
+    except OSError:
+        return []
+
+    rows = parse_feed(resp.content.decode("utf-8", errors="replace"))
+    ids = {home_fs_id, away_fs_id}
+    meetings: List[Dict] = []
+    seen_ts: set = set()
+
+    for row in rows:
+        rh, ra = row.get("UO", ""), row.get("UQ", "")
+        if {rh, ra} != ids:
+            continue
+        kl = row.get("KL", "")
+        if ":" not in kl:
+            continue
+        # KS is perspective of UO team: "home"=UO played at home, "away"=UO played away.
+        # Aggregate/summary rows have KS=None — skip them to avoid duplicates.
+        ks = row.get("KS")
+        if ks not in ("home", "away"):
+            continue
+        try:
+            uo_goals, uq_goals = [int(x) for x in kl.split(":")]
+        except ValueError:
+            continue
+        ts = int(row.get("KC", 0) or 0)
+        if ts in seen_ts:
+            continue
+        seen_ts.add(ts)
+        if ks == "home":
+            # UO played at home → UO is the actual home team, UQ is away
+            home_team_id = rh
+            home_goals, away_goals = uo_goals, uq_goals
+        else:
+            # UO played away → UQ is the actual home team, UO is away
+            home_team_id = ra
+            home_goals, away_goals = uq_goals, uo_goals
+        if home_team_id == home_fs_id:
+            h, a = home_name, away_name
+        else:
+            h, a = away_name, home_name
+        meetings.append({"home": h, "away": a, "score": [home_goals, away_goals], "ts": ts})
+
+    meetings.sort(key=lambda m: m["ts"], reverse=True)
+    return meetings[:limit]
 
 
 if __name__ == "__main__":

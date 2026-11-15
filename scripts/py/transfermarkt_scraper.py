@@ -325,14 +325,14 @@ def _fixture_url(team_slug: str, team_id: int, season: str) -> str:
 
 
 def _candidate_seasons() -> List[str]:
-    """Seasons to try, newest first.
+    """Current season only — prior seasons are irrelevant for form.
 
-    Many leagues publish their table/fixtures under the previous season id,
-    and some lower-tier competitions lag by two or more years. Trying a
-    small window keeps working without hammering the site.
+    The one-season fallback that previously tried 2024/2025 is removed:
+    old fixtures distort recent form and slow the scrape significantly.
+    H2H lookups (spielbericht pages) may still reference older match IDs
+    but those are fetched lazily and are not subject to this limit.
     """
-    current = int(_current_season_id())
-    return [str(current - offset) for offset in range(0, 3)]
+    return [_current_season_id()]
 
 
 def _extract_league_from_page(page: Page) -> tuple:

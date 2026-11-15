@@ -36,7 +36,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from flashscore_source import fetch_team_data
+from flashscore_source import fetch_team_data, fetch_match_h2h
 
 logging.basicConfig(level=logging.INFO, format="[fscache] %(message)s")
 log = logging.getLogger(__name__)
@@ -112,6 +112,7 @@ def _to_entry(data: Dict[str, Any]) -> Dict[str, Any]:
         "results": [
             {
                 "ts": m["ts"],
+                "match_id": m.get("match_id", ""),
                 "opponent": m["opponent"],
                 "opponent_id": m["opponent_id"],
                 "home_away": m["home_away"],
@@ -123,10 +124,17 @@ def _to_entry(data: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def refresh(names: List[str]) -> Dict[str, Any]:
-    """Fetch any missing or stale team and update the cache on disk."""
+def refresh(names: List[str], fixtures: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
+    """Fetch any missing or stale team and update the cache on disk.
+
+    If fixtures is provided (list of {home, away, id, ...} from BetPawa),
+    also fetch H2H per fixture using the Flashscore match-fixture feed
+    (df_hh_1_{match_id}) which is faster and more complete than deriving
+    H2H from intersecting each team's result list.
+    """
     cache = _load_cache()
     teams = cache.setdefault("teams", {})
+    h2h_store = cache.setdefault("h2h", {})
 
     for name in names:
         if not name:
@@ -147,6 +155,42 @@ def refresh(names: List[str]) -> Dict[str, Any]:
                  "".join(data.get("form", [])), data.get("league_position"),
                  data.get("total_teams"))
         time.sleep(REQUEST_DELAY)
+
+    # Per-fixture H2H via df_hh_1_{match_id} — requires both teams resolved.
+    # Match IDs are resolved from the home team's Flashscore fixtures feed
+    # (field AA) — no extra search needed.
+    if fixtures:
+        for fix in fixtures:
+            home_name = fix.get("home", "")
+            away_name = fix.get("away", "")
+            h2h_key = f"{_key(home_name)}__vs__{_key(away_name)}"
+            if h2h_key in h2h_store:
+                continue
+            home_entry = _find_team(home_name)
+            away_entry = _find_team(away_name)
+            if not home_entry or not away_entry:
+                continue
+            home_fs_id = home_entry.get("id", "")
+            away_fs_id = away_entry.get("id", "")
+            if not home_fs_id or not away_fs_id:
+                continue
+            # Find the Flashscore match ID from the home team's stored fixtures
+            fs_match_id = None
+            for result in home_entry.get("results", []):
+                if result.get("opponent_id") == away_fs_id:
+                    fs_match_id = result.get("match_id")
+                    break
+            if not fs_match_id:
+                continue
+            try:
+                meetings = fetch_match_h2h(fs_match_id, home_name, away_name, home_fs_id, away_fs_id)
+            except Exception as exc:
+                log.warning("  H2H fetch failed for %s vs %s: %s", home_name, away_name, exc)
+                continue
+            if meetings:
+                h2h_store[h2h_key] = meetings
+                log.info("  H2H %s vs %s: %d matches", home_name, away_name, len(meetings))
+            time.sleep(REQUEST_DELAY)
 
     _save_cache(cache)
     return cache
@@ -199,14 +243,22 @@ def get_total_teams(team_name: str) -> int:
 
 
 def get_h2h_data(home_team: str, away_team: str) -> Optional[List[Dict[str, Any]]]:
-    """Head-to-head history, derived from the two teams' own result lists.
+    """Head-to-head history.
 
-    Flashscore has no H2H page for teams, but every result names the
-    opponent by id, so the intersection is the head-to-head record.
-
-    Team names are echoed back as they appear in the odds feed: app.js
-    compares them against the fixture's team names to work out who won.
+    Checks the per-fixture H2H store (populated by fetch_match_h2h) first —
+    that's richer because it uses Flashscore's dedicated fixture feed.
+    Falls back to deriving H2H by intersecting the two teams' result lists.
     """
+    cache = _load_cache()
+    h2h_store = cache.get("h2h", {})
+
+    # Direct fixture H2H (preferred)
+    h2h_key = f"{_key(home_team)}__vs__{_key(away_team)}"
+    stored = h2h_store.get(h2h_key)
+    if stored:
+        return stored
+
+    # Fallback: derive from result intersection
     home = _find_team(home_team)
     away = _find_team(away_team)
     if not home or not away:

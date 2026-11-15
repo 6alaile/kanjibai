@@ -108,7 +108,7 @@ def run():
             if name and name not in team_names:
                 team_names.append(name)
     try:
-        refresh_flashscore(team_names)
+        refresh_flashscore(team_names, fixtures=raw_fixtures)
         log.info(f"  Flashscore cache refreshed for {len(team_names)} teams")
     except Exception as e:
         log.warning(f"  Flashscore refresh failed: {e}")
