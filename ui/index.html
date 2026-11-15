@@ -193,8 +193,6 @@
               <span class="pos-badge">#{{ match.homePos }}{{ match.totalTeams ? '/' + match.totalTeams : '' }}</span>
               <span class="pos-sep">vs</span>
               <span class="pos-badge">#{{ match.awayPos }}</span>
-              <span v-if="match.h2hMatches && match.h2hMatches.length" class="pos-sep">·</span>
-              <span class="h2h-summary">H2H: {{ match.h2hSummary }}</span>
             </div>
 
             <!-- QUALIFIED PICKS -->
