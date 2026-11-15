@@ -278,7 +278,34 @@ function compositeConfidence(side, ht, at, h2h, pos, lowConfidence) {
 function scoreMatch(match, cfg) {
   const odds = match.odds;
   const [passes, side] = passesOddsFilter(odds, cfg);
-  if (!passes) return null;
+  if (!passes) return {
+    id: match.id,
+    time: match.time,
+    league: match.league,
+    home: match.home,
+    away: match.away,
+    homePos: null,
+    awayPos: null,
+    h2hSummary: 'No H2H data',
+    odds: { home: odds.home, draw: odds.draw, away: odds.away },
+    confidence: 0,
+    lowConfidence: true,
+    lowConfTeam: '',
+    recommendation: '',
+    reason: 'Odds do not meet filter criteria (home odds > ' + cfg.homeOddsMax + ' or away odds < ' + cfg.awayOddsMin + ')',
+    bets: [],
+    homeStats: {
+      name: match.home,
+      form: [],
+      notes: ['Odds below filtering threshold']
+    },
+    awayStats: {
+      name: match.away,
+      form: [],
+      notes: ['Odds below filtering threshold']
+    },
+    signals: []
+  };
 
   const homeStats = match.home_stats || match.homeStats || {};
   const awayStats = match.away_stats || match.awayStats || {};
@@ -334,6 +361,7 @@ function scoreMatch(match, cfg) {
     lowConfidence,
     lowConfTeam,
     recommendation: side,
+    reason: '',
     bets: bets.map(b => ({ label: b.label, type: b.type })),
     homeStats: {
       name: match.home,
@@ -382,6 +410,29 @@ createApp({
     }
     updateClock();
     setInterval(updateClock, 1000);
+
+    // 24h time formatting helper
+    function formatTime24(timeStr) {
+      if (!timeStr) return '';
+      // Remove any AM/PM suffix and ensure HH:MM format
+      const cleaned = timeStr.replace(/\s?(AM|PM)?$/i, '').trim();
+      const parts = cleaned.split(':');
+      if (parts.length === 2) {
+        let [hours, minutes] = parts;
+        // Ensure 2-digit hours
+        hours = parseInt(hours, 10).toString().padStart(2, '0');
+        minutes = minutes.toString().padStart(2, '0');
+        // Convert 12h to 24h if needed
+        const ampm = timeStr.match(/\s(AM|PM)$/i);
+        if (ampm) {
+          const period = ampm[1].toUpperCase();
+          if (period === 'AM' && hours === '12') hours = '00';
+          if (period === 'PM' && hours !== '12') hours = String(parseInt(hours, 10) + 12);
+        }
+        return `${hours}:${minutes}`;
+      }
+      return cleaned;
+    }
 
     const filters = reactive({
       homeOddsMax: 2.00,
@@ -477,7 +528,8 @@ createApp({
       activeFilter, loadingStep, loadingDetail,
       filters, marketOptions, filterOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
-      runScan, toggleMarket, toggleReasoning, getCompetition
+      runScan, toggleMarket, toggleReasoning, getCompetition,
+      formatTime24
     };
   }
 }).mount('#app');
