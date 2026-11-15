@@ -208,38 +208,10 @@
           <!-- COLLAPSIBLE BODY -->
           <div class="card-body" :class="{ open: openCards.includes(match.id) }">
 
-            <!-- QUALIFIED PICKS -->
-            <div class="picks-section">
-              <span class="section-title">Qualified Picks</span>
-              <div class="picks-list">
-                <span v-for="bet in match.bets" :key="bet.label"
-                  class="bet-tag" :class="bet.type">{{ bet.label }}</span>
-              </div>
-            </div>
-
-            <!-- MATCH ODDS -->
-            <div class="odds-section">
-              <span class="section-title">Match Odds</span>
-              <div class="odds-row">
-                <div class="odd-card" :class="{ highlighted: match.recommendation === 'home' }">
-                  <div class="odd-label">Home</div>
-                  <div class="odd-val">{{ match.odds.home }}</div>
-                </div>
-                <div class="odd-card">
-                  <div class="odd-label">Draw</div>
-                  <div class="odd-val">{{ match.odds.draw }}</div>
-                </div>
-                <div class="odd-card" :class="{ highlighted: match.recommendation === 'away' }">
-                  <div class="odd-label">Away</div>
-                  <div class="odd-val">{{ match.odds.away }}</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FORM & GOALS COMPARISON -->
+            <!-- FORM & RESULTS -->
             <div class="form-section">
               <div class="form-header">
-                <span class="section-title">Form & Goals</span>
+                <span class="section-title">Form & Results</span>
                 <span class="form-subtitle">Last 5 matches</span>
               </div>
               <div class="form-comparison">
@@ -284,6 +256,17 @@
               </div>
             </div>
 
+            <!-- SIGNALS -->
+            <div class="signals-section">
+              <span class="section-title">Signals</span>
+              <div class="signals-list">
+                <div v-for="sig in match.signals" :key="sig.text" class="reason-item">
+                  <div class="reason-dot" :class="sig.type"></div>
+                  <span>{{ sig.text }}</span>
+                </div>
+              </div>
+            </div>
+
             <!-- GOALS & STREAKS -->
             <div class="goals-streaks-section">
               <span class="section-title">Goals & Streaks</span>
@@ -314,13 +297,33 @@
               </div>
             </div>
 
-            <!-- SIGNALS -->
-            <div class="signals-section">
-              <span class="section-title">Signals</span>
-              <div class="signals-list">
-                <div v-for="sig in match.signals" :key="sig.text" class="reason-item">
-                  <div class="reason-dot" :class="sig.type"></div>
-                  <span>{{ sig.text }}</span>
+            <!-- PICKS + MATCH ODDS -->
+            <div class="picks-odds-row">
+              <!-- QUALIFIED PICKS -->
+              <div class="picks-section">
+                <span class="section-title">Qualified Picks</span>
+                <div class="picks-list">
+                  <span v-for="bet in match.bets" :key="bet.label"
+                    class="bet-tag" :class="bet.type">{{ bet.label }}</span>
+                </div>
+              </div>
+
+              <!-- MATCH ODDS -->
+              <div class="odds-section">
+                <span class="section-title">Match Odds</span>
+                <div class="odds-row">
+                  <div class="odd-card" :class="{ highlighted: match.recommendation === 'home' }">
+                    <div class="odd-label">Home</div>
+                    <div class="odd-val">{{ match.odds.home }}</div>
+                  </div>
+                  <div class="odd-card">
+                    <div class="odd-label">Draw</div>
+                    <div class="odd-val">{{ match.odds.draw }}</div>
+                  </div>
+                  <div class="odd-card" :class="{ highlighted: match.recommendation === 'away' }">
+                    <div class="odd-label">Away</div>
+                    <div class="odd-val">{{ match.odds.away }}</div>
+                  </div>
                 </div>
               </div>
             </div>

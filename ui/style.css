@@ -546,6 +546,22 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+/* Picks and Match Odds sit side by side until odds move into the pipeline */
+.picks-odds-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  border-top: 1px solid var(--border);
+}
+
+.picks-odds-row .picks-section,
+.picks-odds-row .odds-section {
+  border-bottom: none;
+}
+
+.picks-odds-row .odds-section {
+  border-left: 1px solid var(--border);
+}
+
 .section-title {
   display: block;
   font-size: 10px;
@@ -1153,5 +1169,7 @@ header {
   .header-matchup { flex-direction: column; align-items: flex-start; gap: 2px; }
   .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }
+  .picks-odds-row { grid-template-columns: 1fr; }
+  .picks-odds-row .odds-section { border-left: none; border-top: 1px solid var(--border); }
   .card-body.open { max-height: 2000px; }
 }
