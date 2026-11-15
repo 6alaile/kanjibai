@@ -905,6 +905,37 @@ header {
   border-top: 1px solid var(--border);
 }
 
+.signals-split {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.signals-col {
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  border-left: 2px solid var(--border2);
+  padding: 10px 12px;
+}
+
+.signals-col.home { border-left-color: var(--accent); }
+.signals-col.away { border-left-color: var(--warning); }
+
+.signals-col-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--snow);
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.signals-empty {
+  font-size: 11px;
+  color: var(--text2);
+}
+
 .signals-list {
   display: flex;
   flex-direction: column;
@@ -1170,6 +1201,7 @@ header {
   .header-matchup { flex-direction: column; align-items: flex-start; gap: 2px; }
   .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }
+  .signals-split { grid-template-columns: 1fr; }
   .picks-odds-row { grid-template-columns: 1fr; }
   .picks-odds-row .odds-section { border-left: none; border-top: 1px solid var(--border); }
   .card-body.open { max-height: 2000px; }

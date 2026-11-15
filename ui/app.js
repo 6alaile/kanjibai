@@ -278,20 +278,23 @@ function marketCombos(side, ht, at, over15, btts, toScore, cfg) {
   return combos;
 }
 
-function generateSignals(home, away, ht, at, h2h, side) {
+// Signals carry a team tag so the UI can split them: home | neutral | away.
+// `side` was unused and has been dropped with the home/away team names —
+// the columns are labelled with the team names instead.
+function generateSignals(ht, at, h2h) {
   const signals = [];
-  const sig = (text, type = '') => signals.push({ text, type });
-  if (ht.winning_streak >= 3) sig(`${home} on ${ht.winning_streak}-game winning streak`);
-  if (at.winning_streak >= 3) sig(`${away} on ${at.winning_streak}-game winning streak`);
-  if (ht.scoring_streak >= 4) sig(`${home} scored in last ${ht.scoring_streak} matches`, 'blue');
-  if (at.scoring_streak >= 4) sig(`${away} scored in last ${at.scoring_streak} matches`, 'blue');
-  if (at.conceding_streak >= 4) sig(`${away} conceded in last ${at.conceding_streak} matches`, 'blue');
-  if (ht.conceding_streak >= 4) sig(`${home} conceded in last ${ht.conceding_streak} matches`, 'blue');
-  if (ht.clean_sheets >= 3) sig(`${home} kept ${ht.clean_sheets} clean sheets in last 5`, 'warn');
-  if (at.clean_sheets >= 3) sig(`${away} kept ${at.clean_sheets} clean sheets in last 5`, 'warn');
-  sig(`${home} last 5: ${ht.wins}W ${ht.draws}D ${ht.losses}L`);
-  sig(`${away} last 5: ${at.wins}W ${at.draws}D ${at.losses}L`);
-  if (h2h.available) sig(`H2H: ${h2h.summary} — avg ${h2h.avg_total_goals} goals`, 'blue');
+  const sig = (text, type = '', team = 'neutral') => signals.push({ text, type, team });
+  if (ht.winning_streak >= 3) sig(`${ht.winning_streak}-game winning streak`, '', 'home');
+  if (at.winning_streak >= 3) sig(`${at.winning_streak}-game winning streak`, '', 'away');
+  if (ht.scoring_streak >= 4) sig(`Scored in last ${ht.scoring_streak} matches`, 'blue', 'home');
+  if (at.scoring_streak >= 4) sig(`Scored in last ${at.scoring_streak} matches`, 'blue', 'away');
+  if (at.conceding_streak >= 4) sig(`Conceded in last ${at.conceding_streak} matches`, 'blue', 'away');
+  if (ht.conceding_streak >= 4) sig(`Conceded in last ${ht.conceding_streak} matches`, 'blue', 'home');
+  if (ht.clean_sheets >= 3) sig(`${ht.clean_sheets} clean sheets in last 5`, 'warn', 'home');
+  if (at.clean_sheets >= 3) sig(`${at.clean_sheets} clean sheets in last 5`, 'warn', 'away');
+  sig(`Last 5: ${ht.wins}W ${ht.draws}D ${ht.losses}L`, '', 'home');
+  sig(`Last 5: ${at.wins}W ${at.draws}D ${at.losses}L`, '', 'away');
+  if (h2h.available) sig(`H2H: ${h2h.summary} — avg ${h2h.avg_total_goals} goals`, 'blue', 'neutral');
   return signals;
 }
 
@@ -454,7 +457,7 @@ function scoreMatch(match, cfg) {
       unbeatenStreak: at.unbeaten_streak,
       cleanSheets: at.clean_sheets
     },
-    signals: generateSignals(match.home, match.away, ht, at, h2h, side)
+    signals: generateSignals(ht, at, h2h)
   };
 }
 
@@ -633,6 +636,20 @@ createApp({
       return parts[parts.length - 1].trim();
     }
 
+    // Signals split into three columns: home team | match-level | away team
+    function signalGroups(match) {
+      const groups = [
+        { team: 'home', label: match.home, items: [] },
+        { team: 'neutral', label: 'Match', items: [] },
+        { team: 'away', label: match.away, items: [] }
+      ];
+      const byTeam = { home: groups[0], neutral: groups[1], away: groups[2] };
+      for (const sig of match.signals || []) {
+        (byTeam[sig.team] || byTeam.neutral).items.push(sig);
+      }
+      return groups;
+    }
+
     // League string is "Football / <Country> / <Competition>" → ISO code for flagcdn.com
     const FLAGS = {
       'Albania':'al','Algeria':'dz','Andorra':'ad','Angola':'ao','Argentina':'ar','Armenia':'am','Australia':'au',
@@ -670,7 +687,7 @@ createApp({
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor,
-      ordinal, posLabel
+      ordinal, posLabel, signalGroups
     };
   }
 }).mount('#app');

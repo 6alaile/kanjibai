@@ -259,10 +259,16 @@
             <!-- SIGNALS -->
             <div class="signals-section">
               <span class="section-title">Signals</span>
-              <div class="signals-list">
-                <div v-for="sig in match.signals" :key="sig.text" class="reason-item">
-                  <div class="reason-dot" :class="sig.type"></div>
-                  <span>{{ sig.text }}</span>
+              <div class="signals-split">
+                <div v-for="grp in signalGroups(match)" :key="grp.team" class="signals-col" :class="grp.team" :data-team="grp.team">
+                  <div class="signals-col-title">{{ grp.label }}</div>
+                  <div class="signals-list">
+                    <div v-for="sig in grp.items" :key="sig.text" class="reason-item">
+                      <div class="reason-dot" :class="sig.type"></div>
+                      <span>{{ sig.text }}</span>
+                    </div>
+                    <div v-if="!grp.items.length" class="signals-empty">No signals</div>
+                  </div>
                 </div>
               </div>
             </div>
