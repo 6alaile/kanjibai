@@ -176,12 +176,12 @@
             <div class="header-matchup">
               <div class="team-block">
                 <span class="team-name">{{ match.home }}</span>
-                <span class="pos-badge" v-if="match.homePos">#{{ match.homePos }}{{ match.totalTeams ? '/' + match.totalTeams : '' }}</span>
+                <span class="pos-badge" v-if="match.homePos">{{ posLabel(match.homePos, match.homeTotal) }}</span>
               </div>
               <span class="vs-sep">vs</span>
               <div class="team-block">
                 <span class="team-name">{{ match.away }}</span>
-                <span class="pos-badge" v-if="match.awayPos">#{{ match.awayPos }}</span>
+                <span class="pos-badge" v-if="match.awayPos">{{ posLabel(match.awayPos, match.awayTotal) }}</span>
               </div>
             </div>
             <div class="header-right">

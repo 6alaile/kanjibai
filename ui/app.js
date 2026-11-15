@@ -13,8 +13,23 @@ async function loadEnriched() {
   }
 }
 
-// ─── TIME ──────────────────────────────────────────────────────────────────────
+// ─── POSITION ──────────────────────────────────────────────────────────────────
 
+// League position as an ordinal: 1st, 2nd, 3rd, 4th … 11th, 21st, 22nd, 23rd.
+function ordinal(n) {
+  if (!n) return '';
+  const suffix = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return `${n}${suffix[(v - 20) % 10] || suffix[v] || suffix[0]}`;
+}
+
+// "3rd/16" — ordinal position with the league size when it is known.
+function posLabel(pos, total) {
+  if (!pos) return '';
+  return total ? `${ordinal(pos)}/${total}` : ordinal(pos);
+}
+
+// ─── TIME ──────────────────────────────────────────────────────────────────────
 // Kick-off times arrive as HH:MM (BetPawa renders EAT). Normalise defensively:
 // 12h values ("7:30 PM"), ISO timestamps and malformed values are handled so
 // the card always shows a 24h clock.
@@ -406,7 +421,8 @@ function scoreMatch(match, cfg) {
     away: match.away,
     homePos: homeStats.league_position || null,
     awayPos: awayStats.league_position || null,
-    totalTeams: match.total_teams_in_league || null,
+    homeTotal: homeStats.total_teams_in_league || match.total_teams_in_league || null,
+    awayTotal: awayStats.total_teams_in_league || match.total_teams_in_league || null,
     h2hSummary: h2h.summary,
     h2hMatches: h2h.available ? h2h.matches.slice(-5) : null,
     odds: { home: odds.home, draw: odds.draw, away: odds.away },
@@ -653,7 +669,8 @@ createApp({
       filters, marketOptions, filterOptions, selectedCompetition, sortBy, sortOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
-      formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor
+      formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor,
+      ordinal, posLabel
     };
   }
 }).mount('#app');

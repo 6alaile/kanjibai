@@ -497,15 +497,16 @@ header {
   margin-bottom: 2px;
 }
 
-/* Position badge (header, under team name) */
+/* Position badge (header, under team name) — set in the team-name font */
 .pos-badge {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
   color: var(--accent);
   background: var(--accent-soft);
-  padding: 3px 8px;
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
+  letter-spacing: 0;
 }
 
 /* H2H Score History */
