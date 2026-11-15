@@ -315,6 +315,23 @@ header {
   margin-right: 4px;
 }
 
+/* Label + control stay together when the bar wraps */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  border-left: 1px solid var(--border2);
+}
+
+.filter-group .filter-label {
+  margin-right: 0;
+}
+
+.filter-group .filter-select {
+  max-width: 260px;
+}
+
 .filter-chip {
   font-size: 12px;
   font-weight: 500;
@@ -1029,13 +1046,6 @@ header {
 .filter-select:focus {
   outline: none;
   border-color: var(--accent);
-}
-
-.filter-divider {
-  width: 1px;
-  height: 16px;
-  background: var(--border2);
-  margin: 0 4px;
 }
 
 /* ── LOADING STATE ── */

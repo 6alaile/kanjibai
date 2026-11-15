@@ -118,11 +118,19 @@
         class="filter-chip" :class="{ active: activeFilter === f.key }"
         @click="activeFilter = f.key">{{ f.label }}</span>
       <span class="filter-divider"></span>
-      <span class="filter-label">Competition:</span>
-      <select class="filter-select" v-model="selectedCompetition">
-        <option value="">All competitions</option>
-        <option v-for="c in competitionOptions" :key="c.value" :value="c.value">{{ c.label }}</option>
-      </select>
+      <div class="filter-group">
+        <span class="filter-label">Competition:</span>
+        <select class="filter-select" id="competition-filter" v-model="selectedCompetition">
+          <option value="">All competitions</option>
+          <option v-for="c in competitionOptions" :key="c.value" :value="c.value">{{ c.label }}</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Sort:</span>
+        <select class="filter-select" id="sort-filter" v-model="sortBy">
+          <option v-for="s in sortOptions" :key="s.key" :value="s.key">{{ s.label }}</option>
+        </select>
+      </div>
     </div>
 
     <!-- LOADING -->

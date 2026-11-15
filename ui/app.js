@@ -510,6 +510,15 @@ createApp({
       { key: 'warn', label: 'Low Conf Flag' }
     ];
 
+    // Card ordering
+    const sortBy = ref('time');
+
+    const sortOptions = [
+      { key: 'time', label: 'Kick-off' },
+      { key: 'score', label: 'Score' },
+      { key: 'league', label: 'League' }
+    ];
+
     // Competition filter — shows only the picked competition (was bound to an
     // "exclude" field, so picking a league hid it instead of showing it).
     const selectedCompetition = ref('');
@@ -541,7 +550,13 @@ createApp({
         : rawMatches.value;
 
       const scored = scoreAll(filtered, filters);
-      return scored.sort((a, b) => timeMinutes(a.time) - timeMinutes(b.time));
+      const byTime = (a, b) => timeMinutes(a.time) - timeMinutes(b.time);
+      const sorters = {
+        time: byTime,
+        score: (a, b) => b.confidence - a.confidence || byTime(a, b),
+        league: (a, b) => competitionLabel(a.league).localeCompare(competitionLabel(b.league)) || byTime(a, b)
+      };
+      return scored.sort(sorters[sortBy.value] || byTime);
     });
 
     const qualifiedMatches = computed(() => matches.value);
@@ -635,7 +650,7 @@ createApp({
     return {
       today, clockTime, loading, hasRun, openCards, controlsOpen,
       activeFilter, loadingStep, loadingDetail,
-      filters, marketOptions, filterOptions, selectedCompetition,
+      filters, marketOptions, filterOptions, selectedCompetition, sortBy, sortOptions,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor
