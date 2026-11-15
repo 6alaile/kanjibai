@@ -119,9 +119,9 @@
         @click="activeFilter = f.key">{{ f.label }}</span>
       <span class="filter-divider"></span>
       <span class="filter-label">Competition:</span>
-      <select class="filter-select" v-model="filters.excludeLeague">
+      <select class="filter-select" v-model="selectedCompetition">
         <option value="">All competitions</option>
-        <option v-for="comp in competitionOptions" :key="comp" :value="comp">{{ comp }}</option>
+        <option v-for="c in competitionOptions" :key="c.value" :value="c.value">{{ c.label }}</option>
       </select>
     </div>
 

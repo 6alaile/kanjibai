@@ -477,8 +477,7 @@ createApp({
       minFormMatches: 5,
       leaguePositionWeight: 0.5,
       oppStrengthWeight: 0.5,
-      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'btts_over25', 'combo'],
-      excludeLeague: ''
+      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'btts_over25', 'combo']
     });
 
     const marketOptions = [
@@ -498,16 +497,34 @@ createApp({
       { key: 'warn', label: 'Low Conf Flag' }
     ];
 
+    // Competition filter — shows only the picked competition (was bound to an
+    // "exclude" field, so picking a league hid it instead of showing it).
+    const selectedCompetition = ref('');
+
+    // League string is "Football / <Country> / <Competition>" → label "Country · Competition"
+    function competitionLabel(league) {
+      const parts = (league || '').split('/').map(p => p.trim()).filter(Boolean);
+      if (!parts.length) return '';
+      const comp = parts[parts.length - 1];
+      const country = parts.length > 1 ? parts[parts.length - 2] : '';
+      return country ? `${country} · ${comp}` : comp;
+    }
+
     const competitionOptions = computed(() => {
-      const comps = new Set((rawMatches.value || []).map(m => getCompetition(m.league)).filter(Boolean));
-      return Array.from(comps).sort();
+      const seen = new Map();
+      for (const m of rawMatches.value || []) {
+        const full = (m.league || '').trim();
+        if (!full || seen.has(full)) continue;
+        seen.set(full, { value: full, label: competitionLabel(full) });
+      }
+      return Array.from(seen.values()).sort((a, b) => a.label.localeCompare(b.label));
     });
 
     // Scored matches — recomputed whenever filters change
     const matches = computed(() => {
-      const excludeLeague = (filters.excludeLeague || '').toLowerCase();
-      const filtered = excludeLeague
-        ? rawMatches.value.filter(m => !m.league.toLowerCase().includes(excludeLeague))
+      const selected = selectedCompetition.value;
+      const filtered = selected
+        ? rawMatches.value.filter(m => (m.league || '').trim() === selected)
         : rawMatches.value;
 
       const scored = scoreAll(filtered, filters);
@@ -609,7 +626,7 @@ createApp({
     return {
       today, clockTime, loading, hasRun, openCards, controlsOpen,
       activeFilter, loadingStep, loadingDetail,
-      filters, marketOptions, filterOptions,
+      filters, marketOptions, filterOptions, selectedCompetition,
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor
