@@ -239,8 +239,8 @@ def get_recent_results(team_name: str, n: int = 5) -> List[Dict[str, Any]]:
     if not team:
         return []
     results = team.get("results") or []
-    # results are stored most-recent-first; reverse to match form order
-    return list(reversed(results))[:n]
+    # results are stored most-recent-first: take the n newest, then reverse to match form order
+    return list(reversed(results[:n]))
 
 
 def get_league_position(team_name: str) -> Optional[int]:
