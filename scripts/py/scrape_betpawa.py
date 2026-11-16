@@ -94,10 +94,27 @@ def _extract_odds_from_buttons(btns) -> Optional[Dict]:
     return odds if len(odds) == 3 else None
 
 
+def _to_24h(hour: int, minute: int, meridiem: str) -> Optional[str]:
+    """24-hour time from a 12-hour clock reading.
+
+    BetPawa prints "1:00 pm" — dropping the meridiem turned every afternoon
+    kick-off into a morning one.
+    """
+    if meridiem:
+        pm = meridiem.lower().startswith("p")
+        if pm and hour < 12:
+            hour += 12
+        elif not pm and hour == 12:
+            hour = 0
+    if not (0 <= hour <= 23 and 0 <= minute <= 59):
+        return None
+    return f"{hour:02d}:{minute:02d}"
+
+
 def _extract_match_time(evt_div) -> str:
     """
     Extract match kick-off time from the event div.
-    Returns time in HH:MM format (EAT) or 'TBD' if not found.
+    Returns time in 24-hour HH:MM format (EAT) or 'TBD' if not found.
     """
     time_selectors = [
         "[class*='ScoreBoard_scoreboardPeriodTime']",
@@ -112,34 +129,37 @@ def _extract_match_time(evt_div) -> str:
         "time",
     ]
 
+    def parse(text: str) -> Optional[str]:
+        # "1:00 pm" / "12:00 am" — the meridiem decides the hour.
+        marked = re.search(r"(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)", text, re.IGNORECASE)
+        if marked:
+            return _to_24h(int(marked.group(1)), int(marked.group(2)),
+                            marked.group(3))
+        plain = re.search(r"(\d{1,2}):(\d{2})", text)
+        if plain:
+            return _to_24h(int(plain.group(1)), int(plain.group(2)), "")
+        return None
+
     for selector in time_selectors:
         time_el = evt_div.query_selector(selector)
         if time_el:
             time_text = time_el.inner_text().strip()
             if time_text:
-                # Try to parse various time formats
-                import re
-                # Match HH:MM or H:MM formats
-                time_match = re.search(r'(\d{1,2}):(\d{2})', time_text)
-                if time_match:
-                    hour = int(time_match.group(1))
-                    minute = int(time_match.group(2))
-                    if 0 <= hour <= 23 and 0 <= minute <= 59:
-                        return f"{hour:02d}:{minute:02d}"
-                # If just a time-like string, return as-is
-                if re.match(r'^\d{1,2}:\d{2}$', time_text):
-                    return time_text
+                parsed = parse(time_text)
+                if parsed:
+                    return parsed
 
     # Also check the full div text for time patterns
     all_text = evt_div.inner_text()
-    import re
-    time_matches = re.findall(r'\b(\d{1,2}:\d{2})\b', all_text)
-    if time_matches:
-        # Return the first valid-looking time
-        for t in time_matches:
-            hour, minute = map(int, t.split(':'))
-            if 0 <= hour <= 23 and 0 <= minute <= 59:
-                return f"{hour:02d}:{minute:02d}"
+    marked = re.search(r"(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)", all_text, re.IGNORECASE)
+    if marked:
+        return _to_24h(int(marked.group(1)), int(marked.group(2)), marked.group(3))
+
+    time_matches = re.findall(r"\b(\d{1,2}:\d{2})\b", all_text)
+    for t in time_matches:
+        hour, minute = map(int, t.split(":"))
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            return f"{hour:02d}:{minute:02d}"
 
     return "TBD"
 
