@@ -2,18 +2,25 @@
 stats.py — Scout Stats Enricher
 
 Provider order (first source that has the field wins):
-  1. Flashscore    — primary; form, goals, league position, H2H
-  2. Transfermarkt — fallback for teams Flashscore does not carry
+  1. Flashscore fixture feed — form, goals, results, H2H and league positions
+     for both teams of a fixture, taken from the day's fixtures feed and the
+     per-match feed.  This is the primary source.
+  2. Flashscore per-team cache — form, goals and league position for a team
+     that the day feed did not carry.
+  3. Transfermarkt — fallback for teams Flashscore does not cover
 
 Both providers are scraped ahead of time and read from their own cache:
   scripts/py/flashscore_cache.py      → data/flashscore_cache.json
   scripts/py/transfermarkt_cache.py   → data/transfermarkt_cache.json
+
+Form arrays are newest first: index 0 is the most recent match.
 """
 
 import json
 import logging
 import os
 import sys
+from datetime import datetime, timedelta, timezone
 from typing import Optional, Any
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -28,6 +35,7 @@ from flashscore_cache import (
     get_total_teams as fs_get_total_teams,
     get_h2h_data as fs_get_h2h_data,
     get_recent_results as fs_get_recent_results,
+    get_fixture_data as fs_get_fixture_data,
 )
 
 logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
@@ -35,8 +43,30 @@ log = logging.getLogger(__name__)
 
 EMPTY_FORM = {"form": [], "goals_scored": [], "goals_conceded": []}
 
+EAT = timezone(timedelta(hours=3))
+
 
 # ─── ENRICH MATCH ─────────────────────────────────────────────────────────────
+
+def _fixture_side(name: str, side: dict, position: Optional[int],
+                  total_teams: Optional[int], opposition_position: Optional[int]) -> dict:
+    """One side of a fixture, built from Flashscore's per-fixture feed."""
+    return {
+        "name": name,
+        "form": side.get("form", []),
+        "goals_scored": side.get("goals_scored", []),
+        "goals_conceded": side.get("goals_conceded", []),
+        "recent_results": side.get("results", []),
+        "league_position": position,
+        "total_teams_in_league": total_teams,
+        "opposition_position": opposition_position,
+    }
+
+
+def _kickoff_time(epoch: int) -> str:
+    """Kick-off in EAT wall clock, 24-hour."""
+    return datetime.fromtimestamp(epoch, tz=EAT).strftime("%H:%M")
+
 
 def enrich_match(match: dict) -> dict:
     home_name = match["home"]
@@ -44,6 +74,24 @@ def enrich_match(match: dict) -> dict:
     enriched = dict(match)
 
     log.info(f"  Enriching: {home_name} vs {away_name}")
+
+    # Flashscore per-fixture feed: both teams at once, current form, the real
+    # head-to-head and the league positions straight from the standings feed.
+    fixture = fs_get_fixture_data(home_name, away_name)
+    if fixture and (fixture.get("home") or {}).get("form"):
+        total_teams = fixture.get("total_teams")
+        home_pos = fixture.get("home_position")
+        away_pos = fixture.get("away_position")
+        enriched["home_stats"] = _fixture_side(home_name, fixture.get("home") or {},
+                                                home_pos, total_teams, away_pos)
+        enriched["away_stats"] = _fixture_side(away_name, fixture.get("away") or {},
+                                                away_pos, total_teams, home_pos)
+        h2h_matches = fixture.get("h2h")
+        enriched["h2h"] = {"matches": h2h_matches} if h2h_matches else None
+        enriched["total_teams_in_league"] = total_teams
+        if fixture.get("kickoff"):
+            enriched["time"] = _kickoff_time(fixture["kickoff"])
+        return enriched
 
     # Flashscore cache (primary)
     fs_home_form = fs_get_recent_form(home_name, n=5) if fs_has_team(home_name) else EMPTY_FORM

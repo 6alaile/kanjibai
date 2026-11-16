@@ -33,6 +33,17 @@ Known field map (verified against live pages on 2026-11-15):
   league  ZE=table id  ZC=season id  ZL=league path  ZY=country  ZK=name
   table   TN=name  TI=team id  TIU=url  TR=position  TM=played  TW=wins
           TDR=draws  TL=losses  TP=points  TG=goals "29:19"  TPF=goal diff
+
+Per-fixture feed (df_hh_1_{match_id}, verified 2026-11-16) — this is what
+the fixture's H2H tab shows: a "Last matches" section per team plus a
+"Head-to-head matches" section.
+  row     KC=kickoff epoch  KP=match id  KF=league  KH=country  KI=league code
+          UQ=home team id  UO=away team id  KJ=home name ("*" = section team)
+          KK=away name     KL="home:away"  KU=home goals  KT=away goals
+          KS=side of the section's own team ("home"/"away")
+          WIS=result badge for that team ("w"/"d"/"l")
+  section KB="Last matches: <team>" | "Head-to-head matches"
+          KA="Overall" | "<team> - Home" | "<team> - Away"
 """
 
 import json
@@ -124,7 +135,12 @@ def grab_feed(html: str, key: str) -> Optional[str]:
 # ── name handling ────────────────────────────────────────────────────────────
 
 def _tokens(name: str) -> set:
-    return {ABBREV.get(t, t) for t in re.findall(r"[a-z0-9]+", name.lower())}
+    """Lowercase tokens, with the women's markers folded onto Flashscore's "W"."""
+    out = set()
+    for token in re.findall(r"[a-z0-9]+", (name or "").lower()):
+        token = ABBREV.get(token, token)
+        out.add("w" if token in WOMEN_MARKERS else token)
+    return out
 
 
 def _distinctive(name: str) -> set:
@@ -329,6 +345,33 @@ def table_ref(page: Dict) -> Optional[Dict]:
     return None
 
 
+def table_refs(page: Dict) -> List[Dict]:
+    """Every league table reference a team's feeds mention, newest first.
+
+    A club can sit in more than one table (groups, Apertura/Clausura phases),
+    so all candidates are offered to the standings lookup.
+    """
+    refs: List[Dict] = []
+    seen = set()
+    for key in ("results", "fixtures", "summary-results", "summary-fixtures"):
+        for row in page.get(key, []):
+            season = row.get("ZC")
+            if "ZE" not in row or not season or season == "0":
+                continue
+            key2 = (row["ZE"], season)
+            if key2 in seen:
+                continue
+            seen.add(key2)
+            refs.append({
+                "table_id": row["ZE"],
+                "season_id": season,
+                "league_path": row.get("ZL"),
+                "league_country": row.get("ZY"),
+                "league_name": row.get("ZK") or row.get("ZA"),
+            })
+    return refs
+
+
 # ── step 3: standings ────────────────────────────────────────────────────────
 
 def fetch_standings(table_id: str, season_id: str) -> List[Dict]:
@@ -369,17 +412,21 @@ def fetch_team_data(name: str, n: int = 5) -> Optional[Dict]:
     form = team_form(events_from(page.get("results", [])), hit["id"], n=n)
 
     position = total = None
-    ref = table_ref(page)
-    if ref and ref.get("season_id"):
+    ref = None
+    for candidate in table_refs(page):
         try:
-            table = fetch_standings(ref["table_id"], ref["season_id"])
-            total = len(table)
-            for row in table:
-                if row["team_id"] == hit["id"]:
-                    position = row["position"]
-                    break
+            table = fetch_standings(candidate["table_id"], candidate["season_id"])
         except Exception as exc:                       # noqa: BLE001
             log.warning("  standings lookup failed for %s: %s", name, exc)
+            continue
+        if not table:
+            continue
+        for row in table:
+            if row["team_id"] == hit["id"]:
+                position, total, ref = row["position"], len(table), candidate
+                break
+        if ref:
+            break
 
     return {
         "id": hit["id"],
@@ -474,66 +521,6 @@ def fetch_league_context(seed_name: str) -> Optional[Dict]:
         "league": ref,
         "table": fetch_standings(ref["table_id"], ref["season_id"]),
     }
-
-
-def fetch_match_h2h(match_id: str, home_name: str, away_name: str,
-                    home_fs_id: str, away_fs_id: str,
-                    limit: int = 5) -> List[Dict]:
-    """H2H via Flashscore's per-fixture df_hh_1_{match_id} feed (52KB, no browser).
-
-    Fields per match row:
-      KC=epoch  KU=home goals  KT=away goals  UO=home team id  UQ=away team id
-    Names are normalised to the odds-feed names so app.js comparisons work.
-    """
-    url = f"{FS_FEED.format(f'df_hh_1_{match_id}')}"
-    try:
-        resp = SESSION.get(url, headers={"x-fsign": FS_FSIGN}, timeout=10)
-        if resp.status_code != 200 or len(resp.content) < 10:
-            return []
-    except OSError:
-        return []
-
-    rows = parse_feed(resp.content.decode("utf-8", errors="replace"))
-    ids = {home_fs_id, away_fs_id}
-    meetings: List[Dict] = []
-    seen_ts: set = set()
-
-    for row in rows:
-        rh, ra = row.get("UO", ""), row.get("UQ", "")
-        if {rh, ra} != ids:
-            continue
-        kl = row.get("KL", "")
-        if ":" not in kl:
-            continue
-        # KS is perspective of UO team: "home"=UO played at home, "away"=UO played away.
-        # Aggregate/summary rows have KS=None — skip them to avoid duplicates.
-        ks = row.get("KS")
-        if ks not in ("home", "away"):
-            continue
-        try:
-            uo_goals, uq_goals = [int(x) for x in kl.split(":")]
-        except ValueError:
-            continue
-        ts = int(row.get("KC", 0) or 0)
-        if ts in seen_ts:
-            continue
-        seen_ts.add(ts)
-        if ks == "home":
-            # UO played at home → UO is the actual home team, UQ is away
-            home_team_id = rh
-            home_goals, away_goals = uo_goals, uq_goals
-        else:
-            # UO played away → UQ is the actual home team, UO is away
-            home_team_id = ra
-            home_goals, away_goals = uq_goals, uo_goals
-        if home_team_id == home_fs_id:
-            h, a = home_name, away_name
-        else:
-            h, a = away_name, home_name
-        meetings.append({"home": h, "away": a, "score": [home_goals, away_goals], "ts": ts})
-
-    meetings.sort(key=lambda m: m["ts"], reverse=True)
-    return meetings[:limit]
 
 
 if __name__ == "__main__":

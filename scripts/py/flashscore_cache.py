@@ -6,6 +6,15 @@ providers the same way.  Unlike the Transfermarkt cache (which is expensive
 to rebuild — a full Playwright scrape) this one is cheap, so it is rebuilt
 from scratch whenever an entry goes stale.
 
+Two sources feed the cache:
+
+* per team   — search -> team page -> "results" feed (form, league position).
+  Kept as the fallback for fixtures the day feed does not carry.
+* per fixture — Flashscore's `df_hh_1_<match_id>` feed, reached through the
+  day's fixtures feed.  This is the primary source: it is current, it names
+  both teams, and it resolves clubs whose bookmaker name does not match a
+  Flashscore name (women's sides, lower-division sides).
+
 Cache structure:
 {
   "version": 1,
@@ -24,8 +33,25 @@ Cache structure:
                    "score": [0, 1]}],
       "last_scraped": "ISO8601"
     }
+  },
+  "fixtures": {
+    "<home>__vs__<away>": {
+      "match_id": "S8C03d8l", "kickoff": 1794819600,
+      "h2h": [{"home": "Probiy Horodenka", "away": "Inhulets",
+               "score": [2, 2], "ts": 1785063600}],
+      "home": {"form": ["D","L","W","W","L"],
+               "goals_scored": [1,1,2,1,0], "goals_conceded": [1,2,0,4,1],
+               "results": [{"ts": 1793957400, "opponent": "Kulikiv",
+                            "opponent_id": "6o5vRpTE", "home_away": "H",
+                            "score": [1, 1]}]},
+      "away": {...},
+      "home_position": 10, "away_position": 14, "total_teams": 16
+    }
   }
 }
+
+Form arrays are newest first everywhere (the Transfermarkt scraper already
+works that way), so a card can render the last five matches newest on top.
 """
 
 import json
@@ -36,7 +62,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from flashscore_source import fetch_team_data, fetch_match_h2h
+from flashscore_source import fetch_team_data
+from flashscore_fixture_source import (
+    fetch_day_fixtures, fetch_match_detail, fetch_table, match_fixtures,
+)
 
 logging.basicConfig(level=logging.INFO, format="[fscache] %(message)s")
 log = logging.getLogger(__name__)
@@ -124,17 +153,47 @@ def _to_entry(data: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def refresh(names: List[str], fixtures: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
+def _team_form(data: Dict[str, Any]) -> Dict[str, Any]:
+    """One side of a fixture: form, goals and results, newest first."""
+    results = sorted(data.get("results", []), key=lambda r: r["ts"], reverse=True)
+    return {
+        "form": data.get("form", []),
+        "goals_scored": data.get("goals_scored", []),
+        "goals_conceded": data.get("goals_conceded", []),
+        "results": results,
+    }
+
+
+def _book_names(meetings: List[Dict[str, Any]], fs: Dict[str, Any],
+                home_name: str, away_name: str) -> List[Dict[str, Any]]:
+    """Rename the meetings' sides to the bookmaker's names.
+
+    The card compares the head-to-head sides with the team names it displays, so
+    the two spellings have to agree.
+    """
+    out = []
+    for meeting in meetings:
+        if meeting.get("home") == fs.get("home"):
+            out.append({**meeting, "home": home_name, "away": away_name})
+        elif meeting.get("home") == fs.get("away"):
+            out.append({**meeting, "home": away_name, "away": home_name})
+        else:
+            out.append(meeting)
+    return out
+
+
+def refresh(names: List[str], fixtures: Optional[List[Dict[str, Any]]] = None,
+            date_str: Optional[str] = None) -> Dict[str, Any]:
     """Fetch any missing or stale team and update the cache on disk.
 
-    If fixtures is provided (list of {home, away, id, ...} from BetPawa),
-    also fetch H2H per fixture using the Flashscore match-fixture feed
-    (df_hh_1_{match_id}) which is faster and more complete than deriving
-    H2H from intersecting each team's result list.
+    If fixtures is provided (list of {home, away, id, ...} from BetPawa), the
+    day's Flashscore fixtures feed is matched against them and every match
+    gets its own entry: both teams' last five matches and their head-to-head
+    history, taken from Flashscore's per-fixture feed.
     """
     cache = _load_cache()
     teams = cache.setdefault("teams", {})
-    h2h_store = cache.setdefault("h2h", {})
+    fixtures_store = cache.setdefault("fixtures", {})
 
     for name in names:
         if not name:
@@ -156,44 +215,72 @@ def refresh(names: List[str], fixtures: Optional[List[Dict[str, Any]]] = None) -
                  data.get("total_teams"))
         time.sleep(REQUEST_DELAY)
 
-    # Per-fixture H2H via df_hh_1_{match_id} — requires both teams resolved.
-    # Match IDs are resolved from the home team's Flashscore fixtures feed
-    # (field AA) — no extra search needed.
     if fixtures:
-        for fix in fixtures:
-            home_name = fix.get("home", "")
-            away_name = fix.get("away", "")
-            h2h_key = f"{_key(home_name)}__vs__{_key(away_name)}"
-            if h2h_key in h2h_store:
-                continue
-            home_entry = _find_team(home_name)
-            away_entry = _find_team(away_name)
-            if not home_entry or not away_entry:
-                continue
-            home_fs_id = home_entry.get("id", "")
-            away_fs_id = away_entry.get("id", "")
-            if not home_fs_id or not away_fs_id:
-                continue
-            # Find the Flashscore match ID from the home team's stored fixtures
-            fs_match_id = None
-            for result in home_entry.get("results", []):
-                if result.get("opponent_id") == away_fs_id:
-                    fs_match_id = result.get("match_id")
-                    break
-            if not fs_match_id:
-                continue
-            try:
-                meetings = fetch_match_h2h(fs_match_id, home_name, away_name, home_fs_id, away_fs_id)
-            except Exception as exc:
-                log.warning("  H2H fetch failed for %s vs %s: %s", home_name, away_name, exc)
-                continue
-            if meetings:
-                h2h_store[h2h_key] = meetings
-                log.info("  H2H %s vs %s: %d matches", home_name, away_name, len(meetings))
-            time.sleep(REQUEST_DELAY)
+        _refresh_fixtures(fixtures, date_str, fixtures_store)
 
     _save_cache(cache)
     return cache
+
+
+def _refresh_fixtures(fixtures: List[Dict[str, Any]], date_str: Optional[str],
+                      fixtures_store: Dict[str, Any]) -> None:
+    """Fill the per-fixture entries from Flashscore's day feed and match feeds."""
+    try:
+        day_fixtures = fetch_day_fixtures()
+    except Exception as exc:                            # noqa: BLE001
+        log.warning("  Flashscore day feed failed: %s", exc)
+        return
+
+    matches = match_fixtures(fixtures, day_fixtures, date_str or "")
+    log.info("  Matched %d/%d fixtures against Flashscore", len(matches), len(fixtures))
+
+    tables: Dict[str, Dict[str, Dict]] = {}
+
+    for fix in fixtures:
+        fs = matches.get(fix.get("id", ""))
+        if not fs:
+            continue
+        home_name, away_name = fix.get("home", ""), fix.get("away", "")
+        key = f"{_key(home_name)}__vs__{_key(away_name)}"
+        if key in fixtures_store:
+            continue
+
+        try:
+            detail = fetch_match_detail(fs["id"], fs.get("home_id", ""),
+                                        fs.get("home", ""), fs.get("away_id", ""),
+                                        fs.get("away", ""))
+        except Exception as exc:                        # noqa: BLE001
+            log.warning("  H2H fetch failed for %s vs %s: %s", home_name, away_name, exc)
+            continue
+
+        league = fs.get("league") or {}
+        table_key = f"{league.get('table_id')}__{league.get('season_id')}"
+        if table_key not in tables:
+            try:
+                tables[table_key] = fetch_table(league.get("table_id", ""),
+                                                league.get("season_id", ""))
+            except Exception as exc:                    # noqa: BLE001
+                log.warning("  standings fetch failed for %s: %s", table_key, exc)
+                tables[table_key] = {}
+        table = tables[table_key]
+
+        home_row = table.get(fs.get("home_id", "")) or {}
+        away_row = table.get(fs.get("away_id", "")) or {}
+        fixtures_store[key] = {
+            "match_id": fs["id"],
+            "kickoff": fs["ts"],
+            "h2h": _book_names(detail["h2h"], fs, home_name, away_name),
+            "home": _team_form(detail["home"]),
+            "away": _team_form(detail["away"]),
+            "home_position": home_row.get("position"),
+            "away_position": away_row.get("position"),
+            "total_teams": len(table) or None,
+        }
+        log.info("  %s vs %s: form %s/%s, pos %s/%s, %d H2H", home_name, away_name,
+                 "".join(detail["home"]["form"]), "".join(detail["away"]["form"]),
+                 home_row.get("position"), away_row.get("position"),
+                 len(detail["h2h"]))
+        time.sleep(REQUEST_DELAY)
 
 
 # ── lookups ──────────────────────────────────────────────────────────────────
@@ -218,29 +305,35 @@ def has_team(team_name: str) -> bool:
 
 
 def get_recent_form(team_name: str, n: int = 5) -> Dict[str, List]:
-    """Recent form as {form, goals_scored, goals_conceded}."""
+    """Recent form as {form, goals_scored, goals_conceded}, newest first."""
     team = _find_team(team_name)
     if not team:
         return {"form": [], "goals_scored": [], "goals_conceded": []}
     summary = team.get("form_summary") or {}
+    # The team feed yields the last five oldest first; the card shows them
+    # newest first, like Flashscore.
+    form = list(reversed(summary.get("form", [])))[:n]
+    goals_scored = list(reversed(summary.get("goals_scored", [])))[:n]
+    goals_conceded = list(reversed(summary.get("goals_conceded", [])))[:n]
     return {
-        "form": summary.get("form", [])[:n],
-        "goals_scored": summary.get("goals_scored", [])[:n],
-        "goals_conceded": summary.get("goals_conceded", [])[:n],
+        "form": form,
+        "goals_scored": goals_scored,
+        "goals_conceded": goals_conceded,
     }
 
 
 def get_recent_results(team_name: str, n: int = 5) -> List[Dict[str, Any]]:
     """Per-match results: {opponent, home_away (H/A), score: [scored, conceded]}.
 
-    Oldest first, aligned with the form/goals arrays (form_summary).
+    The five most recent matches, newest first, aligned with the form/goals
+    arrays returned by get_recent_form().
     """
     team = _find_team(team_name)
     if not team:
         return []
     results = team.get("results") or []
-    # results are stored most-recent-first: take the n newest, then reverse to match form order
-    return list(reversed(results[:n]))
+    # results are stored most-recent-first
+    return results[:n]
 
 
 def get_league_position(team_name: str) -> Optional[int]:
@@ -255,21 +348,26 @@ def get_total_teams(team_name: str) -> int:
     return team.get("total_teams") or 20
 
 
-def get_h2h_data(home_team: str, away_team: str) -> Optional[List[Dict[str, Any]]]:
-    """Head-to-head history.
+def get_fixture_data(home_team: str, away_team: str) -> Optional[Dict[str, Any]]:
+    """Everything Flashscore knows about one fixture, keyed by the book names.
 
-    Checks the per-fixture H2H store (populated by fetch_match_h2h) first —
-    that's richer because it uses Flashscore's dedicated fixture feed.
-    Falls back to deriving H2H by intersecting the two teams' result lists.
+    Holds both teams' last five matches, their head-to-head history, the
+    league positions and the true kick-off time.
     """
     cache = _load_cache()
-    h2h_store = cache.get("h2h", {})
+    store = cache.get("fixtures", {})
+    return store.get(f"{_key(home_team)}__vs__{_key(away_team)}")
 
-    # Direct fixture H2H (preferred)
-    h2h_key = f"{_key(home_team)}__vs__{_key(away_team)}"
-    stored = h2h_store.get(h2h_key)
-    if stored:
-        return stored
+
+def get_h2h_data(home_team: str, away_team: str) -> Optional[List[Dict[str, Any]]]:
+    """Head-to-head history, newest first.
+
+    The per-fixture feed is preferred; failing that the history is derived by
+    intersecting the two teams' result lists.
+    """
+    fixture = get_fixture_data(home_team, away_team)
+    if fixture and fixture.get("h2h"):
+        return fixture["h2h"]
 
     # Fallback: derive from result intersection
     home = _find_team(home_team)

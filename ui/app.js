@@ -60,8 +60,10 @@ function timeMinutes(timeStr) {
 
 const N = 5;
 
+// Form arrays arrive newest first (index 0 is the most recent match), so the
+// last five matches are the first five entries.
 function cap5(arr) {
-  return arr ? arr.slice(-N) : [];
+  return arr ? arr.slice(0, N) : [];
 }
 
 function safeAvg(arr, fallback = 0) {
@@ -79,10 +81,11 @@ function formConfidence(stats, cfg) {
   return n < cfg.minFormMatches;
 }
 
+// Streaks count back from the most recent match, which sits at index 0.
 function scoringStreak(goalsScored) {
   let streak = 0;
   const arr = cap5(goalsScored || []);
-  for (let i = arr.length - 1; i >= 0; i--) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) streak++; else break;
   }
   return streak;
@@ -91,7 +94,7 @@ function scoringStreak(goalsScored) {
 function concedingStreak(goalsConceded) {
   let streak = 0;
   const arr = cap5(goalsConceded || []);
-  for (let i = arr.length - 1; i >= 0; i--) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) streak++; else break;
   }
   return streak;
@@ -100,7 +103,7 @@ function concedingStreak(goalsConceded) {
 function winningStreak(form) {
   let streak = 0;
   const arr = cap5(form || []);
-  for (let i = arr.length - 1; i >= 0; i--) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 'W') streak++; else break;
   }
   return streak;
@@ -109,7 +112,7 @@ function winningStreak(form) {
 function unbeatenStreak(form) {
   let streak = 0;
   const arr = cap5(form || []);
-  for (let i = arr.length - 1; i >= 0; i--) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 'W' || arr[i] === 'D') streak++; else break;
   }
   return streak;
@@ -145,7 +148,8 @@ function analyseH2H(h2h, homeTeam) {
   if (!h2h || !h2h.matches || !h2h.matches.length) {
     return { available: false, home_win_rate: 0.5, over_15_rate: 0.5, over_25_rate: 0.5, btts_rate: 0.5, avg_total_goals: 0, summary: 'No H2H data' };
   }
-  const matches = h2h.matches.slice(-5);
+  // H2H arrives newest first; the five most recent meetings are the ones shown.
+  const matches = h2h.matches.slice(0, 5);
   const total = matches.length;
   let homeWins = 0, btts = 0;
   const goalTotals = matches.map(m => {
@@ -427,7 +431,7 @@ function scoreMatch(match, cfg) {
     homeTotal: homeStats.total_teams_in_league || match.total_teams_in_league || null,
     awayTotal: awayStats.total_teams_in_league || match.total_teams_in_league || null,
     h2hSummary: h2h.summary,
-    h2hMatches: h2h.available ? h2h.matches.slice(-5) : null,
+    h2hMatches: h2h.available ? h2h.matches.slice(0, 5) : null,
     odds: { home: odds.home, draw: odds.draw, away: odds.away },
     confidence,
     lowConfidence,

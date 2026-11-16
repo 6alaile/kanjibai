@@ -61,6 +61,32 @@ def get_today_eat() -> str:
     return date_str
 
 
+def _covered_by_flashscore(team_name: str, fixtures: list) -> bool:
+    """True when Flashscore already has form and a position for this team.
+
+    The per-fixture feed counts: it carries both teams of a fixture, so a club
+    the name search never resolves is still covered.
+    """
+    from flashscore_cache import (has_team as fs_has_team, get_recent_form as fs_get_form,
+                                  get_league_position as fs_get_pos,
+                                  get_fixture_data as fs_get_fixture)
+    for fix in fixtures:
+        home, away = fix.get("home"), fix.get("away")
+        if team_name not in (home, away):
+            continue
+        fixture = fs_get_fixture(home, away)
+        if fixture:
+            side = "home" if team_name == home else "away"
+            data = fixture.get(side) or {}
+            if data.get("form") and fixture.get(f"{side}_position"):
+                return True
+        break
+
+    return bool(fs_has_team(team_name)
+                and fs_get_form(team_name).get("form")
+                and fs_get_pos(team_name) is not None)
+
+
 def run():
     start = datetime.now(EAT)
     log.info("=" * 50)
@@ -108,7 +134,7 @@ def run():
             if name and name not in team_names:
                 team_names.append(name)
     try:
-        refresh_flashscore(team_names, fixtures=raw_fixtures)
+        refresh_flashscore(team_names, fixtures=raw_fixtures, date_str=today)
         log.info(f"  Flashscore cache refreshed for {len(team_names)} teams")
     except Exception as e:
         log.warning(f"  Flashscore refresh failed: {e}")
@@ -117,13 +143,10 @@ def run():
 
     # ── Step 3: Transfermarkt — only for teams Flashscore couldn't cover ──
     # A team is considered covered if Flashscore has both form and a league position.
-    from flashscore_cache import has_team as fs_has_team, get_recent_form as fs_get_form, get_league_position as fs_get_pos
-    missing = [
-        n for n in team_names
-        if not fs_has_team(n)
-        or not fs_get_form(n).get("form")
-        or fs_get_pos(n) is None
-    ]
+    from flashscore_cache import (has_team as fs_has_team, get_recent_form as fs_get_form,
+                                  get_league_position as fs_get_pos,
+                                  get_fixture_data as fs_get_fixture)
+    missing = [n for n in team_names if not _covered_by_flashscore(n, raw_fixtures)]
     if missing:
         log.info(f"Step 3/4: Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
         log.info(f"  Missing: {', '.join(missing)}")
