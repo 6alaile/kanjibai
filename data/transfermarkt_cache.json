@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastUpdated": "2026-11-16T10:49:20.555067+00:00",
+  "lastUpdated": "2026-11-17T21:12:14.039168+00:00",
   "leagues": {
     "GB1": {
       "name": "Premier League",
@@ -6353,9 +6353,9 @@
         "fc_petrzalka": {
           "id": 2781,
           "name": "FC Petrzalka",
-          "league_position": 1,
+          "league_position": 2,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438601+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992979+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6367,9 +6367,9 @@
         "stk_samorin": {
           "id": 34775,
           "name": "STK Samorin",
-          "league_position": 2,
+          "league_position": 1,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438614+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992965+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6381,9 +6381,9 @@
         "pohronie": {
           "id": 38269,
           "name": "Pohronie",
-          "league_position": 3,
+          "league_position": 6,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438617+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992986+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6395,9 +6395,9 @@
         "povazska_byst": {
           "id": 36107,
           "name": "Povazska Byst.",
-          "league_position": 5,
+          "league_position": 3,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438623+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992982+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6409,9 +6409,9 @@
         "lehota_pod_v": {
           "id": 24455,
           "name": "Lehota pod V.",
-          "league_position": 6,
+          "league_position": 11,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438625+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992998+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6423,9 +6423,9 @@
         "msk_zilina_b": {
           "id": 20634,
           "name": "MSK Zilina B",
-          "league_position": 4,
+          "league_position": 10,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438620+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992995+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -6455,9 +6455,9 @@
         "tatran_presov": {
           "id": 4531,
           "name": "Tatran Presov",
-          "league_position": 7,
+          "league_position": 4,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438628+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992983+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6501,9 +6501,9 @@
         "lipt_mikulas": {
           "id": 20611,
           "name": "Lipt. Mikulas",
-          "league_position": 11,
+          "league_position": 8,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.510584+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992991+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -6533,9 +6533,9 @@
         "inter_bratislava": {
           "id": 216,
           "name": "Inter Bratislava",
-          "league_position": 9,
+          "league_position": 5,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438635+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992985+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6547,9 +6547,9 @@
         "fc_vion": {
           "id": 12005,
           "name": "FC ViOn",
-          "league_position": 10,
+          "league_position": 13,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438638+00:00",
+          "last_scraped": "2026-11-17T21:12:13.993002+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6563,12 +6563,30 @@
           "name": "Dyn. Malzenice",
           "league_position": 12,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438643+00:00",
+          "last_scraped": "2026-11-17T21:12:14.039148+00:00",
           "recent_matches": [],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "L",
+              "L",
+              "W",
+              "L",
+              "L"
+            ],
+            "goals_scored": [
+              1,
+              1,
+              3,
+              1,
+              1
+            ],
+            "goals_conceded": [
+              2,
+              2,
+              0,
+              2,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -6577,7 +6595,7 @@
           "name": "Humenne",
           "league_position": 14,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438649+00:00",
+          "last_scraped": "2026-11-17T21:12:13.993004+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6589,9 +6607,9 @@
         "slovan_b": {
           "id": 20635,
           "name": "Slovan B",
-          "league_position": 13,
+          "league_position": 9,
           "total_teams": 16,
-          "last_scraped": "2026-09-23T12:02:24.438646+00:00",
+          "last_scraped": "2026-11-17T21:12:13.992993+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -6620,6 +6638,48 @@
           "league_position": 15,
           "total_teams": 16,
           "last_scraped": "2026-09-23T12:02:24.438652+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "galanta": {
+          "id": 24526,
+          "name": "Galanta",
+          "league_position": 7,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:12:13.992988+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "zvolen": {
+          "id": 36093,
+          "name": "Zvolen",
+          "league_position": 15,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:12:13.993005+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "bytca": {
+          "id": 64255,
+          "name": "Bytca",
+          "league_position": 16,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:12:13.993007+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -22657,7 +22717,7 @@
           "name": "Machida Zelvia",
           "league_position": 4,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491001+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779265+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22689,7 +22749,7 @@
           "name": "Vissel Kobe",
           "league_position": 5,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491003+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779267+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22721,7 +22781,7 @@
           "name": "Kashima Antlers",
           "league_position": 6,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491005+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779270+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22753,7 +22813,7 @@
           "name": "Kashiwa Reysol",
           "league_position": 2,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.490996+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779259+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22785,7 +22845,7 @@
           "name": "Sanf. Hiroshima",
           "league_position": 3,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.490999+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779262+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22817,7 +22877,7 @@
           "name": "FC Tokyo",
           "league_position": 1,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.490983+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779242+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22849,7 +22909,7 @@
           "name": "Yokohama F. M.",
           "league_position": 7,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491007+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779272+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -22863,7 +22923,7 @@
           "name": "Fagiano Okayama",
           "league_position": 10,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491014+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779279+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -22877,7 +22937,7 @@
           "name": "Cerezo Osaka",
           "league_position": 11,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491016+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779281+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22909,7 +22969,7 @@
           "name": "Kawasaki Front.",
           "league_position": 8,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491009+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779274+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22941,7 +23001,7 @@
           "name": "Mito HollyHock",
           "league_position": 19,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491033+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779297+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -22955,7 +23015,7 @@
           "name": "Urawa Reds",
           "league_position": 9,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.540311+00:00",
+          "last_scraped": "2026-11-17T21:09:21.826263+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -22987,7 +23047,7 @@
           "name": "Gamba Osaka",
           "league_position": 18,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491031+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779295+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -23019,7 +23079,7 @@
           "name": "Nagoya Grampus",
           "league_position": 13,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491020+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779285+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -23033,7 +23093,7 @@
           "name": "Kyoto Sanga",
           "league_position": 12,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491018+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779283+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -23047,7 +23107,7 @@
           "name": "Avispa Fukuoka",
           "league_position": 20,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491034+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779299+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -23079,7 +23139,7 @@
           "name": "Shimizu S-Pulse",
           "league_position": 15,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491025+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779289+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -23111,7 +23171,7 @@
           "name": "V-V. Nagasaki",
           "league_position": 16,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491027+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779291+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -23143,7 +23203,7 @@
           "name": "Tokyo Verdy",
           "league_position": 14,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491023+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779287+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -23175,7 +23235,7 @@
           "name": "JEF Utd. Chiba",
           "league_position": 17,
           "total_teams": 20,
-          "last_scraped": "2026-11-16T10:48:20.491029+00:00",
+          "last_scraped": "2026-11-17T21:09:21.779293+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -33885,7 +33945,7 @@
           "name": "C. Budejovice",
           "league_position": 3,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498454+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822451+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33899,7 +33959,7 @@
           "name": "Motorlet Prague",
           "league_position": 5,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498461+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822468+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33913,12 +33973,30 @@
           "name": "Kraluv Dvur",
           "league_position": 1,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498432+00:00",
+          "last_scraped": "2026-11-17T21:11:10.025923+00:00",
           "recent_matches": [],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "D",
+              "W",
+              "L",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              1,
+              4,
+              0,
+              4,
+              3
+            ],
+            "goals_conceded": [
+              1,
+              1,
+              3,
+              3,
+              1
+            ]
           },
           "h2h": {}
         },
@@ -33927,7 +34005,7 @@
           "name": "Vikt. Plzen B",
           "league_position": 2,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498451+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822448+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33941,7 +34019,7 @@
           "name": "Domazlice",
           "league_position": 4,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498458+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822454+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33955,7 +34033,7 @@
           "name": "Loko Prague",
           "league_position": 6,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498464+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822470+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -33967,9 +34045,9 @@
         "sparta_prague_b": {
           "id": 6483,
           "name": "Sparta Prague B",
-          "league_position": 7,
+          "league_position": 8,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498466+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822475+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -33999,9 +34077,9 @@
         "benesov": {
           "id": 24409,
           "name": "Benesov",
-          "league_position": 9,
+          "league_position": 7,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498473+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822472+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34013,9 +34091,9 @@
         "pribram_b": {
           "id": 8532,
           "name": "Pribram B",
-          "league_position": 13,
+          "league_position": 14,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498485+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822487+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34027,9 +34105,9 @@
         "pisek": {
           "id": 19042,
           "name": "Pisek",
-          "league_position": 8,
+          "league_position": 9,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498470+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822476+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34041,9 +34119,9 @@
         "slavia_u20": {
           "id": 131709,
           "name": "Slavia U20",
-          "league_position": 10,
+          "league_position": 11,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498476+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822481+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34055,9 +34133,9 @@
         "dukla_prague_b": {
           "id": 37464,
           "name": "Dukla Prague B",
-          "league_position": 11,
+          "league_position": 13,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498479+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822485+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34071,12 +34149,30 @@
           "name": "Bohemians B",
           "league_position": 12,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498481+00:00",
+          "last_scraped": "2026-11-17T21:10:52.869497+00:00",
           "recent_matches": [],
           "form_summary": {
-            "form": [],
-            "goals_scored": [],
-            "goals_conceded": []
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W",
+              "W"
+            ],
+            "goals_scored": [
+              3,
+              2,
+              0,
+              3,
+              7
+            ],
+            "goals_conceded": [
+              1,
+              2,
+              3,
+              0,
+              2
+            ]
           },
           "h2h": {}
         },
@@ -34085,7 +34181,7 @@
           "name": "Aritma Prague",
           "league_position": 15,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498492+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822489+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -34097,9 +34193,9 @@
         "admira_prague": {
           "id": 18981,
           "name": "Admira Prague",
-          "league_position": 14,
+          "league_position": 10,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.554991+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822479+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -34131,7 +34227,7 @@
           "name": "Povltavska FA",
           "league_position": 16,
           "total_teams": 16,
-          "last_scraped": "2026-11-15T10:32:02.498495+00:00",
+          "last_scraped": "2026-11-17T21:10:52.822490+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44063,7 +44159,7 @@
           "name": "Central Western",
           "league_position": 7,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439576+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899235+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44077,7 +44173,7 @@
           "name": "Harmony",
           "league_position": 3,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439569+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899227+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44091,7 +44187,7 @@
           "name": "Tung Sing",
           "league_position": 6,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439574+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899233+00:00",
           "recent_matches": [
             {
               "score": [
@@ -44139,7 +44235,7 @@
           "name": "Citizen",
           "league_position": 8,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.489576+00:00",
+          "last_scraped": "2026-11-17T21:08:56.945877+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -44171,7 +44267,7 @@
           "name": "Hoi King",
           "league_position": 5,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439573+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899231+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -44203,7 +44299,7 @@
           "name": "Bright Cerulean",
           "league_position": 12,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439587+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899247+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44217,7 +44313,7 @@
           "name": "Leaper",
           "league_position": 13,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439589+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899249+00:00",
           "recent_matches": [
             {
               "score": [
@@ -44245,7 +44341,7 @@
           "name": "RCFC",
           "league_position": 1,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439551+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899206+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44259,7 +44355,7 @@
           "name": "Yuen Long",
           "league_position": 2,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439565+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899223+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44273,7 +44369,7 @@
           "name": "South China",
           "league_position": 4,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439571+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899229+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44287,7 +44383,7 @@
           "name": "Sham Shui Po",
           "league_position": 9,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439580+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899240+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44301,7 +44397,7 @@
           "name": "Kui Tan",
           "league_position": 10,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439582+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899244+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44315,7 +44411,7 @@
           "name": "Sky Leader",
           "league_position": 11,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439585+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899245+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -44329,7 +44425,7 @@
           "name": "Lucky Mile",
           "league_position": 14,
           "total_teams": 14,
-          "last_scraped": "2026-11-16T10:47:57.439591+00:00",
+          "last_scraped": "2026-11-17T21:08:56.899251+00:00",
           "recent_matches": [
             {
               "score": [
@@ -46851,7 +46947,7 @@
           "name": "Artis Brno B",
           "league_position": 4,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435621+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233816+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -46883,7 +46979,7 @@
           "name": "Zbroj. Brno B",
           "league_position": 5,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435624+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233818+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46897,7 +46993,7 @@
           "name": "Frydek-Mistek",
           "league_position": 1,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435600+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233793+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46911,7 +47007,7 @@
           "name": "Unicov",
           "league_position": 2,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435616+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233810+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46925,7 +47021,7 @@
           "name": "Unie Hlubina",
           "league_position": 10,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435635+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233831+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46939,7 +47035,7 @@
           "name": "Slovacko B",
           "league_position": 8,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435631+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233826+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46953,7 +47049,7 @@
           "name": "Olomouc B",
           "league_position": 3,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435619+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233814+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -46967,7 +47063,7 @@
           "name": "Zlin B",
           "league_position": 13,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435640+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233838+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -46999,7 +47095,7 @@
           "name": "Hranice",
           "league_position": 11,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435637+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233834+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47013,7 +47109,7 @@
           "name": "Vitkovice",
           "league_position": 12,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435638+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233836+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47027,7 +47123,7 @@
           "name": "Uhersky Brod",
           "league_position": 9,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435633+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233828+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47041,7 +47137,7 @@
           "name": "Vrchovina NMnM",
           "league_position": 15,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435644+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233842+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47055,7 +47151,7 @@
           "name": "Karvina B",
           "league_position": 6,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435626+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233821+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47069,7 +47165,7 @@
           "name": "Hodonin",
           "league_position": 7,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435628+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233823+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47083,7 +47179,7 @@
           "name": "Blansko",
           "league_position": 14,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:20.555050+00:00",
+          "last_scraped": "2026-11-17T21:10:29.197090+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -47115,7 +47211,7 @@
           "name": "Fastav Vsetin",
           "league_position": 17,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435648+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233846+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -47129,7 +47225,7 @@
           "name": "Havirov",
           "league_position": 16,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.485249+00:00",
+          "last_scraped": "2026-11-17T21:10:12.282035+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [
@@ -47161,7 +47257,7 @@
           "name": "Polanka n/Odrou",
           "league_position": 18,
           "total_teams": 18,
-          "last_scraped": "2026-11-16T10:49:05.435650+00:00",
+          "last_scraped": "2026-11-17T21:10:12.233848+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
@@ -72180,6 +72276,272 @@
           "league_position": 16,
           "total_teams": 16,
           "last_scraped": "2026-11-15T04:56:35.948730+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        }
+      }
+    },
+    "A4W": {
+      "name": "Wiener Stadtliga",
+      "table_fetched_at": "2026-11-17T21:11:33.459216+00:00",
+      "teams": {
+        "union_mauer": {
+          "id": 20825,
+          "name": "Union Mauer",
+          "league_position": 1,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459197+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "red_star": {
+          "id": 19598,
+          "name": "Red Star",
+          "league_position": 2,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459220+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "twl_elektra": {
+          "id": 14505,
+          "name": "TWL Elektra",
+          "league_position": 3,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459224+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "lac_inter": {
+          "id": 12976,
+          "name": "LAC-Inter",
+          "league_position": 4,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459227+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "fac_ii": {
+          "id": 23108,
+          "name": "FAC II",
+          "league_position": 5,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459230+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "helfort": {
+          "id": 20033,
+          "name": "Helfort",
+          "league_position": 6,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459233+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "slovan_hac": {
+          "id": 12239,
+          "name": "Slovan HAC",
+          "league_position": 7,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.504823+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "L"
+            ],
+            "goals_scored": [
+              2,
+              0,
+              4,
+              5,
+              1
+            ],
+            "goals_conceded": [
+              1,
+              0,
+              0,
+              1,
+              4
+            ]
+          },
+          "h2h": {}
+        },
+        "vienna_ii": {
+          "id": 11473,
+          "name": "Vienna II",
+          "league_position": 8,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459240+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "sv_schwechat": {
+          "id": 4462,
+          "name": "SV Schwechat",
+          "league_position": 9,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459244+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "1980_wien": {
+          "id": 24234,
+          "name": "1980 Wien",
+          "league_position": 10,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459247+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "waf_brigittenau": {
+          "id": 29027,
+          "name": "WAF Brigittenau",
+          "league_position": 11,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459250+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "austria_xiii": {
+          "id": 12083,
+          "name": "Austria XIII",
+          "league_position": 12,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459253+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "post_sv": {
+          "id": 12267,
+          "name": "Post SV",
+          "league_position": 13,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459256+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "simmering": {
+          "id": 9885,
+          "name": "Simmering",
+          "league_position": 14,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:50.793041+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "W"
+            ],
+            "goals_scored": [
+              0,
+              0,
+              2,
+              0,
+              2
+            ],
+            "goals_conceded": [
+              2,
+              4,
+              3,
+              7,
+              1
+            ]
+          },
+          "h2h": {}
+        },
+        "hellas_kagran": {
+          "id": 4416,
+          "name": "Hellas Kagran",
+          "league_position": 15,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459262+00:00",
+          "recent_matches": [],
+          "form_summary": {
+            "form": [],
+            "goals_scored": [],
+            "goals_conceded": []
+          },
+          "h2h": {}
+        },
+        "gerasdorf": {
+          "id": 4451,
+          "name": "Gerasdorf",
+          "league_position": 16,
+          "total_teams": 16,
+          "last_scraped": "2026-11-17T21:11:33.459265+00:00",
           "recent_matches": [],
           "form_summary": {
             "form": [],
