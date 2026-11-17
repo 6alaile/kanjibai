@@ -327,24 +327,6 @@ def team_form(events: List[Dict], team_id: str, n: int = 5) -> Dict:
     }
 
 
-def table_ref(page: Dict) -> Optional[Dict]:
-    """Extract the league table reference from a team page's feeds."""
-    for key in ("results", "fixtures", "summary-results", "summary-fixtures"):
-        for row in page.get(key, []):
-            if "ZE" not in row or "ZL" not in row:
-                continue
-            season = row.get("ZC")
-            if season and season != "0":
-                return {
-                    "table_id": row["ZE"],
-                    "season_id": season,
-                    "league_path": row.get("ZL"),
-                    "league_country": row.get("ZY"),
-                    "league_name": row.get("ZK") or row.get("ZA"),
-                }
-    return None
-
-
 def table_refs(page: Dict) -> List[Dict]:
     """Every league table reference a team's feeds mention, newest first.
 
@@ -443,83 +425,6 @@ def fetch_team_data(name: str, n: int = 5) -> Optional[Dict]:
         "league_position": position,
         "total_teams": total,
         "league": ref,
-    }
-
-
-def fetch_h2h(home_name: str, away_name: str, limit: int = 5) -> List[Dict]:
-    """Derive head-to-head history from both teams' own result lists.
-
-    Flashscore has no H2H page for teams, but every result feed lists the
-    opponent by id, so the intersection is the head-to-head record.
-    """
-    home = search_team(home_name)
-    away = search_team(away_name)
-    if not home or not away:
-        return []
-
-    home_events = events_from(
-        fetch_team_page(home["id"], home["slug"]).get("results", []))
-    away_id = away["id"]
-
-    meetings = []
-    for event in home_events:
-        if event["home_score"] is None:
-            continue
-        if away_id not in (event["home_id"], event["away_id"]):
-            continue
-        meetings.append({
-            "home": event["home"],
-            "away": event["away"],
-            "score": [event["home_score"], event["away_score"]],
-            "ts": event["ts"],
-        })
-
-    meetings.sort(key=lambda m: m["ts"], reverse=True)
-    return meetings[:limit]
-
-
-def resolve_in_table(name: str, table: List[Dict]) -> Optional[Dict]:
-    """Match a team name against a league table's member list.
-
-    Safer than free-text search: both sides are in the same competition,
-    so cross-league and cross-sport confusion is impossible.
-    """
-    wanted_gender = target_gender(name)
-    target = _distinctive(name)
-    best, best_score = None, 0.0
-
-    for row in table:
-        candidate = _distinctive(row["name"])
-        score = len(target & candidate) / max(1, len(target | candidate))
-        if candidate and candidate < target:
-            score += 0.15
-        if row["name"].lower() == name.lower():
-            score = 2.0
-        if score > best_score:
-            best_score, best = score, row
-
-    if not best or best_score < 0.3:
-        return None
-    return {"team_id": best["team_id"], "name": best["name"],
-            "position": best["position"], "score": round(best_score, 3)}
-
-
-def fetch_league_context(seed_name: str) -> Optional[Dict]:
-    """Resolve a seed team, then return its league table.
-
-    The table is the authoritative member list for the competition, so the
-    other team in a fixture can be resolved without a second search.
-    """
-    seed = search_team(seed_name)
-    if not seed:
-        return None
-    ref = table_ref(fetch_team_page(seed["id"], seed["slug"]))
-    if not ref or not ref.get("season_id"):
-        return None
-    return {
-        "seed": seed,
-        "league": ref,
-        "table": fetch_standings(ref["table_id"], ref["season_id"]),
     }
 
 
