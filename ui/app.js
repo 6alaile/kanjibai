@@ -70,15 +70,32 @@ function safeAvg(arr, fallback = 0) {
   return arr && arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : fallback;
 }
 
+// Slider values arrive from v-model as strings ("0.5"), so numeric filter
+// values are coerced before they are used in arithmetic.
+function num(v, fallback = 0) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : fallback;
+}
+
+// The odds gate only decides *whether* a fixture qualifies for a card — the
+// home/draw/away choice is made by the probability model (see below). Kept
+// deliberately: both sliders still describe the same price band, one side has
+// to be inside it and the other side has to be worth taking.
 function passesOddsFilter(odds, cfg) {
-  if (odds.home < cfg.homeOddsMax && odds.away >= cfg.awayOddsMin) return [true, 'home'];
-  if (odds.away < cfg.homeOddsMax && odds.home >= cfg.awayOddsMin) return [true, 'away'];
-  return [false, ''];
+  if (!odds) return false;
+  const h = odds.home, a = odds.away;
+  if (typeof h === 'number' && typeof a === 'number') {
+    const max = num(cfg.homeOddsMax, 10);
+    const min = num(cfg.awayOddsMin, 1.2);
+    if (h < max && a >= min) return true;
+    if (a < max && h >= min) return true;
+  }
+  return false;
 }
 
 function formConfidence(stats, cfg) {
   const n = (stats.form || []).length;
-  return n < cfg.minFormMatches;
+  return n < num(cfg.minFormMatches, 5);
 }
 
 // Streaks count back from the most recent match, which sits at index 0.
@@ -146,23 +163,27 @@ function teamTendency(stats) {
 
 function analyseH2H(h2h, homeTeam) {
   if (!h2h || !h2h.matches || !h2h.matches.length) {
-    return { available: false, home_win_rate: 0.5, over_15_rate: 0.5, over_25_rate: 0.5, btts_rate: 0.5, avg_total_goals: 0, summary: 'No H2H data' };
+    return { available: false, home_win_rate: 0.5, away_win_rate: 0.25, draw_rate: 0.25, over_15_rate: 0.5, over_25_rate: 0.5, btts_rate: 0.5, avg_total_goals: 0, summary: 'No H2H data' };
   }
   // H2H arrives newest first; the five most recent meetings are the ones shown.
   const matches = h2h.matches.slice(0, 5);
   const total = matches.length;
-  let homeWins = 0, btts = 0;
+  let homeWins = 0, btts = 0, draws = 0;
   const goalTotals = matches.map(m => {
     const [hg, ag] = m.score;
     if ((m.home === homeTeam && hg > ag) || (m.away === homeTeam && ag > hg)) homeWins++;
+    if (hg === ag) draws++;
     if (hg > 0 && ag > 0) btts++;
     return hg + ag;
   });
   const avg = safeAvg(goalTotals);
+  const awayWins = total - homeWins - draws;
   return {
     available: true,
     matches: matches,
     home_win_rate: homeWins / total,
+    away_win_rate: awayWins / total,
+    draw_rate: draws / total,
     over_15_rate: goalTotals.filter(g => g > 1).length / total,
     over_25_rate: goalTotals.filter(g => g > 2).length / total,
     btts_rate: btts / total,
@@ -172,28 +193,174 @@ function analyseH2H(h2h, homeTeam) {
 }
 
 function positionScore(hp, ap, total, weight) {
-  if (!hp || !ap || !total || weight === 0) return 0.5;
+  const w = num(weight, 0);
+  if (!hp || !ap || !total || w === 0) return 0.5;
   const hn = 1 - ((hp - 1) / (total - 1));
   const an = 1 - ((ap - 1) / (total - 1));
-  return Math.round((0.5 + ((hn - an + 1) / 2 - 0.5) * weight) * 1000) / 1000;
+  return Math.round((0.5 + ((hn - an + 1) / 2 - 0.5) * w) * 1000) / 1000;
 }
 
-function market1x2(side, ht, at, h2h) {
-  if (side === 'home') {
-    const conf = Math.min(95, Math.round((ht.winning_streak/5*0.4 + h2h.home_win_rate*0.3 + ht.wins/5*0.3)*100));
-    return { label: 'Home Win', type: 'primary', confidence: Math.max(40, conf), market: ['1x2', 'home'] };
-  } else {
-    const conf = Math.min(95, Math.round((at.winning_streak/5*0.4 + (1-h2h.home_win_rate)*0.3 + at.wins/5*0.3)*100));
-    return { label: 'Away Win', type: 'primary', confidence: Math.max(40, conf), market: ['1x2', 'away'] };
+// ─── 1X2 PROBABILITY MODEL ────────────────────────────────────────────────────
+// Every weight the model uses is named here, so the whole thing is tuned in
+// one place.
+//
+// The model blends two views of the same fixture:
+//   • market — the de-vigged 1X2 prices (the sharpest prior available)
+//   • stats  — recent form, head-to-head and league position (our "signal")
+// The blend is driven by the Opponent Strength slider: at its default (0.5)
+// the model reads 70/30 market/stats, at 0 it is pure market and at 1 the
+// stats carry 60% of the probability.
+const OUTCOMES = ['home', 'draw', 'away'];
+const STATS_WEIGHT_SCALE = 0.60;     // stats share = STATS_WEIGHT_SCALE × slider
+const H2H_WEIGHT = 0.25;             // inside the stats signal: head-to-head
+const POSITION_WEIGHT = 0.30;        // inside the stats signal: league position
+const DRAW_POSITION_PENALTY = 0.20;  // draws are rarer when one side dominates
+// A pick must be at least this likely, otherwise the fixture is a no-bet.
+// 36% is clear of the 33% three-way coin flip: below it the fixture is
+// genuinely even and there is nothing to take.
+const MIN_PICK_PROB = 0.36;
+
+// League-average priors, used when the form feed has nothing for a team.
+// They keep the distribution whole (win + draw + loss = 1) instead of
+// silently dropping a side out of the maths.
+const FORM_PRIOR = { win: 0.45, draw: 0.25, loss: 0.30 };
+
+const OUTCOME_LABELS = { home: 'Home Win', draw: 'Draw', away: 'Away Win' };
+
+// De-vigged 1X2 probabilities from the fixture's prices. A suspended leg is
+// absent from the data (never zero), so it drops out of the normalisation and
+// carries no probability mass.
+function marketProbabilities(odds) {
+  const raw = {};
+  let sum = 0;
+  for (const leg of OUTCOMES) {
+    const o = odds ? odds[leg] : null;
+    if (typeof o === 'number' && isFinite(o) && o > 0) {
+      raw[leg] = 1 / o;
+      sum += raw[leg];
+    }
   }
+  if (!sum) return null;
+  const p = {};
+  for (const leg of OUTCOMES) p[leg] = raw[leg] ? raw[leg] / sum : 0;
+  return p;
 }
 
-function marketDC(side, ht, at, cfg) {
+// A team's win/draw/loss split over its last five, with league-average
+// priors when there is no form data at all. The prior is used when the
+// feed has no games for the team — an empty form is not a 0-0-0 record.
+function formRates(t) {
+  const games = t ? t.wins + t.draws + t.losses : 0;
+  if (!t || !t.n || !games) {
+    return { win: FORM_PRIOR.win, draw: FORM_PRIOR.draw, loss: FORM_PRIOR.loss };
+  }
+  return { win: t.wins / t.n, draw: t.draws / t.n, loss: t.losses / t.n };
+}
+
+// The stats view: a full 1X2 distribution built from form, H2H and league
+// position. Form supplies the base rates, H2H and position tilt them.
+function statsProbabilities(ht, at, h2h, pos) {
+  const hf = formRates(ht);
+  const af = formRates(at);
+
+  // Base: a side's expected share pairs its own win rate with the
+  // opponent's loss rate; the draw is seeded from both teams' draw rates.
+  const base = {
+    home: (hf.win + af.loss) / 2,
+    draw: (hf.draw + af.draw) / 2,
+    away: (af.win + hf.loss) / 2,
+  };
+
+  // H2H tilt — only applied when there is a head-to-head record to tilt with.
+  // Each rate is centred on its league prior rather than on 50%: the draw
+  // happens ~25% of the time, so centring it on 50% would penalise every
+  // draw in the sample. The deviation is scaled by the prior's complement
+  // (the share of results the outcome does not hold), so a handful of
+  // H2H games moves the model gently and a lopsided record moves it a lot.
+  const tilt = { home: 1, draw: 1, away: 1 };
+  if (h2h.available) {
+    tilt.home = 1 + H2H_WEIGHT * (h2h.home_win_rate - FORM_PRIOR.win) / (1 - FORM_PRIOR.win);
+    tilt.away = 1 + H2H_WEIGHT * (h2h.away_win_rate - FORM_PRIOR.loss) / (1 - FORM_PRIOR.loss);
+    tilt.draw = 1 + H2H_WEIGHT * (h2h.draw_rate - FORM_PRIOR.draw) / (1 - FORM_PRIOR.draw);
+  }
+
+  // League position tilt — the better-placed side is favoured, and the wider
+  // the gap the less a draw is worth.
+  const gap = 2 * pos - 1;  // −1 … +1, home advantage in league position
+  const posTilt = {
+    home: 1 + POSITION_WEIGHT * gap,
+    away: 1 + POSITION_WEIGHT * (-gap),
+    draw: 1 - DRAW_POSITION_PENALTY * gap * gap,
+  };
+
+  const tilted = {};
+  let sum = 0;
+  for (const leg of OUTCOMES) {
+    tilted[leg] = Math.max(0, base[leg] * tilt[leg] * posTilt[leg]);
+    sum += tilted[leg];
+  }
+  if (!sum) return { home: 1 / 3, draw: 1 / 3, away: 1 / 3 };
+
+  const p = {};
+  for (const leg of OUTCOMES) p[leg] = tilted[leg] / sum;
+  return p;
+}
+
+// The blended model plus the 1X2 selection: the argmax of the three blended
+// probabilities, restricted to legs that are actually priced (a suspended leg
+// cannot be staked) and inside the max-odds band.
+function probabilityModel(match, ht, at, h2h, pos, cfg) {
+  const market = marketProbabilities(match.odds);
+  const stats = statsProbabilities(ht, at, h2h, pos);
+  const slider = num(cfg.oppStrengthWeight, 0);
+  const statsWeight = Math.max(0, Math.min(1, STATS_WEIGHT_SCALE * slider));
+
+  const p = {};
+  for (const leg of OUTCOMES) {
+    const m = market ? market[leg] : 0;
+    p[leg] = (1 - statsWeight) * m + statsWeight * stats[leg];
+  }
+
+  // Only a leg with a price inside the band can be picked.
+  const maxOdds = num(cfg.homeOddsMax, 10);
+  const priced = OUTCOMES.filter(leg => {
+    const o = match.odds ? match.odds[leg] : null;
+    return typeof o === 'number' && o > 0 && o <= maxOdds;
+  });
+  const pool = priced.length ? priced : OUTCOMES.filter(leg => p[leg] > 0);
+
+  let pick = pool[0] || 'home';
+  let best = -1;
+  for (const leg of pool) {
+    if (p[leg] > best) { best = p[leg]; pick = leg; }
+  }
+
+  return { p, market, stats, statsWeight, pick, prob: p[pick] };
+}
+
+function market1x2(model) {
+  return {
+    label: OUTCOME_LABELS[model.pick],
+    type: 'primary',
+    // The primary pick's confidence *is* the model's probability for the
+    // chosen outcome — the old form/streak heuristic is gone.
+    confidence: Math.round(model.prob * 100),
+    prob: Math.round(model.prob * 100),
+    market: ['1x2', model.pick],
+  };
+}
+
+// Double chance is the safer twin of the 1X2 pick: it covers the pick plus
+// one other outcome. The arm follows the model's pick — a Home pick pairs
+// with 1X, an Away pick with X2, and a Draw pick pairs with whichever arm
+// covers the draw and the likelier of the two sides.
+function marketDC(model, ht, at, cfg) {
   if (!cfg.markets.includes('dc')) return null;
   if (ht.winning_streak >= 2 && at.winning_streak >= 2) {
     const conf = Math.min(90, Math.round((ht.winning_streak + at.winning_streak) / 10 * 100));
     return { label: '12 (Home or Away)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_away'] };
   }
+  const side = model.pick;
   if (side === 'home' && ht.unbeaten_streak >= 3 && at.losses >= 2) {
     const conf = Math.min(90, Math.round((ht.unbeaten_streak/5*0.5 + at.losses/5*0.5)*100));
     return { label: '1X (Home or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_draw'] };
@@ -201,6 +368,16 @@ function marketDC(side, ht, at, cfg) {
   if (side === 'away' && at.unbeaten_streak >= 3 && ht.losses >= 2) {
     const conf = Math.min(90, Math.round((at.unbeaten_streak/5*0.5 + ht.losses/5*0.5)*100));
     return { label: 'X2 (Away or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'draw_away'] };
+  }
+  if (side === 'draw') {
+    // The draw pick only pairs with a double chance when both teams keep
+    // drawing — otherwise there is nothing behind the draw.
+    if (ht.draws >= 2 && at.draws >= 2) {
+      const arm = model.p.home >= model.p.away ? 'home_draw' : 'draw_away';
+      const label = arm === 'home_draw' ? '1X (Home or Draw)' : 'X2 (Away or Draw)';
+      const conf = Math.min(90, Math.round(((ht.draws/ht.n + at.draws/at.n) / 2 * 0.6 + model.p.draw * 0.4) * 100));
+      return { label, type: 'secondary', confidence: Math.max(45, conf), market: ['dc', arm] };
+    }
   }
   return null;
 }
@@ -260,7 +437,7 @@ function marketCombos(mainBet, dc, over15, btts, cfg) {
   const combos = [];
   const both = (a, b) => a && b && a.confidence >= 55 && b.confidence >= 55;
   const avg = (a, b) => Math.min(88, Math.round((a.confidence + b.confidence) / 2));
-  const side = mainBet.market[1]; // home | away (draw once phase 4 lands)
+  const side = mainBet.market[1]; // home | draw | away — the model's pick
 
   if (both(mainBet, btts)) {
     combos.push({
@@ -357,23 +534,34 @@ function scorelineFor(team, idx) {
   return `${gs}:${gc}`;
 }
 
+// Match-level score for the card header. It stays a match score (not a pick
+// probability) but follows the model's pick, so a draw pick is scored on the
+// teams' drawing record rather than on one side's win rate.
 function compositeConfidence(side, ht, at, h2h, pos, lowConfidence) {
   const n = ht.n;
   if (!n) return 30;
-  const formSig = side === 'home'
-    ? ht.wins/n*0.6 + ht.winning_streak/5*0.4
-    : at.wins/n*0.6 + at.winning_streak/5*0.4;
-  const h2hSig = side === 'home' ? h2h.home_win_rate : 1 - h2h.home_win_rate;
+  let formSig, h2hSig, posSig = pos;
+  if (side === 'draw') {
+    formSig = (ht.draws/n + at.draws/n) / 2;
+    h2hSig = h2h.draw_rate;
+    posSig = 1 - Math.abs(2 * pos - 1); // an even table favours the draw
+  } else {
+    formSig = side === 'home'
+      ? ht.wins/n*0.6 + ht.winning_streak/5*0.4
+      : at.wins/n*0.6 + at.winning_streak/5*0.4;
+    h2hSig = side === 'home' ? h2h.home_win_rate : 1 - h2h.home_win_rate;
+  }
   const goalsSig = Math.min(1, (ht.total_scored + at.total_scored) / (n*3));
-  let raw = formSig*0.40 + pos*0.20 + h2hSig*0.20 + goalsSig*0.20;
+  let raw = formSig*0.40 + posSig*0.20 + h2hSig*0.20 + goalsSig*0.20;
   if (lowConfidence) raw *= 0.85;
   return Math.max(30, Math.min(95, Math.round(raw*100)));
 }
 
-function scoreMatch(match, cfg) {
-  const odds = match.odds;
-  const [passes, side] = passesOddsFilter(odds, cfg);
-  if (!passes) return {
+// The shared "no bet" card shape: a fixture that fails the odds gate and a
+// fixture the model has no confident enough outcome for look the same.
+function noBetMatch(match, reason, note) {
+  const odds = match.odds || {};
+  return {
     id: match.id,
     time: match.time,
     league: match.league,
@@ -389,27 +577,52 @@ function scoreMatch(match, cfg) {
     lowConfidence: true,
     lowConfTeam: '',
     recommendation: '',
-    reason: 'Odds do not meet filter criteria (home odds > ' + cfg.homeOddsMax + ' or away odds < ' + cfg.awayOddsMin + ')',
+    reason,
     bets: [],
     homeStats: {
       name: match.home,
       form: [],
-      notes: ['Odds below filtering threshold']
+      notes: [note]
     },
     awayStats: {
       name: match.away,
       form: [],
-      notes: ['Odds below filtering threshold']
+      notes: [note]
     },
     signals: []
   };
+}
+
+function scoreMatch(match, cfg) {
+  const odds = match.odds || {};
+
+  // The range inputs hand v-model strings, so every numeric filter value is
+  // coerced once here instead of relying on JavaScript's string comparisons.
+  const cfgN = {
+    homeOddsMax: num(cfg.homeOddsMax, 10),
+    awayOddsMin: num(cfg.awayOddsMin, 1.2),
+    minFormMatches: num(cfg.minFormMatches, 5),
+    leaguePositionWeight: num(cfg.leaguePositionWeight, 0.5),
+    oppStrengthWeight: num(cfg.oppStrengthWeight, 0.5),
+    markets: cfg.markets || [],
+  };
+
+  // The odds gate decides whether the fixture qualifies at all; the model
+  // below decides which of home/draw/away is taken.
+  if (!passesOddsFilter(odds, cfgN)) {
+    return noBetMatch(
+      match,
+      'Odds do not meet filter criteria (need one side ≤ ' + cfgN.homeOddsMax + ' with the other ≥ ' + cfgN.awayOddsMin + ')',
+      'Odds below filtering threshold'
+    );
+  }
 
   const homeStats = match.home_stats || match.homeStats || {};
   const awayStats = match.away_stats || match.awayStats || {};
   const h2hRaw = match.h2h || null;
 
-  const homeLowConf = formConfidence(homeStats, cfg);
-  const awayLowConf = formConfidence(awayStats, cfg);
+  const homeLowConf = formConfidence(homeStats, cfgN);
+  const awayLowConf = formConfidence(awayStats, cfgN);
   const lowConfidence = homeLowConf || awayLowConf;
   const lowConfTeam = homeLowConf ? match.home : (awayLowConf ? match.away : null);
 
@@ -418,28 +631,44 @@ function scoreMatch(match, cfg) {
   const h2h = analyseH2H(h2hRaw, match.home);
   const pos = positionScore(
     homeStats.league_position, awayStats.league_position,
-    match.total_teams_in_league || 20, cfg.leaguePositionWeight
+    match.total_teams_in_league || 20, cfgN.leaguePositionWeight
   );
 
-  const bets = [];
-  bets.push(market1x2(side, ht, at, h2h));
+  const model = probabilityModel(match, ht, at, h2h, pos, cfgN);
 
-  const dc = marketDC(side, ht, at, cfg);
+  // No outcome is strong enough to take — return the no-bet card with a
+  // reason that names the best outcome instead of the old home/away logic.
+  // The floor is compared against the rounded percentage, so the reason and
+  // the chip always read the same number.
+  const pickPct = Math.round(model.prob * 100);
+  if (pickPct < MIN_PICK_PROB * 100) {
+    return noBetMatch(
+      match,
+      'No confident enough outcome — best is ' + OUTCOME_LABELS[model.pick] + ' at ' +
+        pickPct + '%, below the ' + Math.round(MIN_PICK_PROB * 100) + '% floor',
+      'No outcome above the confidence floor'
+    );
+  }
+
+  const bets = [];
+  bets.push(market1x2(model));
+
+  const dc = marketDC(model, ht, at, cfgN);
   if (dc) bets.push(dc);
 
-  const over15 = marketOver15(ht, at, h2h, cfg);
+  const over15 = marketOver15(ht, at, h2h, cfgN);
   if (over15) bets.push(over15);
 
-  const btts = marketBTTS(ht, at, h2h, cfg);
+  const btts = marketBTTS(ht, at, h2h, cfgN);
   if (btts) bets.push(btts);
 
-  const toScore = marketToScore(ht, at, cfg);
+  const toScore = marketToScore(ht, at, cfgN);
   toScore.forEach(b => bets.push(b));
 
-  const combos = marketCombos(bets[0], dc, over15, btts, cfg);
+  const combos = marketCombos(bets[0], dc, over15, btts, cfgN);
   combos.forEach(b => bets.push(b));
 
-  const confidence = compositeConfidence(side, ht, at, h2h, pos, lowConfidence);
+  const confidence = compositeConfidence(model.pick, ht, at, h2h, pos, lowConfidence);
 
   return {
     id: match.id,
@@ -459,11 +688,16 @@ function scoreMatch(match, cfg) {
     confidence,
     lowConfidence,
     lowConfTeam,
-    recommendation: side,
+    recommendation: model.pick,
     reason: '',
+    // The picks contract: label, type, market path, price and the probability
+    // behind the pick. `prob` is the model's probability for the 1X2 pick and
+    // the market's own confidence score for every other pick (both 0–100).
     bets: bets.map(b => ({
       label: b.label, type: b.type, market: b.market || null,
-      price: betOdds(match.markets, b.market)
+      price: betOdds(match.markets, b.market),
+      prob: typeof b.prob === 'number' ? b.prob
+        : (typeof b.confidence === 'number' ? b.confidence : null)
     })),
     homeStats: {
       name: match.home,
@@ -543,7 +777,7 @@ createApp({
     });
 
     const marketOptions = [
-      { key: '1x2', label: '1X2' },
+      { key: '1x2', label: '1X2 (H/D/A)' },
       { key: 'dc', label: 'Double Chance' },
       { key: 'over15', label: 'Over 1.5' },
       { key: 'btts', label: 'BTTS' },
@@ -625,8 +859,8 @@ createApp({
     const steps = [
       ['Loading fixtures...', 'Fetching enriched match data from GitHub'],
       ['Applying odds filter...', `Home ≤ ${filters.homeOddsMax} · Away ≥ ${filters.awayOddsMin}`],
-      ['Scoring matches...', 'Running signal engine in browser'],
-      ['Generating signals...', 'Building market recommendations'],
+      ['Scoring matches...', 'Running 3-way probability model (Home / Draw / Away)'],
+      ['Generating picks...', 'Building market recommendations with confidence %'],
     ];
 
     async function runScan() {
@@ -663,6 +897,13 @@ createApp({
       if (!league) return '';
       const parts = league.split('/');
       return parts[parts.length - 1].trim();
+    }
+
+    // Band for a pick's probability — the same 75 / 55 thresholds the card
+    // header's conf-score uses, so both read on one scale.
+    function probBand(prob) {
+      if (typeof prob !== 'number') return '';
+      return prob >= 75 ? 'high' : prob >= 55 ? 'mid' : 'low';
     }
 
     // Signals split into three columns: home team | match-level | away team
@@ -716,7 +957,7 @@ createApp({
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor,
-      ordinal, posLabel, signalGroups, capturedTime
+      ordinal, posLabel, signalGroups, capturedTime, probBand
     };
   }
 }).mount('#app');

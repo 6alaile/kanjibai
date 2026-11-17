@@ -626,6 +626,23 @@ header {
   font-weight: 700;
 }
 
+/* The pick's probability — a small inset token next to the label */
+.bet-prob {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Same 75 / 55 bands as the card header score */
+.bet-prob.high { color: var(--success); }
+.bet-prob.mid { color: var(--warning); }
+.bet-prob.low { color: var(--danger); }
+
 .picks-empty {
   font-size: 11px;
   color: var(--text2);
