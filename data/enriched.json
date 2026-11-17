@@ -1,836 +1,11 @@
 {
   "meta": {
     "date": "2026-11-17",
-    "generatedAt": "2026-11-17T00:01:57.300348+03:00",
-    "scanned": 20,
-    "elapsedSeconds": 82.1
+    "generatedAt": "2026-11-17T03:01:55.253492+03:00",
+    "scanned": 19,
+    "elapsedSeconds": 75.2
   },
   "matches": [
-    {
-      "id": "montevideowandererscajuventudd",
-      "league": "Football / Uruguay / Primera Division",
-      "home": "Montevideo Wanderers",
-      "away": "CA Juventud de Las Piedras",
-      "time": "02:00",
-      "odds": {
-        "home": 2.09,
-        "draw": 3.44,
-        "away": 3.32
-      },
-      "home_stats": {
-        "name": "Montevideo Wanderers",
-        "form": [
-          "L",
-          "D",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          4,
-          1,
-          1,
-          3,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1793905200,
-            "match_id": "YDLGiAS6",
-            "opponent": "Lito",
-            "opponent_id": "EkDlKEXo",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1793475000,
-            "match_id": "WOk9Fz4M",
-            "opponent": "Penarol",
-            "opponent_id": "r1hkKQek",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792933200,
-            "match_id": "M1IoMvCr",
-            "opponent": "Progreso",
-            "opponent_id": "2TRo7vop",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792252800,
-            "match_id": "tCSRS97k",
-            "opponent": "Racing Montevideo",
-            "opponent_id": "thR1R82f",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1791655200,
-            "match_id": "GWXMw1FM",
-            "opponent": "Boston River",
-            "opponent_id": "U1MuWpN3",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 16,
-        "opposition_position": 9
-      },
-      "away_stats": {
-        "name": "CA Juventud de Las Piedras",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          2,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          0,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794355200,
-            "match_id": "KKn8O9As",
-            "opponent": "Liverpool M.",
-            "opponent_id": "0KuKBKxT",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1793574000,
-            "match_id": "pj8T7q2D",
-            "opponent": "Liverpool M.",
-            "opponent_id": "0KuKBKxT",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793214000,
-            "match_id": "YDubi1YN",
-            "opponent": "Nacional Florida",
-            "opponent_id": "jLyS9AdD",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792796400,
-            "match_id": "I5T7TMJ8",
-            "opponent": "Penarol",
-            "opponent_id": "r1hkKQek",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792242000,
-            "match_id": "ptsdYVqS",
-            "opponent": "Progreso",
-            "opponent_id": "2TRo7vop",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 16,
-        "opposition_position": 10
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA Juventud de Las Piedras",
-            "away": "Montevideo Wanderers",
-            "score": [
-              5,
-              2
-            ],
-            "ts": 1780250400
-          },
-          {
-            "home": "CA Juventud de Las Piedras",
-            "away": "Montevideo Wanderers",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1777735800
-          },
-          {
-            "home": "CA Juventud de Las Piedras",
-            "away": "Montevideo Wanderers",
-            "score": [
-              0,
-              3
-            ],
-            "ts": 1768168800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "brazilu20peruu20",
-      "league": "Football / International / U20 Friendly Games",
-      "home": "Brazil U20",
-      "away": "Peru U20",
-      "time": "02:00",
-      "odds": {
-        "home": 1.14,
-        "draw": 7.9,
-        "away": 13.49
-      },
-      "home_stats": {
-        "name": "Brazil U20",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          2,
-          4,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794610800,
-            "match_id": "OzUtwxIj",
-            "opponent": "Peru U20",
-            "opponent_id": "IVXoQ6hF",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1791104400,
-            "match_id": "EewUMc6M",
-            "opponent": "Mexico U20",
-            "opponent_id": "d4X4ybud",
-            "home_away": "H",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1790870400,
-            "match_id": "6VZLOJyA",
-            "opponent": "USA U20",
-            "opponent_id": "bJ4urFwb",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1790611200,
-            "match_id": "UsS37w15",
-            "opponent": "Denmark U20",
-            "opponent_id": "QVV4GL57",
-            "home_away": "H",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1786539600,
-            "match_id": "QDmGjRRi",
-            "opponent": "Bolivia U20",
-            "opponent_id": "6oHP35Gk",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Peru U20",
-        "form": [
-          "L",
-          "D",
-          "L",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          3,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794610800,
-            "match_id": "OzUtwxIj",
-            "opponent": "Brazil U20",
-            "opponent_id": "QiTr4PVe",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1791298800,
-            "match_id": "bktDJbSH",
-            "opponent": "Ecuador U20",
-            "opponent_id": "M3vwSSN2",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1791057600,
-            "match_id": "6sO5LKc5",
-            "opponent": "Ecuador U20",
-            "opponent_id": "M3vwSSN2",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1774967400,
-            "match_id": "SzktDUTp",
-            "opponent": "Chile U20",
-            "opponent_id": "Sd7d7x70",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1774791000,
-            "match_id": "bwj3KCyB",
-            "opponent": "Chile U20",
-            "opponent_id": "Sd7d7x70",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Brazil U20",
-            "away": "Peru U20",
-            "score": [
-              2,
-              0
-            ],
-            "ts": 1794610800
-          },
-          {
-            "home": "Peru U20",
-            "away": "Brazil U20",
-            "score": [
-              3,
-              0
-            ],
-            "ts": 1674165600
-          },
-          {
-            "home": "Brazil U20",
-            "away": "Peru U20",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1575228600
-          },
-          {
-            "home": "Peru U20",
-            "away": "Brazil U20",
-            "score": [
-              5,
-              0
-            ],
-            "ts": 1423079400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "trinidadandtobagoantiguaandbar",
-      "league": "Football / International / CONCACAF Nations League",
-      "home": "Trinidad and Tobago",
-      "away": "Antigua and Barbuda",
-      "time": "03:00",
-      "odds": {
-        "home": 1.18,
-        "draw": 6.2,
-        "away": 9.35
-      },
-      "home_stats": {
-        "name": "Trinidad and Tobago",
-        "form": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          0,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          1,
-          2,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794524400,
-            "match_id": "jDCENeiA",
-            "opponent": "Antigua and Barbuda",
-            "opponent_id": "hvHt48Jh",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1791151200,
-            "match_id": "0lmYIv2e",
-            "opponent": "Curacao",
-            "opponent_id": "bLLGpOkQ",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1790892000,
-            "match_id": "vZIMBNfS",
-            "opponent": "Curacao",
-            "opponent_id": "bLLGpOkQ",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1790557200,
-            "match_id": "ULzsapBM",
-            "opponent": "Dominican Republic",
-            "opponent_id": "nB5iYoh5",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1790295600,
-            "match_id": "nsuflTd4",
-            "opponent": "Haiti",
-            "opponent_id": "nk4v10Z1",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Antigua and Barbuda",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          3,
-          5,
-          0
-        ],
-        "goals_conceded": [
-          3,
-          2,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794524400,
-            "match_id": "jDCENeiA",
-            "opponent": "Trinidad & Tobago",
-            "opponent_id": "UTg8M6Sd",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1791327600,
-            "match_id": "n38zHAp3",
-            "opponent": "Aruba",
-            "opponent_id": "0zV9U6hI",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1790895600,
-            "match_id": "0SwGdtal",
-            "opponent": "Anguilla",
-            "opponent_id": "AoxcX88a",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1790463600,
-            "match_id": "f9Llg7hd",
-            "opponent": "Anguilla",
-            "opponent_id": "AoxcX88a",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1790204400,
-            "match_id": "YuxOfKT0",
-            "opponent": "Aruba",
-            "opponent_id": "0zV9U6hI",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Antigua and Barbuda",
-            "away": "Trinidad and Tobago",
-            "score": [
-              3,
-              2
-            ],
-            "ts": 1794524400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "martiniquearuba",
-      "league": "Football / International / CONCACAF Nations League",
-      "home": "Martinique",
-      "away": "Aruba",
-      "time": "03:00",
-      "odds": {
-        "home": 1.21,
-        "draw": 5.8,
-        "away": 8.76
-      },
-      "home_stats": {
-        "name": "Martinique",
-        "form": [
-          "D",
-          "D",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          1,
-          2,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794520800,
-            "match_id": "xUAMLZLM",
-            "opponent": "Aruba",
-            "opponent_id": "0zV9U6hI",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1791237600,
-            "match_id": "bFN6Kiw0",
-            "opponent": "El Salvador",
-            "opponent_id": "8b5z2tKe",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1790985600,
-            "match_id": "IsD04um2",
-            "opponent": "Honduras",
-            "opponent_id": "fP8cJrsS",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1790632800,
-            "match_id": "YHPKi23d",
-            "opponent": "Suriname",
-            "opponent_id": "jefTDM4k",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1790391600,
-            "match_id": "QitApodT",
-            "opponent": "El Salvador",
-            "opponent_id": "8b5z2tKe",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Aruba",
-        "form": [
-          "D",
-          "L",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          3,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          3,
-          2,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794520800,
-            "match_id": "xUAMLZLM",
-            "opponent": "Martinique",
-            "opponent_id": "2wUx2pdP",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1791327600,
-            "match_id": "n38zHAp3",
-            "opponent": "Antigua and Barbuda",
-            "opponent_id": "hvHt48Jh",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1791154800,
-            "match_id": "KdzWhbbD",
-            "opponent": "Anguilla",
-            "opponent_id": "AoxcX88a",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1790722800,
-            "match_id": "fTBrFlFF",
-            "opponent": "Anguilla",
-            "opponent_id": "AoxcX88a",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1790204400,
-            "match_id": "YuxOfKT0",
-            "opponent": "Antigua and Barbuda",
-            "opponent_id": "hvHt48Jh",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Aruba",
-            "away": "Martinique",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1794520800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
     {
       "id": "canadaguatemala",
       "league": "Football / International / CONCACAF Nations League",
@@ -838,9 +13,9 @@
       "away": "Guatemala",
       "time": "04:00",
       "odds": {
-        "home": 1.15,
-        "draw": 6.4,
-        "away": 10.95
+        "home": 1.13,
+        "draw": 7.0,
+        "away": 11.94
       },
       "home_stats": {
         "name": "Canada",
@@ -1060,9 +235,9 @@
       "away": "AD Rosario",
       "time": "04:00",
       "odds": {
-        "home": 1.95,
-        "draw": 3.45,
-        "away": 3.35
+        "home": 2.01,
+        "draw": 3.35,
+        "away": 3.3
       },
       "home_stats": {
         "name": "Pitbulls Santa Barbara FC",
@@ -1169,9 +344,9 @@
       "away": "Sacramento Republic FC",
       "time": "05:00",
       "odds": {
-        "home": 2.96,
-        "draw": 3.62,
-        "away": 2.19
+        "home": 3.02,
+        "draw": 3.48,
+        "away": 2.21
       },
       "home_stats": {
         "name": "New Mexico United",
@@ -1373,9 +548,9 @@
       "away": "Club Celaya FC",
       "time": "05:05",
       "odds": {
-        "home": 1.38,
-        "draw": 4.37,
-        "away": 6.36
+        "home": 1.39,
+        "draw": 4.35,
+        "away": 6.13
       },
       "home_stats": {
         "name": "Irapuato",
@@ -1916,197 +1091,14 @@
       "total_teams_in_league": 16
     },
     {
-      "id": "singaporebrazil",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Singapore",
-      "away": "Brazil",
-      "time": "13:00",
-      "odds": {
-        "home": 89.55,
-        "draw": 21.0,
-        "away": 1.01
-      },
-      "home_stats": {
-        "name": "Singapore",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          4,
-          6,
-          0,
-          2,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794571200,
-            "match_id": "YoaloFGP",
-            "opponent": "Paraguay",
-            "opponent_id": "YaNlqp6j",
-            "home_away": "H",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1790857800,
-            "match_id": "IBjMug0E",
-            "opponent": "Malaysia",
-            "opponent_id": "rDaObqDr",
-            "home_away": "A",
-            "score": [
-              0,
-              6
-            ]
-          },
-          {
-            "ts": 1790586000,
-            "match_id": "Wz2KLX8r",
-            "opponent": "Bangladesh",
-            "opponent_id": "C4edrALb",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1790341200,
-            "match_id": "0hBlRgoL",
-            "opponent": "Indonesia",
-            "opponent_id": "88ErHiT9",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1787058000,
-            "match_id": "K00tvelQ",
-            "opponent": "Thailand",
-            "opponent_id": "zHgBrkd7",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Brazil",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          4,
-          4,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          2,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794651300,
-            "match_id": "UHpKugvm",
-            "opponent": "Japan",
-            "opponent_id": "ULXPdOUj",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1791036000,
-            "match_id": "rTGQFX7E",
-            "opponent": "India",
-            "opponent_id": "A1UUGpep",
-            "home_away": "A",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1790676000,
-            "match_id": "GvxFXcFU",
-            "opponent": "Australia",
-            "opponent_id": "xSrf6qMM",
-            "home_away": "A",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "ts": 1790330400,
-            "match_id": "8EY6ZJpI",
-            "opponent": "Australia",
-            "opponent_id": "xSrf6qMM",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1783281600,
-            "match_id": "tpOhKWcC",
-            "opponent": "Norway",
-            "opponent_id": "8rP6JO0H",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
       "id": "denmarku19bosniaandherzegovina",
       "league": "Football / International / U19 European Championship, Qualification",
       "home": "Denmark U19",
       "away": "Bosnia and Herzegovina U19",
       "time": "13:00",
       "odds": {
-        "home": 1.34,
-        "draw": 4.9,
+        "home": 1.35,
+        "draw": 4.7,
         "away": 6.8
       },
       "home_stats": {
@@ -2280,210 +1272,6 @@
       "h2h": null,
       "source": "betpawa",
       "total_teams_in_league": 26
-    },
-    {
-      "id": "lebanonpalestine",
-      "league": "Football / International / Int. Friendly Games",
-      "home": "Lebanon",
-      "away": "Palestine",
-      "time": "16:00",
-      "odds": {
-        "home": 3.24,
-        "draw": 3.34,
-        "away": 2.26
-      },
-      "home_stats": {
-        "name": "Lebanon",
-        "form": [
-          "D",
-          "L",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          6,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          3,
-          0,
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794582000,
-            "match_id": "n5Lh1jRi",
-            "opponent": "Iraq",
-            "opponent_id": "K8aAGt6r",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1791122400,
-            "match_id": "fadnqSmf",
-            "opponent": "Kyrgyzstan",
-            "opponent_id": "pMXTD85a",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1790863200,
-            "match_id": "x4qECTWO",
-            "opponent": "Maldives",
-            "opponent_id": "viclpWjn",
-            "home_away": "A",
-            "score": [
-              6,
-              0
-            ]
-          },
-          {
-            "ts": 1780588800,
-            "match_id": "02qMen4n",
-            "opponent": "Yemen",
-            "opponent_id": "GGzYeY4n",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1764172800,
-            "match_id": "EVEy5ktn",
-            "opponent": "Sudan",
-            "opponent_id": "OGhP26xH",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Palestine",
-        "form": [
-          "L",
-          "W",
-          "D",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          5,
-          2,
-          4,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          2,
-          2,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794668400,
-            "match_id": "jXjjcQEO",
-            "opponent": "Iran",
-            "opponent_id": "xrRx85iA",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1790940900,
-            "match_id": "Kz3wzf9b",
-            "opponent": "China",
-            "opponent_id": "f5AvIXD3",
-            "home_away": "A",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1790787600,
-            "match_id": "SpA26xsS",
-            "opponent": "Konyaspor",
-            "opponent_id": "YazuCbCE",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1790596800,
-            "match_id": "nwkq7Eup",
-            "opponent": "Tajikistan",
-            "opponent_id": "WlExKTT4",
-            "home_away": "A",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "ts": 1790242200,
-            "match_id": "2PgKh1lL",
-            "opponent": "New Zealand",
-            "opponent_id": "rLctHkpU",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Palestine",
-            "away": "Lebanon",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1717689600
-          },
-          {
-            "home": "Lebanon",
-            "away": "Palestine",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1700143200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
     },
     {
       "id": "netherlandsu19croatiau19",
@@ -2882,9 +1670,9 @@
       "away": "Luxembourg U19",
       "time": "14:00",
       "odds": {
-        "home": 1.28,
-        "draw": 5.2,
-        "away": 8.0
+        "home": 1.29,
+        "draw": 5.0,
+        "away": 7.8
       },
       "home_stats": {
         "name": "Poland U19",
@@ -3077,9 +1865,9 @@
       "away": "South Korea U19",
       "time": "15:35",
       "odds": {
-        "home": 2.95,
-        "draw": 3.34,
-        "away": 2.26
+        "home": 2.83,
+        "draw": 3.32,
+        "away": 2.35
       },
       "home_stats": {
         "name": "China U19",
@@ -3299,8 +2087,8 @@
       "away": "Spain U19",
       "time": "15:00",
       "odds": {
-        "home": 16.0,
-        "draw": 7.6,
+        "home": 17.0,
+        "draw": 7.8,
         "away": 1.1
       },
       "home_stats": {
@@ -3494,9 +2282,9 @@
       "away": "Switzerland U19",
       "time": "15:00",
       "odds": {
-        "home": 4.6,
-        "draw": 3.95,
-        "away": 1.58
+        "home": 4.5,
+        "draw": 3.9,
+        "away": 1.61
       },
       "home_stats": {
         "name": "Northern Ireland U19",
@@ -3689,9 +2477,9 @@
       "away": "Bahrain",
       "time": "15:00",
       "odds": {
-        "home": 1.91,
-        "draw": 3.5,
-        "away": 3.93
+        "home": 1.92,
+        "draw": 3.35,
+        "away": 4.08
       },
       "home_stats": {
         "name": "China PR",
@@ -3885,6 +2673,859 @@
       },
       "source": "betpawa",
       "total_teams_in_league": null
+    },
+    {
+      "id": "icelandu19walesu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Iceland U19",
+      "away": "Wales U19",
+      "time": "15:00",
+      "odds": {
+        "home": 2.65,
+        "draw": 3.45,
+        "away": 2.32
+      },
+      "home_stats": {
+        "name": "Iceland U19",
+        "form": [
+          "L",
+          "D",
+          "W",
+          "D",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          3,
+          1,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1794668400,
+            "match_id": "6grM3kQp",
+            "opponent": "Finland U19",
+            "opponent_id": "4tF7xqfU",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1794409200,
+            "match_id": "UDlrBXXA",
+            "opponent": "Spain U19",
+            "opponent_id": "d2OqVLxc",
+            "home_away": "A",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1781017200,
+            "match_id": "4Goi1hrh",
+            "opponent": "Georgia U19",
+            "opponent_id": "CC3Qdnun",
+            "home_away": "A",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "ts": 1780758000,
+            "match_id": "xAg5wkjo",
+            "opponent": "Montenegro U19",
+            "opponent_id": "Uazg8LhT",
+            "home_away": "H",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1774958400,
+            "match_id": "v7lEulBs",
+            "opponent": "Morocco U18",
+            "opponent_id": "AFL2xLHa",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 28,
+        "opposition_position": 4
+      },
+      "away_stats": {
+        "name": "Wales U19",
+        "form": [
+          "L",
+          "D",
+          "D",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          2,
+          0,
+          2,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1794659400,
+            "match_id": "d0jzDg3b",
+            "opponent": "Spain U19",
+            "opponent_id": "d2OqVLxc",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1794423600,
+            "match_id": "xvhj9B2N",
+            "opponent": "Finland U19",
+            "opponent_id": "4tF7xqfU",
+            "home_away": "H",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "ts": 1791190800,
+            "match_id": "lt0JuHIG",
+            "opponent": "Northern Ireland U19",
+            "opponent_id": "QVLO2aGj",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1790935200,
+            "match_id": "tGdBswl4",
+            "opponent": "Norway U19",
+            "opponent_id": "p0OyTrgi",
+            "home_away": "H",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1790676000,
+            "match_id": "8lq4qaJi",
+            "opponent": "USA U19",
+            "opponent_id": "tv6quatk",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 28,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 28
+    },
+    {
+      "id": "israelu19italyu19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Israel U19",
+      "away": "Italy U19",
+      "time": "15:00",
+      "odds": {
+        "home": 6.2,
+        "draw": 4.5,
+        "away": 1.4
+      },
+      "home_stats": {
+        "name": "Israel U19",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "D"
+        ],
+        "goals_scored": [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          3,
+          0,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1794654000,
+            "match_id": "OWDmvW1c",
+            "opponent": "Romania U19",
+            "opponent_id": "WGQmQtwA",
+            "home_away": "H",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1794394800,
+            "match_id": "dQL1GS9j",
+            "opponent": "Ukraine U19",
+            "opponent_id": "2BZoCiir",
+            "home_away": "A",
+            "score": [
+              2,
+              3
+            ]
+          },
+          {
+            "ts": 1791208800,
+            "match_id": "A5srBFpm",
+            "opponent": "Montenegro U19",
+            "opponent_id": "Uazg8LhT",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1790949600,
+            "match_id": "0WeCGyNP",
+            "opponent": "Montenegro U19",
+            "opponent_id": "Uazg8LhT",
+            "home_away": "A",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1774962000,
+            "match_id": "ziGhYPwP",
+            "opponent": "Bosnia & Herzegovina U19",
+            "opponent_id": "SlVx0yRD",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 28,
+        "opposition_position": 2
+      },
+      "away_stats": {
+        "name": "Italy U19",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          1,
+          3,
+          2
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "recent_results": [
+          {
+            "ts": 1794666600,
+            "match_id": "EwxONAHG",
+            "opponent": "Ukraine U19",
+            "opponent_id": "2BZoCiir",
+            "home_away": "H",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1794407400,
+            "match_id": "nizWLlnT",
+            "opponent": "Romania U19",
+            "opponent_id": "WGQmQtwA",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1790861400,
+            "match_id": "CSjy2skK",
+            "opponent": "Croatia U19",
+            "opponent_id": "nwrBsTAn",
+            "home_away": "A",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "ts": 1790602200,
+            "match_id": "vZf3rvt9",
+            "opponent": "Turkey U19",
+            "opponent_id": "AFBITJMF",
+            "home_away": "H",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1790343000,
+            "match_id": "0jQlqmVI",
+            "opponent": "France U19",
+            "opponent_id": "YL4McSPu",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ],
+        "league_position": 2,
+        "total_teams_in_league": 28,
+        "opposition_position": 3
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 28
+    },
+    {
+      "id": "maltau19northmacedoniau19",
+      "league": "Football / International / U19 European Championship, Qualification",
+      "home": "Malta U19",
+      "away": "North Macedonia U19",
+      "time": "15:00",
+      "odds": {
+        "home": 10.0,
+        "draw": 5.6,
+        "away": 1.22
+      },
+      "home_stats": {
+        "name": "Malta U19",
+        "form": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          1,
+          0,
+          1,
+          0,
+          4
+        ],
+        "goals_conceded": [
+          3,
+          6,
+          1,
+          3,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1794657600,
+            "match_id": "zL2Al3PP",
+            "opponent": "Northern Ireland U19",
+            "opponent_id": "QVLO2aGj",
+            "home_away": "A",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "ts": 1794405600,
+            "match_id": "dAHGSL26",
+            "opponent": "Switzerland U19",
+            "opponent_id": "WOCEUa79",
+            "home_away": "A",
+            "score": [
+              0,
+              6
+            ]
+          },
+          {
+            "ts": 1791203400,
+            "match_id": "dvgEq0hc",
+            "opponent": "Cyprus U19",
+            "opponent_id": "0tnFtmQh",
+            "home_away": "A",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "ts": 1791030600,
+            "match_id": "MLjm0WFD",
+            "opponent": "Cyprus U19",
+            "opponent_id": "0tnFtmQh",
+            "home_away": "A",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "ts": 1790604000,
+            "match_id": "Cn1mQQcL",
+            "opponent": "Liechtenstein U19",
+            "opponent_id": "xnkh0hmC",
+            "home_away": "A",
+            "score": [
+              4,
+              0
+            ]
+          }
+        ],
+        "league_position": 4,
+        "total_teams_in_league": 26,
+        "opposition_position": 3
+      },
+      "away_stats": {
+        "name": "North Macedonia U19",
+        "form": [
+          "L",
+          "D",
+          "L",
+          "L",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          4,
+          1,
+          4
+        ],
+        "recent_results": [
+          {
+            "ts": 1794657600,
+            "match_id": "lpE8UsYg",
+            "opponent": "Switzerland U19",
+            "opponent_id": "WOCEUa79",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1794398400,
+            "match_id": "UNFOQaXI",
+            "opponent": "Northern Ireland U19",
+            "opponent_id": "QVLO2aGj",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1790960400,
+            "match_id": "AVIFoeC7",
+            "opponent": "Luxembourg U19",
+            "opponent_id": "pOK7A3g4",
+            "home_away": "A",
+            "score": [
+              1,
+              4
+            ]
+          },
+          {
+            "ts": 1790787600,
+            "match_id": "IN08mHse",
+            "opponent": "Luxembourg U19",
+            "opponent_id": "pOK7A3g4",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1779958800,
+            "match_id": "Wxmd7EoQ",
+            "opponent": "Slovenia U18",
+            "opponent_id": "dWyLKnWj",
+            "home_away": "H",
+            "score": [
+              0,
+              4
+            ]
+          }
+        ],
+        "league_position": 3,
+        "total_teams_in_league": 26,
+        "opposition_position": 4
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 26
+    },
+    {
+      "id": "kyrgyzstanvietnam",
+      "league": "Football / International / Int. Friendly Games",
+      "home": "Kyrgyzstan",
+      "away": "Vietnam",
+      "time": "15:00",
+      "odds": {
+        "home": 2.5,
+        "draw": 3.3,
+        "away": 2.79
+      },
+      "home_stats": {
+        "name": "Kyrgyzstan",
+        "form": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "D"
+        ],
+        "goals_scored": [
+          3,
+          3,
+          5,
+          0,
+          0
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1794657600,
+            "match_id": "bqmPXbPk",
+            "opponent": "Chinese Taipei",
+            "opponent_id": "CbzOhSZN",
+            "home_away": "A",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "ts": 1791122400,
+            "match_id": "fadnqSmf",
+            "opponent": "Lebanon",
+            "opponent_id": "jHmbM6XM",
+            "home_away": "H",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1790604000,
+            "match_id": "W6t6Ek2C",
+            "opponent": "Maldives",
+            "opponent_id": "viclpWjn",
+            "home_away": "H",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "ts": 1781015400,
+            "match_id": "6uHjcqz9",
+            "opponent": "Palestine",
+            "opponent_id": "raIKZdDJ",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          },
+          {
+            "ts": 1780756200,
+            "match_id": "QwHkHcu2",
+            "opponent": "Palestine",
+            "opponent_id": "raIKZdDJ",
+            "home_away": "H",
+            "score": [
+              0,
+              0
+            ]
+          }
+        ],
+        "league_position": null,
+        "total_teams_in_league": null,
+        "opposition_position": null
+      },
+      "away_stats": {
+        "name": "Vietnam",
+        "form": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "W"
+        ],
+        "goals_scored": [
+          2,
+          0,
+          4,
+          0,
+          1
+        ],
+        "goals_conceded": [
+          0,
+          1,
+          2,
+          2,
+          0
+        ],
+        "recent_results": [
+          {
+            "ts": 1794398400,
+            "match_id": "S0dgwL1S",
+            "opponent": "Chinese Taipei",
+            "opponent_id": "CbzOhSZN",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1791190800,
+            "match_id": "xIvgkyeC",
+            "opponent": "Malaysia",
+            "opponent_id": "rDaObqDr",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1790931600,
+            "match_id": "b7PXnA7s",
+            "opponent": "Pakistan",
+            "opponent_id": "YDdhqj6h",
+            "home_away": "H",
+            "score": [
+              4,
+              2
+            ]
+          },
+          {
+            "ts": 1790685000,
+            "match_id": "zVoGUSiD",
+            "opponent": "Thailand",
+            "opponent_id": "zHgBrkd7",
+            "home_away": "A",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "ts": 1790425800,
+            "match_id": "M7u0YAhl",
+            "opponent": "Philippines",
+            "opponent_id": "UentCdsm",
+            "home_away": "H",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ],
+        "league_position": null,
+        "total_teams_in_league": null,
+        "opposition_position": null
+      },
+      "h2h": {
+        "matches": [
+          {
+            "home": "Kyrgyzstan",
+            "away": "Vietnam",
+            "score": [
+              2,
+              1
+            ],
+            "ts": 1704805200
+          }
+        ]
+      },
+      "source": "betpawa",
+      "total_teams_in_league": null
+    },
+    {
+      "id": "hbkgereservesbrondbyreserves",
+      "league": "Football / Denmark / Denmark Future Cup",
+      "home": "HB K\u00f8ge Reserves",
+      "away": "Brondby Reserves",
+      "time": "15:30",
+      "odds": {
+        "home": 9.1,
+        "draw": 6.39,
+        "away": 1.23
+      },
+      "home_stats": {
+        "name": "HB K\u00f8ge Reserves",
+        "form": [],
+        "goals_scored": [],
+        "goals_conceded": [],
+        "recent_results": [],
+        "league_position": null,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "away_stats": {
+        "name": "Brondby Reserves",
+        "form": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "L"
+        ],
+        "goals_scored": [
+          0,
+          2,
+          2,
+          3,
+          1
+        ],
+        "goals_conceded": [
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "recent_results": [
+          {
+            "ts": 1794135600,
+            "match_id": "",
+            "opponent": "FC Copenhagen",
+            "opponent_id": "hSPZwbEh",
+            "home_away": "A",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "ts": 1793552400,
+            "match_id": "",
+            "opponent": "Aarhus",
+            "opponent_id": "OOXnKGbO",
+            "home_away": "H",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "ts": 1793125800,
+            "match_id": "",
+            "opponent": "AB Copenhagen",
+            "opponent_id": "WbdPB0Ft",
+            "home_away": "A",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "ts": 1792774800,
+            "match_id": "",
+            "opponent": "Randers FC",
+            "opponent_id": "x0NnnfrU",
+            "home_away": "A",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "ts": 1792332000,
+            "match_id": "",
+            "opponent": "Odense",
+            "opponent_id": "tUXLozTN",
+            "home_away": "A",
+            "score": [
+              1,
+              2
+            ]
+          }
+        ],
+        "league_position": 5,
+        "total_teams_in_league": 20,
+        "opposition_position": 5
+      },
+      "h2h": null,
+      "source": "betpawa",
+      "total_teams_in_league": 20
     }
   ]
 }
