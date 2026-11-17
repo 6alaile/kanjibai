@@ -4,7 +4,7 @@ Fetches fixtures + enriches with stats → writes enriched.json
 Scoring happens in the browser (app.js).
 
 Data sources:
-- BetPawa (Playwright)  → primary odds
+- BetPawa (sportsbook JSON API) → primary odds
 - API-Football          → fallback odds
 - Flashscore            → enrichment (primary: form, standings, H2H)
 - Transfermarkt         → enrichment (fallback for teams not on Flashscore)
@@ -100,7 +100,7 @@ def run():
     # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
     log.info("Step 1/4: Fetching fixtures from BetPawa (primary) ...")
 
-    # Try BetPawa first (Playwright-rendered odds)
+    # Try BetPawa first (sportsbook JSON API: odds + markets)
     raw_fixtures = fetch_betpawa_fixtures(date_str=today)
 
     # Fallback to API-Football if BetPawa returned no matches

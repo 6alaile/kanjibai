@@ -541,26 +541,34 @@ header {
   font-family: var(--font-mono);
 }
 
-/* Qualified Picks */
-.picks-section {
+/* Picks & Odds — one panel: priced picks beside the 1X2 strip */
+.picks-odds-section {
   padding: 12px 20px;
-  border-bottom: 1px solid var(--border);
-}
-
-/* Picks and Match Odds sit side by side until odds move into the pipeline */
-.picks-odds-row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
   border-top: 1px solid var(--border);
 }
 
-.picks-odds-row .picks-section,
-.picks-odds-row .odds-section {
-  border-bottom: none;
+.picks-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.picks-odds-row .odds-section {
-  border-left: 1px solid var(--border);
+.picks-head .section-title { margin-bottom: 0; }
+
+.odds-stamp {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text2);
+  white-space: nowrap;
+}
+
+.picks-body {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-top: 8px;
 }
 
 .section-title {
@@ -607,12 +615,24 @@ header {
   color: var(--warning);
 }
 
-/* Match Odds — 3-card row */
-.odds-section {
-  padding: 12px 20px;
-  border-bottom: 1px solid var(--border);
+/* The pick's price, cut into the tag */
+.bet-price {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
 }
 
+.picks-empty {
+  font-size: 11px;
+  color: var(--text2);
+}
+
+/* 1X2 strip inside Picks & Odds */
 .odds-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1202,7 +1222,6 @@ header {
   .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }
   .signals-split { grid-template-columns: 1fr; }
-  .picks-odds-row { grid-template-columns: 1fr; }
-  .picks-odds-row .odds-section { border-left: none; border-top: 1px solid var(--border); }
+  .picks-body { grid-template-columns: 1fr; }
   .card-body.open { max-height: 2000px; }
 }

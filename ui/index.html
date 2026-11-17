@@ -303,20 +303,23 @@
               </div>
             </div>
 
-            <!-- PICKS + MATCH ODDS -->
-            <div class="picks-odds-row">
-              <!-- QUALIFIED PICKS -->
-              <div class="picks-section">
-                <span class="section-title">Qualified Picks</span>
+            <!-- PICKS & ODDS -->
+            <div class="picks-odds-section">
+              <div class="picks-head">
+                <span class="section-title">Picks & Odds</span>
+                <span class="odds-stamp" v-if="match.oddsCapturedAt"
+                  :title="'Prices captured ' + match.oddsCapturedAt">odds {{ capturedTime(match.oddsCapturedAt) }}</span>
+              </div>
+              <div class="picks-body">
+                <!-- PICKS with their prices -->
                 <div class="picks-list">
                   <span v-for="bet in match.bets" :key="bet.label"
-                    class="bet-tag" :class="bet.type">{{ bet.label }}</span>
+                    class="bet-tag" :class="bet.type">{{ bet.label }}<span
+                    class="bet-price" v-if="bet.price">@ {{ bet.price }}</span></span>
+                  <span v-if="!match.bets.length" class="picks-empty">No qualifying picks</span>
                 </div>
-              </div>
 
-              <!-- MATCH ODDS -->
-              <div class="odds-section">
-                <span class="section-title">Match Odds</span>
+                <!-- 1X2 STRIP -->
                 <div class="odds-row">
                   <div class="odd-card" :class="{ highlighted: match.recommendation === 'home' }">
                     <div class="odd-label">Home</div>

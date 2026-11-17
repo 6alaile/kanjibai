@@ -181,10 +181,10 @@ function positionScore(hp, ap, total, weight) {
 function market1x2(side, ht, at, h2h) {
   if (side === 'home') {
     const conf = Math.min(95, Math.round((ht.winning_streak/5*0.4 + h2h.home_win_rate*0.3 + ht.wins/5*0.3)*100));
-    return { label: 'Home Win', type: 'primary', confidence: Math.max(40, conf) };
+    return { label: 'Home Win', type: 'primary', confidence: Math.max(40, conf), market: ['1x2', 'home'] };
   } else {
     const conf = Math.min(95, Math.round((at.winning_streak/5*0.4 + (1-h2h.home_win_rate)*0.3 + at.wins/5*0.3)*100));
-    return { label: 'Away Win', type: 'primary', confidence: Math.max(40, conf) };
+    return { label: 'Away Win', type: 'primary', confidence: Math.max(40, conf), market: ['1x2', 'away'] };
   }
 }
 
@@ -192,15 +192,15 @@ function marketDC(side, ht, at, cfg) {
   if (!cfg.markets.includes('dc')) return null;
   if (ht.winning_streak >= 2 && at.winning_streak >= 2) {
     const conf = Math.min(90, Math.round((ht.winning_streak + at.winning_streak) / 10 * 100));
-    return { label: '12 (Home or Away)', type: 'secondary', confidence: Math.max(45, conf) };
+    return { label: '12 (Home or Away)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_away'] };
   }
   if (side === 'home' && ht.unbeaten_streak >= 3 && at.losses >= 2) {
     const conf = Math.min(90, Math.round((ht.unbeaten_streak/5*0.5 + at.losses/5*0.5)*100));
-    return { label: '1X (Home or Draw)', type: 'secondary', confidence: Math.max(45, conf) };
+    return { label: '1X (Home or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_draw'] };
   }
   if (side === 'away' && at.unbeaten_streak >= 3 && ht.losses >= 2) {
     const conf = Math.min(90, Math.round((at.unbeaten_streak/5*0.5 + ht.losses/5*0.5)*100));
-    return { label: 'X2 (Away or Draw)', type: 'secondary', confidence: Math.max(45, conf) };
+    return { label: 'X2 (Away or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'draw_away'] };
   }
   return null;
 }
@@ -215,7 +215,7 @@ function marketOver15(ht, at, h2h, cfg) {
     ht.games_conceded_in/n*0.10 + at.games_conceded_in/n*0.10 +
     h2h.over_15_rate*0.10
   );
-  if (score >= 0.55) return { label: 'Over 1.5 Goals', type: 'secondary', confidence: Math.min(92, Math.round(score*100)) };
+  if (score >= 0.55) return { label: 'Over 1.5 Goals', type: 'secondary', confidence: Math.min(92, Math.round(score*100)), market: ['total_goals', '1.5', 'over'] };
   return null;
 }
 
@@ -228,11 +228,11 @@ function marketBTTS(ht, at, h2h, cfg) {
   if (ht.games_scored_in >= 3 && at.games_scored_in >= 3 && ht.games_conceded_in >= 3 && at.games_conceded_in >= 3) {
     const goalsW = Math.min(1, (ht.total_scored + at.total_scored + ht.total_conceded + at.total_conceded) / (n*4));
     const base = (scoredGames/(n*2)*0.35 + (ht.games_conceded_in+at.games_conceded_in)/(n*2)*0.35 + h2h.btts_rate*0.20 + goalsW*0.10);
-    return { label: 'BTTS Yes', type: 'secondary', confidence: Math.max(45, Math.min(92, Math.round(base*100))) };
+    return { label: 'BTTS Yes', type: 'secondary', confidence: Math.max(45, Math.min(92, Math.round(base*100))), market: ['btts', 'yes'] };
   }
   if (cs >= scoredGames || ht.clean_sheets >= 2 || at.clean_sheets >= 2) {
     const dom = cs / (scoredGames + 1);
-    return { label: 'BTTS No', type: 'warn', confidence: Math.max(40, Math.min(85, Math.round(dom*60)+30)) };
+    return { label: 'BTTS No', type: 'warn', confidence: Math.max(40, Math.min(85, Math.round(dom*60)+30)), market: ['btts', 'no'] };
   }
   return null;
 }
@@ -244,11 +244,11 @@ function marketToScore(ht, at, cfg) {
   const signals = [];
   if (ht.games_scored_in >= 4) {
     const conf = Math.min(92, Math.round((ht.games_scored_in/n*0.6 + at.games_conceded_in/n*0.3 + (1-at.clean_sheets/n)*0.1)*100));
-    signals.push({ label: 'Home to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf) });
+    signals.push({ label: 'Home to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf), market: ['home_goals', '0.5', 'over'] });
   }
   if (at.games_scored_in >= 4) {
     const conf = Math.min(92, Math.round((at.games_scored_in/n*0.6 + ht.games_conceded_in/n*0.3 + (1-ht.clean_sheets/n)*0.1)*100));
-    signals.push({ label: 'Away to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf) });
+    signals.push({ label: 'Away to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf), market: ['away_goals', '0.5', 'over'] });
   }
   return signals;
 }
@@ -270,7 +270,7 @@ function marketCombos(side, ht, at, over15, btts, toScore, cfg) {
   if (!cfg.markets.includes('combo')) return [];
   const combos = [];
   if (side === 'away' && over15 && over15.confidence >= 60)
-    combos.push({ label: 'Away Win + Over 1.5', type: 'combo', confidence: Math.min(88, Math.round((over15.confidence+60)/2)) });
+    combos.push({ label: 'Away Win + Over 1.5', type: 'combo', confidence: Math.min(88, Math.round((over15.confidence+60)/2)), market: ['result_total', '1.5', 'away_over'] });
   if (side === 'home' && over15 && over15.confidence >= 60 && ht.unbeaten_streak >= 2)
     combos.push({ label: '1X + Over 1.5', type: 'combo', confidence: Math.min(88, Math.round((over15.confidence+65)/2)) });
   if (btts && btts.label === 'BTTS Yes' && btts.confidence >= 55) {
@@ -280,6 +280,24 @@ function marketCombos(side, ht, at, over15, btts, toScore, cfg) {
     });
   }
   return combos;
+}
+
+// A pick's price inside the fixture's BetPawa markets: path like
+// ['total_goals', '1.5', 'over'].  Suspended/absent markets → no price.
+function betOdds(markets, path) {
+  let v = markets;
+  for (const key of path || []) {
+    if (v == null) return null;
+    v = v[key];
+  }
+  return typeof v === 'number' ? v : null;
+}
+
+// "2026-11-17T14:05:00+03:00" → "14:05": the string's own EAT wall time,
+// no timezone maths on the client.
+function capturedTime(iso) {
+  const m = /T(\d{2}:\d{2})/.exec(iso || '');
+  return m ? m[1] : '';
 }
 
 // Signals carry a team tag so the UI can split them: home | neutral | away.
@@ -361,6 +379,8 @@ function scoreMatch(match, cfg) {
     awayPos: null,
     h2hSummary: 'No H2H data',
     odds: { home: odds.home, draw: odds.draw, away: odds.away },
+    markets: match.markets || null,
+    oddsCapturedAt: match.odds_captured_at || null,
     confidence: 0,
     lowConfidence: true,
     lowConfTeam: '',
@@ -433,12 +453,17 @@ function scoreMatch(match, cfg) {
     h2hSummary: h2h.summary,
     h2hMatches: h2h.available ? h2h.matches.slice(0, 5) : null,
     odds: { home: odds.home, draw: odds.draw, away: odds.away },
+    markets: match.markets || null,
+    oddsCapturedAt: match.odds_captured_at || null,
     confidence,
     lowConfidence,
     lowConfTeam,
     recommendation: side,
     reason: '',
-    bets: bets.map(b => ({ label: b.label, type: b.type })),
+    bets: bets.map(b => ({
+      label: b.label, type: b.type, market: b.market || null,
+      price: betOdds(match.markets, b.market)
+    })),
     homeStats: {
       name: match.home,
       form: cap5(homeStats.form || []),
@@ -691,7 +716,7 @@ createApp({
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor,
-      ordinal, posLabel, signalGroups
+      ordinal, posLabel, signalGroups, capturedTime
     };
   }
 }).mount('#app');
