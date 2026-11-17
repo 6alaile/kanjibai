@@ -308,14 +308,14 @@
               <div class="picks-head">
                 <span class="section-title">Picks & Odds</span>
                 <span class="odds-stamp" v-if="match.oddsCapturedAt"
-                  :title="'Prices captured ' + match.oddsCapturedAt">odds {{ capturedTime(match.oddsCapturedAt) }}</span>
+                  :title="'Odds correct as at ' + match.oddsCapturedAt">odds correct as at {{ capturedTime(match.oddsCapturedAt) }}</span>
               </div>
               <div class="picks-body">
                 <!-- PICKS with their prices -->
                 <div class="picks-list">
                   <span v-for="bet in match.bets" :key="bet.label"
                     class="bet-tag" :class="bet.type">{{ bet.label }}<span
-                    class="bet-price" v-if="bet.price">@ {{ bet.price }}</span></span>
+                    class="bet-price" v-if="bet.prices.length">@ {{ bet.prices.join(' + ') }}</span></span>
                   <span v-if="!match.bets.length" class="picks-empty">No qualifying picks</span>
                 </div>
 

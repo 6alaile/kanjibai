@@ -253,30 +253,49 @@ function marketToScore(ht, at, cfg) {
   return signals;
 }
 
-function marketBTTSOver25(ht, at, h2h, cfg) {
-  if (!cfg.markets.includes('btts_over25')) return null;
-  const n = ht.n;
-  if (!n) return null;
-  if (ht.games_scored_in < 3 || at.games_scored_in < 3) return null;
-  if (ht.games_conceded_in < 3 || at.games_conceded_in < 3) return null;
-  const totalGoals = ht.total_scored + at.total_scored + ht.total_conceded + at.total_conceded;
-  const gpg = totalGoals / (n * 2);
-  const score = (ht.over_25_count/n*0.25 + at.over_25_count/n*0.25 + Math.min(1, gpg/3)*0.30 + h2h.over_25_rate*0.20);
-  if (score >= 0.50) return { label: 'BTTS + Over 2.5', type: 'combo', confidence: Math.max(45, Math.min(90, Math.round(score*100))) };
-  return null;
-}
-
-function marketCombos(side, ht, at, over15, btts, toScore, cfg) {
+// The four combo picks: both legs must qualify (confidence ≥ 55 each).
+// Each prices from BetPawa's combined market; DC + team O0.5 has no
+// combined market, so it carries both leg prices (market + market2).
+function marketCombos(mainBet, dc, over15, btts, toScore, cfg) {
   if (!cfg.markets.includes('combo')) return [];
   const combos = [];
-  if (side === 'away' && over15 && over15.confidence >= 60)
-    combos.push({ label: 'Away Win + Over 1.5', type: 'combo', confidence: Math.min(88, Math.round((over15.confidence+60)/2)), market: ['result_total', '1.5', 'away_over'] });
-  if (side === 'home' && over15 && over15.confidence >= 60 && ht.unbeaten_streak >= 2)
-    combos.push({ label: '1X + Over 1.5', type: 'combo', confidence: Math.min(88, Math.round((over15.confidence+65)/2)) });
-  if (btts && btts.label === 'BTTS Yes' && btts.confidence >= 55) {
+  const both = (a, b) => a && b && a.confidence >= 55 && b.confidence >= 55;
+  const avg = (a, b) => Math.min(88, Math.round((a.confidence + b.confidence) / 2));
+  const side = mainBet.market[1]; // home | away (draw once phase 4 lands)
+
+  if (both(mainBet, btts)) {
+    combos.push({
+      label: `${mainBet.label} + ${btts.label}`,
+      type: 'combo', confidence: avg(mainBet, btts),
+      market: ['x1x2_btts', `${side}_${btts.market[1]}`]
+    });
+  }
+  if (both(dc, btts)) {
+    combos.push({
+      label: `${dc.label.slice(0, 2)} + ${btts.label}`,
+      type: 'combo', confidence: avg(dc, btts),
+      market: ['dc_btts', `${dc.market[1]}_${btts.market[1]}`]
+    });
+  }
+  if (both(mainBet, over15)) {
+    combos.push({
+      label: `${mainBet.label} + ${over15.label}`,
+      type: 'combo', confidence: avg(mainBet, over15),
+      market: ['result_total', '1.5', `${side}_over`]
+    });
+  }
+  if (dc) {
     toScore.forEach(ts => {
-      if (ts.confidence >= 55)
-        combos.push({ label: `${ts.label} + BTTS Yes`, type: 'combo', confidence: Math.min(88, Math.round((btts.confidence+ts.confidence)/2)) });
+      const team = ts.market[1] === 'home_goals' ? 'home' : 'away';
+      if (dc.market[1] === 'home_draw' && team !== 'home') return;
+      if (dc.market[1] === 'draw_away' && team !== 'away') return;
+      if (!both(dc, ts)) return;
+      combos.push({
+        label: `${dc.label.slice(0, 2)} + ${team === 'home' ? 'Home' : 'Away'} O0.5`,
+        type: 'combo', confidence: avg(dc, ts),
+        market: ['dc', dc.market[1]],
+        market2: ts.market
+      });
     });
   }
   return combos;
@@ -429,13 +448,10 @@ function scoreMatch(match, cfg) {
   const btts = marketBTTS(ht, at, h2h, cfg);
   if (btts) bets.push(btts);
 
-  const bttsOver25 = marketBTTSOver25(ht, at, h2h, cfg);
-  if (bttsOver25) bets.push(bttsOver25);
-
   const toScore = marketToScore(ht, at, cfg);
   toScore.forEach(b => bets.push(b));
 
-  const combos = marketCombos(side, ht, at, over15, btts, toScore, cfg);
+  const combos = marketCombos(bets[0], dc, over15, btts, toScore, cfg);
   combos.forEach(b => bets.push(b));
 
   const confidence = compositeConfidence(side, ht, at, h2h, pos, lowConfidence);
@@ -462,7 +478,8 @@ function scoreMatch(match, cfg) {
     reason: '',
     bets: bets.map(b => ({
       label: b.label, type: b.type, market: b.market || null,
-      price: betOdds(match.markets, b.market)
+      prices: [betOdds(match.markets, b.market), betOdds(match.markets, b.market2)]
+        .filter(p => p != null)
     })),
     homeStats: {
       name: match.home,
@@ -538,7 +555,7 @@ createApp({
       minFormMatches: 5,
       leaguePositionWeight: 0.5,
       oppStrengthWeight: 0.5,
-      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'btts_over25', 'combo']
+      markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'combo']
     });
 
     const marketOptions = [
@@ -547,7 +564,6 @@ createApp({
       { key: 'over15', label: 'Over 1.5' },
       { key: 'btts', label: 'BTTS' },
       { key: 'to_score', label: 'To Score' },
-      { key: 'btts_over25', label: 'BTTS+O2.5' },
       { key: 'combo', label: 'Combos' }
     ];
 

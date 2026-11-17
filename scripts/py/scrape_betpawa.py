@@ -12,7 +12,8 @@ slower, capped at the 20 events the page initially loads, and could not re-query
 odds cheaply.
 
 The list query's ``view.marketTypes`` chooses which markets ride along with
-each event; we ask for the seven the scoring engine prices its picks from.
+each event; we ask for the seven the scoring engine prices its picks from,
+plus a second pass for the combo markets (the API allows seven per query).
 
 The bookmaker prints 12-hour times in its DOM, but the API gives an ISO
 kick-off — times are converted to 24-hour EAT here.
@@ -32,7 +33,9 @@ Fixture contract (written through stats.py into data/enriched.json):
     "total_goals": {"1.5": {"over": .., "under": ..}, ...},
     "home_goals":  {"0.5": {"over": .., "under": ..}, ...},
     "away_goals":  {"0.5": {"over": .., "under": ..}, ...},
-    "result_total":{"1.5": {"home_over": .., "draw_over": .., "away_over": .., ...}}
+    "result_total":{"1.5": {"home_over": .., "draw_over": .., "away_over": .., ...}},
+    "dc_btts":     {"home_draw_yes": .., "home_away_no": .., ...},
+    "x1x2_btts":   {"home_yes": .., "draw_no": .., ...}
   },
   "odds_captured_at": "ISO8601 EAT",
   "source": "betpawa"
@@ -65,7 +68,9 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
-# The markets the scoring engine prices its picks from.
+# The markets the scoring engine prices its picks from.  The list API allows
+# at most seven market types per query, so the two combo markets ride along
+# in a second pass that is merged by event id (see upcoming_events).
 MARKET_DEFS = {
     "3743": "1x2",             # 1X2 - FT
     "4693": "dc",              # Double Chance - FT
@@ -74,14 +79,23 @@ MARKET_DEFS = {
     "5006": "home_goals",      # Total Score Over/Under - FT - Home Team
     "5003": "away_goals",      # Total Score Over/Under - FT - Away Team
     "1096755": "result_total",  # 1X2 and Totals - FT
+    "28000014": "dc_btts",     # Double Chance and Both Teams To Score - FT
+    "3591790": "x1x2_btts",    # 1X2 and Both Teams To Score - FT
 }
-VIEW_MARKET_TYPES = list(MARKET_DEFS)
+VIEW_MARKET_TYPES = ["3743", "4693", "3795", "5000", "5006", "5003", "1096755"]
+COMBO_VIEW_MARKET_TYPES = ["28000014", "3591790"]
 
-# Single-row markets: price name -> contract key.
+# Flat price lists (the price name carries the outcome): name -> contract key.
 FLAT_PRICE_KEYS = {
     "1x2": {"1": "home", "X": "draw", "2": "away"},
     "dc": {"1X": "home_draw", "X2": "draw_away", "12": "home_away"},
     "btts": {"Yes": "yes", "No": "no"},
+    "dc_btts": {"1X - Yes": "home_draw_yes", "1X - No": "home_draw_no",
+                "12 - Yes": "home_away_yes", "12 - No": "home_away_no",
+                "X2 - Yes": "draw_away_yes", "X2 - No": "draw_away_no"},
+    "x1x2_btts": {"1 - Yes": "home_yes", "1 - No": "home_no",
+                  "X - Yes": "draw_yes", "X - No": "draw_no",
+                  "2 - Yes": "away_yes", "2 - No": "away_no"},
 }
 
 EXCLUDED_KEYWORDS = {"israel", "ligat", "leumit", "toto cup"}
@@ -116,13 +130,13 @@ def _to_eat(iso: str) -> Optional[datetime]:
         return None
 
 
-def _page_events(skip: int) -> List[Dict]:
+def _page_events(skip: int, view_types: List[str]) -> List[Dict]:
     """One page of upcoming football events, oldest first."""
     query = {
         "queries": [{
             "query": {"eventType": "UPCOMING", "categories": ["2"],
                       "zones": {}, "hasOdds": True},
-            "view": {"marketTypes": VIEW_MARKET_TYPES},
+            "view": {"marketTypes": view_types},
             "skip": skip,
             "take": PAGE_SIZE,
         }]
@@ -134,8 +148,9 @@ def _page_events(skip: int) -> List[Dict]:
         return []
 
 
-def upcoming_events(date_str: str) -> List[Dict]:
-    """Every upcoming event kicking off on ``date_str`` (EAT), deduped.
+def _day_events(date_str: str, view_types: List[str]) -> List[Dict]:
+    """Every upcoming event kicking off on ``date_str`` (EAT) for one
+    market-type view, deduped and in kick-off order.
 
     The feed is ordered by kick-off, so paging stops once it has moved past
     the requested day.
@@ -143,7 +158,7 @@ def upcoming_events(date_str: str) -> List[Dict]:
     events: List[Dict] = []
     seen = set()
     for skip in range(0, PAGE_SIZE * MAX_PAGES, PAGE_SIZE):
-        page = _page_events(skip)
+        page = _page_events(skip, view_types)
         if not page:
             break
         first = _to_eat(page[0].get("startTime", ""))
@@ -159,6 +174,29 @@ def upcoming_events(date_str: str) -> List[Dict]:
                 events.append(event)
         if len(page) < PAGE_SIZE:
             break
+    return events
+
+
+def upcoming_events(date_str: str) -> List[Dict]:
+    """The day's events with the core and combo market views merged.
+
+    The list API accepts at most seven market types per query, so the combo
+    markets (Double Chance & BTTS, 1X2 & BTTS) come from a second paging
+    pass, merged into the core events by id.  Events the second pass finds
+    but the core pass did not are skipped — without 1X2 they cannot be
+    priced anyway.
+    """
+    events = _day_events(date_str, VIEW_MARKET_TYPES)
+    by_id = {str(e.get("id") or ""): e for e in events}
+    for event in _day_events(date_str, COMBO_VIEW_MARKET_TYPES):
+        target = by_id.get(str(event.get("id") or ""))
+        if not target:
+            continue
+        have = {str((m.get("marketType") or {}).get("id"))
+                for m in target.get("markets") or []}
+        for market in event.get("markets") or []:
+            if str((market.get("marketType") or {}).get("id")) not in have:
+                target.setdefault("markets", []).append(market)
     return events
 
 

@@ -3,11 +3,11 @@ refresh_odds.py — Re-query BetPawa odds for the fixtures already enriched.
 
 Run it nearer kick-off: one list-API pass re-prices every market of the
 scout date and rewrites ``odds``, ``markets`` and ``odds_captured_at`` in
-data/enriched.json in place.  Flashscore/Transfermarkt data is untouched,
-so this takes seconds instead of a full pipeline run.
-
-Fixtures that have already kicked off are gone from the UPCOMING feed and
-keep their last captured odds.
+data/enriched.json in place.  Fixtures that have already kicked off are
+dropped from the file; a future fixture missing from the feed (suspended
+or postponed) keeps its last capture.  Flashscore/Transfermarkt data of
+the remaining fixtures is untouched, so this takes seconds instead of a
+full pipeline run.
 
     python refresh_odds.py [YYYY-MM-DD]     # default: enriched.json's date
 """
@@ -15,11 +15,12 @@ keep their last captured odds.
 import json
 import logging
 import sys
+from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from scrape_betpawa import fetch_fixtures
+from scrape_betpawa import fetch_fixtures, EAT
 
 logging.basicConfig(level=logging.INFO, format="[odds] %(message)s")
 log = logging.getLogger(__name__)
@@ -41,20 +42,41 @@ def main() -> int:
         return 1
 
     fresh = {m["id"]: m for m in fetch_fixtures(date_str)}
+    if not fresh:
+        log.warning("feed empty for %s — leaving enriched.json untouched", date_str)
+        return 0
 
-    updated = 0
+    now = datetime.now(EAT)
+
+    def kicked_off(match: dict) -> bool:
+        """Kick-off has passed (EAT) — a future fixture absent from the feed
+        is suspended or postponed, not played, so it keeps its last odds."""
+        try:
+            ko = datetime.strptime(f"{date_str} {match.get('time', '')}",
+                                   "%Y-%m-%d %H:%M")
+        except ValueError:
+            return False
+        return ko.replace(tzinfo=EAT) <= now
+
+    updated = dropped = 0
+    kept = []
     for match in matches:
         fixture = fresh.get(str(match.get("id")))
-        if not fixture:
-            continue
-        match["odds"] = fixture["odds"]
-        match["markets"] = fixture["markets"]
-        match["odds_captured_at"] = fixture["odds_captured_at"]
-        updated += 1
+        if fixture:
+            match["odds"] = fixture["odds"]
+            match["markets"] = fixture["markets"]
+            match["odds_captured_at"] = fixture["odds_captured_at"]
+            updated += 1
+            kept.append(match)
+        elif match.get("source") == "betpawa" and kicked_off(match):
+            dropped += 1          # played — absent from the UPCOMING feed
+        else:
+            kept.append(match)    # suspended/other-source: keep as-is
+    doc["matches"] = kept
 
     OUTPUT_PATH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    log.info("re-priced %d/%d matches for %s (%d already kicked off)",
-             updated, len(matches), date_str, len(matches) - updated)
+    log.info("re-priced %d, dropped %d kicked off, kept %d unpriced (%s)",
+             updated, dropped, len(kept) - updated, date_str)
     return 0
 
 
