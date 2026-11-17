@@ -325,14 +325,14 @@ def _fixture_url(team_slug: str, team_id: int, season: str) -> str:
 
 
 def _candidate_seasons() -> List[str]:
-    """Seasons to try, newest first.
+    """Current season only — prior seasons are irrelevant for form.
 
-    Many leagues publish their table/fixtures under the previous season id,
-    and some lower-tier competitions lag by two or more years. Trying a
-    small window keeps working without hammering the site.
+    The one-season fallback that previously tried 2024/2025 is removed:
+    old fixtures distort recent form and slow the scrape significantly.
+    H2H lookups (spielbericht pages) may still reference older match IDs
+    but those are fetched lazily and are not subject to this limit.
     """
-    current = int(_current_season_id())
-    return [str(current - offset) for offset in range(0, 3)]
+    return [_current_season_id()]
 
 
 def _extract_league_from_page(page: Page) -> tuple:
@@ -530,7 +530,45 @@ def _parse_spielplandatum(page: Page, team_id: int, team_slug: str) -> Optional[
     }
 
 
-# ── League table parsing ───────────────────────────────────────────────────────
+def _h2h_tokens(name: str) -> set:
+    """Identity tokens of a team name, for aligning Transfermarkt and odds names."""
+    toks = set()
+    for token in re.findall(r"[a-z0-9]+", name.lower()):
+        if token in {"fc", "sc", "cf", "ac", "af", "cd", "ec", "ss",
+                     "club", "sociedad", "city", "town"}:
+            continue
+        toks.add("united" if token in ("utd", "united") else token)
+    return toks
+
+
+def _rename_h2h(matches: List[Dict], home_name: str, away_name: str) -> List[Dict]:
+    """Rewrite Transfermarkt team names in H2H records to the odds-feed names.
+
+    app.js compares the H2H names against the fixture's team names to work
+    out who won, so the two have to be the same strings.  Only the names are
+    rewritten: each record's score stays in its stored (historical) order.
+    """
+    home_tokens = _h2h_tokens(home_name)
+    away_tokens = _h2h_tokens(away_name)
+    shared = home_tokens & away_tokens          # e.g. "u19" on both sides
+    renamed = []
+
+    for match in matches:
+        entry = dict(match)
+        stored_home = _h2h_tokens(match.get("home", "")) - shared
+
+        if stored_home & (home_tokens - shared):
+            entry["home"], entry["away"] = home_name, away_name
+        elif stored_home & (away_tokens - shared):
+            entry["home"], entry["away"] = away_name, home_name
+        # else: neither side matches — leave the record untouched rather than
+        # flip the names without flipping the score.
+        renamed.append(entry)
+
+    return renamed
+
+
+# ── League table parsing ─────────────────────────────────────────────────────
 
 def _parse_league_table(page: Page, league_id: str) -> Dict[str, Dict]:
     """Fetch league table from tabelle URL. Returns {team_key: {id, name, position}}."""
@@ -636,65 +674,85 @@ def _parse_h2h(page: Page, match_id: str) -> List[Dict]:
 
     h2h = []
 
-    # Look for H2H table — typically under "Direktvergleich" or "Head to Head"
-    # Find tables and look for one with past match data
+    # The head-to-head table is the one headed "Competition | Matchday | Date |
+    # Home team | Away team | Attendance | Result".
     tables = page.query_selector_all("table")
     for table in tables:
-        rows = table.query_selector_all("tr")
-        if len(rows) < 3:
+        header = table.query_selector("thead")
+        if not header:
+            continue
+        header_text = _safe_text(header)
+        if "Matchday" not in header_text and "Spieltag" not in header_text:
             continue
 
-        for row in rows:
+        for row in table.query_selector_all("tbody tr"):
             cells = row.query_selector_all("td")
             if len(cells) < 4:
                 continue
 
             cell_texts = [_safe_text(c) for c in cells]
-            # Look for date pattern (DD.MM.YYYY)
+
+            # Date: "Sat 22/11/2025" (Transfermarkt dropped the dotted format)
             date_match = None
             for ct in cell_texts:
-                dm = re.search(r'(\d{2}\.\d{2}\.\d{4})', ct)
+                dm = re.search(r'(\d{2}[./]\d{2}[./]\d{4})', ct)
                 if dm:
                     date_match = dm.group(1)
                     break
-
             if not date_match:
                 continue
 
-            # Find team names and score
-            home = away = ""
+            # Team names: the club links point at /spielplan/verein/<id>,
+            # and each side has both a crest link and a name link, so only
+            # the links with text are the team names.
+            team_links = [
+                a for a in row.query_selector_all('a[href*="/verein/"]')
+                if _safe_text(a)
+            ]
+            if len(team_links) < 2:
+                continue
+            home = _strip_ranking(_safe_text(team_links[0]))
+            away = _strip_ranking(_safe_text(team_links[1]))
+
             score = None
-
-            team_links = row.query_selector_all('a[href*="/startseite/verein/"]')
-            if len(team_links) >= 2:
-                home = _safe_text(team_links[0])
-                away = _safe_text(team_links[1])
-
-            # Find score (X:Y pattern)
             for ct in cell_texts:
-                sm = re.match(r'(\d+:\d+)', ct.strip())
+                sm = re.match(r'(\d+)\s*:\s*(\d+)', ct.strip())
                 if sm:
                     try:
-                        parts = sm.group(1).split(":")
-                        score = [int(parts[0]), int(parts[1])]
+                        score = [int(sm.group(1)), int(sm.group(2))]
                         break
                     except ValueError:
-                        log.debug(f"    Could not parse H2H score: '{sm.group(1)}'")
                         continue
 
             if home and away and score:
                 h2h.append({
-                    "date": date_match,
+                    "date": _iso_date(date_match),
                     "home": home,
                     "away": away,
                     "score": score,
                 })
+
+        break  # only the first H2H table
 
     # Sort by date descending, take last 5
     h2h.sort(key=lambda x: x["date"], reverse=True)
     result = h2h[:5]
     log.info(f"  Parsed {len(result)} H2H matches")
     return result
+
+
+def _strip_ranking(name: str) -> str:
+    """Remove the trailing position marker Transfermarkt appends ("Vissel Kobe  (4.)")."""
+    return re.sub(r'\s*\(\d+\.\)\s*$', '', name).strip()
+
+
+def _iso_date(date_str: str) -> str:
+    """Normalise "22/11/2025" to "2025-11-22" so the list sorts correctly."""
+    parts = date_str.replace(".", "/").split("/")
+    if len(parts) != 3:
+        return date_str
+    day, month, year = parts
+    return f"{year}-{month}-{day}"
 
 
 # ── Form computation ───────────────────────────────────────────────────────────
@@ -952,11 +1010,22 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
             # Built from full fixtures during scraping; used for H2H lookup (no match_id in stripped recent_matches)
             match_id_index: Dict[str, Dict[str, Dict[str, str]]] = {}
 
+            # Maps the odds-feed team name to the Transfermarkt team name, so
+            # the H2H index (which is keyed by Transfermarkt names) can be
+            # looked up with the names from the match list.
+            odds_to_tm: Dict[str, str] = {}
+
             for item in team_items:
                 team_name = item["name"]
                 team_url = item.get("url", "")
 
                 log.info(f"\n  [{item['attempts']+1}] {team_name}")
+
+                # The name as it appears in the odds feed.  The H2H index is
+                # keyed by these names because that is what the match list
+                # looks up, so keep it even after the Transfermarkt name
+                # replaces team_name below.
+                odds_name = team_name
 
                 # If no URL, search for team
                 if not team_url and team_name:
@@ -967,6 +1036,7 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                         item["slug"] = result.get("slug") or _slugify(result["name"])
                         team_name = result["name"]
                         item["team_id"] = result["id"]
+                        odds_to_tm[_cache_key(odds_name)] = team_name
                         _save_queue(queue)
                     else:
                         log.warning(f"    Could not find URL for {team_name}")
@@ -1154,9 +1224,16 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
 
                     # Find match ID from in-memory index (built from full fixtures during scraping)
                     match_id = None
+                    # The index is keyed by Transfermarkt names, so translate
+                    # the names from the match list before looking it up.
+                    tm_home_key = _cache_key(odds_to_tm.get(home_key, home_name))
+                    tm_away_key = _cache_key(odds_to_tm.get(away_key, away_name))
                     for lid, idx in match_id_index.items():
-                        if home_key in idx and away_key in idx[home_key]:
-                            match_id = idx[home_key][away_key]
+                        if tm_home_key in idx and tm_away_key in idx[tm_home_key]:
+                            match_id = idx[tm_home_key][tm_away_key]
+                            break
+                        if tm_away_key in idx and tm_home_key in idx[tm_away_key]:
+                            match_id = idx[tm_away_key][tm_home_key]
                             break
 
                     if not match_id:
@@ -1176,6 +1253,8 @@ def run_daily_scrape(max_teams: int = 20, betpawa_fixtures: Optional[List[Dict]]
                         context.close()
 
                     if h2h_data:
+                        # Align the team names with the ones used by the odds feed
+                        h2h_data = _rename_h2h(h2h_data, home_name, away_name)
                         # Store H2H for both teams
                         for lid, ldata in cache.get("leagues", {}).items():
                             teams = ldata.get("teams", {})

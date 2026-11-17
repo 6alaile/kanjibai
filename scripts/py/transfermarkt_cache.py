@@ -23,12 +23,14 @@ Cache structure (v2):
 """
 
 import json
+import re
 from pathlib import Path
-from typing import Optional, Dict, Any, List
+from typing import Optional, Dict, Any, List, Tuple
 
 CACHE_FILE = Path(__file__).parent.parent.parent / "data" / "transfermarkt_cache.json"
 
 _cache = None
+_index: Optional[List[Tuple[frozenset, Dict[str, Any]]]] = None
 
 
 def _load_cache() -> Dict[str, Any]:
@@ -47,43 +49,149 @@ def _normalize_key(name: str) -> str:
     return name.lower().replace(" ", "_").replace(".", "").replace("'", "").replace("&", "").replace("-", "_")
 
 
+# Club-type tokens that carry no identifying information.
+_CLUB_TYPE_TOKENS = {
+    "fc", "sc", "cf", "ac", "af", "cd", "ec", "ss", "fzc", "fcp", "bk",
+    "if", "ff", "nk", "fk", "sk", "ogc", "bsc", "vfl", "vfb", "tsg",
+    "sd", "ud", "rc", "rcd", "us", "as", "ca", "ssc", "sv", "bs",
+    "club", "sociedad", "city", "town",
+}
+
+# Abbreviations and their canonical form.
+_CANONICAL_TOKENS = {
+    "utd": "united", "ut": "united", "united": "united",
+    "athletic": "atletico", "atl": "atletico",
+}
+
+# Markers that identify a women's side.
+_WOMEN_MARKERS = {"women", "woman", "ladies", "lady", "femenina",
+                  "femenino", "feminine", "damen", "weiblich"}
+
+# Tokens that qualify a team into a *different* side of the club.  If one
+# side has such a token and the other does not, they are not the same club.
+_QUALIFIER_TOKENS = {"reserves", "reserve", "academy", "youth", "primavera",
+                     "u13", "u15", "u16", "u17", "u18", "u19", "u20", "u21",
+                     "u23", "u24", "u25"}
+
+
+def _name_tokens(name: str) -> frozenset:
+    """Identity-carrying tokens of a club name.
+
+    Drops club-type words (FC, CF, Club, …) and canonicalises abbreviations
+    so "Kagoshima Utd." and "Kagoshima United" collapse to the same tokens.
+    """
+    tokens = set()
+    for token in re.findall(r"[a-z0-9]+", name.lower()):
+        if token in _CLUB_TYPE_TOKENS:
+            continue
+        tokens.add(_CANONICAL_TOKENS.get(token, token))
+    return frozenset(tokens)
+
+
+def _is_women(name: str) -> bool:
+    return bool(set(re.findall(r"[a-z0-9]+", name.lower())) & _WOMEN_MARKERS)
+
+
+def _expand_initials(candidate: frozenset, target: frozenset) -> frozenset:
+    """Expand single-letter tokens ("H. C. Sapporo") using the target's words.
+
+    Only applied when the candidate's spelled-out tokens are all present in
+    the target, i.e. when the candidate really is an abbreviation of it.
+    """
+    expanded = set(candidate)
+    singles = [t for t in candidate if len(t) == 1]
+    if not singles or len(singles) > 2:
+        return frozenset(expanded)
+    spelled_out = {t for t in candidate if len(t) > 1}
+    if not spelled_out <= target:
+        return frozenset(expanded)
+    available = [t for t in target if t not in expanded]
+    for initial in singles:
+        for word in available:
+            if word.startswith(initial) and word not in expanded:
+                expanded.add(word)
+                available.remove(word)
+                break
+    return frozenset(expanded)
+
+
+def _build_index() -> List[Tuple[frozenset, Dict[str, Any]]]:
+    """Token index over every cached team, built once per process."""
+    global _index
+    if _index is None:
+        cache = _load_cache()
+        entries = []
+        for league in cache.get("leagues", {}).values():
+            for team in league.get("teams", {}).values():
+                entries.append((_name_tokens(team.get("name", "")), team))
+        _index = entries
+    return _index
+
+
 # ── Team lookup ───────────────────────────────────────────────────────────────
 
 def _find_team(team_name: str) -> Optional[Dict]:
     """Find a team across all leagues. Returns the team dict or None.
-    Tries exact match first, then fuzzy matching by word overlap.
+
+    Exact cache-key match first, then a token-similarity search.  The token
+    search used to be a first-match-wins word-overlap scan, which returned
+    an arbitrary club for names like "Kagoshima United" (it matched the
+    first team sharing a single word) and produced empty form plus a
+    league size from the wrong competition.
     """
     cache = _load_cache()
     key = _normalize_key(team_name)
 
-    # Exact match
+    # Exact match on the cache key
     for league in cache.get("leagues", {}).values():
         team = league.get("teams", {}).get(key)
         if team:
             return team
 
-    # Fuzzy match: find best match by word overlap
-    target_words = set(team_name.lower().split())
+    target = _name_tokens(team_name)
+    if not target:
+        return None
+    want_women = _is_women(team_name)
+    target_qualifiers = target & _QUALIFIER_TOKENS
+
     best_match = None
-    best_score = 0
+    best_score = 0.0
+    best_scraped = ""
 
-    for league in cache.get("leagues", {}).values():
-        for tk, team in league.get("teams", {}).items():
-            name = team.get("name", "")
-            name_words = set(name.lower().split())
-            # Exact word match
-            if target_words == name_words:
-                return team
-            # Partial match
-            score = len(target_words & name_words)
-            if score > best_score:
-                best_score = score
-                best_match = team
+    for tokens, team in _build_index():
+        if not tokens:
+            continue
+        # Never match a men's side to a women's name (or the reverse)
+        if _is_women(team.get("name", "")) != want_women:
+            continue
+        # "Jubilo Iwata" must not resolve to "Jubilo Iwata Reserves"
+        if (tokens & _QUALIFIER_TOKENS) != target_qualifiers:
+            continue
 
-    if best_match and best_score >= 1:
-        return best_match
+        if tokens == target:
+            score = 1.0
+        else:
+            candidate = _expand_initials(tokens, target)
+            shared = len(candidate & target)
+            coverage = shared / len(target)
+            extra = len(candidate - target)
+            score = coverage - 0.15 * extra
+            if candidate == target:
+                score = 1.0
+        if score <= 0 or score < 0.5:
+            continue
+        # Every word of the requested name must be accounted for
+        candidate_tokens = _expand_initials(tokens, target)
+        if len(candidate_tokens & target) / len(target) < 0.6:
+            continue
+        # Break ties in favour of the most recently scraped entry
+        scraped = team.get("last_scraped") or ""
+        if score > best_score or (score == best_score and scraped > best_scraped):
+            best_score = score
+            best_match = team
+            best_scraped = scraped
 
-    return None
+    return best_match
 
 
 def has_team(team_name: str) -> bool:

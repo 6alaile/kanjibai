@@ -4,10 +4,10 @@ Fetches fixtures + enriches with stats → writes enriched.json
 Scoring happens in the browser (app.js).
 
 Data sources:
-- BetPawa (Playwright) → primary odds
-- API-Football → fallback odds
-- Transfermarkt → enrichment (team form, league position, H2H)
-- football-data.org → enrichment (free tier leagues)
+- BetPawa (sportsbook JSON API) → primary odds
+- API-Football          → fallback odds
+- Flashscore            → enrichment (primary: form, standings, H2H)
+- Transfermarkt         → enrichment (fallback for teams not on Flashscore)
 """
 
 import json
@@ -18,12 +18,13 @@ from pathlib import Path
 from typing import Optional
 
 from scrape import fetch_fixtures as fetch_api_fixtures
-from stats import enrich_all, get_league_code
+from stats import enrich_all
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
 sys.path.insert(0, str(Path(__file__).parent))
 from transfermarkt_scraper import run_daily_scrape
+from flashscore_cache import refresh as refresh_flashscore
 
 CACHE_FILE = Path(__file__).parent.parent.parent / "data" / "transfermarkt_cache.json"
 
@@ -60,6 +61,32 @@ def get_today_eat() -> str:
     return date_str
 
 
+def _covered_by_flashscore(team_name: str, fixtures: list) -> bool:
+    """True when Flashscore already has form and a position for this team.
+
+    The per-fixture feed counts: it carries both teams of a fixture, so a club
+    the name search never resolves is still covered.
+    """
+    from flashscore_cache import (has_team as fs_has_team, get_recent_form as fs_get_form,
+                                  get_league_position as fs_get_pos,
+                                  get_fixture_data as fs_get_fixture)
+    for fix in fixtures:
+        home, away = fix.get("home"), fix.get("away")
+        if team_name not in (home, away):
+            continue
+        fixture = fs_get_fixture(home, away)
+        if fixture:
+            side = "home" if team_name == home else "away"
+            data = fixture.get(side) or {}
+            if data.get("form") and fixture.get(f"{side}_position"):
+                return True
+        break
+
+    return bool(fs_has_team(team_name)
+                and fs_get_form(team_name).get("form")
+                and fs_get_pos(team_name) is not None)
+
+
 def run():
     start = datetime.now(EAT)
     log.info("=" * 50)
@@ -71,9 +98,9 @@ def run():
     _ensure_cache_v2()
 
     # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
-    log.info("Step 1/3: Fetching fixtures from BetPawa (primary) ...")
+    log.info("Step 1/4: Fetching fixtures from BetPawa (primary) ...")
 
-    # Try BetPawa first (Playwright-rendered odds)
+    # Try BetPawa first (sportsbook JSON API: odds + markets)
     raw_fixtures = fetch_betpawa_fixtures(date_str=today)
 
     # Fallback to API-Football if BetPawa returned no matches
@@ -99,18 +126,46 @@ def run():
 
     log.info(f"  {len(raw_fixtures)} fixtures fetched")
 
-    # ── Step 2: Run Transfermarkt scraper for teams in today's fixtures ──
-    log.info("Step 2/3: Running Transfermarkt scraper for today's teams...")
+    # ── Step 2: Refresh the Flashscore cache for today's teams (primary) ──
+    log.info("Step 2/4: Refreshing Flashscore cache for today's teams...")
+    team_names = []
+    for fixture in raw_fixtures:
+        for name in (fixture.get("home"), fixture.get("away")):
+            if name and name not in team_names:
+                team_names.append(name)
     try:
-        run_daily_scrape(max_teams=20, betpawa_fixtures=raw_fixtures)
-        log.info("  Transfermarkt scrape complete")
+        refresh_flashscore(team_names, fixtures=raw_fixtures, date_str=today)
+        log.info(f"  Flashscore cache refreshed for {len(team_names)} teams")
     except Exception as e:
-        log.warning(f"  Transfermarkt scrape failed: {e}")
+        log.warning(f"  Flashscore refresh failed: {e}")
         import traceback
         traceback.print_exc()
 
-    # Step 3: Enrich with stats (football-data.org free tier + Transfermarkt cache)
-    log.info("Step 3/3: Enriching with form, H2H, standings...")
+    # ── Step 3: Transfermarkt — only for teams Flashscore couldn't cover ──
+    # A team is considered covered if Flashscore has both form and a league position.
+    from flashscore_cache import (has_team as fs_has_team, get_recent_form as fs_get_form,
+                                  get_league_position as fs_get_pos,
+                                  get_fixture_data as fs_get_fixture)
+    missing = [n for n in team_names if not _covered_by_flashscore(n, raw_fixtures)]
+    if missing:
+        log.info(f"Step 3/4: Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
+        log.info(f"  Missing: {', '.join(missing)}")
+        missing_fixtures = [
+            f for f in raw_fixtures
+            if f.get("home") in missing or f.get("away") in missing
+        ]
+        try:
+            run_daily_scrape(max_teams=len(missing), betpawa_fixtures=missing_fixtures)
+            log.info("  Transfermarkt scrape complete")
+        except Exception as e:
+            log.warning(f"  Transfermarkt scrape failed: {e}")
+            import traceback
+            traceback.print_exc()
+    else:
+        log.info("Step 3/4: All teams covered by Flashscore — skipping Transfermarkt")
+
+    # ── Step 4: Enrich with form, standings, H2H ─────────────────────────
+    log.info("Step 4/4: Enriching with form, H2H, standings...")
     enriched = enrich_all(raw_fixtures)
     log.info(f"  {len(enriched)} matches enriched")
 
