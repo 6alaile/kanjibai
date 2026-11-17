@@ -387,7 +387,9 @@ def get_h2h_data(home_team: str, away_team: str) -> Optional[List[Dict[str, Any]
         meetings.append({
             "home": home_team if is_home else away_team,
             "away": away_team if is_home else home_team,
-            "score": score,
+            # score is always from home_team's view; flip it when the meeting's
+            # displayed home becomes the opponent.
+            "score": score if is_home else [score[1], score[0]],
             "ts": match.get("ts", 0),
         })
 

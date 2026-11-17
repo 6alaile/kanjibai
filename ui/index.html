@@ -315,24 +315,8 @@
                 <div class="picks-list">
                   <span v-for="bet in match.bets" :key="bet.label"
                     class="bet-tag" :class="bet.type">{{ bet.label }}<span
-                    class="bet-price" v-if="bet.prices.length">@ {{ bet.prices.join(' + ') }}</span></span>
+                    class="bet-price" v-if="bet.price">@ {{ bet.price }}</span></span>
                   <span v-if="!match.bets.length" class="picks-empty">No qualifying picks</span>
-                </div>
-
-                <!-- 1X2 STRIP -->
-                <div class="odds-row">
-                  <div class="odd-card" :class="{ highlighted: match.recommendation === 'home' }">
-                    <div class="odd-label">Home</div>
-                    <div class="odd-val">{{ match.odds.home }}</div>
-                  </div>
-                  <div class="odd-card">
-                    <div class="odd-label">Draw</div>
-                    <div class="odd-val">{{ match.odds.draw }}</div>
-                  </div>
-                  <div class="odd-card" :class="{ highlighted: match.recommendation === 'away' }">
-                    <div class="odd-label">Away</div>
-                    <div class="odd-val">{{ match.odds.away }}</div>
-                  </div>
                 </div>
               </div>
             </div>

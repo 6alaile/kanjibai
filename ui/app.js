@@ -253,10 +253,9 @@ function marketToScore(ht, at, cfg) {
   return signals;
 }
 
-// The four combo picks: both legs must qualify (confidence ≥ 55 each).
-// Each prices from BetPawa's combined market; DC + team O0.5 has no
-// combined market, so it carries both leg prices (market + market2).
-function marketCombos(mainBet, dc, over15, btts, toScore, cfg) {
+// The three combo picks: both legs must qualify (confidence ≥ 55 each),
+// each priced from BetPawa's combined market.
+function marketCombos(mainBet, dc, over15, btts, cfg) {
   if (!cfg.markets.includes('combo')) return [];
   const combos = [];
   const both = (a, b) => a && b && a.confidence >= 55 && b.confidence >= 55;
@@ -282,20 +281,6 @@ function marketCombos(mainBet, dc, over15, btts, toScore, cfg) {
       label: `${mainBet.label} + ${over15.label}`,
       type: 'combo', confidence: avg(mainBet, over15),
       market: ['result_total', '1.5', `${side}_over`]
-    });
-  }
-  if (dc) {
-    toScore.forEach(ts => {
-      const team = ts.market[1] === 'home_goals' ? 'home' : 'away';
-      if (dc.market[1] === 'home_draw' && team !== 'home') return;
-      if (dc.market[1] === 'draw_away' && team !== 'away') return;
-      if (!both(dc, ts)) return;
-      combos.push({
-        label: `${dc.label.slice(0, 2)} + ${team === 'home' ? 'Home' : 'Away'} O0.5`,
-        type: 'combo', confidence: avg(dc, ts),
-        market: ['dc', dc.market[1]],
-        market2: ts.market
-      });
     });
   }
   return combos;
@@ -451,7 +436,7 @@ function scoreMatch(match, cfg) {
   const toScore = marketToScore(ht, at, cfg);
   toScore.forEach(b => bets.push(b));
 
-  const combos = marketCombos(bets[0], dc, over15, btts, toScore, cfg);
+  const combos = marketCombos(bets[0], dc, over15, btts, cfg);
   combos.forEach(b => bets.push(b));
 
   const confidence = compositeConfidence(side, ht, at, h2h, pos, lowConfidence);
@@ -478,8 +463,7 @@ function scoreMatch(match, cfg) {
     reason: '',
     bets: bets.map(b => ({
       label: b.label, type: b.type, market: b.market || null,
-      prices: [betOdds(match.markets, b.market), betOdds(match.markets, b.market2)]
-        .filter(p => p != null)
+      price: betOdds(match.markets, b.market)
     })),
     homeStats: {
       name: match.home,

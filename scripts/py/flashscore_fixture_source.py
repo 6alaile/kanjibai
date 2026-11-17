@@ -410,12 +410,14 @@ def fetch_match_detail(match_id: str, home_id: str, home_name: str,
         if len(hosts) != 1:
             continue
         host = hosts[0]
+        # The row's score is host-first (match home = host), so it stays as-is;
+        # only the displayed sides change with the host.
         if host == home_id:
             meeting = {"home": home_name, "away": away_name,
                        "score": [home_goals, away_goals], "ts": int(row.get("KC", 0) or 0)}
         else:
             meeting = {"home": away_name, "away": home_name,
-                       "score": [away_goals, home_goals], "ts": int(row.get("KC", 0) or 0)}
+                       "score": [home_goals, away_goals], "ts": int(row.get("KC", 0) or 0)}
         detail["h2h"].append(meeting)
 
     detail["h2h"].sort(key=lambda m: m["ts"], reverse=True)

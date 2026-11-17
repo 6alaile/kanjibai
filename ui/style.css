@@ -565,7 +565,6 @@ header {
 
 .picks-body {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
   gap: 16px;
   align-items: start;
   margin-top: 8px;
@@ -630,47 +629,6 @@ header {
 .picks-empty {
   font-size: 11px;
   color: var(--text2);
-}
-
-/* 1X2 strip inside Picks & Odds */
-.odds-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.odd-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 10px;
-  text-align: center;
-  transition: all 0.15s ease;
-}
-
-.odd-card.highlighted {
-  background: var(--success-soft);
-  border-color: var(--success);
-  box-shadow: 0 0 0 1px var(--success);
-}
-
-.odd-card.highlighted .odd-label { color: var(--success); }
-.odd-card.highlighted .odd-val { color: var(--success); }
-
-.odd-label {
-  font-size: 10px;
-  color: var(--text2);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-
-.odd-val {
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--snow);
 }
 
 /* Form & Goals Comparison */
@@ -1222,6 +1180,5 @@ header {
   .team-block { align-items: flex-start; text-align: left; }
   .form-comparison { grid-template-columns: 1fr; }
   .signals-split { grid-template-columns: 1fr; }
-  .picks-body { grid-template-columns: 1fr; }
   .card-body.open { max-height: 2000px; }
 }

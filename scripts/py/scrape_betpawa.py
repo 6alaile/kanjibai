@@ -201,8 +201,10 @@ def upcoming_events(date_str: str) -> List[Dict]:
 
 
 def _live(price: Dict) -> bool:
+    odds = price.get("odds")
     return (not price.get("suspended")
-            and isinstance(price.get("odds"), (int, float)))
+            and isinstance(odds, (int, float))
+            and odds > 0)
 
 
 def parse_markets(event: Dict) -> Dict:

@@ -545,28 +545,24 @@ def _rename_h2h(matches: List[Dict], home_name: str, away_name: str) -> List[Dic
     """Rewrite Transfermarkt team names in H2H records to the odds-feed names.
 
     app.js compares the H2H names against the fixture's team names to work
-    out who won, so the two have to be the same strings.
+    out who won, so the two have to be the same strings.  Only the names are
+    rewritten: each record's score stays in its stored (historical) order.
     """
     home_tokens = _h2h_tokens(home_name)
     away_tokens = _h2h_tokens(away_name)
+    shared = home_tokens & away_tokens          # e.g. "u19" on both sides
     renamed = []
 
     for match in matches:
         entry = dict(match)
-        stored_home = _h2h_tokens(match.get("home", ""))
-        stored_away = _h2h_tokens(match.get("away", ""))
+        stored_home = _h2h_tokens(match.get("home", "")) - shared
 
-        if stored_home and away_tokens and (stored_home & away_tokens) \
-                and not (stored_home & home_tokens):
-            # The stored "home" is really our away team — swap names and score
-            entry["home"] = away_name
-            entry["away"] = home_name
-            score = match.get("score")
-            if isinstance(score, list) and len(score) == 2:
-                entry["score"] = [score[1], score[0]]
-        else:
-            entry["home"] = home_name
-            entry["away"] = away_name
+        if stored_home & (home_tokens - shared):
+            entry["home"], entry["away"] = home_name, away_name
+        elif stored_home & (away_tokens - shared):
+            entry["home"], entry["away"] = away_name, home_name
+        # else: neither side matches — leave the record untouched rather than
+        # flip the names without flipping the score.
         renamed.append(entry)
 
     return renamed
