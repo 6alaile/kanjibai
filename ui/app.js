@@ -77,6 +77,12 @@ function num(v, fallback = 0) {
   return Number.isFinite(n) ? n : fallback;
 }
 
+// A probability for display: whole percent, never 100 — there is always
+// some doubt left, and "100%" on a chip reads as a guarantee.
+function pct100(p) {
+  return Math.max(1, Math.min(99, Math.round(p * 100)));
+}
+
 // The odds gate only decides *whether* a fixture qualifies for a card — the
 // home/draw/away choice is made by the probability model (see below). Kept
 // deliberately: both sliders still describe the same price band, one side has
@@ -192,12 +198,21 @@ function analyseH2H(h2h, homeTeam) {
   };
 }
 
+// League position as a signed gap: +1 when the home side tops the table and
+// the away side sits at the bottom, -1 the other way round, 0 when even.
+function positionGap(hp, ap, total) {
+  if (!hp || !ap || !total || total < 2) return 0;
+  const hn = 1 - ((hp - 1) / (total - 1));
+  const an = 1 - ((ap - 1) / (total - 1));
+  return (hn - an) / 2;
+}
+
+// The position term of the 1X2 stats signal: 0.5 is neutral and the slider
+// decides how far a table gap can move it.
 function positionScore(hp, ap, total, weight) {
   const w = num(weight, 0);
   if (!hp || !ap || !total || w === 0) return 0.5;
-  const hn = 1 - ((hp - 1) / (total - 1));
-  const an = 1 - ((ap - 1) / (total - 1));
-  return Math.round((0.5 + ((hn - an + 1) / 2 - 0.5) * w) * 1000) / 1000;
+  return Math.round((0.5 + positionGap(hp, ap, total) * w) * 1000) / 1000;
 }
 
 // ─── 1X2 PROBABILITY MODEL ────────────────────────────────────────────────────
@@ -224,6 +239,64 @@ const MIN_PICK_PROB = 0.36;
 // They keep the distribution whole (win + draw + loss = 1) instead of
 // silently dropping a side out of the maths.
 const FORM_PRIOR = { win: 0.45, draw: 0.25, loss: 0.30 };
+
+// ─── POINTS SYSTEM ────────────────────────────────────────────────────────────
+// Points are the currency of the form markets: every stat the feed gives us
+// is worth a fixed number of points, so a team's recent form reads as one
+// score and every market leans on the same evidence.
+//
+//   win 3 · draw 1 · loss 0        → form points
+//   goal 1 · conceded −0.5         → attack / defence points
+//   winning streak 0.5 a match     → momentum
+//   scoring streak 0.25 a match    → attack (feeds BTTS and to score)
+//   conceding streak −0.25 a match → defence (feeds BTTS)
+//   home 0.5                       → venue
+//   league position                → the table gap, scaled by its slider
+const PTS_WIN = 3.0;
+const PTS_DRAW = 1.0;
+const PTS_LOSS = 0.0;
+const PTS_GOAL = 1.0;
+const PTS_CONCEDED = -0.5;
+const PTS_WIN_STREAK = 0.5;
+const PTS_SCORING_STREAK = 0.25;
+const PTS_CONCEDING_STREAK = -0.25;
+const PTS_HOME = 0.5;
+const PTS_POSITION = 4.0;      // the table gap, scaled by the position slider
+
+// The points system speaks in points, the goal model below in goals. These
+// convert between them and set how hard each signal is allowed to push.
+const GOAL_FORM_WEIGHT = 0.35;      // how much a good run lifts expected goals
+const GOAL_FORM_BASE = 0.90;        // form points per game that count as normal
+const GOAL_STREAK_WEIGHT = 0.10;    // a match of scoring streak
+const GOAL_CONCEDING_WEIGHT = 0.08; // a match of conceding streak
+const GOAL_POSITION_WEIGHT = 0.18;  // the table gap, in goals
+const GOAL_H2H_WEIGHT = 0.25;       // the head-to-head scoring pattern
+const GOAL_EDGE_SCALE = 8.0;        // goal points that count as a full edge
+const GOAL_EDGE_TILT = 0.20;        // how hard the goal difference tilts 1X2
+const OVER15_H2H_WEIGHT = 0.25;     // head-to-head over-1.5 pattern
+const BTTS_H2H_WEIGHT = 0.25;       // head-to-head both-teams-scoring pattern
+
+// League averages, used when a team has no form at all.
+const AVG_GOALS_SCORED = 1.30;
+const AVG_GOALS_CONCEDED = 1.25;
+const AVG_FORM_PER_GAME = 0.92;
+
+// Confidence floors for the form-based markets. Each one is a real
+// probability now, so the floors mean what they say. The slider in the
+// controls panel drives them; these are the defaults.
+//
+// Over 1.5 and "team to score" are naturally high-probability selections
+// (a fixture expected to produce three goals or more), while a both-teams-
+// to-score call is a coin-flip market, so its floor sits lower.
+const DEFAULT_MIN_PICK_CONFIDENCE = 80;   // percent, the slider's default
+const BTTS_FLOOR_OFFSET = 18;              // points below the slider
+const MIN_OVER15_PROB = 0.80;
+const MIN_BTTS_PROB = 0.62;
+const MIN_TOSCORE_PROB = 0.80;
+// The points edge that says the form really favours one side — the reason
+// to take the double chance instead of the side itself. At 4.5 the arm's
+// confidence never drops below ~70%.
+const MIN_DC_EDGE = 4.5;
 
 const OUTCOME_LABELS = { home: 'Home Win', draw: 'Draw', away: 'Away Win' };
 
@@ -283,6 +356,16 @@ function statsProbabilities(ht, at, h2h, pos) {
     tilt.away = 1 + H2H_WEIGHT * (h2h.away_win_rate - FORM_PRIOR.loss) / (1 - FORM_PRIOR.loss);
     tilt.draw = 1 + H2H_WEIGHT * (h2h.draw_rate - FORM_PRIOR.draw) / (1 - FORM_PRIOR.draw);
   }
+
+  // Goal difference as points — the one piece of evidence the win/draw/loss
+  // rates do not carry. It tilts the stats signal towards the side that
+  // scores more and concedes less.
+  const netGoalPoints = t =>
+    t.total_scored * PTS_GOAL + t.total_conceded * PTS_CONCEDED +
+    t.scoring_streak * PTS_SCORING_STREAK + t.conceding_streak * PTS_CONCEDING_STREAK;
+  const goalEdge = (netGoalPoints(ht) - netGoalPoints(at)) / GOAL_EDGE_SCALE;
+  tilt.home *= 1 + GOAL_EDGE_TILT * goalEdge;
+  tilt.away *= 1 - GOAL_EDGE_TILT * goalEdge;
 
   // League position tilt — the better-placed side is favoured, and the wider
   // the gap the less a draw is worth.
@@ -344,88 +427,195 @@ function market1x2(model) {
     type: 'primary',
     // The primary pick's confidence *is* the model's probability for the
     // chosen outcome — the old form/streak heuristic is gone.
-    confidence: Math.round(model.prob * 100),
-    prob: Math.round(model.prob * 100),
+    confidence: pct100(model.prob),
+    prob: pct100(model.prob),
     market: ['1x2', model.pick],
   };
 }
 
+// ─── POINTS ENGINE ────────────────────────────────────────────────────────────
+// The points a team has collected over its last five results, split so each
+// market can use the part it cares about: form, attack, defence, momentum,
+// venue and table position.
+function teamPoints(t, side, gap, weight) {
+  const n = t.n || 0;
+  const hasForm = (t.wins + t.draws + t.losses) > 0;
+
+  const form = t.wins * PTS_WIN + t.draws * PTS_DRAW + t.losses * PTS_LOSS;
+  const attack = t.total_scored * PTS_GOAL + t.scoring_streak * PTS_SCORING_STREAK;
+  const defence = t.total_conceded * PTS_CONCEDED + t.conceding_streak * PTS_CONCEDING_STREAK;
+  const momentum = t.winning_streak * PTS_WIN_STREAK;
+  const venue = side === 'home' ? PTS_HOME : 0;
+  const position = gap * PTS_POSITION * num(weight, 0.5);
+
+  return {
+    n,
+    hasForm,
+    form,
+    attack,
+    defence,
+    momentum,
+    venue,
+    position,
+    total: form + momentum + venue + position,
+    // Per-game rates for the goal model. A team with no form at all falls
+    // back to the league average rather than to a zero.
+    attackRate: hasForm ? t.total_scored / n : AVG_GOALS_SCORED,
+    defenceRate: hasForm ? t.total_conceded / n : AVG_GOALS_CONCEDED,
+    formPerGame: hasForm ? form / n : AVG_FORM_PER_GAME,
+    scoringStreak: t.scoring_streak,
+    concedingStreak: t.conceding_streak,
+    winningStreak: t.winning_streak,
+    draws: t.draws,
+  };
+}
+
+// ─── GOAL MODEL ───────────────────────────────────────────────────────────────
+// Expected goals for the fixture. Each side's expectation blends its own
+// attacking output with the opponent's leaking, then takes a nudge from form,
+// momentum and the table gap. The head-to-head scoring pattern pulls the
+// total towards what these two have produced against each other.
+//
+// Everything comes out as a probability, so the markets below can be judged
+// against a single confidence scale.
+function goalModel(hp, ap, h2h, gap, weight) {
+  const w = num(weight, 0.5);
+
+  let lambdaHome = (hp.attackRate + ap.defenceRate) / 2;
+  let lambdaAway = (ap.attackRate + hp.defenceRate) / 2;
+
+  // Form: a team in a good run scores more than its goal average suggests.
+  lambdaHome += GOAL_FORM_WEIGHT * (hp.formPerGame - GOAL_FORM_BASE);
+  lambdaAway += GOAL_FORM_WEIGHT * (ap.formPerGame - GOAL_FORM_BASE);
+
+  // Momentum: a scoring streak lifts an attack, a conceding streak lifts
+  // what the opponent can expect.
+  lambdaHome += GOAL_STREAK_WEIGHT * hp.scoringStreak
+              - GOAL_CONCEDING_WEIGHT * ap.concedingStreak;
+  lambdaAway += GOAL_STREAK_WEIGHT * ap.scoringStreak
+              - GOAL_CONCEDING_WEIGHT * hp.concedingStreak;
+
+  // Table gap: the better-placed side scores a little more and concedes a
+  // little less.
+  lambdaHome += GOAL_POSITION_WEIGHT * gap * w;
+  lambdaAway -= GOAL_POSITION_WEIGHT * gap * w;
+
+  // The head-to-head scoring pattern pulls the total towards the average
+  // these two have produced against each other.
+  if (h2h.available && h2h.avg_total_goals > 0) {
+    const total = Math.max(0.3, lambdaHome + lambdaAway);
+    const blended = (1 - GOAL_H2H_WEIGHT) * total + GOAL_H2H_WEIGHT * h2h.avg_total_goals;
+    const scale = blended / total;
+    lambdaHome *= scale;
+    lambdaAway *= scale;
+  }
+
+  lambdaHome = Math.max(0.15, lambdaHome);
+  lambdaAway = Math.max(0.15, lambdaAway);
+
+  const total = lambdaHome + lambdaAway;
+  const homeScores = 1 - Math.exp(-lambdaHome);
+  const awayScores = 1 - Math.exp(-lambdaAway);
+
+  return {
+    lambdaHome,
+    lambdaAway,
+    total,
+    // Poisson: the chance the match sees more than one goal.
+    over15: 1 - Math.exp(-total) * (1 + total),
+    homeScores,
+    awayScores,
+    // Both teams score.
+    btts: homeScores * awayScores,
+  };
+}
+
 // Double chance is the safer twin of the 1X2 pick: it covers the pick plus
-// one other outcome. The arm follows the model's pick — a Home pick pairs
-// with 1X, an Away pick with X2, and a Draw pick pairs with whichever arm
-// covers the draw and the likelier of the two sides.
-function marketDC(model, ht, at, cfg) {
+// one other outcome, so its confidence is the model's own probability for
+// that pair. The arm follows the model's pick and the points system — a Home
+// pick pairs with 1X, an Away pick with X2, and a Draw pick pairs with
+// whichever arm covers the draw and the likelier of the two sides.
+function marketDC(model, hp, ap, cfg) {
   if (!cfg.markets.includes('dc')) return null;
-  if (ht.winning_streak >= 2 && at.winning_streak >= 2) {
-    const conf = Math.min(90, Math.round((ht.winning_streak + at.winning_streak) / 10 * 100));
-    return { label: '12 (Home or Away)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_away'] };
+  const p = model.p;
+  const edge = hp.total - ap.total;
+
+  // 12 — both teams are in winning form, so the match is too close to call.
+  if (hp.winningStreak >= 2 && ap.winningStreak >= 2) {
+    const conf = pct100(p.home + p.away);
+    return { label: '12 (Home or Away)', type: 'secondary', confidence: conf, prob: conf, market: ['dc', 'home_away'] };
   }
-  const side = model.pick;
-  if (side === 'home' && ht.unbeaten_streak >= 3 && at.losses >= 2) {
-    const conf = Math.min(90, Math.round((ht.unbeaten_streak/5*0.5 + at.losses/5*0.5)*100));
-    return { label: '1X (Home or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'home_draw'] };
+  // 1X — the home side's points are clearly ahead and the model picked home.
+  if (model.pick === 'home' && edge >= MIN_DC_EDGE) {
+    const conf = pct100(p.home + p.draw);
+    return { label: '1X (Home or Draw)', type: 'secondary', confidence: conf, prob: conf, market: ['dc', 'home_draw'] };
   }
-  if (side === 'away' && at.unbeaten_streak >= 3 && ht.losses >= 2) {
-    const conf = Math.min(90, Math.round((at.unbeaten_streak/5*0.5 + ht.losses/5*0.5)*100));
-    return { label: 'X2 (Away or Draw)', type: 'secondary', confidence: Math.max(45, conf), market: ['dc', 'draw_away'] };
+  // X2 — the away side's points are clearly ahead and the model picked away.
+  if (model.pick === 'away' && edge <= -MIN_DC_EDGE) {
+    const conf = pct100(p.away + p.draw);
+    return { label: 'X2 (Away or Draw)', type: 'secondary', confidence: conf, prob: conf, market: ['dc', 'draw_away'] };
   }
-  if (side === 'draw') {
-    // The draw pick only pairs with a double chance when both teams keep
-    // drawing — otherwise there is nothing behind the draw.
-    if (ht.draws >= 2 && at.draws >= 2) {
-      const arm = model.p.home >= model.p.away ? 'home_draw' : 'draw_away';
-      const label = arm === 'home_draw' ? '1X (Home or Draw)' : 'X2 (Away or Draw)';
-      const conf = Math.min(90, Math.round(((ht.draws/ht.n + at.draws/at.n) / 2 * 0.6 + model.p.draw * 0.4) * 100));
-      return { label, type: 'secondary', confidence: Math.max(45, conf), market: ['dc', arm] };
-    }
+  // Draw pick — both teams keep drawing, so there is something behind it.
+  if (model.pick === 'draw' && hp.draws >= 2 && ap.draws >= 2) {
+    const arm = p.home >= p.away ? 'home_draw' : 'draw_away';
+    const label = arm === 'home_draw' ? '1X (Home or Draw)' : 'X2 (Away or Draw)';
+    const conf = pct100(arm === 'home_draw' ? p.home + p.draw : p.away + p.draw);
+    return { label, type: 'secondary', confidence: conf, prob: conf, market: ['dc', arm] };
   }
   return null;
 }
 
-function marketOver15(ht, at, h2h, cfg) {
+// Over 1.5 goals — the expected goals decide it, and the head-to-head
+// scoring pattern says how much to trust them. The old version added a
+// weighted score of "how often both teams hit 1.5" against a 0.55 cut-off
+// on a scale that averaged 0.77, so it fired on 92% of fixtures; this one
+// is a probability with a floor that means something.
+function marketOver15(goals, h2h, cfg) {
   if (!cfg.markets.includes('over15')) return null;
-  const n = ht.n;
-  if (!n) return null;
-  const score = (
-    ht.over_15_count/n*0.20 + at.over_15_count/n*0.20 +
-    ht.games_scored_in/n*0.15 + at.games_scored_in/n*0.15 +
-    ht.games_conceded_in/n*0.10 + at.games_conceded_in/n*0.10 +
-    h2h.over_15_rate*0.10
-  );
-  if (score >= 0.55) return { label: 'Over 1.5 Goals', type: 'secondary', confidence: Math.min(92, Math.round(score*100)), market: ['total_goals', '1.5', 'over'] };
-  return null;
+  const prob = h2h.available
+    ? (1 - OVER15_H2H_WEIGHT) * goals.over15 + OVER15_H2H_WEIGHT * h2h.over_15_rate
+    : goals.over15;
+  if (prob < num(cfg.over15Floor, MIN_OVER15_PROB)) return null;
+  const conf = pct100(prob);
+  return { label: 'Over 1.5 Goals', type: 'secondary', confidence: conf, prob: conf, market: ['total_goals', '1.5', 'over'] };
 }
 
-function marketBTTS(ht, at, h2h, cfg) {
+// Both teams to score — the two expected goals decide it, with the scoring
+// and conceding streaks already inside them and the head-to-head pattern
+// pulled in on top. The old version counted "scored in 3 of the last 5"
+// and fired on more than half the fixtures.
+function marketBTTS(goals, h2h, cfg) {
   if (!cfg.markets.includes('btts')) return null;
-  const n = ht.n;
-  if (!n) return null;
-  const cs = ht.clean_sheets + at.clean_sheets;
-  const scoredGames = ht.games_scored_in + at.games_scored_in;
-  if (ht.games_scored_in >= 3 && at.games_scored_in >= 3 && ht.games_conceded_in >= 3 && at.games_conceded_in >= 3) {
-    const goalsW = Math.min(1, (ht.total_scored + at.total_scored + ht.total_conceded + at.total_conceded) / (n*4));
-    const base = (scoredGames/(n*2)*0.35 + (ht.games_conceded_in+at.games_conceded_in)/(n*2)*0.35 + h2h.btts_rate*0.20 + goalsW*0.10);
-    return { label: 'BTTS Yes', type: 'secondary', confidence: Math.max(45, Math.min(92, Math.round(base*100))), market: ['btts', 'yes'] };
+  const pYes = h2h.available
+    ? (1 - BTTS_H2H_WEIGHT) * goals.btts + BTTS_H2H_WEIGHT * h2h.btts_rate
+    : goals.btts;
+  const floor = num(cfg.bttsFloor, MIN_BTTS_PROB);
+  if (pYes >= floor) {
+    const conf = pct100(pYes);
+    return { label: 'BTTS Yes', type: 'secondary', confidence: conf, prob: conf, market: ['btts', 'yes'] };
   }
-  if (cs >= scoredGames || ht.clean_sheets >= 2 || at.clean_sheets >= 2) {
-    const dom = cs / (scoredGames + 1);
-    return { label: 'BTTS No', type: 'warn', confidence: Math.max(40, Math.min(85, Math.round(dom*60)+30)), market: ['btts', 'no'] };
+  const pNo = 1 - pYes;
+  if (pNo >= floor) {
+    const conf = pct100(pNo);
+    return { label: 'BTTS No', type: 'warn', confidence: conf, prob: conf, market: ['btts', 'no'] };
   }
   return null;
 }
 
-function marketToScore(ht, at, cfg) {
+// To score — the team's expected goals against the opponent's conceding.
+// The old version asked for "scored in 4 of the last 5", which is true for
+// most teams and produced a to-score leg on nearly every card.
+function marketToScore(goals, cfg) {
   if (!cfg.markets.includes('to_score')) return [];
-  const n = ht.n;
-  if (!n) return [];
   const signals = [];
-  if (ht.games_scored_in >= 4) {
-    const conf = Math.min(92, Math.round((ht.games_scored_in/n*0.6 + at.games_conceded_in/n*0.3 + (1-at.clean_sheets/n)*0.1)*100));
-    signals.push({ label: 'Home to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf), market: ['home_goals', '0.5', 'over'] });
+  const floor = num(cfg.toScoreFloor, MIN_TOSCORE_PROB);
+  if (goals.homeScores >= floor) {
+    const conf = pct100(goals.homeScores);
+    signals.push({ label: 'Home to Score (Over 0.5)', type: 'secondary', confidence: conf, prob: conf, market: ['home_goals', '0.5', 'over'] });
   }
-  if (at.games_scored_in >= 4) {
-    const conf = Math.min(92, Math.round((at.games_scored_in/n*0.6 + ht.games_conceded_in/n*0.3 + (1-ht.clean_sheets/n)*0.1)*100));
-    signals.push({ label: 'Away to Score (Over 0.5)', type: 'secondary', confidence: Math.max(50, conf), market: ['away_goals', '0.5', 'over'] });
+  if (goals.awayScores >= floor) {
+    const conf = pct100(goals.awayScores);
+    signals.push({ label: 'Away to Score (Over 0.5)', type: 'secondary', confidence: conf, prob: conf, market: ['away_goals', '0.5', 'over'] });
   }
   return signals;
 }
@@ -604,8 +794,17 @@ function scoreMatch(match, cfg) {
     minFormMatches: num(cfg.minFormMatches, 5),
     leaguePositionWeight: num(cfg.leaguePositionWeight, 0.5),
     oppStrengthWeight: num(cfg.oppStrengthWeight, 0.5),
+    minPickConfidence: num(cfg.minPickConfidence, DEFAULT_MIN_PICK_CONFIDENCE),
     markets: cfg.markets || [],
   };
+
+  // The confidence floors for the secondary markets follow the slider: a
+  // higher floor means the model has to be more certain before the market
+  // is offered, which is the dial behind "too many picks".
+  const pickFloor = cfgN.minPickConfidence / 100;
+  cfgN.over15Floor = pickFloor;
+  cfgN.toScoreFloor = pickFloor;
+  cfgN.bttsFloor = Math.max(0.5, pickFloor - BTTS_FLOOR_OFFSET / 100);
 
   // The odds gate decides whether the fixture qualifies at all; the model
   // below decides which of home/draw/away is taken.
@@ -629,9 +828,11 @@ function scoreMatch(match, cfg) {
   const ht = teamTendency(homeStats);
   const at = teamTendency(awayStats);
   const h2h = analyseH2H(h2hRaw, match.home);
+  const totalTeams = match.total_teams_in_league || 20;
+  const gap = positionGap(homeStats.league_position, awayStats.league_position, totalTeams);
   const pos = positionScore(
     homeStats.league_position, awayStats.league_position,
-    match.total_teams_in_league || 20, cfgN.leaguePositionWeight
+    totalTeams, cfgN.leaguePositionWeight
   );
 
   const model = probabilityModel(match, ht, at, h2h, pos, cfgN);
@@ -650,19 +851,25 @@ function scoreMatch(match, cfg) {
     );
   }
 
+  // The points system and the goal model: one set of evidence, read by every
+  // market below.
+  const hp = teamPoints(ht, 'home', gap, cfgN.leaguePositionWeight);
+  const ap = teamPoints(at, 'away', -gap, cfgN.leaguePositionWeight);
+  const goals = goalModel(hp, ap, h2h, gap, cfgN.leaguePositionWeight);
+
   const bets = [];
   bets.push(market1x2(model));
 
-  const dc = marketDC(model, ht, at, cfgN);
+  const dc = marketDC(model, hp, ap, cfgN);
   if (dc) bets.push(dc);
 
-  const over15 = marketOver15(ht, at, h2h, cfgN);
+  const over15 = marketOver15(goals, h2h, cfgN);
   if (over15) bets.push(over15);
 
-  const btts = marketBTTS(ht, at, h2h, cfgN);
+  const btts = marketBTTS(goals, h2h, cfgN);
   if (btts) bets.push(btts);
 
-  const toScore = marketToScore(ht, at, cfgN);
+  const toScore = marketToScore(goals, cfgN);
   toScore.forEach(b => bets.push(b));
 
   const combos = marketCombos(bets[0], dc, over15, btts, cfgN);
@@ -773,6 +980,7 @@ createApp({
       minFormMatches: 5,
       leaguePositionWeight: 0.5,
       oppStrengthWeight: 0.5,
+      minPickConfidence: DEFAULT_MIN_PICK_CONFIDENCE,
       markets: ['1x2', 'dc', 'over15', 'btts', 'to_score', 'combo']
     });
 
@@ -860,7 +1068,7 @@ createApp({
       ['Loading fixtures...', 'Fetching enriched match data from GitHub'],
       ['Applying odds filter...', `Home ≤ ${filters.homeOddsMax} · Away ≥ ${filters.awayOddsMin}`],
       ['Scoring matches...', 'Running 3-way probability model (Home / Draw / Away)'],
-      ['Generating picks...', 'Building market recommendations with confidence %'],
+      ['Generating picks...', `Building market recommendations (min confidence ${filters.minPickConfidence}%)`],
     ];
 
     async function runScan() {

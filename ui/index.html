@@ -104,6 +104,14 @@
           </div>
         </div>
 
+        <div class="control-group">
+          <label>Min Pick Confidence</label>
+          <div class="control-row">
+            <input type="range" class="range-input" v-model="filters.minPickConfidence" min="50" max="90" step="1" />
+            <span class="range-val">{{ filters.minPickConfidence }}%</span>
+          </div>
+        </div>
+
         <button class="run-btn" :class="{ loading }" @click="runScan" :disabled="loading">
           {{ loading ? 'Scanning Fixtures...' : '▶ Run Daily Scan' }}
         </button>
