@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Optional
 
 from scrape import fetch_fixtures as fetch_api_fixtures
-from stats import enrich_all
+from stats import enrich_all, TRANSFERMARKT_FALLBACK
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
@@ -147,7 +147,12 @@ def run():
                                   get_league_position as fs_get_pos,
                                   get_fixture_data as fs_get_fixture)
     missing = [n for n in team_names if not _covered_by_flashscore(n, raw_fixtures)]
-    if missing:
+    if missing and not TRANSFERMARKT_FALLBACK:
+        # The Transfermarkt fallback is paused — teams Flashscore cannot
+        # resolve stay unresolved rather than being filled from the cache.
+        log.info(f"Step 3/4: Transfermarkt fallback paused — {len(missing)} team(s) left unresolved")
+        log.info(f"  Unresolved: {', '.join(missing)}")
+    elif missing:
         log.info(f"Step 3/4: Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
         log.info(f"  Missing: {', '.join(missing)}")
         missing_fixtures = [
