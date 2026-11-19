@@ -1,2683 +1,11 @@
 {
   "meta": {
     "date": "2026-11-19",
-    "generatedAt": "2026-11-19T00:07:24.174545+03:00",
-    "scanned": 73,
-    "elapsedSeconds": 396.3
+    "generatedAt": "2026-11-19T03:06:45.240699+03:00",
+    "scanned": 64,
+    "elapsedSeconds": 358.1
   },
   "matches": [
-    {
-      "id": "39179064",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "Deportivo Tachira",
-      "away": "Academia Puerto Cabello",
-      "time": "01:00",
-      "odds": {
-        "home": 1.79,
-        "draw": 3.35,
-        "away": 4.1
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.79,
-          "draw": 3.35,
-          "away": 4.1
-        },
-        "dc": {
-          "home_draw": 1.21,
-          "draw_away": 1.83,
-          "home_away": 1.29
-        },
-        "btts": {
-          "yes": 1.8,
-          "no": 1.84
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.05,
-            "under": 7.2
-          },
-          "1.5": {
-            "over": 1.29,
-            "under": 3.2
-          },
-          "2.5": {
-            "over": 1.91,
-            "under": 1.76
-          },
-          "3.5": {
-            "over": 3.2,
-            "under": 1.29
-          },
-          "4.5": {
-            "over": 5.8,
-            "under": 1.09
-          },
-          "5.5": {
-            "over": 9.0,
-            "under": 1.02
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 1.83,
-            "under": 1.72
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.46,
-            "under": 2.24
-          }
-        },
-        "result_total": {
-          "2.5": {
-            "home_over": 2.87,
-            "draw_over": 14.33,
-            "away_over": 7.64,
-            "home_under": 4.11,
-            "draw_under": 4.2,
-            "away_under": 8.41
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 3.4,
-          "home_no": 2.6,
-          "away_yes": 7.2,
-          "away_no": 6.2,
-          "draw_yes": 3.95,
-          "draw_no": 8.6
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Deportivo Tachira",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          3,
-          1,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794092400,
-            "match_id": "jH4m4yyQ",
-            "opponent": "Monagas",
-            "opponent_id": "MHPrulvq",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793748600,
-            "match_id": "rXAopGqf",
-            "opponent": "Puerto Cabello",
-            "opponent_id": "Mgr9ojjj",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1793482200,
-            "match_id": "KGS5Xx0l",
-            "opponent": "Puerto Cabello",
-            "opponent_id": "Mgr9ojjj",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793143800,
-            "match_id": "lEotHHF7",
-            "opponent": "Monagas",
-            "opponent_id": "MHPrulvq",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792879200,
-            "match_id": "xvvQA7dB",
-            "opponent": "Caracas",
-            "opponent_id": "l6AbuB1S",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Academia Puerto Cabello",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          2,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          3,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794520800,
-            "match_id": "QXLi0SZi",
-            "opponent": "Monagas",
-            "opponent_id": "MHPrulvq",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1794092400,
-            "match_id": "nmjJbFbm",
-            "opponent": "Caracas",
-            "opponent_id": "l6AbuB1S",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1793748600,
-            "match_id": "rXAopGqf",
-            "opponent": "Dep. Tachira",
-            "opponent_id": "t8oez9vd",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1793482200,
-            "match_id": "KGS5Xx0l",
-            "opponent": "Dep. Tachira",
-            "opponent_id": "t8oez9vd",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793136600,
-            "match_id": "G0mYIwoe",
-            "opponent": "Caracas",
-            "opponent_id": "l6AbuB1S",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Deportivo Tachira",
-            "away": "Academia Puerto Cabello",
-            "score": [
-              3,
-              2
-            ],
-            "ts": 1793748600
-          },
-          {
-            "home": "Academia Puerto Cabello",
-            "away": "Deportivo Tachira",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1793482200
-          },
-          {
-            "home": "Deportivo Tachira",
-            "away": "Academia Puerto Cabello",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1789511400
-          },
-          {
-            "home": "Academia Puerto Cabello",
-            "away": "Deportivo Tachira",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1775345400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39179046",
-      "league": "Football / Brazil / Taca Fares Lopes",
-      "home": "FC Atletico CE",
-      "away": "Ceara SC CE",
-      "time": "01:00",
-      "odds": {
-        "home": 4.6,
-        "draw": 3.8,
-        "away": 1.61
-      },
-      "markets": {
-        "1x2": {
-          "home": 4.6,
-          "draw": 3.8,
-          "away": 1.61
-        },
-        "dc": {
-          "home_draw": 2.02,
-          "draw_away": 1.17,
-          "home_away": 1.22
-        },
-        "btts": {
-          "yes": 1.61,
-          "no": 2.09
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.02,
-            "under": 8.8
-          },
-          "1.5": {
-            "over": 1.18,
-            "under": 4.18
-          },
-          "2.5": {
-            "over": 1.58,
-            "under": 2.18
-          },
-          "3.5": {
-            "over": 2.41,
-            "under": 1.48
-          },
-          "4.5": {
-            "over": 4.1,
-            "under": 1.18
-          },
-          "5.5": {
-            "over": 6.8,
-            "under": 1.06
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.39,
-            "under": 2.44
-          }
-        },
-        "away_goals": {
-          "1.5": {
-            "over": 1.53,
-            "under": 2.1
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 5.92,
-            "draw_over": 4.78,
-            "away_over": 1.83,
-            "home_under": 17.19,
-            "draw_under": 16.24,
-            "away_under": 9.36
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 6.6,
-          "home_no": 8.2,
-          "away_yes": 2.65,
-          "away_no": 2.65,
-          "draw_yes": 4.0,
-          "draw_no": 13.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "FC Atletico CE",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          2,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          3,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794506400,
-            "match_id": "MgnLZMKl",
-            "opponent": "Ceara B",
-            "opponent_id": "2mdJgVpF",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793642400,
-            "match_id": "4z7mLN5e",
-            "opponent": "Vila Real",
-            "opponent_id": "j7vKo2Ya",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1781377200,
-            "match_id": "vZEGVLSr",
-            "opponent": "AE Altos",
-            "opponent_id": "Kb3MZSs8",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1780340400,
-            "match_id": "UPQLUQPb",
-            "opponent": "Piaui",
-            "opponent_id": "beiQicyd",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1779822000,
-            "match_id": "YsmQTVME",
-            "opponent": "Tirol",
-            "opponent_id": "xOpDuLLb",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 9,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Ceara SC CE",
-        "form": [
-          "D",
-          "W",
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          1,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          2,
-          2,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794765600,
-            "match_id": "IsDosQqC",
-            "opponent": "Vila Real",
-            "opponent_id": "j7vKo2Ya",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1794506400,
-            "match_id": "MgnLZMKl",
-            "opponent": "Atletico-CE",
-            "opponent_id": "vRjItq3q",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1794261600,
-            "match_id": "x4BVp8pm",
-            "opponent": "Vila Real",
-            "opponent_id": "j7vKo2Ya",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1764442800,
-            "match_id": "hMXk5Crh",
-            "opponent": "Maracana",
-            "opponent_id": "0UQkSpt7",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1763402400,
-            "match_id": "WtzKfM7D",
-            "opponent": "Caucaia",
-            "opponent_id": "6110Ftnf",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 9,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Ceara SC CE",
-            "away": "FC Atletico CE",
-            "score": [
-              2,
-              0
-            ],
-            "ts": 1794506400
-          },
-          {
-            "home": "Ceara SC CE",
-            "away": "FC Atletico CE",
-            "score": [
-              2,
-              2
-            ],
-            "ts": 1731175200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 9
-    },
-    {
-      "id": "39347306",
-      "league": "Football / Uruguay / Segunda Division",
-      "home": "Colon FC",
-      "away": "Club Oriental de Football",
-      "time": "01:30",
-      "odds": {
-        "home": 2.07,
-        "draw": 3.61,
-        "away": 3.13
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.07,
-          "draw": 3.61,
-          "away": 3.13
-        },
-        "dc": {
-          "home_draw": 1.33,
-          "draw_away": 1.64,
-          "home_away": 1.27
-        },
-        "btts": {
-          "yes": 1.58,
-          "no": 2.18
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.02,
-            "under": 9.83
-          },
-          "1.5": {
-            "over": 1.2,
-            "under": 4.01
-          },
-          "2.5": {
-            "over": 1.68,
-            "under": 2.06
-          },
-          "3.5": {
-            "over": 2.69,
-            "under": 1.41
-          },
-          "4.5": {
-            "over": 4.88,
-            "under": 1.14
-          },
-          "5.5": {
-            "over": 8.86,
-            "under": 1.03
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.19,
-            "under": 4.19
-          },
-          "1.5": {
-            "over": 1.91,
-            "under": 1.8
-          },
-          "2.5": {
-            "over": 3.75,
-            "under": 1.23
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.31,
-            "under": 3.14
-          },
-          "1.5": {
-            "over": 2.46,
-            "under": 1.48
-          },
-          "2.5": {
-            "over": 5.4,
-            "under": 1.11
-          }
-        },
-        "result_total": {
-          "2.5": {
-            "home_over": 2.89,
-            "draw_over": 10.43,
-            "away_over": 4.55,
-            "home_under": 5.31,
-            "draw_under": 4.65,
-            "away_under": 7.4
-          },
-          "3.5": {
-            "home_over": 5.14,
-            "draw_over": 10.48,
-            "away_over": 8.76,
-            "home_under": 2.95,
-            "draw_under": 4.57,
-            "away_under": 4.19
-          },
-          "4.5": {
-            "home_over": 8.45,
-            "draw_over": 48.0,
-            "away_over": 14.4,
-            "home_under": 2.4,
-            "draw_under": 3.46,
-            "away_under": 3.5
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.07,
-          "home_draw_no": 3.1,
-          "home_away_yes": 2.27,
-          "home_away_no": 2.45,
-          "draw_away_yes": 2.45,
-          "draw_away_no": 4.3
-        },
-        "x1x2_btts": {
-          "home_yes": 3.38,
-          "home_no": 3.56,
-          "away_yes": 4.81,
-          "away_no": 5.55,
-          "draw_yes": 3.88,
-          "draw_no": 12.95
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Colon FC",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          2,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          0,
-          3,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794785400,
-            "match_id": "ImK6bwo2",
-            "opponent": "Oriental",
-            "opponent_id": "YcqTeCRb",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1794511800,
-            "match_id": "EDtdRFnD",
-            "opponent": "Cerrito",
-            "opponent_id": "SloWMcWg",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793559600,
-            "match_id": "YBj8cZSg",
-            "opponent": "Atenas",
-            "opponent_id": "ptOJNwHm",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793057400,
-            "match_id": "Kp8xAPUj",
-            "opponent": "Paysandu FC",
-            "opponent_id": "xMlsAMoN",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1792191600,
-            "match_id": "rsG3sDG5",
-            "opponent": "Huracan FC",
-            "opponent_id": "S2uxdNK5",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Club Oriental de Football",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          1,
-          3,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794785400,
-            "match_id": "ImK6bwo2",
-            "opponent": "Colon",
-            "opponent_id": "O288i6FR",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1794511800,
-            "match_id": "viYskJvK",
-            "opponent": "Atenas",
-            "opponent_id": "ptOJNwHm",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793538000,
-            "match_id": "GC1U4HzK",
-            "opponent": "Paysandu FC",
-            "opponent_id": "xMlsAMoN",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792933200,
-            "match_id": "ni0OXSMc",
-            "opponent": "Huracan FC",
-            "opponent_id": "S2uxdNK5",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1792364400,
-            "match_id": "v5XPgs6S",
-            "opponent": "Uruguay Montevideo",
-            "opponent_id": "reRTGm9A",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Club Oriental de Football",
-            "away": "Colon FC",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1794785400
-          },
-          {
-            "home": "Colon FC",
-            "away": "Club Oriental de Football",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1791118800
-          },
-          {
-            "home": "Club Oriental de Football",
-            "away": "Colon FC",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1782680400
-          },
-          {
-            "home": "Club Oriental de Football",
-            "away": "Colon FC",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1774224000
-          },
-          {
-            "home": "Colon FC",
-            "away": "Club Oriental de Football",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1759604400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39077788",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "Coritiba FC PR",
-      "away": "Santos FC SP",
-      "time": "01:30",
-      "odds": {
-        "home": 3.58,
-        "draw": 3.62,
-        "away": 2.02
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.58,
-          "draw": 3.62,
-          "away": 2.02
-        },
-        "dc": {
-          "home_draw": 1.76,
-          "draw_away": 1.31,
-          "home_away": 1.31
-        },
-        "btts": {
-          "yes": 1.57,
-          "no": 2.32
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.03,
-            "under": 12.4
-          },
-          "1.5": {
-            "over": 1.21,
-            "under": 4.52
-          },
-          "2.5": {
-            "over": 1.67,
-            "under": 2.21
-          },
-          "3.5": {
-            "over": 2.62,
-            "under": 1.5
-          },
-          "4.5": {
-            "over": 4.82,
-            "under": 1.19
-          },
-          "5.5": {
-            "over": 9.18,
-            "under": 1.06
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.28,
-            "under": 3.12
-          },
-          "1.5": {
-            "over": 2.48,
-            "under": 1.43
-          },
-          "2.5": {
-            "over": 6.0,
-            "under": 1.07
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.13,
-            "under": 4.72
-          },
-          "1.5": {
-            "over": 1.76,
-            "under": 1.88
-          },
-          "2.5": {
-            "over": 3.45,
-            "under": 1.23
-          },
-          "3.5": {
-            "over": 7.58,
-            "under": 1.03
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 4.19,
-            "draw_over": 4.15,
-            "away_over": 2.3,
-            "home_under": 14.23,
-            "draw_under": 14.69,
-            "away_under": 10.29
-          },
-          "2.5": {
-            "home_over": 5.12,
-            "draw_over": 9.83,
-            "away_over": 2.81,
-            "home_under": 8.87,
-            "draw_under": 4.87,
-            "away_under": 5.6
-          },
-          "3.5": {
-            "home_over": 9.79,
-            "draw_over": 9.85,
-            "away_over": 4.75,
-            "home_under": 4.88,
-            "draw_under": 4.87,
-            "away_under": 3.07
-          },
-          "4.5": {
-            "home_over": 15.4,
-            "draw_over": 43.25,
-            "away_over": 7.65,
-            "home_under": 4.1,
-            "draw_under": 3.54,
-            "away_under": 2.47
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.57,
-          "home_draw_no": 5.03,
-          "home_away_yes": 2.33,
-          "home_away_no": 2.65,
-          "draw_away_yes": 2.03,
-          "draw_away_no": 3.2
-        },
-        "x1x2_btts": {
-          "home_yes": 5.65,
-          "home_no": 6.93,
-          "away_yes": 3.41,
-          "away_no": 3.75,
-          "draw_yes": 4.03,
-          "draw_no": 14.24
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Coritiba FC PR",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          0,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          1,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1793752200,
-            "match_id": "nekZ4qXI",
-            "opponent": "Internacional",
-            "opponent_id": "tSCiHj0I",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793473200,
-            "match_id": "vmuc3WeE",
-            "opponent": "Vitoria",
-            "opponent_id": "8bSbHipn",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793053800,
-            "match_id": "UJYsf713",
-            "opponent": "Gremio",
-            "opponent_id": "E1EFmhVh",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792272600,
-            "match_id": "MyxaPedC",
-            "opponent": "Atletico-MG",
-            "opponent_id": "hGLC5Bah",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1791831600,
-            "match_id": "OKIyMMkK",
-            "opponent": "Botafogo RJ",
-            "opponent_id": "jXzWoWa5",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 20,
-        "opposition_position": 9
-      },
-      "away_stats": {
-        "name": "Santos FC SP",
-        "form": [
-          "L",
-          "D",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          1,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1793660400,
-            "match_id": "IFcI8RXg",
-            "opponent": "Bragantino",
-            "opponent_id": "jwKvKhGa",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1793226600,
-            "match_id": "21vH6po9",
-            "opponent": "Palmeiras",
-            "opponent_id": "hMn9FTbH",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792890000,
-            "match_id": "KpqbfGen",
-            "opponent": "Bahia",
-            "opponent_id": "UeD7XtzM",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792350000,
-            "match_id": "MF0OCIC6",
-            "opponent": "Fluminense",
-            "opponent_id": "EV9L3kU4",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1791745200,
-            "match_id": "zaxs0uT0",
-            "opponent": "Atletico-MG",
-            "opponent_id": "hGLC5Bah",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 20,
-        "opposition_position": 13
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Santos FC SP",
-            "away": "Coritiba FC PR",
-            "score": [
-              0,
-              3
-            ],
-            "ts": 1779026400
-          },
-          {
-            "home": "Coritiba FC PR",
-            "away": "Santos FC SP",
-            "score": [
-              0,
-              2
-            ],
-            "ts": 1778711400
-          },
-          {
-            "home": "Santos FC SP",
-            "away": "Coritiba FC PR",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1776897000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "39153873",
-      "league": "Football / Venezuela / Copa Venezuela",
-      "home": "UCV FC",
-      "away": "Caracas FC",
-      "time": "02:00",
-      "odds": {
-        "home": 2.42,
-        "draw": 3.05,
-        "away": 2.8
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.42,
-          "draw": 3.05,
-          "away": 2.8
-        },
-        "dc": {
-          "home_draw": 1.38,
-          "draw_away": 1.48,
-          "home_away": 1.34
-        },
-        "btts": {
-          "yes": 1.83,
-          "no": 1.81
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.07,
-            "under": 6.6
-          },
-          "1.5": {
-            "over": 1.36,
-            "under": 2.85
-          },
-          "2.5": {
-            "over": 2.11,
-            "under": 1.62
-          },
-          "3.5": {
-            "over": 3.65,
-            "under": 1.22
-          },
-          "4.5": {
-            "over": 6.6,
-            "under": 1.06
-          },
-          "5.5": {
-            "over": 9.8,
-            "under": 1.01
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 2.36,
-            "under": 1.42
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.34,
-            "under": 2.6
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 3.25,
-            "draw_over": 4.3,
-            "away_over": 3.92,
-            "home_under": 7.84,
-            "draw_under": 8.8,
-            "away_under": 8.8
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 4.6,
-          "home_no": 3.45,
-          "away_yes": 5.4,
-          "away_no": 4.0,
-          "draw_yes": 3.7,
-          "draw_no": 7.2
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "UCV FC",
-        "form": [],
-        "goals_scored": [],
-        "goals_conceded": [],
-        "recent_results": [],
-        "league_position": 8,
-        "total_teams_in_league": 14,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "Caracas FC",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          3,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794092400,
-            "match_id": "",
-            "opponent": "Puerto Cabello",
-            "opponent_id": "Mgr9ojjj",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1793741400,
-            "match_id": "",
-            "opponent": "Monagas",
-            "opponent_id": "MHPrulvq",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793489400,
-            "match_id": "",
-            "opponent": "Monagas",
-            "opponent_id": "MHPrulvq",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1793136600,
-            "match_id": "",
-            "opponent": "Puerto Cabello",
-            "opponent_id": "Mgr9ojjj",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792879200,
-            "match_id": "",
-            "opponent": "Dep. Tachira",
-            "opponent_id": "t8oez9vd",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 14,
-        "opposition_position": 2
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 14
-    },
-    {
-      "id": "39054023",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "Clube do Remo PA",
-      "away": "Chapecoense SC",
-      "time": "02:00",
-      "odds": {
-        "home": 1.42,
-        "draw": 4.74,
-        "away": 7.38
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.42,
-          "draw": 4.74,
-          "away": 7.38
-        },
-        "dc": {
-          "home_draw": 1.12,
-          "draw_away": 2.66,
-          "home_away": 1.2
-        },
-        "btts": {
-          "yes": 1.97,
-          "no": 1.78
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.04,
-            "under": 11.68
-          },
-          "1.5": {
-            "over": 1.25,
-            "under": 4.04
-          },
-          "2.5": {
-            "over": 1.76,
-            "under": 2.07
-          },
-          "3.5": {
-            "over": 2.91,
-            "under": 1.42
-          },
-          "4.5": {
-            "over": 5.48,
-            "under": 1.15
-          },
-          "5.5": {
-            "over": 10.69,
-            "under": 1.05
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.07,
-            "under": 6.14
-          },
-          "1.5": {
-            "over": 1.5,
-            "under": 2.31
-          },
-          "2.5": {
-            "over": 2.59,
-            "under": 1.4
-          },
-          "3.5": {
-            "over": 5.23,
-            "under": 1.1
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.69,
-            "under": 1.97
-          },
-          "1.5": {
-            "over": 4.57,
-            "under": 1.13
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.65,
-            "draw_over": 5.94,
-            "away_over": 9.87,
-            "home_under": 6.99,
-            "draw_under": 13.34,
-            "away_under": 18.41
-          },
-          "2.5": {
-            "home_over": 2.09,
-            "draw_over": 18.14,
-            "away_over": 12.63,
-            "home_under": 3.57,
-            "draw_under": 5.45,
-            "away_under": 13.57
-          },
-          "3.5": {
-            "home_over": 3.49,
-            "draw_over": 18.16,
-            "away_over": 32.02,
-            "home_under": 2.11,
-            "draw_under": 5.46,
-            "away_under": 8.28
-          },
-          "4.5": {
-            "home_over": 6.07,
-            "draw_over": 99.17,
-            "away_over": 51.27,
-            "home_under": 1.7,
-            "draw_under": 4.33,
-            "away_under": 7.4
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.22,
-          "home_draw_no": 2.0,
-          "home_away_yes": 2.71,
-          "home_away_no": 1.98,
-          "draw_away_yes": 4.39,
-          "draw_away_no": 6.8
-        },
-        "x1x2_btts": {
-          "home_yes": 3.07,
-          "home_no": 2.15,
-          "away_yes": 13.19,
-          "away_no": 11.96,
-          "draw_yes": 5.79,
-          "draw_no": 13.04
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Clube do Remo PA",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          6,
-          1,
-          1,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1793917800,
-            "match_id": "",
-            "opponent": "Palmeiras",
-            "opponent_id": "hMn9FTbH",
-            "home_away": "A",
-            "score": [
-              1,
-              6
-            ]
-          },
-          {
-            "ts": 1793233800,
-            "match_id": "",
-            "opponent": "Botafogo RJ",
-            "opponent_id": "jXzWoWa5",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792796400,
-            "match_id": "",
-            "opponent": "Cruzeiro",
-            "opponent_id": "0SwtclaU",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792362600,
-            "match_id": "",
-            "opponent": "Bragantino",
-            "opponent_id": "jwKvKhGa",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1791666000,
-            "match_id": "",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 19,
-        "total_teams_in_league": 20,
-        "opposition_position": 20
-      },
-      "away_stats": {
-        "name": "Chapecoense SC",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          3,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794699000,
-            "match_id": "",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793745000,
-            "match_id": "",
-            "opponent": "Mirassol",
-            "opponent_id": "pQ8ryEe7",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1793226600,
-            "match_id": "",
-            "opponent": "Bragantino",
-            "opponent_id": "jwKvKhGa",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1792881000,
-            "match_id": "",
-            "opponent": "Fluminense",
-            "opponent_id": "EV9L3kU4",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792270800,
-            "match_id": "",
-            "opponent": "Botafogo RJ",
-            "opponent_id": "jXzWoWa5",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 20,
-        "total_teams_in_league": 20,
-        "opposition_position": 20
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Chapecoense SC",
-            "away": "Clube do Remo PA",
-            "score": [
-              2,
-              3
-            ],
-            "ts": 1779053400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "39077790",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "Cruzeiro EC MG",
-      "away": "SE Palmeiras SP",
-      "time": "02:30",
-      "odds": {
-        "home": 2.71,
-        "draw": 3.58,
-        "away": 2.49
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.71,
-          "draw": 3.58,
-          "away": 2.49
-        },
-        "dc": {
-          "home_draw": 1.53,
-          "draw_away": 1.46,
-          "home_away": 1.31
-        },
-        "btts": {
-          "yes": 1.54,
-          "no": 2.37
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.03,
-            "under": 12.44
-          },
-          "1.5": {
-            "over": 1.21,
-            "under": 4.51
-          },
-          "2.5": {
-            "over": 1.67,
-            "under": 2.21
-          },
-          "3.5": {
-            "over": 2.63,
-            "under": 1.49
-          },
-          "4.5": {
-            "over": 4.83,
-            "under": 1.19
-          },
-          "5.5": {
-            "over": 9.23,
-            "under": 1.06
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.2,
-            "under": 3.72
-          },
-          "1.5": {
-            "over": 2.1,
-            "under": 1.6
-          },
-          "2.5": {
-            "over": 4.6,
-            "under": 1.13
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.18,
-            "under": 3.95
-          },
-          "1.5": {
-            "over": 1.99,
-            "under": 1.67
-          },
-          "2.5": {
-            "over": 4.25,
-            "under": 1.16
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 3.12,
-            "draw_over": 4.09,
-            "away_over": 2.86,
-            "home_under": 12.16,
-            "draw_under": 14.97,
-            "away_under": 11.58
-          },
-          "2.5": {
-            "home_over": 3.81,
-            "draw_over": 9.54,
-            "away_over": 3.48,
-            "home_under": 7.13,
-            "draw_under": 4.88,
-            "away_under": 6.66
-          },
-          "3.5": {
-            "home_over": 6.85,
-            "draw_over": 9.54,
-            "away_over": 6.16,
-            "home_under": 3.9,
-            "draw_under": 4.88,
-            "away_under": 3.64
-          },
-          "4.5": {
-            "home_over": 10.88,
-            "draw_over": 41.11,
-            "away_over": 9.81,
-            "home_under": 3.21,
-            "draw_under": 3.52,
-            "away_under": 2.97
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.27,
-          "home_draw_no": 4.14,
-          "home_away_yes": 2.29,
-          "home_away_no": 2.72,
-          "draw_away_yes": 2.19,
-          "draw_away_no": 3.87
-        },
-        "x1x2_btts": {
-          "home_yes": 4.35,
-          "home_no": 5.23,
-          "away_yes": 4.03,
-          "away_no": 4.77,
-          "draw_yes": 3.96,
-          "draw_no": 14.47
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Cruzeiro EC MG",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          1,
-          4,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          0,
-          2,
-          4
-        ],
-        "recent_results": [
-          {
-            "ts": 1793925000,
-            "match_id": "vVoR6526",
-            "opponent": "Bahia",
-            "opponent_id": "UeD7XtzM",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1793313000,
-            "match_id": "lbC4ct8e",
-            "opponent": "Atletico-MG",
-            "opponent_id": "hGLC5Bah",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792796400,
-            "match_id": "rRhmYPvp",
-            "opponent": "Remo",
-            "opponent_id": "2i0B6Zul",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792350000,
-            "match_id": "U1u7NZQO",
-            "opponent": "Gremio",
-            "opponent_id": "E1EFmhVh",
-            "home_away": "A",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "ts": 1791849600,
-            "match_id": "vXrY11bl",
-            "opponent": "Bragantino",
-            "opponent_id": "jwKvKhGa",
-            "home_away": "A",
-            "score": [
-              2,
-              4
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 20,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "SE Palmeiras SP",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          6,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          0,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794168000,
-            "match_id": "nJjxBKU0",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1793917800,
-            "match_id": "Q7uBAm3s",
-            "opponent": "Remo",
-            "opponent_id": "2i0B6Zul",
-            "home_away": "H",
-            "score": [
-              6,
-              1
-            ]
-          },
-          {
-            "ts": 1793559600,
-            "match_id": "vgmUCt0l",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793226600,
-            "match_id": "21vH6po9",
-            "opponent": "Santos",
-            "opponent_id": "n3QdnjFB",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792877400,
-            "match_id": "GCx7hfQb",
-            "opponent": "Bragantino",
-            "opponent_id": "jwKvKhGa",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 20,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "SE Palmeiras SP",
-            "away": "Cruzeiro EC MG",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1778976000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "39077789",
-      "league": "Football / Brazil / Brasileiro Serie A",
-      "home": "CR Flamengo RJ",
-      "away": "CA Paranaense PR",
-      "time": "02:30",
-      "odds": {
-        "home": 1.18,
-        "draw": 7.68,
-        "away": 13.56
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.18,
-          "draw": 7.68,
-          "away": 13.56
-        },
-        "dc": {
-          "home_draw": 1.05,
-          "draw_away": 4.07,
-          "home_away": 1.1
-        },
-        "btts": {
-          "yes": 2.06,
-          "no": 1.71
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.01,
-            "under": 16.52
-          },
-          "1.5": {
-            "over": 1.14,
-            "under": 5.77
-          },
-          "2.5": {
-            "over": 1.46,
-            "under": 2.73
-          },
-          "3.5": {
-            "over": 2.17,
-            "under": 1.7
-          },
-          "4.5": {
-            "over": 3.63,
-            "under": 1.29
-          },
-          "5.5": {
-            "over": 6.69,
-            "under": 1.11
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 1.22,
-            "under": 3.53
-          },
-          "2.5": {
-            "over": 1.79,
-            "under": 1.85
-          },
-          "3.5": {
-            "over": 3.03,
-            "under": 1.3
-          },
-          "4.5": {
-            "over": 5.78,
-            "under": 1.08
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.87,
-            "under": 1.77
-          },
-          "1.5": {
-            "over": 5.55,
-            "under": 1.09
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.29,
-            "draw_over": 8.55,
-            "away_over": 16.65,
-            "home_under": 8.26,
-            "draw_under": 21.81,
-            "away_under": 32.42
-          },
-          "2.5": {
-            "home_over": 1.55,
-            "draw_over": 24.78,
-            "away_over": 21.17,
-            "home_under": 3.81,
-            "draw_under": 8.76,
-            "away_under": 25.69
-          },
-          "3.5": {
-            "home_over": 2.26,
-            "draw_over": 25.3,
-            "away_over": 54.59,
-            "home_under": 2.12,
-            "draw_under": 8.94,
-            "away_under": 15.18
-          },
-          "4.5": {
-            "home_over": 3.55,
-            "draw_over": 99.49,
-            "away_over": 81.18,
-            "home_under": 1.59,
-            "draw_under": 6.9,
-            "away_under": 13.7
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.18,
-          "home_draw_no": 1.8,
-          "home_away_yes": 2.48,
-          "home_away_no": 1.8,
-          "draw_away_yes": 6.87,
-          "draw_away_no": 12.59
-        },
-        "x1x2_btts": {
-          "home_yes": 2.54,
-          "home_no": 1.79,
-          "away_yes": 21.76,
-          "away_no": 23.38,
-          "draw_yes": 8.74,
-          "draw_no": 22.37
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "CR Flamengo RJ",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          3,
-          4,
-          3,
-          0,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          2,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1793831400,
-            "match_id": "",
-            "opponent": "Gremio",
-            "opponent_id": "E1EFmhVh",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793314800,
-            "match_id": "",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1793055600,
-            "match_id": "",
-            "opponent": "Atletico-MG",
-            "opponent_id": "hGLC5Bah",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1792715400,
-            "match_id": "",
-            "opponent": "Estudiantes L.P. (Arg)",
-            "opponent_id": "p2SkCHXs",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792359000,
-            "match_id": "",
-            "opponent": "Bahia",
-            "opponent_id": "UeD7XtzM",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 20,
-        "opposition_position": 5
-      },
-      "away_stats": {
-        "name": "CA Paranaense PR",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          0,
-          4
-        ],
-        "goals_conceded": [
-          3,
-          2,
-          1,
-          2,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1793831400,
-            "match_id": "",
-            "opponent": "Vasco",
-            "opponent_id": "2RABlYFn",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1793320200,
-            "match_id": "",
-            "opponent": "Gremio",
-            "opponent_id": "E1EFmhVh",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1792870200,
-            "match_id": "",
-            "opponent": "Vitoria",
-            "opponent_id": "8bSbHipn",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792276200,
-            "match_id": "",
-            "opponent": "Palmeiras",
-            "opponent_id": "hMn9FTbH",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1791844200,
-            "match_id": "",
-            "opponent": "Chapecoense-SC",
-            "opponent_id": "jcQV3XP6",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          }
-        ],
-        "league_position": 5,
-        "total_teams_in_league": 20,
-        "opposition_position": 5
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA Paranaense PR",
-            "away": "CR Flamengo RJ",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1779057000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "39407118",
-      "league": "Football / Bolivia / Copa Division Profesional",
-      "home": "Always Ready",
-      "away": "Real Potosi",
-      "time": "02:30",
-      "odds": {
-        "home": 1.49,
-        "draw": 4.34,
-        "away": 5.32
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.49,
-          "draw": 4.34,
-          "away": 5.32
-        },
-        "dc": {
-          "home_draw": 1.13,
-          "draw_away": 2.27,
-          "home_away": 1.18
-        },
-        "btts": {
-          "yes": 1.65,
-          "no": 2.03
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.16,
-            "under": 4.42
-          },
-          "2.5": {
-            "over": 1.54,
-            "under": 2.27
-          },
-          "3.5": {
-            "over": 2.36,
-            "under": 1.5
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.06,
-            "under": 5.43
-          },
-          "1.5": {
-            "over": 1.44,
-            "under": 2.29
-          },
-          "2.5": {
-            "over": 2.37,
-            "under": 1.41
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.44,
-            "under": 2.3
-          },
-          "1.5": {
-            "over": 3.11,
-            "under": 1.24
-          },
-          "2.5": {
-            "over": 6.84,
-            "under": 1.02
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.67,
-            "draw_over": 5.38,
-            "away_over": 6.91,
-            "home_under": 9.02,
-            "draw_under": 17.28,
-            "away_under": 19.2
-          },
-          "2.5": {
-            "home_over": 2.03,
-            "draw_over": 13.39,
-            "away_over": 8.61,
-            "home_under": 4.49,
-            "draw_under": 5.93,
-            "away_under": 13.39
-          },
-          "3.5": {
-            "home_over": 3.25,
-            "draw_over": 13.37,
-            "away_over": 18.14,
-            "home_under": 2.44,
-            "draw_under": 6.11,
-            "away_under": 7.26
-          },
-          "4.5": {
-            "home_over": 5.2,
-            "draw_over": 57.8,
-            "away_over": 27.93,
-            "home_under": 1.92,
-            "draw_under": 4.43,
-            "away_under": 6.36
-          }
-        }
-      },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
-      "home_stats": {
-        "name": "Always Ready",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          3,
-          4,
-          3
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          2,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794769200,
-            "match_id": "zgzwF1x0",
-            "opponent": "Independiente",
-            "opponent_id": "8AXozsR8",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1794434400,
-            "match_id": "SSWUGN7m",
-            "opponent": "Independiente",
-            "opponent_id": "8AXozsR8",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1794086100,
-            "match_id": "EagNqCYO",
-            "opponent": "Academia del Balompie",
-            "opponent_id": "Oh2AVRlj",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1793838600,
-            "match_id": "MclUcLhL",
-            "opponent": "The Strongest",
-            "opponent_id": "Wfi42xS2",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1793575800,
-            "match_id": "prlUfxsQ",
-            "opponent": "Universitario de Vinto",
-            "opponent_id": "Crksl26f",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Real Potosi",
-        "form": [
-          "W",
-          "D",
-          "D",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          5,
-          1,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          5,
-          1,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794778200,
-            "match_id": "OlVDJgm4",
-            "opponent": "Nacional Potosi",
-            "opponent_id": "hUyau0Vc",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1794524400,
-            "match_id": "jNH6LFIi",
-            "opponent": "Nacional Potosi",
-            "opponent_id": "hUyau0Vc",
-            "home_away": "H",
-            "score": [
-              5,
-              5
-            ]
-          },
-          {
-            "ts": 1794164400,
-            "match_id": "Clxu2glg",
-            "opponent": "Nacional Potosi",
-            "opponent_id": "hUyau0Vc",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793919600,
-            "match_id": "vHT1CK7E",
-            "opponent": "Bolivar",
-            "opponent_id": "WImzpcSF",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793397600,
-            "match_id": "hls1Xsq2",
-            "opponent": "Independiente",
-            "opponent_id": "8AXozsR8",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Always Ready",
-            "away": "Real Potosi",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1786906800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
     {
       "id": "39071956",
       "league": "Football / Brazil / Brasileiro Serie A",
@@ -2813,7 +141,7 @@
           "draw_no": 15.2
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Gremio FB Porto Alegrense RS",
         "form": [
@@ -2993,29 +321,29 @@
       "away": "Botafogo FR RJ",
       "time": "03:30",
       "odds": {
-        "home": 1.7,
-        "draw": 3.85,
-        "away": 4.94
+        "home": 1.68,
+        "draw": 3.87,
+        "away": 5.12
       },
       "markets": {
         "1x2": {
-          "home": 1.7,
-          "draw": 3.85,
-          "away": 4.94
+          "home": 1.68,
+          "draw": 3.87,
+          "away": 5.12
         },
         "dc": {
-          "home_draw": 1.2,
-          "draw_away": 2.07,
+          "home_draw": 1.19,
+          "draw_away": 2.1,
           "home_away": 1.28
         },
         "btts": {
-          "yes": 1.82,
-          "no": 1.92
+          "yes": 1.83,
+          "no": 1.91
         },
         "total_goals": {
           "0.5": {
             "over": 1.05,
-            "under": 10.52
+            "under": 10.51
           },
           "1.5": {
             "over": 1.28,
@@ -3041,83 +369,83 @@
         "home_goals": {
           "0.5": {
             "over": 1.12,
-            "under": 4.86
+            "under": 4.92
           },
           "1.5": {
-            "over": 1.72,
-            "under": 1.93
+            "over": 1.71,
+            "under": 1.95
           },
           "2.5": {
-            "over": 3.31,
-            "under": 1.25
+            "over": 3.25,
+            "under": 1.26
           },
           "3.5": {
-            "over": 7.16,
+            "over": 7.03,
             "under": 1.04
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.5,
-            "under": 2.32
+            "over": 1.51,
+            "under": 2.28
           },
           "1.5": {
-            "over": 3.53,
-            "under": 1.22
+            "over": 3.61,
+            "under": 1.21
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 2.01,
-            "draw_over": 4.82,
-            "away_over": 6.41,
-            "home_under": 7.51,
-            "draw_under": 11.75,
-            "away_under": 14.09
+            "home_over": 1.98,
+            "draw_over": 4.85,
+            "away_over": 6.65,
+            "home_under": 7.46,
+            "draw_under": 11.72,
+            "away_under": 14.37
           },
           "2.5": {
-            "home_over": 2.57,
-            "draw_over": 13.96,
-            "away_over": 8.18,
-            "home_under": 4.06,
+            "home_over": 2.54,
+            "draw_over": 14.14,
+            "away_over": 8.48,
+            "home_under": 4.01,
             "draw_under": 4.6,
-            "away_under": 9.71
+            "away_under": 9.95
           },
           "3.5": {
-            "home_over": 4.55,
-            "draw_over": 13.92,
-            "away_over": 18.82,
-            "home_under": 2.41,
+            "home_over": 4.47,
+            "draw_over": 14.11,
+            "away_over": 19.74,
+            "home_under": 2.38,
             "draw_under": 4.59,
-            "away_under": 5.83
+            "away_under": 5.99
           },
           "4.5": {
-            "home_over": 7.97,
-            "draw_over": 77.6,
-            "away_over": 31.08,
-            "home_under": 1.97,
-            "draw_under": 3.61,
-            "away_under": 5.12
+            "home_over": 7.86,
+            "draw_over": 79.28,
+            "away_over": 32.57,
+            "home_under": 1.94,
+            "draw_under": 3.62,
+            "away_under": 5.29
           }
         },
         "dc_btts": {
           "home_draw_yes": 2.18,
-          "home_draw_no": 2.36,
-          "home_away_yes": 2.69,
-          "home_away_no": 2.21,
-          "draw_away_yes": 3.32,
-          "draw_away_no": 5.19
+          "home_draw_no": 2.33,
+          "home_away_yes": 2.7,
+          "home_away_no": 2.2,
+          "draw_away_yes": 3.38,
+          "draw_away_no": 5.27
         },
         "x1x2_btts": {
-          "home_yes": 3.43,
-          "home_no": 2.69,
-          "away_yes": 8.79,
-          "away_no": 8.24,
-          "draw_yes": 4.67,
-          "draw_no": 11.39
+          "home_yes": 3.41,
+          "home_no": 2.64,
+          "away_yes": 9.1,
+          "away_no": 8.49,
+          "draw_yes": 4.7,
+          "draw_no": 11.35
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "SC Corinthians SP",
         "form": [
@@ -3200,7 +528,7 @@
         ],
         "league_position": 17,
         "total_teams_in_league": 20,
-        "opposition_position": 12
+        "opposition_position": 13
       },
       "away_stats": {
         "name": "Botafogo FR RJ",
@@ -3282,7 +610,7 @@
             ]
           }
         ],
-        "league_position": 12,
+        "league_position": 13,
         "total_teams_in_league": 20,
         "opposition_position": 17
       },
@@ -3425,7 +753,7 @@
           "draw_no": 11.03
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Independiente de La Chorrera",
         "form": [
@@ -3747,7 +1075,7 @@
           "draw_no": 22.06
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Lions FC",
         "form": [
@@ -4055,7 +1383,7 @@
           "draw_no": 36.87
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Preston Lions FC",
         "form": [
@@ -4363,7 +1691,7 @@
           "draw_no": 11.05
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "RB Omiya Ardija Women",
         "form": [
@@ -4652,7 +1980,7 @@
           "draw_away_no": 3.55
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Moik Baku",
         "form": [
@@ -4862,24 +2190,24 @@
       "away": "Shillong Lajong FC",
       "time": "13:30",
       "odds": {
-        "home": 3.1,
-        "draw": 3.45,
-        "away": 2.06
+        "home": 3.2,
+        "draw": 3.5,
+        "away": 1.99
       },
       "markets": {
         "1x2": {
-          "home": 3.1,
-          "draw": 3.45,
-          "away": 2.06
+          "home": 3.2,
+          "draw": 3.5,
+          "away": 1.99
         },
         "dc": {
-          "home_draw": 1.64,
-          "draw_away": 1.32,
-          "home_away": 1.28
+          "home_draw": 1.68,
+          "draw_away": 1.3,
+          "home_away": 1.27
         },
         "btts": {
-          "yes": 1.61,
-          "no": 2.1
+          "yes": 1.62,
+          "no": 2.08
         },
         "total_goals": {
           "0.5": {
@@ -4892,10 +2220,10 @@
           },
           "2.5": {
             "over": 1.71,
-            "under": 1.97
+            "under": 1.98
           },
           "3.5": {
-            "over": 2.7,
+            "over": 2.75,
             "under": 1.38
           },
           "4.5": {
@@ -4909,36 +2237,36 @@
         },
         "home_goals": {
           "1.5": {
-            "over": 2.37,
-            "under": 1.41
+            "over": 2.44,
+            "under": 1.39
           }
         },
         "away_goals": {
           "1.5": {
-            "over": 1.86,
-            "under": 1.69
+            "over": 1.82,
+            "under": 1.72
           }
         },
         "result_total": {
           "3.5": {
-            "home_over": 9.56,
-            "draw_over": 11.47,
-            "away_over": 5.55,
-            "home_under": 4.3,
-            "draw_under": 4.68,
-            "away_under": 3.01
+            "home_over": 10.5,
+            "draw_over": 11.46,
+            "away_over": 5.35,
+            "home_under": 4.39,
+            "draw_under": 4.77,
+            "away_under": 2.91
           }
         },
         "x1x2_btts": {
-          "home_yes": 4.8,
-          "home_no": 5.2,
-          "away_yes": 3.35,
-          "away_no": 3.35,
-          "draw_yes": 3.75,
+          "home_yes": 5.0,
+          "home_no": 5.4,
+          "away_yes": 3.3,
+          "away_no": 3.25,
+          "draw_yes": 3.8,
           "draw_no": 11.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Dempo SC",
         "form": [
@@ -5269,7 +2597,7 @@
           "draw_no": 23.09
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "MFK Zvolen",
         "form": [
@@ -5451,13 +2779,13 @@
       "odds": {
         "home": 1.07,
         "draw": 8.4,
-        "away": 21.0
+        "away": 20.0
       },
       "markets": {
         "1x2": {
           "home": 1.07,
           "draw": 8.4,
-          "away": 21.0
+          "away": 20.0
         },
         "dc": {
           "home_draw": 1.01,
@@ -5465,8 +2793,8 @@
           "home_away": 1.04
         },
         "btts": {
-          "yes": 2.36,
-          "no": 1.48
+          "yes": 2.33,
+          "no": 1.49
         },
         "total_goals": {
           "0.5": {
@@ -5491,41 +2819,41 @@
           },
           "5.5": {
             "over": 4.5,
-            "under": 1.16
+            "under": 1.15
           }
         },
         "home_goals": {
           "3.5": {
-            "over": 2.11,
+            "over": 2.12,
             "under": 1.52
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 2.2,
-            "under": 1.48
+            "over": 2.18,
+            "under": 1.49
           }
         },
         "result_total": {
           "1.5": {
             "home_over": 1.12,
-            "draw_over": 13.44,
-            "away_over": 38.41,
-            "home_under": 9.41,
-            "draw_under": 27.85,
-            "away_under": 57.62
+            "draw_over": 13.43,
+            "away_over": 38.37,
+            "home_under": 9.4,
+            "draw_under": 28.78,
+            "away_under": 57.56
           }
         },
         "x1x2_btts": {
-          "home_yes": 2.27,
-          "home_no": 1.39,
-          "away_yes": 40.0,
+          "home_yes": 2.25,
+          "home_no": 1.4,
+          "away_yes": 35.0,
           "away_no": 35.0,
           "draw_yes": 11.0,
-          "draw_no": 22.0
+          "draw_no": 23.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Persib Bandung",
         "form": [
@@ -5781,7 +3109,7 @@
           "draw_no": 11.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "PKR Svay Rieng",
         "form": [
@@ -6031,7 +3359,7 @@
           "draw_away_no": 2.8
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Khankendi FK",
         "form": [
@@ -6237,7 +3565,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "NK Dob",
         "form": [
@@ -6417,24 +3745,24 @@
       "away": "Johor Darul Ta'zim",
       "time": "15:30",
       "odds": {
-        "home": 4.0,
-        "draw": 3.75,
-        "away": 1.71
+        "home": 4.4,
+        "draw": 3.85,
+        "away": 1.63
       },
       "markets": {
         "1x2": {
-          "home": 4.0,
-          "draw": 3.75,
-          "away": 1.71
+          "home": 4.4,
+          "draw": 3.85,
+          "away": 1.63
         },
         "dc": {
-          "home_draw": 1.92,
-          "draw_away": 1.22,
-          "home_away": 1.24
+          "home_draw": 2.02,
+          "draw_away": 1.19,
+          "home_away": 1.23
         },
         "btts": {
-          "yes": 1.53,
-          "no": 2.24
+          "yes": 1.54,
+          "no": 2.21
         },
         "total_goals": {
           "0.5": {
@@ -6442,58 +3770,58 @@
             "under": 9.2
           },
           "1.5": {
-            "over": 1.16,
-            "under": 4.4
+            "over": 1.15,
+            "under": 4.5
           },
           "2.5": {
-            "over": 1.53,
-            "under": 2.28
+            "over": 1.52,
+            "under": 2.32
           },
           "3.5": {
-            "over": 2.29,
-            "under": 1.53
+            "over": 2.25,
+            "under": 1.55
           },
           "4.5": {
-            "over": 3.85,
+            "over": 3.75,
             "under": 1.21
           },
           "5.5": {
-            "over": 6.4,
+            "over": 6.2,
             "under": 1.07
           }
         },
         "home_goals": {
           "1.5": {
-            "over": 2.48,
-            "under": 1.37
+            "over": 2.6,
+            "under": 1.34
           }
         },
         "away_goals": {
           "1.5": {
-            "over": 1.55,
-            "under": 2.07
+            "over": 1.5,
+            "under": 2.16
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 4.99,
-            "draw_over": 4.51,
-            "away_over": 1.93,
-            "home_under": 17.29,
-            "draw_under": 17.29,
-            "away_under": 10.57
+            "home_over": 5.52,
+            "draw_over": 4.66,
+            "away_over": 1.82,
+            "home_under": 19.02,
+            "draw_under": 18.07,
+            "away_under": 10.46
           }
         },
         "x1x2_btts": {
-          "home_yes": 5.6,
-          "home_no": 7.6,
-          "away_yes": 2.65,
-          "away_no": 2.95,
-          "draw_yes": 3.85,
-          "draw_no": 14.0
+          "home_yes": 6.2,
+          "home_no": 8.4,
+          "away_yes": 2.55,
+          "away_no": 2.8,
+          "draw_yes": 3.95,
+          "draw_no": 15.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Cong An Ha Noi FC",
         "form": [
@@ -6785,7 +4113,7 @@
           "draw_no": 4.8
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "La Viena FC",
         "form": [
@@ -7012,7 +4340,7 @@
           "3.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "ND Beltinci",
         "form": [
@@ -7304,7 +4632,7 @@
           "draw_no": 5.72
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "El Dakhleya Sc",
         "form": [
@@ -7500,24 +4828,24 @@
           "home_away": 1.4
         },
         "btts": {
-          "yes": 2.26,
-          "no": 1.55
+          "yes": 2.22,
+          "no": 1.57
         },
         "total_goals": {
           "0.5": {
-            "over": 1.12,
-            "under": 5.31
+            "over": 1.11,
+            "under": 5.47
           },
           "1.5": {
-            "over": 1.59,
-            "under": 2.22
+            "over": 1.57,
+            "under": 2.26
           },
           "2.5": {
-            "over": 2.86,
-            "under": 1.37
+            "over": 2.8,
+            "under": 1.38
           },
           "3.5": {
-            "over": 5.68,
+            "over": 5.51,
             "under": 1.11
           },
           "4.5": {
@@ -7527,12 +4855,12 @@
         },
         "home_goals": {
           "0.5": {
-            "over": 1.52,
-            "under": 2.38
+            "over": 1.5,
+            "under": 2.41
           },
           "1.5": {
-            "over": 3.4,
-            "under": 1.27
+            "over": 3.35,
+            "under": 1.28
           },
           "2.5": {
             "over": 7.98,
@@ -7541,62 +4869,62 @@
         },
         "away_goals": {
           "0.5": {
-            "over": 1.49,
-            "under": 2.43
+            "over": 1.48,
+            "under": 2.47
           },
           "1.5": {
-            "over": 3.29,
-            "under": 1.29
+            "over": 3.24,
+            "under": 1.3
           },
           "2.5": {
-            "over": 7.8,
+            "over": 7.6,
             "under": 1.05
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 4.4,
-            "draw_over": 4.7,
-            "away_over": 4.2,
-            "home_under": 6.6,
-            "draw_under": 5.8,
-            "away_under": 6.4
+            "home_over": 4.39,
+            "draw_over": 4.59,
+            "away_over": 4.19,
+            "home_under": 6.79,
+            "draw_under": 5.99,
+            "away_under": 6.59
           },
           "2.5": {
             "home_over": 6.4,
-            "draw_over": 21.0,
-            "away_over": 6.2,
-            "home_under": 4.5,
+            "draw_over": 20.0,
+            "away_over": 6.0,
+            "home_under": 4.6,
             "draw_under": 3.0,
-            "away_under": 4.3
+            "away_under": 4.4
           },
           "3.5": {
-            "home_over": 16.96,
-            "draw_over": 20.96,
-            "away_over": 15.97,
-            "home_under": 3.14,
-            "draw_under": 2.99,
-            "away_under": 3.04
+            "home_over": 17.0,
+            "draw_over": 20.0,
+            "away_over": 16.0,
+            "home_under": 3.15,
+            "draw_under": 3.0,
+            "away_under": 3.05
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.95,
-          "home_draw_no": 2.36,
-          "home_away_yes": 3.9,
-          "home_away_no": 1.98,
-          "draw_away_yes": 2.9,
-          "draw_away_no": 2.31
+          "home_draw_yes": 2.9,
+          "home_draw_no": 2.4,
+          "home_away_yes": 3.85,
+          "home_away_no": 2.0,
+          "draw_away_yes": 2.85,
+          "draw_away_no": 2.34
         },
         "x1x2_btts": {
-          "home_yes": 7.21,
-          "home_no": 3.51,
-          "away_yes": 6.84,
-          "away_no": 3.37,
-          "draw_yes": 4.16,
-          "draw_no": 5.17
+          "home_yes": 7.03,
+          "home_no": 3.56,
+          "away_yes": 6.85,
+          "away_no": 3.42,
+          "draw_yes": 4.07,
+          "draw_no": 5.18
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Baladiyyat AL Mehalla",
         "form": [
@@ -7888,7 +5216,7 @@
           "draw_no": 7.4
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Pharco FC",
         "form": [
@@ -8176,7 +5504,7 @@
           "draw_no": 4.43
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "El Terasanah",
         "form": [
@@ -8452,7 +5780,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Bani Yas FC U21",
         "form": [
@@ -8614,7 +5942,7 @@
           "draw_no": 40.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al Wasl FC",
         "form": [
@@ -8878,7 +6206,7 @@
           "draw_no": 21.32
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al-Wasl U21",
         "form": [
@@ -9058,20 +6386,20 @@
       "away": "Al-Thaid  U21",
       "time": "15:45",
       "odds": {
-        "home": 5.15,
-        "draw": 4.66,
-        "away": 1.49
+        "home": 4.92,
+        "draw": 4.53,
+        "away": 1.52
       },
       "markets": {
         "1x2": {
-          "home": 5.15,
-          "draw": 4.66,
-          "away": 1.49
+          "home": 4.92,
+          "draw": 4.53,
+          "away": 1.52
         },
         "dc": {
-          "home_draw": 2.37,
-          "draw_away": 1.15,
-          "home_away": 1.17
+          "home_draw": 2.28,
+          "draw_away": 1.16,
+          "home_away": 1.18
         },
         "btts": {
           "yes": 1.4,
@@ -9092,8 +6420,8 @@
             "under": 1.39
           },
           "5.5": {
-            "over": 5.15,
-            "under": 1.13
+            "over": 4.92,
+            "under": 1.14
           }
         },
         "home_goals": {
@@ -9106,7 +6434,7 @@
             "under": 1.49
           },
           "2.5": {
-            "over": 5.93,
+            "over": 5.72,
             "under": 1.1
           }
         },
@@ -9116,8 +6444,8 @@
             "under": 2.98
           },
           "2.5": {
-            "over": 2.07,
-            "under": 1.68
+            "over": 2.13,
+            "under": 1.64
           },
           "3.5": {
             "over": 3.96,
@@ -9125,7 +6453,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al-Sharjah U21",
         "form": [],
@@ -9203,7 +6531,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Maroons FC",
         "form": [
@@ -9445,7 +6773,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Entebbe UPPC FC",
         "form": [
@@ -9713,7 +7041,7 @@
           "draw_no": 6.4
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "FK Termez Surkhon",
         "form": [
@@ -10030,7 +7358,7 @@
           "draw_no": 9.07
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "AL Salt",
         "form": [
@@ -10210,24 +7538,24 @@
       "away": "Nagaland United SC",
       "time": "16:00",
       "odds": {
-        "home": 2.65,
-        "draw": 3.45,
-        "away": 2.31
+        "home": 2.5,
+        "draw": 3.3,
+        "away": 2.5
       },
       "markets": {
         "1x2": {
-          "home": 2.65,
-          "draw": 3.45,
-          "away": 2.31
+          "home": 2.5,
+          "draw": 3.3,
+          "away": 2.5
         },
         "dc": {
-          "home_draw": 1.52,
-          "draw_away": 1.41,
-          "home_away": 1.28
+          "home_draw": 1.45,
+          "draw_away": 1.45,
+          "home_away": 1.3
         },
         "btts": {
-          "yes": 1.57,
-          "no": 2.16
+          "yes": 1.54,
+          "no": 2.23
         },
         "total_goals": {
           "0.5": {
@@ -10235,58 +7563,58 @@
             "under": 8.4
           },
           "1.5": {
-            "over": 1.21,
-            "under": 3.8
+            "over": 1.2,
+            "under": 3.9
           },
           "2.5": {
-            "over": 1.69,
-            "under": 2.01
+            "over": 1.66,
+            "under": 2.05
           },
           "3.5": {
-            "over": 2.65,
-            "under": 1.4
+            "over": 2.6,
+            "under": 1.42
           },
           "4.5": {
-            "over": 4.6,
-            "under": 1.14
+            "over": 4.5,
+            "under": 1.15
           },
           "5.5": {
-            "over": 7.6,
-            "under": 1.04
+            "over": 7.4,
+            "under": 1.05
           }
         },
         "home_goals": {
           "1.5": {
-            "over": 2.14,
-            "under": 1.51
+            "over": 2.02,
+            "under": 1.58
           }
         },
         "away_goals": {
           "1.5": {
-            "over": 1.97,
-            "under": 1.61
+            "over": 2.01,
+            "under": 1.58
           }
         },
         "result_total": {
-          "3.5": {
-            "home_over": 7.65,
-            "draw_over": 10.51,
-            "away_over": 6.31,
-            "home_under": 3.82,
-            "draw_under": 4.78,
-            "away_under": 3.39
+          "1.5": {
+            "home_over": 3.06,
+            "draw_over": 4.02,
+            "away_over": 3.02,
+            "home_under": 11.49,
+            "draw_under": 14.37,
+            "away_under": 11.49
           }
         },
         "x1x2_btts": {
-          "home_yes": 4.1,
-          "home_no": 4.5,
-          "away_yes": 3.65,
-          "away_no": 3.9,
-          "draw_yes": 3.7,
+          "home_yes": 3.85,
+          "home_no": 4.4,
+          "away_yes": 3.85,
+          "away_no": 4.4,
+          "draw_yes": 3.5,
           "draw_no": 12.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Samaleswari SC",
         "form": [
@@ -10424,20 +7752,20 @@
       "away": "Colombe Sportive Du Dja Et Lobo",
       "time": "17:30",
       "odds": {
-        "home": 2.34,
-        "draw": 3.23,
-        "away": 2.68
+        "home": 2.39,
+        "draw": 3.22,
+        "away": 2.63
       },
       "markets": {
         "1x2": {
-          "home": 2.34,
-          "draw": 3.23,
-          "away": 2.68
+          "home": 2.39,
+          "draw": 3.22,
+          "away": 2.63
         },
         "dc": {
-          "home_draw": 1.36,
-          "draw_away": 1.47,
-          "home_away": 1.27
+          "home_draw": 1.38,
+          "draw_away": 1.45,
+          "home_away": 1.28
         },
         "btts": {
           "yes": 1.72,
@@ -10457,16 +7785,16 @@
         },
         "result_total": {
           "3.5": {
-            "home_over": 8.04,
-            "draw_over": 13.4,
-            "away_over": 9.57,
-            "home_under": 3.11,
-            "draw_under": 4.12,
-            "away_under": 3.54
+            "home_over": 8.41,
+            "draw_over": 13.37,
+            "away_over": 9.55,
+            "home_under": 3.15,
+            "draw_under": 4.11,
+            "away_under": 3.44
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Aigle Royal",
         "form": [
@@ -10688,7 +8016,7 @@
           "draw_no": 11.08
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "PFC Dobrudzha Dobrich",
         "form": [
@@ -10868,29 +8196,29 @@
       "away": "Asyut Petroleum",
       "time": "18:00",
       "odds": {
-        "home": 1.78,
+        "home": 1.83,
         "draw": 3.23,
-        "away": 4.82
+        "away": 4.44
       },
       "markets": {
         "1x2": {
-          "home": 1.78,
+          "home": 1.83,
           "draw": 3.23,
-          "away": 4.82
+          "away": 4.44
         },
         "dc": {
-          "home_draw": 1.18,
-          "draw_away": 1.86,
+          "home_draw": 1.2,
+          "draw_away": 1.8,
           "home_away": 1.31
         },
         "btts": {
-          "yes": 2.29,
-          "no": 1.53
+          "yes": 2.26,
+          "no": 1.55
         },
         "total_goals": {
           "0.5": {
             "over": 1.09,
-            "under": 6.26
+            "under": 6.31
           },
           "1.5": {
             "over": 1.49,
@@ -10911,76 +8239,76 @@
         },
         "home_goals": {
           "0.5": {
-            "over": 1.26,
-            "under": 3.45
+            "over": 1.28,
+            "under": 3.35
           },
           "1.5": {
-            "over": 2.22,
-            "under": 1.59
+            "over": 2.28,
+            "under": 1.56
           },
           "2.5": {
-            "over": 4.7,
-            "under": 1.15
+            "over": 4.9,
+            "under": 1.14
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.79,
-            "under": 1.92
+            "over": 1.74,
+            "under": 1.98
           },
           "1.5": {
-            "over": 4.79,
-            "under": 1.15
+            "over": 4.49,
+            "under": 1.17
           },
           "2.5": {
-            "over": 11.0,
-            "under": 1.01
+            "over": 10.0,
+            "under": 1.02
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 2.36,
-            "draw_over": 5.18,
-            "away_over": 7.68,
-            "home_under": 4.99,
-            "draw_under": 6.72,
-            "away_under": 9.6
+            "home_over": 2.46,
+            "draw_over": 5.01,
+            "away_over": 6.93,
+            "home_under": 5.2,
+            "draw_under": 6.74,
+            "away_under": 9.24
           },
           "2.5": {
-            "home_over": 3.42,
-            "draw_over": 22.13,
-            "away_over": 10.58,
-            "home_under": 3.03,
-            "draw_under": 3.37,
-            "away_under": 7.12
+            "home_over": 3.5,
+            "draw_over": 21.11,
+            "away_over": 9.6,
+            "home_under": 3.12,
+            "draw_under": 3.41,
+            "away_under": 6.72
           },
           "3.5": {
-            "home_over": 7.43,
-            "draw_over": 21.92,
-            "away_over": 33.35,
-            "home_under": 2.05,
-            "draw_under": 3.33,
-            "away_under": 4.95
+            "home_over": 7.67,
+            "draw_over": 21.09,
+            "away_over": 28.76,
+            "home_under": 2.12,
+            "draw_under": 3.36,
+            "away_under": 4.6
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.6,
-          "home_draw_no": 1.85,
-          "home_away_yes": 3.6,
-          "home_away_no": 1.85,
-          "draw_away_yes": 3.7,
-          "draw_away_no": 3.4
+          "home_draw_yes": 2.65,
+          "home_draw_no": 1.91,
+          "home_away_yes": 3.55,
+          "home_away_no": 1.87,
+          "draw_away_yes": 3.55,
+          "draw_away_no": 3.35
         },
         "x1x2_btts": {
-          "home_yes": 4.54,
-          "home_no": 2.23,
-          "away_yes": 11.13,
-          "away_no": 6.12,
-          "draw_yes": 4.64,
-          "draw_no": 6.12
+          "home_yes": 4.61,
+          "home_no": 2.31,
+          "away_yes": 10.15,
+          "away_no": 5.72,
+          "draw_yes": 4.61,
+          "draw_no": 6.27
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al-Masry",
         "form": [
@@ -11161,67 +8489,67 @@
       "time": "18:00",
       "odds": {
         "home": 1.65,
-        "draw": 3.53,
-        "away": 5.22
+        "draw": 3.66,
+        "away": 5.01
       },
       "markets": {
         "1x2": {
           "home": 1.65,
-          "draw": 3.53,
-          "away": 5.22
+          "draw": 3.66,
+          "away": 5.01
         },
         "dc": {
-          "home_draw": 1.16,
-          "draw_away": 2.0,
-          "home_away": 1.27
+          "home_draw": 1.17,
+          "draw_away": 2.01,
+          "home_away": 1.26
         },
         "btts": {
-          "yes": 2.08,
-          "no": 1.64
+          "yes": 2.09,
+          "no": 1.63
         },
         "total_goals": {
           "0.5": {
-            "over": 1.06,
-            "under": 7.44
+            "over": 1.05,
+            "under": 7.68
           },
           "1.5": {
-            "over": 1.36,
-            "under": 2.89
+            "over": 1.37,
+            "under": 2.86
           },
           "2.5": {
             "over": 2.14,
             "under": 1.63
           },
           "3.5": {
-            "over": 3.88,
-            "under": 1.22
+            "over": 3.91,
+            "under": 1.21
           },
           "4.5": {
-            "over": 7.44,
-            "under": 1.06
+            "over": 7.68,
+            "under": 1.05
           }
         },
         "home_goals": {
           "0.5": {
-            "over": 1.19,
-            "under": 4.1
+            "over": 1.2,
+            "under": 4.09
           },
           "1.5": {
-            "over": 1.92,
-            "under": 1.79
+            "over": 1.93,
+            "under": 1.78
           },
           "2.5": {
-            "over": 3.79,
-            "under": 1.23
+            "over": 3.8,
+            "under": 1.22
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.73,
-            "under": 2.0
+            "over": 1.72,
+            "under": 2.01
           },
           "1.5": {
-            "over": 4.49,
+            "over": 4.4,
             "under": 1.17
           },
           "2.5": {
@@ -11232,47 +8560,47 @@
         "result_total": {
           "1.5": {
             "home_over": 2.04,
-            "draw_over": 4.99,
-            "away_over": 7.87,
-            "home_under": 5.76,
-            "draw_under": 8.26,
-            "away_under": 11.52
+            "draw_over": 5.17,
+            "away_over": 7.47,
+            "home_under": 5.56,
+            "draw_under": 8.62,
+            "away_under": 11.5
           },
           "2.5": {
-            "home_over": 2.77,
-            "draw_over": 18.18,
-            "away_over": 10.52,
-            "home_under": 3.2,
-            "draw_under": 3.83,
-            "away_under": 8.61
+            "home_over": 2.79,
+            "draw_over": 19.23,
+            "away_over": 9.61,
+            "home_under": 3.22,
+            "draw_under": 3.94,
+            "away_under": 8.27
           },
           "3.5": {
-            "home_over": 5.39,
-            "draw_over": 18.29,
-            "away_over": 28.88,
-            "home_under": 2.07,
-            "draw_under": 3.8,
-            "away_under": 5.58
+            "home_over": 5.54,
+            "draw_over": 19.11,
+            "away_over": 27.71,
+            "home_under": 2.04,
+            "draw_under": 3.92,
+            "away_under": 5.35
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.37,
-          "home_draw_no": 1.93,
+          "home_draw_yes": 2.4,
+          "home_draw_no": 1.94,
           "home_away_yes": 3.1,
-          "home_away_no": 1.91,
-          "draw_away_yes": 3.6,
-          "draw_away_no": 4.2
+          "home_away_no": 1.89,
+          "draw_away_yes": 3.65,
+          "draw_away_no": 4.1
         },
         "x1x2_btts": {
-          "home_yes": 3.78,
+          "home_yes": 3.77,
           "home_no": 2.19,
-          "away_yes": 11.05,
-          "away_no": 7.19,
-          "draw_yes": 4.61,
-          "draw_no": 7.55
+          "away_yes": 10.11,
+          "away_no": 6.99,
+          "draw_yes": 4.78,
+          "draw_no": 7.91
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al Mokawloon Al Arab",
         "form": [],
@@ -11490,7 +8818,7 @@
           "draw_no": 30.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al Ain FC",
         "form": [
@@ -11691,24 +9019,24 @@
       "away": "Al-Shamal",
       "time": "18:30",
       "odds": {
-        "home": 3.14,
-        "draw": 3.87,
-        "away": 2.07
+        "home": 3.24,
+        "draw": 3.88,
+        "away": 2.02
       },
       "markets": {
         "1x2": {
-          "home": 3.14,
-          "draw": 3.87,
-          "away": 2.07
+          "home": 3.24,
+          "draw": 3.88,
+          "away": 2.02
         },
         "dc": {
-          "home_draw": 1.66,
-          "draw_away": 1.33,
+          "home_draw": 1.69,
+          "draw_away": 1.32,
           "home_away": 1.25
         },
         "btts": {
-          "yes": 1.41,
-          "no": 2.69
+          "yes": 1.42,
+          "no": 2.65
         },
         "total_goals": {
           "0.5": {
@@ -11739,75 +9067,75 @@
         "home_goals": {
           "0.5": {
             "over": 1.21,
-            "under": 3.68
+            "under": 3.62
           },
           "1.5": {
-            "over": 2.04,
-            "under": 1.64
+            "over": 2.07,
+            "under": 1.62
           },
           "2.5": {
-            "over": 4.22,
-            "under": 1.16
+            "over": 4.33,
+            "under": 1.15
           }
         },
         "away_goals": {
           "0.5": {
             "over": 1.11,
-            "under": 4.93
+            "under": 5.09
           },
           "1.5": {
-            "over": 1.64,
-            "under": 2.04
+            "over": 1.62,
+            "under": 2.08
           },
           "2.5": {
-            "over": 2.94,
-            "under": 1.32
+            "over": 2.9,
+            "under": 1.33
           }
         },
         "result_total": {
           "2.5": {
-            "home_over": 4.09,
-            "draw_over": 8.37,
-            "away_over": 2.64,
-            "home_under": 9.96,
-            "draw_under": 5.98,
-            "away_under": 7.17
+            "home_over": 4.2,
+            "draw_over": 8.4,
+            "away_over": 2.6,
+            "home_under": 10.0,
+            "draw_under": 6.0,
+            "away_under": 7.0
           },
           "3.5": {
-            "home_over": 6.8,
-            "draw_over": 8.4,
-            "away_over": 4.1,
-            "home_under": 5.0,
-            "draw_under": 6.0,
-            "away_under": 3.6
+            "home_over": 7.17,
+            "draw_over": 8.57,
+            "away_over": 3.99,
+            "home_under": 5.18,
+            "draw_under": 5.98,
+            "away_under": 3.54
           },
           "4.5": {
-            "home_over": 10.0,
-            "draw_over": 30.0,
-            "away_over": 6.2,
-            "home_under": 4.0,
-            "draw_under": 4.0,
-            "away_under": 2.8
+            "home_over": 10.93,
+            "draw_over": 29.81,
+            "away_over": 5.96,
+            "home_under": 4.17,
+            "draw_under": 3.97,
+            "away_under": 2.73
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.24,
-          "home_draw_no": 5.4,
-          "home_away_yes": 1.93,
+          "home_draw_yes": 2.28,
+          "home_draw_no": 5.6,
+          "home_away_yes": 1.94,
           "home_away_no": 2.85,
-          "draw_away_yes": 1.86,
-          "draw_away_no": 3.75
+          "draw_away_yes": 1.85,
+          "draw_away_no": 3.65
         },
         "x1x2_btts": {
-          "home_yes": 4.5,
-          "home_no": 7.2,
-          "away_yes": 3.1,
-          "away_no": 4.5,
+          "home_yes": 4.6,
+          "home_no": 7.4,
+          "away_yes": 3.05,
+          "away_no": 4.4,
           "draw_yes": 4.1,
           "draw_no": 20.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al Ahli Doha SC",
         "form": [
@@ -12116,7 +9444,7 @@
           "draw_no": 6.96
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Al-Gharraf SC",
         "form": [
@@ -12317,24 +9645,24 @@
       "away": "Hay AL Amir Hassan",
       "time": "19:00",
       "odds": {
-        "home": 1.31,
-        "draw": 5.04,
-        "away": 8.53
+        "home": 1.29,
+        "draw": 5.2,
+        "away": 8.86
       },
       "markets": {
         "1x2": {
-          "home": 1.31,
-          "draw": 5.04,
-          "away": 8.53
+          "home": 1.29,
+          "draw": 5.2,
+          "away": 8.86
         },
         "dc": {
           "home_draw": 1.08,
-          "draw_away": 2.8,
+          "draw_away": 2.85,
           "home_away": 1.15
         },
         "btts": {
-          "yes": 1.92,
-          "no": 1.76
+          "yes": 1.94,
+          "no": 1.74
         },
         "total_goals": {
           "0.5": {
@@ -12368,22 +9696,22 @@
             "under": 2.7
           },
           "2.5": {
-            "over": 2.24,
-            "under": 1.58
+            "over": 2.22,
+            "under": 1.59
           },
           "3.5": {
-            "over": 4.09,
+            "over": 4.0,
             "under": 1.2
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.76,
-            "under": 1.96
+            "over": 1.78,
+            "under": 1.93
           },
           "1.5": {
-            "over": 4.6,
-            "under": 1.16
+            "over": 4.7,
+            "under": 1.15
           },
           "2.5": {
             "over": 10.0,
@@ -12392,48 +9720,48 @@
         },
         "result_total": {
           "1.5": {
-            "home_over": 1.49,
-            "draw_over": 6.37,
-            "away_over": 11.94,
-            "home_under": 7.56,
-            "draw_under": 15.91,
-            "away_under": 22.88
+            "home_over": 1.48,
+            "draw_over": 6.4,
+            "away_over": 12.0,
+            "home_under": 7.6,
+            "draw_under": 16.0,
+            "away_under": 23.0
           },
           "2.5": {
-            "home_over": 1.85,
-            "draw_over": 18.0,
+            "home_over": 1.83,
+            "draw_over": 19.0,
             "away_over": 15.0,
             "home_under": 3.7,
             "draw_under": 6.2,
-            "away_under": 17.0
+            "away_under": 18.0
           },
           "3.5": {
-            "home_over": 2.9,
-            "draw_over": 19.0,
-            "away_over": 35.0,
-            "home_under": 2.14,
-            "draw_under": 6.2,
-            "away_under": 10.0
+            "home_over": 2.84,
+            "draw_over": 18.96,
+            "away_over": 39.91,
+            "home_under": 2.12,
+            "draw_under": 6.39,
+            "away_under": 10.97
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.06,
-          "home_draw_no": 1.88,
-          "home_away_yes": 2.46,
-          "home_away_no": 1.88,
-          "draw_away_yes": 4.6,
+          "home_draw_yes": 2.07,
+          "home_draw_no": 1.86,
+          "home_away_yes": 2.48,
+          "home_away_no": 1.86,
+          "draw_away_yes": 4.7,
           "draw_away_no": 8.0
         },
         "x1x2_btts": {
-          "home_yes": 2.59,
-          "home_no": 1.91,
-          "away_yes": 13.89,
-          "away_no": 13.89,
-          "draw_yes": 5.74,
-          "draw_no": 13.89
+          "home_yes": 2.58,
+          "home_no": 1.87,
+          "away_yes": 14.74,
+          "away_no": 14.74,
+          "draw_yes": 5.9,
+          "draw_no": 13.82
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "AL Jazeera Club Amman",
         "form": [
@@ -12665,7 +9993,7 @@
           "draw_no": 6.39
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Ghaz Al-Shamal SC",
         "form": [
@@ -12902,7 +10230,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "MB Rouissat",
         "form": [
@@ -13156,7 +10484,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "MC Alger",
         "form": [
@@ -13412,7 +10740,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "FK Sveikata Kybartai",
         "form": [
@@ -13708,7 +11036,7 @@
           "draw_no": 14.74
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "KIF Orebro DFF Women",
         "form": [
@@ -14004,7 +11332,7 @@
           "draw_no": 12.02
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "AL Okhdood U21",
         "form": [
@@ -14272,7 +11600,7 @@
           "draw_no": 16.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Paris FC Women",
         "form": [
@@ -14353,7 +11681,7 @@
             ]
           }
         ],
-        "league_position": 16,
+        "league_position": 15,
         "total_teams_in_league": 18,
         "opposition_position": 11
       },
@@ -14439,7 +11767,7 @@
         ],
         "league_position": 11,
         "total_teams_in_league": 18,
-        "opposition_position": 16
+        "opposition_position": 15
       },
       "h2h": null,
       "source": "betpawa",
@@ -14452,79 +11780,83 @@
       "away": "Bayern Munich Women",
       "time": "20:45",
       "odds": {
-        "home": 20.0,
+        "home": 21.0,
         "draw": 9.0,
-        "away": 1.07
+        "away": 1.06
       },
       "markets": {
         "1x2": {
-          "home": 20.0,
+          "home": 21.0,
           "draw": 9.0,
-          "away": 1.07
+          "away": 1.06
         },
         "dc": {
-          "home_draw": 5.0,
+          "home_draw": 5.2,
           "draw_away": 1.01,
-          "home_away": 1.04
+          "home_away": 1.03
         },
         "btts": {
-          "yes": 2.29,
-          "no": 1.51
+          "yes": 2.19,
+          "no": 1.55
         },
         "total_goals": {
           "1.5": {
-            "over": 1.08,
-            "under": 6.2
+            "over": 1.06,
+            "under": 6.8
           },
           "2.5": {
-            "over": 1.28,
-            "under": 3.2
+            "over": 1.24,
+            "under": 3.55
           },
           "3.5": {
-            "over": 1.74,
-            "under": 1.95
+            "over": 1.63,
+            "under": 2.11
           },
           "4.5": {
-            "over": 2.6,
-            "under": 1.42
+            "over": 2.37,
+            "under": 1.5
           },
           "5.5": {
-            "over": 4.2,
-            "under": 1.17
+            "over": 3.75,
+            "under": 1.22
+          },
+          "6.5": {
+            "over": 6.0,
+            "under": 1.08
           }
         },
         "home_goals": {
           "0.5": {
-            "over": 2.14,
-            "under": 1.51
+            "over": 2.07,
+            "under": 1.55
           }
         },
         "away_goals": {
           "3.5": {
-            "over": 2.05,
-            "under": 1.56
+            "over": 1.9,
+            "under": 1.65
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 38.23,
-            "draw_over": 14.33,
-            "away_over": 1.11,
-            "home_under": 57.34,
-            "draw_under": 33.45,
-            "away_under": 9.56
+            "home_over": 38.25,
+            "draw_over": 13.39,
+            "away_over": 1.09,
+            "home_under": 66.95,
+            "draw_under": 33.47,
+            "away_under": 11.48
           }
         },
         "x1x2_btts": {
           "home_yes": 35.0,
-          "home_no": 35.0,
-          "away_yes": 2.18,
-          "away_no": 1.41,
-          "draw_yes": 12.0,
-          "draw_no": 25.0
+          "home_no": 45.0,
+          "away_yes": 2.08,
+          "away_no": 1.43,
+          "draw_yes": 11.0,
+          "draw_no": 29.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "FK Austria Wien Women",
         "form": [
@@ -14607,7 +11939,7 @@
         ],
         "league_position": 18,
         "total_teams_in_league": 18,
-        "opposition_position": 6
+        "opposition_position": 7
       },
       "away_stats": {
         "name": "Bayern Munich Women",
@@ -14689,7 +12021,7 @@
             ]
           }
         ],
-        "league_position": 6,
+        "league_position": 7,
         "total_teams_in_league": 18,
         "opposition_position": 18
       },
@@ -14800,7 +12132,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Ferro Carril Oeste Women",
         "form": [
@@ -15113,7 +12445,7 @@
           "draw_no": 19.41
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "RC Celta de Vigo Women",
         "form": [
@@ -15349,7 +12681,7 @@
           "draw_no": 5.17
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Zed FC",
         "form": [
@@ -15600,7 +12932,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Argentinos Juniors Reserve",
         "form": [
@@ -15832,7 +13164,7 @@
           "3.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Aldosivi Reserve",
         "form": [
@@ -16024,28 +13356,28 @@
       "away": "CA Banfield",
       "time": "21:00",
       "odds": {
-        "home": 1.3,
-        "draw": 4.73,
-        "away": 7.56
+        "home": 1.24,
+        "draw": 5.15,
+        "away": 9.36
       },
       "markets": {
         "1x2": {
-          "home": 1.3,
-          "draw": 4.73,
-          "away": 7.56
+          "home": 1.24,
+          "draw": 5.15,
+          "away": 9.36
         },
         "btts": {
-          "yes": 1.85,
-          "no": 1.76
+          "yes": 2.04,
+          "no": 1.61
         },
         "total_goals": {
           "2.5": {
-            "over": 1.58,
-            "under": 2.15
+            "over": 1.63,
+            "under": 2.06
           },
           "3.5": {
-            "over": 2.45,
-            "under": 1.44
+            "over": 2.63,
+            "under": 1.39
           }
         },
         "home_goals": {
@@ -16063,7 +13395,7 @@
           "3.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA River Plate (Arg) Reserve",
         "form": [
@@ -16291,7 +13623,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Sarmiento de Junin",
         "form": [
@@ -16532,7 +13864,7 @@
           "3.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Racing Club Avellaneda",
         "form": [
@@ -16800,7 +14132,7 @@
           "draw_no": 9.17
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Madureira EC RJ U20",
         "form": [
@@ -17135,7 +14467,7 @@
           "draw_no": 23.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "FC Fredericia",
         "form": [
@@ -17373,7 +14705,7 @@
           }
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Budapest Honved FC Women",
         "form": [
@@ -17640,7 +14972,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "JS Kabylie",
         "form": [
@@ -17957,7 +15289,7 @@
           "draw_no": 11.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Boston River",
         "form": [
@@ -18261,7 +15593,7 @@
           "draw_no": 9.4
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Penarol Montevideo",
         "form": [
@@ -18578,7 +15910,7 @@
           "draw_no": 15.97
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "CA Progreso",
         "form": [
@@ -18868,7 +16200,7 @@
           "draw_no": 21.12
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Glebe North",
         "form": [
@@ -19164,7 +16496,7 @@
           "draw_no": 9.66
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Amiens SC",
         "form": [
@@ -19344,24 +16676,24 @@
       "away": "Olympique Lyon Women",
       "time": "23:00",
       "odds": {
-        "home": 3.7,
+        "home": 3.8,
         "draw": 3.8,
-        "away": 1.77
+        "away": 1.74
       },
       "markets": {
         "1x2": {
-          "home": 3.7,
+          "home": 3.8,
           "draw": 3.8,
-          "away": 1.77
+          "away": 1.74
         },
         "dc": {
-          "home_draw": 1.85,
-          "draw_away": 1.24,
+          "home_draw": 1.89,
+          "draw_away": 1.23,
           "home_away": 1.24
         },
         "btts": {
-          "yes": 1.53,
-          "no": 2.25
+          "yes": 1.52,
+          "no": 2.26
         },
         "total_goals": {
           "0.5": {
@@ -19370,57 +16702,57 @@
           },
           "1.5": {
             "over": 1.16,
-            "under": 4.4
+            "under": 4.5
           },
           "2.5": {
-            "over": 1.54,
-            "under": 2.27
+            "over": 1.52,
+            "under": 2.3
           },
           "3.5": {
-            "over": 2.32,
-            "under": 1.52
+            "over": 2.27,
+            "under": 1.54
           },
           "4.5": {
-            "over": 3.9,
-            "under": 1.2
+            "over": 3.8,
+            "under": 1.21
           },
           "5.5": {
-            "over": 6.6,
+            "over": 6.4,
             "under": 1.07
           }
         },
         "home_goals": {
           "1.5": {
-            "over": 2.4,
+            "over": 2.41,
             "under": 1.4
           }
         },
         "away_goals": {
           "1.5": {
-            "over": 1.58,
-            "under": 2.0
+            "over": 1.56,
+            "under": 2.05
           }
         },
         "result_total": {
           "3.5": {
-            "home_over": 10.51,
-            "draw_over": 10.51,
-            "away_over": 3.92,
-            "home_under": 5.54,
-            "draw_under": 5.54,
+            "home_over": 10.49,
+            "draw_over": 10.49,
+            "away_over": 3.77,
+            "home_under": 5.72,
+            "draw_under": 5.72,
             "away_under": 2.91
           }
         },
         "x1x2_btts": {
-          "home_yes": 5.2,
-          "home_no": 7.0,
-          "away_yes": 2.75,
-          "away_no": 3.1,
+          "home_yes": 5.4,
+          "home_no": 7.2,
+          "away_yes": 2.65,
+          "away_no": 3.05,
           "draw_yes": 3.9,
-          "draw_no": 14.0
+          "draw_no": 15.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "Arsenal WFC Women",
         "form": [
@@ -19501,9 +16833,9 @@
             ]
           }
         ],
-        "league_position": 7,
+        "league_position": 8,
         "total_teams_in_league": 18,
-        "opposition_position": 1
+        "opposition_position": 2
       },
       "away_stats": {
         "name": "Olympique Lyon Women",
@@ -19585,9 +16917,9 @@
             ]
           }
         ],
-        "league_position": 1,
+        "league_position": 2,
         "total_teams_in_league": 18,
-        "opposition_position": 7
+        "opposition_position": 8
       },
       "h2h": {
         "matches": [
@@ -19697,7 +17029,7 @@
           "draw_no": 16.0
         }
       },
-      "odds_captured_at": "2026-11-19T00:00:47.929923+03:00",
+      "odds_captured_at": "2026-11-19T03:00:47.183052+03:00",
       "home_stats": {
         "name": "SL Benfica Women",
         "form": [
@@ -19778,7 +17110,7 @@
             ]
           }
         ],
-        "league_position": 10,
+        "league_position": 9,
         "total_teams_in_league": 18,
         "opposition_position": 12
       },
@@ -19864,7 +17196,7 @@
         ],
         "league_position": 12,
         "total_teams_in_league": 18,
-        "opposition_position": 10
+        "opposition_position": 9
       },
       "h2h": null,
       "source": "betpawa",
