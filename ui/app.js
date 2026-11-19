@@ -83,6 +83,11 @@ function pct100(p) {
   return Math.max(1, Math.min(99, Math.round(p * 100)));
 }
 
+// Pull a goal probability back toward the coin flip — see GOAL_CALIBRATION.
+function calibrateGoal(p) {
+  return Math.max(0.01, Math.min(0.99, 0.5 + (p - 0.5) * GOAL_CALIBRATION));
+}
+
 // The odds gate only decides *whether* a fixture qualifies for a card — the
 // home/draw/away choice is made by the probability model (see below). Kept
 // deliberately: both sliders still describe the same price band, one side has
@@ -281,6 +286,27 @@ const AVG_GOALS_SCORED = 1.30;
 const AVG_GOALS_CONCEDED = 1.25;
 const AVG_FORM_PER_GAME = 0.92;
 
+// Calibration for the goal markets. The 2026-11-18 backtest (330 decided
+// picks) showed the goal probabilities running about 12 points hot: a
+// team's last-five window is a noisy, hot-biased estimate of its true
+// scoring rate, and the model then picks the fixtures where it is most
+// confident — the winner's curse on top of a biased input. Shrinking the
+// goal probabilities toward the coin flip by this much puts them back on
+// the observed hit rates (Over 1.5: stated 77% vs 76% actual; to score:
+// stated 78% vs 74% actual; BTTS Yes: stated 58% vs 47% actual).
+//
+// The 1X2 model is deliberately left alone — it came out slightly
+// conservative in the same backtest (stated 50.5% vs 58.1% actual).
+const GOAL_CALIBRATION = 0.75;
+
+// A combo is two picks that both have to land, so its confidence is the
+// product of the legs — not their average. Two 60% legs are a 36% double,
+// and the backtest says the joints land at about 33%. The legs are pulled
+// in opposite directions (a 1-0 home win kills Over 1.5, a 3-2 kills
+// BTTS Yes), so the correlations roughly cancel and the plain product is
+// the right joint.
+const COMBO_MIN_JOINT = 0.30;
+
 // Confidence floors for the form-based markets. Each one is a real
 // probability now, so the floors mean what they say. The slider in the
 // controls panel drives them; these are the defaults.
@@ -288,7 +314,7 @@ const AVG_FORM_PER_GAME = 0.92;
 // Over 1.5 and "team to score" are naturally high-probability selections
 // (a fixture expected to produce three goals or more), while a both-teams-
 // to-score call is a coin-flip market, so its floor sits lower.
-const DEFAULT_MIN_PICK_CONFIDENCE = 80;   // percent, the slider's default
+const DEFAULT_MIN_PICK_CONFIDENCE = 75;   // percent, the slider's default
 const BTTS_FLOOR_OFFSET = 18;              // points below the slider
 const MIN_OVER15_PROB = 0.80;
 const MIN_BTTS_PROB = 0.62;
@@ -572,9 +598,10 @@ function marketDC(model, hp, ap, cfg) {
 // is a probability with a floor that means something.
 function marketOver15(goals, h2h, cfg) {
   if (!cfg.markets.includes('over15')) return null;
-  const prob = h2h.available
+  const raw = h2h.available
     ? (1 - OVER15_H2H_WEIGHT) * goals.over15 + OVER15_H2H_WEIGHT * h2h.over_15_rate
     : goals.over15;
+  const prob = calibrateGoal(raw);
   if (prob < num(cfg.over15Floor, MIN_OVER15_PROB)) return null;
   const conf = pct100(prob);
   return { label: 'Over 1.5 Goals', type: 'secondary', confidence: conf, prob: conf, market: ['total_goals', '1.5', 'over'] };
@@ -586,16 +613,19 @@ function marketOver15(goals, h2h, cfg) {
 // and fired on more than half the fixtures.
 function marketBTTS(goals, h2h, cfg) {
   if (!cfg.markets.includes('btts')) return null;
-  const pYes = h2h.available
+  const raw = h2h.available
     ? (1 - BTTS_H2H_WEIGHT) * goals.btts + BTTS_H2H_WEIGHT * h2h.btts_rate
     : goals.btts;
-  const floor = num(cfg.bttsFloor, MIN_BTTS_PROB);
-  if (pYes >= floor) {
+  const pYes = calibrateGoal(raw);
+  // "Both teams score" is the weaker side of this market: it landed 17 of 36
+  // times while stating 72%, so it has to clear a much higher bar than the
+  // "no goals" side to be worth showing.
+  if (pYes >= num(cfg.bttsYesFloor, MIN_BTTS_PROB)) {
     const conf = pct100(pYes);
     return { label: 'BTTS Yes', type: 'secondary', confidence: conf, prob: conf, market: ['btts', 'yes'] };
   }
   const pNo = 1 - pYes;
-  if (pNo >= floor) {
+  if (pNo >= num(cfg.bttsFloor, MIN_BTTS_PROB)) {
     const conf = pct100(pNo);
     return { label: 'BTTS No', type: 'warn', confidence: conf, prob: conf, market: ['btts', 'no'] };
   }
@@ -609,12 +639,14 @@ function marketToScore(goals, cfg) {
   if (!cfg.markets.includes('to_score')) return [];
   const signals = [];
   const floor = num(cfg.toScoreFloor, MIN_TOSCORE_PROB);
-  if (goals.homeScores >= floor) {
-    const conf = pct100(goals.homeScores);
+  const homeProb = calibrateGoal(goals.homeScores);
+  const awayProb = calibrateGoal(goals.awayScores);
+  if (homeProb >= floor) {
+    const conf = pct100(homeProb);
     signals.push({ label: 'Home to Score (Over 0.5)', type: 'secondary', confidence: conf, prob: conf, market: ['home_goals', '0.5', 'over'] });
   }
-  if (goals.awayScores >= floor) {
-    const conf = pct100(goals.awayScores);
+  if (awayProb >= floor) {
+    const conf = pct100(awayProb);
     signals.push({ label: 'Away to Score (Over 0.5)', type: 'secondary', confidence: conf, prob: conf, market: ['away_goals', '0.5', 'over'] });
   }
   return signals;
@@ -625,28 +657,32 @@ function marketToScore(goals, cfg) {
 function marketCombos(mainBet, dc, over15, btts, cfg) {
   if (!cfg.markets.includes('combo')) return [];
   const combos = [];
-  const both = (a, b) => a && b && a.confidence >= 55 && b.confidence >= 55;
-  const avg = (a, b) => Math.min(88, Math.round((a.confidence + b.confidence) / 2));
+  // Both legs have to land, so the joint is the product of the two
+  // probabilities. The old version averaged them, which stated 72% for a
+  // pair of legs that actually land together about a third of the time.
+  const joint = (a, b) => Math.round((a.prob / 100) * (b.prob / 100) * 100);
+  const both = (a, b) => a && b && a.confidence >= 55 && b.confidence >= 55
+    && joint(a, b) >= COMBO_MIN_JOINT * 100;
   const side = mainBet.market[1]; // home | draw | away — the model's pick
 
   if (both(mainBet, btts)) {
     combos.push({
       label: `${mainBet.label} + ${btts.label}`,
-      type: 'combo', confidence: avg(mainBet, btts),
+      type: 'combo', confidence: joint(mainBet, btts), prob: joint(mainBet, btts),
       market: ['x1x2_btts', `${side}_${btts.market[1]}`]
     });
   }
   if (both(dc, btts)) {
     combos.push({
       label: `${dc.label.slice(0, 2)} + ${btts.label}`,
-      type: 'combo', confidence: avg(dc, btts),
+      type: 'combo', confidence: joint(dc, btts), prob: joint(dc, btts),
       market: ['dc_btts', `${dc.market[1]}_${btts.market[1]}`]
     });
   }
   if (both(mainBet, over15)) {
     combos.push({
       label: `${mainBet.label} + ${over15.label}`,
-      type: 'combo', confidence: avg(mainBet, over15),
+      type: 'combo', confidence: joint(mainBet, over15), prob: joint(mainBet, over15),
       market: ['result_total', '1.5', `${side}_over`]
     });
   }
@@ -804,6 +840,8 @@ function scoreMatch(match, cfg) {
   const pickFloor = cfgN.minPickConfidence / 100;
   cfgN.over15Floor = pickFloor;
   cfgN.toScoreFloor = pickFloor;
+  // "Both teams score" has to clear the full slider, "no goals" the lower bar.
+  cfgN.bttsYesFloor = pickFloor;
   cfgN.bttsFloor = Math.max(0.5, pickFloor - BTTS_FLOOR_OFFSET / 100);
 
   // The odds gate decides whether the fixture qualifies at all; the model
