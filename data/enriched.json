@@ -1,6215 +1,11 @@
 {
   "meta": {
     "date": "2026-11-19",
-    "generatedAt": "2026-11-19T18:02:35.100973+03:00",
-    "scanned": 31,
-    "elapsedSeconds": 119.3
+    "generatedAt": "2026-11-19T21:01:02.342318+03:00",
+    "scanned": 8,
+    "elapsedSeconds": 29.1
   },
   "matches": [
-    {
-      "id": "38611838",
-      "league": "Football / United Arab Emirates / Arabian Gulf League",
-      "home": "Al Ain FC",
-      "away": "Al Dhafra SSC",
-      "time": "18:25",
-      "odds": {
-        "home": 1.13,
-        "draw": 9.03,
-        "away": 15.71
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.13,
-          "draw": 9.03,
-          "away": 15.71
-        },
-        "dc": {
-          "home_draw": 1.03,
-          "draw_away": 4.1,
-          "home_away": 1.06
-        },
-        "btts": {
-          "yes": 1.87,
-          "no": 1.84
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.01,
-            "under": 15.0
-          },
-          "1.5": {
-            "over": 1.08,
-            "under": 7.4
-          },
-          "2.5": {
-            "over": 1.29,
-            "under": 3.54
-          },
-          "3.5": {
-            "over": 1.73,
-            "under": 2.07
-          },
-          "4.5": {
-            "over": 2.6,
-            "under": 1.48
-          },
-          "5.5": {
-            "over": 4.3,
-            "under": 1.21
-          }
-        },
-        "home_goals": {
-          "2.5": {
-            "over": 1.5,
-            "under": 2.31
-          },
-          "3.5": {
-            "over": 2.28,
-            "under": 1.51
-          },
-          "4.5": {
-            "over": 3.84,
-            "under": 1.19
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.76,
-            "under": 1.88
-          },
-          "1.5": {
-            "over": 4.62,
-            "under": 1.13
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.19,
-            "draw_over": 9.2,
-            "away_over": 17.0,
-            "home_under": 11.0,
-            "draw_under": 30.0,
-            "away_under": 45.0
-          },
-          "2.5": {
-            "home_over": 1.35,
-            "draw_over": 23.0,
-            "away_over": 22.0,
-            "home_under": 4.8,
-            "draw_under": 12.0,
-            "away_under": 35.0
-          },
-          "3.5": {
-            "home_over": 1.8,
-            "draw_over": 24.0,
-            "away_over": 50.0,
-            "home_under": 2.48,
-            "draw_under": 12.0,
-            "away_under": 20.0
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 1.89,
-          "home_draw_no": 1.83,
-          "home_away_yes": 2.07,
-          "home_away_no": 1.83,
-          "draw_away_yes": 7.2,
-          "draw_away_no": 18.0
-        },
-        "x1x2_btts": {
-          "home_yes": 2.16,
-          "home_no": 1.86,
-          "away_yes": 22.93,
-          "away_no": 34.89,
-          "draw_yes": 9.97,
-          "draw_no": 34.89
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Al Ain FC",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          4,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          1,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794670200,
-            "match_id": "",
-            "opponent": "Hatta",
-            "opponent_id": "YuLeXbqH",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1794151800,
-            "match_id": "",
-            "opponent": "Al Wahda",
-            "opponent_id": "21AL1RQp",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793643300,
-            "match_id": "",
-            "opponent": "Al Ittihad (Sau)",
-            "opponent_id": "QmsyAjWh",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1793030400,
-            "match_id": "",
-            "opponent": "Tractor (Irn)",
-            "opponent_id": "IVy1ZyxH",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792684800,
-            "match_id": "",
-            "opponent": "Shabab Al Ahli Dubai",
-            "opponent_id": "EiQ5g3JL",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 14,
-        "opposition_position": 12
-      },
-      "away_stats": {
-        "name": "Al Dhafra SSC",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          5,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          3,
-          3,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794660600,
-            "match_id": "",
-            "opponent": "Ajman",
-            "opponent_id": "CtP7yoRa",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1794056100,
-            "match_id": "",
-            "opponent": "Ittihad Kalba",
-            "opponent_id": "CxR74upk",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1792846500,
-            "match_id": "",
-            "opponent": "Khorfakkan",
-            "opponent_id": "AwzVzPeC",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1792155900,
-            "match_id": "",
-            "opponent": "United FC",
-            "opponent_id": "6s1W4sXk",
-            "home_away": "H",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1791551400,
-            "match_id": "",
-            "opponent": "Al Wahda",
-            "opponent_id": "21AL1RQp",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 14,
-        "opposition_position": 12
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Al Ain FC",
-            "away": "Al Dhafra SSC",
-            "score": [
-              5,
-              0
-            ],
-            "ts": 1778426700
-          },
-          {
-            "home": "Al Dhafra SSC",
-            "away": "Al Ain FC",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1767887100
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 14
-    },
-    {
-      "id": "39189295",
-      "league": "Football / Qatar / Stars League",
-      "home": "Al Ahli Doha SC",
-      "away": "Al-Shamal",
-      "time": "18:30",
-      "odds": {
-        "home": 3.09,
-        "draw": 3.93,
-        "away": 2.07
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.09,
-          "draw": 3.93,
-          "away": 2.07
-        },
-        "dc": {
-          "home_draw": 1.66,
-          "draw_away": 1.34,
-          "home_away": 1.25
-        },
-        "btts": {
-          "yes": 1.37,
-          "no": 2.86
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.02,
-            "under": 12.97
-          },
-          "1.5": {
-            "over": 1.12,
-            "under": 6.0
-          },
-          "2.5": {
-            "over": 1.41,
-            "under": 2.85
-          },
-          "3.5": {
-            "over": 1.98,
-            "under": 1.8
-          },
-          "4.5": {
-            "over": 3.2,
-            "under": 1.34
-          },
-          "5.5": {
-            "over": 5.4,
-            "under": 1.14
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.18,
-            "under": 3.94
-          },
-          "1.5": {
-            "over": 1.93,
-            "under": 1.72
-          },
-          "2.5": {
-            "over": 3.88,
-            "under": 1.19
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.1,
-            "under": 5.29
-          },
-          "1.5": {
-            "over": 1.58,
-            "under": 2.14
-          },
-          "2.5": {
-            "over": 2.79,
-            "under": 1.35
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 3.34,
-            "draw_over": 4.19,
-            "away_over": 2.22,
-            "home_under": 18.97,
-            "draw_under": 23.96,
-            "away_under": 14.97
-          },
-          "2.5": {
-            "home_over": 3.89,
-            "draw_over": 7.78,
-            "away_over": 2.54,
-            "home_under": 10.98,
-            "draw_under": 6.59,
-            "away_under": 7.78
-          },
-          "3.5": {
-            "home_over": 6.2,
-            "draw_over": 8.0,
-            "away_over": 3.85,
-            "home_under": 5.2,
-            "draw_under": 6.6,
-            "away_under": 3.85
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.17,
-          "home_draw_no": 5.8,
-          "home_away_yes": 1.85,
-          "home_away_no": 3.05,
-          "draw_away_yes": 1.81,
-          "draw_away_no": 4.0
-        },
-        "x1x2_btts": {
-          "home_yes": 4.2,
-          "home_no": 7.6,
-          "away_yes": 3.0,
-          "away_no": 4.8,
-          "draw_yes": 4.0,
-          "draw_no": 23.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Al Ahli Doha SC",
-        "form": [
-          "D",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          2,
-          2,
-          0,
-          5
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          2,
-          3,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1793974500,
-            "match_id": "nDN7wuxS",
-            "opponent": "Al Arabi",
-            "opponent_id": "ltmcRTII",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1793369700,
-            "match_id": "W2bcSgCT",
-            "opponent": "Al Shahaniya",
-            "opponent_id": "G4PEqWCa",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792687500,
-            "match_id": "pSgZXcrh",
-            "opponent": "Al Gharafa",
-            "opponent_id": "SQrTeoKd",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1792161000,
-            "match_id": "dUuLJ7Ns",
-            "opponent": "Al Wakrah",
-            "opponent_id": "AFuKpiJt",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1791651600,
-            "match_id": "QokkPTaK",
-            "opponent": "Al Sailiya",
-            "opponent_id": "4xuOqBYn",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          }
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "Al-Shamal",
-        "form": [
-          "W",
-          "L",
-          "L",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          5,
-          0,
-          1,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          4,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794060900,
-            "match_id": "vmKau17F",
-            "opponent": "Al Sailiya",
-            "opponent_id": "4xuOqBYn",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1793721600,
-            "match_id": "hrlxALYg",
-            "opponent": "Esteghlal F.C.",
-            "opponent_id": "KAtu9Aoa",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793377800,
-            "match_id": "nLBbLuGq",
-            "opponent": "Al Sadd",
-            "opponent_id": "AkENgqwB",
-            "home_away": "A",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1793124900,
-            "match_id": "jFuHHCz3",
-            "opponent": "Al Hilal",
-            "opponent_id": "hxxcePl9",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1792765800,
-            "match_id": "nZvGS26C",
-            "opponent": "Qatar SC",
-            "opponent_id": "YglhkXAP",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": 7
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Al Ahli Doha SC",
-            "away": "Al-Shamal",
-            "score": [
-              4,
-              2
-            ],
-            "ts": 1767796200
-          },
-          {
-            "home": "Al-Shamal",
-            "away": "Al Ahli Doha SC",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1765729800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "39189290",
-      "league": "Football / Iraq / Iraqi League",
-      "home": "Al-Gharraf SC",
-      "away": "Al Quwa Al Jawiya",
-      "time": "18:30",
-      "odds": {
-        "home": 3.82,
-        "draw": 2.31,
-        "away": 2.53
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.82,
-          "draw": 2.31,
-          "away": 2.53
-        },
-        "dc": {
-          "home_draw": 1.44,
-          "draw_away": 1.23,
-          "home_away": 1.52
-        },
-        "btts": {
-          "yes": 1.8,
-          "no": 1.83
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.09,
-            "under": 5.67
-          },
-          "1.5": {
-            "over": 1.37,
-            "under": 2.77
-          },
-          "2.5": {
-            "over": 2.37,
-            "under": 1.5
-          },
-          "3.5": {
-            "over": 4.0,
-            "under": 1.19
-          },
-          "4.5": {
-            "over": 8.36,
-            "under": 1.03
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.41,
-            "under": 2.39
-          },
-          "1.5": {
-            "over": 3.2,
-            "under": 1.22
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.25,
-            "under": 3.01
-          },
-          "1.5": {
-            "over": 2.43,
-            "under": 1.39
-          },
-          "2.5": {
-            "over": 5.35,
-            "under": 1.06
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 5.58,
-            "draw_over": 3.34,
-            "away_over": 3.39,
-            "home_under": 10.96,
-            "draw_under": 6.17,
-            "away_under": 8.17
-          },
-          "2.5": {
-            "home_over": 7.37,
-            "draw_over": 10.96,
-            "away_over": 4.58,
-            "home_under": 7.17,
-            "draw_under": 2.74,
-            "away_under": 4.98
-          },
-          "3.5": {
-            "home_over": 18.0,
-            "draw_over": 11.0,
-            "away_over": 9.6,
-            "home_under": 4.6,
-            "draw_under": 2.7,
-            "away_under": 3.15
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.43,
-          "home_draw_no": 3.1,
-          "home_away_yes": 3.5,
-          "home_away_no": 2.44,
-          "draw_away_yes": 2.17,
-          "draw_away_no": 2.44
-        },
-        "x1x2_btts": {
-          "home_yes": 7.42,
-          "home_no": 5.3,
-          "away_yes": 5.12,
-          "away_no": 3.4,
-          "draw_yes": 2.87,
-          "draw_no": 5.3
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Al-Gharraf SC",
-        "form": [
-          "D",
-          "W",
-          "D",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          0,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794144600,
-            "match_id": "zmTEZqeM",
-            "opponent": "Erbil",
-            "opponent_id": "MLk7IOLT",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793462400,
-            "match_id": "6mJ3ObVN",
-            "opponent": "Al Karkh",
-            "opponent_id": "YNmI8NfH",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792684800,
-            "match_id": "SIR9cVQ7",
-            "opponent": "Al Naft",
-            "opponent_id": "Wl6D5mh5",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792162800,
-            "match_id": "8vnkYEcd",
-            "opponent": "Karbala",
-            "opponent_id": "KQ0ty6yb",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1791567000,
-            "match_id": "vNMEql0t",
-            "opponent": "Al Golan",
-            "opponent_id": "6RQWrOLN",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 13,
-        "total_teams_in_league": 20,
-        "opposition_position": 14
-      },
-      "away_stats": {
-        "name": "Al Quwa Al Jawiya",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          0,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          4,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794056400,
-            "match_id": "ITmsLptT",
-            "opponent": "Al Karkh",
-            "opponent_id": "YNmI8NfH",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793635200,
-            "match_id": "tSS288ck",
-            "opponent": "Al Wasl",
-            "opponent_id": "OQuUcn3P",
-            "home_away": "A",
-            "score": [
-              3,
-              4
-            ]
-          },
-          {
-            "ts": 1793287800,
-            "match_id": "tSr7SkQs",
-            "opponent": "Al Minaa",
-            "opponent_id": "ETw16Txa",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793038500,
-            "match_id": "lS2PBMnp",
-            "opponent": "Pakhtakor",
-            "opponent_id": "nXW1x6nG",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792688400,
-            "match_id": "OlHG8eZ8",
-            "opponent": "Al Talaba",
-            "opponent_id": "lOZsM6M4",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 20,
-        "opposition_position": 13
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Al-Gharraf SC",
-            "away": "Al Quwa Al Jawiya",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1772828100
-          },
-          {
-            "home": "Al Quwa Al Jawiya",
-            "away": "Al-Gharraf SC",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1761413400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "39165373",
-      "league": "Football / Jordan / Jordan Cup",
-      "home": "AL Jazeera Club Amman",
-      "away": "Hay AL Amir Hassan",
-      "time": "19:00",
-      "odds": {
-        "home": 1.13,
-        "draw": 8.3,
-        "away": 13.51
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.13,
-          "draw": 8.3,
-          "away": 13.51
-        },
-        "dc": {
-          "home_draw": 1.04,
-          "draw_away": 3.95,
-          "home_away": 1.07
-        },
-        "btts": {
-          "yes": 1.78,
-          "no": 1.89
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.06,
-            "under": 7.27
-          },
-          "2.5": {
-            "over": 1.27,
-            "under": 3.44
-          },
-          "3.5": {
-            "over": 1.71,
-            "under": 2.02
-          },
-          "4.5": {
-            "over": 2.55,
-            "under": 1.45
-          },
-          "5.5": {
-            "over": 4.22,
-            "under": 1.19
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 1.17,
-            "under": 4.4
-          },
-          "2.5": {
-            "over": 1.56,
-            "under": 2.28
-          },
-          "3.5": {
-            "over": 2.38,
-            "under": 1.51
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.73,
-            "under": 2.0
-          },
-          "1.5": {
-            "over": 4.4,
-            "under": 1.17
-          },
-          "2.5": {
-            "over": 10.0,
-            "under": 1.02
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.21,
-            "draw_over": 8.6,
-            "away_over": 15.0,
-            "home_under": 11.0,
-            "draw_under": 30.0,
-            "away_under": 45.0
-          },
-          "2.5": {
-            "home_over": 1.37,
-            "draw_over": 20.0,
-            "away_over": 19.0,
-            "home_under": 4.9,
-            "draw_under": 11.0,
-            "away_under": 35.0
-          },
-          "3.5": {
-            "home_over": 1.82,
-            "draw_over": 20.9,
-            "away_over": 44.78,
-            "home_under": 2.54,
-            "draw_under": 11.94,
-            "away_under": 18.91
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 1.84,
-          "home_draw_no": 1.91,
-          "home_away_yes": 2.02,
-          "home_away_no": 1.9,
-          "draw_away_yes": 6.6,
-          "draw_away_no": 17.0
-        },
-        "x1x2_btts": {
-          "home_yes": 1.98,
-          "home_no": 1.8,
-          "away_yes": 18.47,
-          "away_no": 27.71,
-          "draw_yes": 8.5,
-          "draw_no": 32.33
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "AL Jazeera Club Amman",
-        "form": [
-          "L",
-          "D",
-          "D",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          2,
-          5,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          2,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1793973600,
-            "match_id": "QVdJlmFa",
-            "opponent": "Al Ramtha",
-            "opponent_id": "f5YjWWjO",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793286000,
-            "match_id": "ll4vxAVg",
-            "opponent": "Al Salt",
-            "opponent_id": "bHIHtuAP",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792773000,
-            "match_id": "O4Z0uOKl",
-            "opponent": "Al Faisaly Amman",
-            "opponent_id": "xINjbBxe",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1792159200,
-            "match_id": "MsAlogiA",
-            "opponent": "Doqarah",
-            "opponent_id": "lONYDy1m",
-            "home_away": "A",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1791563400,
-            "match_id": "WjtFCYpo",
-            "opponent": "Al Wehdat",
-            "opponent_id": "dGsh4eOj",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Hay AL Amir Hassan",
-        "form": [
-          "W"
-        ],
-        "goals_scored": [
-          3
-        ],
-        "goals_conceded": [
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1791464400,
-            "match_id": "dxU5mH7M",
-            "opponent": "Al Tora",
-            "opponent_id": "CAN5bprA",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39189224",
-      "league": "Football / Iraq / Iraqi League",
-      "home": "Ghaz Al-Shamal SC",
-      "away": "AL Karkh",
-      "time": "19:00",
-      "odds": {
-        "home": 2.32,
-        "draw": 2.97,
-        "away": 3.11
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.32,
-          "draw": 2.97,
-          "away": 3.11
-        },
-        "dc": {
-          "home_draw": 1.31,
-          "draw_away": 1.5,
-          "home_away": 1.34
-        },
-        "btts": {
-          "yes": 1.95,
-          "no": 1.71
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.07,
-            "under": 6.59
-          },
-          "1.5": {
-            "over": 1.41,
-            "under": 2.63
-          },
-          "2.5": {
-            "over": 2.32,
-            "under": 1.52
-          },
-          "3.5": {
-            "over": 4.28,
-            "under": 1.17
-          },
-          "4.5": {
-            "over": 8.53,
-            "under": 1.03
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.28,
-            "under": 2.87
-          },
-          "1.5": {
-            "over": 2.44,
-            "under": 1.39
-          },
-          "2.5": {
-            "over": 5.55,
-            "under": 1.05
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.41,
-            "under": 2.39
-          },
-          "1.5": {
-            "over": 3.06,
-            "under": 1.24
-          },
-          "2.5": {
-            "over": 7.29,
-            "under": 1.01
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 3.2,
-            "draw_over": 4.4,
-            "away_over": 4.5,
-            "home_under": 7.0,
-            "draw_under": 7.6,
-            "away_under": 8.4
-          },
-          "2.5": {
-            "home_over": 4.4,
-            "draw_over": 16.0,
-            "away_over": 6.2,
-            "home_under": 4.4,
-            "draw_under": 3.4,
-            "away_under": 5.6
-          },
-          "3.5": {
-            "home_over": 9.77,
-            "draw_over": 15.95,
-            "away_over": 14.95,
-            "home_under": 2.84,
-            "draw_under": 3.39,
-            "away_under": 3.69
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.5,
-          "home_draw_no": 2.44,
-          "home_away_yes": 3.2,
-          "home_away_no": 2.1,
-          "draw_away_yes": 2.75,
-          "draw_away_no": 2.95
-        },
-        "x1x2_btts": {
-          "home_yes": 4.79,
-          "home_no": 3.06,
-          "away_yes": 6.39,
-          "away_no": 4.17,
-          "draw_yes": 3.82,
-          "draw_no": 6.39
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Ghaz Al-Shamal SC",
-        "form": [
-          "D",
-          "D",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          0,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1793972700,
-            "match_id": "vJnROSt4",
-            "opponent": "Al Talaba",
-            "opponent_id": "lOZsM6M4",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1793377800,
-            "match_id": "YL5dQK0B",
-            "opponent": "Erbil",
-            "opponent_id": "MLk7IOLT",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792935000,
-            "match_id": "SxI3JCmR",
-            "opponent": "Naft Missan",
-            "opponent_id": "6ynQ61PT",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792335600,
-            "match_id": "YHwydIk3",
-            "opponent": "Al Zawraa",
-            "opponent_id": "WWdfLQyB",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1791644400,
-            "match_id": "M3ssVlom",
-            "opponent": "Al Minaa",
-            "opponent_id": "ETw16Txa",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 10,
-        "total_teams_in_league": 20,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "AL Karkh",
-        "form": [
-          "W",
-          "L",
-          "D",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          2,
-          1,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794056400,
-            "match_id": "ITmsLptT",
-            "opponent": "Al Quwa Al Jawiya",
-            "opponent_id": "0Ygn4oxO",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793462400,
-            "match_id": "6mJ3ObVN",
-            "opponent": "Al Gharraf",
-            "opponent_id": "6ijwNYFs",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1792767600,
-            "match_id": "KCEeLYIE",
-            "opponent": "Al Mosul",
-            "opponent_id": "QoCjN5eh",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792344600,
-            "match_id": "6VyqfdKF",
-            "opponent": "Al Shorta",
-            "opponent_id": "84r5OlNu",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1791653400,
-            "match_id": "pKPMsSUh",
-            "opponent": "Al Karma",
-            "opponent_id": "hIVZ0V7r",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 20,
-        "opposition_position": 10
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 20
-    },
-    {
-      "id": "38761470",
-      "league": "Football / Algeria / Ligue 1",
-      "home": "MB Rouissat",
-      "away": "CR Belouizdad",
-      "time": "19:45",
-      "odds": {
-        "home": 4.36,
-        "draw": 3.12,
-        "away": 1.96
-      },
-      "markets": {
-        "1x2": {
-          "home": 4.36,
-          "draw": 3.12,
-          "away": 1.96
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.12,
-            "under": 6.12
-          },
-          "1.5": {
-            "over": 1.57,
-            "under": 2.37
-          },
-          "2.5": {
-            "over": 2.77,
-            "under": 1.43
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.73,
-            "under": 1.92
-          },
-          "1.5": {
-            "over": 4.39,
-            "under": 1.15
-          },
-          "2.5": {
-            "over": 8.8,
-            "under": 1.01
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.3,
-            "under": 3.04
-          },
-          "1.5": {
-            "over": 2.39,
-            "under": 1.47
-          },
-          "2.5": {
-            "over": 5.0,
-            "under": 1.11
-          }
-        },
-        "result_total": {
-          "1.5": {},
-          "2.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "MB Rouissat",
-        "form": [
-          "D",
-          "D",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          1,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794069900,
-            "match_id": "0IMRZj87",
-            "opponent": "ES Setif",
-            "opponent_id": "EDgC6qYp",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793465100,
-            "match_id": "CEk3n9zG",
-            "opponent": "Ben Aknoun",
-            "opponent_id": "QmvZvxCB",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792857600,
-            "match_id": "rukdWdpI",
-            "opponent": "ASO Chlef",
-            "opponent_id": "Aobolc96",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792341900,
-            "match_id": "zeaVSNwQ",
-            "opponent": "Saoura",
-            "opponent_id": "nimcBvel",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1791997200,
-            "match_id": "v7SmdP2l",
-            "opponent": "Temouchent",
-            "opponent_id": "p0qAWcB9",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 16,
-        "opposition_position": 1
-      },
-      "away_stats": {
-        "name": "CR Belouizdad",
-        "form": [
-          "W",
-          "W",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          3,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          2,
-          2,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794156300,
-            "match_id": "YLcO4B7s",
-            "opponent": "Ben Aknoun",
-            "opponent_id": "QmvZvxCB",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793646000,
-            "match_id": "pSmBpm5S",
-            "opponent": "Saoura",
-            "opponent_id": "nimcBvel",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792860300,
-            "match_id": "xrf9QRDd",
-            "opponent": "USM Alger",
-            "opponent_id": "zXBidj5t",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1791813600,
-            "match_id": "lKAT82nf",
-            "opponent": "El Biar",
-            "opponent_id": "6Ngogp51",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1791399600,
-            "match_id": "Uw6q0Y3M",
-            "opponent": "Khenchela",
-            "opponent_id": "lYuJtBj9",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 1,
-        "total_teams_in_league": 16,
-        "opposition_position": 4
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CR Belouizdad",
-            "away": "MB Rouissat",
-            "score": [
-              3,
-              1
-            ],
-            "ts": 1772917200
-          },
-          {
-            "home": "MB Rouissat",
-            "away": "CR Belouizdad",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1759510800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "38761533",
-      "league": "Football / Algeria / Ligue 1",
-      "home": "MC Alger",
-      "away": "Olympique Akbou",
-      "time": "19:45",
-      "odds": {
-        "home": 1.45,
-        "draw": 4.05,
-        "away": 8.09
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.45,
-          "draw": 4.05,
-          "away": 8.09
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.47,
-            "under": 2.62
-          },
-          "2.5": {
-            "over": 2.45,
-            "under": 1.53
-          },
-          "3.5": {
-            "over": 4.75,
-            "under": 1.18
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.17,
-            "under": 4.09
-          },
-          "1.5": {
-            "over": 1.82,
-            "under": 1.82
-          },
-          "2.5": {
-            "over": 3.44,
-            "under": 1.24
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 2.18,
-            "under": 1.56
-          },
-          "1.5": {
-            "over": 6.2,
-            "under": 1.06
-          }
-        },
-        "result_total": {
-          "1.5": {},
-          "2.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "MC Alger",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          2,
-          2,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794142800,
-            "match_id": "ABbijChl",
-            "opponent": "El Biar",
-            "opponent_id": "6Ngogp51",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793818800,
-            "match_id": "Q5cgXNCL",
-            "opponent": "Oran",
-            "opponent_id": "CrCmB35M",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793455200,
-            "match_id": "jPUuqeoL",
-            "opponent": "Khenchela",
-            "opponent_id": "lYuJtBj9",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793109600,
-            "match_id": "KKSDlv0n",
-            "opponent": "Biskra",
-            "opponent_id": "pMubgZIP",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792782000,
-            "match_id": "QHuCFh4m",
-            "opponent": "Rangers Int'l",
-            "opponent_id": "KxX6KECj",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 16,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Olympique Akbou",
-        "form": [
-          "D",
-          "D",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          3,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794056400,
-            "match_id": "Iy2aljN0",
-            "opponent": "Kabylie",
-            "opponent_id": "Wfaskwf0",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793386800,
-            "match_id": "lxhlw5c2",
-            "opponent": "Oran",
-            "opponent_id": "CrCmB35M",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792764900,
-            "match_id": "4Ue1Smqp",
-            "opponent": "Constantine",
-            "opponent_id": "nBionu2l",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1792161000,
-            "match_id": "dpEy7tH6",
-            "opponent": "Ben Aknoun",
-            "opponent_id": "QmvZvxCB",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1791478800,
-            "match_id": "jT4T3G4c",
-            "opponent": "Saoura",
-            "opponent_id": "nimcBvel",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 16,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "MC Alger",
-            "away": "Olympique Akbou",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1777402800
-          },
-          {
-            "home": "Olympique Akbou",
-            "away": "MC Alger",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1757689200
-          },
-          {
-            "home": "Olympique Akbou",
-            "away": "MC Alger",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1744731000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "39428374",
-      "league": "Football / Lithuania / 1 Lyga",
-      "home": "FK Sveikata Kybartai",
-      "away": "Hegelmann Kaunas B",
-      "time": "20:00",
-      "odds": {
-        "home": 2.74,
-        "draw": 2.99,
-        "away": 2.44
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.74,
-          "draw": 2.99,
-          "away": 2.44
-        },
-        "dc": {
-          "home_draw": 1.44,
-          "draw_away": 1.35,
-          "home_away": 1.31
-        },
-        "btts": {
-          "yes": 1.43,
-          "no": 2.44
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 1.56,
-            "under": 2.18
-          },
-          "3.5": {
-            "over": 2.28,
-            "under": 1.51
-          }
-        },
-        "home_goals": {
-          "1.5": {}
-        },
-        "away_goals": {
-          "1.5": {}
-        },
-        "result_total": {
-          "3.5": {
-            "home_over": 6.7,
-            "draw_over": 7.85,
-            "away_over": 5.74,
-            "home_under": 4.4,
-            "draw_under": 4.6,
-            "away_under": 3.93
-          }
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "FK Sveikata Kybartai",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          2,
-          0,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          5,
-          2,
-          2,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1777388400,
-            "match_id": "UoUdlbRi",
-            "opponent": "Kauno Zalgiris",
-            "opponent_id": "0p17kQla",
-            "home_away": "H",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1763895600,
-            "match_id": "hAyzN2Mq",
-            "opponent": "Siauliai 2",
-            "opponent_id": "Uabtt05L",
-            "home_away": "A",
-            "score": [
-              0,
-              5
-            ]
-          },
-          {
-            "ts": 1763658000,
-            "match_id": "MRp4SObM",
-            "opponent": "Siauliai 2",
-            "opponent_id": "Uabtt05L",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          },
-          {
-            "ts": 1746547200,
-            "match_id": "6LXWpTkl",
-            "opponent": "Babrungas",
-            "opponent_id": "lji4OKLR",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1715097600,
-            "match_id": "rwcJ8oAN",
-            "opponent": "Nemunas",
-            "opponent_id": "faJ7VpY8",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Hegelmann Kaunas B",
-        "form": [
-          "D",
-          "D",
-          "L",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          0,
-          4,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          4,
-          4,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794052800,
-            "match_id": "Cbwc0wBG",
-            "opponent": "Jonava",
-            "opponent_id": "jmW1Hn7M",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793552400,
-            "match_id": "WKys4LBi",
-            "opponent": "BFA Vilnius",
-            "opponent_id": "fowyKah0",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792929600,
-            "match_id": "AitoaiEl",
-            "opponent": "Babrungas",
-            "opponent_id": "lji4OKLR",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          },
-          {
-            "ts": 1792166400,
-            "match_id": "jDKNQc8M",
-            "opponent": "Tauras Taurage",
-            "opponent_id": "fLfvxM6n",
-            "home_away": "H",
-            "score": [
-              4,
-              4
-            ]
-          },
-          {
-            "ts": 1791630000,
-            "match_id": "t0I0ETIa",
-            "opponent": "Neptunas",
-            "opponent_id": "n7oPRgQm",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39422206",
-      "league": "Football / Sweden / Damallsvenskan",
-      "home": "KIF Orebro DFF Women",
-      "away": "FC Rosengaard Malmo Women",
-      "time": "20:00",
-      "odds": {
-        "home": 5.97,
-        "draw": 4.63,
-        "away": 1.44
-      },
-      "markets": {
-        "1x2": {
-          "home": 5.97,
-          "draw": 4.63,
-          "away": 1.44
-        },
-        "dc": {
-          "home_draw": 2.39,
-          "draw_away": 1.13,
-          "home_away": 1.18
-        },
-        "btts": {
-          "yes": 1.69,
-          "no": 2.0
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.01,
-            "under": 11.71
-          },
-          "1.5": {
-            "over": 1.16,
-            "under": 4.61
-          },
-          "2.5": {
-            "over": 1.54,
-            "under": 2.32
-          },
-          "3.5": {
-            "over": 2.37,
-            "under": 1.52
-          },
-          "4.5": {
-            "over": 4.04,
-            "under": 1.2
-          },
-          "5.5": {
-            "over": 7.27,
-            "under": 1.06
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.53,
-            "under": 2.34
-          },
-          "1.5": {
-            "over": 3.45,
-            "under": 1.26
-          },
-          "2.5": {
-            "over": 8.2,
-            "under": 1.04
-          }
-        },
-        "away_goals": {
-          "1.5": {
-            "over": 1.47,
-            "under": 2.5
-          },
-          "2.5": {
-            "over": 2.41,
-            "under": 1.5
-          },
-          "3.5": {
-            "over": 4.49,
-            "under": 1.17
-          }
-        },
-        "result_total": {
-          "2.5": {
-            "home_over": 9.16,
-            "draw_over": 13.94,
-            "away_over": 1.97,
-            "home_under": 13.94,
-            "draw_under": 6.17,
-            "away_under": 4.38
-          },
-          "3.5": {
-            "home_over": 19.97,
-            "draw_over": 13.98,
-            "away_over": 3.1,
-            "home_under": 7.79,
-            "draw_under": 6.19,
-            "away_under": 2.41
-          },
-          "4.5": {
-            "home_over": 29.98,
-            "draw_over": 59.96,
-            "away_over": 5.0,
-            "home_under": 6.8,
-            "draw_under": 4.6,
-            "away_under": 1.87
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 3.6,
-          "home_draw_no": 7.2,
-          "home_away_yes": 2.22,
-          "home_away_no": 2.15,
-          "draw_away_yes": 1.92,
-          "draw_away_no": 2.25
-        },
-        "x1x2_btts": {
-          "home_yes": 8.88,
-          "home_no": 11.09,
-          "away_yes": 2.5,
-          "away_no": 2.31,
-          "draw_yes": 4.99,
-          "draw_no": 15.72
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "KIF Orebro DFF Women",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          3,
-          4,
-          0,
-          2,
-          7
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          2,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794657600,
-            "match_id": "bsoA6eLi",
-            "opponent": "Hacken B W",
-            "opponent_id": "8zXmqSjK",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793988000,
-            "match_id": "xEHSgIyn",
-            "opponent": "Linkoping W",
-            "opponent_id": "no8wMruT",
-            "home_away": "H",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1793448000,
-            "match_id": "lW1Tiyk1",
-            "opponent": "Gamla Upsala W",
-            "opponent_id": "ru2KFc1a",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1792850400,
-            "match_id": "GrmCSKLk",
-            "opponent": "Alingsas W",
-            "opponent_id": "KGJs0OQF",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792245600,
-            "match_id": "MLRxEL6d",
-            "opponent": "Jitex W",
-            "opponent_id": "YXfJ20yG",
-            "home_away": "H",
-            "score": [
-              7,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "FC Rosengaard Malmo Women",
-        "form": [
-          "L",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          1,
-          0,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          2,
-          1,
-          2,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794747600,
-            "match_id": "vq7KDj7e",
-            "opponent": "IF Brommapojkarna W",
-            "opponent_id": "WfBVcsYm",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1794056400,
-            "match_id": "jaAkAH03",
-            "opponent": "Hammarby W",
-            "opponent_id": "x8hzI4Id",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793455200,
-            "match_id": "ryxlhquI",
-            "opponent": "Vaxjo DFF W",
-            "opponent_id": "4nmt4OBG",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792929600,
-            "match_id": "IDQvR6tJ",
-            "opponent": "AIK W",
-            "opponent_id": "ljYdplKc",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1792242000,
-            "match_id": "dMvpxXlK",
-            "opponent": "Vittsjo W",
-            "opponent_id": "ANkH9YTp",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "38714003",
-      "league": "Football / Saudi Arabia / U21 Elite League",
-      "home": "AL Okhdood U21",
-      "away": "AL Jabalain FC U21",
-      "time": "20:00",
-      "odds": {
-        "home": 2.41,
-        "draw": 3.47,
-        "away": 2.65
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.41,
-          "draw": 3.47,
-          "away": 2.65
-        },
-        "dc": {
-          "home_draw": 1.42,
-          "draw_away": 1.49,
-          "home_away": 1.29
-        },
-        "btts": {
-          "yes": 1.57,
-          "no": 2.2
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.02,
-            "under": 9.83
-          },
-          "1.5": {
-            "over": 1.21,
-            "under": 3.94
-          },
-          "2.5": {
-            "over": 1.7,
-            "under": 2.03
-          },
-          "3.5": {
-            "over": 2.74,
-            "under": 1.4
-          },
-          "4.5": {
-            "over": 4.92,
-            "under": 1.14
-          },
-          "5.5": {
-            "over": 9.04,
-            "under": 1.03
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.23,
-            "under": 3.7
-          },
-          "1.5": {
-            "over": 2.1,
-            "under": 1.66
-          },
-          "2.5": {
-            "over": 4.38,
-            "under": 1.17
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.26,
-            "under": 3.45
-          },
-          "1.5": {
-            "over": 2.24,
-            "under": 1.58
-          },
-          "2.5": {
-            "over": 4.79,
-            "under": 1.15
-          }
-        },
-        "result_total": {
-          "2.5": {
-            "home_over": 3.6,
-            "draw_over": 9.99,
-            "away_over": 4.0,
-            "home_under": 6.19,
-            "draw_under": 4.7,
-            "away_under": 6.79
-          },
-          "3.5": {
-            "home_over": 6.59,
-            "draw_over": 9.99,
-            "away_over": 7.39,
-            "home_under": 3.49,
-            "draw_under": 4.69,
-            "away_under": 3.79
-          },
-          "4.5": {
-            "home_over": 10.99,
-            "draw_over": 44.95,
-            "away_over": 11.99,
-            "home_under": 2.9,
-            "draw_under": 3.45,
-            "away_under": 3.15
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.16,
-          "home_draw_no": 3.45,
-          "home_away_yes": 2.3,
-          "home_away_no": 2.5,
-          "draw_away_yes": 2.26,
-          "draw_away_no": 3.75
-        },
-        "x1x2_btts": {
-          "home_yes": 3.89,
-          "home_no": 4.17,
-          "away_yes": 4.26,
-          "away_no": 4.63,
-          "draw_yes": 3.71,
-          "draw_no": 12.05
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "AL Okhdood U21",
-        "form": [
-          "L",
-          "L",
-          "L",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          4,
-          3,
-          1,
-          5
-        ],
-        "recent_results": [
-          {
-            "ts": 1794151200,
-            "match_id": "",
-            "opponent": "Al Jabalain",
-            "opponent_id": "IiU3CHMA",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793709300,
-            "match_id": "",
-            "opponent": "Damac",
-            "opponent_id": "xfAehSWL",
-            "home_away": "A",
-            "score": [
-              3,
-              4
-            ]
-          },
-          {
-            "ts": 1792515000,
-            "match_id": "",
-            "opponent": "Al Adalah",
-            "opponent_id": "rTsOwLSH",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1791991800,
-            "match_id": "",
-            "opponent": "Al Jandal",
-            "opponent_id": "KYVyZZDD",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1791478800,
-            "match_id": "",
-            "opponent": "Al Ula",
-            "opponent_id": "OC8T8zk3",
-            "home_away": "H",
-            "score": [
-              1,
-              5
-            ]
-          }
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 18,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "AL Jabalain FC U21",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          1,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794151200,
-            "match_id": "",
-            "opponent": "Al Okhdood",
-            "opponent_id": "tKjRGGMC",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793622600,
-            "match_id": "",
-            "opponent": "Al Bukiryah",
-            "opponent_id": "A7YIBlI0",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1793199900,
-            "match_id": "",
-            "opponent": "Al Raed",
-            "opponent_id": "WfHC8geK",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792601400,
-            "match_id": "",
-            "opponent": "Jeddah",
-            "opponent_id": "CfPZn6fq",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1791904500,
-            "match_id": "",
-            "opponent": "Al Saqer",
-            "opponent_id": "vJJNMVhU",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 18,
-        "opposition_position": 2
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "AL Okhdood U21",
-            "away": "AL Jabalain FC U21",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1794151200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 18
-    },
-    {
-      "id": "39130373",
-      "league": "Football / International / UEFA Champions League Women",
-      "home": "Paris FC Women",
-      "away": "HB Koege Women",
-      "time": "20:45",
-      "odds": {
-        "home": 1.5,
-        "draw": 4.3,
-        "away": 5.0
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.5,
-          "draw": 4.3,
-          "away": 5.0
-        },
-        "dc": {
-          "home_draw": 1.16,
-          "draw_away": 2.24,
-          "home_away": 1.19
-        },
-        "btts": {
-          "yes": 1.54,
-          "no": 2.21
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.01,
-            "under": 9.6
-          },
-          "1.5": {
-            "over": 1.13,
-            "under": 4.9
-          },
-          "2.5": {
-            "over": 1.45,
-            "under": 2.5
-          },
-          "3.5": {
-            "over": 2.1,
-            "under": 1.63
-          },
-          "4.5": {
-            "over": 3.4,
-            "under": 1.25
-          },
-          "5.5": {
-            "over": 5.8,
-            "under": 1.09
-          }
-        },
-        "home_goals": {
-          "2.5": {
-            "over": 2.2,
-            "under": 1.48
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.37,
-            "under": 2.5
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.64,
-            "draw_over": 5.17,
-            "away_over": 6.32,
-            "home_under": 10.53,
-            "draw_under": 21.07,
-            "away_under": 22.03
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 2.33,
-          "home_no": 2.6,
-          "away_yes": 6.8,
-          "away_no": 9.8,
-          "draw_yes": 4.4,
-          "draw_no": 17.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Paris FC Women",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          5,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          3,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794664800,
-            "match_id": "IF8uoKZ7",
-            "opponent": "Le Havre W",
-            "opponent_id": "0AE7nlMc",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1794332700,
-            "match_id": "AkipgQFb",
-            "opponent": "Real Madrid W",
-            "opponent_id": "4xlfVfnP",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1793988000,
-            "match_id": "KrkboTTj",
-            "opponent": "Montpellier W",
-            "opponent_id": "6yx58ded",
-            "home_away": "H",
-            "score": [
-              5,
-              0
-            ]
-          },
-          {
-            "ts": 1793539800,
-            "match_id": "Gn0KhByH",
-            "opponent": "PSG W",
-            "opponent_id": "8U7ZUNF2",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793295900,
-            "match_id": "jTh0krFN",
-            "opponent": "Hacken W",
-            "opponent_id": "bDld9pGs",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 18,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "HB Koege Women",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          4,
-          1,
-          6,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794657600,
-            "match_id": "Yi0shjgK",
-            "opponent": "Odense Q W",
-            "opponent_id": "0rDVcK23",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1794419100,
-            "match_id": "pQt0xdit",
-            "opponent": "Leuven W",
-            "opponent_id": "I9I2jkpo",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1794052800,
-            "match_id": "OQ22uD9E",
-            "opponent": "Aarhus W",
-            "opponent_id": "CGFW9H0K",
-            "home_away": "H",
-            "score": [
-              6,
-              0
-            ]
-          },
-          {
-            "ts": 1793813400,
-            "match_id": "lAFq5wtf",
-            "opponent": "Nordsjaelland W",
-            "opponent_id": "Ao5ouySa",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793529000,
-            "match_id": "KANUQDfL",
-            "opponent": "Fortuna Hjorring W",
-            "opponent_id": "z7WDKJ29",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          }
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 18,
-        "opposition_position": 15
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 18
-    },
-    {
-      "id": "39130350",
-      "league": "Football / International / UEFA Champions League Women",
-      "home": "FK Austria Wien Women",
-      "away": "Bayern Munich Women",
-      "time": "20:45",
-      "odds": {
-        "home": 16.0,
-        "draw": 8.6,
-        "away": 1.08
-      },
-      "markets": {
-        "1x2": {
-          "home": 16.0,
-          "draw": 8.6,
-          "away": 1.08
-        },
-        "dc": {
-          "home_draw": 4.7,
-          "draw_away": 1.02,
-          "home_away": 1.04
-        },
-        "btts": {
-          "yes": 1.95,
-          "no": 1.7
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.06,
-            "under": 7.0
-          },
-          "2.5": {
-            "over": 1.23,
-            "under": 3.6
-          },
-          "3.5": {
-            "over": 1.61,
-            "under": 2.13
-          },
-          "4.5": {
-            "over": 2.34,
-            "under": 1.51
-          },
-          "5.5": {
-            "over": 3.7,
-            "under": 1.22
-          },
-          "6.5": {
-            "over": 6.0,
-            "under": 1.09
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.84,
-            "under": 1.7
-          }
-        },
-        "away_goals": {
-          "3.5": {
-            "over": 1.97,
-            "under": 1.61
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 25.85,
-            "draw_over": 11.49,
-            "away_over": 1.11,
-            "home_under": 57.44,
-            "draw_under": 38.3,
-            "away_under": 12.45
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 26.0,
-          "home_no": 35.0,
-          "away_yes": 1.95,
-          "away_no": 1.57,
-          "draw_yes": 9.8,
-          "draw_no": 30.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "FK Austria Wien Women",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          1,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          4,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794513600,
-            "match_id": "juRS4xX0",
-            "opponent": "SL Benfica W",
-            "opponent_id": "8ho9ywWE",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1793538000,
-            "match_id": "SOKFim0T",
-            "opponent": "LASK W",
-            "opponent_id": "jVy2IQha",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1793295900,
-            "match_id": "KKGpz6AC",
-            "opponent": "Juventus W",
-            "opponent_id": "vNUKeXyQ",
-            "home_away": "H",
-            "score": [
-              1,
-              4
-            ]
-          },
-          {
-            "ts": 1792839600,
-            "match_id": "WfvStWoB",
-            "opponent": "SCR Altach W",
-            "opponent_id": "SdYhoXZe",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792321200,
-            "match_id": "0hc2QA1U",
-            "opponent": "St. Polten W",
-            "opponent_id": "461PX391",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": 18,
-        "total_teams_in_league": 18,
-        "opposition_position": 7
-      },
-      "away_stats": {
-        "name": "Bayern Munich Women",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          4,
-          2,
-          3,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          1,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794675300,
-            "match_id": "KbukRTzi",
-            "opponent": "Wolfsburg W",
-            "opponent_id": "Yaedf2i2",
-            "home_away": "A",
-            "score": [
-              4,
-              1
-            ]
-          },
-          {
-            "ts": 1794340800,
-            "match_id": "KC4mY9Lr",
-            "opponent": "PSG W",
-            "opponent_id": "8U7ZUNF2",
-            "home_away": "A",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1793986200,
-            "match_id": "Wzd9949l",
-            "opponent": "Werder Bremen W",
-            "opponent_id": "vyDE3LZH",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793541600,
-            "match_id": "hvhZSDbC",
-            "opponent": "Bayer Leverkusen W",
-            "opponent_id": "hjuyw2Kb",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793209500,
-            "match_id": "K4Gdj9sR",
-            "opponent": "Real Madrid W",
-            "opponent_id": "4xlfVfnP",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          }
-        ],
-        "league_position": 7,
-        "total_teams_in_league": 18,
-        "opposition_position": 18
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": 18
-    },
-    {
-      "id": "39475558",
-      "league": "Football / Argentina / Primera Division, Women",
-      "home": "Ferro Carril Oeste Women",
-      "away": "CA River Plate (ARG) Women",
-      "time": "22:00",
-      "odds": {
-        "home": 2.23,
-        "draw": 3.17,
-        "away": 3.17
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.23,
-          "draw": 3.17,
-          "away": 3.17
-        },
-        "dc": {
-          "home_draw": 1.32,
-          "draw_away": 1.57,
-          "home_away": 1.32
-        },
-        "btts": {
-          "yes": 1.83,
-          "no": 1.84
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.34,
-            "under": 3.02
-          },
-          "2.5": {
-            "over": 2.07,
-            "under": 1.67
-          },
-          "3.5": {
-            "over": 3.61,
-            "under": 1.25
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.26,
-            "under": 3.25
-          },
-          "1.5": {
-            "over": 2.25,
-            "under": 1.53
-          },
-          "2.5": {
-            "over": 4.7,
-            "under": 1.13
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.4,
-            "under": 2.6
-          },
-          "1.5": {
-            "over": 2.85,
-            "under": 1.34
-          },
-          "2.5": {
-            "over": 6.2,
-            "under": 1.06
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 2.76,
-            "draw_over": 4.22,
-            "away_over": 4.13,
-            "home_under": 7.35,
-            "draw_under": 8.82,
-            "away_under": 9.18
-          },
-          "2.5": {
-            "home_over": 3.64,
-            "draw_over": 13.66,
-            "away_over": 5.47,
-            "home_under": 4.37,
-            "draw_under": 3.64,
-            "away_under": 6.01
-          },
-          "3.5": {
-            "home_over": 7.54,
-            "draw_over": 12.88,
-            "away_over": 11.96,
-            "home_under": 2.76,
-            "draw_under": 3.68,
-            "away_under": 3.68
-          },
-          "4.5": {
-            "home_over": 13.76,
-            "draw_over": 82.57,
-            "away_over": 22.02,
-            "home_under": 2.34,
-            "draw_under": 2.98,
-            "away_under": 3.26
-          }
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Ferro Carril Oeste Women",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          0,
-          4,
-          2,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          2,
-          0,
-          0,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794837600,
-            "match_id": "pOXalB7l",
-            "opponent": "Boca Juniors W",
-            "opponent_id": "SdNSNeCC",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1794506400,
-            "match_id": "nZU6jThL",
-            "opponent": "Lanus W",
-            "opponent_id": "I3EQFAwa",
-            "home_away": "H",
-            "score": [
-              4,
-              0
-            ]
-          },
-          {
-            "ts": 1793988000,
-            "match_id": "Eodl55Ri",
-            "opponent": "San Luis W",
-            "opponent_id": "KWmhpJYO",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1790962200,
-            "match_id": "EwdvNA2m",
-            "opponent": "Union de Santa Fe W",
-            "opponent_id": "dhw8TNn9",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1790355600,
-            "match_id": "82ftKIHM",
-            "opponent": "Independiente W",
-            "opponent_id": "Uey2kr6e",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 16,
-        "opposition_position": 11
-      },
-      "away_stats": {
-        "name": "CA River Plate (ARG) Women",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "W",
-          "L"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          2,
-          1,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794852000,
-            "match_id": "h8R18WbK",
-            "opponent": "Social Atletico Television W",
-            "opponent_id": "82bURYxU",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1794506400,
-            "match_id": "v9RbhkO8",
-            "opponent": "Banfield W",
-            "opponent_id": "pjF54UoA",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793988000,
-            "match_id": "nafd3qd4",
-            "opponent": "Gimnasia L.P. W",
-            "opponent_id": "IVEZmcN8",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1791050400,
-            "match_id": "ryFE6kI6",
-            "opponent": "Newells Old Boys W",
-            "opponent_id": "jidyl1Za",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1790791200,
-            "match_id": "2VWQzIyQ",
-            "opponent": "Boca Juniors W",
-            "opponent_id": "SdNSNeCC",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": 11,
-        "total_teams_in_league": 16,
-        "opposition_position": 8
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA River Plate (ARG) Women",
-            "away": "Ferro Carril Oeste Women",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1778868000
-          },
-          {
-            "home": "CA River Plate (ARG) Women",
-            "away": "Ferro Carril Oeste Women",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1742734800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 16
-    },
-    {
-      "id": "39214924",
-      "league": "Football / Spain / Copa de SM La Reina",
-      "home": "RC Celta de Vigo Women",
-      "away": "RCD Espanyol Barcelona Women",
-      "time": "21:00",
-      "odds": {
-        "home": 7.7,
-        "draw": 5.2,
-        "away": 1.32
-      },
-      "markets": {
-        "1x2": {
-          "home": 7.7,
-          "draw": 5.2,
-          "away": 1.32
-        },
-        "dc": {
-          "home_draw": 2.75,
-          "draw_away": 1.09,
-          "home_away": 1.15
-        },
-        "btts": {
-          "yes": 1.77,
-          "no": 1.91
-        },
-        "total_goals": {
-          "1.5": {
-            "over": 1.14,
-            "under": 4.92
-          },
-          "2.5": {
-            "over": 1.5,
-            "under": 2.42
-          },
-          "3.5": {
-            "over": 2.26,
-            "under": 1.57
-          },
-          "4.5": {
-            "over": 3.84,
-            "under": 1.22
-          },
-          "5.5": {
-            "over": 6.87,
-            "under": 1.07
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.63,
-            "under": 2.14
-          },
-          "1.5": {
-            "over": 3.95,
-            "under": 1.21
-          },
-          "2.5": {
-            "over": 9.38,
-            "under": 1.03
-          }
-        },
-        "away_goals": {
-          "1.5": {
-            "over": 1.38,
-            "under": 2.8
-          },
-          "2.5": {
-            "over": 2.15,
-            "under": 1.62
-          },
-          "3.5": {
-            "over": 3.85,
-            "under": 1.22
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 9.18,
-            "draw_over": 5.93,
-            "away_over": 1.42,
-            "home_under": 22.94,
-            "draw_under": 18.16,
-            "away_under": 8.22
-          },
-          "2.5": {
-            "home_over": 11.48,
-            "draw_over": 15.31,
-            "away_over": 1.71,
-            "home_under": 16.27,
-            "draw_under": 6.51,
-            "away_under": 4.02
-          },
-          "3.5": {
-            "home_over": 25.96,
-            "draw_over": 15.38,
-            "away_over": 2.6,
-            "home_under": 9.42,
-            "draw_under": 6.54,
-            "away_under": 2.21
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 4.2,
-          "home_draw_no": 8.4,
-          "home_away_yes": 2.24,
-          "home_away_no": 2.01,
-          "draw_away_yes": 1.93,
-          "draw_away_no": 2.06
-        },
-        "x1x2_btts": {
-          "home_yes": 11.13,
-          "home_no": 13.91,
-          "away_yes": 2.41,
-          "away_no": 2.07,
-          "draw_yes": 5.56,
-          "draw_no": 16.69
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "RC Celta de Vigo Women",
-        "form": [
-          "L"
-        ],
-        "goals_scored": [
-          1
-        ],
-        "goals_conceded": [
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1788084000,
-            "match_id": "faYsHUMO",
-            "opponent": "Porto W",
-            "opponent_id": "2JcvnGwA",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "RCD Espanyol Barcelona Women",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          2,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          1,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794654000,
-            "match_id": "viSAiKiR",
-            "opponent": "Costa Adeje Tenerife W",
-            "opponent_id": "fcBoKD55",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1794049200,
-            "match_id": "nPJ9Xb0e",
-            "opponent": "Granada CF W",
-            "opponent_id": "8b8GcEs5",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793458800,
-            "match_id": "0lF1UYmn",
-            "opponent": "Logrono W",
-            "opponent_id": "CYmmY1W5",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792836000,
-            "match_id": "WEYyED35",
-            "opponent": "Real Sociedad W",
-            "opponent_id": "Krn18eIO",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792261800,
-            "match_id": "IXePny56",
-            "opponent": "Real Madrid W",
-            "opponent_id": "4xlfVfnP",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": null,
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39358764",
-      "league": "Football / Egypt / Egypt Cup",
-      "home": "Zed FC",
-      "away": "Smouha SC",
-      "time": "21:00",
-      "odds": {
-        "home": 2.58,
-        "draw": 2.63,
-        "away": 3.2
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.58,
-          "draw": 2.63,
-          "away": 3.2
-        },
-        "dc": {
-          "home_draw": 1.32,
-          "draw_away": 1.44,
-          "home_away": 1.43
-        },
-        "btts": {
-          "yes": 2.16,
-          "no": 1.6
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.12,
-            "under": 5.31
-          },
-          "1.5": {
-            "over": 1.55,
-            "under": 2.3
-          },
-          "2.5": {
-            "over": 2.8,
-            "under": 1.38
-          },
-          "3.5": {
-            "over": 5.31,
-            "under": 1.12
-          },
-          "4.5": {
-            "over": 10.81,
-            "under": 1.01
-          }
-        },
-        "home_goals": {
-          "0.5": {
-            "over": 1.43,
-            "under": 2.6
-          },
-          "1.5": {
-            "over": 3.05,
-            "under": 1.33
-          },
-          "2.5": {
-            "over": 7.2,
-            "under": 1.06
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.54,
-            "under": 2.32
-          },
-          "1.5": {
-            "over": 3.55,
-            "under": 1.25
-          },
-          "2.5": {
-            "over": 8.58,
-            "under": 1.04
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 3.7,
-            "draw_over": 4.14,
-            "away_over": 4.81,
-            "home_under": 6.35,
-            "draw_under": 5.39,
-            "away_under": 7.31
-          },
-          "2.5": {
-            "home_over": 5.36,
-            "draw_over": 17.23,
-            "away_over": 6.89,
-            "home_under": 4.12,
-            "draw_under": 2.73,
-            "away_under": 4.98
-          },
-          "3.5": {
-            "home_over": 13.43,
-            "draw_over": 17.27,
-            "away_over": 18.23,
-            "home_under": 2.83,
-            "draw_under": 2.73,
-            "away_under": 3.41
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 2.7,
-          "home_draw_no": 2.25,
-          "home_away_yes": 3.9,
-          "home_away_no": 2.07,
-          "draw_away_yes": 2.85,
-          "draw_away_no": 2.55
-        },
-        "x1x2_btts": {
-          "home_yes": 6.3,
-          "home_no": 3.29,
-          "away_yes": 7.78,
-          "away_no": 4.08,
-          "draw_yes": 3.8,
-          "draw_no": 5.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Zed FC",
-        "form": [
-          "W",
-          "D",
-          "L",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          5,
-          0,
-          1,
-          0,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          2,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794236400,
-            "match_id": "tvkbNzom",
-            "opponent": "Samanod",
-            "opponent_id": "SE9rZSw7",
-            "home_away": "H",
-            "score": [
-              5,
-              1
-            ]
-          },
-          {
-            "ts": 1793804400,
-            "match_id": "4UayrGF8",
-            "opponent": "El Gaish",
-            "opponent_id": "rRAQSp3M",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793469600,
-            "match_id": "z3NSejV6",
-            "opponent": "Ceramica Cleopatra",
-            "opponent_id": "ATasWtPS",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1792846800,
-            "match_id": "pQdA3Xh2",
-            "opponent": "Azam",
-            "opponent_id": "SrpJwYn3",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792504800,
-            "match_id": "r9KzkrIM",
-            "opponent": "Modern Sport",
-            "opponent_id": "KCzFp0OB",
-            "home_away": "H",
-            "score": [
-              3,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Smouha SC",
-        "form": [
-          "W",
-          "L",
-          "D",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          2,
-          0,
-          1,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          1,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1793968200,
-            "match_id": "n55eJqjT",
-            "opponent": "El Minya",
-            "opponent_id": "K4bdMbxB",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793728800,
-            "match_id": "SUHqxQRk",
-            "opponent": "Pyramids",
-            "opponent_id": "zyHMiDZ6",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793469600,
-            "match_id": "rTQzfUaJ",
-            "opponent": "Petrojet",
-            "opponent_id": "0ImETQmG",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792418400,
-            "match_id": "vFzutmZi",
-            "opponent": "El Gouna",
-            "opponent_id": "EHDG5a4M",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1791824400,
-            "match_id": "riw0T9kn",
-            "opponent": "Ghazl El Mahallah",
-            "opponent_id": "WYauVS3c",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Zed FC",
-            "away": "Smouha SC",
-            "score": [
-              1,
-              0
-            ],
-            "ts": 1765389600
-          },
-          {
-            "home": "Smouha SC",
-            "away": "Zed FC",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1755799200
-          },
-          {
-            "home": "Zed FC",
-            "away": "Smouha SC",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1748538000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39355351",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "Argentinos Juniors Reserve",
-      "away": "Gimnasia de Mendoza Reserve",
-      "time": "21:00",
-      "odds": {
-        "home": 3.1,
-        "draw": 3.19,
-        "away": 2.11
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.1,
-          "draw": 3.19,
-          "away": 2.11
-        },
-        "dc": {
-          "home_draw": 1.6,
-          "draw_away": 1.28,
-          "home_away": 1.26
-        },
-        "btts": {
-          "yes": 1.8,
-          "no": 1.8
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 2.06,
-            "under": 1.63
-          }
-        },
-        "home_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "away_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "result_total": {
-          "1.5": {},
-          "2.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Argentinos Juniors Reserve",
-        "form": [
-          "W",
-          "L",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          8,
-          1,
-          2,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794506400,
-            "match_id": "hr4jB245",
-            "opponent": "Barracas Central 2",
-            "opponent_id": "SpMY4btk",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793728800,
-            "match_id": "dza8tWsH",
-            "opponent": "Talleres Cordoba 2",
-            "opponent_id": "CfoXZ8CU",
-            "home_away": "H",
-            "score": [
-              1,
-              8
-            ]
-          },
-          {
-            "ts": 1793210400,
-            "match_id": "YPaySWSN",
-            "opponent": "Banfield 2",
-            "opponent_id": "ImG1OD5S",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792519200,
-            "match_id": "KbsMymed",
-            "opponent": "Rosario Central 2",
-            "opponent_id": "4CGOAl56",
-            "home_away": "H",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1792000800,
-            "match_id": "EsYDYMrm",
-            "opponent": "Tigre 2",
-            "opponent_id": "YmKzQr9p",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 14,
-        "total_teams_in_league": 36,
-        "opposition_position": 4
-      },
-      "away_stats": {
-        "name": "Gimnasia de Mendoza Reserve",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          1,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794333600,
-            "match_id": "A3830ojm",
-            "opponent": "Aldosivi 2",
-            "opponent_id": "MwfEquoB",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793815200,
-            "match_id": "U7ZigUrK",
-            "opponent": "Gimnasia L.P. 2",
-            "opponent_id": "6eFbFKN7",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793210400,
-            "match_id": "nkeTO6GE",
-            "opponent": "Union de Santa Fe 2",
-            "opponent_id": "IwiYo4sG",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792692000,
-            "match_id": "GUWSnD3c",
-            "opponent": "Atl. Tucuman 2",
-            "opponent_id": "jLdFI9ao",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792087200,
-            "match_id": "bX83NyJl",
-            "opponent": "Godoy Cruz 2",
-            "opponent_id": "ILDOZ8W0",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 4,
-        "total_teams_in_league": 36,
-        "opposition_position": 14
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Gimnasia de Mendoza Reserve",
-            "away": "Argentinos Juniors Reserve",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1781719200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "39355350",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "CA Aldosivi Reserve",
-      "away": "CD Godoy Cruz",
-      "time": "21:00",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.19,
-        "away": 2.77
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.3,
-          "draw": 3.19,
-          "away": 2.77
-        },
-        "dc": {
-          "home_draw": 1.35,
-          "draw_away": 1.51,
-          "home_away": 1.26
-        },
-        "btts": {
-          "yes": 1.61,
-          "no": 2.04
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 1.82,
-            "under": 1.82
-          }
-        },
-        "home_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "away_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "result_total": {
-          "2.5": {},
-          "3.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "CA Aldosivi Reserve",
-        "form": [
-          "D",
-          "L",
-          "L",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          0,
-          0,
-          2,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          1,
-          2,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794333600,
-            "match_id": "A3830ojm",
-            "opponent": "Gimnasia Mendoza 2",
-            "opponent_id": "EJWyFbPk",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793815200,
-            "match_id": "dMVjZ8il",
-            "opponent": "Barracas Central 2",
-            "opponent_id": "SpMY4btk",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793124000,
-            "match_id": "6gxO0fUO",
-            "opponent": "Talleres Cordoba 2",
-            "opponent_id": "CfoXZ8CU",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1792519200,
-            "match_id": "n5Z7ajm3",
-            "opponent": "Banfield 2",
-            "opponent_id": "ImG1OD5S",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792000800,
-            "match_id": "xIvhGKBL",
-            "opponent": "Rosario Central 2",
-            "opponent_id": "4CGOAl56",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 15,
-        "total_teams_in_league": 36,
-        "opposition_position": 6
-      },
-      "away_stats": {
-        "name": "CD Godoy Cruz",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          3,
-          3,
-          4,
-          1,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          2,
-          1,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794506400,
-            "match_id": "dK6BbPKa",
-            "opponent": "Gimnasia L.P. 2",
-            "opponent_id": "6eFbFKN7",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793815200,
-            "match_id": "0jQNm86s",
-            "opponent": "Union de Santa Fe 2",
-            "opponent_id": "IwiYo4sG",
-            "home_away": "A",
-            "score": [
-              3,
-              2
-            ]
-          },
-          {
-            "ts": 1793296800,
-            "match_id": "hnbLVETb",
-            "opponent": "Atl. Tucuman 2",
-            "opponent_id": "jLdFI9ao",
-            "home_away": "H",
-            "score": [
-              4,
-              2
-            ]
-          },
-          {
-            "ts": 1792692000,
-            "match_id": "OzpsP9Bj",
-            "opponent": "Instituto 2",
-            "opponent_id": "4GsKQzrM",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792087200,
-            "match_id": "bX83NyJl",
-            "opponent": "Gimnasia Mendoza 2",
-            "opponent_id": "EJWyFbPk",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          }
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 36,
-        "opposition_position": 15
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CD Godoy Cruz",
-            "away": "CA Aldosivi Reserve",
-            "score": [
-              2,
-              2
-            ],
-            "ts": 1781892000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "39375384",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "CA River Plate (Arg) Reserve",
-      "away": "CA Banfield",
-      "time": "21:00",
-      "odds": {
-        "home": 1.49,
-        "draw": 3.95,
-        "away": 5.41
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.49,
-          "draw": 3.95,
-          "away": 5.41
-        },
-        "btts": {
-          "yes": 1.76,
-          "no": 1.85
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 1.69,
-            "under": 1.97
-          }
-        },
-        "home_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "away_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "result_total": {
-          "2.5": {},
-          "3.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "CA River Plate (Arg) Reserve",
-        "form": [
-          "D",
-          "W",
-          "W",
-          "D",
-          "L"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          3,
-          1,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          1,
-          3
-        ],
-        "recent_results": [
-          {
-            "ts": 1794506400,
-            "match_id": "KU5rDOZh",
-            "opponent": "Rosario Central 2",
-            "opponent_id": "4CGOAl56",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793743200,
-            "match_id": "tALwuvO9",
-            "opponent": "Tigre 2",
-            "opponent_id": "YmKzQr9p",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1793210400,
-            "match_id": "QFz84xVa",
-            "opponent": "San Lorenzo 2",
-            "opponent_id": "2NEcQ61C",
-            "home_away": "A",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1792620000,
-            "match_id": "hhgBUVmT",
-            "opponent": "Velez Sarsfield 2",
-            "opponent_id": "CMVwerg2",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1791914400,
-            "match_id": "IwskI1b6",
-            "opponent": "Instituto 2",
-            "opponent_id": "4GsKQzrM",
-            "home_away": "A",
-            "score": [
-              2,
-              3
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 36,
-        "opposition_position": 17
-      },
-      "away_stats": {
-        "name": "CA Banfield",
-        "form": [
-          "L",
-          "W",
-          "D",
-          "L",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          2,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          0,
-          1,
-          2,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794420000,
-            "match_id": "v1RwpQ56",
-            "opponent": "Racing Club 2",
-            "opponent_id": "4j1wNPo2",
-            "home_away": "H",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1793728800,
-            "match_id": "xEn6VQjD",
-            "opponent": "Sarmiento Junin 2",
-            "opponent_id": "ITs1hOLR",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1793210400,
-            "match_id": "YPaySWSN",
-            "opponent": "Argentinos Jrs 2",
-            "opponent_id": "I7xvB9xj",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792519200,
-            "match_id": "n5Z7ajm3",
-            "opponent": "Aldosivi 2",
-            "opponent_id": "MwfEquoB",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1791914400,
-            "match_id": "21NXSceR",
-            "opponent": "Gimnasia L.P. 2",
-            "opponent_id": "6eFbFKN7",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 17,
-        "total_teams_in_league": 36,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA Banfield",
-            "away": "CA River Plate (Arg) Reserve",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1781719200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "39375383",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "CA Sarmiento de Junin",
-      "away": "CA Barracas Central Reserve",
-      "time": "21:00",
-      "odds": {
-        "home": 2.21,
-        "draw": 3.06,
-        "away": 3.01
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.21,
-          "draw": 3.06,
-          "away": 3.01
-        },
-        "dc": {
-          "home_draw": 1.3,
-          "draw_away": 1.53,
-          "home_away": 1.28
-        },
-        "btts": {
-          "yes": 1.85,
-          "no": 1.76
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 2.15,
-            "under": 1.58
-          }
-        },
-        "home_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "away_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "CA Sarmiento de Junin",
-        "form": [
-          "L",
-          "L",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          1,
-          0,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          3,
-          2,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794427200,
-            "match_id": "hrOXAgAM",
-            "opponent": "Talleres Cordoba 2",
-            "opponent_id": "CfoXZ8CU",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1793728800,
-            "match_id": "xEn6VQjD",
-            "opponent": "Banfield 2",
-            "opponent_id": "ImG1OD5S",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1793124000,
-            "match_id": "IkXa6b0m",
-            "opponent": "Rosario Central 2",
-            "opponent_id": "4CGOAl56",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792519200,
-            "match_id": "G2hrqV2M",
-            "opponent": "Tigre 2",
-            "opponent_id": "YmKzQr9p",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792087200,
-            "match_id": "6Hl3R5yK",
-            "opponent": "San Lorenzo 2",
-            "opponent_id": "2NEcQ61C",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 9,
-        "total_teams_in_league": 36,
-        "opposition_position": 16
-      },
-      "away_stats": {
-        "name": "CA Barracas Central Reserve",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          1,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          0,
-          1,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794506400,
-            "match_id": "hr4jB245",
-            "opponent": "Argentinos Jrs 2",
-            "opponent_id": "I7xvB9xj",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793815200,
-            "match_id": "dMVjZ8il",
-            "opponent": "Aldosivi 2",
-            "opponent_id": "MwfEquoB",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793296800,
-            "match_id": "QadTThbB",
-            "opponent": "Gimnasia L.P. 2",
-            "opponent_id": "6eFbFKN7",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792692000,
-            "match_id": "YNdeYDl4",
-            "opponent": "Union de Santa Fe 2",
-            "opponent_id": "IwiYo4sG",
-            "home_away": "A",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1792087200,
-            "match_id": "M7yMW0Da",
-            "opponent": "Atl. Tucuman 2",
-            "opponent_id": "jLdFI9ao",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          }
-        ],
-        "league_position": 16,
-        "total_teams_in_league": 36,
-        "opposition_position": 9
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA Barracas Central Reserve",
-            "away": "CA Sarmiento de Junin",
-            "score": [
-              0,
-              0
-            ],
-            "ts": 1781892000
-          },
-          {
-            "home": "CA Barracas Central Reserve",
-            "away": "CA Sarmiento de Junin",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1756922400
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "39355349",
-      "league": "Football / Argentina / Liga Profesional, Reserves",
-      "home": "Racing Club Avellaneda",
-      "away": "CA Talleres de Cordoba Reserve",
-      "time": "21:00",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.3,
-        "away": 2.45
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.5,
-          "draw": 3.3,
-          "away": 2.45
-        },
-        "dc": {
-          "home_draw": 1.44,
-          "draw_away": 1.41,
-          "home_away": 1.25
-        },
-        "btts": {
-          "yes": 1.56,
-          "no": 2.13
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 1.73,
-            "under": 1.92
-          }
-        },
-        "home_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "away_goals": {
-          "0.5": {},
-          "1.5": {},
-          "2.5": {}
-        },
-        "result_total": {
-          "2.5": {},
-          "3.5": {}
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Racing Club Avellaneda",
-        "form": [
-          "W",
-          "D",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          1,
-          3,
-          2,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          1,
-          3,
-          4
-        ],
-        "recent_results": [
-          {
-            "ts": 1794420000,
-            "match_id": "v1RwpQ56",
-            "opponent": "Banfield 2",
-            "opponent_id": "ImG1OD5S",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793901600,
-            "match_id": "lj56MAjo",
-            "opponent": "Rosario Central 2",
-            "opponent_id": "4CGOAl56",
-            "home_away": "H",
-            "score": [
-              1,
-              1
-            ]
-          },
-          {
-            "ts": 1793210400,
-            "match_id": "rgMeFgqI",
-            "opponent": "Tigre 2",
-            "opponent_id": "YmKzQr9p",
-            "home_away": "A",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1792692000,
-            "match_id": "xxDmCTW8",
-            "opponent": "San Lorenzo 2",
-            "opponent_id": "2NEcQ61C",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1792087200,
-            "match_id": "GQYV8x4e",
-            "opponent": "Velez Sarsfield 2",
-            "opponent_id": "CMVwerg2",
-            "home_away": "A",
-            "score": [
-              0,
-              4
-            ]
-          }
-        ],
-        "league_position": 12,
-        "total_teams_in_league": 36,
-        "opposition_position": 2
-      },
-      "away_stats": {
-        "name": "CA Talleres de Cordoba Reserve",
-        "form": [
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          3,
-          8,
-          2,
-          1,
-          3
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          0,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794427200,
-            "match_id": "hrOXAgAM",
-            "opponent": "Sarmiento Junin 2",
-            "opponent_id": "ITs1hOLR",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793728800,
-            "match_id": "dza8tWsH",
-            "opponent": "Argentinos Jrs 2",
-            "opponent_id": "I7xvB9xj",
-            "home_away": "A",
-            "score": [
-              8,
-              1
-            ]
-          },
-          {
-            "ts": 1793124000,
-            "match_id": "6gxO0fUO",
-            "opponent": "Aldosivi 2",
-            "opponent_id": "MwfEquoB",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792605600,
-            "match_id": "QcgmzzKi",
-            "opponent": "Gimnasia L.P. 2",
-            "opponent_id": "6eFbFKN7",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792094400,
-            "match_id": "fyKPUJQE",
-            "opponent": "Union de Santa Fe 2",
-            "opponent_id": "IwiYo4sG",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          }
-        ],
-        "league_position": 2,
-        "total_teams_in_league": 36,
-        "opposition_position": 12
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "CA Talleres de Cordoba Reserve",
-            "away": "Racing Club Avellaneda",
-            "score": [
-              2,
-              3
-            ],
-            "ts": 1781719200
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 36
-    },
-    {
-      "id": "39420723",
-      "league": "Football / Brazil / U20 Carioca, Serie A",
-      "home": "Madureira EC RJ U20",
-      "away": "Bangu AC RJ U20",
-      "time": "21:00",
-      "odds": {
-        "home": 2.36,
-        "draw": 3.3,
-        "away": 2.7
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.36,
-          "draw": 3.3,
-          "away": 2.7
-        },
-        "dc": {
-          "home_draw": 1.39,
-          "draw_away": 1.49,
-          "home_away": 1.29
-        },
-        "btts": {
-          "yes": 1.58,
-          "no": 2.15
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.03,
-            "under": 8.2
-          },
-          "1.5": {
-            "over": 1.22,
-            "under": 3.7
-          },
-          "2.5": {
-            "over": 1.72,
-            "under": 1.97
-          },
-          "3.5": {
-            "over": 2.7,
-            "under": 1.39
-          },
-          "4.5": {
-            "over": 4.78,
-            "under": 1.14
-          },
-          "5.5": {
-            "over": 7.8,
-            "under": 1.04
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 2.0,
-            "under": 1.59
-          }
-        },
-        "away_goals": {
-          "1.5": {
-            "over": 2.16,
-            "under": 1.5
-          }
-        },
-        "result_total": {
-          "3.5": {
-            "home_over": 6.53,
-            "draw_over": 10.56,
-            "away_over": 7.87,
-            "home_under": 3.41,
-            "draw_under": 4.51,
-            "away_under": 3.84
-          }
-        },
-        "x1x2_btts": {
-          "home_yes": 3.75,
-          "home_no": 3.95,
-          "away_yes": 4.2,
-          "away_no": 4.5,
-          "draw_yes": 3.55,
-          "draw_no": 11.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Madureira EC RJ U20",
-        "form": [
-          "D",
-          "W",
-          "L",
-          "L",
-          "D"
-        ],
-        "goals_scored": [
-          0,
-          1,
-          0,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          3,
-          3,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794765600,
-            "match_id": "SddlzDcE",
-            "opponent": "Sampaio Correa FE U20",
-            "opponent_id": "ELNHl5ms",
-            "home_away": "A",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1793988000,
-            "match_id": "0j42C957",
-            "opponent": "Sampaio Correa FE U20",
-            "opponent_id": "ELNHl5ms",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793365200,
-            "match_id": "h6tbnogJ",
-            "opponent": "Vasco U20",
-            "opponent_id": "KpxXEEbn",
-            "home_away": "A",
-            "score": [
-              0,
-              3
-            ]
-          },
-          {
-            "ts": 1792846800,
-            "match_id": "ptwjl7O6",
-            "opponent": "Vasco U20",
-            "opponent_id": "KpxXEEbn",
-            "home_away": "H",
-            "score": [
-              2,
-              3
-            ]
-          },
-          {
-            "ts": 1792260000,
-            "match_id": "rk4voiZH",
-            "opponent": "Bangu U20",
-            "opponent_id": "82lJ5dFF",
-            "home_away": "A",
-            "score": [
-              2,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "away_stats": {
-        "name": "Bangu AC RJ U20",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "D"
-        ],
-        "goals_scored": [
-          2,
-          1,
-          1,
-          2,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          0,
-          3,
-          0,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794661200,
-            "match_id": "Sx6fEVze",
-            "opponent": "Nova Iguacu U20",
-            "opponent_id": "OAxRqJRK",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1794056400,
-            "match_id": "KC2nGi6r",
-            "opponent": "Nova Iguacu U20",
-            "opponent_id": "OAxRqJRK",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1793469600,
-            "match_id": "fZEF4S8m",
-            "opponent": "Botafogo U20",
-            "opponent_id": "fiMQubcQ",
-            "home_away": "A",
-            "score": [
-              1,
-              3
-            ]
-          },
-          {
-            "ts": 1792864800,
-            "match_id": "p0TqAloQ",
-            "opponent": "Botafogo U20",
-            "opponent_id": "fiMQubcQ",
-            "home_away": "H",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792260000,
-            "match_id": "rk4voiZH",
-            "opponent": "Madureira U20",
-            "opponent_id": "bFHo6lfb",
-            "home_away": "H",
-            "score": [
-              2,
-              2
-            ]
-          }
-        ],
-        "league_position": null,
-        "total_teams_in_league": null,
-        "opposition_position": null
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Bangu AC RJ U20",
-            "away": "Madureira EC RJ U20",
-            "score": [
-              2,
-              2
-            ],
-            "ts": 1792260000
-          },
-          {
-            "home": "Madureira EC RJ U20",
-            "away": "Bangu AC RJ U20",
-            "score": [
-              3,
-              1
-            ],
-            "ts": 1755954000
-          },
-          {
-            "home": "Madureira EC RJ U20",
-            "away": "Bangu AC RJ U20",
-            "score": [
-              0,
-              1
-            ],
-            "ts": 1727524800
-          },
-          {
-            "home": "Bangu AC RJ U20",
-            "away": "Madureira EC RJ U20",
-            "score": [
-              1,
-              2
-            ],
-            "ts": 1727029800
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": null
-    },
-    {
-      "id": "39240726",
-      "league": "Football / Denmark / 1. Division",
-      "home": "FC Fredericia",
-      "away": "Hillerod Fodbold",
-      "time": "21:00",
-      "odds": {
-        "home": 1.28,
-        "draw": 6.09,
-        "away": 8.84
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.28,
-          "draw": 6.09,
-          "away": 8.84
-        },
-        "dc": {
-          "home_draw": 1.08,
-          "draw_away": 3.0,
-          "home_away": 1.12
-        },
-        "btts": {
-          "yes": 1.75,
-          "no": 1.97
-        },
-        "total_goals": {
-          "0.5": {
-            "over": 1.01,
-            "under": 13.0
-          },
-          "1.5": {
-            "over": 1.13,
-            "under": 5.6
-          },
-          "2.5": {
-            "over": 1.43,
-            "under": 2.79
-          },
-          "3.5": {
-            "over": 2.07,
-            "under": 1.73
-          },
-          "4.5": {
-            "over": 3.35,
-            "under": 1.31
-          },
-          "5.5": {
-            "over": 6.0,
-            "under": 1.12
-          }
-        },
-        "home_goals": {
-          "1.5": {
-            "over": 1.28,
-            "under": 3.15
-          },
-          "2.5": {
-            "over": 1.88,
-            "under": 1.76
-          },
-          "3.5": {
-            "over": 3.23,
-            "under": 1.26
-          }
-        },
-        "away_goals": {
-          "0.5": {
-            "over": 1.6,
-            "under": 2.11
-          },
-          "1.5": {
-            "over": 3.84,
-            "under": 1.19
-          },
-          "2.5": {
-            "over": 9.03,
-            "under": 1.01
-          }
-        },
-        "result_total": {
-          "1.5": {
-            "home_over": 1.39,
-            "draw_over": 6.8,
-            "away_over": 10.0,
-            "home_under": 9.6,
-            "draw_under": 23.0,
-            "away_under": 28.0
-          },
-          "2.5": {
-            "home_over": 1.63,
-            "draw_over": 16.0,
-            "away_over": 13.0,
-            "home_under": 4.4,
-            "draw_under": 8.0,
-            "away_under": 21.0
-          },
-          "3.5": {
-            "home_over": 2.36,
-            "draw_over": 17.0,
-            "away_over": 28.0,
-            "home_under": 2.37,
-            "draw_under": 8.2,
-            "away_under": 11.0
-          }
-        },
-        "dc_btts": {
-          "home_draw_yes": 1.87,
-          "home_draw_no": 2.06,
-          "home_away_yes": 2.11,
-          "home_away_no": 2.02,
-          "draw_away_yes": 4.7,
-          "draw_away_no": 10.0
-        },
-        "x1x2_btts": {
-          "home_yes": 2.38,
-          "home_no": 2.19,
-          "away_yes": 13.0,
-          "away_no": 18.0,
-          "draw_yes": 6.8,
-          "draw_no": 23.0
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "FC Fredericia",
-        "form": [
-          "L",
-          "W",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          0,
-          3,
-          1,
-          3,
-          2
-        ],
-        "goals_conceded": [
-          1,
-          1,
-          2,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1793984400,
-            "match_id": "OYhs4xbJ",
-            "opponent": "Vejle",
-            "opponent_id": "Mmkx9baa",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1793449800,
-            "match_id": "SUREDkVF",
-            "opponent": "AB Copenhagen",
-            "opponent_id": "WbdPB0Ft",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1792841400,
-            "match_id": "MDYCgUwp",
-            "opponent": "Esbjerg",
-            "opponent_id": "pbQ9wvan",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1792254600,
-            "match_id": "8We0Siuo",
-            "opponent": "Hobro",
-            "opponent_id": "zuD4T1wG",
-            "home_away": "H",
-            "score": [
-              3,
-              0
-            ]
-          },
-          {
-            "ts": 1791630000,
-            "match_id": "IJ8EydIb",
-            "opponent": "Hillerod",
-            "opponent_id": "tUY4mtrj",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 12,
-        "opposition_position": 8
-      },
-      "away_stats": {
-        "name": "Hillerod Fodbold",
-        "form": [
-          "W",
-          "L",
-          "W",
-          "L",
-          "L"
-        ],
-        "goals_scored": [
-          3,
-          0,
-          2,
-          0,
-          0
-        ],
-        "goals_conceded": [
-          1,
-          2,
-          1,
-          1,
-          2
-        ],
-        "recent_results": [
-          {
-            "ts": 1794052800,
-            "match_id": "lvJd6Svm",
-            "opponent": "Kolding IF",
-            "opponent_id": "WEnExcUO",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793541600,
-            "match_id": "viK04oh2",
-            "opponent": "Aarhus Fremad",
-            "opponent_id": "SSAFo9GE",
-            "home_away": "A",
-            "score": [
-              0,
-              2
-            ]
-          },
-          {
-            "ts": 1792839600,
-            "match_id": "UwxLi88d",
-            "opponent": "Aalborg",
-            "opponent_id": "U1YrLdqI",
-            "home_away": "H",
-            "score": [
-              2,
-              1
-            ]
-          },
-          {
-            "ts": 1792321200,
-            "match_id": "tziflZ14",
-            "opponent": "Hvidovre IF",
-            "opponent_id": "KOYrUtos",
-            "home_away": "A",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1791630000,
-            "match_id": "IJ8EydIb",
-            "opponent": "Fredericia",
-            "opponent_id": "Aab5vJaC",
-            "home_away": "H",
-            "score": [
-              0,
-              2
-            ]
-          }
-        ],
-        "league_position": 8,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Hillerod Fodbold",
-            "away": "FC Fredericia",
-            "score": [
-              0,
-              2
-            ],
-            "ts": 1791630000
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
-    {
-      "id": "39216670",
-      "league": "Football / Hungary / NB I, Women",
-      "home": "Budapest Honved FC Women",
-      "away": "Ujpesti TE Women",
-      "time": "21:00",
-      "odds": {
-        "home": 3.17,
-        "draw": 3.42,
-        "away": 1.99
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.17,
-          "draw": 3.42,
-          "away": 1.99
-        },
-        "dc": {
-          "home_draw": 1.62,
-          "draw_away": 1.27,
-          "home_away": 1.25
-        },
-        "btts": {
-          "yes": 1.61,
-          "no": 2.04
-        },
-        "total_goals": {
-          "2.5": {
-            "over": 1.72,
-            "under": 1.93
-          },
-          "3.5": {
-            "over": 2.77,
-            "under": 1.35
-          }
-        },
-        "home_goals": {
-          "1.5": {}
-        },
-        "away_goals": {
-          "1.5": {}
-        },
-        "result_total": {
-          "3.5": {
-            "home_over": 10.48,
-            "draw_over": 11.44,
-            "away_over": 5.53,
-            "home_under": 4.38,
-            "draw_under": 4.67,
-            "away_under": 2.91
-          }
-        }
-      },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
-      "home_stats": {
-        "name": "Budapest Honved FC Women",
-        "form": [
-          "L",
-          "W",
-          "W",
-          "D",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          3,
-          2,
-          0,
-          6
-        ],
-        "goals_conceded": [
-          2,
-          1,
-          0,
-          0,
-          1
-        ],
-        "recent_results": [
-          {
-            "ts": 1794657600,
-            "match_id": "MecDWgZC",
-            "opponent": "Gyor W",
-            "opponent_id": "MklkLS8t",
-            "home_away": "A",
-            "score": [
-              1,
-              2
-            ]
-          },
-          {
-            "ts": 1794051000,
-            "match_id": "I1DHNbjr",
-            "opponent": "Pecsi MFC W",
-            "opponent_id": "h8QwedF6",
-            "home_away": "H",
-            "score": [
-              3,
-              1
-            ]
-          },
-          {
-            "ts": 1793448000,
-            "match_id": "4vRbI3E2",
-            "opponent": "Szekszardi W",
-            "opponent_id": "YVcnZHWq",
-            "home_away": "A",
-            "score": [
-              2,
-              0
-            ]
-          },
-          {
-            "ts": 1792936800,
-            "match_id": "YypZ1rUL",
-            "opponent": "MTK Budapest W",
-            "opponent_id": "nLYr96RN",
-            "home_away": "H",
-            "score": [
-              0,
-              0
-            ]
-          },
-          {
-            "ts": 1792328400,
-            "match_id": "pvWKmh9B",
-            "opponent": "Szent Mihaly W",
-            "opponent_id": "fDH3nmth",
-            "home_away": "H",
-            "score": [
-              6,
-              1
-            ]
-          }
-        ],
-        "league_position": 6,
-        "total_teams_in_league": 12,
-        "opposition_position": 3
-      },
-      "away_stats": {
-        "name": "Ujpesti TE Women",
-        "form": [
-          "W",
-          "W",
-          "L",
-          "W",
-          "W"
-        ],
-        "goals_scored": [
-          1,
-          6,
-          0,
-          1,
-          1
-        ],
-        "goals_conceded": [
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "recent_results": [
-          {
-            "ts": 1794657600,
-            "match_id": "CO8OwBtt",
-            "opponent": "Puskas Academy W",
-            "opponent_id": "hlEEGPm6",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1794052800,
-            "match_id": "E5OwVtb8",
-            "opponent": "DVTK W",
-            "opponent_id": "6BR4ZNad",
-            "home_away": "A",
-            "score": [
-              6,
-              0
-            ]
-          },
-          {
-            "ts": 1793448000,
-            "match_id": "EXIp9ayk",
-            "opponent": "Ferencvaros W",
-            "opponent_id": "zeDD7Qne",
-            "home_away": "H",
-            "score": [
-              0,
-              1
-            ]
-          },
-          {
-            "ts": 1792931400,
-            "match_id": "GEYa0VhH",
-            "opponent": "Astra Hungary W",
-            "opponent_id": "pKTgmcNC",
-            "home_away": "A",
-            "score": [
-              1,
-              0
-            ]
-          },
-          {
-            "ts": 1792236600,
-            "match_id": "CQXCkEva",
-            "opponent": "Gyor W",
-            "opponent_id": "MklkLS8t",
-            "home_away": "H",
-            "score": [
-              1,
-              0
-            ]
-          }
-        ],
-        "league_position": 3,
-        "total_teams_in_league": 12,
-        "opposition_position": 6
-      },
-      "h2h": {
-        "matches": [
-          {
-            "home": "Ujpesti TE Women",
-            "away": "Budapest Honved FC Women",
-            "score": [
-              2,
-              1
-            ],
-            "ts": 1788094800
-          },
-          {
-            "home": "Budapest Honved FC Women",
-            "away": "Ujpesti TE Women",
-            "score": [
-              1,
-              1
-            ],
-            "ts": 1775383200
-          },
-          {
-            "home": "Ujpesti TE Women",
-            "away": "Budapest Honved FC Women",
-            "score": [
-              0,
-              3
-            ],
-            "ts": 1760187600
-          }
-        ]
-      },
-      "source": "betpawa",
-      "total_teams_in_league": 12
-    },
     {
       "id": "38761469",
       "league": "Football / Algeria / Ligue 1",
@@ -6274,7 +70,7 @@
           "2.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "JS Kabylie",
         "form": [
@@ -6357,7 +153,7 @@
         ],
         "league_position": 2,
         "total_teams_in_league": 16,
-        "opposition_position": 6
+        "opposition_position": 7
       },
       "away_stats": {
         "name": "USM Alger",
@@ -6439,7 +235,7 @@
             ]
           }
         ],
-        "league_position": 6,
+        "league_position": 7,
         "total_teams_in_league": 16,
         "opposition_position": 2
       },
@@ -6475,123 +271,123 @@
       "away": "Deportivo Maldonado",
       "time": "22:30",
       "odds": {
-        "home": 3.57,
-        "draw": 3.52,
-        "away": 2.02
+        "home": 3.58,
+        "draw": 3.48,
+        "away": 2.03
       },
       "markets": {
         "1x2": {
-          "home": 3.57,
-          "draw": 3.52,
-          "away": 2.02
+          "home": 3.58,
+          "draw": 3.48,
+          "away": 2.03
         },
         "dc": {
-          "home_draw": 1.69,
+          "home_draw": 1.68,
           "draw_away": 1.28,
           "home_away": 1.29
         },
         "btts": {
-          "yes": 1.7,
-          "no": 2.03
+          "yes": 1.76,
+          "no": 1.96
         },
         "total_goals": {
           "0.5": {
-            "over": 1.05,
-            "under": 9.2
+            "over": 1.06,
+            "under": 8.78
           },
           "1.5": {
-            "over": 1.27,
-            "under": 3.65
+            "over": 1.3,
+            "under": 3.45
           },
           "2.5": {
-            "over": 1.86,
-            "under": 1.92
+            "over": 1.93,
+            "under": 1.84
           },
           "3.5": {
-            "over": 3.09,
-            "under": 1.36
+            "over": 3.3,
+            "under": 1.32
           },
           "4.5": {
-            "over": 5.79,
-            "under": 1.13
+            "over": 6.2,
+            "under": 1.11
           },
           "5.5": {
-            "over": 10.0,
-            "under": 1.04
+            "over": 11.0,
+            "under": 1.03
           }
         },
         "home_goals": {
           "0.5": {
-            "over": 1.37,
-            "under": 2.71
+            "over": 1.4,
+            "under": 2.61
           },
           "1.5": {
-            "over": 2.79,
-            "under": 1.35
+            "over": 2.9,
+            "under": 1.33
           },
           "2.5": {
-            "over": 6.46,
-            "under": 1.06
+            "over": 6.86,
+            "under": 1.05
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.18,
-            "under": 3.94
+            "over": 1.19,
+            "under": 3.82
           },
           "1.5": {
-            "over": 1.92,
-            "under": 1.73
+            "over": 1.98,
+            "under": 1.68
           },
           "2.5": {
-            "over": 3.84,
-            "under": 1.19
+            "over": 4.02,
+            "under": 1.18
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 4.49,
-            "draw_over": 4.39,
-            "away_over": 2.42,
-            "home_under": 11.98,
-            "draw_under": 11.98,
-            "away_under": 8.39
+            "home_over": 4.6,
+            "draw_over": 4.4,
+            "away_over": 2.48,
+            "home_under": 11.0,
+            "draw_under": 11.0,
+            "away_under": 8.0
           },
           "2.5": {
-            "home_over": 5.78,
-            "draw_over": 11.95,
-            "away_over": 3.09,
-            "home_under": 7.57,
-            "draw_under": 4.38,
-            "away_under": 4.78
+            "home_over": 5.98,
+            "draw_over": 12.96,
+            "away_over": 3.19,
+            "home_under": 7.38,
+            "draw_under": 4.19,
+            "away_under": 4.59
           },
           "3.5": {
-            "home_over": 12.0,
-            "draw_over": 12.0,
-            "away_over": 5.6,
-            "home_under": 4.5,
-            "draw_under": 4.4,
-            "away_under": 2.8
+            "home_over": 12.99,
+            "draw_over": 12.99,
+            "away_over": 6.0,
+            "home_under": 4.4,
+            "draw_under": 4.2,
+            "away_under": 2.75
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.65,
-          "home_draw_no": 4.1,
-          "home_away_yes": 2.49,
-          "home_away_no": 2.3,
-          "draw_away_yes": 2.12,
-          "draw_away_no": 2.7
+          "home_draw_yes": 2.7,
+          "home_draw_no": 3.95,
+          "home_away_yes": 2.6,
+          "home_away_no": 2.24,
+          "draw_away_yes": 2.18,
+          "draw_away_no": 2.6
         },
         "x1x2_btts": {
-          "home_yes": 6.4,
-          "home_no": 6.2,
-          "away_yes": 3.8,
-          "away_no": 3.4,
-          "draw_yes": 4.2,
-          "draw_no": 11.0
+          "home_yes": 6.6,
+          "home_no": 6.0,
+          "away_yes": 4.0,
+          "away_no": 3.3,
+          "draw_yes": 4.3,
+          "draw_no": 10.0
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "CA Boston River",
         "form": [
@@ -6783,119 +579,119 @@
       "away": "Cerro Largo FC",
       "time": "22:30",
       "odds": {
-        "home": 1.42,
-        "draw": 4.42,
-        "away": 7.65
+        "home": 1.41,
+        "draw": 4.52,
+        "away": 7.86
       },
       "markets": {
         "1x2": {
-          "home": 1.42,
-          "draw": 4.42,
-          "away": 7.65
+          "home": 1.41,
+          "draw": 4.52,
+          "away": 7.86
         },
         "dc": {
-          "home_draw": 1.1,
-          "draw_away": 2.49,
+          "home_draw": 1.09,
+          "draw_away": 2.55,
           "home_away": 1.19
         },
         "btts": {
-          "yes": 2.24,
-          "no": 1.58
+          "yes": 2.34,
+          "no": 1.53
         },
         "total_goals": {
           "0.5": {
             "over": 1.06,
-            "under": 8.78
+            "under": 8.6
           },
           "1.5": {
-            "over": 1.33,
-            "under": 3.25
+            "over": 1.35,
+            "under": 3.14
           },
           "2.5": {
-            "over": 1.99,
-            "under": 1.79
+            "over": 2.05,
+            "under": 1.75
           },
           "3.5": {
-            "over": 3.5,
-            "under": 1.29
+            "over": 3.65,
+            "under": 1.27
           },
           "4.5": {
-            "over": 6.6,
-            "under": 1.1
+            "over": 7.0,
+            "under": 1.09
           },
           "5.5": {
-            "over": 11.93,
+            "over": 12.0,
             "under": 1.02
           }
         },
         "home_goals": {
           "0.5": {
             "over": 1.11,
-            "under": 5.09
+            "under": 4.93
           },
           "1.5": {
-            "over": 1.62,
-            "under": 2.07
+            "over": 1.63,
+            "under": 2.05
           },
           "2.5": {
-            "over": 2.9,
-            "under": 1.33
+            "over": 2.94,
+            "under": 1.32
           }
         },
         "away_goals": {
           "0.5": {
-            "over": 1.89,
-            "under": 1.75
+            "over": 1.97,
+            "under": 1.69
           },
           "1.5": {
-            "over": 5.29,
-            "under": 1.1
+            "over": 5.7,
+            "under": 1.08
           }
         },
         "result_total": {
           "1.5": {
             "home_over": 1.73,
-            "draw_over": 6.4,
-            "away_over": 12.0,
-            "home_under": 5.8,
+            "draw_over": 6.8,
+            "away_over": 13.0,
+            "home_under": 5.4,
             "draw_under": 10.0,
             "away_under": 16.0
           },
           "2.5": {
-            "home_over": 2.32,
-            "draw_over": 24.0,
-            "away_over": 16.0,
-            "home_under": 3.05,
+            "home_over": 2.35,
+            "draw_over": 27.0,
+            "away_over": 17.0,
+            "home_under": 2.9,
             "draw_under": 4.9,
             "away_under": 12.0
           },
           "3.5": {
-            "home_over": 4.2,
-            "draw_over": 24.0,
-            "away_over": 45.0,
-            "home_under": 1.93,
+            "home_over": 4.3,
+            "draw_over": 27.0,
+            "away_over": 50.0,
+            "home_under": 1.87,
             "draw_under": 4.8,
-            "away_under": 8.2
+            "away_under": 8.4
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.4,
-          "home_draw_no": 1.72,
-          "home_away_yes": 3.05,
-          "home_away_no": 1.75,
-          "draw_away_yes": 4.6,
+          "home_draw_yes": 2.49,
+          "home_draw_no": 1.66,
+          "home_away_yes": 3.15,
+          "home_away_no": 1.69,
+          "draw_away_yes": 4.9,
           "draw_away_no": 5.4
         },
         "x1x2_btts": {
-          "home_yes": 3.59,
-          "home_no": 1.98,
-          "away_yes": 15.97,
-          "away_no": 10.98,
-          "draw_yes": 6.19,
-          "draw_no": 9.98
+          "home_yes": 3.7,
+          "home_no": 1.91,
+          "away_yes": 18.0,
+          "away_no": 11.0,
+          "draw_yes": 6.4,
+          "draw_no": 9.6
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "CA Penarol Montevideo",
         "form": [
@@ -7096,59 +892,59 @@
       "away": "Montevideo City Torque",
       "time": "22:30",
       "odds": {
-        "home": 5.49,
-        "draw": 4.22,
-        "away": 1.56
+        "home": 5.69,
+        "draw": 4.32,
+        "away": 1.53
       },
       "markets": {
         "1x2": {
-          "home": 5.49,
-          "draw": 4.22,
-          "away": 1.56
+          "home": 5.69,
+          "draw": 4.32,
+          "away": 1.53
         },
         "dc": {
-          "home_draw": 2.18,
+          "home_draw": 2.23,
           "draw_away": 1.15,
           "home_away": 1.21
         },
         "btts": {
-          "yes": 1.76,
+          "yes": 1.75,
           "no": 1.96
         },
         "total_goals": {
           "0.5": {
             "over": 1.03,
-            "under": 10.92
+            "under": 11.0
           },
           "1.5": {
-            "over": 1.23,
-            "under": 4.09
+            "over": 1.22,
+            "under": 4.19
           },
           "2.5": {
-            "over": 1.7,
-            "under": 2.11
+            "over": 1.68,
+            "under": 2.16
           },
           "3.5": {
-            "over": 2.75,
-            "under": 1.44
+            "over": 2.65,
+            "under": 1.46
           },
           "4.5": {
-            "over": 4.89,
-            "under": 1.17
+            "over": 4.7,
+            "under": 1.18
           },
           "5.5": {
-            "over": 8.95,
-            "under": 1.05
+            "over": 8.6,
+            "under": 1.06
           }
         },
         "home_goals": {
           "0.5": {
-            "over": 1.51,
-            "under": 2.28
+            "over": 1.52,
+            "under": 2.26
           },
           "1.5": {
-            "over": 3.43,
-            "under": 1.24
+            "over": 3.49,
+            "under": 1.23
           },
           "2.5": {
             "over": 8.25,
@@ -7157,62 +953,62 @@
         },
         "away_goals": {
           "0.5": {
-            "over": 1.1,
-            "under": 5.29
+            "over": 1.09,
+            "under": 5.5
           },
           "1.5": {
-            "over": 1.57,
-            "under": 2.16
+            "over": 1.53,
+            "under": 2.23
           },
           "2.5": {
-            "over": 2.74,
-            "under": 1.36
+            "over": 2.65,
+            "under": 1.38
           }
         },
         "result_total": {
           "2.5": {
-            "home_over": 8.77,
-            "draw_over": 13.95,
-            "away_over": 2.22,
-            "home_under": 11.96,
-            "draw_under": 5.38,
-            "away_under": 4.09
+            "home_over": 9.0,
+            "draw_over": 14.0,
+            "away_over": 2.17,
+            "home_under": 12.0,
+            "draw_under": 5.4,
+            "away_under": 4.2
           },
           "3.5": {
-            "home_over": 19.93,
-            "draw_over": 13.95,
-            "away_over": 3.69,
-            "home_under": 6.78,
-            "draw_under": 5.38,
-            "away_under": 2.36
+            "home_over": 20.0,
+            "draw_over": 14.0,
+            "away_over": 3.55,
+            "home_under": 7.0,
+            "draw_under": 5.4,
+            "away_under": 2.37
           },
           "4.5": {
-            "home_over": 30.0,
-            "draw_over": 70.0,
-            "away_over": 6.2,
-            "home_under": 5.8,
-            "draw_under": 4.1,
-            "away_under": 1.89
+            "home_over": 29.88,
+            "draw_over": 69.73,
+            "away_over": 5.98,
+            "home_under": 6.18,
+            "draw_under": 4.18,
+            "away_under": 1.87
           }
         },
         "dc_btts": {
-          "home_draw_yes": 3.4,
-          "home_draw_no": 5.8,
-          "home_away_yes": 2.39,
+          "home_draw_yes": 3.45,
+          "home_draw_no": 6.2,
+          "home_away_yes": 2.36,
           "home_away_no": 2.12,
-          "draw_away_yes": 2.01,
-          "draw_away_no": 2.24
+          "draw_away_yes": 1.99,
+          "draw_away_no": 2.23
         },
         "x1x2_btts": {
-          "home_yes": 9.2,
-          "home_no": 9.8,
-          "away_yes": 3.05,
+          "home_yes": 9.4,
+          "home_no": 10.0,
+          "away_yes": 2.95,
           "away_no": 2.55,
           "draw_yes": 5.0,
           "draw_no": 14.0
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "CA Progreso",
         "form": [
@@ -7422,76 +1218,76 @@
       "away": "Bangor GG FC",
       "time": "22:45",
       "odds": {
-        "home": 4.42,
-        "draw": 4.42,
-        "away": 1.59
+        "home": 4.4,
+        "draw": 4.3,
+        "away": 1.61
       },
       "markets": {
         "1x2": {
-          "home": 4.42,
-          "draw": 4.42,
-          "away": 1.59
+          "home": 4.4,
+          "draw": 4.3,
+          "away": 1.61
         },
         "dc": {
-          "home_draw": 2.18,
+          "home_draw": 2.14,
           "draw_away": 1.18,
-          "home_away": 1.18
+          "home_away": 1.19
         },
         "btts": {
-          "yes": 1.35,
-          "no": 2.85
+          "yes": 1.4,
+          "no": 2.66
         },
         "total_goals": {
           "2.5": {
-            "over": 1.3,
-            "under": 3.24
+            "over": 1.34,
+            "under": 2.98
           },
           "3.5": {
-            "over": 1.74,
-            "under": 1.98
+            "over": 1.93,
+            "under": 1.78
           },
           "4.5": {
-            "over": 2.78,
-            "under": 1.39
+            "over": 2.98,
+            "under": 1.34
           },
           "5.5": {
-            "over": 4.72,
-            "under": 1.15
+            "over": 5.51,
+            "under": 1.11
           }
         },
         "home_goals": {
           "0.5": {
-            "over": 1.23,
-            "under": 3.7
+            "over": 1.3,
+            "under": 3.24
           },
           "1.5": {
-            "over": 2.2,
-            "under": 1.6
+            "over": 2.44,
+            "under": 1.49
           },
           "2.5": {
-            "over": 4.92,
-            "under": 1.14
+            "over": 5.51,
+            "under": 1.11
           }
         },
         "away_goals": {
           "1.5": {
-            "over": 1.34,
-            "under": 2.98
+            "over": 1.39,
+            "under": 2.78
           },
           "2.5": {
-            "over": 2.13,
-            "under": 1.64
+            "over": 2.33,
+            "under": 1.54
           },
           "3.5": {
-            "over": 3.96,
-            "under": 1.21
+            "over": 4.54,
+            "under": 1.16
           }
         },
         "result_total": {
           "3.5": {}
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "Glebe North",
         "form": [
@@ -7671,48 +1467,48 @@
       "away": "SM Caen",
       "time": "22:45",
       "odds": {
-        "home": 2.21,
-        "draw": 3.29,
-        "away": 3.29
+        "home": 2.22,
+        "draw": 3.38,
+        "away": 3.19
       },
       "markets": {
         "1x2": {
-          "home": 2.21,
-          "draw": 3.29,
-          "away": 3.29
+          "home": 2.22,
+          "draw": 3.38,
+          "away": 3.19
         },
         "dc": {
-          "home_draw": 1.31,
-          "draw_away": 1.59,
-          "home_away": 1.32
+          "home_draw": 1.33,
+          "draw_away": 1.58,
+          "home_away": 1.31
         },
         "btts": {
-          "yes": 1.7,
-          "no": 2.04
+          "yes": 1.69,
+          "no": 2.05
         },
         "total_goals": {
           "0.5": {
-            "over": 1.06,
-            "under": 8.78
+            "over": 1.05,
+            "under": 9.0
           },
           "1.5": {
-            "over": 1.29,
-            "under": 3.54
+            "over": 1.28,
+            "under": 3.6
           },
           "2.5": {
-            "over": 1.9,
-            "under": 1.87
+            "over": 1.88,
+            "under": 1.89
           },
           "3.5": {
-            "over": 3.15,
-            "under": 1.34
+            "over": 3.1,
+            "under": 1.35
           },
           "4.5": {
-            "over": 6.0,
+            "over": 5.8,
             "under": 1.12
           },
           "5.5": {
-            "over": 11.0,
+            "over": 10.92,
             "under": 1.03
           }
         },
@@ -7732,62 +1528,62 @@
         },
         "away_goals": {
           "0.5": {
-            "over": 1.36,
-            "under": 2.9
+            "over": 1.35,
+            "under": 2.95
           },
           "1.5": {
-            "over": 2.7,
-            "under": 1.41
+            "over": 2.64,
+            "under": 1.43
           },
           "2.5": {
-            "over": 6.19,
+            "over": 6.0,
             "under": 1.09
           }
         },
         "result_total": {
           "1.5": {
-            "home_over": 2.68,
-            "draw_over": 4.17,
-            "away_over": 4.17,
-            "home_under": 8.74,
-            "draw_under": 10.92,
-            "away_under": 10.92
+            "home_over": 2.7,
+            "draw_over": 4.2,
+            "away_over": 4.0,
+            "home_under": 8.8,
+            "draw_under": 11.0,
+            "away_under": 11.0
           },
           "2.5": {
             "home_over": 3.4,
             "draw_over": 11.0,
-            "away_over": 5.2,
-            "home_under": 5.0,
-            "draw_under": 4.1,
+            "away_over": 5.0,
+            "home_under": 5.2,
+            "draw_under": 4.2,
             "away_under": 7.0
           },
           "3.5": {
             "home_over": 6.4,
             "draw_over": 11.0,
-            "away_over": 11.0,
-            "home_under": 3.0,
-            "draw_under": 4.1,
-            "away_under": 4.2
+            "away_over": 10.0,
+            "home_under": 3.05,
+            "draw_under": 4.2,
+            "away_under": 4.1
           }
         },
         "dc_btts": {
-          "home_draw_yes": 2.15,
-          "home_draw_no": 2.8,
-          "home_away_yes": 2.55,
-          "home_away_no": 2.34,
-          "draw_away_yes": 2.5,
+          "home_draw_yes": 2.16,
+          "home_draw_no": 2.9,
+          "home_away_yes": 2.5,
+          "home_away_no": 2.35,
+          "draw_away_yes": 2.49,
           "draw_away_no": 3.8
         },
         "x1x2_btts": {
-          "home_yes": 4.04,
-          "home_no": 3.56,
-          "away_yes": 5.78,
-          "away_no": 5.39,
-          "draw_yes": 3.85,
-          "draw_no": 9.63
+          "home_yes": 3.92,
+          "home_no": 3.59,
+          "away_yes": 5.55,
+          "away_no": 5.36,
+          "draw_yes": 3.92,
+          "draw_no": 10.53
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "Amiens SC",
         "form": [
@@ -7967,83 +1763,83 @@
       "away": "Olympique Lyon Women",
       "time": "23:00",
       "odds": {
-        "home": 4.3,
+        "home": 4.0,
         "draw": 4.2,
-        "away": 1.59
+        "away": 1.62
       },
       "markets": {
         "1x2": {
-          "home": 4.3,
+          "home": 4.0,
           "draw": 4.2,
-          "away": 1.59
+          "away": 1.62
         },
         "dc": {
-          "home_draw": 2.09,
-          "draw_away": 1.19,
+          "home_draw": 2.03,
+          "draw_away": 1.21,
           "home_away": 1.2
         },
         "btts": {
-          "yes": 1.46,
-          "no": 2.4
+          "yes": 1.41,
+          "no": 2.55
         },
         "total_goals": {
           "0.5": {
             "over": 1.01,
-            "under": 9.8
+            "under": 10.0
           },
           "1.5": {
-            "over": 1.11,
-            "under": 5.2
+            "over": 1.1,
+            "under": 5.6
           },
           "2.5": {
-            "over": 1.41,
-            "under": 2.65
+            "over": 1.36,
+            "under": 2.8
           },
           "3.5": {
-            "over": 2.0,
-            "under": 1.69
+            "over": 1.9,
+            "under": 1.78
           },
           "4.5": {
-            "over": 3.2,
-            "under": 1.29
+            "over": 2.95,
+            "under": 1.33
           },
           "5.5": {
-            "over": 5.4,
-            "under": 1.11
+            "over": 4.9,
+            "under": 1.13
           }
         },
         "home_goals": {
           "1.5": {
-            "over": 2.39,
-            "under": 1.41
+            "over": 2.21,
+            "under": 1.48
           }
         },
         "away_goals": {
           "2.5": {
-            "over": 2.24,
-            "under": 1.46
+            "over": 2.2,
+            "under": 1.48
           }
         },
         "result_total": {
-          "1.5": {
-            "home_over": 5.18,
-            "draw_over": 4.79,
-            "away_over": 1.73,
-            "home_under": 22.06,
-            "draw_under": 23.02,
-            "away_under": 12.47
+          "3.5": {
+            "home_over": 9.38,
+            "draw_over": 9.38,
+            "away_over": 2.92,
+            "home_under": 6.89,
+            "draw_under": 7.28,
+            "away_under": 3.21
           }
         },
         "x1x2_btts": {
-          "home_yes": 5.6,
-          "home_no": 9.2,
-          "away_yes": 2.33,
-          "away_no": 2.95,
+          "home_yes": 5.0,
+          "home_no": 9.0,
+          "away_yes": 2.28,
+          "away_no": 3.2,
           "draw_yes": 4.1,
-          "draw_no": 19.0
+          "draw_no": 21.0
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "Arsenal WFC Women",
         "form": [
@@ -8244,55 +2040,55 @@
       "away": "AS Roma Women",
       "time": "23:00",
       "odds": {
-        "home": 2.0,
-        "draw": 3.75,
-        "away": 3.0
+        "home": 1.95,
+        "draw": 3.8,
+        "away": 3.1
       },
       "markets": {
         "1x2": {
-          "home": 2.0,
-          "draw": 3.75,
-          "away": 3.0
+          "home": 1.95,
+          "draw": 3.8,
+          "away": 3.1
         },
         "dc": {
-          "home_draw": 1.33,
-          "draw_away": 1.67,
-          "home_away": 1.25
+          "home_draw": 1.32,
+          "draw_away": 1.7,
+          "home_away": 1.24
         },
         "btts": {
-          "yes": 1.41,
-          "no": 2.55
+          "yes": 1.4,
+          "no": 2.6
         },
         "total_goals": {
           "0.5": {
             "over": 1.01,
-            "under": 9.6
+            "under": 9.8
           },
           "1.5": {
             "over": 1.12,
-            "under": 5.0
+            "under": 5.2
           },
           "2.5": {
-            "over": 1.43,
-            "under": 2.55
+            "over": 1.42,
+            "under": 2.6
           },
           "3.5": {
-            "over": 2.06,
-            "under": 1.65
+            "over": 2.03,
+            "under": 1.68
           },
           "4.5": {
-            "over": 3.35,
-            "under": 1.27
+            "over": 3.25,
+            "under": 1.28
           },
           "5.5": {
-            "over": 5.6,
+            "over": 5.4,
             "under": 1.1
           }
         },
         "home_goals": {
           "1.5": {
-            "over": 1.6,
-            "under": 1.98
+            "over": 1.57,
+            "under": 2.03
           }
         },
         "away_goals": {
@@ -8303,24 +2099,24 @@
         },
         "result_total": {
           "3.5": {
-            "home_over": 4.12,
-            "draw_over": 8.62,
-            "away_over": 6.9,
-            "home_under": 3.54,
-            "draw_under": 6.13,
-            "away_under": 4.98
+            "home_over": 3.91,
+            "draw_over": 8.59,
+            "away_over": 7.06,
+            "home_under": 3.53,
+            "draw_under": 6.3,
+            "away_under": 5.15
           }
         },
         "x1x2_btts": {
-          "home_yes": 2.8,
-          "home_no": 3.95,
+          "home_yes": 2.7,
+          "home_no": 3.9,
           "away_yes": 4.0,
-          "away_no": 6.4,
-          "draw_yes": 3.65,
-          "draw_no": 18.0
+          "away_no": 6.6,
+          "draw_yes": 3.7,
+          "draw_no": 19.0
         }
       },
-      "odds_captured_at": "2026-11-19T18:00:35.850936+03:00",
+      "odds_captured_at": "2026-11-19T21:00:33.269186+03:00",
       "home_stats": {
         "name": "SL Benfica Women",
         "form": [
@@ -8401,7 +2197,7 @@
             ]
           }
         ],
-        "league_position": 9,
+        "league_position": 10,
         "total_teams_in_league": 18,
         "opposition_position": 12
       },
@@ -8487,7 +2283,7 @@
         ],
         "league_position": 12,
         "total_teams_in_league": 18,
-        "opposition_position": 9
+        "opposition_position": 10
       },
       "h2h": null,
       "source": "betpawa",
