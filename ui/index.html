@@ -322,7 +322,10 @@
                 <!-- PICKS with their prices -->
                 <div class="picks-list">
                   <span v-for="bet in match.bets" :key="bet.label"
-                    class="bet-tag" :class="bet.type">{{ bet.label }}<span
+                    class="bet-tag"
+                    :class="[bet.type, { selected: inSlip(match.id, bet.label), unavailable: !isPriced(bet) }]"
+                    :title="isPriced(bet) ? (inSlip(match.id, bet.label) ? 'Remove from slip' : 'Add to slip') : 'No price — market suspended'"
+                    @click="toggleSlipPick(match, bet)">{{ bet.label }}<span
                     class="bet-prob" :class="probBand(bet.prob)"
                     v-if="bet.prob !== null && bet.prob !== undefined">{{ bet.prob }}%</span><span
                     class="bet-price" v-if="bet.price">@ {{ bet.price }}</span></span>
@@ -336,6 +339,85 @@
         </div>
       </div>
     </div>
+
+    <!-- BET SLIP -->
+    <button class="slip-fab" :class="{ active: slipOpen }" @click="slipOpen = !slipOpen"
+      :aria-label="'Bet slip, ' + slipCount + ' selection' + (slipCount === 1 ? '' : 's')">
+      <span class="slip-fab-icon" aria-hidden="true">▤</span>
+      <span>Slip</span>
+      <span class="slip-badge" v-if="slipCount">{{ slipCount }}</span>
+    </button>
+
+    <div class="slip-hint" v-if="slipHint" role="status">{{ slipHint }}</div>
+
+    <div class="slip-overlay" v-if="slipOpen" @click="slipOpen = false"></div>
+
+    <aside class="slip-panel" :class="{ open: slipOpen }" role="dialog" aria-label="Bet slip">
+      <div class="slip-head">
+        <span class="slip-title">Bet Slip <span class="slip-count" v-if="slipCount">{{ slipCount }}</span></span>
+        <button class="slip-close" @click="slipOpen = false" aria-label="Close bet slip">×</button>
+      </div>
+      <div class="slip-body">
+
+        <!-- EMPTY STATE -->
+        <div class="slip-empty" v-if="!slipItems.length">
+          <div class="slip-empty-icon" aria-hidden="true">◇</div>
+          <div class="slip-empty-title">Your slip is empty</div>
+          <div class="slip-empty-sub">Tap any priced pick on a card to add it — one pick per fixture, since sportsbooks reject same-match accumulators.</div>
+          <button class="slip-btn primary" @click="generateSlip">⚡ Generate slip — best picks of the day</button>
+        </div>
+
+        <template v-else>
+          <div class="slip-actions">
+            <button class="slip-btn primary" @click="generateSlip">⚡ Generate best picks</button>
+            <button class="slip-btn" @click="clearSlip">Clear all</button>
+          </div>
+
+          <div v-for="item in slipItems" :key="item.id" class="slip-item">
+            <div class="slip-item-top">
+              <span class="slip-item-time">{{ formatTime24(item.time) }}</span>
+              <span class="slip-item-league">{{ getCompetition(item.league) }}</span>
+              <button class="slip-item-x" @click="removeSlipItem(item.id)"
+                :aria-label="'Remove ' + item.label" title="Remove from slip">×</button>
+            </div>
+            <div class="slip-item-teams">{{ item.home }} vs {{ item.away }}</div>
+            <div class="slip-item-pick">
+              <span class="bet-tag" :class="item.type">{{ item.label }}</span>
+              <span class="bet-prob" :class="probBand(item.prob)"
+                v-if="item.prob !== null && item.prob !== undefined">{{ item.prob }}%</span>
+              <span class="bet-price">@ {{ item.price }}</span>
+            </div>
+          </div>
+
+          <div class="slip-stake">
+            <label for="slip-stake">Stake</label>
+            <input id="slip-stake" class="slip-stake-input" type="number" min="0" step="any"
+              inputmode="decimal" placeholder="0.00" v-model="stake" />
+          </div>
+
+          <div class="slip-totals">
+            <div class="slip-row big">
+              <span>Total odds</span>
+              <b>{{ totalOdds !== null ? totalOdds.toFixed(2) : '—' }}</b>
+            </div>
+            <template v-if="potentialReturn !== null">
+              <div class="slip-row">
+                <span>Potential return</span>
+                <b class="green">{{ potentialReturn.toFixed(2) }}</b>
+              </div>
+              <div class="slip-row">
+                <span>Net profit</span>
+                <b class="green">{{ netProfit.toFixed(2) }}</b>
+              </div>
+            </template>
+            <div class="slip-row muted" v-else>
+              <span>Enter a stake to see the potential return</span>
+            </div>
+          </div>
+        </template>
+
+      </div>
+    </aside>
 
   </div>
 </div>

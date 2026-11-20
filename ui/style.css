@@ -1199,3 +1199,379 @@ header {
   .signals-split { grid-template-columns: 1fr; }
   .card-body.open { max-height: 2000px; }
 }
+
+/* ── BET SLIP ── */
+
+/* Pick chips double as add/remove toggles; interaction is scoped to the
+   card lists so the slip's own label chips stay inert. */
+.picks-list .bet-tag {
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: border-color 0.15s ease, filter 0.15s ease, opacity 0.15s ease, transform 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.picks-list .bet-tag:hover:not(.unavailable) { filter: brightness(1.3); }
+.picks-list .bet-tag:active:not(.unavailable) { transform: scale(0.97); }
+
+.picks-list .bet-tag.selected { border-color: currentColor; }
+.picks-list .bet-tag.selected::before { content: '✓ '; }
+
+.picks-list .bet-tag.unavailable { opacity: 0.4; cursor: not-allowed; }
+
+/* Floating slip trigger — sits above the overlay, under the drawer */
+.slip-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 46;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--snow);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.16s cubic-bezier(0.23, 1, 0.32, 1), background 0.15s ease;
+}
+
+.slip-fab:hover { background: var(--accent-hover); }
+.slip-fab:active { transform: scale(0.97); }
+
+.slip-badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--snow);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+/* Transient hint — same-fixture guard, disabled picks, generate feedback */
+.slip-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 84px;
+  transform: translateX(-50%);
+  z-index: 60;
+  max-width: min(90vw, 420px);
+  padding: 10px 16px;
+  background: var(--overlay);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-lg);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: slipHintIn 0.18s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slipHintIn {
+  from { opacity: 0; transform: translate(-50%, 6px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.slip-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  background: rgba(10, 11, 14, 0.6);
+  animation: slipFade 0.2s ease-out;
+}
+
+@keyframes slipFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Drawer — hidden with visibility so closed controls leave the tab order */
+.slip-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  width: min(400px, 100vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  box-shadow: -12px 0 32px rgba(0, 0, 0, 0.35);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1), visibility 0.28s;
+}
+
+.slip-panel.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.slip-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+}
+
+.slip-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--snow);
+  letter-spacing: -0.01em;
+}
+
+.slip-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.slip-close {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: var(--overlay);
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slip-close:hover { background: var(--border2); color: var(--text); }
+.slip-close:active { transform: scale(0.95); }
+
+.slip-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slip-empty { text-align: center; padding: 40px 8px; }
+
+.slip-empty-icon {
+  font-size: 28px;
+  color: var(--text2);
+  opacity: 0.4;
+  margin-bottom: 12px;
+}
+
+.slip-empty-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--snow);
+  margin-bottom: 6px;
+}
+
+.slip-empty-sub {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.slip-actions { display: flex; gap: 8px; }
+
+.slip-btn {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-lg);
+  background: transparent;
+  color: var(--text2);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slip-btn:hover { background: var(--surface2); color: var(--text); }
+.slip-btn:active { transform: scale(0.97); }
+
+.slip-btn.primary {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.slip-btn.primary:hover { background: var(--accent); color: var(--snow); }
+
+/* One selection: fixture line, teams, pick, prob, price */
+.slip-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+}
+
+.slip-item-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text2);
+}
+
+.slip-item-time { font-weight: 700; color: var(--snow); }
+
+.slip-item-league {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slip-item-x {
+  border: none;
+  background: transparent;
+  color: var(--text2);
+  font-size: 15px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slip-item-x:hover { color: var(--danger); }
+.slip-item-x:active { transform: scale(0.9); }
+
+.slip-item-teams {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--snow);
+  margin-top: 4px;
+}
+
+.slip-item-pick {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* Long combo labels wrap inside the drawer instead of overflowing */
+.slip-item-pick .bet-tag { white-space: normal; }
+
+.slip-stake {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+}
+
+.slip-stake label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+
+.slip-stake-input {
+  width: 120px;
+  padding: 6px 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-sm);
+  color: var(--snow);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.slip-stake-input::-webkit-outer-spin-button,
+.slip-stake-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+.slip-stake-input:focus { outline: none; border-color: var(--accent); }
+.slip-stake-input::placeholder { color: var(--text2); font-weight: 400; }
+
+.slip-totals {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.slip-row b {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--snow);
+}
+
+.slip-row.big b { font-size: 18px; }
+.slip-row b.green { color: var(--success); }
+.slip-row.muted span { font-size: 11px; opacity: 0.8; }
+
+/* Mobile: the drawer becomes a bottom sheet */
+@media (max-width: 768px) {
+  .slip-panel {
+    top: auto;
+    left: 0;
+    width: 100%;
+    max-height: 85vh;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+    transform: translateY(100%);
+  }
+  .slip-panel.open { transform: translateY(0); }
+  .slip-fab { right: 14px; bottom: 14px; }
+  .slip-hint { bottom: 76px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slip-panel { transition-duration: 0.01ms; }
+  .slip-hint, .slip-overlay { animation: none; }
+  .picks-list .bet-tag, .slip-fab, .slip-btn, .slip-close, .slip-item-x { transition-duration: 0.01ms; }
+}
