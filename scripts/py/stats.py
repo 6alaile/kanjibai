@@ -7,7 +7,12 @@ Provider order (first source that has the field wins):
      per-match feed.  This is the primary source.
   2. Flashscore per-team cache — form, goals and league position for a team
      that the day feed did not carry.
-  3. Transfermarkt — fallback for teams Flashscore does not cover
+  3. Transfermarkt — fallback for teams Flashscore does not cover.
+     **PAUSED** (2026-11-18): the Transfermarkt fallback is switched off
+     (see TRANSFERMARKT_FALLBACK below). Teams Flashscore cannot resolve now
+     stay unresolved — the UI shows them as low-data-confidence cards and the
+     probability model falls back to its league-average priors. Turn the flag
+     back on to restore the old behaviour.
 
 Both providers are scraped ahead of time and read from their own cache:
   scripts/py/flashscore_cache.py      → data/flashscore_cache.json
@@ -42,6 +47,10 @@ logging.basicConfig(level=logging.INFO, format="[stats] %(message)s")
 log = logging.getLogger(__name__)
 
 EMPTY_FORM = {"form": [], "goals_scored": [], "goals_conceded": []}
+
+# The Transfermarkt fallback is paused: Flashscore is the only source of
+# form, positions and H2H. Set this to True to bring the fallback back.
+TRANSFERMARKT_FALLBACK = False
 
 EAT = timezone(timedelta(hours=3))
 
@@ -104,18 +113,27 @@ def enrich_match(match: dict) -> dict:
 
     fs_h2h = fs_get_h2h_data(home_name, away_name) if fs_has_team(home_name) else None
 
-    # Transfermarkt cache (fallback)
-    tm_home_form = get_recent_form(home_name, n=5) if has_team(home_name) else EMPTY_FORM
-    tm_away_form = get_recent_form(away_name, n=5) if has_team(away_name) else EMPTY_FORM
+    # Transfermarkt cache (fallback) — paused, see TRANSFERMARKT_FALLBACK.
+    if TRANSFERMARKT_FALLBACK:
+        tm_home_form = get_recent_form(home_name, n=5) if has_team(home_name) else EMPTY_FORM
+        tm_away_form = get_recent_form(away_name, n=5) if has_team(away_name) else EMPTY_FORM
 
-    tm_home_pos = get_league_position(home_name) if has_team(home_name) else None
-    tm_away_pos = get_league_position(away_name) if has_team(away_name) else None
+        tm_home_pos = get_league_position(home_name) if has_team(home_name) else None
+        tm_away_pos = get_league_position(away_name) if has_team(away_name) else None
 
-    tm_total = get_total_teams(home_name)
+        tm_total = get_total_teams(home_name)
 
-    tm_opposition_pos = get_opposition_position(home_name, away_name) if has_team(away_name) else None
+        tm_opposition_pos = get_opposition_position(home_name, away_name) if has_team(away_name) else None
 
-    tm_h2h = get_h2h_data(home_name, away_name) if has_team(home_name) else None
+        tm_h2h = get_h2h_data(home_name, away_name) if has_team(home_name) else None
+    else:
+        tm_home_form = EMPTY_FORM
+        tm_away_form = EMPTY_FORM
+        tm_home_pos = None
+        tm_away_pos = None
+        tm_total = None
+        tm_opposition_pos = None
+        tm_h2h = None
 
     # Form: Flashscore, then Transfermarkt
     home_form = fs_home_form.get("form") or tm_home_form.get("form", [])

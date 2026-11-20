@@ -22,10 +22,10 @@ jobs:
         run: pip install -r requirements.txt
         working-directory: ./scripts/py
 
-      - name: Install Playwright browsers
-        run: playwright install --with-deps chromium
-        env:
-          PLAYWRIGHT_BROWSERS_INSTALL: true
+      # No Playwright browser install: the Transfermarkt fallback is paused
+      # (stats.py TRANSFERMARKT_FALLBACK = False) and nothing else in the
+      # pipeline drives a browser. The playwright pip package stays in
+      # requirements.txt because main.py imports the scraper module.
 
       - name: Run Scout pipeline
         env:
@@ -42,11 +42,11 @@ jobs:
           python main.py
         working-directory: ./scripts/py
 
-      - name: Commit enriched.json and cache
+      - name: Commit enriched.json
         run: |
           git config user.name "scout-bot"
           git config user.email "scout-bot@users.noreply.github.com"
-          git add data/enriched.json data/transfermarkt_cache.json
+          git add data/enriched.json
           git diff --staged --quiet || git commit -m "chore: daily scan $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
         env:

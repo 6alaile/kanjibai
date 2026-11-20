@@ -8,6 +8,7 @@ Data sources:
 - API-Football          → fallback odds
 - Flashscore            → enrichment (primary: form, standings, H2H)
 - Transfermarkt         → enrichment (fallback for teams not on Flashscore)
+                         — PAUSED, see TRANSFERMARKT_FALLBACK in stats.py
 """
 
 import json
@@ -18,7 +19,7 @@ from pathlib import Path
 from typing import Optional
 
 from scrape import fetch_fixtures as fetch_api_fixtures
-from stats import enrich_all
+from stats import enrich_all, TRANSFERMARKT_FALLBACK
 
 from scrape_betpawa import fetch_fixtures as fetch_betpawa_fixtures
 
@@ -87,6 +88,11 @@ def _covered_by_flashscore(team_name: str, fixtures: list) -> bool:
                 and fs_get_pos(team_name) is not None)
 
 
+def _secs(t0: datetime) -> float:
+    """Seconds since t0 — per-step timing for the log."""
+    return round((datetime.now(EAT) - t0).total_seconds(), 1)
+
+
 def run():
     start = datetime.now(EAT)
     log.info("=" * 50)
@@ -98,7 +104,8 @@ def run():
     _ensure_cache_v2()
 
     # ── Step 1: Fetch fixtures + odds ────────────────────────────────────
-    log.info("Step 1/4: Fetching fixtures from BetPawa (primary) ...")
+    log.info("Step 1/3: Fetching fixtures from BetPawa (primary) ...")
+    t0 = datetime.now(EAT)
 
     # Try BetPawa first (sportsbook JSON API: odds + markets)
     raw_fixtures = fetch_betpawa_fixtures(date_str=today)
@@ -124,10 +131,12 @@ def run():
             }, f, indent=2)
         sys.exit(0)
 
-    log.info(f"  {len(raw_fixtures)} fixtures fetched")
+    step1 = _secs(t0)
+    log.info(f"  {len(raw_fixtures)} fixtures fetched ({step1}s)")
 
     # ── Step 2: Refresh the Flashscore cache for today's teams (primary) ──
-    log.info("Step 2/4: Refreshing Flashscore cache for today's teams...")
+    log.info("Step 2/3: Refreshing Flashscore cache for today's teams...")
+    t0 = datetime.now(EAT)
     team_names = []
     for fixture in raw_fixtures:
         for name in (fixture.get("home"), fixture.get("away")):
@@ -140,15 +149,23 @@ def run():
         log.warning(f"  Flashscore refresh failed: {e}")
         import traceback
         traceback.print_exc()
+    step2 = _secs(t0)
+    log.info(f"  Step 2/3 done in {step2}s")
 
-    # ── Step 3: Transfermarkt — only for teams Flashscore couldn't cover ──
-    # A team is considered covered if Flashscore has both form and a league position.
+    # ── Transfermarkt fallback — paused (stats.py TRANSFERMARKT_FALLBACK) ──
+    # Not a pipeline step any more: with the flag off, teams Flashscore
+    # cannot resolve stay unresolved and the model falls back to its
+    # league-average priors. The branch below only runs if the flag is
+    # switched back on.
     from flashscore_cache import (has_team as fs_has_team, get_recent_form as fs_get_form,
                                   get_league_position as fs_get_pos,
                                   get_fixture_data as fs_get_fixture)
     missing = [n for n in team_names if not _covered_by_flashscore(n, raw_fixtures)]
-    if missing:
-        log.info(f"Step 3/4: Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
+    if missing and not TRANSFERMARKT_FALLBACK:
+        log.info(f"Transfermarkt fallback paused — {len(missing)} team(s) left unresolved")
+        log.info(f"  Unresolved: {', '.join(missing)}")
+    elif missing:
+        log.info(f"Transfermarkt scrape for {len(missing)} teams not fully covered by Flashscore...")
         log.info(f"  Missing: {', '.join(missing)}")
         missing_fixtures = [
             f for f in raw_fixtures
@@ -162,12 +179,14 @@ def run():
             import traceback
             traceback.print_exc()
     else:
-        log.info("Step 3/4: All teams covered by Flashscore — skipping Transfermarkt")
+        log.info("All teams covered by Flashscore — skipping Transfermarkt")
 
-    # ── Step 4: Enrich with form, standings, H2H ─────────────────────────
-    log.info("Step 4/4: Enriching with form, H2H, standings...")
+    # ── Step 3: Enrich with form, standings, H2H ─────────────────────────
+    log.info("Step 3/3: Enriching with form, H2H, standings...")
+    t0 = datetime.now(EAT)
     enriched = enrich_all(raw_fixtures)
-    log.info(f"  {len(enriched)} matches enriched")
+    step3 = _secs(t0)
+    log.info(f"  {len(enriched)} matches enriched ({step3}s)")
 
     end = datetime.now(EAT)
     elapsed = round((end - start).total_seconds(), 1)
@@ -187,6 +206,7 @@ def run():
 
     log.info("=" * 50)
     log.info(f"Done in {elapsed}s — {len(raw_fixtures)} matches written to enriched.json")
+    log.info(f"  Step 1 fetch {step1}s · Step 2 flashscore {step2}s · Step 3 enrich {step3}s")
     log.info("=" * 50)
 
 
