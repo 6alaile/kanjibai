@@ -978,6 +978,40 @@ function scoreAll(matches, cfg) {
   return results;
 }
 
+// ─── BET SLIP ──────────────────────────────────────────────────────────────────
+// A pick can only go on the slip when BetPawa priced it — a suspended market
+// has no price and cannot be staked.
+function isPriced(bet) {
+  return typeof bet.price === 'number' && isFinite(bet.price) && bet.price > 0;
+}
+
+// localStorage is date-scoped: one slip key per scan date,
+// `kanjibai.slip.<YYYY-MM-DD>` — the scan's own `meta.date`, falling back to
+// today's date in EAT before the scan loads. Keys for any other date belong to
+// an older scan and are dropped on restore. Returns null when storage is
+// unavailable (private mode, blocked cookies) — the slip then lives in memory
+// only, with no console noise.
+const SLIP_KEY_PREFIX = 'kanjibai.slip.';
+
+function slipStorage() {
+  try {
+    const probe = SLIP_KEY_PREFIX + 'probe';
+    window.localStorage.setItem(probe, '1');
+    window.localStorage.removeItem(probe);
+    return window.localStorage;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Today as YYYY-MM-DD in the site's timezone (EAT).
+function eatDate(d) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Africa/Dar_es_Salaam',
+    year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(d || new Date());
+}
+
 // ─── VUE APP ─────────────────────────────────────────────────────────────────
 
 createApp({
@@ -1102,6 +1136,172 @@ createApp({
       lowConf: matches.value.filter(m => m.lowConfidence).length
     }));
 
+    // ─── BET SLIP ─────────────────────────────────────────────────────────
+    // Selections persist under a date-scoped localStorage key. The date is
+    // the scan's own `meta.date` once the scan loads (adoptSlipKey in
+    // runScan); until then today's EAT date is read provisionally. Restore
+    // deletes every other `kanjibai.slip.*` key — a selection from a
+    // previous scan date is stale by definition. Storage failures fall back
+    // to this in-memory list silently.
+    const storage = slipStorage();
+    const slipItems = ref([]);
+    const slipOpen = ref(false);
+    const slipHint = ref('');
+    const stake = ref('');
+    let slipKeyDate = eatDate();
+    let hintTimer = null;
+
+    function readSlip(date) {
+      if (!storage) return [];
+      try {
+        const raw = storage.getItem(SLIP_KEY_PREFIX + date);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return (Array.isArray(parsed.items) ? parsed.items : []).filter(s =>
+          s && s.id !== undefined && typeof s.label === 'string' && isPriced(s));
+      } catch (e) {
+        return [];  // corrupt entry — start clean, no console noise
+      }
+    }
+
+    function persistSlip() {
+      if (!storage) return;
+      try {
+        storage.setItem(SLIP_KEY_PREFIX + slipKeyDate,
+          JSON.stringify({ date: slipKeyDate, items: slipItems.value }));
+      } catch (e) { /* quota/blocked — the in-memory slip still works */ }
+    }
+
+    // Move to `date`'s key, restore its slip and delete every other
+    // `kanjibai.slip.*` key: selections from a previous scan date are stale.
+    function adoptSlipKey(date) {
+      slipKeyDate = date;
+      slipItems.value = readSlip(date);
+      if (!storage) return;
+      try {
+        for (let i = storage.length - 1; i >= 0; i--) {
+          const k = storage.key(i);
+          if (k && k.indexOf(SLIP_KEY_PREFIX) === 0 && k !== SLIP_KEY_PREFIX + date) {
+            storage.removeItem(k);
+          }
+        }
+      } catch (e) { /* ignore */ }
+    }
+
+    // Provisional restore at load, before the scan's meta.date is known.
+    // Read-only: cleaning up here could delete a still-valid slip from the
+    // previous day while the current scan date is unknown.
+    slipItems.value = readSlip(slipKeyDate);
+
+    const slipCount = computed(() => slipItems.value.length);
+
+    function inSlip(matchId, label) {
+      return slipItems.value.some(s => s.id === matchId && s.label === label);
+    }
+
+    // Brief hint for the same-fixture guard and disabled picks.
+    function showSlipHint(msg) {
+      slipHint.value = msg;
+      if (hintTimer) clearTimeout(hintTimer);
+      hintTimer = setTimeout(() => { slipHint.value = ''; }, 2600);
+    }
+
+    function toggleSlipPick(match, bet) {
+      if (!isPriced(bet)) {
+        showSlipHint('No price for this pick — the market is suspended');
+        return;
+      }
+      const existing = slipItems.value.find(s => s.id === match.id);
+      if (existing) {
+        // Same chip again → toggle off; a different pick on the same
+        // fixture is rejected (sportsbooks decline same-match accumulators).
+        if (existing.label === bet.label) {
+          slipItems.value = slipItems.value.filter(s => s.id !== match.id);
+          persistSlip();
+        } else {
+          showSlipHint(`One pick per fixture — "${existing.label}" is already on the slip`);
+        }
+        return;
+      }
+      slipItems.value = slipItems.value.concat([{
+        id: match.id, time: match.time, league: match.league,
+        home: match.home, away: match.away,
+        label: bet.label, type: bet.type, prob: bet.prob, price: bet.price
+      }]);
+      persistSlip();
+    }
+
+    function removeSlipItem(id) {
+      slipItems.value = slipItems.value.filter(s => s.id !== id);
+      persistSlip();
+    }
+
+    function clearSlip() {
+      slipItems.value = [];
+      persistSlip();
+    }
+
+    // ─── STAKE & RETURN (accumulator) ─────────────────────────────────────
+    // Total odds = product of the leg prices. An empty or invalid stake
+    // clears the return rows rather than rendering NaN.
+    const totalOdds = computed(() =>
+      slipItems.value.length
+        ? slipItems.value.reduce((acc, s) => acc * s.price, 1)
+        : null);
+
+    const stakeValue = computed(() => {
+      const raw = String(stake.value).trim();
+      if (!raw) return null;
+      const n = Number(raw);
+      return Number.isFinite(n) && n > 0 ? n : null;
+    });
+
+    const potentialReturn = computed(() =>
+      stakeValue.value !== null && totalOdds.value !== null
+        ? stakeValue.value * totalOdds.value
+        : null);
+
+    const netProfit = computed(() =>
+      potentialReturn.value !== null ? potentialReturn.value - stakeValue.value : null);
+
+    // ─── GENERATE SLIP ────────────────────────────────────────────────────
+    // Best priced pick per qualified fixture (highest model probability),
+    // top GENERATE_SLIP_MAX_LEGS of them, kick-off order. Merges into the
+    // slip: fixtures already covered keep the user's pick.
+    const GENERATE_SLIP_MAX_LEGS = 8;
+
+    function generateSlip() {
+      const covered = new Set(slipItems.value.map(s => s.id));
+      const legs = [];
+      for (const m of matches.value) {
+        if (covered.has(m.id)) continue;
+        const priced = m.bets.filter(isPriced);
+        if (!priced.length) continue;
+        const best = priced.reduce((a, b) => ((b.prob || 0) > (a.prob || 0)) ? b : a);
+        legs.push({
+          id: m.id, time: m.time, league: m.league,
+          home: m.home, away: m.away,
+          label: best.label, type: best.type, prob: best.prob, price: best.price
+        });
+      }
+      const top = legs
+        .sort((a, b) => (b.prob || 0) - (a.prob || 0))
+        .slice(0, GENERATE_SLIP_MAX_LEGS)
+        .sort((a, b) => timeMinutes(a.time) - timeMinutes(b.time));
+      if (!top.length) {
+        showSlipHint(slipItems.value.length
+          ? 'Every fixture on the slip already has a pick'
+          : 'No priced picks available today');
+        return;
+      }
+      const kept = slipItems.value.length;
+      slipItems.value = slipItems.value.concat(top);
+      persistSlip();
+      slipOpen.value = true;
+      showSlipHint(`Added ${top.length} best pick${top.length === 1 ? '' : 's'}` +
+        (kept ? ` · kept ${kept} existing` : ''));
+    }
+
     const steps = [
       ['Loading fixtures...', 'Fetching enriched match data from GitHub'],
       ['Applying odds filter...', `Home ≤ ${filters.homeOddsMax} · Away ≥ ${filters.awayOddsMin}`],
@@ -1121,6 +1321,9 @@ createApp({
       const data = await loadEnriched();
       rawMatches.value = data.matches || [];
       if (data.meta) scanMeta.value = data.meta;
+      // Adopt the scan's date-scoped slip key (restores that date's slip,
+      // drops keys from previous scan dates).
+      if (data.meta && data.meta.date) adoptSlipKey(data.meta.date);
 
       loading.value = false;
       hasRun.value = true;
@@ -1203,7 +1406,10 @@ createApp({
       matches, qualifiedMatches, filteredMatches, stats, scanMeta,
       runScan, toggleMarket, toggleReasoning, getCompetition, flagCode,
       formatTime24, competitionOptions, venueFor, opponentFor, scorelineFor,
-      ordinal, posLabel, signalGroups, capturedTime, probBand
+      ordinal, posLabel, signalGroups, capturedTime, probBand,
+      slipItems, slipOpen, slipHint, stake, slipCount, totalOdds,
+      potentialReturn, netProfit, inSlip, isPriced, toggleSlipPick,
+      removeSlipItem, clearSlip, generateSlip
     };
   }
 }).mount('#app');
