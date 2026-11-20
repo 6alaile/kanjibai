@@ -1148,35 +1148,51 @@ createApp({
     const slipOpen = ref(false);
     const slipHint = ref('');
     const stake = ref('');
+    // Minimum price a pick must carry to be pulled in by Generate Slip.
+    const genMinOdds = ref(1.00);
     let slipKeyDate = eatDate();
     let hintTimer = null;
 
-    function readSlip(date) {
-      if (!storage) return [];
+    // The stored record: { date, minOdds, items } — items filtered to well-
+    // formed, still-priced legs; a corrupt entry reads as null.
+    function readSlipRecord(date) {
+      if (!storage) return null;
       try {
         const raw = storage.getItem(SLIP_KEY_PREFIX + date);
-        if (!raw) return [];
+        if (!raw) return null;
         const parsed = JSON.parse(raw);
-        return (Array.isArray(parsed.items) ? parsed.items : []).filter(s =>
+        parsed.items = (Array.isArray(parsed.items) ? parsed.items : []).filter(s =>
           s && s.id !== undefined && typeof s.label === 'string' && isPriced(s));
+        return parsed;
       } catch (e) {
-        return [];  // corrupt entry — start clean, no console noise
+        return null;  // corrupt entry — start clean, no console noise
       }
+    }
+
+    function applySlipRecord(date) {
+      slipKeyDate = date;
+      const rec = readSlipRecord(date);
+      slipItems.value = rec ? rec.items : [];
+      const mo = Number(rec && rec.minOdds);
+      genMinOdds.value = Number.isFinite(mo) && mo >= 1 ? mo : 1;
     }
 
     function persistSlip() {
       if (!storage) return;
       try {
         storage.setItem(SLIP_KEY_PREFIX + slipKeyDate,
-          JSON.stringify({ date: slipKeyDate, items: slipItems.value }));
+          JSON.stringify({
+            date: slipKeyDate,
+            minOdds: num(genMinOdds.value, 1),
+            items: slipItems.value
+          }));
       } catch (e) { /* quota/blocked — the in-memory slip still works */ }
     }
 
-    // Move to `date`'s key, restore its slip and delete every other
+    // Move to `date`'s key, restore its record and delete every other
     // `kanjibai.slip.*` key: selections from a previous scan date are stale.
     function adoptSlipKey(date) {
-      slipKeyDate = date;
-      slipItems.value = readSlip(date);
+      applySlipRecord(date);
       if (!storage) return;
       try {
         for (let i = storage.length - 1; i >= 0; i--) {
@@ -1191,7 +1207,7 @@ createApp({
     // Provisional restore at load, before the scan's meta.date is known.
     // Read-only: cleaning up here could delete a still-valid slip from the
     // previous day while the current scan date is unknown.
-    slipItems.value = readSlip(slipKeyDate);
+    applySlipRecord(slipKeyDate);
 
     const slipCount = computed(() => slipItems.value.length);
 
@@ -1271,11 +1287,12 @@ createApp({
     const GENERATE_SLIP_MAX_LEGS = 8;
 
     function generateSlip() {
+      const min = num(genMinOdds.value, 1);
       const covered = new Set(slipItems.value.map(s => s.id));
       const legs = [];
       for (const m of matches.value) {
         if (covered.has(m.id)) continue;
-        const priced = m.bets.filter(isPriced);
+        const priced = m.bets.filter(b => isPriced(b) && b.price >= min);
         if (!priced.length) continue;
         const best = priced.reduce((a, b) => ((b.prob || 0) > (a.prob || 0)) ? b : a);
         legs.push({
@@ -1289,9 +1306,11 @@ createApp({
         .slice(0, GENERATE_SLIP_MAX_LEGS)
         .sort((a, b) => timeMinutes(a.time) - timeMinutes(b.time));
       if (!top.length) {
-        showSlipHint(slipItems.value.length
-          ? 'Every fixture on the slip already has a pick'
-          : 'No priced picks available today');
+        showSlipHint(min > 1
+          ? `No available picks at odds ≥ ${min.toFixed(2)}`
+          : (slipItems.value.length
+            ? 'Every fixture on the slip already has a pick'
+            : 'No priced picks available today'));
         return;
       }
       const kept = slipItems.value.length;
@@ -1299,6 +1318,7 @@ createApp({
       persistSlip();
       slipOpen.value = true;
       showSlipHint(`Added ${top.length} best pick${top.length === 1 ? '' : 's'}` +
+        (min > 1 ? ` at odds ≥ ${min.toFixed(2)}` : '') +
         (kept ? ` · kept ${kept} existing` : ''));
     }
 
@@ -1409,7 +1429,7 @@ createApp({
       ordinal, posLabel, signalGroups, capturedTime, probBand,
       slipItems, slipOpen, slipHint, stake, slipCount, totalOdds,
       potentialReturn, netProfit, inSlip, isPriced, toggleSlipPick,
-      removeSlipItem, clearSlip, generateSlip
+      removeSlipItem, clearSlip, generateSlip, genMinOdds, persistSlip
     };
   }
 }).mount('#app');

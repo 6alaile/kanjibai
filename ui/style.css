@@ -1575,3 +1575,36 @@ header {
   .slip-hint, .slip-overlay { animation: none; }
   .picks-list .bet-tag, .slip-fab, .slip-btn, .slip-close, .slip-item-x { transition-duration: 0.01ms; }
 }
+
+/* Min-odds filter — gates what Generate Slip may pull in */
+.slip-filter {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+}
+
+.slip-filter-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.slip-filter-top label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+
+.slip-filter-val {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.slip-filter .range-input { width: 100%; flex: none; }
