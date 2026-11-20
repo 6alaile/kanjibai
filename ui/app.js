@@ -1148,13 +1148,15 @@ createApp({
     const slipOpen = ref(false);
     const slipHint = ref('');
     const stake = ref('');
-    // Minimum price a pick must carry to be pulled in by Generate Slip.
+    // Minimum price / model probability a pick must carry to be pulled in
+    // by Generate Slip (0 / 1 = no filter).
     const genMinOdds = ref(1.00);
+    const genMinProb = ref(0);
     let slipKeyDate = eatDate();
     let hintTimer = null;
 
-    // The stored record: { date, minOdds, items } — items filtered to well-
-    // formed, still-priced legs; a corrupt entry reads as null.
+    // The stored record: { date, minOdds, minProb, items } — items filtered
+    // to well-formed, still-priced legs; a corrupt entry reads as null.
     function readSlipRecord(date) {
       if (!storage) return null;
       try {
@@ -1175,6 +1177,8 @@ createApp({
       slipItems.value = rec ? rec.items : [];
       const mo = Number(rec && rec.minOdds);
       genMinOdds.value = Number.isFinite(mo) && mo >= 1 ? mo : 1;
+      const mp = Number(rec && rec.minProb);
+      genMinProb.value = Number.isFinite(mp) && mp >= 0 ? mp : 0;
     }
 
     function persistSlip() {
@@ -1184,6 +1188,7 @@ createApp({
           JSON.stringify({
             date: slipKeyDate,
             minOdds: num(genMinOdds.value, 1),
+            minProb: num(genMinProb.value, 0),
             items: slipItems.value
           }));
       } catch (e) { /* quota/blocked — the in-memory slip still works */ }
@@ -1288,11 +1293,16 @@ createApp({
 
     function generateSlip() {
       const min = num(genMinOdds.value, 1);
+      const minP = num(genMinProb.value, 0);
+      const gates = [];
+      if (min > 1) gates.push(`odds ≥ ${min.toFixed(2)}`);
+      if (minP > 0) gates.push(`prob ≥ ${minP}%`);
       const covered = new Set(slipItems.value.map(s => s.id));
       const legs = [];
       for (const m of matches.value) {
         if (covered.has(m.id)) continue;
-        const priced = m.bets.filter(b => isPriced(b) && b.price >= min);
+        const priced = m.bets.filter(b =>
+          isPriced(b) && b.price >= min && num(b.prob, 0) >= minP);
         if (!priced.length) continue;
         const best = priced.reduce((a, b) => ((b.prob || 0) > (a.prob || 0)) ? b : a);
         legs.push({
@@ -1306,8 +1316,8 @@ createApp({
         .slice(0, GENERATE_SLIP_MAX_LEGS)
         .sort((a, b) => timeMinutes(a.time) - timeMinutes(b.time));
       if (!top.length) {
-        showSlipHint(min > 1
-          ? `No available picks at odds ≥ ${min.toFixed(2)}`
+        showSlipHint(gates.length
+          ? `No available picks — ${gates.join(' and ')}`
           : (slipItems.value.length
             ? 'Every fixture on the slip already has a pick'
             : 'No priced picks available today'));
@@ -1318,7 +1328,7 @@ createApp({
       persistSlip();
       slipOpen.value = true;
       showSlipHint(`Added ${top.length} best pick${top.length === 1 ? '' : 's'}` +
-        (min > 1 ? ` at odds ≥ ${min.toFixed(2)}` : '') +
+        (gates.length ? ` — ${gates.join(', ')}` : '') +
         (kept ? ` · kept ${kept} existing` : ''));
     }
 
@@ -1429,7 +1439,7 @@ createApp({
       ordinal, posLabel, signalGroups, capturedTime, probBand,
       slipItems, slipOpen, slipHint, stake, slipCount, totalOdds,
       potentialReturn, netProfit, inSlip, isPriced, toggleSlipPick,
-      removeSlipItem, clearSlip, generateSlip, genMinOdds, persistSlip
+      removeSlipItem, clearSlip, generateSlip, genMinOdds, genMinProb, persistSlip
     };
   }
 }).mount('#app');

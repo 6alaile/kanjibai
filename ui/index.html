@@ -359,14 +359,24 @@
       </div>
       <div class="slip-body">
 
-        <!-- MIN ODDS FILTER FOR GENERATE SLIP -->
+        <!-- GENERATE SLIP FILTERS -->
         <div class="slip-filter">
-          <div class="slip-filter-top">
-            <label for="slip-min-odds">Min odds — generated picks</label>
-            <span class="slip-filter-val">{{ Number(genMinOdds).toFixed(2) }}</span>
+          <div class="slip-filter-row">
+            <div class="slip-filter-top">
+              <label for="slip-min-odds">Min odds — generated picks</label>
+              <span class="slip-filter-val">{{ Number(genMinOdds).toFixed(2) }}</span>
+            </div>
+            <input id="slip-min-odds" class="range-input" type="range" min="1" max="10" step="0.05"
+              v-model.number="genMinOdds" @change="persistSlip" />
           </div>
-          <input id="slip-min-odds" class="range-input" type="range" min="1" max="10" step="0.05"
-            v-model.number="genMinOdds" @change="persistSlip" />
+          <div class="slip-filter-row">
+            <div class="slip-filter-top">
+              <label for="slip-min-prob">Min probability — generated picks</label>
+              <span class="slip-filter-val">{{ Number(genMinProb) }}%</span>
+            </div>
+            <input id="slip-min-prob" class="range-input" type="range" min="0" max="100" step="1"
+              v-model.number="genMinProb" @change="persistSlip" />
+          </div>
         </div>
 
         <!-- EMPTY STATE -->

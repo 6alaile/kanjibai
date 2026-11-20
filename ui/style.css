@@ -1576,12 +1576,18 @@ header {
   .picks-list .bet-tag, .slip-fab, .slip-btn, .slip-close, .slip-item-x { transition-duration: 0.01ms; }
 }
 
-/* Min-odds filter — gates what Generate Slip may pull in */
+/* Min-odds / min-probability filters — gate what Generate Slip may pull in */
 .slip-filter {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 10px 12px;
+}
+
+.slip-filter-row + .slip-filter-row {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .slip-filter-top {
